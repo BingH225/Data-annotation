@@ -1,0 +1,10 @@
+{
+  "primary_per_person_day": {
+    "attitude": 100,
+    "intent": 100,
+    "affection": 100
+  },
+  "seed": 42,
+  "encoding": "utf-8",
+  "note": "Review files are empty JSON arrays [] placeholders."
+}

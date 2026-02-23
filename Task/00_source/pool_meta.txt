@@ -1,0 +1,3 @@
+pool=C:\Users\xwhhh\Desktop\data_deal\Data\clean.intent_relabel_new1.json
+seed=42
+encoding=utf-8
