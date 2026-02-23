@@ -17,6 +17,9 @@ CSV_COLUMNS = [
     "subject",
     "target",
     "situation",
+    "mechanism_Affection",
+    "mechanism_Intent",
+    "mechanism_Attitude",
     "mechanism",
     "domain",
     "culture",
@@ -64,6 +67,15 @@ def _norm_affection_label(value: str) -> str:
         "bad": "Bad",
     }
     return mapping.get(v, value)
+
+
+def _norm_mechanism_value(value: str) -> str:
+    v = value.strip()
+    if not v:
+        return "NULL"
+    if v.lower() in {"null", "none"}:
+        return "NULL"
+    return v
 
 
 def _media_url_from_input(input_obj: Dict[str, Any]) -> str:
@@ -147,10 +159,14 @@ def _to_record(obj: Dict[str, Any]) -> Dict[str, Any]:
 
     situation = _norm_situation(_safe_text(output_obj.get("situation", "")).strip())
     label_generic = _safe_text(output_obj.get("label", "")).strip()
+    mechanism_generic = _safe_text(output_obj.get("mechanism", "")).strip()
 
     label_affection = _safe_text(output_obj.get("label_Affection", "")).strip()
     label_intent = _safe_text(output_obj.get("label_Intent", "")).strip()
     label_attitude = _safe_text(output_obj.get("label_Attitude", "")).strip()
+    mechanism_affection = _safe_text(output_obj.get("mechanism_Affection", "")).strip()
+    mechanism_intent = _safe_text(output_obj.get("mechanism_Intent", "")).strip()
+    mechanism_attitude = _safe_text(output_obj.get("mechanism_Attitude", "")).strip()
 
     if label_generic:
         if situation == "Affection":
@@ -167,6 +183,31 @@ def _to_record(obj: Dict[str, Any]) -> Dict[str, Any]:
         label_intent = "NULL"
 
     label_affection = _norm_affection_label(label_affection)
+    mechanism_affection = _norm_mechanism_value(mechanism_affection)
+    mechanism_intent = _norm_mechanism_value(mechanism_intent)
+    mechanism_attitude = _norm_mechanism_value(mechanism_attitude)
+    mechanism_generic = _norm_mechanism_value(mechanism_generic)
+
+    # Keep mechanism split fields consistent with situation, like label selection logic.
+    if situation == "Affection":
+        mechanism_affection = mechanism_generic if mechanism_affection == "NULL" else mechanism_affection
+        mechanism_intent = "NULL"
+        mechanism_attitude = "NULL"
+    elif situation == "Intent":
+        mechanism_intent = mechanism_generic if mechanism_intent == "NULL" else mechanism_intent
+        mechanism_affection = "NULL"
+        mechanism_attitude = "NULL"
+    elif situation == "Attitude":
+        mechanism_attitude = mechanism_generic if mechanism_attitude == "NULL" else mechanism_attitude
+        mechanism_affection = "NULL"
+        mechanism_intent = "NULL"
+
+    if situation == "Affection":
+        mechanism_generic = mechanism_affection
+    elif situation == "Intent":
+        mechanism_generic = mechanism_intent
+    elif situation == "Attitude":
+        mechanism_generic = mechanism_attitude
 
     record = {
         "filename": _filename_from_input(input_obj),
@@ -175,7 +216,10 @@ def _to_record(obj: Dict[str, Any]) -> Dict[str, Any]:
         "subject": _safe_text(output_obj.get("subject", "")).strip(),
         "target": _safe_text(output_obj.get("target", "")).strip(),
         "situation": situation,
-        "mechanism": _safe_text(output_obj.get("mechanism", "")).strip(),
+        "mechanism_Affection": mechanism_affection,
+        "mechanism_Intent": mechanism_intent,
+        "mechanism_Attitude": mechanism_attitude,
+        "mechanism": mechanism_generic,
         "domain": _safe_text(output_obj.get("domain", "")).strip(),
         "culture": _safe_text(output_obj.get("culture", "")).strip(),
         "label_Affection": label_affection,

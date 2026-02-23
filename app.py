@@ -19,20 +19,26 @@ PREVIEW_WIDTH = 280
 PREVIEW_HEIGHT = 220
 
 SITUATION_OPTIONS = ["Affection", "Intent", "Attitude"]
-MECHANISM_OPTIONS = [
+MECHANISM_AFFECTION_OPTIONS = [
+    "NULL",
     "multimodal_incongruity",
     "figurative_semantics",
     "affective_deception",
     "socio_cultural_dependency",
+]
+MECHANISM_INTENT_OPTIONS = [
+    "NULL",
     "prosocial_deception",
     "malicious_manipulation",
     "expressive_aggression",
     "benevolent_provocation",
+]
+MECHANISM_ATTITUDE_OPTIONS = [
+    "NULL",
     "dominant_affiliation",
     "dominant_detachment",
     "protective_distancing",
     "submissive_alignment",
-    "null",
 ]
 DOMAIN_OPTIONS = ["NULL", "NULL", "NULL"]
 CULTURE_OPTIONS = ["NULL", "NULL", "NULL"]
@@ -65,6 +71,9 @@ CSV_COLUMNS = [
     "subject",
     "target",
     "situation",
+    "mechanism_Affection",
+    "mechanism_Intent",
+    "mechanism_Attitude",
     "mechanism",
     "domain",
     "culture",
@@ -220,7 +229,9 @@ def _init_session_state() -> None:
         "subject": "",
         "target": "",
         "situation": SITUATION_OPTIONS[0] if SITUATION_OPTIONS else "",
-        "mechanism": MECHANISM_OPTIONS[0] if MECHANISM_OPTIONS else "",
+        "mechanism_Affection": "NULL",
+        "mechanism_Intent": "NULL",
+        "mechanism_Attitude": "NULL",
         "domain": "",
         "culture": "",
         "label_Affection": "",
@@ -238,7 +249,9 @@ def _init_session_state() -> None:
 
     # Normalize choice keys
     _normalize_choice_in_state("situation", SITUATION_OPTIONS, allow_empty=False)
-    _normalize_choice_in_state("mechanism", MECHANISM_OPTIONS, allow_empty=False)
+    _normalize_choice_in_state("mechanism_Affection", MECHANISM_AFFECTION_OPTIONS, allow_empty=False)
+    _normalize_choice_in_state("mechanism_Intent", MECHANISM_INTENT_OPTIONS, allow_empty=False)
+    _normalize_choice_in_state("mechanism_Attitude", MECHANISM_ATTITUDE_OPTIONS, allow_empty=False)
     _normalize_choice_in_state("label_Affection", Affection_OPTIONS, allow_empty=True)
     _normalize_choice_in_state("label_Intent", INTENT_OPTIONS, allow_empty=False)
     _normalize_choice_in_state("label_Attitude", ATTITUDE_OPTIONS, allow_empty=True)
@@ -253,7 +266,9 @@ def _load_record_into_inputs(record: Optional[Dict[str, Any]]) -> None:
         st.session_state.subject = ""
         st.session_state.target = ""
         st.session_state.situation = SITUATION_OPTIONS[0] if SITUATION_OPTIONS else ""
-        st.session_state.mechanism = MECHANISM_OPTIONS[0] if MECHANISM_OPTIONS else ""
+        st.session_state.mechanism_Affection = "NULL"
+        st.session_state.mechanism_Intent = "NULL"
+        st.session_state.mechanism_Attitude = "NULL"
         st.session_state.domain = ""
         st.session_state.culture = ""
         st.session_state.label_Affection = ""
@@ -269,7 +284,9 @@ def _load_record_into_inputs(record: Optional[Dict[str, Any]]) -> None:
     st.session_state.subject = _safe_text(record.get("subject", ""))
     st.session_state.target = _safe_text(record.get("target", ""))
     st.session_state.situation = _safe_text(record.get("situation", ""))
-    st.session_state.mechanism = _safe_text(record.get("mechanism", ""))
+    st.session_state.mechanism_Affection = _safe_text(record.get("mechanism_Affection", ""))
+    st.session_state.mechanism_Intent = _safe_text(record.get("mechanism_Intent", ""))
+    st.session_state.mechanism_Attitude = _safe_text(record.get("mechanism_Attitude", ""))
     st.session_state.domain = _safe_text(record.get("domain", ""))
     st.session_state.culture = _safe_text(record.get("culture", ""))
     st.session_state.label_Affection = _safe_text(record.get("label_Affection", ""))
@@ -277,8 +294,20 @@ def _load_record_into_inputs(record: Optional[Dict[str, Any]]) -> None:
     st.session_state.label_Attitude = _safe_text(record.get("label_Attitude", ""))
     st.session_state.rationale = _safe_text(record.get("rationale", ""))
 
+    legacy_mechanism = _safe_text(record.get("mechanism", "")).strip()
+    situation_norm = _safe_text(st.session_state.situation).strip().lower()
+    if legacy_mechanism:
+        if not st.session_state.mechanism_Affection and situation_norm == "affection":
+            st.session_state.mechanism_Affection = legacy_mechanism
+        if not st.session_state.mechanism_Intent and situation_norm == "intent":
+            st.session_state.mechanism_Intent = legacy_mechanism
+        if not st.session_state.mechanism_Attitude and situation_norm == "attitude":
+            st.session_state.mechanism_Attitude = legacy_mechanism
+
     _normalize_choice_in_state("situation", SITUATION_OPTIONS, allow_empty=False)
-    _normalize_choice_in_state("mechanism", MECHANISM_OPTIONS, allow_empty=False)
+    _normalize_choice_in_state("mechanism_Affection", MECHANISM_AFFECTION_OPTIONS, allow_empty=False)
+    _normalize_choice_in_state("mechanism_Intent", MECHANISM_INTENT_OPTIONS, allow_empty=False)
+    _normalize_choice_in_state("mechanism_Attitude", MECHANISM_ATTITUDE_OPTIONS, allow_empty=False)
     _normalize_choice_in_state("label_Affection", Affection_OPTIONS, allow_empty=True)
     _normalize_choice_in_state("label_Intent", INTENT_OPTIONS, allow_empty=False)
     _normalize_choice_in_state("label_Attitude", ATTITUDE_OPTIONS, allow_empty=True)
@@ -546,7 +575,9 @@ div[data-testid="column"]:last-child [data-testid="stVerticalBlock"] { gap: 0.2r
         st.divider()
         lower_left_col, lower_right_col = st.columns([0.42, 0.58], gap="medium")
         with lower_left_col:
-            st.selectbox("Mechanism", MECHANISM_OPTIONS, key="mechanism", disabled=is_locked)
+            st.selectbox("Mechanism: Affection", MECHANISM_AFFECTION_OPTIONS, key="mechanism_Affection", disabled=is_locked)
+            st.selectbox("Mechanism: Intent", MECHANISM_INTENT_OPTIONS, key="mechanism_Intent", disabled=is_locked)
+            st.selectbox("Mechanism: Attitude", MECHANISM_ATTITUDE_OPTIONS, key="mechanism_Attitude", disabled=is_locked)
             st.text_input("Domain", key="domain", disabled=is_locked)
             st.text_input("Culture", key="culture", disabled=is_locked)
         with lower_right_col:
@@ -635,6 +666,23 @@ div[data-testid="column"]:last-child [data-testid="stVerticalBlock"] { gap: 0.2r
 
     if abandon_clicked:
         st.session_state.abandon_selected = not bool(st.session_state.abandon_selected)
+        situation_norm = _safe_text(st.session_state.situation).strip().lower()
+        mechanism_affection = _safe_text(st.session_state.mechanism_Affection).strip() or "NULL"
+        mechanism_intent = _safe_text(st.session_state.mechanism_Intent).strip() or "NULL"
+        mechanism_attitude = _safe_text(st.session_state.mechanism_Attitude).strip() or "NULL"
+        mechanism_generic = "NULL"
+        if situation_norm == "affection":
+            mechanism_generic = mechanism_affection
+            mechanism_intent = "NULL"
+            mechanism_attitude = "NULL"
+        elif situation_norm == "intent":
+            mechanism_generic = mechanism_intent
+            mechanism_affection = "NULL"
+            mechanism_attitude = "NULL"
+        elif situation_norm == "attitude":
+            mechanism_generic = mechanism_attitude
+            mechanism_affection = "NULL"
+            mechanism_intent = "NULL"
         record = {
             "filename": current_path.name,
             "id": st.session_state.id,
@@ -642,7 +690,11 @@ div[data-testid="column"]:last-child [data-testid="stVerticalBlock"] { gap: 0.2r
             "subject": st.session_state.subject,
             "target": st.session_state.target,
             "situation": st.session_state.situation,
-            "mechanism": st.session_state.mechanism,
+            "mechanism_Affection": mechanism_affection,
+            "mechanism_Intent": mechanism_intent,
+            "mechanism_Attitude": mechanism_attitude,
+            # Backward-compatible generic field derived from situation-specific mechanism.
+            "mechanism": mechanism_generic or "NULL",
             "domain": st.session_state.domain,
             "culture": st.session_state.culture,
             "label_Affection": st.session_state.label_Affection,
@@ -662,6 +714,23 @@ div[data-testid="column"]:last-child [data-testid="stVerticalBlock"] { gap: 0.2r
         _go(_next_index(current_index))
 
     if accept_clicked:
+        situation_norm = _safe_text(st.session_state.situation).strip().lower()
+        mechanism_affection = _safe_text(st.session_state.mechanism_Affection).strip() or "NULL"
+        mechanism_intent = _safe_text(st.session_state.mechanism_Intent).strip() or "NULL"
+        mechanism_attitude = _safe_text(st.session_state.mechanism_Attitude).strip() or "NULL"
+        mechanism_generic = "NULL"
+        if situation_norm == "affection":
+            mechanism_generic = mechanism_affection
+            mechanism_intent = "NULL"
+            mechanism_attitude = "NULL"
+        elif situation_norm == "intent":
+            mechanism_generic = mechanism_intent
+            mechanism_affection = "NULL"
+            mechanism_attitude = "NULL"
+        elif situation_norm == "attitude":
+            mechanism_generic = mechanism_attitude
+            mechanism_affection = "NULL"
+            mechanism_intent = "NULL"
         record = {
             "filename": current_path.name,
             "id": st.session_state.id,
@@ -669,7 +738,11 @@ div[data-testid="column"]:last-child [data-testid="stVerticalBlock"] { gap: 0.2r
             "subject": st.session_state.subject,
             "target": st.session_state.target,
             "situation": st.session_state.situation,
-            "mechanism": st.session_state.mechanism,
+            "mechanism_Affection": mechanism_affection,
+            "mechanism_Intent": mechanism_intent,
+            "mechanism_Attitude": mechanism_attitude,
+            # Backward-compatible generic field derived from situation-specific mechanism.
+            "mechanism": mechanism_generic or "NULL",
             "domain": st.session_state.domain,
             "culture": st.session_state.culture,
             "label_Affection": st.session_state.label_Affection,

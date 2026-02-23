@@ -39,6 +39,20 @@ def _generic_label(rec: Dict[str, Any]) -> str:
     return ""
 
 
+def _generic_mechanism(rec: Dict[str, Any]) -> str:
+    situation = _to_situation_lower(_safe_text(rec.get("situation", "")))
+    if situation == "affection":
+        value = _safe_text(rec.get("mechanism_Affection", ""))
+        return value if value else _safe_text(rec.get("mechanism", ""))
+    if situation == "intent":
+        value = _safe_text(rec.get("mechanism_Intent", ""))
+        return value if value else _safe_text(rec.get("mechanism", ""))
+    if situation == "attitude":
+        value = _safe_text(rec.get("mechanism_Attitude", ""))
+        return value if value else _safe_text(rec.get("mechanism", ""))
+    return _safe_text(rec.get("mechanism", ""))
+
+
 def _build_image_url(filename: str, base_image_url: str) -> str:
     if not filename:
         return ""
@@ -160,7 +174,7 @@ def main() -> None:
         output_obj["subject"] = _safe_text(rec.get("subject", "")).strip()
         output_obj["target"] = _safe_text(rec.get("target", "")).strip()
         output_obj["situation"] = _to_situation_lower(_safe_text(rec.get("situation", "")))
-        output_obj["mechanism"] = _safe_text(rec.get("mechanism", "")).strip()
+        output_obj["mechanism"] = _generic_mechanism(rec).strip()
         output_obj["label"] = _generic_label(rec).strip()
         output_obj["domain"] = _safe_text(rec.get("domain", "")).strip()
         output_obj["culture"] = _safe_text(rec.get("culture", "")).strip()
