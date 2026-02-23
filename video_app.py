@@ -38,6 +38,7 @@ DOMAIN_OPTIONS = ["NULL", "NULL", "NULL"]
 CULTURE_OPTIONS = ["NULL", "NULL", "NULL"]
 Affection_OPTIONS = ["NULL", "Happy", "Sad", "Disgusted", "Angry", "Fearful", "Surprised", "Bad"]
 INTENT_OPTIONS = [
+    "NULL",
     "Conflict Mitigation",
     "Intimidation",
     "Hate Humor",
