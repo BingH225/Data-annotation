@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import base64
+import hashlib
 import mimetypes
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Set, Tuple
@@ -338,6 +339,10 @@ def _render_media_preview(file_path: Path, frame_width: int = PREVIEW_WIDTH, fra
             f'<img class="media-preview-element" src="data:{mime};base64,'
             f'{base64.b64encode(raw).decode("ascii")}" alt="{file_path.name}" />'
         )
+        zoom_media_html = (
+            f'<img class="media-zoom-element" src="data:{mime};base64,'
+            f'{base64.b64encode(raw).decode("ascii")}" alt="{file_path.name}" />'
+        )
     elif _is_video(file_path):
         mime = mime or "video/mp4"
         media_html = (
@@ -345,14 +350,31 @@ def _render_media_preview(file_path: Path, frame_width: int = PREVIEW_WIDTH, fra
             f'<source src="data:{mime};base64,{base64.b64encode(raw).decode("ascii")}" type="{mime}" />'
             "</video>"
         )
+        zoom_media_html = (
+            '<video class="media-zoom-element" controls preload="metadata">'
+            f'<source src="data:{mime};base64,{base64.b64encode(raw).decode("ascii")}" type="{mime}" />'
+            "</video>"
+        )
     else:
         st.warning(f"Unsupported media type: {file_path.name}")
         return
 
+    zoom_id = f"zoom_{hashlib.md5(str(file_path).encode('utf-8')).hexdigest()[:12]}"
     st.markdown(
         f"""
-        <div class="media-preview-frame" style="width:{frame_width}px;max-width:{frame_width}px;height:{frame_height}px;flex:0 0 {frame_width}px;">
-            {media_html}
+        <div class="media-preview-wrap">
+            <input type="checkbox" id="{zoom_id}" class="media-zoom-toggle" />
+            <div class="media-preview-frame" style="width:{frame_width}px;max-width:{frame_width}px;height:{frame_height}px;flex:0 0 {frame_width}px;">
+                {media_html}
+                <label for="{zoom_id}" class="media-zoom-btn" title="Zoom">Zoom</label>
+            </div>
+            <div class="media-zoom-modal">
+                <label for="{zoom_id}" class="media-zoom-backdrop" aria-label="Close"></label>
+                <div class="media-zoom-content">
+                    {zoom_media_html}
+                    <label for="{zoom_id}" class="media-zoom-close" title="Close">x</label>
+                </div>
+            </div>
         </div>
         """,
         unsafe_allow_html=True,
@@ -390,6 +412,7 @@ div[data-testid="stButton"] button[kind="primary"] {
 h3 { margin-top: 0.3rem; margin-bottom: 0.3rem; }
 /* Shared fixed preview frame for image/video */
 .media-preview-frame {
+    position: relative;
     width: var(--preview-w);
     max-width: var(--preview-w);
     min-width: var(--preview-w);
@@ -404,6 +427,71 @@ h3 { margin-top: 0.3rem; margin-bottom: 0.3rem; }
     border: 1px solid rgba(148, 163, 184, 0.35);
     border-radius: 8px;
     box-sizing: border-box;
+}
+.media-zoom-toggle {
+    display: none;
+}
+.media-zoom-btn {
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+    z-index: 3;
+    padding: 2px 8px;
+    border-radius: 6px;
+    background: rgba(15, 23, 42, 0.85);
+    color: #ffffff;
+    border: 1px solid rgba(148, 163, 184, 0.55);
+    font-size: 12px;
+    cursor: pointer;
+    user-select: none;
+}
+.media-zoom-modal {
+    display: none;
+}
+.media-zoom-toggle:checked ~ .media-zoom-modal {
+    display: block;
+}
+.media-zoom-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.78);
+    z-index: 9998;
+    cursor: zoom-out;
+}
+.media-zoom-content {
+    position: fixed;
+    inset: 4vh 4vw;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.media-zoom-element {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    background: #0f172a;
+    border-radius: 8px;
+    border: 1px solid rgba(148, 163, 184, 0.45);
+}
+.media-zoom-close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 30px;
+    height: 30px;
+    border-radius: 999px;
+    background: rgba(15, 23, 42, 0.9);
+    color: #ffffff;
+    border: 1px solid rgba(148, 163, 184, 0.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: 700;
+    user-select: none;
 }
 .media-preview-element {
     width: 100%;
