@@ -37,6 +37,16 @@ MECHANISM_OPTIONS = [
 DOMAIN_OPTIONS = ["NULL", "NULL", "NULL"]
 CULTURE_OPTIONS = ["NULL", "NULL", "NULL"]
 Affection_OPTIONS = ["NULL", "Happy", "Sad", "Disgusted", "Angry", "Fearful", "Bad"]
+INTENT_OPTIONS = [
+    "Conflict Mitigation",
+    "Intimidation",
+    "Hate Humor",
+    "Humiliation for Amusement",
+    "Public Humiliation",
+    "Meme-based Mockery",
+    "Dominance Assertion",
+    "Moral Condemnation",
+]
 ATTITUDE_OPTIONS = [
     "NULL",
     "Supportive", "Appreciative", "Sympathetic", "Neutral", "Indifferent",
@@ -229,6 +239,7 @@ def _init_session_state() -> None:
     _normalize_choice_in_state("situation", SITUATION_OPTIONS, allow_empty=False)
     _normalize_choice_in_state("mechanism", MECHANISM_OPTIONS, allow_empty=False)
     _normalize_choice_in_state("label_Affection", Affection_OPTIONS, allow_empty=True)
+    _normalize_choice_in_state("label_Intent", INTENT_OPTIONS, allow_empty=False)
     _normalize_choice_in_state("label_Attitude", ATTITUDE_OPTIONS, allow_empty=True)
 
 
@@ -268,6 +279,7 @@ def _load_record_into_inputs(record: Optional[Dict[str, Any]]) -> None:
     _normalize_choice_in_state("situation", SITUATION_OPTIONS, allow_empty=False)
     _normalize_choice_in_state("mechanism", MECHANISM_OPTIONS, allow_empty=False)
     _normalize_choice_in_state("label_Affection", Affection_OPTIONS, allow_empty=True)
+    _normalize_choice_in_state("label_Intent", INTENT_OPTIONS, allow_empty=False)
     _normalize_choice_in_state("label_Attitude", ATTITUDE_OPTIONS, allow_empty=True)
 
 
@@ -475,6 +487,7 @@ div[data-testid="column"]:last-child [data-testid="stVerticalBlock"] { gap: 0.2r
     _ensure_text_state(["id", "input_text", "subject", "target", "label_Intent", "rationale"])
     # Ensure selectbox state values exist in options (avoids ValueError in Streamlit)
     _normalize_choice_in_state("label_Affection", Affection_OPTIONS, allow_empty=True)
+    _normalize_choice_in_state("label_Intent", INTENT_OPTIONS, allow_empty=False)
     _normalize_choice_in_state("label_Attitude", ATTITUDE_OPTIONS, allow_empty=True)
 
     # =========================
@@ -594,7 +607,7 @@ div[data-testid="column"]:last-child [data-testid="stVerticalBlock"] { gap: 0.2r
             st.selectbox("Situation", SITUATION_OPTIONS, key="situation", disabled=is_locked)
 
             st.selectbox("Label: Affection", Affection_OPTIONS, key="label_Affection", disabled=is_locked)
-            st.text_input("Label: Intent", key="label_Intent", disabled=is_locked)
+            st.selectbox("Label: Intent", INTENT_OPTIONS, key="label_Intent", disabled=is_locked)
             st.selectbox("Label: Attitude", ATTITUDE_OPTIONS, key="label_Attitude", disabled=is_locked)
 
         st.caption(f"Current: `{current_path.name}`")
