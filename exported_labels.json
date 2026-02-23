@@ -2799,9 +2799,9 @@
     "output": {
       "subject": "poster",
       "target": "salivary gland biopsy",
-      "situation": "affection",
+      "situation": "intent",
       "mechanism": "multimodal_incongruity",
-      "label": "Bad",
+      "label": "NULL",
       "domain": "Online & Social Media",
       "culture": "General Culture",
       "rationale": "[Anchor]\n- Text evidence: \"having a salivary gland biopsy on monday morning\" — literal tone: negative/complaining.\n- Visual evidence: person holding a paper reading \"SARCASM\", patterned red robe, neutral/downturned mouth, glasses.\n- Cross-modal setup: The caption reads as a genuine complaint while the image explicitly flags the remark as sarcastic.\n\n[Pivot]\n- Mechanism: multimodal_incongruity.\n- Trigger rule: The image's explicit \"sarcasm\" label negates the literal complaint, creating a polarity shift that forces ironic reading.\n- Minimal justification: The visual cancels the literal negative appraisal, reframing it as wry/resigned humor.\n\n[Inference]\n- Emotion label: Bad.\n- Subject/target justification: The poster conveys mild annoyance/resigned displeasure toward the salivary gland biopsy appointment.\n- Domain/Culture provides no additional disambiguation."
@@ -3115,24 +3115,6 @@
   },
   {
     "input": {
-      "id": "affection_10175",
-      "text": "what are they fighting over? is it: a) the last pan ducle b) he accidentally touch the homies hand passing a beer? c) foo used the last of the three flowers. d) homie said \"i got you on gas\" but he only has $3!",
-      "path": "/hpctmp/e1561245/Data/img/HatefulMemes/img/01548.png",
-      "url": "https://huggingface.co/datasets/yesbobo/implicit/resolve/main/images/affection/affection_10175.png"
-    },
-    "output": {
-      "subject": "woman in foreground",
-      "target": "man in background",
-      "situation": "affection",
-      "mechanism": "multimodal_incongruity",
-      "label": "Sad",
-      "domain": "Intimate Relationships",
-      "culture": "General Culture",
-      "rationale": "[Anchor] Text evidence: \"what are they fighting over? is it:\" (neutral). Visual evidence: woman with hands on cheeks and downcast eyes; man blurred in background raising an arm/gesturing; kitchen/home setting. Cross-modal setup: The text offers joking, trivializing multiple-choice causes while the photo shows a subdued, upset woman and a gesturing man. [Pivot] Mechanism: multimodal_incongruity. Trigger rule: The jokey, dismissive tone of the caption conflicts with the image's real negative cues, cancelling a purely playful reading and implying a genuine hurt. Minimal justification: This polarity between trivializing text and sad-looking subject triggers an implicit hurt reading. [Inference] Emotion label: Sad. Subject/target justification: The woman in the foreground appears to be the experiencer, reacting with hurt/withdrawal toward the man in the background (the conflict). Domain/Culture provides no additional disambiguation."
-    }
-  },
-  {
-    "input": {
       "id": "affection_9856",
       "text": "what i say about the gunman every time there's a mass shooting",
       "path": "/hpctmp/e1561245/Data/img/HatefulMemes/img/62589.png",
@@ -3319,14 +3301,14 @@
       "url": "https://huggingface.co/datasets/yesbobo/implicit/resolve/main/images/affection/affection_0036.jpg"
     },
     "output": {
-      "subject": "Grace？？？",
-      "target": "herself？？？",
+      "subject": "Grace",
+      "target": "herself",
       "situation": "affection",
       "mechanism": "multimodal_incongruity",
-      "label": "Happy",
-      "domain": "Online & Social Media？？？",
-      "culture": "General Culture？？？？",
-      "rationale": "NOOOOO"
+      "label": "Bad",
+      "domain": "Online & Social Media",
+      "culture": "General Culture",
+      "rationale": "\"[Anchor]\\nText evidence: \\\"i 'm a bad influence\\\" — literal tone: negative. Visual evidence: circled name 'GRACE' on a 'People who are BAD INFLUENCES!' list; two laughing-crying emoji stickers over the image; social-post screenshot with reactions visible. Cross-modal setup: the speaker's self-accusation is paired with an image that frames the label as a joke and invites laughter.\\n[Pivot]\\nMechanism: multimodal_incongruity. Trigger rule: the negative literal claim is cancelled by playful visual cues (circled name + laughing emojis), forcing a non-literal, affiliative reading. Minimal justification: the image reframes blame as teasing, so the admission reads as humorous self-deprecation.\\n[Inference]\\nEmotion label: Happy. Subject/target justification: the speaker (Grace) signals amused, affiliative play toward herself/situation. Domain/Culture usage: Online & Social Media norms (reaction emojis, meme-list) support a joking, affectionate interpretation rather than genuine negativity.\""
     }
   },
   {

@@ -1,0 +1,23 @@
+数据导入/标注/导出文件对应关系
+================================
+
+1. 导入（Import）
+- 脚本：`import_labels_from_json.py`
+- 默认输入：`Data/prelabel_slim_mm_seed42.json`（`import_labels_from_json.py:31`）
+- 导入后写入：`video_labels.csv`（`import_labels_from_json.py:32`）
+- 同时下载媒体到：`images/`（`import_labels_from_json.py:33`）
+
+2. 标注界面读写
+- 界面文件：`app.py` / `video_app.py`
+- 读取与保存的标注文件都是：`video_labels.csv`（`app.py:17`）
+
+3. 导出（Export）
+- 脚本：`export_json_from_labels.py`
+- 输入：`video_labels.csv`（`export_json_from_labels.py:11`）
+- 导出主文件：`exported_labels.json`（`export_json_from_labels.py:12`）
+- 导出被过滤（abandon/skipped）文件：`abandoned_records.json`（`export_json_from_labels.py:89-90`）
+- 模板源 JSON（用于保留 input 字段）：`Data/prelabel_slim_mm_seed42.json`（`export_json_from_labels.py:13`）
+
+4. 可选调整
+- 如果你要改成从 `Data/clean.intent_relabel_new1.json` 导入，可修改：
+  `import_labels_from_json.py` 中的 `DEFAULT_INPUT_PATH`。

@@ -19,6 +19,24 @@
   },
   {
     "input": {
+      "id": "affection_10175",
+      "text": "what are they fighting over? is it: a) the last pan ducle b) he accidentally touch the homies hand passing a beer? c) foo used the last of the three flowers. d) homie said \"i got you on gas\" but he only has $3!",
+      "path": "/hpctmp/e1561245/Data/img/HatefulMemes/img/01548.png",
+      "url": "https://huggingface.co/datasets/yesbobo/implicit/resolve/main/images/affection/affection_10175.png"
+    },
+    "output": {
+      "subject": "woman in foreground",
+      "target": "man in background",
+      "situation": "affection",
+      "mechanism": "multimodal_incongruity",
+      "label": "Sad",
+      "domain": "Intimate Relationships",
+      "culture": "General Culture",
+      "rationale": "[Anchor] Text evidence: \"what are they fighting over? is it:\" (neutral). Visual evidence: woman with hands on cheeks and downcast eyes; man blurred in background raising an arm/gesturing; kitchen/home setting. Cross-modal setup: The text offers joking, trivializing multiple-choice causes while the photo shows a subdued, upset woman and a gesturing man. [Pivot] Mechanism: multimodal_incongruity. Trigger rule: The jokey, dismissive tone of the caption conflicts with the image's real negative cues, cancelling a purely playful reading and implying a genuine hurt. Minimal justification: This polarity between trivializing text and sad-looking subject triggers an implicit hurt reading. [Inference] Emotion label: Sad. Subject/target justification: The woman in the foreground appears to be the experiencer, reacting with hurt/withdrawal toward the man in the background (the conflict). Domain/Culture provides no additional disambiguation."
+    }
+  },
+  {
+    "input": {
       "id": "affection_10050",
       "text": "the guy above me fingers his cat",
       "path": "/hpctmp/e1561245/Data/img/HatefulMemes/img/89073.png",
