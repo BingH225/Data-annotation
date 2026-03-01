@@ -176,7 +176,10 @@ def _load_labels_df() -> pd.DataFrame:
             df = pd.read_csv(LABELS_CSV, encoding="utf-8-sig", keep_default_na=False)
             for col in CSV_COLUMNS:
                 if col not in df.columns:
-                    df[col] = "" if col not in ("skipped", "abandon") else False
+                    if col in ("skipped", "abandon"):
+                        df[col] = False
+                    else:
+                        df[col] = ""
             return df[CSV_COLUMNS].copy()
         except Exception:
             pass
@@ -200,12 +203,66 @@ def _labels_index(df: pd.DataFrame) -> Dict[str, Dict[str, Any]]:
     return out
 
 
+def _row_to_record(row: pd.Series) -> Dict[str, Any]:
+    """Convert one CSV row into app record dict."""
+    record: Dict[str, Any] = {}
+    for k in CSV_COLUMNS:
+        if k in ("skipped", "abandon"):
+            s = str(row.get(k, "")).strip().lower()
+            record[k] = s in ("true", "1", "yes")
+        else:
+            record[k] = _safe_text(row.get(k, ""))
+    return record
+
+
+def _labels_media_items(df: pd.DataFrame) -> List[Dict[str, Any]]:
+    """
+    Build display items using CSV rows as the primary unit.
+    This preserves multiple samples that share the same filename.
+    """
+    media_by_name = {p.name: p for p in _supported_media_files()}
+    items: List[Dict[str, Any]] = []
+
+    if not df.empty and "filename" in df.columns:
+        for idx, row in df.iterrows():
+            filename = _safe_text(row.get("filename", "")).strip()
+            if not filename:
+                continue
+            media_path = media_by_name.get(filename)
+            if media_path is None:
+                continue
+            items.append(
+                {
+                    "row_index": int(idx),
+                    "path": media_path,
+                    "record": _row_to_record(row),
+                }
+            )
+        return items
+
+    # Fallback mode: no labels CSV rows yet, use one item per media file.
+    for path in sorted(media_by_name.values(), key=lambda p: p.name.lower()):
+        items.append({"row_index": None, "path": path, "record": None})
+    return items
+
+
 def _upsert_label(df: pd.DataFrame, record: Dict[str, Any]) -> pd.DataFrame:
-    filename = str(record["filename"])
+    filename = _safe_text(record.get("filename", "")).strip()
+    rec_id = _safe_text(record.get("id", "")).strip()
+    rec_text = _safe_text(record.get("input_text", "")).strip()
     if df.empty or "filename" not in df.columns:
         return pd.DataFrame([record], columns=CSV_COLUMNS)
 
-    mask = df["filename"].astype(str) == filename
+    if "id" not in df.columns:
+        df["id"] = ""
+    if "input_text" not in df.columns:
+        df["input_text"] = ""
+
+    mask = (
+        (df["filename"].astype(str).str.strip() == filename)
+        & (df["id"].astype(str).str.strip() == rec_id)
+        & (df["input_text"].astype(str).str.strip() == rec_text)
+    )
     if mask.any():
         idx = df.index[mask][0]
         for k in CSV_COLUMNS:
@@ -213,6 +270,14 @@ def _upsert_label(df: pd.DataFrame, record: Dict[str, Any]) -> pd.DataFrame:
         return df
 
     return pd.concat([df, pd.DataFrame([record], columns=CSV_COLUMNS)], ignore_index=True)
+
+
+def _save_record_to_row(df: pd.DataFrame, row_index: Optional[int], record: Dict[str, Any]) -> pd.DataFrame:
+    if row_index is not None and row_index in df.index:
+        for k in CSV_COLUMNS:
+            df.at[row_index, k] = record.get(k, "" if k not in ("skipped", "abandon") else False)
+        return df
+    return _upsert_label(df, record)
 
 
 def _save_labels_df(df: pd.DataFrame) -> None:
@@ -251,7 +316,7 @@ def _init_session_state() -> None:
         "label_Intent": "",
         "label_Attitude": "",
         "rationale": "",
-        "last_loaded_filename": "",
+        "last_loaded_sample_key": "",
     }
     for k, v in defaults.items():
         if k not in st.session_state:
@@ -383,17 +448,11 @@ def _render_media_preview(file_path: Path, frame_width: int = PREVIEW_WIDTH, fra
             f'{base64.b64encode(raw).decode("ascii")}" alt="{file_path.name}" />'
         )
     elif _is_video(file_path):
+        # Use Streamlit native player to avoid stale DOM reuse where the video
+        # frame can stay on an old source while page index changes.
         mime = mime or "video/mp4"
-        media_html = (
-            '<video class="media-preview-element" controls preload="metadata">'
-            f'<source src="data:{mime};base64,{base64.b64encode(raw).decode("ascii")}" type="{mime}" />'
-            "</video>"
-        )
-        zoom_media_html = (
-            '<video class="media-zoom-element" controls preload="metadata">'
-            f'<source src="data:{mime};base64,{base64.b64encode(raw).decode("ascii")}" type="{mime}" />'
-            "</video>"
-        )
+        st.video(raw, format=mime)
+        return
     else:
         st.warning(f"Unsupported media type: {file_path.name}")
         return
@@ -626,15 +685,8 @@ div[data-testid="column"]:last-child [data-testid="stVerticalBlock"] { gap: 0.2r
     is_locked = bool(st.session_state.is_locked)
 
     labels_df = _load_labels_df()
-    by_name = _labels_index(labels_df)
-    allowed_filenames = {
-        str(v).strip()
-        for v in labels_df.get("filename", pd.Series(dtype=str)).tolist()
-        if str(v).strip()
-    }
-
-    media_files = _supported_media_files(allowed_filenames if allowed_filenames else None)
-    total = len(media_files)
+    sample_items = _labels_media_items(labels_df)
+    total = len(sample_items)
     if total == 0:
         st.warning(
             "No media files found for current labels. Please run import to download files into `images/`."
@@ -647,12 +699,20 @@ div[data-testid="column"]:last-child [data-testid="stVerticalBlock"] { gap: 0.2r
     current_index = int(st.session_state.current_index)
     current_index = max(0, min(current_index, total - 1))
     st.session_state.current_index = current_index
-    current_path = media_files[current_index]
+    current_item = sample_items[current_index]
+    current_row_index = current_item.get("row_index")
+    current_path = current_item["path"]
+    current_record = current_item.get("record")
 
-    # Auto-load previous annotations when switching files
-    if st.session_state.last_loaded_filename != current_path.name:
-        _load_record_into_inputs(by_name.get(current_path.name))
-        st.session_state.last_loaded_filename = current_path.name
+    # Auto-load previous annotations when switching sample item.
+    current_sample_key = (
+        f"{current_row_index}|{current_path.name}|"
+        f"{_safe_text((current_record or {}).get('id', ''))}|"
+        f"{_safe_text((current_record or {}).get('input_text', ''))}"
+    )
+    if st.session_state.last_loaded_sample_key != current_sample_key:
+        _load_record_into_inputs(current_record)
+        st.session_state.last_loaded_sample_key = current_sample_key
 
     # 鉁?Final safety: make sure text keys are strings right before rendering widgets
     _ensure_text_state(
@@ -870,11 +930,11 @@ div[data-testid="column"]:last-child [data-testid="stVerticalBlock"] { gap: 0.2r
             "label_Attitude": st.session_state.label_Attitude,
             "rationale": st.session_state.rationale,
             # Keep old skipped field untouched to avoid destructive overwrite semantics.
-            "skipped": by_name.get(current_path.name, {}).get("skipped", False),
+            "skipped": bool((current_record or {}).get("skipped", False)),
             # Dedicated abandon state for UI/export filtering.
             "abandon": bool(st.session_state.abandon_selected),
         }
-        labels_df = _upsert_label(labels_df, record)
+        labels_df = _save_record_to_row(labels_df, current_row_index, record)
         _save_labels_df(labels_df)
         _rerun()
 
@@ -924,12 +984,12 @@ div[data-testid="column"]:last-child [data-testid="stVerticalBlock"] { gap: 0.2r
             "label_Attitude": st.session_state.label_Attitude,
             "rationale": st.session_state.rationale,
             # Keep compatibility column stable; abandon state is stored independently.
-            "skipped": by_name.get(current_path.name, {}).get("skipped", False),
+            "skipped": bool((current_record or {}).get("skipped", False)),
             "abandon": bool(st.session_state.abandon_selected),
         }
-        labels_df = _upsert_label(labels_df, record)
+        labels_df = _save_record_to_row(labels_df, current_row_index, record)
         _save_labels_df(labels_df)
-        st.session_state.last_loaded_filename = ""  # Force reload on next file
+        st.session_state.last_loaded_sample_key = ""  # Force reload on next item
         _go(_next_index(current_index))
 
 
