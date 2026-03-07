@@ -39,12 +39,12 @@ CSV_COLUMNS = [
 
 # Edit these paths directly when you want to change default import target.
 DEFAULT_INPUT_PATH = Path(
-    r"C:\Users\xwhhh\Desktop\data_deal\Task\02_primary_assignments\day07\A_primary_day07.json"
+    r"D:\NUS\ACMm\Data-annotation\Task\02_primary_assignments\day08\Yu_primary_day08.json"
 )
 DEFAULT_OUTPUT_PATH = Path(
-    r"C:\Users\xwhhh\Desktop\data_deal\Task\02_primary_assignments\day07\A_primary_day07.csv"
+    r"D:\NUS\ACMm\Data-annotation\Task\02_primary_assignments\day08\Yu_primary_day08.csv"
 )
-DEFAULT_MEDIA_DIR = Path(r"C:\Users\xwhhh\Desktop\data_deal\images")
+DEFAULT_MEDIA_DIR = Path(r"D:\NUS\ACMm\Data-annotation\images")
 
 
 def _safe_text(value: Any) -> str:
