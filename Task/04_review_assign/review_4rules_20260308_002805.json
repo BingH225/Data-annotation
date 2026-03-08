@@ -1,0 +1,6930 @@
+{
+  "review_time": "2026-03-08T00:28:05",
+  "rules": [
+    "empty",
+    "forbidden_symbol(/ or parentheses)",
+    "placeholder",
+    "word_ge_5"
+  ],
+  "directory": "D:\\NUS\\ACMm\\Data-annotation\\Task\\04_review_assign",
+  "file_count": 8,
+  "files": [
+    {
+      "file_name": "A_primary_day08.csv",
+      "file_path": "D:\\NUS\\ACMm\\Data-annotation\\Task\\04_review_assign\\A_primary_day08.csv",
+      "encoding": "utf-8-sig",
+      "total_rows_in_file": 300,
+      "requested_range": [
+        1,
+        300
+      ],
+      "checked_range": [
+        1,
+        300
+      ],
+      "checked_rows": 300,
+      "non_compliant_rows": 24,
+      "rule_row_counts": {
+        "empty": 0,
+        "forbidden_symbol": 2,
+        "placeholder": 2,
+        "word_ge_5": 23
+      },
+      "issues": [
+        {
+          "file_row": 16,
+          "id": "intent_1723",
+          "field_issues": [
+            {
+              "field": "subject2",
+              "reasons": [
+                "forbidden_symbol",
+                "placeholder",
+                "word_ge_5"
+              ],
+              "value": "This entry is instructional and mentions roles that commonly act as speakers (e.g., 'the host'/'the audience'), which overlaps with 'the speaker'. Replace it with a single non-speaking role such as 'the bystander' or 'the passerby'."
+            }
+          ]
+        },
+        {
+          "file_row": 22,
+          "id": "intent_5532",
+          "field_issues": [
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "a commenter on the post"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "a follower of the account"
+            }
+          ]
+        },
+        {
+          "file_row": 35,
+          "id": "attitude_0003",
+          "field_issues": [
+            {
+              "field": "subject3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "coat draped over a chair"
+            }
+          ]
+        },
+        {
+          "file_row": 37,
+          "id": "intent_2796",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "men who wasted her time"
+            }
+          ]
+        },
+        {
+          "file_row": 38,
+          "id": "intent_6140",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "person who said something stupid"
+            }
+          ]
+        },
+        {
+          "file_row": 45,
+          "id": "attitude_0942",
+          "field_issues": [
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "a poster on the wall"
+            }
+          ]
+        },
+        {
+          "file_row": 49,
+          "id": "attitude_6833",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "woman in the lower panel"
+            }
+          ]
+        },
+        {
+          "file_row": 51,
+          "id": "affection_1312",
+          "field_issues": [
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the color of the shirt"
+            }
+          ]
+        },
+        {
+          "file_row": 74,
+          "id": "intent_1585",
+          "field_issues": [
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the group of party guests"
+            }
+          ]
+        },
+        {
+          "file_row": 78,
+          "id": "affection_3432",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "their attempt to look cool"
+            }
+          ]
+        },
+        {
+          "file_row": 87,
+          "id": "affection_1490",
+          "field_issues": [
+            {
+              "field": "subject1",
+              "reasons": [
+                "placeholder",
+                "word_ge_5"
+              ],
+              "value": "replace with 'the woman in the audience'"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "a man in the audience"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "a passerby in the crowd"
+            }
+          ]
+        },
+        {
+          "file_row": 117,
+          "id": "intent_1185",
+          "field_issues": [
+            {
+              "field": "subject3",
+              "reasons": [
+                "forbidden_symbol"
+              ],
+              "value": "street performer /entertainer"
+            }
+          ]
+        },
+        {
+          "file_row": 129,
+          "id": "affection_4258",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the child in the photo"
+            }
+          ]
+        },
+        {
+          "file_row": 165,
+          "id": "intent_1660",
+          "field_issues": [
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the wine bottle on counter"
+            }
+          ]
+        },
+        {
+          "file_row": 171,
+          "id": "affection_4816",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "friends tired of your politics"
+            }
+          ]
+        },
+        {
+          "file_row": 197,
+          "id": "affection_0444",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the person he is missing"
+            }
+          ]
+        },
+        {
+          "file_row": 225,
+          "id": "attitude_1782",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the man she's referring to"
+            },
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "a man sitting at the bar"
+            }
+          ]
+        },
+        {
+          "file_row": 230,
+          "id": "intent_1354",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "colleague who proposed the task"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "teammate offering to take task"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "manager who praised her suggestion"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "friend who offered to help"
+            }
+          ]
+        },
+        {
+          "file_row": 233,
+          "id": "attitude_3101",
+          "field_issues": [
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "people participating in a silent march"
+            }
+          ]
+        },
+        {
+          "file_row": 239,
+          "id": "affection_2142",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the man in the photo"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the person operating the camera"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the waiter holding a tray"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the elderly woman at dinner"
+            }
+          ]
+        },
+        {
+          "file_row": 249,
+          "id": "attitude_1475",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the historical atrocity of slavery"
+            }
+          ]
+        },
+        {
+          "file_row": 250,
+          "id": "attitude_6834",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "person offended by an online post"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "new member of the online community"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "browsing spectator in the discussion thread"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "longtime member of the online community"
+            }
+          ]
+        },
+        {
+          "file_row": 258,
+          "id": "attitude_1757",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "person considering calling the police"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "person planning to confront suspect"
+            }
+          ]
+        },
+        {
+          "file_row": 290,
+          "id": "affection_1230",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "Bernadette and the speaker's mom"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file_name": "A_Tan_primary_day07.csv",
+      "file_path": "D:\\NUS\\ACMm\\Data-annotation\\Task\\04_review_assign\\A_Tan_primary_day07.csv",
+      "encoding": "utf-8-sig",
+      "total_rows_in_file": 300,
+      "requested_range": [
+        1,
+        300
+      ],
+      "checked_range": [
+        1,
+        300
+      ],
+      "checked_rows": 300,
+      "non_compliant_rows": 23,
+      "rule_row_counts": {
+        "empty": 0,
+        "forbidden_symbol": 1,
+        "placeholder": 1,
+        "word_ge_5": 23
+      },
+      "issues": [
+        {
+          "file_row": 20,
+          "id": "attitude_4795",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "people not born in 1930s"
+            }
+          ]
+        },
+        {
+          "file_row": 62,
+          "id": "attitude_1728",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "people on their friends list"
+            }
+          ]
+        },
+        {
+          "file_row": 67,
+          "id": "intent_1765",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "other men at the club"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "friends laughing at his jokes"
+            }
+          ]
+        },
+        {
+          "file_row": 80,
+          "id": "attitude_2608",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "men ask for her number"
+            }
+          ]
+        },
+        {
+          "file_row": 91,
+          "id": "attitude_4817",
+          "field_issues": [
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "attendees at regional political rallies"
+            }
+          ]
+        },
+        {
+          "file_row": 113,
+          "id": "attitude_0042",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the man in blue shirt"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the woman at the table"
+            }
+          ]
+        },
+        {
+          "file_row": 119,
+          "id": "attitude_0180",
+          "field_issues": [
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the store manager and assistant"
+            }
+          ]
+        },
+        {
+          "file_row": 130,
+          "id": "intent_1600",
+          "field_issues": [
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the man in the background"
+            }
+          ]
+        },
+        {
+          "file_row": 138,
+          "id": "attitude_0694",
+          "field_issues": [
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the man in gray suit"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the woman in a red dress"
+            }
+          ]
+        },
+        {
+          "file_row": 145,
+          "id": "intent_5717",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "person who unliked the picture"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "someone who saw the post"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the person who liked this"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "someone who screenshotted the picture"
+            }
+          ]
+        },
+        {
+          "file_row": 147,
+          "id": "affection_2380",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "man with a man bun"
+            }
+          ]
+        },
+        {
+          "file_row": 154,
+          "id": "attitude_1395",
+          "field_issues": [
+            {
+              "field": "subject1",
+              "reasons": [
+                "forbidden_symbol",
+                "placeholder",
+                "word_ge_5"
+              ],
+              "value": "Replace with a non-coworker entity (e.g., 'a delivery driver')."
+            }
+          ]
+        },
+        {
+          "file_row": 168,
+          "id": "attitude_5669",
+          "field_issues": [
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "residents of the Baltic states"
+            }
+          ]
+        },
+        {
+          "file_row": 178,
+          "id": "affection_2855",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the woman in the photo"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the child in the foreground"
+            }
+          ]
+        },
+        {
+          "file_row": 189,
+          "id": "attitude_1574",
+          "field_issues": [
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "a server at the venue"
+            }
+          ]
+        },
+        {
+          "file_row": 205,
+          "id": "attitude_4813",
+          "field_issues": [
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "a young Arab male model"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "a traditional garment shop owner"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "a local religious community leader"
+            }
+          ]
+        },
+        {
+          "file_row": 224,
+          "id": "attitude_0065",
+          "field_issues": [
+            {
+              "field": "subject3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "video camera on a tripod"
+            }
+          ]
+        },
+        {
+          "file_row": 227,
+          "id": "attitude_0261",
+          "field_issues": [
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the woman with red bag"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the volunteer behind the table"
+            },
+            {
+              "field": "subject3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the passerby near the cars"
+            }
+          ]
+        },
+        {
+          "file_row": 268,
+          "id": "attitude_5633",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the person in the photo"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the account that posted it"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the photographer who took it"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the social media account owner"
+            }
+          ]
+        },
+        {
+          "file_row": 272,
+          "id": "intent_1040",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "people at the Twin Towers"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "crew members aboard the aircraft"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "families of the plane passengers"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "airport security and airline staff"
+            }
+          ]
+        },
+        {
+          "file_row": 283,
+          "id": "attitude_5963",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "woman shown in top image"
+            }
+          ]
+        },
+        {
+          "file_row": 295,
+          "id": "intent_1570",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the employee in the photo"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the communal office coffee maker"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the broken office copy machine"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the company's slow network server"
+            }
+          ]
+        },
+        {
+          "file_row": 296,
+          "id": "attitude_1225",
+          "field_issues": [
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the colleague in the foreground"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file_name": "Tan_primary_day08_001_150.csv",
+      "file_path": "D:\\NUS\\ACMm\\Data-annotation\\Task\\04_review_assign\\Tan_primary_day08_001_150.csv",
+      "encoding": "utf-8-sig",
+      "total_rows_in_file": 300,
+      "requested_range": [
+        1,
+        150
+      ],
+      "checked_range": [
+        1,
+        150
+      ],
+      "checked_rows": 150,
+      "non_compliant_rows": 21,
+      "rule_row_counts": {
+        "empty": 1,
+        "forbidden_symbol": 0,
+        "placeholder": 0,
+        "word_ge_5": 20
+      },
+      "issues": [
+        {
+          "file_row": 5,
+          "id": "intent_1541",
+          "field_issues": [
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the person in the doorway"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the phone on the counter"
+            }
+          ]
+        },
+        {
+          "file_row": 10,
+          "id": "affection_3875",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "people having kids or marrige"
+            }
+          ]
+        },
+        {
+          "file_row": 29,
+          "id": "attitude_5183",
+          "field_issues": [
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "faith leaders of other religions"
+            }
+          ]
+        },
+        {
+          "file_row": 35,
+          "id": "intent_1427",
+          "field_issues": [
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "male wearing plaid button-up shirt"
+            },
+            {
+              "field": "subject3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "woman checking phone by entrance"
+            }
+          ]
+        },
+        {
+          "file_row": 37,
+          "id": "attitude_5237",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "people who use prayer mats"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "people who buy novelty rugs"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "customers of carpet retail stores"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "buyers of novelty explosive devices"
+            }
+          ]
+        },
+        {
+          "file_row": 43,
+          "id": "intent_2148",
+          "field_issues": [
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "US defense policy think tanks"
+            }
+          ]
+        },
+        {
+          "file_row": 52,
+          "id": "attitude_2271",
+          "field_issues": [
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "moving to a new house"
+            }
+          ]
+        },
+        {
+          "file_row": 55,
+          "id": "attitude_6898",
+          "field_issues": [
+            {
+              "field": "target1",
+              "reasons": [
+                "empty"
+              ],
+              "value": ""
+            }
+          ]
+        },
+        {
+          "file_row": 58,
+          "id": "affection_0481",
+          "field_issues": [
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "a food and dating joke"
+            }
+          ]
+        },
+        {
+          "file_row": 79,
+          "id": "intent_4691",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the person who reported again"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the platform's automated flagging system"
+            }
+          ]
+        },
+        {
+          "file_row": 81,
+          "id": "attitude_0540",
+          "field_issues": [
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "a passerby outside the store"
+            }
+          ]
+        },
+        {
+          "file_row": 82,
+          "id": "intent_0455",
+          "field_issues": [
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the man on the left"
+            }
+          ]
+        },
+        {
+          "file_row": 88,
+          "id": "intent_1756",
+          "field_issues": [
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the man on the couch"
+            }
+          ]
+        },
+        {
+          "file_row": 96,
+          "id": "affection_0045",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "stacked boxes blocking the exit"
+            }
+          ]
+        },
+        {
+          "file_row": 99,
+          "id": "attitude_3610",
+          "field_issues": [
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "young adults exploring nightlife events"
+            }
+          ]
+        },
+        {
+          "file_row": 103,
+          "id": "attitude_1646",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "person expected to crack code"
+            }
+          ]
+        },
+        {
+          "file_row": 118,
+          "id": "affection_5020",
+          "field_issues": [
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "delivery drone making nighttime drop-offs"
+            }
+          ]
+        },
+        {
+          "file_row": 125,
+          "id": "attitude_6052",
+          "field_issues": [
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "person appearing in the post"
+            }
+          ]
+        },
+        {
+          "file_row": 126,
+          "id": "attitude_0871",
+          "field_issues": [
+            {
+              "field": "subject3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "a customer in the store"
+            }
+          ]
+        },
+        {
+          "file_row": 129,
+          "id": "intent_1552",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the person near the stairs"
+            },
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the man in the doorway"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the guest holding a helmet"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the man holding the helmet"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the man at the doorway"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the man in leather jacket"
+            }
+          ]
+        },
+        {
+          "file_row": 134,
+          "id": "affection_1072",
+          "field_issues": [
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "stopping at the coffee shop"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "driving back to the office"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file_name": "Tan_primary_day08_151_300.csv",
+      "file_path": "D:\\NUS\\ACMm\\Data-annotation\\Task\\04_review_assign\\Tan_primary_day08_151_300.csv",
+      "encoding": "utf-8-sig",
+      "total_rows_in_file": 300,
+      "requested_range": [
+        151,
+        300
+      ],
+      "checked_range": [
+        151,
+        300
+      ],
+      "checked_rows": 150,
+      "non_compliant_rows": 12,
+      "rule_row_counts": {
+        "empty": 0,
+        "forbidden_symbol": 2,
+        "placeholder": 0,
+        "word_ge_5": 10
+      },
+      "issues": [
+        {
+          "file_row": 218,
+          "id": "intent_1554",
+          "field_issues": [
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the man in the robe"
+            }
+          ]
+        },
+        {
+          "file_row": 233,
+          "id": "intent_4263",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the friend claiming to be tough"
+            }
+          ]
+        },
+        {
+          "file_row": 253,
+          "id": "affection_4019",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "person wanting to leave Islam"
+            },
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "person wanting to enter Islam"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "close family member offering comfort"
+            },
+            {
+              "field": "subject3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "observer smiling but not involved"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "family members at the gathering"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "immediate family and close friends"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "unrelated party guests in room"
+            }
+          ]
+        },
+        {
+          "file_row": 263,
+          "id": "attitude_4553",
+          "field_issues": [
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "fishing net floating in the water"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "rescue buoy on the dock"
+            },
+            {
+              "field": "subject3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "unoccupied boat seat with a backpack"
+            }
+          ]
+        },
+        {
+          "file_row": 267,
+          "id": "intent_0210",
+          "field_issues": [
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the person with the laptop"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the man in the gray jacket"
+            },
+            {
+              "field": "subject3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the woman in the background"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the manager by the counter"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the customer across the room"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the cashier behind the counter"
+            }
+          ]
+        },
+        {
+          "file_row": 271,
+          "id": "intent_3091",
+          "field_issues": [
+            {
+              "field": "subject1",
+              "reasons": [
+                "forbidden_symbol"
+              ],
+              "value": "social media post (status/update)"
+            }
+          ]
+        },
+        {
+          "file_row": 278,
+          "id": "intent_7411",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "forbidden_symbol"
+              ],
+              "value": "the texter / sender"
+            }
+          ]
+        },
+        {
+          "file_row": 289,
+          "id": "intent_1272",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the woman in the photo"
+            }
+          ]
+        },
+        {
+          "file_row": 290,
+          "id": "attitude_0943",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the person on the right"
+            },
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "a tall customer in a striped shirt"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the man in the background"
+            },
+            {
+              "field": "subject3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the shopper on the left"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the man in the background"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the shopper on the left"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "a customer in a yellow jacket"
+            }
+          ]
+        },
+        {
+          "file_row": 292,
+          "id": "attitude_6451",
+          "field_issues": [
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the celebrity appearing in the image"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the photographer's assistant in the photo"
+            }
+          ]
+        },
+        {
+          "file_row": 293,
+          "id": "affection_1340",
+          "field_issues": [
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the person filming the video"
+            }
+          ]
+        },
+        {
+          "file_row": 295,
+          "id": "affection_0440",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the girl in the dress"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the young man in suit"
+            },
+            {
+              "field": "subject3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the man with the glass"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file_name": "Wu_primary_day08.csv",
+      "file_path": "D:\\NUS\\ACMm\\Data-annotation\\Task\\04_review_assign\\Wu_primary_day08.csv",
+      "encoding": "utf-8-sig",
+      "total_rows_in_file": 300,
+      "requested_range": [
+        1,
+        300
+      ],
+      "checked_range": [
+        1,
+        300
+      ],
+      "checked_rows": 300,
+      "non_compliant_rows": 6,
+      "rule_row_counts": {
+        "empty": 0,
+        "forbidden_symbol": 0,
+        "placeholder": 1,
+        "word_ge_5": 5
+      },
+      "issues": [
+        {
+          "file_row": 6,
+          "id": "affection_2364",
+          "field_issues": [
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "a noisy crowd of tourists"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "a rowdy group of schoolchildren"
+            }
+          ]
+        },
+        {
+          "file_row": 18,
+          "id": "attitude_0376",
+          "field_issues": [
+            {
+              "field": "target3",
+              "reasons": [
+                "placeholder"
+              ],
+              "value": "generated distractor"
+            }
+          ]
+        },
+        {
+          "file_row": 40,
+          "id": "affection_3434",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "readers who might be mad"
+            }
+          ]
+        },
+        {
+          "file_row": 58,
+          "id": "affection_2839",
+          "field_issues": [
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "a pet of your own"
+            }
+          ]
+        },
+        {
+          "file_row": 79,
+          "id": "attitude_0315",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the woman in the blazer"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "woman in a patterned dress"
+            }
+          ]
+        },
+        {
+          "file_row": 121,
+          "id": "attitude_0554",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the other people in the scene"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file_name": "Yu_primary_day07.csv",
+      "file_path": "D:\\NUS\\ACMm\\Data-annotation\\Task\\04_review_assign\\Yu_primary_day07.csv",
+      "encoding": "utf-8-sig",
+      "total_rows_in_file": 300,
+      "requested_range": [
+        1,
+        300
+      ],
+      "checked_range": [
+        1,
+        300
+      ],
+      "checked_rows": 300,
+      "non_compliant_rows": 0,
+      "rule_row_counts": {
+        "empty": 0,
+        "forbidden_symbol": 0,
+        "placeholder": 0,
+        "word_ge_5": 0
+      },
+      "issues": []
+    },
+    {
+      "file_name": "Yu_primary_day08.csv",
+      "file_path": "D:\\NUS\\ACMm\\Data-annotation\\Task\\04_review_assign\\Yu_primary_day08.csv",
+      "encoding": "utf-8-sig",
+      "total_rows_in_file": 300,
+      "requested_range": [
+        1,
+        300
+      ],
+      "checked_range": [
+        1,
+        300
+      ],
+      "checked_rows": 300,
+      "non_compliant_rows": 0,
+      "rule_row_counts": {
+        "empty": 0,
+        "forbidden_symbol": 0,
+        "placeholder": 0,
+        "word_ge_5": 0
+      },
+      "issues": []
+    },
+    {
+      "file_name": "Zuo_day08.csv",
+      "file_path": "D:\\NUS\\ACMm\\Data-annotation\\Task\\04_review_assign\\Zuo_day08.csv",
+      "encoding": "utf-8-sig",
+      "total_rows_in_file": 300,
+      "requested_range": [
+        1,
+        300
+      ],
+      "checked_range": [
+        1,
+        300
+      ],
+      "checked_rows": 300,
+      "non_compliant_rows": 124,
+      "rule_row_counts": {
+        "empty": 0,
+        "forbidden_symbol": 10,
+        "placeholder": 3,
+        "word_ge_5": 120
+      },
+      "issues": [
+        {
+          "file_row": 1,
+          "id": "attitude_1389",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the teacher mocking a student"
+            },
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the student being publicly mocked"
+            },
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the student being called on"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the classmates observing the exchange"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the student's classroom speaking behavior"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the school classroom discipline rules"
+            }
+          ]
+        },
+        {
+          "file_row": 2,
+          "id": "intent_4522",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the poster making the sexual innuendo joke"
+            },
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the implied male sexual capability"
+            },
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the man chopping vegetables in the kitchen"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the smiling companion beside him"
+            },
+            {
+              "field": "subject3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the photographer of the kitchen scene"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the scene of two people cooking together"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the vegetables on the kitchen counter"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the cooking utensils in the kitchen"
+            }
+          ]
+        },
+        {
+          "file_row": 8,
+          "id": "attitude_0734",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the male employee giving a condescending compliment"
+            },
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the middle aged female customer being compared to her cohort"
+            },
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the middle aged female customer at the table"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the female store employee walking past"
+            },
+            {
+              "field": "subject3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the other shoppers in the store"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the male employee's own age cohort"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the overall group of store customers"
+            }
+          ]
+        },
+        {
+          "file_row": 10,
+          "id": "attitude_2542",
+          "field_issues": [
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the cook preparing the soup"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the kitchen assistant plating the dish"
+            },
+            {
+              "field": "subject3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the food photographer taking the picture"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the dumplings in the pot"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the foil covering cooking method"
+            }
+          ]
+        },
+        {
+          "file_row": 12,
+          "id": "intent_0054",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the woman stating she will not give anything"
+            },
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the group she refuses to give anything to"
+            },
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the woman with her back to the camera"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the store employee in the shop"
+            },
+            {
+              "field": "subject3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the other shoppers in the store"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the woman she is speaking to"
+            }
+          ]
+        },
+        {
+          "file_row": 14,
+          "id": "intent_1405",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the female employee sarcastically criticizing the display"
+            },
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the dystopian themed Christmas display"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the shoppers inside the store"
+            }
+          ]
+        },
+        {
+          "file_row": 17,
+          "id": "intent_1281",
+          "field_issues": [
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "replacing a light bulb in the front aisle"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "assembling a cardboard display at the checkout"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "repairing a shopping cart wheel in the parking lot"
+            }
+          ]
+        },
+        {
+          "file_row": 19,
+          "id": "affection_1103",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the female manager urging them to talk"
+            },
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the two coworkers being pushed to talk"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the shopper in the store"
+            },
+            {
+              "field": "subject3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the employee arranging merchandise nearby"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "Jeff giving an explanation alone"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the store merchandise display issue"
+            }
+          ]
+        },
+        {
+          "file_row": 20,
+          "id": "intent_1167",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the male manager downplaying the issue"
+            },
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the issue he is minimizing"
+            },
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the male employee sitting on the floor"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the shopper near the shelves"
+            },
+            {
+              "field": "subject3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the stock clerk restocking items"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the seated male employee himself"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the cleaning products on the shelf"
+            }
+          ]
+        },
+        {
+          "file_row": 25,
+          "id": "affection_0139",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the male employee complaining about corporate favoritism"
+            },
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the company policy favoring managers"
+            },
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the female employee lying in the hospital bed"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the hospital staff member taking notes"
+            },
+            {
+              "field": "subject3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the other patients in the hospital ward"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the condition of the coworker in the bed"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the hospital medical care arrangement"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the medical equipment in the room"
+            }
+          ]
+        },
+        {
+          "file_row": 26,
+          "id": "affection_3297",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "The political actors or decisions being criticized"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the coworkers seated around the conference table"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "forbidden_symbol",
+                "placeholder",
+                "word_ge_5"
+              ],
+              "value": "the audience the message is aimed at (e.g., local constituents or voters)"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the historical victims referenced in the caption"
+            }
+          ]
+        },
+        {
+          "file_row": 33,
+          "id": "intent_1895",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the claim that all men are dogs"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the upset woman sitting by the bed"
+            },
+            {
+              "field": "subject3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the men not shown in the scene"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the woman's current emotional state"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the woman's relationship with her father"
+            }
+          ]
+        },
+        {
+          "file_row": 35,
+          "id": "intent_2839",
+          "field_issues": [
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "musicians performing at the venue"
+            }
+          ]
+        },
+        {
+          "file_row": 36,
+          "id": "attitude_4885",
+          "field_issues": [
+            {
+              "field": "target2",
+              "reasons": [
+                "forbidden_symbol",
+                "word_ge_5"
+              ],
+              "value": "Gulf Cooperation Council (GCC) countries"
+            }
+          ]
+        },
+        {
+          "file_row": 40,
+          "id": "affection_4832",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the poster expressing defiance toward hate"
+            },
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the hate directed at a group"
+            },
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the hare depicted in the artwork"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the pair of snakes in the image"
+            },
+            {
+              "field": "subject3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the ancient artist who created the mural"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the snake figures in the scene"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the natural elements in the mural"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the ancient mural art style"
+            }
+          ]
+        },
+        {
+          "file_row": 41,
+          "id": "attitude_0333",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the claim that St. Louis has a female serial killer"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the claim that St. Louis is opening a new sports stadium"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the claim that St. Louis is expanding its public transit system"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the claim that St. Louis is hosting a major festival"
+            }
+          ]
+        },
+        {
+          "file_row": 42,
+          "id": "affection_1604",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "The basic white girl stereotype"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "The young urban hipster stereotype"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "The privileged suburban mom stereotype"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "The career-driven single woman stereotype"
+            }
+          ]
+        },
+        {
+          "file_row": 52,
+          "id": "affection_3045",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "people with hot summer bods"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "local lifeguards on the beach"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "ice cream vendors at shore"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "families building elaborate sandcastles together"
+            }
+          ]
+        },
+        {
+          "file_row": 53,
+          "id": "affection_5296",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "relaxing at home with his cat"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "watching TV at a friend's place"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "sipping coffee at a nearby café"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "working late at the office on his laptop"
+            }
+          ]
+        },
+        {
+          "file_row": 54,
+          "id": "attitude_5609",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the poster using an offensive comparison meme"
+            },
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the vulture feeding on the carcass"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the starving child in the image"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the issue of famine in Africa"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the vultures feeding on the carcass"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the natural scavenging behavior of animals"
+            }
+          ]
+        },
+        {
+          "file_row": 56,
+          "id": "affection_3800",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the poster criticizing historical racial labeling"
+            },
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the colonial naming system separating Black identities"
+            },
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the women standing in a line"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the photographer conducting the shoot"
+            },
+            {
+              "field": "subject3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the fashion brand campaign planner"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the group of women in the image"
+            }
+          ]
+        },
+        {
+          "file_row": 64,
+          "id": "intent_0612",
+          "field_issues": [
+            {
+              "field": "target2",
+              "reasons": [
+                "placeholder",
+                "word_ge_5"
+              ],
+              "value": "Replace with an unrelated object, e.g. 'the green watering can'."
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "placeholder",
+                "word_ge_5"
+              ],
+              "value": "Replace with a different person not described as 'in vest', e.g. 'the cashier at the counter'."
+            }
+          ]
+        },
+        {
+          "file_row": 66,
+          "id": "intent_1850",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the speaker or the survivor"
+            }
+          ]
+        },
+        {
+          "file_row": 68,
+          "id": "affection_0974",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the poster expressing panic about the skydive situation"
+            },
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the instructor suddenly yelling in Arabic"
+            },
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the skydiving instructor behind the participant"
+            },
+            {
+              "field": "subject3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the person filming the skydive"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the act of skydiving itself"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the tandem skydiving harness equipment"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the participant's terrified facial expression"
+            }
+          ]
+        },
+        {
+          "file_row": 70,
+          "id": "affection_5253",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "Stevie Wonder and his visual impairment"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "a veteran musician and his decades-long career"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "a legendary singer and his charitable work"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "an iconic artist and his musical legacy"
+            }
+          ]
+        },
+        {
+          "file_row": 71,
+          "id": "affection_0017",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the male employee complaining someone was not listening"
+            },
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the person who was not listening to him"
+            },
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the female coworker sitting across"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the customer shopping in the store"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the female coworker across from him"
+            }
+          ]
+        },
+        {
+          "file_row": 75,
+          "id": "affection_2446",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the woman in the photo"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the man in the photo"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the person pointing in photo"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the couple in the picture"
+            }
+          ]
+        },
+        {
+          "file_row": 78,
+          "id": "attitude_1267",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the female employee sarcastically assigning tasks"
+            },
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "Glenn whose walking style is mocked"
+            },
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the male employee Glenn in the wheelchair"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the customer standing by the table"
+            },
+            {
+              "field": "subject3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the volunteer near the booth"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the warehouse care package task"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the donation booth at the event"
+            }
+          ]
+        },
+        {
+          "file_row": 83,
+          "id": "affection_4553",
+          "field_issues": [
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the website or platform as an entity"
+            }
+          ]
+        },
+        {
+          "file_row": 85,
+          "id": "intent_7053",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "Public discourse or societal double standards regarding race and violence"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "An individual's expressed intent to carry out a violent attack"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "Mockery of personal frustration over ruined plans or timing"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "Calls or threats aimed at specific people or institutions"
+            }
+          ]
+        },
+        {
+          "file_row": 89,
+          "id": "affection_2112",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "forbidden_symbol"
+              ],
+              "value": "me (poster)"
+            }
+          ]
+        },
+        {
+          "file_row": 91,
+          "id": "attitude_0825",
+          "field_issues": [
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "survivors of a natural disaster"
+            }
+          ]
+        },
+        {
+          "file_row": 92,
+          "id": "intent_5028",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "people who would reject them"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "journalists reporting neutrally on their activities"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "third-party fact-checkers reviewing their claims"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "their loyal supporters and friends"
+            }
+          ]
+        },
+        {
+          "file_row": 93,
+          "id": "affection_4614",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "forbidden_symbol"
+              ],
+              "value": "birthday recipient ('shawty')"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "forbidden_symbol"
+              ],
+              "value": "party host (birthday organizer)"
+            }
+          ]
+        },
+        {
+          "file_row": 95,
+          "id": "attitude_1307",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the female manager encouraging a coworker to try"
+            },
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "Dina being urged to try"
+            },
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the shopper passing with a cart"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the store employee Dina standing beside her"
+            },
+            {
+              "field": "subject3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the cashier employee in the store"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the group of store customers"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the store daily work schedule"
+            }
+          ]
+        },
+        {
+          "file_row": 97,
+          "id": "attitude_3901",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "people who fear the diverse group but not armed police"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "residents who criticize multicultural events yet oppose militarized police tactics"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "residents who distrust both community organizers and police, blaming institutions for neighborhood decline"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "voters who favor civil liberties and community dialogue despite concerns about changing neighborhood demographics"
+            }
+          ]
+        },
+        {
+          "file_row": 98,
+          "id": "attitude_1947",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the people overly wary of passing strangers"
+            }
+          ]
+        },
+        {
+          "file_row": 99,
+          "id": "intent_0803",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "white women in interracial relationships"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "black fathers in interracial relationships"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "white men dating black women"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "children born to interracial parents"
+            }
+          ]
+        },
+        {
+          "file_row": 101,
+          "id": "attitude_5504",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "forbidden_symbol"
+              ],
+              "value": "poster / meme author"
+            }
+          ]
+        },
+        {
+          "file_row": 104,
+          "id": "affection_0734",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the poster using a racial stereotype meme"
+            },
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the Black boy implied to have stolen the bike"
+            },
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the father helping the child ride"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the child riding the bicycle"
+            },
+            {
+              "field": "subject3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the passerby near the lake"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the scene of a child learning to ride"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the father encouraging the child"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the outdoor bike riding activity"
+            }
+          ]
+        },
+        {
+          "file_row": 105,
+          "id": "intent_1218",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the woman impatiently shutting him down"
+            },
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "Eric being told to shut up"
+            },
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the man Eric being addressed"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the male guest sitting behind them"
+            },
+            {
+              "field": "subject3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the restaurant staff member at the event"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the other guests at the event"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the raffle activity at the event"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the box she is holding"
+            }
+          ]
+        },
+        {
+          "file_row": 106,
+          "id": "attitude_1124",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the person referred to as them"
+            }
+          ]
+        },
+        {
+          "file_row": 109,
+          "id": "affection_2630",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the tanning salon gift certificate"
+            }
+          ]
+        },
+        {
+          "file_row": 111,
+          "id": "intent_0882",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the woman reassuring the other person to take their time"
+            },
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the person she reassures not to rush"
+            },
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the man in the suit beside her"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the restaurant server in the background"
+            },
+            {
+              "field": "subject3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the other diners in the restaurant"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the man standing beside her"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the dining atmosphere in the restaurant"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the process of ordering food"
+            }
+          ]
+        },
+        {
+          "file_row": 113,
+          "id": "affection_1328",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the man responding with sarcasm"
+            },
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the person he sarcastically implies should know"
+            },
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the man in the sports jersey beside him"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the staff member behind the counter"
+            },
+            {
+              "field": "subject3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the customer waiting in line"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the friend standing beside him"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the service process at the counter"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the customers waiting for service"
+            }
+          ]
+        },
+        {
+          "file_row": 117,
+          "id": "affection_0221",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the poster joking about going to hell"
+            },
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the religious idea of punishment for sinners"
+            },
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the sleeping baby on the bed"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the parent caring for the baby"
+            },
+            {
+              "field": "subject3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the photographer capturing the baby"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the baby's peaceful sleeping state"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the bedroom setting around the baby"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the baby's usual sleeping routine"
+            }
+          ]
+        },
+        {
+          "file_row": 121,
+          "id": "attitude_1715",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the woman proposing to make the call"
+            },
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the decision to call those people"
+            },
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the short haired man sitting at the table"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the blonde woman seated at the table"
+            },
+            {
+              "field": "subject3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the cook working in the kitchen"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the short haired man at the table"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the dinner gathering at the table"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the food preparation in the kitchen"
+            }
+          ]
+        },
+        {
+          "file_row": 122,
+          "id": "attitude_5019",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "green card holders or immigrants"
+            }
+          ]
+        },
+        {
+          "file_row": 125,
+          "id": "affection_3422",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "The proverb and the AIDS-related wordplay context"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "A parody of a public health poster about general hygiene"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "A humorous meme featuring animal eating fruit"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "An image caption blending profanity and humor"
+            }
+          ]
+        },
+        {
+          "file_row": 127,
+          "id": "attitude_4897",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the meme poster expressing the judgment"
+            },
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the person framed as having no cure"
+            }
+          ]
+        },
+        {
+          "file_row": 130,
+          "id": "intent_1662",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the meme poster delivering the insult"
+            },
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the formerly cool person being mocked as ruined"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the person who took the picture"
+            }
+          ]
+        },
+        {
+          "file_row": 132,
+          "id": "affection_3605",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the meme poster expressing the judgment"
+            },
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "women accused of showing skin for attention"
+            },
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the red haired woman holding the vacuum"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the man lying on the tilted couch"
+            },
+            {
+              "field": "subject3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the little girl sitting on the floor"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the red haired woman holding the vacuum"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the household living room setting"
+            }
+          ]
+        },
+        {
+          "file_row": 133,
+          "id": "affection_0638",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the female employee expressing skepticism"
+            },
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the claim made by the male employee"
+            },
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the male employee facing away from the camera"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the customer near the freezer section"
+            },
+            {
+              "field": "subject3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the store manager in the supermarket"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the products displayed in the freezer"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the work schedule of store employees"
+            }
+          ]
+        },
+        {
+          "file_row": 137,
+          "id": "affection_3633",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the meme poster making the dark insinuation"
+            },
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the man peeling fruit on the grass"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the historical figure in the picnic scene"
+            },
+            {
+              "field": "subject3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the picnic participant in the vintage photo"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the picnic activity on the grass"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the fruit in the man's hand"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the outdoor leisure scene in the vintage photo"
+            }
+          ]
+        },
+        {
+          "file_row": 138,
+          "id": "attitude_2550",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the meme poster with the sudden baking impulse"
+            },
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the sudden urge to bake something"
+            },
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the suited man riding the white horse"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the horse rider in the desert scene"
+            },
+            {
+              "field": "subject3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the outdoor rider on the white horse"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the act of riding a horse in the desert"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the riding posture of the suited man"
+            }
+          ]
+        },
+        {
+          "file_row": 139,
+          "id": "attitude_1270",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "The stereotyped Arab or Muslim group implied"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "a group of close friends"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "a circle of online gamers"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "a group of teenage pranksters"
+            }
+          ]
+        },
+        {
+          "file_row": 146,
+          "id": "attitude_1432",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the male employee expressing disagreement"
+            },
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the diaper related plan in the team discussion"
+            },
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the brunette female coworker on the left"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the female employee in a blue uniform on the right"
+            },
+            {
+              "field": "subject3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the curly haired employee seated at the table"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the break area near the vending machine"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the workplace discussion atmosphere at the table"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the routine duties of store employees"
+            }
+          ]
+        },
+        {
+          "file_row": 148,
+          "id": "attitude_2125",
+          "field_issues": [
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "user who uploaded the image"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "fictional character portrayed in image"
+            }
+          ]
+        },
+        {
+          "file_row": 149,
+          "id": "affection_0075",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the female employee announcing the death"
+            },
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the older male employee walking to the vending machine"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the male employee writing at the table"
+            },
+            {
+              "field": "subject3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the other store employees in the break area"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the workplace discussion in the break area"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the break activity near the vending machine"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the daily work schedule of store employees"
+            }
+          ]
+        },
+        {
+          "file_row": 155,
+          "id": "attitude_3882",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "person who stays with an unfaithful male partner"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "friend who remains silent while a partner cheats"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "bystander who normalizes infidelity in others' romantic relationships"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "online follower who praises staying despite partner's cheating"
+            }
+          ]
+        },
+        {
+          "file_row": 157,
+          "id": "attitude_6368",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "forbidden_symbol"
+              ],
+              "value": "speaker (meme author)"
+            }
+          ]
+        },
+        {
+          "file_row": 158,
+          "id": "attitude_0105",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the blonde female employee expressing frustration"
+            },
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the coworkers' chaotic behavior she criticizes"
+            },
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the male employee standing on the right"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the warehouse worker carrying a pillow in the background"
+            },
+            {
+              "field": "subject3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the other coworkers in the store"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the store's daily work schedule"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the warehouse stock handling tasks"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the routine conversations among store staff"
+            }
+          ]
+        },
+        {
+          "file_row": 165,
+          "id": "attitude_0921",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the meme poster making the crude taunt"
+            },
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the person targeted by the sexual taunt"
+            },
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the middle aged man drinking beer"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the male tourist relaxing by the water"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the beer bottle in the man's hand"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the man's act of drinking"
+            }
+          ]
+        },
+        {
+          "file_row": 166,
+          "id": "affection_1424",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the woman in the blue dress expressing anger"
+            },
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the person she is angry at"
+            },
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the older short haired woman speaking with open arms"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the other customers in the café"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the cake displayed in the café"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the greeting from the older woman"
+            }
+          ]
+        },
+        {
+          "file_row": 168,
+          "id": "intent_1917",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the short haired woman defending herself"
+            },
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the accusation that she is out of control"
+            },
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the person she is questioning"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the other roommates in the kitchen"
+            },
+            {
+              "field": "subject3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the neighbors in the apartment"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the food on the kitchen counter"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the cleaning tool in her hand"
+            }
+          ]
+        },
+        {
+          "file_row": 171,
+          "id": "affection_4063",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "you and your best friend"
+            },
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the person they both hate"
+            },
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "me and my gym buddy"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "two coworkers from the office"
+            },
+            {
+              "field": "subject3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "my sister and her boyfriend"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "their mutual ex from college"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the neighbor with loud music"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the coworker who takes credit"
+            }
+          ]
+        },
+        {
+          "file_row": 173,
+          "id": "attitude_5467",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "people who demand others share their beliefs"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "social media personalities promoting products or brands"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "online moderators enforcing community rules"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "political campaigners pushing for policy changes"
+            }
+          ]
+        },
+        {
+          "file_row": 174,
+          "id": "intent_1320",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the meme poster expressing mockery"
+            },
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the stereotyped Chinese restaurant waiter accent"
+            },
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the cat portrayed as a restaurant waiter"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the customer placing an order"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the act of ordering food"
+            }
+          ]
+        },
+        {
+          "file_row": 176,
+          "id": "affection_0682",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the male customer recounting the near skid"
+            },
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the near accident of skidding into a pet cemetery"
+            },
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the female employee handling a bag"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the other customers in the store"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the snowy weather outside the store"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the ground conditions at the store entrance"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the shopping bag held by the employee"
+            }
+          ]
+        },
+        {
+          "file_row": 177,
+          "id": "intent_0050",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the male employee prompting her to read the note"
+            },
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the note on the locker"
+            },
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the female employee holding a green bag"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the other employees near the lockers"
+            },
+            {
+              "field": "subject3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the customer by the vending machine"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the green tote bag in her hand"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the snacks inside the vending machine"
+            }
+          ]
+        },
+        {
+          "file_row": 178,
+          "id": "intent_1749",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the man in the red vest declaring he will not lie"
+            },
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the request to hide the truth from someone"
+            },
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the man in the striped shirt listening"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the other roommates in the kitchen"
+            },
+            {
+              "field": "subject3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the neighbors in the background"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the mug rack in the kitchen"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the casual conversation between the two men"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the household chores in the kitchen"
+            }
+          ]
+        },
+        {
+          "file_row": 182,
+          "id": "intent_1679",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the short haired woman issuing the challenge"
+            },
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the person challenged to open the puzzle box"
+            },
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the man standing with folded arms"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the woman standing opposite them"
+            },
+            {
+              "field": "subject3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the other onlookers in the room"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the puzzle box object in the room"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the science fiction collectibles on the shelf"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the puzzle game rules in the room"
+            }
+          ]
+        },
+        {
+          "file_row": 187,
+          "id": "affection_2544",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the meme poster issuing the threat"
+            },
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the person who finishes last in the race"
+            },
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the man running in front"
+            },
+            {
+              "field": "subject3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the bystander at the end of the passage"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the running race in the tunnel"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the leading runner in the race"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the exit at the end of the tunnel"
+            }
+          ]
+        },
+        {
+          "file_row": 188,
+          "id": "attitude_5325",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "People who don't respond to DMs"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "users who ignore public comments or mentions on posts"
+            }
+          ]
+        },
+        {
+          "file_row": 192,
+          "id": "affection_1009",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the female manager expressing approval"
+            },
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the male employee being encouraged"
+            },
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the male employee standing silently"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the customer in the accessories section"
+            },
+            {
+              "field": "subject3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the other coworkers in the store"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the store's current sales performance"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the overall staff morale in the store"
+            }
+          ]
+        },
+        {
+          "file_row": 193,
+          "id": "attitude_1096",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the male employee addressing the coworker"
+            },
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the female coworker he is speaking to"
+            },
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the female employee facing away"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the customer near the checkout"
+            },
+            {
+              "field": "subject3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the other store employees in the clothing area"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the clothing merchandise on the rack"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the shoppers inside the store"
+            }
+          ]
+        },
+        {
+          "file_row": 194,
+          "id": "intent_1636",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the man in the blue shirt declaring his relief"
+            },
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the woman he is speaking to"
+            },
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the long haired woman sitting across from him"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the other diners in the restaurant"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the drinks on the table"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the conversations of other diners"
+            }
+          ]
+        },
+        {
+          "file_row": 196,
+          "id": "intent_2993",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the person in the image"
+            }
+          ]
+        },
+        {
+          "file_row": 198,
+          "id": "affection_1976",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "forbidden_symbol"
+              ],
+              "value": "memes / online content"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the farm worker in the field"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the ripe wheat in the field"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the agricultural harvest in the field"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the harvesting operation of the machine"
+            }
+          ]
+        },
+        {
+          "file_row": 200,
+          "id": "attitude_1654",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the man questioning the reason for the delay"
+            },
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the suspicious explanation for the lateness"
+            },
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the friend being questioned about the delay"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the deceased woman being mentioned"
+            },
+            {
+              "field": "subject3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the other friends in the room"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the leather armchair in the room"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the burial event being referenced"
+            }
+          ]
+        },
+        {
+          "file_row": 205,
+          "id": "intent_1382",
+          "field_issues": [
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "social media platform moderators and administrators"
+            }
+          ]
+        },
+        {
+          "file_row": 207,
+          "id": "affection_1166",
+          "field_issues": [
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the man holding the magazine"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the staff member delivering the notice"
+            },
+            {
+              "field": "subject3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the neighbor living in the same building"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the magazine in her hand"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the casual conversation between the two"
+            }
+          ]
+        },
+        {
+          "file_row": 209,
+          "id": "intent_2558",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the father giving a sarcastic explanation about discrimination"
+            },
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the social hatred directed at their group"
+            },
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the young boy asking the question"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the passerby in the park"
+            },
+            {
+              "field": "subject3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the other parents in the park"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the body odor problem of the child"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the father son family relationship"
+            }
+          ]
+        },
+        {
+          "file_row": 210,
+          "id": "affection_5099",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the poster deliberately sharing the controversial image"
+            },
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the request to remove the image"
+            },
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the activist requesting the image be removed"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the performer wearing the pig mask"
+            },
+            {
+              "field": "subject3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the internet user viewing the post"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the pig mask shown in the image"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the act of photographing the scene"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the orange background visual style"
+            }
+          ]
+        },
+        {
+          "file_row": 211,
+          "id": "attitude_1045",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the female employee asking for advice"
+            },
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the work problem she needs to handle"
+            },
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the male coworker being asked for help"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the other customers in the store"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the male coworker’s personal opinion"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the store’s daily operating environment"
+            }
+          ]
+        },
+        {
+          "file_row": 213,
+          "id": "intent_6964",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the group of women being blamed"
+            },
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the young girl being comforted"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the older woman comforting the girl"
+            },
+            {
+              "field": "subject3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the bystanders in the scene"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the specific incident that happened"
+            }
+          ]
+        },
+        {
+          "file_row": 216,
+          "id": "affection_0874",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "questioning someone's trust or intentions"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "expressing playful teasing or sarcasm"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "seeking clarification about factual claims"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "offering comfort or emotional support"
+            }
+          ]
+        },
+        {
+          "file_row": 217,
+          "id": "attitude_6636",
+          "field_issues": [
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "mass shooting incidents in America"
+            }
+          ]
+        },
+        {
+          "file_row": 219,
+          "id": "affection_1070",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the male employee claiming he already knew the news"
+            },
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the piece of news he claims to have known earlier"
+            },
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the seated male coworker speaking toward him"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the other store employees in the meeting"
+            },
+            {
+              "field": "subject3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the customers in the store"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the work discussion in the room"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the safety notice on the wall"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the store’s daily work schedule"
+            }
+          ]
+        },
+        {
+          "file_row": 221,
+          "id": "attitude_1653",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the man sarcastically evaluating the school retention measure"
+            },
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the measure meant to keep kids in school"
+            },
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the blonde woman standing nearby"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the red-haired woman moving in the background"
+            },
+            {
+              "field": "subject3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the other friends in the living room"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the casual conversation atmosphere in the room"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the behavior of the standing woman"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the furniture arrangement in the living room"
+            }
+          ]
+        },
+        {
+          "file_row": 222,
+          "id": "affection_0895",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the male manager downplaying the issue"
+            },
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the issue he claims is not serious"
+            },
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the employee sitting by the shelf"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the shopper in the aisle"
+            }
+          ]
+        },
+        {
+          "file_row": 223,
+          "id": "intent_1532",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the man using a sarcastic analogy to challenge the assumption"
+            },
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the assumption that the box label proves its contents"
+            },
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the coworker questioning the box contents"
+            },
+            {
+              "field": "subject3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the warehouse worker moving the boxes"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the kitchen label on the box"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the yellow stickers on boxes"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the physical task of carrying boxes"
+            }
+          ]
+        },
+        {
+          "file_row": 225,
+          "id": "affection_0189",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "forbidden_symbol"
+              ],
+              "value": "the woman (speaker)"
+            },
+            {
+              "field": "subject1",
+              "reasons": [
+                "forbidden_symbol"
+              ],
+              "value": "the man (listener)"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "forbidden_symbol"
+              ],
+              "value": "the man (companion)"
+            },
+            {
+              "field": "subject3",
+              "reasons": [
+                "forbidden_symbol"
+              ],
+              "value": "the man (guest)"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "placeholder",
+                "word_ge_5"
+              ],
+              "value": "Replace with a non-social, non-contextual distractor such as 'microphone feedback'."
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "placeholder",
+                "word_ge_5"
+              ],
+              "value": "Replace with a non-social, non-contextual distractor such as 'lighting level'."
+            }
+          ]
+        },
+        {
+          "file_row": 228,
+          "id": "intent_1929",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the elderly woman criticizing someone’s behavior with exaggerated examples"
+            },
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the reckless party behavior being criticized"
+            },
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the family member being criticized"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the other relatives in the house"
+            },
+            {
+              "field": "subject3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the guests at the party"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the family gathering on New Year’s Eve"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the swimming pool in the house"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the punch bowl in the living room"
+            }
+          ]
+        },
+        {
+          "file_row": 229,
+          "id": "intent_1204",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the meeting duties previously handled by Amy"
+            },
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the woman in the blue polo"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the toaster ovens on the shelf"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the safety notice in the warehouse"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the employees’ routine restocking tasks"
+            }
+          ]
+        },
+        {
+          "file_row": 233,
+          "id": "attitude_2869",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "man in orange prison uniform"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "construction worker wearing orange vest"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "security guard in orange vest"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "traffic controller in orange jacket"
+            }
+          ]
+        },
+        {
+          "file_row": 234,
+          "id": "affection_4927",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "The reputation of the Catholic Church and sexual abuse scandals"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "political corruption and government scandals"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "Doctrinal controversies and theological disputes within the Catholic Church"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "scandal involving a national charity organization"
+            }
+          ]
+        },
+        {
+          "file_row": 235,
+          "id": "attitude_1680",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the speaker that is the person saying the line"
+            },
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the people being referred to as Satan's minions"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "a friend at the table"
+            },
+            {
+              "field": "subject3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "a bystander in the crowd"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "decorative props or signage at the venue"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "background music or ambient noise"
+            }
+          ]
+        },
+        {
+          "file_row": 239,
+          "id": "intent_2759",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "forbidden_symbol",
+                "word_ge_5"
+              ],
+              "value": "Middle Eastern/African men in traditional attire portrayed as incongruent with hip-hop stereotypes"
+            },
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the man in the white robe at the front"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the man in the green robe in the line"
+            },
+            {
+              "field": "subject3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the man in the suit at the back"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the traditional robes worn by the men"
+            }
+          ]
+        },
+        {
+          "file_row": 242,
+          "id": "affection_0434",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the customer complaining about the wait for his order"
+            },
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the pumpkin spice salsa order he has not received"
+            },
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the female store employee sitting on the counter"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the barista preparing drinks in the store"
+            },
+            {
+              "field": "subject3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the other customers waiting in line"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the checkout equipment on the counter"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the coffee drink menu in the shop"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the diners sitting inside the shop"
+            }
+          ]
+        },
+        {
+          "file_row": 243,
+          "id": "attitude_3515",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "person who went on the date"
+            },
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the friend who accompanied them"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the person who took it"
+            },
+            {
+              "field": "subject3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the confidant they vented to"
+            }
+          ]
+        },
+        {
+          "file_row": 244,
+          "id": "affection_3226",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "people who touch the poster's head"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "congregation members standing around him and applauding"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "other clergy standing beside him and reciting prayers"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "fellow politicians laughing and teasing him verbally"
+            }
+          ]
+        },
+        {
+          "file_row": 245,
+          "id": "attitude_1129",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the female store employee mocking her coworker’s humor"
+            },
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the coworker’s joke he thinks is funny"
+            },
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the customer checking out at the counter"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the male store employee taking notes"
+            },
+            {
+              "field": "subject3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the customer browsing items in the store"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the scanner device on the counter"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the routine work happening in the store"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the shopping basket held by a customer"
+            }
+          ]
+        },
+        {
+          "file_row": 248,
+          "id": "affection_3505",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "The stereotyped depiction of “white people” in a bar setting"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "A clichéd portrayal of middle-aged men gossiping at a barber shop"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "An exaggerated image of suburban family enjoying brunch at cafe"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "A stereotypical depiction of young professionals glued to their smartphones"
+            }
+          ]
+        },
+        {
+          "file_row": 249,
+          "id": "affection_0648",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "ending one's life of crime"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "finishing a long night shift"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "starting a career in surgery"
+            }
+          ]
+        },
+        {
+          "file_row": 252,
+          "id": "attitude_0983",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the young woman reacting to Carol’s remark"
+            },
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the store employee talking with a customer"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the customer walking through the store"
+            },
+            {
+              "field": "subject3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the female employee arranging merchandise"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the promotional poster displayed in the store"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the red bag carried by the woman"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the product shelves in the store"
+            }
+          ]
+        },
+        {
+          "file_row": 253,
+          "id": "attitude_0918",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the female store employee comforting Noam"
+            },
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the male store employee being comforted"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the worker organizing inventory in the stockroom"
+            },
+            {
+              "field": "subject3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the customer passing through the store"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the cardboard box on the table"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the merchandise inventory in the storage area"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the monitor in the store"
+            }
+          ]
+        },
+        {
+          "file_row": 256,
+          "id": "affection_1794",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "lost friend on that beach"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "lost dog on that beach"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "lost phone on that beach"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "found wallet on that beach"
+            }
+          ]
+        },
+        {
+          "file_row": 258,
+          "id": "attitude_2637",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the visitors giving a thumbs-up gesture"
+            },
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the child’s idea about joining the Avengers"
+            },
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the hospitalized child with cancer"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the medical staff in the hospital"
+            },
+            {
+              "field": "subject3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the family members waiting outside the ward"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the act of visiting a patient in the hospital"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the treatment plan in the hospital room"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the group interaction among the visitors"
+            }
+          ]
+        },
+        {
+          "file_row": 259,
+          "id": "affection_3170",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the person teasing a friend about choosing the wrong vehicle"
+            },
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the Ford vehicle the friend bought"
+            },
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the driver taking an off-road vehicle through the mountains"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the driver of the sedan stuck on the muddy road"
+            },
+            {
+              "field": "subject3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the tourist looking at the mountain scenery"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the experience of off-road driving in the mountains"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the off-road scene in the mountain river"
+            }
+          ]
+        },
+        {
+          "file_row": 260,
+          "id": "attitude_4758",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "forbidden_symbol",
+                "word_ge_5"
+              ],
+              "value": "shooter and bomber (violent perpetrators)"
+            }
+          ]
+        },
+        {
+          "file_row": 261,
+          "id": "attitude_0550",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "Muslims or religious students depicted"
+            }
+          ]
+        },
+        {
+          "file_row": 262,
+          "id": "intent_1455",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the speaker that is the standing chef"
+            },
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the person eating and seated"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the woman in the yellow vest"
+            }
+          ]
+        },
+        {
+          "file_row": 273,
+          "id": "attitude_0088",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the employee assigned to organize the documents"
+            },
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the sections of the documents to be highlighted"
+            },
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the manager giving the assignment"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the telephone on the desk"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the folders stored in the cabinet"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the stationery items on the desk"
+            }
+          ]
+        },
+        {
+          "file_row": 277,
+          "id": "attitude_1114",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "person complaining about their day"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "person sharing a funny story"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "person celebrating a recent achievement"
+            }
+          ]
+        },
+        {
+          "file_row": 279,
+          "id": "affection_0937",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the male store employee suggesting they relax"
+            },
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the plan for them to sit back and relax"
+            },
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the female store employee sitting beside him with an uneasy expression"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the older man in the background looking at his phone"
+            },
+            {
+              "field": "subject3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the worker moving boxes in the warehouse area"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the phone in the man’s hand"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the stacked boxes in the warehouse"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the wooden bench they are sitting on"
+            }
+          ]
+        },
+        {
+          "file_row": 281,
+          "id": "attitude_6460",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "women suffer in family violence"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "men suffer in family violence"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "children suffer in family violence"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "domestic abusers cause family harm"
+            }
+          ]
+        },
+        {
+          "file_row": 283,
+          "id": "affection_0600",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the male store employee surprised by his coworker’s tone"
+            },
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the female store employee who just spoke sarcastically"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the customer trying on glasses in the store"
+            },
+            {
+              "field": "subject3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the employee arranging items at the counter"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the sunglasses displayed on the counter"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the clothing display in the store"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the customers’ shopping activity in the store"
+            }
+          ]
+        },
+        {
+          "file_row": 284,
+          "id": "intent_1637",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the man complaining about the unfair gifts"
+            },
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the ugly itchy sweater he received"
+            },
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the family member who sent the package"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the woman sitting on the couch with a drink"
+            },
+            {
+              "field": "subject3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the person organizing the bookshelf in the room"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the new car his brother received"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the cardboard box in the living room"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the red blanket on the couch"
+            }
+          ]
+        },
+        {
+          "file_row": 289,
+          "id": "affection_3900",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the behavior of men being like dogs"
+            },
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the dog sitting in the living room"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the person returning home to the messy living room"
+            },
+            {
+              "field": "subject3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the pet that made the mess on the couch"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the feathers scattered on the floor"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the messy arrangement of furniture in the room"
+            }
+          ]
+        },
+        {
+          "file_row": 291,
+          "id": "attitude_1345",
+          "field_issues": [
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "Holocaust victims or Jewish victims"
+            }
+          ]
+        },
+        {
+          "file_row": 292,
+          "id": "affection_0434",
+          "field_issues": [
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "a staged friendship to gain attention"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "a rivalry fueled by romantic interest"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "a casual bond over shared attraction"
+            }
+          ]
+        },
+        {
+          "file_row": 296,
+          "id": "intent_0005",
+          "field_issues": [
+            {
+              "field": "subject",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the man hit in the face with a yam"
+            },
+            {
+              "field": "target",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the yam thrown by the other person"
+            },
+            {
+              "field": "subject1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the female employee sitting beside him"
+            },
+            {
+              "field": "subject2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the elderly couple shown in the poster"
+            },
+            {
+              "field": "subject3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the customer arranging items near the shelf"
+            },
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the ice pack pressed against his head"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the medicine displayed on the shelf"
+            },
+            {
+              "field": "target3",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "the promotional poster on the wall"
+            }
+          ]
+        },
+        {
+          "file_row": 300,
+          "id": "intent_0502",
+          "field_issues": [
+            {
+              "field": "target1",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "political parties and secular NGOs"
+            },
+            {
+              "field": "target2",
+              "reasons": [
+                "word_ge_5"
+              ],
+              "value": "secular humanist organizations and regional ethnic groups"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

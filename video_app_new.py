@@ -15,7 +15,7 @@ from PIL import Image
 # Configuration
 # =========================
 MEDIA_DIR = Path("images")  # Directory containing images and videos
-LABELS_CSV = Path(r"D:\NUS\ACMm\Data-annotation\Task\02_primary_assignments\day08\Yu_primary_day08.csv")
+LABELS_CSV = Path(r"D:\NUS\ACMm\Data-annotation\Task\02_primary_assignments\day07\Yu_primary_day07.csv")
 PREVIEW_WIDTH = 280
 PREVIEW_HEIGHT = 220
 
