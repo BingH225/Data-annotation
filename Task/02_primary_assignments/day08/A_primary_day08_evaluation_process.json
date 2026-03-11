@@ -1,0 +1,9 @@
+{
+  "input_json": "Task\\02_primary_assignments\\day08\\A_primary_day08.json",
+  "output_json": "Task\\02_primary_assignments\\day08\\A_primary_day08_evaluation.json",
+  "total": 300,
+  "completed": 0,
+  "remaining": 300,
+  "current_index": 0,
+  "updated_at": "2026-03-10T17:02:38"
+}

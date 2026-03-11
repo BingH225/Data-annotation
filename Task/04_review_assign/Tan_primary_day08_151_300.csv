@@ -2404,7 +2404,7 @@ affection_3207.png,affection_4171,this has nothing to do with this post but i ha
 - Emotion label: Happy.
 - Subject/target justification: the poster is expressing playful amusement aimed at the post/audience via shock juxtaposition.
 - Domain/Culture usage: Online meme culture favors this kind of ironic, shock-humor pairing to signal comedic intent.",False,False
-1_4145.mp4,intent_1554,A lot of people are working on that research. So what is all this?,the speaker,the research display,the man in the robe,an amused audience member,the show's cameraman,the coffee mug,the audience's audible reaction,the television studio camera,Intent,NULL,benevolent_provocation,NULL,benevolent_provocation,Workplace,General Culture,NULL,Dominance Assertion,NULL,"[Anchor]
+1_4145.mp4,intent_1554,A lot of people are working on that research. So what is all this?,the speaker,the research display,the man in robe,an amused audience member,the show's cameraman,the coffee mug,the audience's audible reaction,the television studio camera,Intent,NULL,benevolent_provocation,NULL,benevolent_provocation,Workplace,General Culture,NULL,Dominance Assertion,NULL,"[Anchor]
 - Text evidence: ""So what is all this?"" (neutral/comical).
 - Visual evidence: multiple whiteboards with charts, a person standing by the boards, another person in a robe holding a mug looking back, audience laughter in audio.
 - Cross-modal setup: the question targets the visible elaborate displays while the audio and scene setup cue a comedic reaction.
@@ -2590,7 +2590,7 @@ affection_3494.png,affection_5119,i got kicked out of hogwarts for using black m
 - Emotion label: Happy.
 - Subject/target justification: The poster is implicitly amused/defiant toward Hogwarts/authority by joking about using ""black magic."" 
 - Domain/Culture usage: Recognizing the Harry Potter villain in the image (Voldemort) clarifies the meme's ironic, humorous intent.",False,False
-intent_4413.png,intent_4263,he said he a lil' bad ass so i hate this tendies in front of him,the speaker ,the friend claiming to be tough,the group's jokester,the person filming them,the speaker's younger sibling,male friendship,the food,the friend,Intent,NULL,prosocial_deception,NULL,prosocial_deception,Friend Group,General Culture,NULL,Meme-based Mockery,NULL,"[Anchor]
+intent_4413.png,intent_4263,he said he a lil' bad ass so i hate this tendies in front of him,the speaker ,the friend ,the group's jokester,the person filming them,the speaker's younger sibling,male friendship,the food,the friend,Intent,NULL,prosocial_deception,NULL,prosocial_deception,Friend Group,General Culture,NULL,Meme-based Mockery,NULL,"[Anchor]
 - The caption frames the issue as refusing to show or eat ""tendies"" because ""he said he a lil' bad ass."" The photo shows two male friends walking and laughing, a typical peer interaction where social image matters. [Pivot]
 - Cross-modal mismatch: the surface complaint about food conflicts with the social scene; combined cues point away from gustatory dislike toward reputation management and impression control. [Inference]
 - The speaker's covert goal is to avoid looking childish or weak around the boasting friend, i.e., to save face.",False,False
@@ -2790,7 +2790,7 @@ affection_4790.png,affection_1625,when you're hiding from a shooter in your scho
 - Emotion label: Angry.
 - Subject/target justification: The speaker (woman in blue) expresses anger directed at the coworker who yelled. 
 - Domain/Culture usage: In a workplace this reads as a public reprimand enforcing social norms.",False,False
-affection_4752.png,affection_4019,when you want to enter islam when you want to leave islam,person wanting to leave Islam,Muslim community,person wanting to enter Islam,close family member offering comfort,observer smiling but not involved,family members at the gathering,immediate family and close friends,unrelated party guests in room,Affection,multimodal_incongruity,NULL,NULL,multimodal_incongruity,Public & Service,General Culture,Disgusted,NULL,NULL,"[Anchor]
+affection_4752.png,affection_4019,when you want to enter islam when you want to leave islam, Islam,Muslim community,person want enter Islam,close family member ,observer smiling ,family members,immediate family ,unrelated party guests ,Affection,multimodal_incongruity,NULL,NULL,multimodal_incongruity,Public & Service,General Culture,Disgusted,NULL,NULL,"[Anchor]
 - Text evidence: ""when you want to leave islam"" (neutral/descriptive tone). 
 - Visual evidence: two men in front hugging and smiling; two men seated at a table looking on with neutral/unsmiling faces; visible food and traditional caps. 
 - Cross-modal setup: the caption assigns a warm welcome to the hugging pair and a contrasting reaction to the seated observers for ""leaving.""
@@ -2900,7 +2900,7 @@ attitude_9430.png,attitude_2821,'slavery reparations' has there ever been a more
 - Attitude label: Contemptuous.
 - Subject/target justification: The social-media poster directs contempt toward Black voters by implying their political support is purchasable. 
 - Domain/Culture provides no additional disambiguation.",False,False
-attitude_3211.png,attitude_4553,don't shoot im unarmed,man in the photo,potential shooter,fishing net floating in the water,rescue buoy on the dock,unoccupied boat seat with a backpack,police officer,security guard,angry bystander,Attitude,NULL,NULL,submissive_alignment,submissive_alignment,Online & Social Media,General Culture,NULL,NULL,Disapproving,"[Anchor]
+attitude_3211.png,attitude_4553,don't shoot im unarmed,man in the photo,potential shooter,fishing net,rescue buoy ,unoccupied boat seat,police officer,security guard,angry bystander,Attitude,NULL,NULL,submissive_alignment,submissive_alignment,Online & Social Media,General Culture,NULL,NULL,Disapproving,"[Anchor]
 - Text evidence: ""don't shoot im unarmed"" (tone: pleading/negative). 
 - Visual evidence: shirtless man appearing without arms; he is climbing from water using a metal railing; visible splash and urban river background. 
 - Cross-modal setup: the verbal plea and the visual literalization of ""unarmed"" create a direct plea-for-mercy framed as a visual pun.
@@ -2950,7 +2950,7 @@ intent_3820.png,intent_2467,"the city of seattle leaves poop on their sidewalks 
 
 [Inference]
 - The meme’s goal is to provoke anger and distrust toward city officials and progressive policies by framing them as absurd and harmful, thereby stoking public outrage.",False,False
-524.mp4,intent_0210,are you blackmailing me?,the speaker,the employee,the person with the laptop,the man in the gray jacket,the woman in the background,the manager by the counter,the customer across the room,the cashier behind the counter,Intent,NULL,expressive_aggression,NULL,expressive_aggression,Workplace,General Culture,NULL,Moral Condemnation,NULL,"[Anchor]
+524.mp4,intent_0210,are you blackmailing me?,the speaker,the employee,the person with laptop,man in jacket,background woman,the manager ,the customer,the cashier ,Intent,NULL,expressive_aggression,NULL,expressive_aggression,Workplace,General Culture,NULL,Moral Condemnation,NULL,"[Anchor]
 - Text evidence: ""are you blackmailing me?"" (negative tone).
 - Visual evidence: leaning forward over the table, narrowed eyes/squinting, open/tense mouth while speaking, hands clasped under table.
 - Cross-modal setup: the hostile question is paired with confrontational posture and facial tension.
@@ -2990,7 +2990,7 @@ intent_6404.png,intent_3168,starving mexican monkey eating peanuts,meme poster,M
 - Cross-modal reasoning: the harmless animal photo becomes a vehicle for an insult when labelled with a protected group's demonym, displacing the attack onto that group. This is an indirect aggressive act intended to demean rather than describe.
 [Inference]
 - The poster's intent is to publicly humiliate and dehumanize Mexican people, fostering contempt and prejudice.",False,False
-intent_3280.png,intent_3091,when you finger an asian girl,poster,asian women,social media post (status/update),event organizer,street artist,sex workers,fashion models,celebrity actresses,Intent,NULL,expressive_aggression,NULL,expressive_aggression,Intimate Relationships,General Culture,NULL,Hate Humor,NULL,"[Anchor]
+intent_3280.png,intent_3091,when you finger an asian girl,poster,asian women,social media post,event organizer,street artist,sex workers,fashion models,celebrity actresses,Intent,NULL,expressive_aggression,NULL,expressive_aggression,Intimate Relationships,General Culture,NULL,Hate Humor,NULL,"[Anchor]
 - Text evidence: The caption explicitly links a sexual act to a racial identity (""asian girl""). Visual evidence: a close, sensual crop of a woman's mouth with a finger conveys eroticization. Cross-modal: text and image together frame sexuality through race rather than individual context.
 [Pivot]
 - Mechanism: malicious_manipulation. The meme leverages racialized sexual stereotypes to elicit arousal or shock while reducing the subject to an object.
@@ -3056,7 +3056,7 @@ affection_10909.png,affection_0881,man: i'd like to trade her in for newer one,m
 - Emotion label: Angry.
 - Subject/target justification: The man (speaker) expresses hostile, dismissive affect toward the pictured older woman/partner.
 - Domain/Culture: Intimate Relationships frames this as partner-replacement hostility; General Culture provides no additional disambiguation.",False,False
-intent_11561.png,intent_7411,hello....abdulla i'm pregnant,the texter / sender,Abdulla,the cat,the recipient,sender's mobile phone,Omar,Karim,Hassan,Intent,NULL,benevolent_provocation,NULL,benevolent_provocation,Intimate Relationships,General Culture,NULL,Hate Humor,NULL,"[Anchor]
+intent_11561.png,intent_7411,hello....abdulla i'm pregnant,the texter,Abdulla,the cat,the recipient,sender's mobile phone,Omar,Karim,Hassan,Intent,NULL,benevolent_provocation,NULL,benevolent_provocation,Intimate Relationships,General Culture,NULL,Hate Humor,NULL,"[Anchor]
 - Text evidence: A blunt, name-directed message ""hello....abdulla i'm pregnant"" reads like a deliberate announcement sent to a specific person rather than a private confession.
 - Visual evidence: The meme shows a reclining cat holding a phone with a nonchalant, staged look, framing the message as casual or performative.
 
@@ -3189,13 +3189,13 @@ affection_8647.png,affection_4283,asian drivers test went as expected,poster,Asi
 
 [Inference]
 - Emotion label: Angry. - Subject/target justification: The poster conveys a hostile/derogatory attitude toward Asian drivers/Asian people. - Domain/Culture usage: General Culture supplies the racist stereotype that disambiguates the implicit contempt.",False,False
-intent_11758.png,intent_1272,if james brown and the creature from the black lagoon had a baby,meme poster,the woman in the photo,original photographer,political opponent,photo editor,a bystander,the photographer,a passerby,Intent,NULL,expressive_aggression,NULL,expressive_aggression,Online & Social Media,General Culture,NULL,Humiliation for Amusement,NULL,"[Anchor]
+intent_11758.png,intent_1272,if james brown and the creature from the black lagoon had a baby,meme poster,the woman ,original photographer,political opponent,photo editor,a bystander,the photographer,a passerby,Intent,NULL,expressive_aggression,NULL,expressive_aggression,Online & Social Media,General Culture,NULL,Humiliation for Amusement,NULL,"[Anchor]
 - Text evidence: The caption compares ""James Brown"" and the ""Creature from the Black Lagoon,"" combining a famous musician and a fictional monster. Visual evidence: A formal photograph of an older woman is used as the punchline. The juxtaposition links the person's appearance to the monster metaphor.
 [Pivot]
 - Mechanism: expressive_aggression. The meme uses indirect insult and ridicule rather than direct argument, displacing the attack onto appearance and identity.
 [Inference]
 - Intent: The poster aims to demean and publicly humiliate the pictured individual through a mocking visual-textual comparison.",False,False
-332.mp4,attitude_0943,"fine, okay.",the speaker,the person on the right ,a tall customer in a striped shirt ,the man in the background,the shopper on the left ,the man in the background,the shopper on the left ,a customer in a yellow jacket,Attitude,NULL,NULL,protective_distancing,protective_distancing,Workplace,General Culture,NULL,NULL,Skeptical,"[Anchor]
+332.mp4,attitude_0943,"fine, okay.",the speaker,right person,a tall customer,background man,the shopper,background man,the shopper,a customer,Attitude,NULL,NULL,protective_distancing,protective_distancing,Workplace,General Culture,NULL,NULL,Skeptical,"[Anchor]
 - Text evidence: ""fine, okay."" (neutral/hesitant tone). 
 - Visual evidence: employee in a blue store vest with a name badge, neutral/flat facial expression, body slightly turned away from the addressee, the addressee partially visible on the right. 
 - Cross-modal setup: the brief, minimal utterance pairs with subdued, avoidant body language at the scene.
@@ -3218,7 +3218,7 @@ intent_3744.png,intent_1835,bitches be like at the beach with my besties,meme cr
 
 [Inference]
 - The poster's goal is to belittle and dehumanize the women publicly, asserting contempt through humor; subject: meme creator, target: the women/group.",False,False
-attitude_7636.png,attitude_6451,i've been ridden more times than the trump train i can run for president now,meme poster,female political,social media influencer,opposition supporter,campaign strategist,the celebrity appearing in the image,the event organizer pictured,the photographer's assistant in the photo,Attitude,NULL,NULL,dominant_detachment,dominant_detachment,Online & Social Media,General Culture,NULL,NULL,Hostile,"[Anchor]
+attitude_7636.png,attitude_6451,i've been ridden more times than the trump train i can run for president now,meme poster,female political,social media influencer,opposition supporter,campaign strategist,the celebrity ,the event organizer pictured,the photographer's assistant ,Attitude,NULL,NULL,dominant_detachment,dominant_detachment,Online & Social Media,General Culture,NULL,NULL,Hostile,"[Anchor]
 - Text evidence: ""i've been ridden more times than the trump train"" (negative tone: mocking/derisive).
 - Visual evidence: close-up photo of a woman laughing with mouth open and eyes crinkled; hands clasped together; wearing a dark blazer and necklace.
 - Cross-modal setup: the sexualized, mocking boast in text sits atop an image of amused laughter, making the line read as triumphant ridicule.
@@ -3228,7 +3228,7 @@ attitude_7636.png,attitude_6451,i've been ridden more times than the trump train
 
 [Inference]
 - Attitude label: Contemptuous. The meme poster displays contempt toward the 'Trump train' (Trump supporters). Domain/Culture provides no additional disambiguation.",False,False
-2_24.mp4,affection_1340,"Uh, okay. The fifth dentist caved and not they're all recommending Trident?",the speaker ,the dentists' recommendation,the fifth dentist,the person filming the video,the audience watching,the Trident gum brand,the fifth dentist,the advertisement itself,Affection,multimodal_incongruity,NULL,NULL,multimodal_incongruity,Friend Group,General Culture,Surprised,NULL,NULL,"[Anchor]
+2_24.mp4,affection_1340,"Uh, okay. The fifth dentist caved and not they're all recommending Trident?",the speaker ,the dentists' recommendation,the fifth dentist,photographer,the audience watching,the Trident gum brand,the fifth dentist,the advertisement itself,Affection,multimodal_incongruity,NULL,NULL,multimodal_incongruity,Friend Group,General Culture,Surprised,NULL,NULL,"[Anchor]
 - Text evidence: ""The fifth dentist caved, and now they're all recommending Trident?"" literal tone: skeptical/observational. 
 - Visual evidence: repeated frames show a slight smirk, tightened/pressed lips in places, and a relaxed forward posture. 
 - Cross-modal setup: the sentence reads as a neutral surprise, while audio/face supply a playful, amused delivery.
@@ -3248,7 +3248,7 @@ intent_4014.png,intent_0959,me: wanna watch porn or golf? her: porn. you already
 - Cross-modal setup: Presenting porn as the selection while delivering a teasing jab disguises a prompt as a joke; the playful tone and body language function to provoke a reaction rather than neutrally choose content.
 [Inference]
 - Intent: The speaker aims to provoke and prompt sexual interaction by teasing the partner into responding.",False,False
-384.mp4,affection_0440,everything all right?,the girl in the dress,the event ,the boy ,the young man in suit,the man with the glass,the romantic relationship ,the family's reaction ,the man,Affection,affective_deception,NULL,NULL,affective_deception,Family Conversations,General Culture,Sad,NULL,NULL,"[Anchor]
+384.mp4,affection_0440,everything all right?,the girl in the dress,the event ,the boy ,the young man,the man with glass,the romantic relationship ,the family's reaction ,the man,Affection,affective_deception,NULL,NULL,affective_deception,Family Conversations,General Culture,Sad,NULL,NULL,"[Anchor]
 - Text evidence: ""everything all right?"" — neutral, check-in tone. 
 - Visual evidence: a girl in a formal dress sitting with head down and hands on her skirt; a man seated close behind her, leaning forward and watching her attentively; subdued posture and a quiet party setting with purple lighting. 
 - Cross-modal setup: the verbal line is a neutral inquiry while the visuals show a private, consoling moment. 

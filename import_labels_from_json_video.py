@@ -23,7 +23,7 @@ CSV_COLUMNS = [
     "target1",
     "target2",
     "target3",
-    "situation",
+    "scenario",
     "mechanism_Affection",
     "mechanism_Intent",
     "mechanism_Attitude",
@@ -39,10 +39,10 @@ CSV_COLUMNS = [
 
 # Edit these paths directly when you want to change default import target.
 DEFAULT_INPUT_PATH = Path(
-    r"D:\NUS\ACMm\Data-annotation\Task\02_primary_assignments\day08\Yu_primary_day08.json"
+    r"Data\review_assign_all_reindexed_scenario_sampled_300.json"
 )
 DEFAULT_OUTPUT_PATH = Path(
-    r"D:\NUS\ACMm\Data-annotation\Task\02_primary_assignments\day08\Yu_primary_day08.csv"
+    r"Data\review_assign_all_reindexed_scenario_sampled_300.csv"
 )
 DEFAULT_MEDIA_DIR = Path(r"D:\NUS\ACMm\Data-annotation\images")
 
@@ -55,7 +55,7 @@ def _safe_text(value: Any) -> str:
     return str(value)
 
 
-def _norm_situation(value: str) -> str:
+def _norm_scenario(value: str) -> str:
     v = value.strip().lower()
     if v == "affection":
         return "Affection"
@@ -76,6 +76,22 @@ def _norm_affection_label(value: str) -> str:
         "angry": "Angry",
         "fearful": "Fearful",
         "bad": "Bad",
+    }
+    return mapping.get(v, value)
+
+
+def _norm_intent_label(value: str) -> str:
+    v = value.strip().lower()
+    mapping = {
+        "null": "NULL",
+        "alienate": "alienate",
+        "condemn": "condemn",
+        "denounce": "denounce",
+        "dominate": "dominate",
+        "intimidate": "intimidate",
+        "mitigate": "mitigate",
+        "mock": "mock",
+        "provoke": "provoke",
     }
     return mapping.get(v, value)
 
@@ -243,7 +259,7 @@ def _to_record(obj: Dict[str, Any]) -> Dict[str, Any]:
     input_obj = obj.get("input", {}) if isinstance(obj.get("input"), dict) else {}
     output_obj = obj.get("output", {}) if isinstance(obj.get("output"), dict) else {}
 
-    situation = _norm_situation(_safe_text(output_obj.get("situation", "")).strip())
+    scenario = _norm_scenario(_safe_text(output_obj.get("scenario", "")).strip())
     label_generic = _safe_text(output_obj.get("label", "")).strip()
     mechanism_generic = _safe_text(output_obj.get("mechanism", "")).strip()
 
@@ -255,44 +271,45 @@ def _to_record(obj: Dict[str, Any]) -> Dict[str, Any]:
     mechanism_attitude = _safe_text(output_obj.get("mechanism_Attitude", "")).strip()
 
     if label_generic:
-        if situation == "Affection":
+        if scenario == "Affection":
             label_affection = label_generic
-        elif situation == "Intent":
+        elif scenario == "Intent":
             label_intent = label_generic
-        elif situation == "Attitude":
+        elif scenario == "Attitude":
             label_attitude = label_generic
 
-    # Business rule: if situation is not Intent, force Intent label to NULL.
-    if situation != "Intent":
+    # Business rule: if scenario is not Intent, force Intent label to NULL.
+    if scenario != "Intent":
         label_intent = "NULL"
     elif not label_intent:
         label_intent = "NULL"
 
     label_affection = _norm_affection_label(label_affection)
+    label_intent = _norm_intent_label(label_intent)
     mechanism_affection = _norm_mechanism_value(mechanism_affection)
     mechanism_intent = _norm_mechanism_value(mechanism_intent)
     mechanism_attitude = _norm_mechanism_value(mechanism_attitude)
     mechanism_generic = _norm_mechanism_value(mechanism_generic)
 
-    # Keep mechanism split fields consistent with situation, like label selection logic.
-    if situation == "Affection":
+    # Keep mechanism split fields consistent with scenario, like label selection logic.
+    if scenario == "Affection":
         mechanism_affection = mechanism_generic if mechanism_affection == "NULL" else mechanism_affection
         mechanism_intent = "NULL"
         mechanism_attitude = "NULL"
-    elif situation == "Intent":
+    elif scenario == "Intent":
         mechanism_intent = mechanism_generic if mechanism_intent == "NULL" else mechanism_intent
         mechanism_affection = "NULL"
         mechanism_attitude = "NULL"
-    elif situation == "Attitude":
+    elif scenario == "Attitude":
         mechanism_attitude = mechanism_generic if mechanism_attitude == "NULL" else mechanism_attitude
         mechanism_affection = "NULL"
         mechanism_intent = "NULL"
 
-    if situation == "Affection":
+    if scenario == "Affection":
         mechanism_generic = mechanism_affection
-    elif situation == "Intent":
+    elif scenario == "Intent":
         mechanism_generic = mechanism_intent
-    elif situation == "Attitude":
+    elif scenario == "Attitude":
         mechanism_generic = mechanism_attitude
 
     record = {
@@ -307,7 +324,7 @@ def _to_record(obj: Dict[str, Any]) -> Dict[str, Any]:
         "target1": _safe_text(output_obj.get("target1", "")).strip(),
         "target2": _safe_text(output_obj.get("target2", "")).strip(),
         "target3": _safe_text(output_obj.get("target3", "")).strip(),
-        "situation": situation,
+        "scenario": scenario,
         "mechanism_Affection": mechanism_affection,
         "mechanism_Intent": mechanism_intent,
         "mechanism_Attitude": mechanism_attitude,

@@ -1,0 +1,9 @@
+{
+  "input_json": "D:\\NUS\\ACMm\\Data-annotation\\Data\\review_assign_all_reindexed_scenario_sampled_300.json",
+  "output_json": "D:\\NUS\\ACMm\\Data-annotation\\Data\\review_assign_all_reindexed_scenario_sampled_300_evaluation.json",
+  "total": 300,
+  "completed": 4,
+  "remaining": 296,
+  "current_index": 18,
+  "updated_at": "2026-03-10T16:57:52"
+}

@@ -1,0 +1,26 @@
+{
+  "seed": 42,
+  "sample_size_requested": 300,
+  "sample_size_final": 300,
+  "output_root": "/scratch/users/nus/e1553307/experiment/Data/eval300",
+  "stats": {
+    "candidate_total": 3000,
+    "attempted": 300,
+    "selected": 300,
+    "selected_images": 235,
+    "selected_videos": 65,
+    "download_failures": 0,
+    "invalid_source_url": 0,
+    "validation_failures": 0,
+    "auto_backfill_count": 0,
+    "final_selected": 300
+  },
+  "failures_preview": [],
+  "path_verification": {
+    "total": 300,
+    "existing_files": 300,
+    "missing_files": 0,
+    "image_samples": 235,
+    "video_samples": 65
+  }
+}
