@@ -1,0 +1,67 @@
+[
+  {
+    "id": "attitude_7027",
+    "input": {
+      "scenario": "attitude",
+      "text": "it was a...anniversary present for my wife",
+      "media": {
+        "video_url": "https://huggingface.co/datasets/z4722/Implicit/blob/main/video/MIntRec/video/raw_data/S04/E07/160.mp4",
+        "audio_url": "https://huggingface.co/datasets/yesbobo/implicit/resolve/main/audio/attitude/attitude_0436.mp3",
+        "audio_caption": "The speaker's tone in this audio segment is neutral and matter-of-fact. There is no evident emotional intensity, suggesting a calm and straightforward delivery. The speaker is likely in a quiet and controlled environment, which could be indoors or in a relatively confined space, given the lack of background noise or environmental distractions. The speech is clear and uninterrupted, indicating that the speaker is focused on conveying the information about the anniversary present. The tone remains steady throughout, without any fluctuations that might suggest surprise, anger, or joy.",
+        "video_path":"",
+	      "audio_path":""
+      }
+    },
+    "options": {
+      "subject": [
+        "the male customer defending himself",
+        "the male employee behind the counter",
+        "the female customer in line",
+        "the store manager"
+      ],
+      "target": [
+        "the anniversary gift being questioned",
+        "the customer's marriage",
+        "the store return policy",
+        "the customers waiting in line"
+      ]
+    },
+    "ground_truth": {
+      "subject": "the male customer defending himself",
+      "target": "the anniversary gift being questioned",
+      "mechanism": "submissive_alignment",
+      "label": "Neutral"
+    }
+  },
+  {
+    "id": "intent_0276",
+    "input": {
+      "scenario": "intent",
+      "text": "breaking news : the pope just changed the lord 's prayer :",
+      "media": {
+        "image_url": "https://huggingface.co/datasets/z4722/Implicit/blob/main/images/intent/intent_0142.jpg",
+        "image_path":""
+      }
+    },
+    "options": {
+      "subject": [
+        "poster",
+        "satirist",
+        "influencer",
+        "journalist"
+      ],
+      "target": [
+        "the Pope",
+        "the president",
+        "the celebrity",
+        "the comedian"
+      ]
+    },
+    "ground_truth": {
+      "subject": "poster",
+      "target": "the Pope",
+      "mechanism": "expressive_aggression",
+      "label": "denounce"
+    }
+  }
+]

@@ -9,9 +9,9 @@ from typing import Any, Deque, Dict, List, Optional, Set, Tuple
 import pandas as pd
 
 
-DEFAULT_CSV_PATH = Path("video_labels.csv")
-DEFAULT_JSON_PATH = Path("exported_labels.json")
-DEFAULT_SOURCE_JSON_PATH = Path(r"Data\prelabel_slim_mm_seed42.json")
+DEFAULT_CSV_PATH = Path("Data/review_assign_all_reindexed_scenario_sampled_300_merged.csv")
+DEFAULT_JSON_PATH = Path("export/exported_labels.json")
+DEFAULT_SOURCE_JSON_PATH = Path("Data/review_assign_all_reindexed_scenario_sampled_300.json")
 
 
 def _safe_text(v: Any) -> str:

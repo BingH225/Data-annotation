@@ -366,7 +366,7 @@ affection_8967.png,affection_3585,when you get married to the guy your parents d
 - Emotion label: Bad.
 - Subject/target justification: the parents (subject) are implicitly displeased or uncomfortable toward the child's spouse (target). 
 - Domain/Culture provides no additional disambiguation.",False,False
-160.mp4,attitude_7027,it was a...anniversary present for my wife,the male customer defending himself,the anniversary gift being questioned,the male employee behind the counter,the female customer in line,the store manager,the customer’s marriage,the store return policy,the customers waiting in line,Attitude,NULL,NULL,submissive_alignment,submissive_alignment,Public & Service,General Culture,NULL,NULL,Neutral,"[Anchor]
+160.mp4,attitude_7027,it was a...anniversary present for my wife,the male customer,the anniversary gift,a passerby,the female customer,the store manager,the customer’s marriage,the store return policy,the customers waiting in line,Attitude,NULL,NULL,submissive_alignment,submissive_alignment,Public & Service,General Culture,NULL,NULL,Neutral,"[Anchor]
 - Text evidence: ""anniversary present for my wife"" (neutral tone). 
 - Visual evidence: man holding a receipt; man leaning toward a seated employee; a woman (likely wife) standing behind him watching; checkout counter and queue visible. 
 - Cross-modal setup: the spoken line offers a justificatory explanation while the image shows a customer actively engaging a cashier at the service counter.
@@ -386,7 +386,7 @@ intent_0142.jpg,intent_0276,breaking news : the pope just changed the lord 's pr
 - Mechanism: expressive_aggression—humor and parody are deployed to attack religious authority indirectly.
 [Inference]
 - Intent: to publicly ridicule organized religion and provoke readers through satire.",False,False
-affection_7488.png,affection_3045,when you're looking at all the people in their hot summer bods... and you feel sorry for all the taco tuesdays they must have missed!,poster,people with summer bods,photographer,viewer,child,local beach lifeguards,shore ice cream vendors,families build sandcastles,Affection,multimodal_incongruity,NULL,NULL,multimodal_incongruity,Online & Social Media,General Culture,Bad,NULL,NULL,"[Anchor]
+affection_7488.png,affection_3045,when you're looking at all the people in their hot summer bods... and you feel sorry for all the taco tuesdays they must have missed!,poster,people with summer bods,photographer,viewer,child,local beach lifeguards,shore ice cream vendors,families build sandcastles,Affection,multimodal_incongruity,NULL,NULL,multimodal_incongruity,Online & Social Media,General Culture,Happy,NULL,NULL,"[Anchor]
 - Text evidence: ""you feel sorry for all the taco tuesdays"" (literal tone: neutral/teasing).
 - Visual evidence: a smiling toddler in a green bikini standing on a sunlit sandy beach; open, joyful pose; high-key, vintage color treatment.
 - Cross-modal setup: The caption remarks on adults' ""hot summer bods"" while the photo shows a carefree child in a swimsuit, creating a surface mismatch.
@@ -1546,7 +1546,7 @@ intent_3389.png,intent_6590,run along now felicia you don't want to miss the wat
 - Mechanism: expressive_aggression; the speaker uses public mockery and indirect theatricality to attack dignity.
 [Inference]
 - Intent: publicly shame the named person and humiliate them online.",False,False
-intent_10132.png,intent_1911,sometime you gotta feed people some bullshit just to see who they run back and tell,poster,'people' in the text,forum moderator,social experimenter,public figure,online platform moderators,local news outlets,law enforcement agencies,Intent,NULL,benevolent_provocation,NULL,benevolent_provocation,Online & Social Media,General Culture,NULL,mitigate,NULL,"[Anchor]
+intent_10132.png,intent_1911,sometime you gotta feed people some bullshit just to see who they run back and tell,poster,people,forum moderator,social experimenter,public figure,online platform moderators,local news outlets,law enforcement agencies,Intent,NULL,benevolent_provocation,NULL,benevolent_provocation,Online & Social Media,General Culture,NULL,mitigate,NULL,"[Anchor]
 - Text evidence: The caption admits deliberately feeding people ""bullshit"" to observe who repeats it. 
 - Visual evidence: A confident portrait meme format conveys boastful, performative sharing rather than accidental speech. 
 [Pivot]
@@ -1554,7 +1554,7 @@ intent_10132.png,intent_1911,sometime you gotta feed people some bullshit just t
 - Mechanism: benevolent_provocation fits because false information is used as bait to provoke revealing actions. 
 [Inference]
 - Hidden intent: to bait and identify gossipers by feeding them false information and watching who repeats it.",False,False
-affection_3235.png,affection_1074,when you tell him he can't go to chic-fil-a on sundays. what do you mean?,poster,the man being told,photographer,influencer,commenter,person posted meme,account shared publicly,person created caption,Affection,socio_cultural_dependency,NULL,NULL,socio_cultural_dependency,Online & Social Media,General Culture,Bad,NULL,NULL,"[Anchor]
+affection_3235.png,affection_1074,when you tell him he can't go to chic-fil-a on sundays. what do you mean?,poster,the man being told,photographer,influencer,commenter,person posted meme,account shared publicly,person created caption,Affection,socio_cultural_dependency,NULL,NULL,socio_cultural_dependency,Online & Social Media,General Culture,Surprised,NULL,NULL,"[Anchor]
 - Text evidence: ""when you tell him he can't go to chic-fil-a on sundays"" (tone: teasing/neutral). 
 - Visual evidence: older man wearing a white headscarf and agal; narrowed eyes / puzzled squint; teal decorative door background. 
 - Cross-modal setup: the caption sets a prohibition scenario and the photo supplies a puzzled/indignant reaction.
@@ -1567,7 +1567,7 @@ affection_3235.png,affection_1074,when you tell him he can't go to chic-fil-a on
 - Emotion label: Angry.
 - Subject/target justification: the man is portrayed as indignantly questioning being forbidden from going to Chick‑fil‑A on Sundays. 
 - Domain/Culture usage: General Culture knowledge about Chick‑fil‑A's Sunday closure and cultural contrast is necessary to interpret the implied indignation.",False,False
-attitude_6549.png,attitude_2749,when you're the only girl at the gang bang,meme author,the woman,internet commenter,content curator,social media manager,the men,the partners,the participants,Attitude,NULL,NULL,dominant_detachment,dominant_detachment,Intimate Relationships,General Culture,NULL,NULL,Dismissive,"[Anchor]
+attitude_6549.png,attitude_2749,when you're the only girl at the gang bang,meme author,the woman,internet commenter,content curator,social media manager,the men,the partners,the participants,Attitude,NULL,NULL,dominant_detachment,dominant_detachment,Intimate Relationships,General Culture,NULL,NULL,Contemptuous,"[Anchor]
 - Text evidence: ""the only girl at the gang bang"" (negative tone).
 - Visual evidence: hands spreading jam/peanut-butter on bread; jars and stacked sliced bread on a kitchen counter; no faces visible; domestic setting.
 - Cross-modal setup: The sexualized caption contrasts with a banal sandwich-making image, creating an incongruous joke.
@@ -1580,7 +1580,7 @@ attitude_6549.png,attitude_2749,when you're the only girl at the gang bang,meme 
 - Attitude label: Contemptuous.
 - Subject/target justification: The meme author conveys contempt toward the woman by trivializing and objectifying her in the caption.
 - Domain/Culture provides no additional disambiguation.",False,False
-intent_3975.png,intent_3146,okay now make sure to get my good side,meme poster,social media audience,amateur photographer,troll account,brand manager,press outlet journalists,private message recipients,advertiser partner network,Intent,NULL,malicious_manipulation,NULL,malicious_manipulation,Online & Social Media,General Culture,NULL,mock,NULL,"[Anchor]
+intent_3975.png,intent_3146,okay now make sure to get my good side,meme poster,me in meme,amateur photographer,troll account,brand manager,press outlet journalists,private message recipients,advertiser partner network,Intent,NULL,malicious_manipulation,NULL,malicious_manipulation,Online & Social Media,General Culture,NULL,provoke,NULL,"[Anchor]
 - Text evidence: The casual selfie-style line ""okay now make sure to get my good side"" is overlaid on a historical portrait of Adolf Hitler, producing a stark tonal mismatch.
 - Visual evidence: The uniformed, recognizable profile signals a notorious authoritarian figure.
 
@@ -1589,7 +1589,7 @@ intent_3975.png,intent_3146,okay now make sure to get my good side,meme poster,s
 
 [Inference]
 - The poster's hidden intent is to make the dictator seem relatable and less condemnable to an online audience, softening condemnation through levity.",False,False
-intent_4398.png,intent_7454,come here you big cup of beautiful coffee and lie to me about how much we are going to get done today,office worker,work,college student,coffee barista,retail cashier,coffee,boss,meeting,Intent,NULL,prosocial_deception,NULL,prosocial_deception,Workplace,General Culture,NULL,provoke,NULL,"[Anchor] Text evidence: the speaker addresses a ""big cup of beautiful coffee"" and explicitly asks it to ""lie to me about how much we are going to get done today,"" a request for a comforting falsehood. Visual evidence: an exhausted person is slumped over an office desk with a coffee cup visible, signaling low energy and looming work. [Pivot] Mechanism: prosocial_deception — the speaker is soliciting a benevolent untruth to maintain morale rather than a literal plan. [Inference] Intent: The speaker wants comforting reassurance to feel capable and avoid confronting low productivity during the workday.",False,False
+intent_4398.png,intent_7454,come here you big cup of beautiful coffee and lie to me about how much we are going to get done today,boss,office worker,college student,coffee barista,retail cashier,coffee,boss,meeting,Intent,NULL,prosocial_deception,NULL,prosocial_deception,Workplace,General Culture,NULL,mitigate,NULL,"[Anchor] Text evidence: the speaker addresses a ""big cup of beautiful coffee"" and explicitly asks it to ""lie to me about how much we are going to get done today,"" a request for a comforting falsehood. Visual evidence: an exhausted person is slumped over an office desk with a coffee cup visible, signaling low energy and looming work. [Pivot] Mechanism: prosocial_deception — the speaker is soliciting a benevolent untruth to maintain morale rather than a literal plan. [Inference] Intent: The speaker wants comforting reassurance to feel capable and avoid confronting low productivity during the workday.",False,False
 2_36.mp4,attitude_7223,"The big deal is I don't want naked, greasy strangers in my apartment when I want to kick back with a puzzle,beer! Cold beer.",the speaker,strangers speaker's apartment,bystander,coworker,shopper,background object,nearby item,other topic,Attitude,NULL,NULL,dominant_detachment,dominant_detachment,Friend Group,General Culture,NULL,NULL,Contemptuous,"[Anchor]
 - Text evidence: ""I don't want naked, greasy strangers"" (negative tone). 
 - Visual evidence: a man in a suit holding a paper grocery bag; pointing gesture; open mouth as if speaking; a furrowed/annoyed facial expression. 
@@ -1602,8 +1602,8 @@ intent_4398.png,intent_7454,come here you big cup of beautiful coffee and lie to
 [Inference]
 - Attitude label: Contemptuous. 
 - Subject/target justification: the speaker directs contempt toward strangers being in their apartment. 
-- Domain/Culture usage: in a roommates/friends context this reads as boundary enforcement and social exclusion rather than neutral preference.",False,False
-affection_6614.png,affection_0738,i asked him to see things from my point of view he looked out the kitchen window,poster,the person asked,father,child,photographer,the man cooking,the boy watching,the family pet,Affection,multimodal_incongruity,NULL,NULL,multimodal_incongruity,Family Conversations,General Culture,Bad,NULL,NULL,"[Anchor]
+- Domain/Culture usage: in a roommates/friends context this reads as boundary enforcement and social exclusion rather than neutral preference.",False,True
+affection_6614.png,affection_0738,i asked him to see things from my point of view he looked out the kitchen window,poster,the person asked,father,child,photographer,the man cooking,the boy watching,the family pet,Affection,multimodal_incongruity,NULL,NULL,multimodal_incongruity,Family Conversations,General Culture,Sad,NULL,NULL,"[Anchor]
 - Text evidence: ""see things from my point of view"" (neutral tone). 
 - Visual evidence: kitchen interior with stove and counter; an adult and a child standing together; a bright window visible behind them. 
 - Cross-modal setup: the caption requests perspective-taking while the photo shows an ordinary kitchen scene that could be taken literally.
@@ -1617,7 +1617,7 @@ affection_6614.png,affection_0738,i asked him to see things from my point of vie
 - Emotion label: Happy.
 - Subject/target justification: the poster expresses amused exasperation toward the person asked. 
 - Domain/Culture usage: Domain/Culture provides no additional disambiguation.",False,False
-attitude_5640.png,attitude_1834,le 40% suicide rate has arrived,meme poster,transgender people,clickbait headline writer,community moderator,pet owner,mental health patients,young adults,college students,Attitude,NULL,NULL,dominant_detachment,dominant_detachment,Online & Social Media,General Culture,NULL,NULL,Sympathetic,"[Anchor]
+attitude_5640.png,attitude_1834,le 40% suicide rate has arrived,meme poster,transgender people,clickbait headline writer,community moderator,pet owner,mental health patients,young adults,college students,Attitude,NULL,NULL,dominant_detachment,dominant_detachment,Online & Social Media,General Culture,NULL,NULL,Contemptuous,"[Anchor]
 - Text evidence: ""le 40% suicide rate has arrived"" (literal tone: negative/celebratory of harm). 
 - Visual evidence: trans flag colors (light blue, pink, white) shown; centered photo of a smiling dog; black meme-style top and bottom bars. 
 - Cross-modal setup: the caption announces a harmful statistic while the image pairs the trans colors with a lighthearted dog photo.
@@ -1630,7 +1630,7 @@ attitude_5640.png,attitude_1834,le 40% suicide rate has arrived,meme poster,tran
 - Attitude label: Contemptuous. 
 - Subject/target justification: The meme poster expresses contempt toward transgender people by framing their high suicide rate as an announced arrival to be welcomed. 
 - Domain/Culture provides no additional disambiguation.",False,False
-affection_9852.png,affection_3993,i'm going to hate the way i sound i guarantee it,poster,himself,celebrity,grandparent,photographer,readers,emotional reaction,removal decision process,Affection,socio_cultural_dependency,NULL,NULL,socio_cultural_dependency,Online & Social Media,General Culture,Bad,NULL,NULL,"[Anchor]
+affection_9852.png,affection_3993,i'm going to hate the way i sound i guarantee it,poster,himself,celebrity,grandparent,photographer,readers,emotional reaction,removal decision process,Affection,socio_cultural_dependency,NULL,NULL,socio_cultural_dependency,Online & Social Media,General Culture,Disgusted,NULL,NULL,"[Anchor]
 - Text evidence: ""i'm going to hate the way i sound"" (negative anticipatory tone).
 - Visual evidence: an older man in a tuxedo smiling at camera; seated, relaxed posture; warm wooden backdrop.
 - Cross-modal setup: the caption announces self-critical worry while the photo shows calm, confident smiling imagery.
@@ -1644,7 +1644,7 @@ affection_9852.png,affection_3993,i'm going to hate the way i sound i guarantee 
 - Emotion label: Bad.
 - Subject/target justification: the poster expresses anxious embarrassment about how their voice will sound (toward their future recording).
 - Domain/Culture usage: Domain/Culture provides no additional disambiguation.",False,False
-446.mp4,attitude_7120,"yeah, why don't you go stew in softlines?",glenn speaker,listener coworker,store manager,sales associate,retail employee,customer,passerby member public,external delivery driver,Attitude,NULL,NULL,dominant_detachment,dominant_detachment,Workplace,General Culture,NULL,NULL,Disapproving,"[Anchor]
+446.mp4,attitude_7120,"yeah, why don't you go stew in softlines?",glenn speaker,listener coworker,store manager,sales associate,retail employee,customer,passerby member public,external delivery driver,Attitude,NULL,NULL,dominant_detachment,dominant_detachment,Workplace,General Culture,NULL,NULL,Dismissive,"[Anchor]
 - Text evidence: ""why don't you go stew in softlines"" (negative tone). 
 - Visual evidence: seated man wearing a name tag, pointing finger outward, animated/lecturing facial expression, leaning slightly forward. 
 - Cross-modal setup: the dismissive verbal line is delivered while the speaker physically points and gestures at someone off-frame.
@@ -1657,7 +1657,7 @@ affection_9852.png,affection_3993,i'm going to hate the way i sound i guarantee 
 - Attitude label: Contemptuous. 
 - Subject/target justification: the speaker (Glenn) directs contemptuous dismissal toward the listener/coworker. 
 - Domain/Culture usage: Workplace context frames this as a professional interpersonal dismissal, reinforcing the high-ground interpersonal meaning.",False,False
-118.mp4,affection_5412,"god, you have a creepy smile.",Dina,Garrett,Marta,Angela,Luis,Brett,Marcus,Carlos,Affection,affective_deception,NULL,NULL,affective_deception,Workplace,General Culture,Fearful,NULL,NULL,"[Anchor]
+118.mp4,affection_5412,"god, you have a creepy smile.",Dina,Garrett,Marta,Angela,Luis,Brett,Marcus,Carlos,Affection,affective_deception,NULL,NULL,affective_deception,Workplace,General Culture,Happy,NULL,NULL,"[Anchor]
 - Text evidence: ""God, you have a creepy smile"" (literal tone: negative/critical). 
 - Visual evidence: Garrett displays a broad, open smile; a female coworker (Dina) is smiling and holding a clipboard; visible name tags and uniforms indicate coworkers in a retail setting. 
 - Cross-modal setup: the words call the smile ""creepy"" while the visuals show friendly, amused expressions.
@@ -1671,13 +1671,13 @@ affection_9852.png,affection_3993,i'm going to hate the way i sound i guarantee 
 - Emotion label: Happy.
 - Subject/target justification: the speaker (Dina) appears to be teasing or affectionately ribbing Garrett about his smile. 
 - Domain/Culture usage: the workplace retail context supports a teasing, collegial interpretation rather than a serious accusation.",False,False
-intent_8259.png,intent_4796,safe sex isis style,meme poster,ISIS,graphic designer,offensive comedian,political commentator,sheep,condom,barn,Intent,NULL,expressive_aggression,NULL,expressive_aggression,Online & Social Media,Arab Culture,NULL,dominate,NULL,"[Anchor]
+intent_8259.png,intent_4796,safe sex isis style,meme poster,ISIS,graphic designer,offensive comedian,political commentator,sheep,condom,barn,Intent,NULL,expressive_aggression,NULL,expressive_aggression,Online & Social Media,Arab Culture,NULL,alienate,NULL,"[Anchor]
 - Text evidence: The caption ""safe sex isis style"" juxtaposes a sexualized phrase with the name of an extremist group. Visual evidence: Photo of sheep in a pen evokes animals and sexual connotations when paired with the caption.
 [Pivot]
 - Cross-modal setup: The pairing of sexual imagery (sheep) and the group's name is not literal but serves to degrade and humiliate; the meme displaces direct critique into an insulting metaphor.
 [Inference]
 - Intent: The creator aims to mock and demean ISIS indirectly by using sexualized bestiality imagery as an insulting, aggressive provocation.",False,False
-intent_8263.png,intent_0812,"domestic violence 2017 what level you on now? this chicken is cold,bitch!!",meme creator,violence,social media manager,angry partner,political commentator,mockery,minimization,provocation,Intent,NULL,expressive_aggression,NULL,expressive_aggression,Intimate Relationships,Arab Culture,NULL,condemn,NULL,"[Anchor]
+intent_8263.png,intent_0812,"domestic violence 2017 what level you on now? this chicken is cold,bitch!!",meme creator,domestic violence,social media manager,angry partner,political commentator,mockery,minimization,provocation,Intent,NULL,expressive_aggression,NULL,expressive_aggression,Intimate Relationships,Arab Culture,NULL,mock,NULL,"[Anchor]
 - Text evidence: the caption frames ""domestic violence 2017"" as a game and uses a direct insult (""bitch""), turning abuse into a competitive joke.
 - Visual evidence: the top panel shows playful VR partying while the bottom panel depicts a man raising his hand toward a veiled woman’s face, an act of partner violence.
 [Pivot]
@@ -1694,7 +1694,7 @@ attitude_3434.png,attitude_3014,im long and strong and down to get the goat hump
 
 [Inference]
 - Attitude label: Contemptuous. Subject/target justification: the meme author expresses contempt toward the Arab man by demeaning and sexualizing him. Domain/Culture usage: online meme format amplifies stereotype and the Arab identity in the photo makes the insult culturally specific.",False,False
-15.mp4,affection_5489,"hey, if any of you curbside folks want to trade places",coworkers,speaker,customers,delivery drivers,passersby,friends,customer,cashier,Affection,multimodal_incongruity,NULL,NULL,multimodal_incongruity,Workplace,General Culture,Bad,NULL,NULL,"[Anchor]
+15.mp4,affection_5489,"hey, if any of you curbside folks want to trade places",speaker,coworkers,customers,delivery drivers,passersby,friends,customer,cashier,Affection,figurative_semantics,NULL,NULL,figurative_semantics,Workplace,General Culture,Disgusted,NULL,NULL,"[Anchor]
 - Text evidence: ""any of you curbside folks"" (literal tone: neutral/offer). 
 - Visual evidence: smirking older man, young woman making an exaggerated disgusted/surprised face, other coworkers with frowns/raised eyebrows. 
 - Cross-modal setup: the line is a literal offer but audio and faces show sarcasm and amusement, so the surface meaning is reframed.
@@ -1708,7 +1708,7 @@ attitude_3434.png,attitude_3014,im long and strong and down to get the goat hump
 - Emotion label: Happy.
 - Subject/target justification: the speaker is playfully teasing the curbside coworkers (affiliative humor directed at them). 
 - Domain/Culture usage: Workplace norms make coworker teasing likely affiliative rather than hostile.",False,False
-intent_9505.png,intent_1633,it isn't islamophobia when they really are trying to kill you,meme poster,Muslims,content moderator,advertising executive,brand manager,immigrants,refugees,terrorists,Intent,NULL,malicious_manipulation,NULL,malicious_manipulation,Online & Social Media,General Culture,NULL,mitigate,NULL,"[Anchor]
+intent_9505.png,intent_1633,it isn't islamophobia when they really are trying to kill you,meme poster,Muslims,content moderator,advertising executive,brand manager,immigrants,refugees,terrorists,Intent,NULL,expressive_aggression,NULL,expressive_aggression,Online & Social Media,General Culture,NULL,alienate,NULL,"[Anchor]
 - Text evidence: The caption reframes prejudice as defensive action (""it isn't islamophobia""), claiming an existential threat that ""they... are trying to kill you."" 
 - Visual evidence: The image of memorial crosses and ""We will never forget them"" evokes real victims and collective grief.
 [Pivot]
@@ -1729,7 +1729,7 @@ affection_0015.jpg,affection_0010,"oh look , another chat closed . this is fun .
 - Emotion label: Angry.
 - Subject/target justification: The poster expresses irritation toward the customer support/company for closing the chat and mishandling the Mother's Day order. 
 - Domain/Culture usage: Domain/Culture provides no additional disambiguation.",False,False
-265.mp4,attitude_7093,"oh, it'll be fine.",store employee,the female customer,a delivery driver,a neighbor,male customer,the store manager,a passerby,the salesperson,Attitude,NULL,NULL,dominant_affiliation,dominant_affiliation,Public & Service,General Culture,NULL,NULL,Sympathetic,"[Anchor]
+265.mp4,attitude_7093,"oh, it'll be fine.",store employee,the female customer,a delivery driver,a neighbor,male customer,the store manager,a passerby,the salesperson,Attitude,NULL,NULL,dominant_affiliation,dominant_affiliation,Public & Service,General Culture,NULL,NULL,Indifferent,"[Anchor]
 - Text evidence: ""oh, it'll be fine."" (reassuring, positive/neutral tone). Visual evidence: two male employees in Cloud9 vests standing across a counter from a seated woman (back to camera); one employee (Jonah) faces her while the other smiles and holds a tablet; staff stand above the customer. Cross-modal setup: the spoken reassurance aligns with a customer-service scene but contrasts with the staff's physically elevated stance.
 
 [Pivot]
@@ -1737,7 +1737,7 @@ affection_0015.jpg,affection_0010,"oh look , another chat closed . this is fun .
 
 [Inference]
 - Attitude label: Dismissive. Subject/target justification: the store employee (speaker) directs the patronizing reassurance toward the customer. Domain/Culture usage: in a public service setting this kind of reassuring language commonly functions as patronizing problem-management rather than neutral empathy.",False,False
-1_537.mp4,affection_5544,"Oh, you know, that is so weird that yours came and mine didn't.",the speaker,others deliver goods,man holding magazine,staff member delivering notice,neighbor in same building,magazine in her hand,the hallway entrance environment,casual conversation between two,Affection,socio_cultural_dependency,NULL,NULL,socio_cultural_dependency,Public & Service,General Culture,Bad,NULL,NULL,"[Anchor]
+1_537.mp4,affection_5544,"Oh, you know, that is so weird that yours came and mine didn't.",the speaker,others deliver goods,man holding magazine,staff member delivering notice,neighbor in same building,magazine in her hand,the hallway entrance,casual conversation,Affection,affective_deception,NULL,NULL,affective_deception,Public & Service,General Culture,Angry,NULL,NULL,"[Anchor]
 - Text evidence: ""that yours came and mine didn't"" — literal tone: mild complaint/neutral surprise. 
 - Visual evidence: speaker holds papers and points at them, makes hand gestures (frames 1–3), and shows a light smile in the final frame; close proxemic interaction with the other person. 
 - Cross-modal setup: the words express a minor grievance about unequal deliveries while vocal tone and facial/body cues are relaxed and amused.
@@ -1757,7 +1757,7 @@ intent_2873.png,intent_2191,brother... a day without a blast is a day wasted,mem
 - Cross-modal setup: Juxtaposing violent praise with a religious speaker frames the cleric as endorsing violence. This uses satire/accusation rather than a literal report, shifting the communicative goal from stating fact to attacking reputation.
 [Inference]
 - Intent: The meme aims to smear or delegitimize the cleric by implying extremist advocacy, i.e., to vilify the target publicly.",False,False
-affection_8858.png,affection_0347,i called my boy whatchoo goin do bout that spray bottle now,poster,person spray bottle,owner,cat,photographer,astonished tabby domestic,adult male african,playful rescued shelter,Affection,multimodal_incongruity,NULL,NULL,multimodal_incongruity,Online & Social Media,General Culture,Happy,NULL,NULL,"[Anchor]
+affection_8858.png,affection_0347,i called my boy whatchoo goin do bout that spray bottle now,cat,person with spray bottle,owner,cat,photographer,astonished tabby domestic,adult male african,playful rescued shelter,Affection,multimodal_incongruity,NULL,NULL,multimodal_incongruity,Online & Social Media,General Culture,Happy,NULL,NULL,"[Anchor]
 - Text evidence: ""i called my boy"" (literal tone: taunting/negative). 
 - Visual evidence: top panel shows a standing lion in a corridor; bottom panel shows a wide-eyed, open-mouthed domestic cat; two-panel meme layout. 
 - Cross-modal setup: The caption issues a boastful threat while the images pair a big predator with a shocked housecat, producing a comic juxtaposition.
@@ -1771,7 +1771,7 @@ affection_8858.png,affection_0347,i called my boy whatchoo goin do bout that spr
 - Emotion label: Happy.
 - Subject/target justification: The poster playfully expresses protective affection toward the cat and mock-threat toward the spray-bottle user. 
 - Domain/Culture provides no additional disambiguation.",False,False
-364.mp4,affection_5424,i'm going to hang out.,the woman speaker,the social situation,the man listener,the man companion,the male guest,the background noise,use non social distractor,replace with nonsocial distractor,Affection,figurative_semantics,NULL,NULL,figurative_semantics,Public & Service,General Culture,Bad,NULL,,"[Anchor]
+364.mp4,affection_5424,i'm going to hang out.,speaker in black,the social situation,the man listener,the man companion,the male guest,the background noise,use non social distractor,replace with nonsocial distractor,Affection,figurative_semantics,NULL,NULL,figurative_semantics,Public & Service,General Culture,Happy,NULL,NULL,"[Anchor]
 - Text evidence: ""i'm going to hang out."" (neutral tone). 
 - Visual evidence: woman gives a small raised-hand wave with downcast eyes and pursed lips; a man in a suit stands nearby watching with a slight smile; indoor public/semi-public backdrop. 
 - Cross-modal setup: the spoken line is casual/neutral while the woman's posture and expression look awkward or resigned.
@@ -1785,7 +1785,7 @@ affection_8858.png,affection_0347,i called my boy whatchoo goin do bout that spr
 - Emotion label: Bad.
 - Subject/target justification: the speaker (the woman) appears to feel discomfort/indifference toward the social situation. 
 - Domain/Culture provides no additional disambiguation.",False,False
-493.mp4,affection_5542,it's too late. you missed everything.,the female store manager speaking,the male customer who arrived too late,the male customer in front of her,the other store employees,the supermarket brand,the store’s operating hours policy,the promotion that already ended,the in-store inventory,Affection,socio_cultural_dependency,NULL,NULL,socio_cultural_dependency,Public & Service,General Culture,Angry,NULL,NULL,"[Anchor]
+493.mp4,affection_5542,it's too late. you missed everything.,female speaking,male customer,the male customer in front of her,the other store employees,the supermarket brand,the store’s operating hours policy,the promotion that already ended,the in-store inventory,Affection,affective_deception,NULL,NULL,affective_deception,Public & Service,General Culture,Angry,NULL,NULL,"[Anchor]
 - Text evidence: ""it's too late. you missed everything."" (literal tone: negative). 
 - Visual evidence: arms akimbo / hands on hips; stern, tight-lipped facial expression; store uniform with visible name tag ""DINA"" facing a male customer. 
 - Cross-modal setup: At surface the utterance and voice are a factual, detached statement while the visual posture reads confrontational.
@@ -1799,7 +1799,7 @@ affection_8858.png,affection_0347,i called my boy whatchoo goin do bout that spr
 - Emotion label: Angry.
 - Subject/target justification: Dina (speaker) is implicitly irritated toward the customer for having ""missed everything."" 
 - Domain/Culture provides no additional disambiguation.",False,False
-affection_5859.png,affection_2738,"238,000 veterans have died waiting for healthcare u.s. increases aid to israel to $4.5 billion/yr",poster,funding priorities,activist,veteran,mourner,domestic healthcare system,military conflict,media coverage,Affection,multimodal_incongruity,NULL,NULL,multimodal_incongruity,Public & Service,General Culture,Angry,NULL,NULL,"[Anchor]
+affection_5859.png,affection_2738,"238,000 veterans have died waiting for healthcare u.s. increases aid to israel to $4.5 billion/yr",poster,funding priorities,activist,veteran,mourner,healthcare system,military conflict,media coverage,Affection,multimodal_incongruity,NULL,NULL,multimodal_incongruity,Public & Service,General Culture,Angry,NULL,NULL,"[Anchor]
 - Text evidence: ""238,000 veterans have died waiting for healthcare"" (negative tone). 
 - Visual evidence: a cemetery with multiple headstones and a person lying among graves; a separate image of a large explosion/fiery blast over urban buildings. 
 - Cross-modal setup: The caption links domestic veteran deaths to increased foreign aid while images pair graves with wartime destruction.
@@ -1823,7 +1823,7 @@ attitude_7550.png,attitude_0813,muslims in 2001 defund homeland security! muslim
 
 [Inference]
 - Attitude label: Contemptuous. Subject/target justification: The meme author expresses contempt toward Muslims by equating them with the 9/11 attack and portraying a Muslim congressperson as emblematic. Domain (Online & Social Media) signals a provocative public post; Culture provides no additional disambiguation.",False,False
-affection_3084.png,affection_1067,when she's mad at you but you want her attention,you,partner,friend,roommate,coworker,female friend,family member,work colleague,Affection,figurative_semantics,NULL,NULL,figurative_semantics,Intimate Relationships,General Culture,Bad,NULL,NULL,"[Anchor]
+affection_3084.png,affection_1067,when she's mad at you but you want her attention,you,partner,friend,roommate,coworker,female friend,family member,work colleague,Affection,figurative_semantics,NULL,NULL,figurative_semantics,Intimate Relationships,General Culture,Angry,NULL,NULL,"[Anchor]
 - Text evidence: ""when she's mad at you but you want her attention"" (literal tone: negative/conflict). 
 - Visual evidence: two chimpanzees with faces very close; one has a hand on the other's cheek; lips appear to touch or nuzzle the other's face; black-and-white photograph. 
 - Cross-modal setup: the caption describes a partner being angry while the image shows intimate, affectionate contact.
@@ -1860,7 +1860,7 @@ attitude_5338.png,attitude_6192,mom won't let me use the oven with my jewish fri
 
 [Inference]
 - Attitude label: Hostile. Subject/target justification: the meme speaker/poster expresses hostility toward Jewish people by normalizing violent exclusion. Domain/Culture: the Family Conversations context frames it as a casual interpersonal joke, reinforcing the demeaning stance.",False,False
-intent_9680.png,intent_5718,if you lick a woman's clit for 20 minutes she will revert to factory settings and all's forgiven,speaker,female partner,boyfriend,husband,lover,ex girlfriend,close friend,work colleague,Intent,NULL,malicious_manipulation,NULL,malicious_manipulation,Intimate Relationships,General Culture,NULL,dominate,NULL,"[Anchor]
+intent_9680.png,intent_5718,if you lick a woman's clit for 20 minutes she will revert to factory settings and all's forgiven,speaker,female partner,boyfriend,husband,lover,ex girlfriend,close friend,work colleague,Intent,NULL,expressive_aggression,NULL,expressive_aggression,Intimate Relationships,General Culture,NULL,mock,NULL,"[Anchor]
 - The text gives prescriptive explicit sexual advice presenting oral sex as a guaranteed fix for relational conflict. The image is a polished portrait of a well-dressed older man used in top/bottom meme format, lending a faux-authoritative voice to the statement.
 
 [Pivot]
@@ -1868,7 +1868,7 @@ intent_9680.png,intent_5718,if you lick a woman's clit for 20 minutes she will r
 
 [Inference]
 - Mechanism: malicious_manipulation. The hidden intent is to promote using sex to secure forgiveness from a female partner, instrumentally manipulating intimacy for personal benefit.",False,False
-affection_11373.png,affection_3432,this is me tryna look cool  after learning how to shoot from the movies,poster,their attempt to look cool,actor,photographer,model,movie gunplay,movie menace,guns,Affection,multimodal_incongruity,NULL,NULL,multimodal_incongruity,Online & Social Media,General Culture,Happy,NULL,NULL,"[Anchor]
+affection_11373.png,affection_3432,this is me tryna look cool  after learning how to shoot from the movies,poster,cool behavier,actor,photographer,model,movie gunplay,movie menace,guns,Affection,multimodal_incongruity,NULL,NULL,multimodal_incongruity,Online & Social Media,General Culture,Angry,NULL,NULL,"[Anchor]
 - Text evidence: ""this is me tryna look cool"" (literal tone: playful/positive).
 - Visual evidence: a hooded, masked person; a handgun pointed directly at camera; shallow depth-of-field with bright background bokeh.
 - Cross-modal setup: The caption self-deprecatingly claims an attempt to ""look cool"" while the photo shows an intense, movie-like threatening pose.
@@ -1882,13 +1882,13 @@ affection_11373.png,affection_3432,this is me tryna look cool  after learning ho
 - Emotion label: Happy.
 - Subject/target justification: The poster expresses playful, boastful confidence about their own image/pose toward appearing ""cool."" 
 - Domain/Culture provides no additional disambiguation.",False,False
-intent_7286.png,intent_2042,uncle : that ain't all your hair me: them ain't all your kids #thanksgivingclapback,the speaker (nephew/niece),uncle,cousin,sibling,family friend,godfather,father,neighbor,Intent,NULL,expressive_aggression,NULL,expressive_aggression,Family Conversations,General Culture,NULL,dominate,NULL,"[Anchor]
+intent_7286.png,intent_2042,uncle : that ain't all your hair me: them ain't all your kids #thanksgivingclapback,the speaker,uncle,cousin,sibling,family friend,godfather,father,neighbor,Intent,NULL,expressive_aggression,NULL,expressive_aggression,Family Conversations,General Culture,NULL,dominate,NULL,"[Anchor]
 - Text evidence: The uncle makes a teasing remark about the speaker's hair; the speaker replies with a sharp paternity jab (""them ain't all your kids"") and tags it as a #thanksgivingclapback. Visual evidence: a dramatic close-up portrait emphasizing hair and appearance, which ties to the original tease.
 [Pivot]
 - Cross-modal setup: The witty but cutting comeback displaces the target from appearance to lineage; the image's stylized face amplifies the sting and frames the reply as performative.
 [Inference]
 - The speaker's implicit intent is to publicly retaliate and humiliate the uncle, asserting dominance through an insulting clapback.",False,False
-affection_6426.png,affection_4466,when you only workout using body weight,poster,partner,photographer,viewer,stranger,roommate,friend,coworker,Affection,figurative_semantics,NULL,NULL,figurative_semantics,Online & Social Media,General Culture,Disgusted,NULL,NULL,"[Anchor]
+affection_6426.png,affection_4466,when you only workout using body weight,poster,partner,photographer,viewer,stranger,roommate,friend,coworker,Affection,figurative_semantics,NULL,NULL,figurative_semantics,Online & Social Media,General Culture,Happy,NULL,NULL,"[Anchor]
 - Text evidence: ""only workout using body weight"" (literal tone: neutral). 
 - Visual evidence: two illustrated people holding hands; one person is horizontal and airborne above the ground; clear shadows indicate suspension. 
 - Cross-modal setup: the caption talks about ""body weight"" workouts while the image shows a person literally using another person as a weight.
@@ -1916,7 +1916,7 @@ affection_9229.png,affection_5348,when the bass drops just right,poster,the bass
 - Emotion label: Happy.
 - Subject/target justification: the poster projects a feeling of ecstatic excitement onto the dancing man to illustrate the ""bass drop"" thrill. 
 - Domain/Culture usage: Domain/Culture clarifies this is an online meme using a traditional celebration image to heighten the comedic contrast.",False,False
-affection_7928.png,affection_3377,me and the boys after killing innocent people in a bomb blast,poster and his friends,arab terrorists,group of young tourists,group of wedding guests,local cafe staff members,tourist group,wedding guests,restaurant patrons,Affection,multimodal_incongruity,NULL,NULL,multimodal_incongruity,Online & Social Media,Arab Culture,Angry,NULL,NULL,"[Anchor]
+affection_7928.png,affection_3377,me and the boys after killing innocent people in a bomb blast,poster and his friends,arab terrorists,group of young tourists,group of wedding guests,local cafe staff members,tourist group,wedding guests,restaurant patrons,Affection,multimodal_incongruity,NULL,NULL,multimodal_incongruity,Online & Social Media,Arab Culture,Disgusted,NULL,NULL,"[Anchor]
 - Text evidence: ""after killing innocent people in a bomb blast"" (literal tone: negative/violent). 
 - Visual evidence: four men in traditional dress smiling; one holds a phone taking a selfie; arms around each other indicating closeness; bright indoor market background. 
 - Cross-modal setup: the caption describes mass violence while the photo shows a joyful, celebratory group selfie.
@@ -1930,13 +1930,13 @@ affection_7928.png,affection_3377,me and the boys after killing innocent people 
 - Emotion label: Happy.
 - Subject/target justification: The poster and his friends are implicitly presented as pleased/celebratory about the bombing and its victims. 
 - Domain/Culture usage: Domain/Culture provides no additional disambiguation.",False,False
-intent_3464.png,intent_6657,been talking shit about trump since day one. now crying like bitches after getting called out,online political critic,progressive female politicians,political campaign strategist,investigative political journalist,government press secretary,corporate lobbyists,mainstream news anchors,grassroots community organizers,Intent,NULL,expressive_aggression,NULL,expressive_aggression,Public & Service,General Culture,NULL,denounce,NULL,"[Anchor]
+intent_3464.png,intent_6657,been talking shit about trump since day one. now crying like bitches after getting called out,poster,these politicians,political campaign strategist,investigative political journalist,government press secretary,corporate lobbyists,mainstream news anchors,grassroots community organizers,Intent,NULL,expressive_aggression,NULL,expressive_aggression,Public & Service,General Culture,NULL,denounce,NULL,"[Anchor]
 - Text evidence: The caption uses derogatory language (""crying like bitches"") and accuses the targets of hypocrisy about Trump. Visual evidence: a group of female politicians at a public podium makes them clear public figures and visible targets. Cross-modal: the insult-laden text overlays a photo of those officials, linking the verbal attack directly to them.
 [Pivot]
 - Mechanism: expressive_aggression. The speaker resorts to ridicule and name-calling rather than substantive critique, aiming to demean and dominate.
 [Inference]
 - Intent: to publicly shame and delegitimize the politicians and provoke opponents into siding with the speaker.",False,False
-attitude_7940.png,attitude_1795,they gone be feeling on my boooooty,speaker,black people,corrections officer,online moderator,photographer,other inmates,prison guards,female partygoers,Attitude,NULL,NULL,protective_distancing,protective_distancing,Online & Social Media,General Culture,NULL,NULL,Contemptuous,"[Anchor]
+attitude_7940.png,attitude_1795,they gone be feeling on my boooooty,speaker,black people,corrections officer,online moderator,photographer,other inmates,prison guards,female partygoers,Attitude,NULL,NULL,dominant_affiliation,dominant_affiliation,Online & Social Media,General Culture,NULL,NULL,Contemptuous,"[Anchor]
 - Text evidence: ""they gone be feeling on my boooooty"" (neutral/slang, joking tone). 
 - Visual evidence: man wearing an orange jumpsuit; downward gaze and solemn facial expression; plain institutional-colored background. 
 - Cross-modal setup: The jokey caption about being touched sits atop an image of a detained-looking person, creating a darkly humorous contrast.
@@ -1946,7 +1946,7 @@ attitude_7940.png,attitude_1795,they gone be feeling on my boooooty,speaker,blac
 
 [Inference]
 - Attitude label: Indifferent. The speaker (meme author/man pictured) adopts a resigned, joking indifference toward ""they"" (unspecified others). Domain/Culture: Online meme culture encourages dark humor as a form of emotional distancing.",False,False
-intent_6091.png,intent_5981,"""nobody is trying to take your guns!"" ""we only want to make you register them, restrict transfers, ban certain guns, limit magazine capacity, prohibit carrying them, ban or limit ammo, make other arbitrary laws, and, if we catch you violating any of these made-up rules, throw you in prison.... at which point we will take your guns!""",meme author,gun owners,political operative,campaign strategist,content moderator,law-abiding citizens,political conservatives,registered voters,Intent,NULL,malicious_manipulation,NULL,malicious_manipulation,Online & Social Media,General Culture,NULL,intimidate,NULL,"[Anchor]
+intent_6091.png,intent_5981,"""nobody is trying to take your guns!"" ""we only want to make you register them, restrict transfers, ban certain guns, limit magazine capacity, prohibit carrying them, ban or limit ammo, make other arbitrary laws, and, if we catch you violating any of these made-up rules, throw you in prison.... at which point we will take your guns!""",meme author,gun owners,political operative,campaign strategist,content moderator,law-abiding citizens,political conservatives,registered voters,Intent,NULL,malicious_manipulation,NULL,malicious_manipulation,Online & Social Media,General Culture,NULL,mitigate,NULL,"[Anchor]
 - Text evidence: The caption quotes a reassuring line then immediately lists escalating regulations and prison leading to confiscation. Visual evidence: a speaking woman with a dismissive gesture represents the quoted reassurer. The juxtaposition frames the speaker as deceitful and presents restriction steps as an inevitable trail to loss.
 
 [Pivot]
@@ -1968,7 +1968,7 @@ intent_6091.png,intent_5981,"""nobody is trying to take your guns!"" ""we only w
 - Emotion label: Fearful.
 - Subject/target justification: the employee(s) implicitly seek to avoid an escalated interaction with the customer.  
 - Domain/Culture provides no additional disambiguation.",False,False
-attitude_3859.png,attitude_3533,that moment you use your white privileges,meme creator,people who use white privilege,graphic designer,brand marketer,stand-up comedian,people with socio-economic privilege,individuals benefiting from inherited wealth,upper class individuals in society,Attitude,NULL,NULL,dominant_detachment,dominant_detachment,Online & Social Media,General Culture,NULL,NULL,Contemptuous,"[Anchor]
+attitude_3859.png,attitude_3533,that moment you use your white privileges,meme creator,white privilege,graphic designer,brand marketer,stand-up comedian,socio-economic privilege,rich people,upper class,Attitude,NULL,NULL,dominant_detachment,dominant_detachment,Online & Social Media,General Culture,NULL,NULL,Disapproving,"[Anchor]
 - Text evidence: ""use your white privileges"" (negative tone).
 - Visual evidence: two shirtless men fighting; one man landing a punch on another; a crowd of onlookers with excited/cheering expressions.
 - Cross-modal setup: the caption accuses someone of 'using white privileges' while the photo shows physical violence, linking the accusation to punishment.
@@ -1978,7 +1978,7 @@ attitude_3859.png,attitude_3533,that moment you use your white privileges,meme c
 
 [Inference]
 - Attitude label: Contemptuous. The meme creator expresses contempt toward people who use white privilege. Domain/Culture provides no additional disambiguation.",False,False
-intent_8789.png,intent_3722,when you found your wife is cheating on you,meme poster,the wife,jealous ex,internet troll,tabloid journalist,the mistress,the neighbor,the phone,Intent,NULL,expressive_aggression,NULL,expressive_aggression,Intimate Relationships,General Culture,NULL,denounce,NULL,"[Anchor]
+intent_8789.png,intent_3722,when you found your wife is cheating on you,meme poster,the wife,jealous ex,internet troll,tabloid journalist,the mistress,the neighbor,the phone,Intent,NULL,expressive_aggression,NULL,expressive_aggression,Intimate Relationships,General Culture,NULL,provoke,NULL,"[Anchor]
 - The caption states ""when you found your wife is cheating on you."" Visually the top panel shows two goats mating while the bottom shows a woman in bed looking at her phone with a man behind her. The animal imagery paired with the cheating scenario frames the wife as a figure of ridicule rather than prompting support or resolution.
 
 [Pivot]
@@ -1998,7 +1998,7 @@ attitude_7788.png,attitude_2516,muslims in 2001 muslim in congress 2019 defund h
 [Inference]
 - Attitude label: Hostile.
 - Subject/target justification: The meme speaker expresses hostility toward North Korea by endorsing it as a military target. 
-- Domain/Culture provides no additional disambiguation.",False,False
+- Domain/Culture provides no additional disambiguation.",False,True
 attitude_6207.png,attitude_6091,mandatory vaccinations with no exemptions i do nazi the problem.....,poster,mandatory vaccination policy,forum moderator,automated moderation system,public relations officer,public health officials,government health agencies,medical establishment,Attitude,NULL,NULL,dominant_detachment,dominant_detachment,Online & Social Media,General Culture,NULL,NULL,Hostile,"[Anchor]
 - Text evidence: ""mandatory vaccinations with no exemptions"" (literal tone: negative). 
 - Visual evidence: black-and-white photo of a man in a military-style uniform raising his right arm; the man appears to be speaking or gesturing at a podium or microphone; historical high-contrast image. 
@@ -2012,7 +2012,7 @@ attitude_6207.png,attitude_6091,mandatory vaccinations with no exemptions i do n
 - Attitude label: Contemptuous.
 - Subject/target justification: The poster expresses contempt toward the mandatory vaccination policy by likening it to authoritarianism. 
 - Domain/Culture provides no additional disambiguation.",False,False
-2_58.mp4,intent_8543,Why?,the speaker,the friend,the neighbor,the roommate,the sister,the partner,the acquaintance,the coworker,Intent,NULL,prosocial_deception,NULL,prosocial_deception,Friendship Interactions,General Culture,NULL,mitigate,NULL,"[Anchor]
+2_58.mp4,intent_8543,Why?,the speaker,the friend,the neighbor,the roommate,the sister,the partner,the acquaintance,the coworker,Intent,NULL,malicious_manipulation,NULL,malicious_manipulation,Friendship Interactions,General Culture,NULL,mitigate,NULL,"[Anchor]
 - Text evidence: the single-word question ""Why?"" (neutral/curious). 
 - Visual evidence: woman smiling, leaning forward, relaxed posture, softened eyes. 
 - Cross-modal setup: the terse question contrasts with warm, engaged body language.
@@ -2040,7 +2040,7 @@ affection_7215.png,affection_4302,you can't get her pregnant if she's a goat,pos
 - Emotion label: Angry.
 - Subject/target justification: The poster is expressing contempt/hostility toward the person depicted.
 - Domain/Culture usage: Domain/Culture provides no additional disambiguation.",False,False
-affection_9226.png,affection_5114,"i thought you liked me talking shit in bed! her: him: yes,but, ""eat my pussy like it's watermelon you nigger!"" is not okay , katie",katie,racist sexual comment,him mark,roommate emily,mother alicia,unwashed body odor,sudden vomiting episode,rude hygiene complaint,Affection,figurative_semantics,NULL,NULL,figurative_semantics,Intimate Relationships,General Culture,Disgusted,NULL,NULL,"[Anchor]
+affection_9226.png,affection_5114,"i thought you liked me talking shit in bed! her: him: yes,but, ""eat my pussy like it's watermelon you nigger!"" is not okay , katie",poster,racist,him mark,roommate emily,mother alicia,unwashed body odor,sudden vomiting episode,rude hygiene complaint,Affection,socio_cultural_dependency,NULL,NULL,socio_cultural_dependency,Intimate Relationships,General Culture,Angry,NULL,NULL,"[Anchor]
 - Text evidence: ""eat my pussy like it's watermelon you nigger!"" (literal tone: offensive/negative). 
 - Visual evidence: close-up of an interracial couple in an intimate pose; woman's mouth slightly open; hands touching the man's face. 
 - Cross-modal setup: the caption records a sexually explicit, racist line and a refusal, while the photo shows physical closeness at odds with the reprimand.
@@ -2054,7 +2054,7 @@ affection_9226.png,affection_5114,"i thought you liked me talking shit in bed! h
 - Emotion label: Angry.
 - Subject/target justification: The woman (Katie) is implicitly angry/offended at her partner's racist sexual comment.
 - Domain/Culture usage: General cultural norms that racial slurs are unacceptable support reading the affect as anger rather than playfulness.",False,False
-183.mp4,affection_5439,"okay, fine, whatever. let's just go.",the reluctantly conceding manager,the ongoing dispute,the male employee facing her,the coworker nearby,the customer in the store,the male employee's attitude,the product display,the work schedule,Affection,affective_deception,NULL,NULL,affective_deception,Workplace,General Culture,Angry,NULL,NULL,"[Anchor]
+183.mp4,affection_5439,"okay, fine, whatever. let's just go.",woman in black,woman in blue,the male employee,a passerby,the customer,the male employee,the product display,the work schedule,Affection,affective_deception,NULL,NULL,affective_deception,Workplace,General Culture,Angry,NULL,NULL,"[Anchor]
 - Text evidence: ""okay, fine, whatever. let's just go."" — literal tone: negative (resigned). 
 - Visual evidence: slight frown and pursed lips, one hand extended in an exasperated gesture, wearing a store nametag (Courtney) in an indoor retail aisle. 
 - Cross-modal setup: the words signal acquiescent indifference while face, gesture, and audio tone signal irritation.
@@ -2068,7 +2068,7 @@ affection_9226.png,affection_5114,"i thought you liked me talking shit in bed! h
 - Emotion label: Angry.
 - Subject/target justification: Courtney feels annoyed/irritated toward the employee or the situation prompting resignation.
 - Domain/Culture provides no additional disambiguation.",False,False
-affection_11615.png,affection_5148,"""we're his kids and he hasn't returned. yeah this makes sense""",poster,absent father figure,child,sibling,worshipper,retired parish priest,estranged celebrity figure,absent local politician,Affection,socio_cultural_dependency,NULL,NULL,socio_cultural_dependency,Online & Social Media,General Culture,Disgusted,NULL,NULL,"[Anchor]
+affection_11615.png,affection_5148,"""we're his kids and he hasn't returned. yeah this makes sense""",poster,god,child,sibling,worshipper,retired parish priest,estranged celebrity figure,absent local politician,Affection,socio_cultural_dependency,NULL,NULL,socio_cultural_dependency,Online & Social Media,General Culture,Disgusted,NULL,NULL,"[Anchor]
 - Text evidence: ""we're his kids and he hasn't returned"" (negative, sarcastic tone). 
 - Visual evidence: halo-like circular radiance behind the head, long hair and beard, frontal robe/cloak, stylized religious-icon portrait. 
 - Cross-modal setup: The caption complains about an absent ""father"" while the image depicts a haloed religious figure at surface level.
@@ -2082,14 +2082,14 @@ affection_11615.png,affection_5148,"""we're his kids and he hasn't returned. yea
 - Emotion label: Angry.
 - Subject/target justification: The poster expresses bitter anger/resentment as a child/descendant toward the absent father figure (implied God/Jesus).
 - Domain/Culture usage: Domain/Culture supplies the Christian iconographic cue that makes the sarcasm a critique of a divine/absent father rather than a mundane person.",False,False
-1_2778.mp4,attitude_7168,"Ooh, big talk from a man who was once treed by a chicken.",the speaker,the man being addressed,background observer,group leader,close friend,the man in center,the man on right,the person in doorway,Attitude,NULL,NULL,dominant_detachment,dominant_detachment,Friend Group,General Culture,NULL,NULL,Contemptuous,"[Anchor] Text evidence: ""a man who was once treed by a chicken"" (negative, mocking tone). Visual evidence: three people in a doorway; the addressee stands facing the speaker; a third person stands behind with arms crossed and a slight smirk; the speaker faces the addressee (back to camera). Cross-modal setup: the sarcastic line and amused tone align with the group's confrontational posture, signaling ridicule. [Pivot] Mechanism: dominant_detachment. Trigger rule: the sarcastic insult asserts high-ground superiority and dismisses the addressee's credibility, while group body language compounds the put-down; this performs Character Blaming. Minimal justification: wording plus visual mockery creates a dismissal of the target's stature. [Inference] Attitude label: Contemptuous. The speaker expresses contempt toward the man being addressed. Domain/Culture provides no additional disambiguation.",False,False
-intent_11600.png,intent_5689,is it a boy or a girl? it's a bomb,meme poster,gender reveal culture,internet troll,online community manager,humor columnist,baby shower traditions,social media trends,influencer marketing culture,Intent,NULL,expressive_aggression,NULL,expressive_aggression,Online & Social Media,General Culture,NULL,dominate,NULL,"[Anchor]
+1_2778.mp4,attitude_7168,"Ooh, big talk from a man who was once treed by a chicken.",the speaker,the man addressed,background observer,group leader,close friend,the man in center,the man on right,the person in doorway,Attitude,NULL,NULL,dominant_affiliation,dominant_affiliation,Friend Group,General Culture,NULL,NULL,Contemptuous,"[Anchor] Text evidence: ""a man who was once treed by a chicken"" (negative, mocking tone). Visual evidence: three people in a doorway; the addressee stands facing the speaker; a third person stands behind with arms crossed and a slight smirk; the speaker faces the addressee (back to camera). Cross-modal setup: the sarcastic line and amused tone align with the group's confrontational posture, signaling ridicule. [Pivot] Mechanism: dominant_detachment. Trigger rule: the sarcastic insult asserts high-ground superiority and dismisses the addressee's credibility, while group body language compounds the put-down; this performs Character Blaming. Minimal justification: wording plus visual mockery creates a dismissal of the target's stature. [Inference] Attitude label: Contemptuous. The speaker expresses contempt toward the man being addressed. Domain/Culture provides no additional disambiguation.",False,False
+intent_11600.png,intent_5689,is it a boy or a girl? it's a bomb,meme poster,gender reveal,internet troll,online community manager,humor columnist,baby shower traditions,social media trends,influencer marketing culture,Intent,NULL,expressive_aggression,NULL,expressive_aggression,Online & Social Media,General Culture,NULL,mock,NULL,"[Anchor]
 - Text reads a benign question about sex followed by the blunt answer ""it's a bomb."" The image shows a faceless hooded figure presenting a lit spherical bomb, creating a stark mismatch between an innocuous social question and a violent object. 
 [Pivot]
 - The cross-modal clash uses shock humor to displace the target: rather than literally asking gender, the creator weaponizes the trope to mock or attack gender-reveal practices and to startle viewers. This is an indirect aggressive move online. 
 [Inference]
 - The poster's intent is to jolt the audience and provoke alarm about or mock the gender reveal phenomenon.",False,False
-affection_3070.png,affection_2704,"a girl asks her mom, ""why am i black and you're white?"" she says, ""the way that party went, you're lucky you don't bark. """,Poster,The family members,photographer,commenter,friend,the parents,the child's behavior,the home's condition,Affection,multimodal_incongruity,NULL,NULL,multimodal_incongruity,Family Conversations,General Culture,Disgusted,NULL,NULL,"[Anchor]
+affection_3070.png,affection_2704,"a girl asks her mom, ""why am i black and you're white?"" she says, ""the way that party went, you're lucky you don't bark. """,Poster,black people,photographer,commenter,friend,the parents,the child's behavior,the home's condition,Affection,multimodal_incongruity,NULL,NULL,multimodal_incongruity,Family Conversations,General Culture,Disgusted,NULL,NULL,"[Anchor]
 - Text evidence: quoted phrase ""you're lucky you don't bark."" (literal tone: negative/derogatory). 
 - Visual evidence: posed family portrait; a smiling child centered with two smiling adults standing close; outdoor domestic background and greenery. 
 - Cross-modal setup: the caption delivers a demeaning animalizing remark while the photo shows a congenial family scene.
@@ -2116,8 +2116,8 @@ affection_3070.png,affection_2704,"a girl asks her mom, ""why am i black and you
 [Inference]
 - Emotion label: Angry.
 - Subject/target justification: the speaker expresses irritation directed at the prolonged situation/meeting. 
-- Domain/Culture provides no additional disambiguation.",False,False
-1_10853.mp4,affection_5562,"Okay, sit down. Listen, Emily, what happened between me and Raj was a long time ago. It was,",the speaker,Emily,the red-haired woman,the brown-haired man,the tall neighbor,Leah's recent fight,Claire's old secret,Zoe's prior mistake,Affection,affective_deception,NULL,NULL,affective_deception,Intimate Relationships,General Culture,Bad,NULL,NULL,"[Anchor]
+- Domain/Culture provides no additional disambiguation.",False,True
+1_10853.mp4,affection_5562,"Okay, sit down. Listen, Emily, what happened between me and Raj was a long time ago. It was,",the speaker,Emily,the red-haired woman,the brown-haired man,the tall neighbor,Leah's recent fight,Claire's old secret,Zoe's prior mistake,Affection,affective_deception,NULL,NULL,affective_deception,Intimate Relationships,General Culture,Fearful,NULL,NULL,"[Anchor]
 - Text evidence: ""what happened between me and Raj was a long time ago."" (literal tone: neutral/defensive).
 - Visual evidence: center person looks down with hands clasped; blond speaker holds a composed, palms-out gesture; redheaded woman stands nearby with a slight smile.
 - Cross-modal setup: The words and tone attempt to minimize the past event while the scene shows tense body language and a responsive, charged interaction.
@@ -2131,7 +2131,7 @@ affection_3070.png,affection_2704,"a girl asks her mom, ""why am i black and you
 - Emotion label: Sad.
 - Subject/target justification: The speaker appears defensive/guilty toward Emily about the past with Raj.
 - Domain/Culture provides no additional disambiguation.",False,False
-282.mp4,attitude_7123,"you think you're so great? your boyish good looks aren't gonna age well. you're hitting a wall, pretty boy",dina the speaker,the male coworker,the male employee,female customer in,bearded male shopper,a bearded customer,a female coworker,the store manager,Attitude,NULL,NULL,dominant_detachment,dominant_detachment,Workplace,General Culture,NULL,NULL,Contemptuous,"[Anchor]
+282.mp4,attitude_7123,"you think you're so great? your boyish good looks aren't gonna age well. you're hitting a wall, pretty boy",dina the speaker,the male coworker,the male employee,female customer in,bearded male shopper,a bearded customer,a female coworker,the store manager,Attitude,NULL,NULL,dominant_detachment,dominant_detachment,Workplace,General Culture,NULL,NULL,Dismissive,"[Anchor]
 - Text evidence: ""your boyish good looks aren't gonna age well"" (negative tone). 
 - Visual evidence: female employee stands hands-on-hips facing a male coworker; she leans slightly forward and speaks; the male stands with hands clasped and a guarded expression. 
 - Cross-modal setup: the insulting verbal lines align with a face-to-face, confrontational stance in the images.
@@ -2144,7 +2144,7 @@ affection_3070.png,affection_2704,"a girl asks her mom, ""why am i black and you
 - Attitude label: Contemptuous. 
 - Subject/target justification: Dina (speaker) expresses contempt toward the male coworker being addressed. 
 - Domain/Culture usage: the workplace context frames this as interpersonal hostility rather than playful teasing.",False,False
-1_11773.mp4,intent_8507,This is why I've been saying we should keep champagne on ice.,penny,leonard,amy,sheldon,bernadette,sheldon,amy,howard the man,Intent,NULL,expressive_aggression,NULL,expressive_aggression,Friend Group,General Culture,NULL,mitigate,NULL,"[Anchor]
+1_11773.mp4,intent_8507,This is why I've been saying we should keep champagne on ice.,penny,leonard,amy,sheldon,bernadette,sheldon,amy,howard the man,Intent,NULL,malicious_manipulation,NULL,malicious_manipulation,Friend Group,General Culture,NULL,mitigate,NULL,"[Anchor]
 - Text evidence: ""we should keep champagne on ice"" (literal tone: neutral).
 - Visual evidence: speaker gesturing animatedly; the man beside her purses his lips/looks uncomfortable; two others in background are smiling.
 - Cross-modal setup: The sentence is propositional advice but audio and facial/body cues render it sarcastic and socially pointed.
@@ -2166,7 +2166,7 @@ intent_9834.png,intent_6529,how a woman tells society she is single,meme creator
 
 [Inference]
 - Intent label: objectify women. The poster intends to reduce women to sexual signals and mock them under the guise of humor.",False,False
-387.mp4,attitude_7048,these customers are so handsome.,the speaker,these customers,the store manager,a floor supervisor,the team leader,store employees,new hires,other staff,Attitude,NULL,NULL,dominant_detachment,dominant_detachment,Workplace,General Culture,NULL,NULL,Dismissive,"[Anchor]
+387.mp4,attitude_7048,these customers are so handsome.,the speaker,these customers,the store manager,a floor supervisor,the team leader,store employees,new hires,other staff,Attitude,NULL,NULL,dominant_detachment,dominant_detachment,Workplace,General Culture,NULL,NULL,Appreciative,"[Anchor]
 - Text evidence: ""these customers are so handsome."" (literal tone: positive/complimentary). 
 - Visual evidence: whiteboard reading ""TOXIC WORK"", an employee (Cheyenne) making a disgusted/grimacing face, a manager (Glenn) standing with clipboard, a foreground audience hand. 
 - Cross-modal setup: The upbeat literal text clashes with visuals of discomfort and workplace toxicity, creating a sarcastic mismatch.
@@ -2179,7 +2179,7 @@ intent_9834.png,intent_6529,how a woman tells society she is single,meme creator
 - Attitude label: Contemptuous. 
 - Subject/target justification: The speaker implicitly positions themselves above ""these customers,"" mocking them rather than genuinely praising them. 
 - Domain/Culture usage: Workplace context (staff meeting/training) supports a sarcastic managerial dismissal rather than a sincere compliment.",False,False
-attitude_6747.png,attitude_5235,"mindfuck when you shit bricks, you'll see it",poster,the implied 'you',photographer,commenter,bystander,the toilet user,the person depicted,the casual onlooker,Attitude,NULL,NULL,dominant_detachment,dominant_detachment,Online & Social Media,General Culture,NULL,NULL,Contemptuous,"[Anchor]
+attitude_6747.png,attitude_5235,"mindfuck when you shit bricks, you'll see it",poster,the viewer,photographer,commenter,bystander,the toilet user,the person depicted,the casual onlooker,Attitude,NULL,NULL,dominant_detachment,dominant_detachment,Online & Social Media,General Culture,NULL,NULL,Contemptuous,"[Anchor]
 - Text evidence: ""when you shit bricks, you'll see it"" (negative/taunting). 
 - Visual evidence: overhead photo of a toilet bowl centered in a tiled stall; visible toilet brush and small trash can; no people present. 
 - Cross-modal setup: The crude bodily-language in the caption aligns with the toilet image at surface level, making the taunt literal and graphic.
@@ -2192,7 +2192,7 @@ attitude_6747.png,attitude_5235,"mindfuck when you shit bricks, you'll see it",p
 - Attitude label: Contemptuous.
 - Subject/target justification: The poster expresses contempt toward the implied ""you"" through taunting language and degrading imagery. 
 - Domain/Culture provides no additional disambiguation.",False,False
-affection_7406.png,affection_4226,it's a boy! congratulations harry & meghan,poster,Harry & Meghan,street artist,photographer,billboard installer,the newborn,baby orangutan,the fanbase,Affection,multimodal_incongruity,NULL,NULL,multimodal_incongruity,Online & Social Media,General Culture,Disgusted,NULL,NULL,"[Anchor]
+affection_7406.png,affection_4226,it's a boy! congratulations harry & meghan,poster,Harry and Meghan,street artist,photographer,billboard installer,the newborn,baby orangutan,the fanbase,Affection,multimodal_incongruity,NULL,NULL,multimodal_incongruity,Online & Social Media,General Culture,Disgusted,NULL,NULL,"[Anchor]
 - Text evidence: ""it's a boy! congratulations harry & meghan"" (positive tone). 
 - Visual evidence: close-up photograph of a baby orangutan; large round eyes; small mouth and visible reddish, tousled hair; blurred background. 
 - Cross-modal setup: A celebratory caption is paired with an animal portrait, so the two modalities together form a single meme.
@@ -2206,7 +2206,7 @@ affection_7406.png,affection_4226,it's a boy! congratulations harry & meghan,pos
 - Emotion label: Angry.
 - Subject/target justification: The poster conveys hostile mockery toward Harry & Meghan (and their newborn) by juxtaposing congratulations with an animal image.
 - Domain/Culture usage: Online meme culture commonly uses such image-text juxtapositions to deride public figures, supporting this hostile reading.",False,False
-attitude_9483.png,attitude_5329,a little gas never killed anybody right?,poster,Discrimination against Black People,mother,girl,cat,joke about a party,family joke about pets,teasing about someone's hobbies or interests,Affection,socio_cultural_dependency,NULL,NULL,socio_cultural_dependency,Family Conversations,General Culture,Disgusted,NULL,NULL,"[Anchor]
+attitude_9483.png,attitude_5329,a little gas never killed anybody right?,poster,man being killed,mother,girl,cat,joke about a party,family joke about pets,teasing about someone's hobbies or interests,Affection,multimodal_incongruity,NULL,NULL,multimodal_incongruity,Family Conversations,General Culture,Angry,NULL,NULL,"[Anchor]
 - Text evidence: ""you're lucky you don't bark"" (literal tone: negative/insulting). 
 - Visual evidence: smiling woman; holding a black cat close to her face; close, intimate physical proximity. 
 - Cross-modal setup: The caption contains a mocking remark while the photo shows a warm, affectionate interaction.
@@ -2219,7 +2219,7 @@ attitude_9483.png,attitude_5329,a little gas never killed anybody right?,poster,
 - Emotion label: Happy.
 - Subject/target justification: The mother appears to be teasing the daughter in an affectionate, playful way. 
 - Domain/Culture provides no additional disambiguation.",False,False
-399.mp4,attitude_7057,"perhaps going forward,we could all focus on--on the issues that we have here at--at work.",the speaker,the team,store manager,training facilitator,hr representative,store management,store customers,hr department,Attitude,NULL,NULL,dominant_affiliation,dominant_affiliation,Workplace,General Culture,NULL,NULL,Skeptical,"[Anchor]
+399.mp4,attitude_7057,"perhaps going forward,we could all focus on--on the issues that we have here at--at work.",the speaker,the team,store manager,training facilitator,hr representative,store management,store customers,hr department,Attitude,NULL,NULL,dominant_detachment,dominant_detachment,Workplace,General Culture,NULL,NULL,Concerned,"[Anchor]
 - Text evidence: ""perhaps going forward, we could all focus"" (neutral tone). 
 - Visual evidence: standing employee facing seated colleague; wearing company vest with visible name tag; open hand-gesturing toward group; seated coworker visible in foreground. 
 - Cross-modal setup: the polite redirect in the text aligns with an image of someone addressing coworkers in a meeting.
@@ -2232,7 +2232,7 @@ attitude_9483.png,attitude_5329,a little gas never killed anybody right?,poster,
 - Attitude label: Dismissive. 
 - Subject/target justification: the standing speaker implicitly downplays whatever off-topic discussion and redirects the team toward workplace issues. 
 - Domain/Culture usage: in a workplace meeting this reads as managerial/meeting-norm enforcement rather than a casual suggestion.",False,False
-attitude_5979.png,attitude_1327,it didn't happen because of the actions of one man it happened because of people who were 'just doing their jobs',person in image,person who nods at them,museum tour guide,coffee shop barista,retail store clerk,someone offering a friendly greeting,a passerby making eye contact,a stranger smiling politely back,Affection,socio_cultural_dependency,NULL,NULL,socio_cultural_dependency,Online & Social Media,General Culture,Bad,NULL,NULL,"[Anchor]
+attitude_5979.png,attitude_1327,it didn't happen because of the actions of one man it happened because of people who were 'just doing their jobs',poster,people mentioned,museum tour guide,coffee shop barista,retail store clerk,a friendly greeting,a passerby,man smiling,Affection,socio_cultural_dependency,NULL,NULL,socio_cultural_dependency,Online & Social Media,General Culture,Angry,NULL,NULL,"[Anchor]
 - Text evidence: ""white people when you nod at them"" (neutral/colloquial). 
 - Visual evidence: a smiling adult woman; arms crossed; wearing black glasses and red lipstick; plain gray background. 
 - Cross-modal setup: The caption sets up a stereotyped group reaction and the photo supplies a smiling, approving facial/body response.
@@ -2246,7 +2246,7 @@ attitude_5979.png,attitude_1327,it didn't happen because of the actions of one m
 - Emotion label: Happy.
 - Subject/target justification: The person in the image is portrayed as pleased/approving toward the person who nodded. 
 - Domain/Culture usage: Domain/Culture provides disambiguation via online meme conventions and shared cultural stereotype.",False,False
-attitude_9382.png,attitude_2176,the evolution of man,meme creator,woman in lower photo,internet troll,satire blogger,political commentator,television talk show host,female civil rights activist,news media television anchor,Attitude,NULL,NULL,dominant_detachment,dominant_detachment,Online & Social Media,General Culture,NULL,NULL,Contemptuous,"[Anchor]
+attitude_9382.png,attitude_2176,the evolution of man,meme creator,woman in photo,internet troll,satire blogger,political commentator,television talk show host,female civil rights activist,news media television anchor,Attitude,NULL,NULL,dominant_detachment,dominant_detachment,Online & Social Media,General Culture,NULL,NULL,Contemptuous,"[Anchor]
 - Text evidence: ""the evolution of man"" (neutral tone).
 - Visual evidence: top shows an ape lying back with mouth open and a hand over its face; bottom shows a woman in a purple top, mouth open, hands together as if clapping.
 - Cross-modal setup: the caption frames an evolutionary sequence and pairs an ape above a human woman, inviting a direct comparison.
@@ -2265,7 +2265,7 @@ intent_5633.png,intent_4239,how we see muslims how muslims see us,meme creator,m
 - Cross-modal mismatch: Using the identical friendly image for both captions satirically collapses perspective differences, turning a supposed contrast into a mirror. The meme employs humor and implicit critique rather than factual description.
 [Inference]
 - Mechanism: expressive_aggression. The poster's intent is to mock and expose reciprocal stereotyping, indirectly shaming both sides for hypocritical or simplistic views.",False,False
-affection_9739.png,affection_3485,everyone else's butt vs my butt,poster,black people,woman,model,athlete,other person's butt,model's lower body,white people,Affection,figurative_semantics,NULL,NULL,figurative_semantics,Online & Social Media,General Culture,Bad,NULL,NULL,"[Anchor]
+affection_9739.png,affection_3485,everyone else's butt vs my butt,poster,black people,woman,model,athlete,other person's butt,model's lower body,white people,Affection,figurative_semantics,NULL,NULL,figurative_semantics,Online & Social Media,General Culture,Disgusted,NULL,NULL,"[Anchor]
 - Text evidence: ""everyone else's butt vs my butt"" (neutral comparative tone).
 - Visual evidence: top image shows a person turned over their shoulder with prominent hips in jeans and a smile; bottom image shows a different person from behind in casual athletic clothes leaning on a railing, less emphasis on hips. 
 - Cross-modal setup: the caption frames a direct comparison and the two photos visually contrast an idealized versus ordinary posterior.
@@ -2279,7 +2279,7 @@ affection_9739.png,affection_3485,everyone else's butt vs my butt,poster,black p
 - Emotion label: Bad.
 - Subject/target justification: the poster expresses mild negative self-evaluation about their own appearance compared with others.
 - Domain/Culture usage: online meme conventions of ""X vs me"" frames this as self-deprecating humor consistent with social-media comparison.",False,False
-affection_5656.png,affection_1251,when i grow up.. lol nevermind,poster,romantic intimacy,performer,fan,bystander,stage performers,close friends,audience members,Affection,affective_deception,NULL,NULL,affective_deception,Intimate Relationships,General Culture,Sad,NULL,NULL,"[Anchor]
+affection_5656.png,affection_1251,when i grow up.. lol nevermind,poster,romantic intimacy,performer,fan,bystander,stage performers,close friends,audience members,Affection,multimodal_incongruity,NULL,NULL,multimodal_incongruity,Intimate Relationships,General Culture,Sad,NULL,NULL,"[Anchor]
 - Text evidence: ""when i grow up.. lol nevermind"" (literal tone: negative/self-deprecating). 
 - Visual evidence: two adults embracing on a dark stage; one wears a white shirt with red hearts; a blonde person is being hugged. 
 - Cross-modal setup: the caption implies abandoning a childhood wish while the photo shows the desired romantic embrace at surface level.
@@ -2293,7 +2293,7 @@ affection_5656.png,affection_1251,when i grow up.. lol nevermind,poster,romantic
 - Emotion label: Sad.
 - Subject/target justification: the poster is implicitly wistful/resigned about romantic intimacy represented by the hugging couple. 
 - Domain/Culture usage: the Intimate Relationships context supports interpreting this as romantic longing rather than a neutral observation.",False,False
-530.mp4,intent_8366,but you are gonna be fine.,store employee,bystanders,on-duty paramedic,uniformed security guard,concerned customer,firefighters,police officer,police officer,Intent,NULL,prosocial_deception,NULL,prosocial_deception,Public & Service,General Culture,NULL,mitigate,NULL,"[Anchor]
+530.mp4,intent_8366,but you are gonna be fine.,store employee,man lying,on-duty paramedic,uniformed security guard,concerned customer,firefighters,the customer,police officer,Intent,NULL,prosocial_deception,NULL,prosocial_deception,Public & Service,General Culture,NULL,mitigate,NULL,"[Anchor]
 - Text evidence: ""but you are gonna be fine."" (positive reassuring tone).
 - Visual evidence: paramedic in uniform with stethoscope; person lying on a stretcher wearing a store vest; speaker's palms raised in a calming gesture and a worried facial expression.
 - Cross-modal setup: The calming verbal reassurance contrasts with clear visual cues of a medical emergency.
@@ -2307,7 +2307,7 @@ affection_5656.png,affection_1251,when i grow up.. lol nevermind,poster,romantic
 - Emotion label: Fearful.
 - Subject/target justification: The speaker (store employee) feels fear about the injured person's outcome but directs reassurance at the patient and bystanders.
 - Domain/Culture usage: In Public & Service contexts staff commonly soothe customers to keep situations calm.",False,False
-456.mp4,attitude_7145,"look, sayid, sayid, don't worry about it.",Mateo,Sayid,store manager,fellow employee,regular customer,Mateo,Glenn,Gina,Attitude,NULL,NULL,dominant_affiliation,dominant_affiliation,Workplace,General Culture,NULL,NULL,Supportive,"[Anchor]
+456.mp4,attitude_7145,"look, sayid, sayid, don't worry about it.",Mateo,Sayid,store manager,fellow employee,regular customer,Mateo,Glenn,Gina,Attitude,NULL,NULL,protective_distancing,protective_distancing,Workplace,General Culture,NULL,NULL,Concerned,"[Anchor]
 - Text evidence: ""sayid, sayid, don't worry about it."" (positive tone). 
 - Visual evidence: two employees wearing Cloud9 vests; Mateo making a calming hand gesture and looking toward Sayid; Sayid appears wide-eyed and tense in one frame. 
 - Cross-modal setup: the spoken reassurance aligns with visible calming gestures directed at a visibly unsettled colleague.
@@ -2320,7 +2320,7 @@ affection_5656.png,affection_1251,when i grow up.. lol nevermind,poster,romantic
 - Attitude label: Supportive. 
 - Subject/target justification: Mateo (speaker) expresses a supportive, reassuring stance toward Sayid. 
 - Domain/Culture usage: In a workplace context this phrasing commonly functions as colleague reassurance and occasional task-taking rather than mere sympathy.",False,False
-affection_10440.png,affection_4804,albanians talking photo with a porn star,poster,albanians people photo,photographer,influencer,commenter,eastern europeans,serbs,tourists,Affection,multimodal_incongruity,NULL,NULL,multimodal_incongruity,Online & Social Media,General Culture,Disgusted,NULL,NULL,"[Anchor]
+affection_10440.png,affection_4804,albanians talking photo with a porn star,poster,albanians people,photographer,influencer,commenter,eastern europeans,serbs,tourists,Affection,multimodal_incongruity,NULL,NULL,multimodal_incongruity,Online & Social Media,General Culture,Disgusted,NULL,NULL,"[Anchor]
 - Text evidence: ""albanians talking photo with a porn star"" (literal tone: neutral). 
 - Visual evidence: three people smiling; a small dog being held up near a person's face; warm indoor, casual setting. 
 - Cross-modal setup: The caption assigns a risqué label while the image shows an affectionate, non-sexual scene.
@@ -2341,7 +2341,7 @@ intent_9374.png,intent_3847,the only woman who knows where her husband is... is 
 - Mechanism: expressive_aggression. The speaker uses humour and a directive to indirectly demean women and consolidate social power rather than request help.
 [Inference]
 - The implied goal is to humiliate female colleagues and reinforce male dominance by cloaking a power move in joking banter.",False,False
-459.mp4,intent_8438,what happened here?,speaker,man,nearby passerby,curious store customer,bystander standing nearby,store display rack,store manager,wet floor sign,Intent,NULL,benevolent_provocation,NULL,benevolent_provocation,Workplace,General Culture,NULL,mitigate,NULL,"[Anchor]
+459.mp4,intent_8438,what happened here?,speaker,man,nearby passerby,curious store customer,bystander standing nearby,store display rack,store manager,wet floor sign,Intent,NULL,prosocial_deception,NULL,prosocial_deception,Workplace,General Culture,NULL,mitigate,NULL,"[Anchor]
 - Text evidence: ""what happened here?"" (neutral/concerned tone).
 - Visual evidence: a woman enters through a doorway wearing a name badge; she repeatedly touches her throat and shows a tense/nervous expression; an employee in a blue vest faces her holding cleaning/absorbent material and a mop cart is visible.
 - Cross-modal setup: the surface question requests information while the visuals show a person who appears anxious and possibly implicated in an incident.
@@ -2384,8 +2384,8 @@ attitude_9877.png,attitude_3996,"it's not the cards you're dealt, but how you pl
 - Mechanism: dominant_affiliation. Trigger rule: the poster’s upbeat praise frames ordinary presence as exceptional, using warmth to implicitly place the speaker above the pictured person and reduce the person’s agency; this is Patronizing Praise.
 
 [Inference]
-- Attitude label: Dismissive. The social media poster expresses a patronizing, dismissive stance toward the man in the wheelchair. In the Online & Social Media context this pattern reads as performative 'inspiration porn', reinforcing the condescending interpretation.",False,False
-546.mp4,intent_8352,"yeah, but i don't think anyone should have that much power.",the speaker (female employee),the person/role being discussed (someone with excessive power),"Replace with a non-employee option (e.g., 'a customer', 'an external vendor', or 'a visitor') so it does not overlap with 'the speaker (female employee)'.",an irate customer,a union representative,"Replace with a low-authority role (e.g., 'a sales associate' or 'a stock clerk') to avoid implying excessive power.","Replace with a non-executive role (e.g., 'an entry-level associate' or 'a junior staff member') to avoid overlap with 'someone with excessive power'.","Replace with a role lacking managerial authority (e.g., 'a receptionist' or 'a payroll clerk') so it does not imply excessive power.",Intent,NULL,expressive_aggression,NULL,expressive_aggression,Workplace,General Culture,,denounce,,"[Anchor]
+- Attitude label: Dismissive. The social media poster expresses a patronizing, dismissive stance toward the man in the wheelchair. In the Online & Social Media context this pattern reads as performative 'inspiration porn', reinforcing the condescending interpretation.",False,True
+546.mp4,intent_8352,"yeah, but i don't think anyone should have that much power.",the female speaker,person being discussed,a visitor,an irate customer,a union representative,a sales associate,a staff member,a receptionist,Intent,NULL,expressive_aggression,NULL,expressive_aggression,Workplace,General Culture,NULL,denounce,NULL,"[Anchor]
 - Text evidence: ""i don't think anyone should have that much power."" (negative tone).
 - Visual evidence: woman in blue uniform with name badge holding a clipboard and pen; open mouth mid-speech; upward glance and brief closed-eye expression in later frames.
 - Cross-modal setup: the verbal objection to concentrated power is paired with dismissive, assertive nonverbal delivery in a workplace setting.
@@ -2412,13 +2412,13 @@ attitude_9597.png,attitude_5025,have you ever lost all respect for someone? you 
 - Attitude label: Indifferent. 
 - Subject/target justification: The post author signals indifference toward a person they once respected by stating they no longer feel obligated to engage. 
 - Domain/Culture usage: In an Online & Social Media context this reads as a rhetorical, generalized distancing statement rather than a targeted denunciation.",False,False
-intent_4970.png,intent_0141,sea monkeys,meme poster,children in image,graphic designer,social commentator,news editor,splashing muddy water,floating plastic debris,colorful swimwear patterns,Intent,NULL,expressive_aggression,NULL,expressive_aggression,Online & Social Media,General Culture,NULL,alienate,NULL,"[Anchor]
+intent_4970.png,intent_0141,sea monkeys,meme poster,the black,graphic designer,social commentator,news editor,splashing muddy water,floating plastic debris,colorful swimwear patterns,Intent,NULL,expressive_aggression,NULL,expressive_aggression,Online & Social Media,General Culture,NULL,alienate,NULL,"[Anchor]
 - Text evidence: The single overlaid caption reads ""sea monkeys,"" a metaphorical label. Visual evidence: a photograph of children playing and splashing in shallow water. Cross-modal evidence: pairing a dismissive animal-like term with real children turns a playful scene into a target for mockery.
 [Pivot]
 - Mechanism: expressive_aggression. The meme uses indirect insult and public ridicule via humoristic metaphor to degrade rather than directly argue or request.
 [Inference]
 - The poster’s intent is to dehumanize the pictured children through mocking comparison.",False,False
-attitude_0013.jpg,attitude_0011,what some would like us to believe ....,post author,proponents of a one-day crackers ban,local resident,political commentator,content aggregator,veterinarians advising pet owners on fireworks safety,public health officials recommending temporary smoke advisories,government agencies responsible for air quality,Attitude,NULL,NULL,dominant_detachment,dominant_detachment,Public & Service,Indian Culture,,NULL,Dismissive,"[Anchor]
+attitude_0013.jpg,attitude_0011,what some would like us to believe ....,post author,'some' in input,local resident,political commentator,content aggregator,pet owners,public health officials,government agencies,Attitude,NULL,NULL,dominant_detachment,dominant_detachment,Public & Service,Indian Culture,NULL,NULL,Disapproving,"[Anchor]
 - Text evidence: ""what some would like us to believe"" (literal tone: skeptical/negative).
 - Visual evidence: top panel shows a hazy, low-visibility city skyline labeled ""DELHI BEFORE DIWALI""; bottom panel shows a clear, picturesque town labeled ""DELHI AFTER BANNING CRACKERS FOR 1 DAY FOR DIWALI"".
 - Cross-modal setup: The text frames the exaggerated before/after images as an implausible claim.
@@ -2443,14 +2443,14 @@ attitude_0013.jpg,attitude_0011,what some would like us to believe ....,post aut
 - Emotion label: Angry.
 - Subject/target justification: The employee appears angry at the customer/situation and is using polite wording to restrain escalation.
 - Domain/Culture usage: In public service settings staff commonly mask irritation with politeness to remain professional.",False,False
-intent_3898.png,intent_4208,"just banged a girl that stutters finished before she could say ""no""",poster,the victim and audience,perpetrator,reader,advertiser,the poster's personal ego,the social media platform,the law enforcement officers,Intent,NULL,expressive_aggression,NULL,expressive_aggression,Intimate Relationships,General Culture,NULL,dominate,NULL,"[Anchor]
+intent_3898.png,intent_4208,"just banged a girl that stutters finished before she could say ""no""",poster,the victim,perpetrator,reader,advertiser,the poster's personal ego,the social media platform,the law enforcement officers,Intent,NULL,expressive_aggression,NULL,expressive_aggression,Intimate Relationships,General Culture,NULL,mock,NULL,"[Anchor]
 - Text evidence: The caption explicitly boasts of sexual activity with ""a girl that stutters"" and emphasizes finishing before she could say ""no,"" implying a nonconsensual act and demeaning a disability.
 - Visual evidence: The photo shows a relaxed, playful man (watermelon shirt, licking a popsicle) conveying casual triumph.
 [Pivot]
 - Cross-modal setup: The cheerful, carefree image paired with a violent boast indicates performance for peers rather than a factual report, turning the admission into a dominance display.
 [Inference]
 - Intent: assert dominance and intimidate while seeking approval from peers.",False,False
-2_527.mp4,attitude_7241,We thought you were just here for the company. He is a sarcasmoholic Stewart.,the speaker,Stewart (the person being addressed),a coworker,the manager,the receptionist,the guest,the new hire,the client,Attitude,NULL,NULL,dominant_detachment,dominant_detachment,Workplace,General Culture,NULL,NULL,Dismissive,"[Anchor]
+2_527.mp4,attitude_7241,We thought you were just here for the company. He is a sarcasmoholic Stewart.,the speaker,Stewart,a coworker,the manager,the receptionist,the guest,the new hire,the client,Attitude,NULL,NULL,dominant_detachment,dominant_detachment,Workplace,General Culture,NULL,NULL,Dismissive,"[Anchor]
 - Text evidence: ""He is a sarcasmoholic Stewart."" (negative tone). 
 - Visual evidence: speaker with head tilt, a smirking/open-mouthed expression, raised eyebrows, leaning back in chair. 
 - Cross-modal setup: the sarcastic insult in text is mirrored by mocking nonverbal cues in the images.
@@ -2463,13 +2463,13 @@ intent_3898.png,intent_4208,"just banged a girl that stutters finished before sh
 - Attitude label: Contemptuous. 
 - Subject/target justification: the speaker expresses contempt toward Stewart by mocking his character and implying insincerity. 
 - Domain/Culture usage: in a workplace context this reads as a dismissive professional judgment rather than benign teasing.",False,False
-intent_8462.png,intent_3550,you think im scared of saying nigger?,meme poster,Black people,internet troll,social media influencer,online commenter,white people,latinx people,asian people,Intent,NULL,expressive_aggression,NULL,expressive_aggression,Online & Social Media,General Culture,NULL,provoke,NULL,"[Anchor]
+intent_8462.png,intent_3550,you think im scared of saying nigger?,meme poster,black people,internet troll,social media influencer,online commenter,white people,latinx people,asian people,Intent,NULL,expressive_aggression,NULL,expressive_aggression,Online & Social Media,General Culture,NULL,provoke,NULL,"[Anchor]
 - Text evidence: The caption directly challenges others with an explicit racial slur framed as a dare. Visual evidence: A smiling Shiba Inu meme image creates a mock-innocent, ironic tone. Cross-modal setup: Aggressive language paired with a playful meme face signals performative provocation rather than sincere dialogue.
 [Pivot]
 - Mechanism: expressive_aggression. The speaker uses indirect aggression and shock to assert dominance or vent, while the meme image softens responsibility.
 [Inference]
 - The true goal is to bait viewers into reacting and spreading outrage, not to engage constructively.",False,False
-attitude_9507.png,attitude_3484,"they're in a relationship, who makes the sandwiches?",speaker,same-sex female couple,forum moderator,curious observer,event attendee,platonic female friends,two female roommates,opposite sex couple,Attitude,NULL,NULL,dominant_affiliation,dominant_affiliation,Intimate Relationships,General Culture,NULL,NULL,Dismissive,"[Anchor]
+attitude_9507.png,attitude_3484,"they're in a relationship, who makes the sandwiches?",speaker,female couple,forum moderator,curious observer,event attendee,platonic female friends,two female roommates,opposite sex couple,Attitude,NULL,NULL,dominant_affiliation,dominant_affiliation,Intimate Relationships,General Culture,NULL,NULL,Contemptuous,"[Anchor]
 - Text evidence: ""who makes the sandwiches?"" (neutral literal tone). 
 - Visual evidence: two women holding hands, both smiling, posed against a pink backdrop. 
 - Cross-modal setup: the caption poses a joking domestic question while the photo shows a happy couple at ease.
@@ -2482,7 +2482,7 @@ attitude_9507.png,attitude_3484,"they're in a relationship, who makes the sandwi
 - Attitude label: Dismissive. 
 - Subject/target justification: The speaker/poster expresses a dismissive stance toward the same-sex female couple by trivializing their relationship. 
 - Domain/Culture provides no additional disambiguation.",False,False
-affection_3911.png,affection_2682,me and the boys after killing innocent people in a bomb blast,innocent people,me and the boys,public buses,market stalls,local shops,the wedding guests,the football team,local community leaders,Affection,multimodal_incongruity,NULL,NULL,multimodal_incongruity,Online & Social Media,Arab Culture,Disgusted,NULL,NULL,"[Anchor]
+affection_3911.png,affection_2682,me and the boys after killing innocent people in a bomb blast,poster,arab people,public buses,market stalls,local shops,the wedding guests,the football team,local community leaders,Affection,multimodal_incongruity,NULL,NULL,multimodal_incongruity,Online & Social Media,Arab Culture,Disgusted,NULL,NULL,"[Anchor]
 - Text evidence: ""me and the boys after killing innocent people"" (literal tone: boastful/celebratory). 
 - Visual evidence: four men in traditional dress smiling at camera while taking a selfie; arms around each other; indoor public space visible. 
 - Cross-modal setup: the caption describes committing a bomb blast while the photo shows a cheerful, celebratory group.
@@ -2509,7 +2509,7 @@ attitude_8842.png,attitude_0211,whatsthe difference between heroin and i? cops t
 - Attitude label: Contemptuous. 
 - Subject/target justification: The speaker (meme author) directs contempt toward police/cops. 
 - Domain/Culture provides no additional disambiguation.",False,False
-attitude_6928.png,attitude_1439,if i had a dollar for every racist thing i've said... some black motherfucker would probably rob me,meme author,Black people,internet troll,social media manager,forum commenter,young men,urban youth,poor people,Attitude,NULL,NULL,dominant_affiliation,dominant_affiliation,Online & Social Media,General Culture,NULL,NULL,Contemptuous,"[Anchor]
+attitude_6928.png,attitude_1439,if i had a dollar for every racist thing i've said... some black motherfucker would probably rob me,meme author,black people,internet troll,social media manager,forum commenter,young men,urban youth,poor people,Attitude,NULL,NULL,dominant_affiliation,dominant_affiliation,Online & Social Media,General Culture,NULL,NULL,Contemptuous,"[Anchor]
 - Text evidence: ""some black motherfucker would probably rob me"" — literal tone: negative. 
 - Visual evidence: smiling middle-aged white man giving a thumbs-up; casual T-shirt; ocean background in bright daylight. 
 - Cross-modal setup: The upbeat, benign photo frames the hostile racial caption as a casual joke.
@@ -2527,8 +2527,8 @@ intent_10404.png,intent_3354,"his legacy , destroyer of the greatest nation on e
 [Pivot]
 - Mechanism: malicious_manipulation. The meme weaponizes fear and prejudice to exploit viewers' threat perception and bias against the pictured figures.
 [Inference]
-- Intent: The creator aims to provoke public fear and mobilize hostility toward these progressive lawmakers.",False,False
-attitude_6145.png,attitude_5298,go pluck yourself,the poster using a pun to insult,the person being mocked,the turkey in the image,the viewer of the meme,the turkey feathers,the Thanksgiving atmosphere,content distribution system or recommendation engine,the animal itself,Attitude,NULL,NULL,dominant_detachment,dominant_detachment,Online & Social Media,General Culture,NULL,NULL,Contemptuous,"[Anchor]
+- Intent: The creator aims to provoke public fear and mobilize hostility toward these progressive lawmakers.",False,True
+attitude_6145.png,attitude_5298,go pluck yourself,poster,person being mocked,the turkey in the image,the viewer of the meme,the turkey feathers,the Thanksgiving atmosphere,recommendation engine,the animal itself,Attitude,NULL,NULL,dominant_affiliation,dominant_affiliation,Online & Social Media,General Culture,NULL,NULL,Contemptuous,"[Anchor]
 - Text evidence: ""go pluck yourself"" (negative tone).
 - Visual evidence: close-up turkey head, prominent white caption text at top, black background, visible turkey caruncles/wattle.
 - Cross-modal setup: the imperative insult uses a bird-related pun while the image shows a turkey, creating a surface joke linking text and picture.
@@ -2541,7 +2541,7 @@ attitude_6145.png,attitude_5298,go pluck yourself,the poster using a pun to insu
 - Attitude label: Contemptuous.
 - Subject/target justification: The meme poster directs a dismissive command at an unspecified viewer, expressing contempt.
 - Domain/Culture usage: Online & Social Media frames this as a performative, mocking meme-style insult rather than a literal request.",False,False
-affection_7587.png,affection_4021,we've ever seen worst case of suicide hear about that black guy who was shot 38 times?,poster,police,investigator,photographer,bystander,forensic team,security guards,medical examiners,Affection,multimodal_incongruity,NULL,NULL,multimodal_incongruity,Public & Service,General Culture,Angry,NULL,NULL,"[Anchor]
+affection_7587.png,affection_4021,we've ever seen worst case of suicide hear about that black guy who was shot 38 times?,poster,white police,investigator,photographer,bystander,forensic team,security guards,medical examiners,Affection,multimodal_incongruity,NULL,NULL,multimodal_incongruity,Public & Service,General Culture,Angry,NULL,NULL,"[Anchor]
 - Text evidence: ""hear about that black guy who was shot 38 times?"" (literal tone: negative/accusatory).
 - Visual evidence: forensic investigator in a white suit kneeling by a dark body with numbered evidence markers; separate photo of uniformed police officers standing together, smiling/laughing on a city street.
 - Cross-modal setup: the caption questions a homicide labelled as ""suicide"" while the top image is a crime scene and the bottom shows jovial police, creating a juxtaposition.
@@ -2575,7 +2575,7 @@ affection_4313.png,affection_1657,remember behind every one of us is a police,sp
 
 [Inference]
 - Emotion label: Fearful.  Subject/target justification: the speaker and participants are framed as feeling threatened by potential police infiltration.  Domain/Culture provides disambiguation by invoking U.S. historical context of surveillance of activist movements.",False,False
-affection_5216.png,affection_4040,gay friend asked for directions told him to go straight,poster,gay friend,hiker,tourist,guide,lost tourist,fellow hiker,tour guide,Affection,multimodal_incongruity,NULL,NULL,multimodal_incongruity,Friend Group,General Culture,Happy,NULL,NULL,"[Anchor]
+affection_5216.png,affection_4040,gay friend asked for directions told him to go straight,poster,gay friend,hiker,tourist,guide,lost tourist,fellow hiker,tour guide,Affection,figurative_semantics,NULL,NULL,figurative_semantics,Friend Group,General Culture,Happy,NULL,NULL,"[Anchor]
 - Text evidence: ""gay friend asked for directions"" (literal tone: neutral/informal). 
 - Visual evidence: two people holding a paper map; one person pointing into the distance; mountainous outdoor landscape; visible hiking gear/backpacks. 
 - Cross-modal setup: the caption uses the word ""straight"" while the photo depicts literal directional pointing.
@@ -2597,7 +2597,7 @@ intent_10754.png,intent_7053,when a white kid shoots up the school the same day 
 
 [Inference]
 - The implicit intent is to dodge suspicion by relying on a coincidental perpetrator to shift culpability away from the planner.",False,False
-1_7395.mp4,affection_5553,"Well, if that's all it takes, it's a good thing you don't have a dog.",the speaker,the addressee,the blonde,the brunette,the passerby,the table,the dog,the mailbox,Affection,multimodal_incongruity,NULL,NULL,multimodal_incongruity,Friendship Interactions,General Culture,Bad,NULL,NULL,"[Anchor]
+1_7395.mp4,affection_5553,"Well, if that's all it takes, it's a good thing you don't have a dog.",the speaker,the addressee,the blonde,the brunette,the passerby,the table,the dog,the mailbox,Affection,multimodal_incongruity,NULL,NULL,multimodal_incongruity,Friendship Interactions,General Culture,Angry,NULL,NULL,"[Anchor]
 - Text evidence: ""it's a good thing you don't have a dog."" (light-hearted/humorous tone).
 - Visual evidence: blonde woman smiling; nearby woman with a mild neutral face; both seated close on a couch; audio caption notes laughter following the line.
 - Cross-modal setup: the sentence reads like a teasing complaint, while visuals and audio show amusement and relaxed body language.
@@ -2619,7 +2619,7 @@ intent_10473.png,intent_4324,year in review: 2017 black sellout of the year goes
 
 [Inference]
 - The poster's intent is to publicly shame and delegitimize those Black figures by branding them as ""sellouts,"" provoking social condemnation.",False,False
-affection_4894.png,affection_0564,it's hump day!!! oh fuck!!!,poster,hump day wednesday,woman,tourist,beachgoer,camel,thursday,friday,Affection,figurative_semantics,NULL,NULL,figurative_semantics,Online & Social Media,General Culture,Disgusted,NULL,NULL,"[Anchor]
+affection_4894.png,affection_0564,it's hump day!!! oh fuck!!!,poster,hump day,woman,tourist,beachgoer,camel,thursday,friday,Affection,figurative_semantics,NULL,NULL,figurative_semantics,Online & Social Media,General Culture,Disgusted,NULL,NULL,"[Anchor]
 - Text evidence: quoted phrase ""it's hump day!!! oh fuck!!!"" has a positive, exuberant literal tone. 
 - Visual evidence: a camel with visible hump and exposed teeth; a woman leaning in with mouth wide open and hand on the animal; sunny outdoor dune background. 
 - Cross-modal setup: the caption references ""hump day"" while the photo literally shows a camel, creating a visual pun.
@@ -2643,8 +2643,8 @@ attitude_6456.png,attitude_5208,we've ever seen worst case of suicide hear about
 - Trigger rule: Juxtaposing casual boasting with dictator imagery packages extremist figures as humorous or stylish, lowering critical resistance.
 
 [Inference]
-- Intent: The poster seeks to glamorize and normalize fascist leaders for an online audience, desensitizing or making them appear appealing.",False,False
-intent_3170.png,intent_7734,hoes be like why can't i find a good man,meme poster,complaining women,clickbait blogger,advertising agency,male comedian,colorful condoms,internet meme,lonely teenager,Intent,NULL,expressive_aggression,NULL,expressive_aggression,Intimate Relationships,General Culture,NULL,denounce,NULL,"[Anchor] Text uses the derogatory phrase ""hoes be like"" and asks ""why can't i find a good man""; the image pairs a dejected woman with brightly colored condoms hanging on a line. The visual-text contrast frames the complaint as hypocritical and sexualizes the target. [Pivot] This cross-modal mismatch converts a relationship complaint into ridicule; instead of addressing emotional need, the meme uses insinuation to belittle. That pattern fits expressive_aggression: indirect public insult delivered through humor. [Inference] The implied intent is to publicly shame women who complain about finding partners by casting them as promiscuous; subject: meme poster; target: complaining women.",False,False
+- Intent: The poster seeks to glamorize and normalize fascist leaders for an online audience, desensitizing or making them appear appealing.",False,True
+intent_3170.png,intent_7734,hoes be like why can't i find a good man,meme poster,complaining women,clickbait blogger,advertising agency,male comedian,colorful condoms,internet meme,lonely teenager,Intent,NULL,expressive_aggression,NULL,expressive_aggression,Intimate Relationships,General Culture,NULL,provoke,NULL,"[Anchor] Text uses the derogatory phrase ""hoes be like"" and asks ""why can't i find a good man""; the image pairs a dejected woman with brightly colored condoms hanging on a line. The visual-text contrast frames the complaint as hypocritical and sexualizes the target. [Pivot] This cross-modal mismatch converts a relationship complaint into ridicule; instead of addressing emotional need, the meme uses insinuation to belittle. That pattern fits expressive_aggression: indirect public insult delivered through humor. [Inference] The implied intent is to publicly shame women who complain about finding partners by casting them as promiscuous; subject: meme poster; target: complaining women.",False,False
 attitude_3506.png,attitude_1363,when you finally meet a girl that can make you bust from head please may i have some more,poster,girl,moderator,viewer,fan,a song,a poem,a smell,Attitude,NULL,NULL,submissive_alignment,submissive_alignment,Intimate Relationships,General Culture,NULL,NULL,Appreciative,"[Anchor]
 - Text evidence: ""please may i have some more"" (polite/requesting tone, positive).
 - Visual evidence: young boy smiling at camera; holding an empty cereal bowl toward viewer; a few cereal pieces visible in the bowl.
@@ -2672,7 +2672,7 @@ attitude_3506.png,attitude_1363,when you finally meet a girl that can make you b
 - Emotion label: Happy.
 - Subject/target justification: the speaker is amused and teasing toward the roommate/interlocutor (the suggested idea). 
 - Domain/Culture usage: Friends & Roommates context supports playful teasing between roommates rather than hostile criticism.",False,False
-attitude_3650.png,attitude_4544,and that was the last nativity play my son was invited to take part in,parent,terrorism,teacher,grandparent,babysitter,organized crime,religion,military,Attitude,NULL,NULL,dominant_detachment,dominant_detachment,Family Conversations,General Culture,NULL,NULL,Disapproving,"[Anchor]
+attitude_3650.png,attitude_4544,and that was the last nativity play my son was invited to take part in,parent,muslim,teacher,grandparent,babysitter,organized crime,religion,military,Attitude,NULL,NULL,dominant_detachment,dominant_detachment,Family Conversations,General Culture,NULL,NULL,Contemptuous,"[Anchor]
 - Text evidence: quote ""that was the last nativity play my son was invited"" (negative tone). 
 - Visual evidence: a young boy centered wearing a vest with cylindrical objects; several adults in white garments around him wearing similar vests; adults' hands resting on the boy's shoulders; the boy appears uncomfortable. 
 - Cross-modal setup: the caption frames a final exclusion while the photo depicts a child staged among adults in explosive-style gear.
@@ -2682,7 +2682,7 @@ attitude_3650.png,attitude_4544,and that was the last nativity play my son was i
 
 [Inference]
 - Attitude label: Disapproving. Subject/target justification: the parent (speaker) expresses moral disapproval toward the nativity play organizers for staging the depicted scene. Domain/Culture provides no additional disambiguation.",False,False
-intent_7890.png,intent_8213,i just hired a gorgeous blond swede with big tits and long legs as babysitter anyone know where i can find a baby like real quick?,poster,a baby,moderator,recruiter,subscriber,a babysitter,a doll,a prostitute,Intent,NULL,malicious_manipulation,NULL,malicious_manipulation,Public & Service,General Culture,NULL,mock,NULL,"[Anchor]
+intent_7890.png,intent_8213,i just hired a gorgeous blond swede with big tits and long legs as babysitter anyone know where i can find a baby like real quick?,poster,the gorgeous woman,moderator,recruiter,subscriber,a babysitter,a doll,a prostitute,Intent,NULL,malicious_manipulation,NULL,malicious_manipulation,Public & Service,General Culture,NULL,mock,NULL,"[Anchor]
 - Text evidence: The caption sexually objectifies a ""babysitter"" (""gorgeous blond... big tits and long legs"") while asking urgently where to ""find a baby like real quick."" Visual evidence: the image is a bikini model on a beach, not a caregiver scene. Cross-modal mismatch: caregiving language is paired with erotic imagery and an urgent search for a child.
 [Pivot]
 - Mechanism: malicious_manipulation. The speaker frames a legitimate service (babysitting) to mask a predatory goal, exploiting the caregiving pretext.

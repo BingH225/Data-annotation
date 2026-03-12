@@ -1,0 +1,99 @@
+{
+  "method": "LLaVA-OneVision-7B",
+  "order": [
+    "affection",
+    "attitude",
+    "intent",
+    "overall"
+  ],
+  "columns": [
+    "indep",
+    "cond",
+    "rel",
+    "joint"
+  ],
+  "values_raw": {
+    "affection": {
+      "indep": 0.35450819672131145,
+      "cond": 0.23129251700680273,
+      "rel": 0.22950819672131148,
+      "joint": 0.014754098360655738,
+      "n": 610,
+      "n_label_correct": 147,
+      "indep_components": {
+        "label": 0.24098360655737705,
+        "subject": 0.3819672131147541,
+        "target": 0.5295081967213114,
+        "mechanism": 0.26557377049180325
+      }
+    },
+    "attitude": {
+      "indep": 0.4504792332268371,
+      "cond": 0.7037037037037037,
+      "rel": 0.2795527156549521,
+      "joint": 0.023961661341853034,
+      "n": 626,
+      "n_label_correct": 81,
+      "indep_components": {
+        "label": 0.12939297124600638,
+        "subject": 0.43450479233226835,
+        "target": 0.5702875399361023,
+        "mechanism": 0.6677316293929713
+      }
+    },
+    "intent": {
+      "indep": 0.3162291169451074,
+      "cond": 0.3103448275862069,
+      "rel": 0.3436754176610978,
+      "joint": 0.0059665871121718375,
+      "n": 838,
+      "n_label_correct": 58,
+      "indep_components": {
+        "label": 0.06921241050119331,
+        "subject": 0.5906921241050119,
+        "target": 0.522673031026253,
+        "mechanism": 0.08233890214797136
+      }
+    },
+    "overall": {
+      "indep": 0.3680086788813886,
+      "cond": 0.3811188811188811,
+      "rel": 0.2907425265188042,
+      "joint": 0.013982642237222759,
+      "n": 2074,
+      "n_label_correct": 286,
+      "indep_components": {
+        "label": 0.13789778206364514,
+        "subject": 0.4821600771456123,
+        "target": 0.5390549662487946,
+        "mechanism": 0.31292189006750243
+      }
+    }
+  },
+  "values_percent": {
+    "affection": {
+      "indep": 35.45,
+      "cond": 23.13,
+      "rel": 22.95,
+      "joint": 1.48
+    },
+    "attitude": {
+      "indep": 45.05,
+      "cond": 70.37,
+      "rel": 27.96,
+      "joint": 2.4
+    },
+    "intent": {
+      "indep": 31.62,
+      "cond": 31.03,
+      "rel": 34.37,
+      "joint": 0.6
+    },
+    "overall": {
+      "indep": 36.8,
+      "cond": 38.11,
+      "rel": 29.07,
+      "joint": 1.4
+    }
+  }
+}
