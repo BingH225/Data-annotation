@@ -18,30 +18,30 @@ def _safe_text(v: Any) -> str:
     return str(v)
 
 
-def _to_situation_lower(v: str) -> str:
+def _to_scenario_lower(v: str) -> str:
     return v.strip().lower()
 
 
 def _generic_label(rec: Dict[str, Any]) -> str:
-    situation = _to_situation_lower(_safe_text(rec.get("situation", "")))
-    if situation == "affection":
+    scenario = _to_scenario_lower(_safe_text(rec.get("scenario", "")))
+    if scenario == "affection":
         return _safe_text(rec.get("label_Affection", ""))
-    if situation == "intent":
+    if scenario == "intent":
         return _safe_text(rec.get("label_Intent", ""))
-    if situation == "attitude":
+    if scenario == "attitude":
         return _safe_text(rec.get("label_Attitude", ""))
     return ""
 
 
 def _generic_mechanism(rec: Dict[str, Any]) -> str:
-    situation = _to_situation_lower(_safe_text(rec.get("situation", "")))
-    if situation == "affection":
+    scenario = _to_scenario_lower(_safe_text(rec.get("scenario", "")))
+    if scenario == "affection":
         value = _safe_text(rec.get("mechanism_Affection", ""))
         return value if value else _safe_text(rec.get("mechanism", ""))
-    if situation == "intent":
+    if scenario == "intent":
         value = _safe_text(rec.get("mechanism_Intent", ""))
         return value if value else _safe_text(rec.get("mechanism", ""))
-    if situation == "attitude":
+    if scenario == "attitude":
         value = _safe_text(rec.get("mechanism_Attitude", ""))
         return value if value else _safe_text(rec.get("mechanism", ""))
     return _safe_text(rec.get("mechanism", ""))
@@ -285,7 +285,7 @@ def main() -> None:
         output_obj["target1"] = _safe_text(rec.get("target1", "")).strip()
         output_obj["target2"] = _safe_text(rec.get("target2", "")).strip()
         output_obj["target3"] = _safe_text(rec.get("target3", "")).strip()
-        output_obj["situation"] = _to_situation_lower(_safe_text(rec.get("situation", "")))
+        output_obj["scenario"] = _to_scenario_lower(_safe_text(rec.get("scenario", "")))
         output_obj["mechanism_Affection"] = _safe_text(rec.get("mechanism_Affection", "")).strip()
         output_obj["mechanism_Intent"] = _safe_text(rec.get("mechanism_Intent", "")).strip()
         output_obj["mechanism_Attitude"] = _safe_text(rec.get("mechanism_Attitude", "")).strip()
