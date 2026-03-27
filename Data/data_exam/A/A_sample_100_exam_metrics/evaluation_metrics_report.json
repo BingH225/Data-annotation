@@ -1,0 +1,225 @@
+{
+  "2. By Scenario": {
+    "affection": {
+      "Count": 31,
+      "Strict_All4_Acc": 0.0967741935483871,
+      "mechanism_Accuracy": 0.3548387096774194,
+      "mechanism_F1": 0.17410714285714285,
+      "label_Accuracy": 0.3870967741935484,
+      "label_F1": 0.2770258980785297,
+      "subject_Accuracy": 0.967741935483871,
+      "subject_F1": 0.9411764705882352,
+      "target_Accuracy": 1.0,
+      "target_F1": 1.0
+    },
+    "attitude": {
+      "Count": 36,
+      "Strict_All4_Acc": 0.1388888888888889,
+      "mechanism_Accuracy": 0.3611111111111111,
+      "mechanism_F1": 0.20300751879699247,
+      "label_Accuracy": 0.25,
+      "label_F1": 0.09642857142857142,
+      "subject_Accuracy": 1.0,
+      "subject_F1": 1.0,
+      "target_Accuracy": 1.0,
+      "target_F1": 1.0
+    },
+    "intent": {
+      "Count": 33,
+      "Strict_All4_Acc": 0.09090909090909091,
+      "mechanism_Accuracy": 0.3333333333333333,
+      "mechanism_F1": 0.24035709418018264,
+      "label_Accuracy": 0.2727272727272727,
+      "label_F1": 0.16601307189542483,
+      "subject_Accuracy": 0.9696969696969697,
+      "subject_F1": 0.8722222222222222,
+      "target_Accuracy": 0.9696969696969697,
+      "target_F1": 0.9375
+    }
+  },
+  "3. By Domain": {
+    "Online & Social Media": {
+      "Count": 45,
+      "Strict_All4_Acc": 0.06666666666666667,
+      "mechanism_Accuracy": 0.37777777777777777,
+      "mechanism_F1": 0.21774467362702657,
+      "label_Accuracy": 0.2,
+      "label_F1": 0.09583333333333333,
+      "subject_Accuracy": 1.0,
+      "subject_F1": 1.0,
+      "target_Accuracy": 1.0,
+      "target_F1": 1.0
+    },
+    "Public & Service": {
+      "Count": 15,
+      "Strict_All4_Acc": 0.13333333333333333,
+      "mechanism_Accuracy": 0.4,
+      "mechanism_F1": 0.3208333333333333,
+      "label_Accuracy": 0.3333333333333333,
+      "label_F1": 0.24871794871794872,
+      "subject_Accuracy": 0.9333333333333333,
+      "subject_F1": 0.8253968253968255,
+      "target_Accuracy": 1.0,
+      "target_F1": 1.0
+    },
+    "Workplace": {
+      "Count": 15,
+      "Strict_All4_Acc": 0.2,
+      "mechanism_Accuracy": 0.3333333333333333,
+      "mechanism_F1": 0.21944444444444444,
+      "label_Accuracy": 0.5333333333333333,
+      "label_F1": 0.2948717948717948,
+      "subject_Accuracy": 1.0,
+      "subject_F1": 1.0,
+      "target_Accuracy": 1.0,
+      "target_F1": 1.0
+    },
+    "Intimate Relationships": {
+      "Count": 14,
+      "Strict_All4_Acc": 0.14285714285714285,
+      "mechanism_Accuracy": 0.35714285714285715,
+      "mechanism_F1": 0.19791666666666666,
+      "label_Accuracy": 0.35714285714285715,
+      "label_F1": 0.25,
+      "subject_Accuracy": 0.9285714285714286,
+      "subject_F1": 0.8181818181818182,
+      "target_Accuracy": 1.0,
+      "target_F1": 1.0
+    },
+    "Family Conversations": {
+      "Count": 5,
+      "Strict_All4_Acc": 0.0,
+      "mechanism_Accuracy": 0.2,
+      "mechanism_F1": 0.16666666666666666,
+      "label_Accuracy": 0.2,
+      "label_F1": 0.08333333333333333,
+      "subject_Accuracy": 1.0,
+      "subject_F1": 1.0,
+      "target_Accuracy": 1.0,
+      "target_F1": 1.0
+    },
+    "Friend Group": {
+      "Count": 3,
+      "Strict_All4_Acc": 0.0,
+      "mechanism_Accuracy": 0.0,
+      "mechanism_F1": 0.0,
+      "label_Accuracy": 0.3333333333333333,
+      "label_F1": 0.2,
+      "subject_Accuracy": 1.0,
+      "subject_F1": 1.0,
+      "target_Accuracy": 0.6666666666666666,
+      "target_F1": 0.5
+    },
+    "Education & Campus": {
+      "Count": 3,
+      "Strict_All4_Acc": 0.3333333333333333,
+      "mechanism_Accuracy": 0.3333333333333333,
+      "mechanism_F1": 0.16666666666666666,
+      "label_Accuracy": 0.3333333333333333,
+      "label_F1": 0.16666666666666666,
+      "subject_Accuracy": 1.0,
+      "subject_F1": 1.0,
+      "target_Accuracy": 1.0,
+      "target_F1": 1.0
+    },
+    "Friendship Interactions": {
+      "Count": 0
+    }
+  },
+  "4. By Culture": {
+    "General Culture": {
+      "Count": 92,
+      "Strict_All4_Acc": 0.09782608695652174,
+      "mechanism_Accuracy": 0.32608695652173914,
+      "mechanism_F1": 0.19916009607892496,
+      "label_Accuracy": 0.2826086956521739,
+      "label_F1": 0.15602743004142924,
+      "subject_Accuracy": 0.9782608695652174,
+      "subject_F1": 0.9357753357753358,
+      "target_Accuracy": 0.9891304347826086,
+      "target_F1": 0.9753086419753086
+    },
+    "Arab Culture": {
+      "Count": 3,
+      "Strict_All4_Acc": 0.3333333333333333,
+      "mechanism_Accuracy": 0.6666666666666666,
+      "mechanism_F1": 0.5,
+      "label_Accuracy": 0.6666666666666666,
+      "label_F1": 0.5,
+      "subject_Accuracy": 1.0,
+      "subject_F1": 1.0,
+      "target_Accuracy": 1.0,
+      "target_F1": 1.0
+    },
+    "American Culture": {
+      "Count": 1,
+      "Strict_All4_Acc": 0.0,
+      "mechanism_Accuracy": 1.0,
+      "mechanism_F1": 1.0,
+      "label_Accuracy": 0.0,
+      "label_F1": 0.0,
+      "subject_Accuracy": 1.0,
+      "subject_F1": 1.0,
+      "target_Accuracy": 1.0,
+      "target_F1": 1.0
+    },
+    "Muslim Culture": {
+      "Count": 2,
+      "Strict_All4_Acc": 0.0,
+      "mechanism_Accuracy": 0.5,
+      "mechanism_F1": 0.3333333333333333,
+      "label_Accuracy": 0.5,
+      "label_F1": 0.3333333333333333,
+      "subject_Accuracy": 1.0,
+      "subject_F1": 1.0,
+      "target_Accuracy": 1.0,
+      "target_F1": 1.0
+    },
+    "African American Culture": {
+      "Count": 1,
+      "Strict_All4_Acc": 0.0,
+      "mechanism_Accuracy": 0.0,
+      "mechanism_F1": 0.0,
+      "label_Accuracy": 0.0,
+      "label_F1": 0.0,
+      "subject_Accuracy": 1.0,
+      "subject_F1": 1.0,
+      "target_Accuracy": 1.0,
+      "target_F1": 1.0
+    },
+    "Jewish Culture": {
+      "Count": 1,
+      "Strict_All4_Acc": 1.0,
+      "mechanism_Accuracy": 1.0,
+      "mechanism_F1": 1.0,
+      "label_Accuracy": 1.0,
+      "label_F1": 1.0,
+      "subject_Accuracy": 1.0,
+      "subject_F1": 1.0,
+      "target_Accuracy": 1.0,
+      "target_F1": 1.0
+    },
+    "Indian Culture": {
+      "Count": 0
+    },
+    "East Asian Culture": {
+      "Count": 0
+    }
+  },
+  "1. Overall (100 Successful Samples)": {
+    "Count": 100,
+    "Strict_All4_Acc": 0.11,
+    "mechanism_Accuracy": 0.35,
+    "mechanism_F1": 0.20582391861143934,
+    "label_Accuracy": 0.3,
+    "label_F1": 0.15989216434094614,
+    "subject_Accuracy": 0.98,
+    "subject_F1": 0.941407867494824,
+    "target_Accuracy": 0.99,
+    "target_F1": 0.9775280898876404
+  },
+  "0. Meta": {
+    "input_file": "D:\\NUS\\ACMm\\Data-annotation\\Data\\data_exam\\A\\A_sample_100_exam.json",
+    "successful_samples": 100
+  }
+}

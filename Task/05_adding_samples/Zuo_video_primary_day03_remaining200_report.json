@@ -1,0 +1,13 @@
+{
+  "stage2_total": 240,
+  "full_export_total": 240,
+  "manual40_total": 40,
+  "first40_count": 40,
+  "remaining_target_count": 200,
+  "remaining200_generated_count": 200,
+  "merged240_count": 240,
+  "missing_in_full_for_remaining": [],
+  "missing_manual_for_first40": [],
+  "remaining200_validation_issue_count": 0,
+  "merged240_validation_issue_count": 0
+}

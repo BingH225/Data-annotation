@@ -1,0 +1,3592 @@
+[
+  {
+    "id": "intent_0011",
+    "input": {
+      "scenario": "intent",
+      "text": "first of all, take a moment to realize who the fuck you are talking to",
+      "media": {
+        "image_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/intent/image/intent_0011.png",
+        "image_path": "/hpctmp/e1561245/Data/img/HatefulMemes/img/83290.png"
+      }
+    },
+    "options": {
+      "subject": [
+        "speaker",
+        "viewer",
+        "forum moderator",
+        "speechwriter"
+      ],
+      "target": [
+        "addressed interlocutor",
+        "online troll",
+        "event organizer",
+        "rival performer"
+      ]
+    },
+    "ground_truth": {
+      "subject": "speaker",
+      "target": "addressed interlocutor",
+      "mechanism": "expressive aggression",
+      "label": "dominate"
+    },
+    "diversity": {
+      "domain": "Online & Social Media",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "intent_0449",
+    "input": {
+      "scenario": "intent",
+      "text": "hello....abdulla i'm pregnant",
+      "media": {
+        "image_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/intent/image/intent_0449.png",
+        "image_path": "/hpctmp/e1561245/Data/img/HatefulMemes/img/87905.png"
+      }
+    },
+    "options": {
+      "subject": [
+        "speaker",
+        "cat",
+        "recipient",
+        "sender's mobile phone"
+      ],
+      "target": [
+        "muslim",
+        "cat",
+        "people named abdulla",
+        "baby"
+      ]
+    },
+    "ground_truth": {
+      "subject": "speaker",
+      "target": "muslim",
+      "mechanism": "expressive aggression",
+      "label": "alienate"
+    },
+    "diversity": {
+      "domain": "Intimate Relationships",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "intent_0043",
+    "input": {
+      "scenario": "intent",
+      "text": "\"i'm arresting you for the crimes you will commit in the future\"",
+      "media": {
+        "image_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/intent/image/intent_0043.png",
+        "image_path": "/hpctmp/e1561245/Data/img/HatefulMemes/img/49608.png"
+      }
+    },
+    "options": {
+      "subject": [
+        "police officer",
+        "park ranger",
+        "school principal",
+        "manager"
+      ],
+      "target": [
+        "young boy",
+        "hiker wearing backpack",
+        "teacher texting phone",
+        "customer"
+      ]
+    },
+    "ground_truth": {
+      "subject": "police officer",
+      "target": "young boy",
+      "mechanism": "benevolent provocation",
+      "label": "dominate"
+    },
+    "diversity": {
+      "domain": "Public & Service",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "intent_0272",
+    "input": {
+      "scenario": "intent",
+      "text": "just got out of the pool wants to go swimming again",
+      "media": {
+        "image_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/intent/image/intent_0272.png",
+        "image_path": "/hpctmp/e1561245/Data/img/HatefulMemes/img/45379.png"
+      }
+    },
+    "options": {
+      "subject": [
+        "speaker",
+        "forum moderator",
+        "friend",
+        "video game streamer"
+      ],
+      "target": [
+        "reckless swimmer",
+        "attention seeker",
+        "water enthusiast",
+        "exercise addict"
+      ]
+    },
+    "ground_truth": {
+      "subject": "speaker",
+      "target": "reckless swimmer",
+      "mechanism": "expressive aggression",
+      "label": "provoke"
+    },
+    "diversity": {
+      "domain": "Online & Social Media",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "affection_0065",
+    "input": {
+      "scenario": "affection",
+      "text": "that 's my new coffee mug <user>",
+      "media": {
+        "image_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/affection/image/affection_0065.jpg",
+        "image_path": "/hpctmp/e1561245/Data/img/MMSD2.0/893085464256802816.jpg"
+      }
+    },
+    "options": {
+      "subject": [
+        "speaker",
+        "labmate",
+        "advisor",
+        "coworker"
+      ],
+      "target": [
+        "phd identity",
+        "new coffee mug",
+        "humorous novelty item",
+        "office desk accessory"
+      ]
+    },
+    "ground_truth": {
+      "subject": "speaker",
+      "target": "phd identity",
+      "mechanism": "socio_cultural dependency",
+      "label": "sad"
+    },
+    "diversity": {
+      "domain": "Education & Campus",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "intent_0970",
+    "input": {
+      "scenario": "intent",
+      "text": "Can we talk about something else? Do you know that I yodel?",
+      "media": {
+        "video_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/intent/video/intent_0970.mp4",
+        "audio_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/intent/Video_composition/audio_caption/intent_0970.mp3",
+        "audio_caption": "The speaker's tone is light-hearted and conversational, suggesting a casual and friendly environment. The emotional style is relaxed and approachable, indicating a comfortable and informal setting.\n\nIn the background, there is a sense of a social gathering or public event, as evidenced by the laughter heard at the end of the speech. This laughter implies that the speaker's comment about yodeling is likely humorous or unexpected, eliciting amusement from the audience. The environment appears to be indoors, possibly in a conference room, auditorium, or a similar venue, where people are gathered to listen to speeches or presentations. The presence of laughter indicates a positive and engaging audience response, suggesting that the speaker has a good rapport with the attendees.",
+        "video_path": "/hpctmp/e1561245/Data/rawdata/MUStARD/mmsd_raw_data/utterances_final/1_9245.mp4",
+        "audio_path": "/hpctmp/e1561245/Data/audio/intent_1641.mp3"
+      }
+    },
+    "options": {
+      "subject": [
+        "stage comedian",
+        "listener",
+        "speaker",
+        "can"
+      ],
+      "target": [
+        "event organizer",
+        "podcast overall theme",
+        "skill yodeling",
+        "guest personal background"
+      ]
+    },
+    "ground_truth": {
+      "subject": "stage comedian",
+      "target": "event organizer",
+      "mechanism": "prosocial deception",
+      "label": "mitigate"
+    },
+    "diversity": {
+      "domain": "Workplace",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "intent_0485",
+    "input": {
+      "scenario": "intent",
+      "text": "okay, um, here is parker's diaper bag.",
+      "media": {
+        "video_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/intent/video/intent_0485.mp4",
+        "audio_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/intent/Video_composition/audio_caption/intent_0485.mp3",
+        "audio_caption": "The speaker's tone in the given statement is casual and conversational. The emotional style is neutral, indicating a lack of strong emotions such as excitement, anger, or sadness. The background environment is likely a home setting, possibly a nursery or a room where a baby's items are kept, as indicated by the mention of a \"diaper bag.\"",
+        "video_path": "/hpctmp/e1561245/Data/rawdata/MIntRec/video/raw_data/S05/E18/171.mp4",
+        "audio_path": "/hpctmp/e1561245/Data/audio/intent_0067.mp3"
+      }
+    },
+    "options": {
+      "subject": [
+        "coworker",
+        "male coworker",
+        "coworker",
+        "customer"
+      ],
+      "target": [
+        "waiting caregiver",
+        "male coworker",
+        "non-management",
+        "non-management person"
+      ]
+    },
+    "ground_truth": {
+      "subject": "coworker",
+      "target": "waiting caregiver",
+      "mechanism": "prosocial deception",
+      "label": "mitigate"
+    },
+    "diversity": {
+      "domain": "Intimate Relationships",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "attitude_0818",
+    "input": {
+      "scenario": "attitude",
+      "text": "this is my michael brown",
+      "media": {
+        "image_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/attitude/image/attitude_0818.png",
+        "image_path": "/hpctmp/e1561245/Data/img/HatefulMemes/img/56830.png"
+      }
+    },
+    "options": {
+      "subject": [
+        "speaker",
+        "forum moderator",
+        "opinion columnist",
+        "activist"
+      ],
+      "target": [
+        "michael brown",
+        "darren wilson",
+        "ferguson protester",
+        "black lives matter activist"
+      ]
+    },
+    "ground_truth": {
+      "subject": "speaker",
+      "target": "michael brown",
+      "mechanism": "dominant detachment",
+      "label": "hostile"
+    },
+    "diversity": {
+      "domain": "Online & Social Media",
+      "culture": "American Culture"
+    }
+  },
+  {
+    "id": "intent_0468",
+    "input": {
+      "scenario": "intent",
+      "text": "yes.",
+      "media": {
+        "video_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/intent/video/intent_0468.mp4",
+        "audio_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/intent/Video_composition/audio_caption/intent_0468.mp3",
+        "audio_caption": "The speaker's tone is clear, composed, and confident. They exhibit a steady and measured pace in their delivery, indicating a well-practiced and self-assured voice. Their emotional style is neutral, leaning towards professional and objective. This suggests that the speaker is likely experienced and maintains a level-headed approach, free from excessive emotion or bias. The background environment is not explicitly described, but the lack of any noticeable noise, interruptions, or distractions implies a controlled and quiet setting, possibly a formal or professional environment such as an office or a studio. The speaker's tone and emotional style suggest they are likely accustomed to public speaking or broadcasting, where clarity and composure are crucial.",
+        "video_path": "/hpctmp/e1561245/Data/rawdata/MIntRec/video/raw_data/S05/E18/259.mp4",
+        "audio_path": "/hpctmp/e1561245/Data/audio/intent_1294.mp3"
+      }
+    },
+    "options": {
+      "subject": [
+        "jonah",
+        "manager",
+        "security guard",
+        "tv camera operator"
+      ],
+      "target": [
+        "coworker",
+        "store security guard patrol",
+        "tv crew member filming",
+        "coworker"
+      ]
+    },
+    "ground_truth": {
+      "subject": "jonah",
+      "target": "coworker",
+      "mechanism": "prosocial deception",
+      "label": "mitigate"
+    },
+    "diversity": {
+      "domain": "Public & Service",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "intent_1039",
+    "input": {
+      "scenario": "intent",
+      "text": "immigrants wave our flag invaders wave their own",
+      "media": {
+        "image_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/intent/image/intent_1039.png",
+        "image_path": "/hpctmp/e1561245/Data/img/HatefulMemes/img/39748.png"
+      }
+    },
+    "options": {
+      "subject": [
+        "speaker",
+        "social media influencer",
+        "hate group",
+        "political campaign"
+      ],
+      "target": [
+        "immigrants",
+        "latinos",
+        "muslims",
+        "protesters"
+      ]
+    },
+    "ground_truth": {
+      "subject": "speaker",
+      "target": "immigrants",
+      "mechanism": "malicious manipulation",
+      "label": "intimidate"
+    },
+    "diversity": {
+      "domain": "Public & Service",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "intent_0657",
+    "input": {
+      "scenario": "intent",
+      "text": "white people throwing rice at weddings. \"why are they wasting the food\"",
+      "media": {
+        "image_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/intent/image/intent_0657.png",
+        "image_path": "/hpctmp/e1561245/Data/img/HatefulMemes/img/14685.png"
+      }
+    },
+    "options": {
+      "subject": [
+        "asian observers",
+        "online commenters",
+        "elderly relatives",
+        "immigrant parents"
+      ],
+      "target": [
+        "white people",
+        "wedding guests",
+        "bride groom",
+        "party hosts"
+      ]
+    },
+    "ground_truth": {
+      "subject": "asian observers",
+      "target": "white people",
+      "mechanism": "expressive aggression",
+      "label": "condemn"
+    },
+    "diversity": {
+      "domain": "Online & Social Media",
+      "culture": "East Asian Culture"
+    }
+  },
+  {
+    "id": "intent_0550",
+    "input": {
+      "scenario": "intent",
+      "text": "removes polish with chemicals nobody bats an eye removes polish with chemicals everybody loses his shit",
+      "media": {
+        "image_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/intent/image/intent_0550.png",
+        "image_path": "/hpctmp/e1561245/Data/img/HatefulMemes/img/17963.png"
+      }
+    },
+    "options": {
+      "subject": [
+        "speaker",
+        "beauty blogger",
+        "internet troll",
+        "cosmetic brand"
+      ],
+      "target": [
+        "hypocritical observers",
+        "beauty influencers",
+        "online pranksters",
+        "environmental activists"
+      ]
+    },
+    "ground_truth": {
+      "subject": "speaker",
+      "target": "hypocritical observers",
+      "mechanism": "expressive aggression",
+      "label": "mock"
+    },
+    "diversity": {
+      "domain": "Online & Social Media",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "intent_0152",
+    "input": {
+      "scenario": "intent",
+      "text": "manual tranny automatic tranny rebuilt tranny",
+      "media": {
+        "image_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/intent/image/intent_0152.png",
+        "image_path": "/hpctmp/e1561245/Data/img/HatefulMemes/img/04873.png"
+      }
+    },
+    "options": {
+      "subject": [
+        "meme creator",
+        "internet troll",
+        "car enthusiast",
+        "standup comedian"
+      ],
+      "target": [
+        "transgender person",
+        "reality star",
+        "celebrity athlete",
+        "car mechanic"
+      ]
+    },
+    "ground_truth": {
+      "subject": "meme creator",
+      "target": "transgender person",
+      "mechanism": "expressive aggression",
+      "label": "provoke"
+    },
+    "diversity": {
+      "domain": "Online & Social Media",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "intent_1004",
+    "input": {
+      "scenario": "intent",
+      "text": "what's the difference between harry potter and the jews? harry managed to escape from the chambers",
+      "media": {
+        "image_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/intent/image/intent_1004.png",
+        "image_path": "/hpctmp/e1561245/Data/img/HatefulMemes/img/82510.png"
+      }
+    },
+    "options": {
+      "subject": [
+        "speaker",
+        "internet troll",
+        "social media influencer",
+        "forum commenter"
+      ],
+      "target": [
+        "jews",
+        "germans",
+        "muslims",
+        "immigrants"
+      ]
+    },
+    "ground_truth": {
+      "subject": "speaker",
+      "target": "jews",
+      "mechanism": "expressive aggression",
+      "label": "mock"
+    },
+    "diversity": {
+      "domain": "Online & Social Media",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "affection_0821",
+    "input": {
+      "scenario": "affection",
+      "text": "monkeys wipe their asses with their hands and throw their own shit but i'm the unclean one",
+      "media": {
+        "image_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/affection/image/affection_0821.png",
+        "image_path": "/hpctmp/e1561245/Data/img/HatefulMemes/img/51783.png"
+      }
+    },
+    "options": {
+      "subject": [
+        "speaker",
+        "monkeys",
+        "pig",
+        "bathtub"
+      ],
+      "target": [
+        "speaker",
+        "pig",
+        "monkeys",
+        "bystander"
+      ]
+    },
+    "ground_truth": {
+      "subject": "speaker",
+      "target": "speaker",
+      "mechanism": "multimodal incongruity",
+      "label": "happy"
+    },
+    "diversity": {
+      "domain": "Online & Social Media",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "intent_0100",
+    "input": {
+      "scenario": "intent",
+      "text": "when you forget that blind people have a heightened sense of smell why is your penis out ?",
+      "media": {
+        "image_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/intent/image/intent_0100.png",
+        "image_path": "/hpctmp/e1561245/Data/img/HatefulMemes/img/47960.png"
+      }
+    },
+    "options": {
+      "subject": [
+        "speaker",
+        "internet troll",
+        "office prankster",
+        "social media moderator"
+      ],
+      "target": [
+        "coworker",
+        "office janitor",
+        "security guard",
+        "receptionist"
+      ]
+    },
+    "ground_truth": {
+      "subject": "speaker",
+      "target": "coworker",
+      "mechanism": "expressive aggression",
+      "label": "provoke"
+    },
+    "diversity": {
+      "domain": "Workplace",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "affection_0066",
+    "input": {
+      "scenario": "affection",
+      "text": "white boys do it better",
+      "media": {
+        "image_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/affection/image/affection_0066.png",
+        "image_path": "/hpctmp/e1561245/Data/img/HatefulMemes/img/74302.png"
+      }
+    },
+    "options": {
+      "subject": [
+        "speaker",
+        "biker",
+        "photographer",
+        "model"
+      ],
+      "target": [
+        "white boys",
+        "tattooed men",
+        "motorcycle riders",
+        "local bikers"
+      ]
+    },
+    "ground_truth": {
+      "subject": "speaker",
+      "target": "white boys",
+      "mechanism": "multimodal incongruity",
+      "label": "angry"
+    },
+    "diversity": {
+      "domain": "Online & Social Media",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "attitude_0169",
+    "input": {
+      "scenario": "attitude",
+      "text": "238,000 veterans have died waiting for healthcare u.s. increases aid to israel to $4.5 billion/yr",
+      "media": {
+        "image_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/attitude/image/attitude_0169.png",
+        "image_path": "/hpctmp/e1561245/Data/img/HatefulMemes/img/49271.png"
+      }
+    },
+    "options": {
+      "subject": [
+        "speaker",
+        "independent news reporter",
+        "political coworker",
+        "veteran family member"
+      ],
+      "target": [
+        "u s government",
+        "veterans service organization",
+        "state legislative leaders",
+        "israeli government"
+      ]
+    },
+    "ground_truth": {
+      "subject": "speaker",
+      "target": "u s government",
+      "mechanism": "dominant detachment",
+      "label": "hostile"
+    },
+    "diversity": {
+      "domain": "Online & Social Media",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "intent_0492",
+    "input": {
+      "scenario": "intent",
+      "text": "when you know you have smoked too much meth",
+      "media": {
+        "image_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/intent/image/intent_0492.png",
+        "image_path": "/hpctmp/e1561245/Data/img/HatefulMemes/img/94071.png"
+      }
+    },
+    "options": {
+      "subject": [
+        "speaker",
+        "troll account",
+        "influencer account",
+        "anonymous user"
+      ],
+      "target": [
+        "people use meth",
+        "local lawn care workers",
+        "homeowners doing yard work",
+        "people obsessive cleanliness"
+      ]
+    },
+    "ground_truth": {
+      "subject": "speaker",
+      "target": "people use meth",
+      "mechanism": "expressive aggression",
+      "label": "provoke"
+    },
+    "diversity": {
+      "domain": "Online & Social Media",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "intent_0255",
+    "input": {
+      "scenario": "intent",
+      "text": "good to see <user> 's cabinet is so representative of our society the <user> look desperate clinging on",
+      "media": {
+        "image_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/intent/image/intent_0255.jpg",
+        "image_path": "/hpctmp/e1561245/Data/img/MMSD2.0/874295305398878208.jpg"
+      }
+    },
+    "options": {
+      "subject": [
+        "social media commenter",
+        "television news anchor",
+        "tabloid gossip columnist",
+        "satirical podcast host"
+      ],
+      "target": [
+        "cabinet",
+        "conference table",
+        "water pitchers",
+        "notebook folders"
+      ]
+    },
+    "ground_truth": {
+      "subject": "social media commenter",
+      "target": "cabinet",
+      "mechanism": "expressive aggression",
+      "label": "denounce"
+    },
+    "diversity": {
+      "domain": "Public & Service",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "intent_0454",
+    "input": {
+      "scenario": "intent",
+      "text": "me: wanna watch porn or golf? her: porn. you already know how to golf",
+      "media": {
+        "image_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/intent/image/intent_0454.png",
+        "image_path": "/hpctmp/e1561245/Data/img/HatefulMemes/img/09215.png"
+      }
+    },
+    "options": {
+      "subject": [
+        "partner",
+        "roommate",
+        "sibling",
+        "neighbor"
+      ],
+      "target": [
+        "partner",
+        "adult website",
+        "golf game",
+        "television remote"
+      ]
+    },
+    "ground_truth": {
+      "subject": "partner",
+      "target": "partner",
+      "mechanism": "benevolent provocation",
+      "label": "mitigate"
+    },
+    "diversity": {
+      "domain": "Intimate Relationships",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "intent_0247",
+    "input": {
+      "scenario": "intent",
+      "text": "brother... a day without a blast is a day wasted",
+      "media": {
+        "image_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/intent/image/intent_0247.png",
+        "image_path": "/hpctmp/e1561245/Data/img/HatefulMemes/img/25489.png"
+      }
+    },
+    "options": {
+      "subject": [
+        "speaker",
+        "late-night comedy writer",
+        "clickbait content producer",
+        "street protester"
+      ],
+      "target": [
+        "religious leader",
+        "political leader",
+        "military commander",
+        "news anchor"
+      ]
+    },
+    "ground_truth": {
+      "subject": "speaker",
+      "target": "religious leader",
+      "mechanism": "expressive aggression",
+      "label": "mock"
+    },
+    "diversity": {
+      "domain": "Public & Service",
+      "culture": "Arab Culture"
+    }
+  },
+  {
+    "id": "attitude_0612",
+    "input": {
+      "scenario": "attitude",
+      "text": "how am i supposed to find $27,000 worth of stuff to repair in one day? there's just not that much stuff that's broken!",
+      "media": {
+        "video_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/attitude/video/attitude_0612.mp4",
+        "audio_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/attitude/Video_composition/audio_caption/attitude_0612.mp3",
+        "audio_caption": "The speaker's tone is one of frustration, likely tinged with disbelief. The emotional style can be described as skeptical or resigned, as the speaker seems to be questioning the possibility of finding the required items in such a short amount of time. The background environment is not explicitly described, but the tone suggests a setting where the speaker is possibly working or involved in some form of manual labor, such as a garage, workshop, or a similar space where items might be broken or in need of repair.",
+        "video_path": "/hpctmp/e1561245/Data/rawdata/MIntRec/video/raw_data/S04/E14/169.mp4",
+        "audio_path": "/hpctmp/e1561245/Data/audio/attitude_0569.mp3"
+      }
+    },
+    "options": {
+      "subject": [
+        "speaker",
+        "bystander",
+        "coworker",
+        "customer"
+      ],
+      "target": [
+        "manager",
+        "other person",
+        "nearby person",
+        "third party"
+      ]
+    },
+    "ground_truth": {
+      "subject": "speaker",
+      "target": "manager",
+      "mechanism": "protective distancing",
+      "label": "skeptical"
+    },
+    "diversity": {
+      "domain": "Workplace",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "intent_0022",
+    "input": {
+      "scenario": "intent",
+      "text": "I guess he wants to do a little dance, you know, make a little love. Well pretty much get down to that.",
+      "media": {
+        "video_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/intent/video/intent_0022.mp4",
+        "audio_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/intent/Video_composition/audio_caption/intent_0022.mp3",
+        "audio_caption": "The speaker's tone in this excerpt is casual and slightly provocative, suggesting a lighthearted or humorous intent. The use of phrases like \"guessing he wants to do a little dance\" and \"make a little love,\" combined with the playful tone, indicates that the speaker is engaging in a form of banter or comedic performance. The speaker seems relaxed and comfortable, as evidenced by the easygoing manner in which they deliver their lines.\n\nThe emotional style of the speaker is upbeat and energetic, likely aiming to entertain or amuse the audience. This is further emphasized by the laughter and applause that follow the speaker's lines, indicating a positive audience response. The speaker's tone is also confident, as they casually suggest that they will \"pretty much get down tonight,\" which suggests a self-assured approach to their performance.\n\nThe background environment is likely a comedy show or a similar setting where humor and entertainment are central. The presence of laughter and applause suggests a live audience that is engaged and responsive to the speaker's performance. The atmosphere appears to be lively and interactive, with the speaker and audience participating in a shared sense of humor.",
+        "video_path": "/hpctmp/e1561245/Data/rawdata/MUStARD/mmsd_raw_data/utterances_final/2_223.mp4",
+        "audio_path": "/hpctmp/e1561245/Data/audio/intent_1690.mp3"
+      }
+    },
+    "options": {
+      "subject": [
+        "speaker",
+        "stand-up comedian",
+        "friend",
+        "woman"
+      ],
+      "target": [
+        "rose",
+        "girl",
+        "himself",
+        "man"
+      ]
+    },
+    "ground_truth": {
+      "subject": "speaker",
+      "target": "rose",
+      "mechanism": "expressive aggression",
+      "label": "dominate"
+    },
+    "diversity": {
+      "domain": "Friend Group",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "affection_0113",
+    "input": {
+      "scenario": "affection",
+      "text": "and that was the last nativity play my son was invited to take part in",
+      "media": {
+        "image_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/affection/image/affection_0113.png",
+        "image_path": "/hpctmp/e1561245/Data/img/HatefulMemes/img/87436.png"
+      }
+    },
+    "options": {
+      "subject": [
+        "parent",
+        "teacher",
+        "neighbor",
+        "volunteer"
+      ],
+      "target": [
+        "children affected war",
+        "refugees",
+        "severe storm",
+        "local community members"
+      ]
+    },
+    "ground_truth": {
+      "subject": "parent",
+      "target": "children affected war",
+      "mechanism": "multimodal incongruity",
+      "label": "sad"
+    },
+    "diversity": {
+      "domain": "Family Conversations",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "affection_0243",
+    "input": {
+      "scenario": "affection",
+      "text": "me cis girls",
+      "media": {
+        "image_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/affection/image/affection_0243.png",
+        "image_path": "/hpctmp/e1561245/Data/img/HatefulMemes/img/69081.png"
+      }
+    },
+    "options": {
+      "subject": [
+        "me",
+        "friend",
+        "crush",
+        "partner"
+      ],
+      "target": [
+        "cis girls",
+        "trans women",
+        "work colleagues",
+        "online followers"
+      ]
+    },
+    "ground_truth": {
+      "subject": "me",
+      "target": "cis girls",
+      "mechanism": "figurative semantics",
+      "label": "bad"
+    },
+    "diversity": {
+      "domain": "Intimate Relationships",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "intent_1026",
+    "input": {
+      "scenario": "intent",
+      "text": "oh, so anytime a woman tells you what to do, it's shrieking?",
+      "media": {
+        "video_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/intent/video/intent_1026.mp4",
+        "audio_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/intent/Video_composition/audio_caption/intent_1026.mp3",
+        "audio_caption": "The speaker's tone in this snippet appears to be slightly confrontational or dismissive. The phrase \"Oh, so anytime a woman tells you what to do\" suggests a tone of skepticism or possibly frustration, indicating that the speaker might be challenging or questioning the actions or decisions of someone else, particularly when influenced or directed by a woman.\n\n**Emotional Style:**\nThe emotional style of the speaker seems to lean towards a confrontational or assertive demeanor. There is a hint of potential irritation or skepticism in the tone, suggesting that the speaker might be expressing feelings of frustration or perhaps even defensively. The slight dismissiveness in her tone could imply a feeling of being disrespected or underestimated.\n\n**Background Environment:**\nThe background environment is not explicitly detailed in the provided snippet, so it is difficult to infer specific environmental elements. However, given the confrontational tone, the setting could likely be a professional, social, or personal environment where there is some form of disagreement or0 potentially dynamic between the speaker and another person. The environment might be a workplace, a social gathering, or a private conversation where the speaker feels compelled to express her opinion or challenge the actions of another individual.",
+        "video_path": "/hpctmp/e1561245/Data/rawdata/MIntRec/video/raw_data/S04/E03/180.mp4",
+        "audio_path": "/hpctmp/e1561245/Data/audio/intent_1243.mp3"
+      }
+    },
+    "options": {
+      "subject": [
+        "female manager",
+        "male coworker",
+        "customer",
+        "products shelf"
+      ],
+      "target": [
+        "dismissive remark",
+        "public criticism",
+        "store work schedule",
+        "own job performance"
+      ]
+    },
+    "ground_truth": {
+      "subject": "female manager",
+      "target": "dismissive remark",
+      "mechanism": "expressive aggression",
+      "label": "provoke"
+    },
+    "diversity": {
+      "domain": "Workplace",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "intent_0209",
+    "input": {
+      "scenario": "intent",
+      "text": "caitlyn jenner is kylie jenners transexual biological father",
+      "media": {
+        "image_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/intent/image/intent_0209.png",
+        "image_path": "/hpctmp/e1561245/Data/img/HatefulMemes/img/08641.png"
+      }
+    },
+    "options": {
+      "subject": [
+        "speaker",
+        "tabloid journalist",
+        "pr strategist",
+        "social activist"
+      ],
+      "target": [
+        "caitlyn jenner",
+        "reality television producer",
+        "entertainment industry insider",
+        "tabloid magazine editor"
+      ]
+    },
+    "ground_truth": {
+      "subject": "speaker",
+      "target": "caitlyn jenner",
+      "mechanism": "expressive aggression",
+      "label": "condemn"
+    },
+    "diversity": {
+      "domain": "Family Conversations",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "affection_0703",
+    "input": {
+      "scenario": "affection",
+      "text": "warning! please handle large fireworks with care!",
+      "media": {
+        "image_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/affection/image/affection_0703.png",
+        "image_path": "/hpctmp/e1561245/Data/img/HatefulMemes/img/52617.png"
+      }
+    },
+    "options": {
+      "subject": [
+        "speaker",
+        "photographer",
+        "bystander",
+        "shopkeeper"
+      ],
+      "target": [
+        "people handling large fireworks",
+        "patrons bookstore",
+        "customers store",
+        "visitors bookshop"
+      ]
+    },
+    "ground_truth": {
+      "subject": "speaker",
+      "target": "people handling large fireworks",
+      "mechanism": "socio_cultural dependency",
+      "label": "fearful"
+    },
+    "diversity": {
+      "domain": "Online & Social Media",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "intent_0848",
+    "input": {
+      "scenario": "intent",
+      "text": "7 in 10 people in prison are registered democrats when you can't beat trump with law abiding citizens you enlist felons..",
+      "media": {
+        "image_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/intent/image/intent_0848.png",
+        "image_path": "/hpctmp/e1561245/Data/img/HatefulMemes/img/31849.png"
+      }
+    },
+    "options": {
+      "subject": [
+        "speaker",
+        "campaign volunteer",
+        "bot operator",
+        "social media marketer"
+      ],
+      "target": [
+        "democratic voters",
+        "felons",
+        "prisoners",
+        "party officials"
+      ]
+    },
+    "ground_truth": {
+      "subject": "speaker",
+      "target": "democratic voters",
+      "mechanism": "expressive aggression",
+      "label": "alienate"
+    },
+    "diversity": {
+      "domain": "Online & Social Media",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "intent_1001",
+    "input": {
+      "scenario": "intent",
+      "text": "only in america could these people consider themselves the \"master race\"",
+      "media": {
+        "image_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/intent/image/intent_1001.png",
+        "image_path": "/hpctmp/e1561245/Data/img/HatefulMemes/img/90768.png"
+      }
+    },
+    "options": {
+      "subject": [
+        "speaker",
+        "news reporter",
+        "field cameraman",
+        "casual onlooker"
+      ],
+      "target": [
+        "confederate flag demonstrators",
+        "conservative rally attendees",
+        "state capitol tourists",
+        "local history enthusiasts"
+      ]
+    },
+    "ground_truth": {
+      "subject": "speaker",
+      "target": "confederate flag demonstrators",
+      "mechanism": "expressive aggression",
+      "label": "dominate"
+    },
+    "diversity": {
+      "domain": "Public & Service",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "intent_0403",
+    "input": {
+      "scenario": "intent",
+      "text": "i was raped in jail mom. dad's taking monopoly way too seriously incest is the best, put your daughter to the test",
+      "media": {
+        "image_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/intent/image/intent_0403.png",
+        "image_path": "/hpctmp/e1561245/Data/img/HatefulMemes/img/34295.png"
+      }
+    },
+    "options": {
+      "subject": [
+        "speaker",
+        "moderator",
+        "teenager",
+        "reader"
+      ],
+      "target": [
+        "rape victims",
+        "father",
+        "daughter",
+        "mother"
+      ]
+    },
+    "ground_truth": {
+      "subject": "speaker",
+      "target": "rape victims",
+      "mechanism": "malicious manipulation",
+      "label": "alienate"
+    },
+    "diversity": {
+      "domain": "Family Conversations",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "attitude_0878",
+    "input": {
+      "scenario": "attitude",
+      "text": "teacher of the year for black community",
+      "media": {
+        "image_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/attitude/image/attitude_0878.png",
+        "image_path": "/hpctmp/e1561245/Data/img/HatefulMemes/img/63827.png"
+      }
+    },
+    "options": {
+      "subject": [
+        "speaker",
+        "school teacher",
+        "content moderator",
+        "community leader"
+      ],
+      "target": [
+        "black community",
+        "school teachers",
+        "local students",
+        "school district"
+      ]
+    },
+    "ground_truth": {
+      "subject": "speaker",
+      "target": "black community",
+      "mechanism": "dominant detachment",
+      "label": "hostile"
+    },
+    "diversity": {
+      "domain": "Education & Campus",
+      "culture": "African American Culture"
+    }
+  },
+  {
+    "id": "intent_1114",
+    "input": {
+      "scenario": "intent",
+      "text": "who assassinated joan rivers after she trashed obama, remember",
+      "media": {
+        "image_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/intent/image/intent_1114.png",
+        "image_path": "/hpctmp/e1561245/Data/img/HatefulMemes/img/17523.png"
+      }
+    },
+    "options": {
+      "subject": [
+        "speaker",
+        "tabloid blogger",
+        "political operative",
+        "graphic designer"
+      ],
+      "target": [
+        "obama",
+        "rivers",
+        "trump",
+        "clinton"
+      ]
+    },
+    "ground_truth": {
+      "subject": "speaker",
+      "target": "obama",
+      "mechanism": "malicious manipulation",
+      "label": "denounce"
+    },
+    "diversity": {
+      "domain": "Online & Social Media",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "intent_0483",
+    "input": {
+      "scenario": "intent",
+      "text": "a muslim mans fantasy",
+      "media": {
+        "image_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/intent/image/intent_0483.png",
+        "image_path": "/hpctmp/e1561245/Data/img/HatefulMemes/img/19684.png"
+      }
+    },
+    "options": {
+      "subject": [
+        "speaker",
+        "forum moderator",
+        "digital archivist",
+        "ghostwriter"
+      ],
+      "target": [
+        "tiajuana hooker",
+        "spring breaker",
+        "zombie fan",
+        "tourist guide"
+      ]
+    },
+    "ground_truth": {
+      "subject": "speaker",
+      "target": "tiajuana hooker",
+      "mechanism": "expressive aggression",
+      "label": "dominate"
+    },
+    "diversity": {
+      "domain": "Online & Social Media",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "attitude_0297",
+    "input": {
+      "scenario": "attitude",
+      "text": "islam is the religion of peace! if you don't agree i kill you!",
+      "media": {
+        "image_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/attitude/image/attitude_0297.png",
+        "image_path": "/hpctmp/e1561245/Data/img/HatefulMemes/img/05172.png"
+      }
+    },
+    "options": {
+      "subject": [
+        "threatening individual",
+        "troll account",
+        "social influencer",
+        "anonymous user"
+      ],
+      "target": [
+        "dissenting listeners",
+        "christianity",
+        "judaism",
+        "hinduism"
+      ]
+    },
+    "ground_truth": {
+      "subject": "threatening individual",
+      "target": "dissenting listeners",
+      "mechanism": "dominant detachment",
+      "label": "hostile"
+    },
+    "diversity": {
+      "domain": "Online & Social Media",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "intent_1060",
+    "input": {
+      "scenario": "intent",
+      "text": "they were mentally ill. i had to cure them",
+      "media": {
+        "image_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/intent/image/intent_1060.png",
+        "image_path": "/hpctmp/e1561245/Data/img/HatefulMemes/img/31470.png"
+      }
+    },
+    "options": {
+      "subject": [
+        "speaker",
+        "doctor",
+        "influencer",
+        "moderator"
+      ],
+      "target": [
+        "mentally ill people",
+        "substance abuse patients",
+        "social media followers",
+        "online forum users"
+      ]
+    },
+    "ground_truth": {
+      "subject": "speaker",
+      "target": "mentally ill people",
+      "mechanism": "malicious manipulation",
+      "label": "dominate"
+    },
+    "diversity": {
+      "domain": "Online & Social Media",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "affection_0836",
+    "input": {
+      "scenario": "affection",
+      "text": "# whatweloveaboutcamila is that she follows every fan on their birthday except me !",
+      "media": {
+        "image_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/affection/image/affection_0836.jpg",
+        "image_path": "/hpctmp/e1561245/Data/img/MMSD2.0/888016316744867840.jpg"
+      }
+    },
+    "options": {
+      "subject": [
+        "speaker",
+        "follower",
+        "fan",
+        "admirer"
+      ],
+      "target": [
+        "camila",
+        "influencer",
+        "singer",
+        "celebrity"
+      ]
+    },
+    "ground_truth": {
+      "subject": "speaker",
+      "target": "camila",
+      "mechanism": "multimodal incongruity",
+      "label": "sad"
+    },
+    "diversity": {
+      "domain": "Online & Social Media",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "intent_0324",
+    "input": {
+      "scenario": "intent",
+      "text": "vikings walk in. fuck shit up. walk out",
+      "media": {
+        "image_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/intent/image/intent_0324.png",
+        "image_path": "/hpctmp/e1561245/Data/img/HatefulMemes/img/45103.png"
+      }
+    },
+    "options": {
+      "subject": [
+        "norse raiders",
+        "policy analyst",
+        "brand strategist",
+        "platform moderator"
+      ],
+      "target": [
+        "local defenders",
+        "independent creators",
+        "corporate sponsors",
+        "law enforcement"
+      ]
+    },
+    "ground_truth": {
+      "subject": "norse raiders",
+      "target": "local defenders",
+      "mechanism": "expressive aggression",
+      "label": "intimidate"
+    },
+    "diversity": {
+      "domain": "Online & Social Media",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "intent_0316",
+    "input": {
+      "scenario": "intent",
+      "text": "hey, any update on when you two lovebirds are moving to cali?",
+      "media": {
+        "video_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/intent/video/intent_0316.mp4",
+        "audio_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/intent/Video_composition/audio_caption/intent_0316.mp3",
+        "audio_caption": "The speaker's tone is casual and informal, suggesting a relaxed and friendly environment. The emotional style is neutral, neither particularly positive nor negative, indicating a calm demeanor. The background environment is likely a casual setting, possibly a home or a cozy café, where the speaker feels comfortable and at ease in engaging in light-hearted conversations.",
+        "video_path": "/hpctmp/e1561245/Data/rawdata/MIntRec/video/raw_data/S06/E01/67.mp4",
+        "audio_path": "/hpctmp/e1561245/Data/audio/intent_1299.mp3"
+      }
+    },
+    "options": {
+      "subject": [
+        "sandra",
+        "jonah",
+        "roxy",
+        "male coworker"
+      ],
+      "target": [
+        "couple addressed",
+        "event organizer",
+        "entire sales team",
+        "customers checkout"
+      ]
+    },
+    "ground_truth": {
+      "subject": "sandra",
+      "target": "couple addressed",
+      "mechanism": "benevolent provocation",
+      "label": "denounce"
+    },
+    "diversity": {
+      "domain": "Workplace",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "affection_0210",
+    "input": {
+      "scenario": "affection",
+      "text": "but you're going to be fine.",
+      "media": {
+        "video_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/affection/video/affection_0210.mp4",
+        "audio_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/affection/Video_composition/audio_caption/affection_0210.mp3",
+        "audio_caption": "The speaker's tone in the given audio snippet is gentle, reassuring, and comforting. The words \"fine\" and the tone suggest a sense of care and support, possibly addressing someone who is anxious or uncertain about a situation. This tone is likely used to provide emotional comfort and to reassure the listener that the situation is manageable.\n\nIn terms of emotional style, the speaker likely exhibits a warm, empathetic, and nurturing demeanor. This emotional style is characterized by a focus on others' feelings, providing emotional support, and fostering a sense of security in the listener. The speaker's tone and choice of words (\"you're gonna be fine\") indicate a desire to alleviate the listener's concerns and to create a positive, uplifting atmosphere.\n\nFinally, the background environment is not explicitly described, but the context suggests a personal or intimate setting, possibly a one-on-one conversation or a comforting interaction in a quiet, private space. The lack of background noise or distractions further emphasizes the focus on the speaker's emotional tone and the comforting message being conveyed.",
+        "video_path": "/hpctmp/e1561245/Data/rawdata/MIntRec/video/raw_data/S05/E14/380.mp4",
+        "audio_path": "/hpctmp/e1561245/Data/audio/attitude_0694.mp3"
+      }
+    },
+    "options": {
+      "subject": [
+        "standing man",
+        "guest",
+        "friend",
+        "vendor"
+      ],
+      "target": [
+        "seated man",
+        "man gray suit",
+        "woman pink",
+        "woman red dress"
+      ]
+    },
+    "ground_truth": {
+      "subject": "standing man",
+      "target": "seated man",
+      "mechanism": "affective deception",
+      "label": "fearful"
+    },
+    "diversity": {
+      "domain": "Family Conversations",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "affection_0021",
+    "input": {
+      "scenario": "affection",
+      "text": "let's reduce drunk driving by taking cars away from sober drivers makes as much sense as gun control",
+      "media": {
+        "image_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/affection/image/affection_0021.png",
+        "image_path": "/hpctmp/e1561245/Data/img/HatefulMemes/img/58264.png"
+      }
+    },
+    "options": {
+      "subject": [
+        "speaker",
+        "driver",
+        "woman",
+        "campaigner"
+      ],
+      "target": [
+        "gun control",
+        "traffic laws",
+        "road safety",
+        "alcohol regulation"
+      ]
+    },
+    "ground_truth": {
+      "subject": "speaker",
+      "target": "gun control",
+      "mechanism": "multimodal incongruity",
+      "label": "angry"
+    },
+    "diversity": {
+      "domain": "Public & Service",
+      "culture": "American Culture"
+    }
+  },
+  {
+    "id": "attitude_0241",
+    "input": {
+      "scenario": "attitude",
+      "text": "please, i should be thanking you.",
+      "media": {
+        "video_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/attitude/video/attitude_0241.mp4",
+        "audio_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/attitude/Video_composition/audio_caption/attitude_0241.mp3",
+        "audio_caption": "The speaker's tone is urgent and slightly distressed, indicating a sense of vulnerability or desperation. The emotional style suggests a mix of gratitude and perhaps a hint of exasperation or resignation, as if the speaker feels they are being helped in an unexpected or unwanted way. The background environment seems to be a formal or professional setting, possibly an office or meeting room, given the controlled nature of the conversation.",
+        "video_path": "/hpctmp/e1561245/Data/rawdata/MIntRec/video/raw_data/S05/E09/571.mp4",
+        "audio_path": "/hpctmp/e1561245/Data/audio/attitude_0370.mp3"
+      }
+    },
+    "options": {
+      "subject": [
+        "coworker",
+        "eye doctor",
+        "passerby",
+        "bystander"
+      ],
+      "target": [
+        "customer",
+        "manager",
+        "cashier counter",
+        "corporate store inspector"
+      ]
+    },
+    "ground_truth": {
+      "subject": "coworker",
+      "target": "customer",
+      "mechanism": "submissive alignment",
+      "label": "appreciative"
+    },
+    "diversity": {
+      "domain": "Public & Service",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "intent_0077",
+    "input": {
+      "scenario": "intent",
+      "text": "over heard my daughter telling her friend she was curious what it would be like to date a black guy so ... i showed her!",
+      "media": {
+        "image_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/intent/image/intent_0077.png",
+        "image_path": "/hpctmp/e1561245/Data/img/HatefulMemes/img/27318.png"
+      }
+    },
+    "options": {
+      "subject": [
+        "parent",
+        "partner",
+        "friend",
+        "neighbor"
+      ],
+      "target": [
+        "daughter",
+        "partner",
+        "friend",
+        "stranger"
+      ]
+    },
+    "ground_truth": {
+      "subject": "parent",
+      "target": "daughter",
+      "mechanism": "expressive aggression",
+      "label": "alienate"
+    },
+    "diversity": {
+      "domain": "Family Conversations",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "attitude_0325",
+    "input": {
+      "scenario": "attitude",
+      "text": "does my son know me or what ?",
+      "media": {
+        "image_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/attitude/image/attitude_0325.jpg",
+        "image_path": "/hpctmp/e1561245/Data/img/MMSD2.0/863817504111693824.jpg"
+      }
+    },
+    "options": {
+      "subject": [
+        "mother",
+        "aunt",
+        "teacher",
+        "babysitter"
+      ],
+      "target": [
+        "son",
+        "nephew",
+        "student",
+        "friend"
+      ]
+    },
+    "ground_truth": {
+      "subject": "mother",
+      "target": "son",
+      "mechanism": "protective distancing",
+      "label": "skeptical"
+    },
+    "diversity": {
+      "domain": "Family Conversations",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "affection_0530",
+    "input": {
+      "scenario": "affection",
+      "text": "good things come to those who wait",
+      "media": {
+        "image_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/affection/image/affection_0530.png",
+        "image_path": "/hpctmp/e1561245/Data/img/HatefulMemes/img/46715.png"
+      }
+    },
+    "options": {
+      "subject": [
+        "child",
+        "adult",
+        "observer",
+        "neighbor"
+      ],
+      "target": [
+        "future good things",
+        "immediate rewards now",
+        "small daily pleasures",
+        "background object"
+      ]
+    },
+    "ground_truth": {
+      "subject": "child",
+      "target": "future good things",
+      "mechanism": "multimodal incongruity",
+      "label": "bad"
+    },
+    "diversity": {
+      "domain": "Family Conversations",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "attitude_0846",
+    "input": {
+      "scenario": "attitude",
+      "text": "So, I'm sorry I just don't think we should go away together yet.",
+      "media": {
+        "video_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/attitude/video/attitude_0846.mp4",
+        "audio_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/attitude/Video_composition/audio_caption/attitude_0846.mp3",
+        "audio_caption": "The speaker's tone in this statement is hesitant and uncertain, indicating a sense of apprehension or concern about a potential future action. The emotional style can be described as cautious or reserved, suggesting that the speaker is not entirely convinced or eager about the idea of going away together. The background environment is not explicitly described, but the context implies a conversation between two individuals, possibly in a private or intimate setting, where the speaker is expressing their reservations. The overall atmosphere suggests a moment of decision-making or negotiation, where the speaker is weighing the pros and cons of a proposed action.",
+        "video_path": "/hpctmp/e1561245/Data/rawdata/MUStARD/mmsd_raw_data/utterances_final/2_535.mp4",
+        "audio_path": "/hpctmp/e1561245/Data/audio/attitude_1769.mp3"
+      }
+    },
+    "options": {
+      "subject": [
+        "speaker",
+        "partner",
+        "listener",
+        "therapist"
+      ],
+      "target": [
+        "other person",
+        "children",
+        "man behind",
+        "people judged"
+      ]
+    },
+    "ground_truth": {
+      "subject": "speaker",
+      "target": "other person",
+      "mechanism": "protective distancing",
+      "label": "concerned"
+    },
+    "diversity": {
+      "domain": "Intimate Relationships",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "intent_1080",
+    "input": {
+      "scenario": "intent",
+      "text": "we cannot allow birth control we will run out of children to molest",
+      "media": {
+        "image_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/intent/image/intent_1080.png",
+        "image_path": "/hpctmp/e1561245/Data/img/HatefulMemes/img/94506.png"
+      }
+    },
+    "options": {
+      "subject": [
+        "speaker",
+        "internet troll",
+        "satire account",
+        "social media influencer"
+      ],
+      "target": [
+        "catholic leadership",
+        "conservative politicians",
+        "organized patriarchy",
+        "media"
+      ]
+    },
+    "ground_truth": {
+      "subject": "speaker",
+      "target": "catholic leadership",
+      "mechanism": "expressive aggression",
+      "label": "condemn"
+    },
+    "diversity": {
+      "domain": "Online & Social Media",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "affection_0587",
+    "input": {
+      "scenario": "affection",
+      "text": "Yeah, a slice of cheesecake and-and a date if you're given'  'em out.",
+      "media": {
+        "video_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/affection/video/affection_0587.mp4",
+        "audio_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/affection/Video_composition/audio_caption/affection_0587.mp3",
+        "audio_caption": "The speaker's tone is casual and friendly, with a hint of playfulness. The emotional style is relaxed and lighthearted, suggesting a positive and amicable mood. The background environment appears to be a casual dining setting, possibly a café or a restaurant, indicated by the mention of a slice of cheesecake, which is a common dessert served in such places.",
+        "video_path": "/hpctmp/e1561245/Data/rawdata/MUStARD/mmsd_raw_data/utterances_final/2_193.mp4",
+        "audio_path": "/hpctmp/e1561245/Data/audio/affection_1387.mp3"
+      }
+    },
+    "options": {
+      "subject": [
+        "speaker",
+        "bystander",
+        "coworker",
+        "customer"
+      ],
+      "target": [
+        "woman",
+        "other person",
+        "nearby person",
+        "third party"
+      ]
+    },
+    "ground_truth": {
+      "subject": "speaker",
+      "target": "woman",
+      "mechanism": "figurative semantics",
+      "label": "happy"
+    },
+    "diversity": {
+      "domain": "Public & Service",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "intent_0646",
+    "input": {
+      "scenario": "intent",
+      "text": "adult diapers for complete shitheads",
+      "media": {
+        "image_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/intent/image/intent_0646.png",
+        "image_path": "/hpctmp/e1561245/Data/img/HatefulMemes/img/41270.png"
+      }
+    },
+    "options": {
+      "subject": [
+        "speaker",
+        "online troll",
+        "political opponent",
+        "anonymous account"
+      ],
+      "target": [
+        "pictured woman",
+        "news outlet",
+        "manager",
+        "protest crowd"
+      ]
+    },
+    "ground_truth": {
+      "subject": "speaker",
+      "target": "pictured woman",
+      "mechanism": "expressive aggression",
+      "label": "denounce"
+    },
+    "diversity": {
+      "domain": "Online & Social Media",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "intent_0511",
+    "input": {
+      "scenario": "intent",
+      "text": "so glenn, you're gonna be running care packages from the warehouse, or doing that waddle thing you do, whatever works.",
+      "media": {
+        "video_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/intent/video/intent_0511.mp4",
+        "audio_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/intent/Video_composition/audio_caption/intent_0511.mp3",
+        "audio_caption": "The speaker's tone appears to be casual and conversational, suggesting a friendly and informal interaction. The use of the word \"waddle\" in reference to Glenn's actions indicates a light-hearted and humorous tone, implying that the speaker is comfortable and familiar with Glenn's behavior.\n\nThe emotional style of the speaker seems relaxed and easy-going, with no signs of tension or urgency. This suggests a level of comfort and ease in the conversation, likely indicating a positive relationship between the speaker and Glenn.\n\nThe background environment is not explicitly described, but given the casual and friendly tone of the conversation, it can be inferred that the setting is likely a familiar and comfortable space, such as a home office or a casual workspace. The mention of \"care packages\" and \"warehouse\" suggests that the conversation might be taking place in a professional or semi-professional setting, possibly related to work or a hobby involving physical items.",
+        "video_path": "/hpctmp/e1561245/Data/rawdata/MIntRec/video/raw_data/S05/E17/48.mp4",
+        "audio_path": "/hpctmp/e1561245/Data/audio/intent_1321.mp3"
+      }
+    },
+    "options": {
+      "subject": [
+        "coworker",
+        "event coordinator",
+        "manager",
+        "display assistant"
+      ],
+      "target": [
+        "warehouse runner",
+        "marcus",
+        "harold",
+        "listener"
+      ]
+    },
+    "ground_truth": {
+      "subject": "coworker",
+      "target": "warehouse runner",
+      "mechanism": "expressive aggression",
+      "label": "mock"
+    },
+    "diversity": {
+      "domain": "Workplace",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "intent_0596",
+    "input": {
+      "scenario": "intent",
+      "text": "Yeah, it's a great time to be alive, isn't it?",
+      "media": {
+        "video_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/intent/video/intent_0596.mp4",
+        "audio_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/intent/Video_composition/audio_caption/intent_0596.mp3",
+        "audio_caption": "The speaker's tone is upbeat and cheerful, reflecting a positive and enthusiastic attitude. The emotional style is light-hearted and carefree, suggesting a sense of joy and optimism. The background environment appears to be a lively and social setting, likely a public event or gathering, as indicated by the presence of laughter and a general sense of camaraderie.",
+        "video_path": "/hpctmp/e1561245/Data/rawdata/MUStARD/mmsd_raw_data/utterances_final/1_5166.mp4",
+        "audio_path": "/hpctmp/e1561245/Data/audio/intent_1570.mp3"
+      }
+    },
+    "options": {
+      "subject": [
+        "speaker",
+        "passerby",
+        "delivery driver",
+        "woman"
+      ],
+      "target": [
+        "nearby patrons",
+        "woman video call",
+        "phone's camera",
+        "glass water"
+      ]
+    },
+    "ground_truth": {
+      "subject": "speaker",
+      "target": "nearby patrons",
+      "mechanism": "prosocial deception",
+      "label": "mitigate"
+    },
+    "diversity": {
+      "domain": "Public & Service",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "attitude_0815",
+    "input": {
+      "scenario": "attitude",
+      "text": "creeps into your childs room empties his sack",
+      "media": {
+        "image_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/attitude/image/attitude_0815.png",
+        "image_path": "/hpctmp/e1561245/Data/img/HatefulMemes/img/67084.png"
+      }
+    },
+    "options": {
+      "subject": [
+        "speaker",
+        "manager",
+        "viral marketing strategist",
+        "forum moderator"
+      ],
+      "target": [
+        "holiday gift giver",
+        "easter bunny",
+        "seasonal parade performer",
+        "house intruder"
+      ]
+    },
+    "ground_truth": {
+      "subject": "speaker",
+      "target": "holiday gift giver",
+      "mechanism": "dominant detachment",
+      "label": "contemptuous"
+    },
+    "diversity": {
+      "domain": "Family Conversations",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "intent_0721",
+    "input": {
+      "scenario": "intent",
+      "text": "look, sandra, i gotta say something here.",
+      "media": {
+        "video_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/intent/video/intent_0721.mp4",
+        "audio_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/intent/Video_composition/audio_caption/intent_0721.mp3",
+        "audio_caption": "The speaker's tone in this excerpt is formal and somewhat hesitant. The use of \"look\" at the beginning suggests a desire to address the listener directly, possibly indicating a sense of urgency or seriousness. The phrase \"Sandra, I gotta say something\" implies that the speaker has a message or important information to convey. The choice of words and the structure of the sentence suggest that the speaker is not entirely comfortable or perhaps a bit nervous about what they are about to say.\n\nThe emotional style of the speaker can be inferred as serious and possibly anxious or concerned. The tone is not overly dramatic, but there is a sense of importance in the delivery. The hesitation implies that the speaker may be struggling to find the right words or is worried about how the listener will react.\n\nThe background environment is not explicitly described, but the formality of the tone suggests it could be a professional setting, such as an office or meeting room. The emotional tone and formality could indicate that the speaker is in a situation where they feel the need to convey something significant, possibly in a work-related context or during a serious conversation.",
+        "video_path": "/hpctmp/e1561245/Data/rawdata/MIntRec/video/raw_data/S05/E21/378.mp4",
+        "audio_path": "/hpctmp/e1561245/Data/audio/intent_1499.mp3"
+      }
+    },
+    "options": {
+      "subject": [
+        "male coworker",
+        "female customer",
+        "male customer",
+        "customer"
+      ],
+      "target": [
+        "sandra",
+        "customer",
+        "customer",
+        "customer"
+      ]
+    },
+    "ground_truth": {
+      "subject": "male coworker",
+      "target": "sandra",
+      "mechanism": "prosocial deception",
+      "label": "mitigate"
+    },
+    "diversity": {
+      "domain": "Workplace",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "attitude_0627",
+    "input": {
+      "scenario": "attitude",
+      "text": "oh, god. sandra, stop, please.",
+      "media": {
+        "video_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/attitude/video/attitude_0627.mp4",
+        "audio_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/attitude/Video_composition/audio_caption/attitude_0627.mp3",
+        "audio_caption": "The speaker's tone in the given audio clip is likely to be urgent and possibly frustrated or panicked. The emotional style can be characterized as distressed or anxious, suggesting that the speaker is under some form of duress or concern. The background environment is not explicitly described, but the tone and emotion suggest it might be a tense or chaotic setting, such as a critical or emergency situation.",
+        "video_path": "/hpctmp/e1561245/Data/rawdata/MIntRec/video/raw_data/S05/E14/198.mp4",
+        "audio_path": "/hpctmp/e1561245/Data/audio/attitude_0866.mp3"
+      }
+    },
+    "options": {
+      "subject": [
+        "anxious caller",
+        "bystander",
+        "coworker",
+        "concerned guest"
+      ],
+      "target": [
+        "woman named sandra",
+        "background object",
+        "nearby item",
+        "other topic"
+      ]
+    },
+    "ground_truth": {
+      "subject": "anxious caller",
+      "target": "woman named sandra",
+      "mechanism": "dominant affiliation",
+      "label": "concerned"
+    },
+    "diversity": {
+      "domain": "Public & Service",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "intent_0443",
+    "input": {
+      "scenario": "intent",
+      "text": "woman arrested by traffic cop",
+      "media": {
+        "image_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/intent/image/intent_0443.png",
+        "image_path": "/hpctmp/e1561245/Data/img/HatefulMemes/img/47051.png"
+      }
+    },
+    "options": {
+      "subject": [
+        "speaker",
+        "clickbait headline writer",
+        "news outlet",
+        "image editor"
+      ],
+      "target": [
+        "mislabelers",
+        "woman pictured",
+        "traffic police officer",
+        "original photographer"
+      ]
+    },
+    "ground_truth": {
+      "subject": "speaker",
+      "target": "mislabelers",
+      "mechanism": "expressive aggression",
+      "label": "provoke"
+    },
+    "diversity": {
+      "domain": "Online & Social Media",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "attitude_0770",
+    "input": {
+      "scenario": "attitude",
+      "text": "fuck, my mom is gonna kill me fuck, my mom is gonna kill me",
+      "media": {
+        "image_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/attitude/image/attitude_0770.png",
+        "image_path": "/hpctmp/e1561245/Data/img/HatefulMemes/img/49802.png"
+      }
+    },
+    "options": {
+      "subject": [
+        "worried teenager",
+        "fetus itself",
+        "mother",
+        "observing family members"
+      ],
+      "target": [
+        "parent",
+        "pregnancy test result",
+        "fetal life span",
+        "family intergenerational conflict"
+      ]
+    },
+    "ground_truth": {
+      "subject": "worried teenager",
+      "target": "parent",
+      "mechanism": "submissive alignment",
+      "label": "concerned"
+    },
+    "diversity": {
+      "domain": "Family Conversations",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "intent_1014",
+    "input": {
+      "scenario": "intent",
+      "text": "which one will be a single mom? the one on the right",
+      "media": {
+        "image_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/intent/image/intent_1014.png",
+        "image_path": "/hpctmp/e1561245/Data/img/HatefulMemes/img/47530.png"
+      }
+    },
+    "options": {
+      "subject": [
+        "question",
+        "internet troll",
+        "social media influencer",
+        "forum moderator"
+      ],
+      "target": [
+        "girl",
+        "boy",
+        "person wearing black hat",
+        "boy"
+      ]
+    },
+    "ground_truth": {
+      "subject": "question",
+      "target": "girl",
+      "mechanism": "expressive aggression",
+      "label": "mock"
+    },
+    "diversity": {
+      "domain": "Online & Social Media",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "attitude_0526",
+    "input": {
+      "scenario": "attitude",
+      "text": "well, then let's all stop annoying each other",
+      "media": {
+        "video_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/attitude/video/attitude_0526.mp4",
+        "audio_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/attitude/Video_composition/audio_caption/attitude_0526.mp3",
+        "audio_caption": "The speaker's tone is calm and composed, suggesting a level-headed and rational approach to the situation. The emotional style is one of tranquility, indicating that the speaker is not agitated or agitated by the circumstances. The background environment is likely peaceful, as the speaker's voice does not carry any signs of stress or urgency, which would typically indicate a more chaotic or tense setting.",
+        "video_path": "/hpctmp/e1561245/Data/rawdata/MIntRec/video/raw_data/S04/E12/394.mp4",
+        "audio_path": "/hpctmp/e1561245/Data/audio/attitude_0554.mp3"
+      }
+    },
+    "options": {
+      "subject": [
+        "speaker",
+        "customer",
+        "woman",
+        "coworker"
+      ],
+      "target": [
+        "bystanders",
+        "store signage",
+        "shelf items",
+        "shopping cart"
+      ]
+    },
+    "ground_truth": {
+      "subject": "speaker",
+      "target": "bystanders",
+      "mechanism": "dominant detachment",
+      "label": "dismissive"
+    },
+    "diversity": {
+      "domain": "Public & Service",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "intent_0850",
+    "input": {
+      "scenario": "intent",
+      "text": "burning things that don't mean anything to you",
+      "media": {
+        "image_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/intent/image/intent_0850.png",
+        "image_path": "/hpctmp/e1561245/Data/img/HatefulMemes/img/06194.png"
+      }
+    },
+    "options": {
+      "subject": [
+        "speaker",
+        "performance artist",
+        "arson enthusiast",
+        "prank organizer"
+      ],
+      "target": [
+        "viewer",
+        "law enforcement officials",
+        "local community members",
+        "family friends"
+      ]
+    },
+    "ground_truth": {
+      "subject": "speaker",
+      "target": "viewer",
+      "mechanism": "benevolent provocation",
+      "label": "alienate"
+    },
+    "diversity": {
+      "domain": "Online & Social Media",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "attitude_0005",
+    "input": {
+      "scenario": "attitude",
+      "text": "when you do a fat rail but you still feel down",
+      "media": {
+        "image_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/attitude/image/attitude_0005.png",
+        "image_path": "/hpctmp/e1561245/Data/img/HatefulMemes/img/67548.png"
+      }
+    },
+    "options": {
+      "subject": [
+        "speaker",
+        "speaker",
+        "troll commenter",
+        "amused bystander"
+      ],
+      "target": [
+        "drug user",
+        "party attendee",
+        "photographed model",
+        "nightclub dancer"
+      ]
+    },
+    "ground_truth": {
+      "subject": "speaker",
+      "target": "drug user",
+      "mechanism": "protective distancing",
+      "label": "contemptuous"
+    },
+    "diversity": {
+      "domain": "Online & Social Media",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "intent_0166",
+    "input": {
+      "scenario": "intent",
+      "text": "when you have someone to help and take care of you what could happen if you didn't",
+      "media": {
+        "image_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/intent/image/intent_0166.png",
+        "image_path": "/hpctmp/e1561245/Data/img/HatefulMemes/img/64071.png"
+      }
+    },
+    "options": {
+      "subject": [
+        "speaker",
+        "satirical columnist",
+        "parent",
+        "concerned family"
+      ],
+      "target": [
+        "viewer",
+        "care providers",
+        "family members",
+        "content moderator"
+      ]
+    },
+    "ground_truth": {
+      "subject": "speaker",
+      "target": "viewer",
+      "mechanism": "benevolent provocation",
+      "label": "dominate"
+    },
+    "diversity": {
+      "domain": "Family Conversations",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "intent_0781",
+    "input": {
+      "scenario": "intent",
+      "text": "i pull up in this and yell \"come on we got some redneck sh*t to do\" are you getting in?",
+      "media": {
+        "image_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/intent/image/intent_0781.png",
+        "image_path": "/hpctmp/e1561245/Data/img/HatefulMemes/img/05948.png"
+      }
+    },
+    "options": {
+      "subject": [
+        "car owner shouting",
+        "driver",
+        "graphic designer",
+        "prankster"
+      ],
+      "target": [
+        "invited passenger",
+        "bystanders",
+        "partygoers",
+        "colleagues"
+      ]
+    },
+    "ground_truth": {
+      "subject": "car owner shouting",
+      "target": "invited passenger",
+      "mechanism": "benevolent provocation",
+      "label": "provoke"
+    },
+    "diversity": {
+      "domain": "Online & Social Media",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "affection_0070",
+    "input": {
+      "scenario": "affection",
+      "text": "baby making faces babymaking faces",
+      "media": {
+        "image_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/affection/image/affection_0070.png",
+        "image_path": "/hpctmp/e1561245/Data/img/HatefulMemes/img/71253.png"
+      }
+    },
+    "options": {
+      "subject": [
+        "speaker",
+        "meme",
+        "photograph",
+        "sticker"
+      ],
+      "target": [
+        "sexual doble meaning",
+        "innocent baby caption",
+        "innocuous pun",
+        "parenting humor meme"
+      ]
+    },
+    "ground_truth": {
+      "subject": "speaker",
+      "target": "sexual doble meaning",
+      "mechanism": "figurative semantics",
+      "label": "happy"
+    },
+    "diversity": {
+      "domain": "Online & Social Media",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "intent_0552",
+    "input": {
+      "scenario": "intent",
+      "text": "you have diabetes. you aren't even in control",
+      "media": {
+        "video_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/intent/video/intent_0552.mp4",
+        "audio_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/intent/Video_composition/audio_caption/intent_0552.mp3",
+        "audio_caption": "I'm sorry, but I cannot provide a detailed description of a speaker's tone, emotional style, or background environment without additional context or information. The statement \"You aren't even in control\" is vague and could be interpreted in various ways depending on the situation and the speaker's perspective. It is important to remember that without more information, it is not appropriate to make assumptions or draw conclusions about someone's tone, emotional style, or background environment.",
+        "video_path": "/hpctmp/e1561245/Data/rawdata/MIntRec/video/raw_data/S05/E13/450.mp4",
+        "audio_path": "/hpctmp/e1561245/Data/audio/intent_1454.mp3"
+      }
+    },
+    "options": {
+      "subject": [
+        "female coworker",
+        "female customer",
+        "coworker",
+        "coworker"
+      ],
+      "target": [
+        "male coworker",
+        "male customer",
+        "coworker",
+        "coworker"
+      ]
+    },
+    "ground_truth": {
+      "subject": "female coworker",
+      "target": "male coworker",
+      "mechanism": "expressive aggression",
+      "label": "dominate"
+    },
+    "diversity": {
+      "domain": "Workplace",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "attitude_0270",
+    "input": {
+      "scenario": "attitude",
+      "text": "and that was the last nativity play my son was invited to take part in",
+      "media": {
+        "image_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/attitude/image/attitude_0270.png",
+        "image_path": "/hpctmp/e1561245/Data/img/HatefulMemes/img/63712.png"
+      }
+    },
+    "options": {
+      "subject": [
+        "parent",
+        "teacher",
+        "grandparent",
+        "babysitter"
+      ],
+      "target": [
+        "muslim",
+        "organized crime",
+        "religion",
+        "military"
+      ]
+    },
+    "ground_truth": {
+      "subject": "parent",
+      "target": "muslim",
+      "mechanism": "dominant detachment",
+      "label": "contemptuous"
+    },
+    "diversity": {
+      "domain": "Family Conversations",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "intent_0162",
+    "input": {
+      "scenario": "intent",
+      "text": "why don't you put on the headset",
+      "media": {
+        "video_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/intent/video/intent_0162.mp4",
+        "audio_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/intent/Video_composition/audio_caption/intent_0162.mp3",
+        "audio_caption": "The speaker's tone in this sentence is neutral and conversational. There is no indication of strong emotions, such as excitement, anger, or sadness. The speaker seems to be speaking in a calm and collected manner, likely addressing someone in a casual or routine context. The tone suggests a level of familiarity and ease in the situation.\n\nIn terms of emotional style, the speaker's emotional state appears to be steady and unemotional. There are no intense emotions or fluctuations in tone that would indicate a heightened emotional response. The speaker's voice is likely even and measured, reflecting a composed and level-headed attitude.\n\nThe background environment is not explicitly described, but the context suggests that the speaker is in a situation where they are interacting with someone else, possibly in a gaming context given the mention of a \"headset.\" The environment may be indoors, with the speaker and the person they are addressing potentially in a room with gaming equipment or other technology. The overall atmosphere is likely relaxed and informal, typical of a casual gaming session or a friendly interaction where the speaker is encouraging or assisting the other person.",
+        "video_path": "/hpctmp/e1561245/Data/rawdata/MIntRec/video/raw_data/S05/E09/474.mp4",
+        "audio_path": "/hpctmp/e1561245/Data/audio/intent_1020.mp3"
+      }
+    },
+    "options": {
+      "subject": [
+        "speaker",
+        "friend",
+        "host",
+        "caregiver"
+      ],
+      "target": [
+        "listener",
+        "player",
+        "guest",
+        "patient"
+      ]
+    },
+    "ground_truth": {
+      "subject": "speaker",
+      "target": "listener",
+      "mechanism": "prosocial deception",
+      "label": "mitigate"
+    },
+    "diversity": {
+      "domain": "Friend Group",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "affection_0809",
+    "input": {
+      "scenario": "affection",
+      "text": "life handed me lemons so i fucked them and gave them lemon-aids",
+      "media": {
+        "image_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/affection/image/affection_0809.png",
+        "image_path": "/hpctmp/e1561245/Data/img/HatefulMemes/img/62197.png"
+      }
+    },
+    "options": {
+      "subject": [
+        "speaker",
+        "monkey",
+        "photographer",
+        "viewer"
+      ],
+      "target": [
+        "fate",
+        "public health parody",
+        "animal eating fruit meme",
+        "humorous profanity caption"
+      ]
+    },
+    "ground_truth": {
+      "subject": "speaker",
+      "target": "fate",
+      "mechanism": "figurative semantics",
+      "label": "bad"
+    },
+    "diversity": {
+      "domain": "Online & Social Media",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "intent_0797",
+    "input": {
+      "scenario": "intent",
+      "text": "hey, we have a problem.",
+      "media": {
+        "video_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/intent/video/intent_0797.mp4",
+        "audio_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/intent/Video_composition/audio_caption/intent_0797.mp3",
+        "audio_caption": "The speaker's tone is urgent and concerned, suggesting a serious issue requiring immediate attention. The emotional style is one of anxiety and perhaps mild frustration, indicating that the speaker is actively addressing a pressing problem. The background environment is not explicitly detailed, but the urgency in the speaker's tone implies a setting where immediate action is necessary, possibly a workplace or a crisis situation.",
+        "video_path": "/hpctmp/e1561245/Data/rawdata/MIntRec/video/raw_data/S04/E04/309.mp4",
+        "audio_path": "/hpctmp/e1561245/Data/audio/intent_0377.mp3"
+      }
+    },
+    "options": {
+      "subject": [
+        "speaker",
+        "bystander",
+        "coworker",
+        "customer"
+      ],
+      "target": [
+        "coworkers",
+        "customers",
+        "managers",
+        "security"
+      ]
+    },
+    "ground_truth": {
+      "subject": "speaker",
+      "target": "coworkers",
+      "mechanism": "prosocial deception",
+      "label": "mock"
+    },
+    "diversity": {
+      "domain": "Workplace",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "intent_0214",
+    "input": {
+      "scenario": "intent",
+      "text": "so new rule: talking about our feelings is now encouraged.",
+      "media": {
+        "video_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/intent/video/intent_0214.mp4",
+        "audio_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/intent/Video_composition/audio_caption/intent_0214.mp3",
+        "audio_caption": "The speaker's tone is assertive and confident, indicating a strong and clear message being delivered. The emotion is likely positive and encouraging, as the speaker is establishing a new rule that encourages open discussion about feelings. This suggests a supportive and inclusive environment where emotions are valued and discussions are welcomed.\n\nThe background environment is likely a formal or structured setting, such as a meeting or workshop, where rules and guidelines are being discussed or implemented. The tone and message suggest an effort to create a more open and empathetic atmosphere, possibly in a workplace or educational setting where emotional well-being is important.",
+        "video_path": "/hpctmp/e1561245/Data/rawdata/MIntRec/video/raw_data/S06/E04/432.mp4",
+        "audio_path": "/hpctmp/e1561245/Data/audio/intent_0090.mp3"
+      }
+    },
+    "options": {
+      "subject": [
+        "dina",
+        "mateo",
+        "sandra",
+        "corporate trainer"
+      ],
+      "target": [
+        "employees",
+        "store customers",
+        "upper",
+        "board directors"
+      ]
+    },
+    "ground_truth": {
+      "subject": "dina",
+      "target": "employees",
+      "mechanism": "prosocial deception",
+      "label": "mitigate"
+    },
+    "diversity": {
+      "domain": "Workplace",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "attitude_0489",
+    "input": {
+      "scenario": "attitude",
+      "text": "no i'm on my period no i have diarrea",
+      "media": {
+        "image_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/attitude/image/attitude_0489.png",
+        "image_path": "/hpctmp/e1561245/Data/img/HatefulMemes/img/70529.png"
+      }
+    },
+    "options": {
+      "subject": [
+        "speaker",
+        "website administrator",
+        "content moderator",
+        "social media analyst"
+      ],
+      "target": [
+        "homosexual",
+        "bisexual",
+        "transgender",
+        "heterosexual"
+      ]
+    },
+    "ground_truth": {
+      "subject": "speaker",
+      "target": "homosexual",
+      "mechanism": "protective distancing",
+      "label": "dismissive"
+    },
+    "diversity": {
+      "domain": "Online & Social Media",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "attitude_0620",
+    "input": {
+      "scenario": "attitude",
+      "text": "going on vacation vs going back to work",
+      "media": {
+        "image_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/attitude/image/attitude_0620.png",
+        "image_path": "/hpctmp/e1561245/Data/img/HatefulMemes/img/41032.png"
+      }
+    },
+    "options": {
+      "subject": [
+        "speaker",
+        "traveler",
+        "partner",
+        "photographer"
+      ],
+      "target": [
+        "going back work",
+        "background object",
+        "returning school",
+        "starting new job"
+      ]
+    },
+    "ground_truth": {
+      "subject": "speaker",
+      "target": "going back work",
+      "mechanism": "dominant detachment",
+      "label": "disapproving"
+    },
+    "diversity": {
+      "domain": "Intimate Relationships",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "intent_0675",
+    "input": {
+      "scenario": "intent",
+      "text": "cereal in the bowl first or milk in the bowl first it really be like that",
+      "media": {
+        "image_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/intent/image/intent_0675.png",
+        "image_path": "/hpctmp/e1561245/Data/img/HatefulMemes/img/90286.png"
+      }
+    },
+    "options": {
+      "subject": [
+        "speaker",
+        "manager",
+        "friend",
+        "food blogger"
+      ],
+      "target": [
+        "cereal order",
+        "ketchup debate",
+        "pizza topping",
+        "toilet paper"
+      ]
+    },
+    "ground_truth": {
+      "subject": "speaker",
+      "target": "cereal order",
+      "mechanism": "benevolent provocation",
+      "label": "provoke"
+    },
+    "diversity": {
+      "domain": "Online & Social Media",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "intent_0150",
+    "input": {
+      "scenario": "intent",
+      "text": "you guys are working for satan, aren't you?",
+      "media": {
+        "video_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/intent/video/intent_0150.mp4",
+        "audio_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/intent/Video_composition/audio_caption/intent_0150.mp3",
+        "audio_caption": "It seems like the speaker is angry because of some situation.",
+        "video_path": "/hpctmp/e1561245/Data/rawdata/MIntRec/video/raw_data/S06/E01/445.mp4",
+        "audio_path": "/hpctmp/e1561245/Data/audio/intent_0095.mp3"
+      }
+    },
+    "options": {
+      "subject": [
+        "female customer",
+        "female coworker",
+        "male manager",
+        "speaker"
+      ],
+      "target": [
+        "store employees",
+        "other customers",
+        "religious group",
+        "product manufacturer"
+      ]
+    },
+    "ground_truth": {
+      "subject": "female customer",
+      "target": "store employees",
+      "mechanism": "expressive aggression",
+      "label": "condemn"
+    },
+    "diversity": {
+      "domain": "Public & Service",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "attitude_0407",
+    "input": {
+      "scenario": "attitude",
+      "text": "uncle daddy and me gonna have us a nephson",
+      "media": {
+        "image_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/attitude/image/attitude_0407.png",
+        "image_path": "/hpctmp/e1561245/Data/img/HatefulMemes/img/80537.png"
+      }
+    },
+    "options": {
+      "subject": [
+        "speaker",
+        "photo subject",
+        "family member",
+        "camera operator"
+      ],
+      "target": [
+        "uncle figure",
+        "blue-collar workers",
+        "homeless population",
+        "suburban conservative homeowners"
+      ]
+    },
+    "ground_truth": {
+      "subject": "speaker",
+      "target": "uncle figure",
+      "mechanism": "dominant detachment",
+      "label": "contemptuous"
+    },
+    "diversity": {
+      "domain": "Family Conversations",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "attitude_0238",
+    "input": {
+      "scenario": "attitude",
+      "text": "lawn darts muslim style",
+      "media": {
+        "image_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/attitude/image/attitude_0238.png",
+        "image_path": "/hpctmp/e1561245/Data/img/HatefulMemes/img/24019.png"
+      }
+    },
+    "options": {
+      "subject": [
+        "speaker",
+        "website administrator",
+        "military enthusiast",
+        "political activist"
+      ],
+      "target": [
+        "muslims",
+        "terrorists",
+        "immigrants",
+        "refugees"
+      ]
+    },
+    "ground_truth": {
+      "subject": "speaker",
+      "target": "muslims",
+      "mechanism": "dominant detachment",
+      "label": "hostile"
+    },
+    "diversity": {
+      "domain": "Online & Social Media",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "affection_0681",
+    "input": {
+      "scenario": "affection",
+      "text": "never forget harambe died to teach us the importance of strong borders",
+      "media": {
+        "image_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/affection/image/affection_0681.png",
+        "image_path": "/hpctmp/e1561245/Data/img/HatefulMemes/img/76402.png"
+      }
+    },
+    "options": {
+      "subject": [
+        "online commentator",
+        "street protester",
+        "advertising copywriter",
+        "politician"
+      ],
+      "target": [
+        "social media readers",
+        "animal welfare",
+        "political satire",
+        "nostalgic tribute"
+      ]
+    },
+    "ground_truth": {
+      "subject": "online commentator",
+      "target": "social media readers",
+      "mechanism": "socio_cultural dependency",
+      "label": "bad"
+    },
+    "diversity": {
+      "domain": "Online & Social Media",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "intent_0291",
+    "input": {
+      "scenario": "intent",
+      "text": "All right, all right. He can buy his own desk.",
+      "media": {
+        "video_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/intent/video/intent_0291.mp4",
+        "audio_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/intent/Video_composition/audio_caption/intent_0291.mp3",
+        "audio_caption": "In this description, the speaker's tone is assertive and somewhat testy. The speaker seems to be in a situation where they are making a decision or agreeing to something, but with a hint of reluctance or frustration. The tone suggests a sense of finality, as if the speaker is making a clear statement.\n\nThe emotional style of the speaker comes across as somewhat frustrated or annoyed, yet also resolute. The speaker does not appear to be in a particularly joyful or enthusiastic mood, but rather is focused and assertive.\n\nThe background environment is not explicitly described, but the context implies that the speaker might be in a professional or formal setting, possibly an office or a meeting room, where the decision about the desk is being made. The environment is likely quiet and controlled, suitable for discussions and decisions, and the speaker is likely in a position of authority or influence.",
+        "video_path": "/hpctmp/e1561245/Data/rawdata/MUStARD/mmsd_raw_data/utterances_final/1_4286.mp4",
+        "audio_path": "/hpctmp/e1561245/Data/audio/intent_1556.mp3"
+      }
+    },
+    "options": {
+      "subject": [
+        "speaker",
+        "manager",
+        "cafeteria worker",
+        "security guard"
+      ],
+      "target": [
+        "other person",
+        "manager",
+        "budget committee",
+        "desk supplier"
+      ]
+    },
+    "ground_truth": {
+      "subject": "speaker",
+      "target": "other person",
+      "mechanism": "expressive aggression",
+      "label": "mitigate"
+    },
+    "diversity": {
+      "domain": "Workplace",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "attitude_0348",
+    "input": {
+      "scenario": "attitude",
+      "text": "He drank from Leonard's glass. \"He drank from Leonard's glass\"-- the words they'll be carving into my tombstone.",
+      "media": {
+        "video_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/attitude/video/attitude_0348.mp4",
+        "audio_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/attitude/Video_composition/audio_caption/attitude_0348.mp3",
+        "audio_caption": "The speaker's tone in this excerpt is neutral and matter-of-fact, without any particular emotion or inflection that stands out. The words \"Drank from Leonard's glass. He drank from Leonard's glass.\" are spoken in a straightforward, almost mechanical manner, suggesting a tone that is detached or indifferent. This could imply that the speaker is recounting a factual event rather than being emotionally invested in the story.\n\nThe emotional style of the speaker is unemotional and detached, which could be interpreted as a natural response to recounting a neutral or routine event. There is no evident enthusiasm, anger, sadness, or any other strong emotion conveyed through the tone.\n\nThe background environment is not explicitly described, but the presence of laughter indicates a social setting where the speaker's words are being received with amusement. This suggests a relaxed, possibly casual environment where people are comfortable enough to laugh at a seemingly mundane statement. The laughter might imply that the audience finds the statement humorous or ironic, perhaps because it involves a well-known or exaggerated figure named Leonard, or because the act of drinking from someone else's glass is presented in a way that is unexpected or amusing.\n\nIn summary, the speaker's tone is neutral and matter-of-fact, the emotional style is unemotional and detached, and the background environment is a social setting with an audience that finds the statement amusing.",
+        "video_path": "/hpctmp/e1561245/Data/rawdata/MUStARD/mmsd_raw_data/utterances_final/1_5572.mp4",
+        "audio_path": "/hpctmp/e1561245/Data/audio/attitude_1516.mp3"
+      }
+    },
+    "options": {
+      "subject": [
+        "speaker",
+        "waitress",
+        "patron",
+        "man"
+      ],
+      "target": [
+        "incident",
+        "leonard",
+        "friend",
+        "glass"
+      ]
+    },
+    "ground_truth": {
+      "subject": "speaker",
+      "target": "incident",
+      "mechanism": "protective distancing",
+      "label": "neutral"
+    },
+    "diversity": {
+      "domain": "Public & Service",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "intent_0582",
+    "input": {
+      "scenario": "intent",
+      "text": "donald trump proving you don't have to be poor to be trailer trash",
+      "media": {
+        "image_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/intent/image/intent_0582.png",
+        "image_path": "/hpctmp/e1561245/Data/img/HatefulMemes/img/39652.png"
+      }
+    },
+    "options": {
+      "subject": [
+        "speaker",
+        "advertiser",
+        "printer",
+        "photographer"
+      ],
+      "target": [
+        "person pictured",
+        "facial expression",
+        "pointing finger",
+        "pink tie"
+      ]
+    },
+    "ground_truth": {
+      "subject": "speaker",
+      "target": "person pictured",
+      "mechanism": "expressive aggression",
+      "label": "denounce"
+    },
+    "diversity": {
+      "domain": "Online & Social Media",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "attitude_0160",
+    "input": {
+      "scenario": "attitude",
+      "text": "when you're 2% of the population but 40% of all pedophiles",
+      "media": {
+        "image_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/attitude/image/attitude_0160.png",
+        "image_path": "/hpctmp/e1561245/Data/img/HatefulMemes/img/34219.png"
+      }
+    },
+    "options": {
+      "subject": [
+        "speaker",
+        "platform algorithm",
+        "news media outlet",
+        "public relations firm"
+      ],
+      "target": [
+        "pedophiles",
+        "demographic group",
+        "criminal justice",
+        "media outlets"
+      ]
+    },
+    "ground_truth": {
+      "subject": "speaker",
+      "target": "pedophiles",
+      "mechanism": "dominant detachment",
+      "label": "hostile"
+    },
+    "diversity": {
+      "domain": "Online & Social Media",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "affection_0414",
+    "input": {
+      "scenario": "affection",
+      "text": "lisa page: obama doj ordered fbi not to prosecute hillary clinton why is the mainstream media ignoring this bombshell",
+      "media": {
+        "image_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/affection/image/affection_0414.png",
+        "image_path": "/hpctmp/e1561245/Data/img/HatefulMemes/img/75823.png"
+      }
+    },
+    "options": {
+      "subject": [
+        "speaker",
+        "forum moderator",
+        "supporter",
+        "propagandist"
+      ],
+      "target": [
+        "mainstream media",
+        "social media",
+        "political operatives",
+        "independent bloggers"
+      ]
+    },
+    "ground_truth": {
+      "subject": "speaker",
+      "target": "mainstream media",
+      "mechanism": "multimodal incongruity",
+      "label": "angry"
+    },
+    "diversity": {
+      "domain": "Online & Social Media",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "attitude_0078",
+    "input": {
+      "scenario": "attitude",
+      "text": "this toaster is on fire",
+      "media": {
+        "image_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/attitude/image/attitude_0078.png",
+        "image_path": "/hpctmp/e1561245/Data/img/HatefulMemes/img/47189.png"
+      }
+    },
+    "options": {
+      "subject": [
+        "speaker",
+        "manager",
+        "political commentator",
+        "viral content aggregator"
+      ],
+      "target": [
+        "person",
+        "armed male assailant",
+        "bystander filming scene",
+        "officer securing perimeter"
+      ]
+    },
+    "ground_truth": {
+      "subject": "speaker",
+      "target": "person",
+      "mechanism": "dominant detachment",
+      "label": "contemptuous"
+    },
+    "diversity": {
+      "domain": "Online & Social Media",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "affection_0453",
+    "input": {
+      "scenario": "affection",
+      "text": "Were you so late because you were burying this woman?",
+      "media": {
+        "video_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/affection/video/affection_0453.mp4",
+        "audio_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/affection/Video_composition/audio_caption/affection_0453.mp3",
+        "audio_caption": "The speaker's tone in this context appears to be sarcastic or mocking, suggesting skepticism or disbelief. There's a hint of mild amusement or condescension in the way the question is phrased, given the underlying implication that the delay was due to a deeply emotional event like a funeral.\n\nEmotionally, the speaker seems to be expressing a mix of disbelief and slight amusement. The sarcasm hints at a feeling of superiority or at least a dismissive attitude towards the reason given by the person who was late.\n\nThe background environment is likely a social setting, such as a gathering or a meeting, where the speaker is addressing someone who has arrived late. The laughter following the question suggests that the setting is informal, possibly a humorous or light-hearted situation where the speaker's tone fits in with the overall mood.",
+        "video_path": "/hpctmp/e1561245/Data/rawdata/MUStARD/mmsd_raw_data/utterances_final/2_416.mp4",
+        "audio_path": "/hpctmp/e1561245/Data/audio/affection_1303.mp3"
+      }
+    },
+    "options": {
+      "subject": [
+        "speaker",
+        "host",
+        "observer",
+        "organizer"
+      ],
+      "target": [
+        "late person",
+        "funeral",
+        "traffic",
+        "bus"
+      ]
+    },
+    "ground_truth": {
+      "subject": "speaker",
+      "target": "late person",
+      "mechanism": "figurative semantics",
+      "label": "bad"
+    },
+    "diversity": {
+      "domain": "Friend Group",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "affection_0677",
+    "input": {
+      "scenario": "affection",
+      "text": "it's hump day!!! oh fuck!!!",
+      "media": {
+        "image_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/affection/image/affection_0677.png",
+        "image_path": "/hpctmp/e1561245/Data/img/HatefulMemes/img/07824.png"
+      }
+    },
+    "options": {
+      "subject": [
+        "speaker",
+        "woman",
+        "tourist",
+        "beachgoer"
+      ],
+      "target": [
+        "hump day",
+        "camel",
+        "thursday",
+        "friday"
+      ]
+    },
+    "ground_truth": {
+      "subject": "speaker",
+      "target": "hump day",
+      "mechanism": "figurative semantics",
+      "label": "disgusted"
+    },
+    "diversity": {
+      "domain": "Online & Social Media",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "attitude_0424",
+    "input": {
+      "scenario": "attitude",
+      "text": "when mama say sit yo monkey ass down",
+      "media": {
+        "image_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/attitude/image/attitude_0424.png",
+        "image_path": "/hpctmp/e1561245/Data/img/HatefulMemes/img/36724.png"
+      }
+    },
+    "options": {
+      "subject": [
+        "family matriarch",
+        "school teacher",
+        "childcare worker",
+        "sibling"
+      ],
+      "target": [
+        "listener",
+        "bystander image",
+        "teacher image",
+        "parent"
+      ]
+    },
+    "ground_truth": {
+      "subject": "family matriarch",
+      "target": "listener",
+      "mechanism": "dominant affiliation",
+      "label": "contemptuous"
+    },
+    "diversity": {
+      "domain": "Family Conversations",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "attitude_0329",
+    "input": {
+      "scenario": "attitude",
+      "text": "what thanksgiving at grandmas little house feels like",
+      "media": {
+        "image_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/attitude/image/attitude_0329.png",
+        "image_path": "/hpctmp/e1561245/Data/img/HatefulMemes/img/98514.png"
+      }
+    },
+    "options": {
+      "subject": [
+        "speaker",
+        "holiday guest",
+        "family member",
+        "event attendee"
+      ],
+      "target": [
+        "black people",
+        "refugees",
+        "family reunion hall",
+        "local church basement"
+      ]
+    },
+    "ground_truth": {
+      "subject": "speaker",
+      "target": "black people",
+      "mechanism": "dominant detachment",
+      "label": "contemptuous"
+    },
+    "diversity": {
+      "domain": "Family Conversations",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "intent_0102",
+    "input": {
+      "scenario": "intent",
+      "text": "like anything you say, she's just gonna twist to make it sound like glenn's incompetent.",
+      "media": {
+        "video_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/intent/video/intent_0102.mp4",
+        "audio_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/intent/Video_composition/audio_caption/intent_0102.mp3",
+        "audio_caption": "The speaker's tone in this statement is dismissive and somewhat accusatory. They are suggesting that whatever the other person says will be interpreted negatively or unfairly. The use of the phrase \"she's just gonna twist\" implies a sense of skepticism or mistrust towards the intentions of the other person. The speaker seems to believe that the other person will manipulate the situation to their advantage, possibly at the expense of someone named Glenn.\n\nEmotionally, the speaker's tone conveys a sense of frustration, perhaps bordering on anger. They appear to be concerned about the fairness or objectivity of the other person's actions, and there is a hint of resentment or disbelief in their voice. The underlying emotion could be a feeling of being manipulated or taken advantage of.\n\nThe background environment is not explicitly described, but the context suggests a somewhat formal or professional setting, possibly involving a discussion or negotiation. The setting may be indoors, such as an office or meeting room, where the speaker feels the need to express their concerns about the other person's intentions. The tone and emotion of the speaker indicate that this is likely a serious conversation, where the stakes are high and the speaker is concerned about the potential consequences of the other person's behavior.",
+        "video_path": "/hpctmp/e1561245/Data/rawdata/MIntRec/video/raw_data/S06/E10/263.mp4",
+        "audio_path": "/hpctmp/e1561245/Data/audio/intent_0076.mp3"
+      }
+    },
+    "options": {
+      "subject": [
+        "speaker",
+        "male customer",
+        "customer",
+        "female cashier"
+      ],
+      "target": [
+        "woman accused",
+        "male customer",
+        "manager",
+        "receptionist phone"
+      ]
+    },
+    "ground_truth": {
+      "subject": "speaker",
+      "target": "woman accused",
+      "mechanism": "expressive aggression",
+      "label": "denounce"
+    },
+    "diversity": {
+      "domain": "Workplace",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "intent_0404",
+    "input": {
+      "scenario": "intent",
+      "text": "today in the news more 'peaceful muslims\" blowing up shit",
+      "media": {
+        "image_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/intent/image/intent_0404.png",
+        "image_path": "/hpctmp/e1561245/Data/img/HatefulMemes/img/68950.png"
+      }
+    },
+    "options": {
+      "subject": [
+        "news reader",
+        "social media advertiser",
+        "content moderator",
+        "political commentator"
+      ],
+      "target": [
+        "religious group",
+        "immigrants",
+        "journalists",
+        "protesters"
+      ]
+    },
+    "ground_truth": {
+      "subject": "news reader",
+      "target": "religious group",
+      "mechanism": "expressive aggression",
+      "label": "alienate"
+    },
+    "diversity": {
+      "domain": "Public & Service",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "intent_0821",
+    "input": {
+      "scenario": "intent",
+      "text": "muhammed and aisha, the first date",
+      "media": {
+        "image_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/intent/image/intent_0821.png",
+        "image_path": "/hpctmp/e1561245/Data/img/HatefulMemes/img/56708.png"
+      }
+    },
+    "options": {
+      "subject": [
+        "meme creator",
+        "internet marketer",
+        "graphic designer",
+        "tabloid journalist"
+      ],
+      "target": [
+        "arab muslim community",
+        "religious leaders",
+        "marriage norms",
+        "immigrant community"
+      ]
+    },
+    "ground_truth": {
+      "subject": "meme creator",
+      "target": "arab muslim community",
+      "mechanism": "expressive aggression",
+      "label": "mock"
+    },
+    "diversity": {
+      "domain": "Intimate Relationships",
+      "culture": "Arab Culture"
+    }
+  },
+  {
+    "id": "attitude_0650",
+    "input": {
+      "scenario": "attitude",
+      "text": "oh, please. sandra, take it down.",
+      "media": {
+        "video_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/attitude/video/attitude_0650.mp4",
+        "audio_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/attitude/Video_composition/audio_caption/attitude_0650.mp3",
+        "audio_caption": "The speaker's tone in the provided audio clip is a mixture of pleading and mild frustration. The use of the word \"please\" indicates a polite request, while the subsequent tone suggests a hint of exasperation or impatience. The speaker is likely addressing someone named Sandra, urging her to take something down, possibly a poster, sign, or some other item that is currently on display or in place.\n\nThe emotional style of the speaker can be described as calm but slightly annoyed. There is no visible body language or intonation that would suggest heightened emotions, but the context implies a situation where the speaker is trying to get something done and is a bit impatient about it.\n\nAs for the background environment, the audio does not provide enough information to determine the specific setting. It could be an office, a classroom, a public space, or any other environment where items are displayed and need to be taken down. The absence of background noise or ambient sounds makes it difficult to infer more about the setting.\n\nIn summary, the speaker's tone is a blend of polite request and mild frustration, directed at Sandra to take something down. The emotional style is calm yet slightly annoyed, and the background environment is unclear based on the provided audio.",
+        "video_path": "/hpctmp/e1561245/Data/rawdata/MIntRec/video/raw_data/S05/E13/319.mp4",
+        "audio_path": "/hpctmp/e1561245/Data/audio/attitude_1010.mp3"
+      }
+    },
+    "options": {
+      "subject": [
+        "dina",
+        "mark",
+        "tina",
+        "luis"
+      ],
+      "target": [
+        "sandra",
+        "ethan",
+        "carlos",
+        "maya"
+      ]
+    },
+    "ground_truth": {
+      "subject": "dina",
+      "target": "sandra",
+      "mechanism": "dominant detachment",
+      "label": "concerned"
+    },
+    "diversity": {
+      "domain": "Workplace",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "intent_0228",
+    "input": {
+      "scenario": "intent",
+      "text": "when your dad passes the family school shooting gun down to you",
+      "media": {
+        "image_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/intent/image/intent_0228.png",
+        "image_path": "/hpctmp/e1561245/Data/img/HatefulMemes/img/39175.png"
+      }
+    },
+    "options": {
+      "subject": [
+        "speaker",
+        "satirical cartoonist",
+        "internet troll",
+        "humor columnist"
+      ],
+      "target": [
+        "gun-owner",
+        "firearm instructors",
+        "school administrators",
+        "veteran relatives"
+      ]
+    },
+    "ground_truth": {
+      "subject": "speaker",
+      "target": "gun-owner",
+      "mechanism": "expressive aggression",
+      "label": "mock"
+    },
+    "diversity": {
+      "domain": "Family Conversations",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "affection_0539",
+    "input": {
+      "scenario": "affection",
+      "text": "okay, this has gotta stop.",
+      "media": {
+        "video_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/affection/video/affection_0539.mp4",
+        "audio_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/affection/Video_composition/audio_caption/affection_0539.mp3",
+        "audio_caption": "The speaker's tone is assertive and firm, indicating a sense of urgency or frustration. The use of the phrase \"this has got to stop\" suggests that the speaker is addressing a recurring problem or issue that they feel strongly needs to be resolved immediately.\n\nIn terms of emotional style, the speaker appears to be in a state of agitation or anger, as evidenced by the short, sharp delivery of the statement. There might be a hint of determination or resolve, but the overall tone leans towards being heated or intense.\n\nThe background environment is not explicitly described, but the speaker's tone and emotional state suggest a setting where a serious discussion or confrontation is taking place. This could be an office, a meeting room, or any other environment where a direct and possibly confrontational conversation is happening. The lack of detail about the setting leaves it open to interpretation, but it is clear that the speaker is in a position where they feel strongly enough to demand change or action.",
+        "video_path": "/hpctmp/e1561245/Data/rawdata/MIntRec/video/raw_data/S05/E18/278.mp4",
+        "audio_path": "/hpctmp/e1561245/Data/audio/affection_1024.mp3"
+      }
+    },
+    "options": {
+      "subject": [
+        "speaker",
+        "manager",
+        "bystander",
+        "coworker"
+      ],
+      "target": [
+        "recurring behavior",
+        "isolated incident",
+        "policy violation",
+        "personal issue"
+      ]
+    },
+    "ground_truth": {
+      "subject": "speaker",
+      "target": "recurring behavior",
+      "mechanism": "affective deception",
+      "label": "angry"
+    },
+    "diversity": {
+      "domain": "Workplace",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "attitude_0166",
+    "input": {
+      "scenario": "attitude",
+      "text": "yeah, you know, it's fun, it's cool",
+      "media": {
+        "video_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/attitude/video/attitude_0166.mp4",
+        "audio_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/attitude/Video_composition/audio_caption/attitude_0166.mp3",
+        "audio_caption": "The speaker's tone in this audio clip is casual and relaxed. The words \"yeah\" and \"it's fine\" are spoken with a laid-back inflection, suggesting a sense of ease and nonchalance. The phrase \"it's cool\" further emphasizes this casual and nonchalant tone, indicating that the speaker is comfortable with the situation or topic being discussed.\n\nThe speaker's emotional style appears to be one of ease and comfort, possibly tinged with a slight sense of detachment or indifference. There is no obvious emotional intensity, such as excitement, fear, or anger, which supports the perception of a casual and nonchalant emotional state.\n\nThe background environment is not specified in the audio, so it is impossible to provide details about the setting. However, since the tone and emotional style of the speaker suggest a casual and relaxed atmosphere, it could be inferred that the environment might be a casual setting, such as a social gathering, a casual conversation, or a relaxed workspace.",
+        "video_path": "/hpctmp/e1561245/Data/rawdata/MIntRec/video/raw_data/S04/E16/174.mp4",
+        "audio_path": "/hpctmp/e1561245/Data/audio/attitude_0263.mp3"
+      }
+    },
+    "options": {
+      "subject": [
+        "mateo",
+        "coworker",
+        "customer",
+        "manager"
+      ],
+      "target": [
+        "suggestion",
+        "posted notice",
+        "store policy sign",
+        "printed advertisement"
+      ]
+    },
+    "ground_truth": {
+      "subject": "mateo",
+      "target": "suggestion",
+      "mechanism": "protective distancing",
+      "label": "indifferent"
+    },
+    "diversity": {
+      "domain": "Workplace",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "attitude_0762",
+    "input": {
+      "scenario": "attitude",
+      "text": "whatsthe difference between heroin and i? cops think twice before shooting heroin",
+      "media": {
+        "image_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/attitude/image/attitude_0762.png",
+        "image_path": "/hpctmp/e1561245/Data/img/HatefulMemes/img/02568.png"
+      }
+    },
+    "options": {
+      "subject": [
+        "man",
+        "social media platform moderator",
+        "viewer",
+        "photographer"
+      ],
+      "target": [
+        "police",
+        "camera",
+        "heroin",
+        "viewer"
+      ]
+    },
+    "ground_truth": {
+      "subject": "man",
+      "target": "police",
+      "mechanism": "dominant detachment",
+      "label": "disapproving"
+    },
+    "diversity": {
+      "domain": "Public & Service",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "intent_0256",
+    "input": {
+      "scenario": "intent",
+      "text": "I didn't know you and Carol were getting divorced, I'm sorry.",
+      "media": {
+        "video_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/intent/video/intent_0256.mp4",
+        "audio_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/intent/Video_composition/audio_caption/intent_0256.mp3",
+        "audio_caption": "The speaker's tone in the given statement appears to be neutral and somewhat apologetic. There is a sense of mild surprise or realization that comes across in the tone, indicating that the speaker was unaware of the impending divorce between the individuals mentioned, Carol and the person being addressed. The apology at the end suggests an acknowledgment of the gravity of the situation and a desire to express regret or concern for the wellbeing of Carol and the other person involved.\n\nEmotionally, the speaker seems to carry a tone of empathy or concern, as they express an apology and acknowledge the news of the divorce. The emotion may be a mix of shock, sadness, or simply a desire to express regret for not being aware of the situation sooner. The speaker also seems to have a level of familiarity with the individuals involved, as the use of a first name (Carol) suggests a level of intimacy or at least mutual acquaintance between the speaker and the individuals mentioned.\n\nThe background environment is not explicitly detailed in the given statement, so it is difficult to infer any specific details about the setting or atmosphere. However, the casual use of language and the straightforward delivery of the message suggest that the speaker might be in a personal or informal setting, such as a home, a casual social gathering, or even an office environment where a close relationship exists between the speaker and the individuals mentioned. The absence of any formal or overly dramatic language points to a neutral, possibly domestic or professional, environment.",
+        "video_path": "/hpctmp/e1561245/Data/rawdata/MUStARD/mmsd_raw_data/utterances_final/2_78.mp4",
+        "audio_path": "/hpctmp/e1561245/Data/audio/intent_1835.mp3"
+      }
+    },
+    "options": {
+      "subject": [
+        "speaker",
+        "friend",
+        "bystander",
+        "mediator"
+      ],
+      "target": [
+        "other man",
+        "carol",
+        "couple",
+        "marriage"
+      ]
+    },
+    "ground_truth": {
+      "subject": "speaker",
+      "target": "other man",
+      "mechanism": "prosocial deception",
+      "label": "mitigate"
+    },
+    "diversity": {
+      "domain": "Intimate Relationships",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "affection_0807",
+    "input": {
+      "scenario": "affection",
+      "text": "when someone thinks they've seen all your crazy but you hit them with some next level shit, like \"surprise bitch!\"",
+      "media": {
+        "image_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/affection/image/affection_0807.png",
+        "image_path": "/hpctmp/e1561245/Data/img/HatefulMemes/img/85092.png"
+      }
+    },
+    "options": {
+      "subject": [
+        "prankster",
+        "man",
+        "actor",
+        "model"
+      ],
+      "target": [
+        "friend",
+        "random social follower",
+        "viewer",
+        "comment section user"
+      ]
+    },
+    "ground_truth": {
+      "subject": "prankster",
+      "target": "friend",
+      "mechanism": "multimodal incongruity",
+      "label": "happy"
+    },
+    "diversity": {
+      "domain": "Online & Social Media",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "intent_0725",
+    "input": {
+      "scenario": "intent",
+      "text": "yeah, amy was just the one sitting watching us in the dark without our consent.",
+      "media": {
+        "video_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/intent/video/intent_0725.mp4",
+        "audio_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/intent/Video_composition/audio_caption/intent_0725.mp3",
+        "audio_caption": "The speaker's tone in this statement is accusatory and confrontational. The use of the word \"watching\" with a sense of intrusion implies a feeling of violation and discomfort. The speaker seems to be expressing anger or frustration, as indicated by the choice of words that suggest a lack of consent and a feeling of being observed without permission.\n\nThe emotional style of the speaker can be described as fiery and intense, suggesting a strong emotional reaction to the situation being discussed. The tone is likely filled with anger, indignation, or resentment, rather than calm or neutral.\n\nThe background environment is not explicitly described, but the mention of being \"in the dark\" suggests a setting where visibility is limited, possibly a dimly lit room or an enclosed space. This could be a room in a house, an office, or even a public place like a café or a theater. The darkness adds to the intensity of the situation, as it implies a lack of control and visibility, which can heighten feelings of vulnerability and discomfort.\n\nOverall, the speaker's tone, emotional style, and the suggested background environment contribute to a tense and confrontational atmosphere, highlighting a situation where the speaker feels disrespected and violated by someone named Amy.",
+        "video_path": "/hpctmp/e1561245/Data/rawdata/MIntRec/video/raw_data/S04/E16/453.mp4",
+        "audio_path": "/hpctmp/e1561245/Data/audio/intent_0993.mp3"
+      }
+    },
+    "options": {
+      "subject": [
+        "speaker",
+        "bystander",
+        "coworker",
+        "customer"
+      ],
+      "target": [
+        "amy",
+        "cheyenne",
+        "carol",
+        "mateo"
+      ]
+    },
+    "ground_truth": {
+      "subject": "speaker",
+      "target": "amy",
+      "mechanism": "expressive aggression",
+      "label": "condemn"
+    },
+    "diversity": {
+      "domain": "Workplace",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "attitude_0268",
+    "input": {
+      "scenario": "attitude",
+      "text": "they gone be feeling on my boooooty",
+      "media": {
+        "image_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/attitude/image/attitude_0268.png",
+        "image_path": "/hpctmp/e1561245/Data/img/HatefulMemes/img/24603.png"
+      }
+    },
+    "options": {
+      "subject": [
+        "speaker",
+        "corrections officer",
+        "online moderator",
+        "photographer"
+      ],
+      "target": [
+        "black people",
+        "other inmates",
+        "prison guards",
+        "female partygoers"
+      ]
+    },
+    "ground_truth": {
+      "subject": "speaker",
+      "target": "black people",
+      "mechanism": "dominant affiliation",
+      "label": "contemptuous"
+    },
+    "diversity": {
+      "domain": "Online & Social Media",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "affection_0298",
+    "input": {
+      "scenario": "affection",
+      "text": "when you find out there's an opening for the role of chewbacca",
+      "media": {
+        "image_url": "https://huggingface.co/datasets/z4722/Implicit_dataset/resolve/main/affection/image/affection_0298.png",
+        "image_path": "/hpctmp/e1561245/Data/img/HatefulMemes/img/39145.png"
+      }
+    },
+    "options": {
+      "subject": [
+        "speaker",
+        "bear",
+        "actor",
+        "cosplayer"
+      ],
+      "target": [
+        "situation",
+        "bear's acting ambitions",
+        "darth vader cosplay meme",
+        "animal acting career joke"
+      ]
+    },
+    "ground_truth": {
+      "subject": "speaker",
+      "target": "situation",
+      "mechanism": "figurative semantics",
+      "label": "happy"
+    },
+    "diversity": {
+      "domain": "Online & Social Media",
+      "culture": "General Culture"
+    }
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "source": "D:\\NUS\\ACMm\\Data-annotation\\export\\datasetv3.18_hf_updated.json",
+  "source_count": 3000,
+  "seed": 42,
+  "folders": [
+    "A",
+    "Tan",
+    "Yu",
+    "Zuo"
+  ],
+  "per_group": 100,
+  "total_selected": 400
+}

@@ -1,0 +1,9 @@
+{
+  "input_json": "Data\\data_exam\\A\\A_sample_100_round2.json",
+  "output_json": "Data\\data_exam\\A\\A_sample_100_round2_exam.json",
+  "total": 100,
+  "answered": 31,
+  "remaining": 69,
+  "current_index": 31,
+  "updated_at": "2026-03-21T21:08:09"
+}

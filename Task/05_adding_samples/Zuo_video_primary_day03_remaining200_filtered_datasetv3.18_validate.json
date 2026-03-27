@@ -1,0 +1,69 @@
+{
+  "generated_at": "2026-03-19T19:17:58",
+  "input_file": "Task/05_adding_samples/Zuo_video_primary_day03_remaining200_filtered_datasetv3.18_format.json",
+  "records_total": 145,
+  "scenario_counts": {
+    "affection": 40,
+    "intent": 46,
+    "attitude": 59
+  },
+  "taxonomy_alignment": {
+    "label_bad_count": 0,
+    "mechanism_bad_count": 0,
+    "intent_non_lower_count": 0,
+    "label_bad_preview": [],
+    "mechanism_bad_preview": [],
+    "intent_non_lower_preview": []
+  },
+  "options_integrity": {
+    "subject_not_list_count": 0,
+    "target_not_list_count": 0,
+    "subject_option_count_not_4": 0,
+    "target_option_count_not_4": 0,
+    "gt_subject_not_in_subject_options": 0,
+    "gt_target_not_in_target_options": 0,
+    "subject_count_not_4_preview": [],
+    "target_count_not_4_preview": [],
+    "gt_subject_missing_preview": [],
+    "gt_target_missing_preview": []
+  },
+  "subject_target_rule": {
+    "rule": "subject/target cannot contain (, ), \\\\, / and cannot exceed 5 words",
+    "max_words": 5,
+    "all_pass": true,
+    "violation_counts": {
+      "subject_option_forbidden_char": 0,
+      "subject_option_word_count_gt_max": 0,
+      "target_option_forbidden_char": 0,
+      "target_option_word_count_gt_max": 0,
+      "gt_subject_forbidden_char": 0,
+      "gt_subject_word_count_gt_max": 0,
+      "gt_target_forbidden_char": 0,
+      "gt_target_word_count_gt_max": 0
+    },
+    "preview": {
+      "subject_option_forbidden_char": [],
+      "subject_option_word_count_gt_max": [],
+      "target_option_forbidden_char": [],
+      "target_option_word_count_gt_max": [],
+      "gt_subject_forbidden_char": [],
+      "gt_subject_word_count_gt_max": [],
+      "gt_target_forbidden_char": [],
+      "gt_target_word_count_gt_max": []
+    }
+  },
+  "id_quality": {
+    "duplicate_id_count": 0,
+    "duplicate_id_preview": []
+  },
+  "subject_target_violations": {
+    "subject_option_forbidden_char": [],
+    "subject_option_word_count_gt_max": [],
+    "target_option_forbidden_char": [],
+    "target_option_word_count_gt_max": [],
+    "gt_subject_forbidden_char": [],
+    "gt_subject_word_count_gt_max": [],
+    "gt_target_forbidden_char": [],
+    "gt_target_word_count_gt_max": []
+  }
+}

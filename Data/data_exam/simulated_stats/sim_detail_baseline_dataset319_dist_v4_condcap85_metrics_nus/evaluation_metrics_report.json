@@ -1,0 +1,108 @@
+{
+  "2. By Scenario": {
+    "affection": {
+      "Count": 452,
+      "Strict_All4_Acc": 0.5,
+      "mechanism_Accuracy": 0.6880530973451328,
+      "mechanism_F1": 0.687705487217278,
+      "label_Accuracy": 0.6238938053097345,
+      "label_F1": 0.620636598220729,
+      "subject_Accuracy": 0.8960176991150443,
+      "subject_F1": 0.8957109953130467,
+      "target_Accuracy": 0.8915929203539823,
+      "target_F1": 0.8914472632067016
+    },
+    "attitude": {
+      "Count": 479,
+      "Strict_All4_Acc": 0.5553235908141962,
+      "mechanism_Accuracy": 0.7035490605427975,
+      "mechanism_F1": 0.703685136534725,
+      "label_Accuracy": 0.7160751565762005,
+      "label_F1": 0.7157077270814575,
+      "subject_Accuracy": 0.8935281837160751,
+      "subject_F1": 0.8925917455399432,
+      "target_Accuracy": 0.8935281837160751,
+      "target_F1": 0.8938162372977447
+    },
+    "intent": {
+      "Count": 569,
+      "Strict_All4_Acc": 0.4991212653778559,
+      "mechanism_Accuracy": 0.6889279437609842,
+      "mechanism_F1": 0.6850845223325062,
+      "label_Accuracy": 0.5887521968365553,
+      "label_F1": 0.5882450760251916,
+      "subject_Accuracy": 0.875219683655536,
+      "subject_F1": 0.8753245800477629,
+      "target_Accuracy": 0.9121265377855887,
+      "target_F1": 0.9124995383342269
+    }
+  },
+  "3. By Domain": {
+    "Online & Social Media": {
+      "Count": 0
+    },
+    "Public & Service": {
+      "Count": 0
+    },
+    "Workplace": {
+      "Count": 0
+    },
+    "Intimate Relationships": {
+      "Count": 0
+    },
+    "Family Conversations": {
+      "Count": 0
+    },
+    "Friend Group": {
+      "Count": 0
+    },
+    "Education & Campus": {
+      "Count": 0
+    },
+    "Friendship Interactions": {
+      "Count": 0
+    }
+  },
+  "4. By Culture": {
+    "General Culture": {
+      "Count": 0
+    },
+    "Arab Culture": {
+      "Count": 0
+    },
+    "American Culture": {
+      "Count": 0
+    },
+    "Muslim Culture": {
+      "Count": 0
+    },
+    "African American Culture": {
+      "Count": 0
+    },
+    "Jewish Culture": {
+      "Count": 0
+    },
+    "Indian Culture": {
+      "Count": 0
+    },
+    "East Asian Culture": {
+      "Count": 0
+    }
+  },
+  "1. Overall (1500 Successful Samples)": {
+    "Count": 1500,
+    "Strict_All4_Acc": 0.5173333333333333,
+    "mechanism_Accuracy": 0.6933333333333334,
+    "mechanism_F1": 0.6921583820281697,
+    "label_Accuracy": 0.64,
+    "label_F1": 0.6521026078168775,
+    "subject_Accuracy": 0.8873333333333333,
+    "subject_F1": 0.887381786558711,
+    "target_Accuracy": 0.9,
+    "target_F1": 0.9003103416875683
+  },
+  "0. Meta": {
+    "input_file": "D:\\NUS\\ACMm\\Data-annotation\\Data\\data_exam\\simulated_stats\\sim_detail_baseline_dataset319_dist_v4_condcap85.json",
+    "successful_samples": 1500
+  }
+}

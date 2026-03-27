@@ -1,0 +1,2377 @@
+[
+  {
+    "id": "intent_1058",
+    "ground_truth": {
+      "mechanism": "expressive aggression",
+      "label": "dominate",
+      "subject": "speaker",
+      "target": "female coworker"
+    },
+    "prediction": {
+      "mechanism": "expressive aggression",
+      "label": "condemn",
+      "subject": "speaker",
+      "target": "hr representative"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": false,
+      "subject": true,
+      "target": false
+    },
+    "strict_match": false,
+    "meta_scenario": "intent",
+    "meta_domain": "Workplace",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "affection_0896",
+    "ground_truth": {
+      "mechanism": "multimodal incongruity",
+      "label": "bad",
+      "subject": "mateo",
+      "target": "woman he's speaking"
+    },
+    "prediction": {
+      "mechanism": "figurative semantics",
+      "label": "bad",
+      "subject": "mateo",
+      "target": "woman he's speaking"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": true,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "affection",
+    "meta_domain": "Public & Service",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "attitude_0117",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "contemptuous",
+      "subject": "speaker",
+      "target": "black people"
+    },
+    "prediction": {
+      "mechanism": "dominant detachment",
+      "label": "contemptuous",
+      "subject": "speaker",
+      "target": "black people"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": true,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": true,
+    "meta_scenario": "attitude",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "intent_1040",
+    "ground_truth": {
+      "mechanism": "expressive aggression",
+      "label": "dominate",
+      "subject": "speaker",
+      "target": "male sexual capability"
+    },
+    "prediction": {
+      "mechanism": "prosocial deception",
+      "label": "mock",
+      "subject": "speaker",
+      "target": "male sexual capability"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "intent",
+    "meta_domain": "Intimate Relationships",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "intent_0957",
+    "ground_truth": {
+      "mechanism": "expressive aggression",
+      "label": "mock",
+      "subject": "event organizer",
+      "target": "islamic community"
+    },
+    "prediction": {
+      "mechanism": "expressive aggression",
+      "label": "provoke",
+      "subject": "satire blogger",
+      "target": "islamic community"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": false,
+      "subject": false,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "intent",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "Arab Culture"
+  },
+  {
+    "id": "intent_0666",
+    "ground_truth": {
+      "mechanism": "expressive aggression",
+      "label": "alienate",
+      "subject": "speaker",
+      "target": "israeli people"
+    },
+    "prediction": {
+      "mechanism": "expressive aggression",
+      "label": "provoke",
+      "subject": "graphic designer",
+      "target": "israeli people"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": false,
+      "subject": false,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "intent",
+    "meta_domain": "Public & Service",
+    "meta_culture": "Jewish Culture"
+  },
+  {
+    "id": "intent_0754",
+    "ground_truth": {
+      "mechanism": "expressive aggression",
+      "label": "mock",
+      "subject": "online player",
+      "target": "camping opponent"
+    },
+    "prediction": {
+      "mechanism": "expressive aggression",
+      "label": "alienate",
+      "subject": "online player",
+      "target": "camping opponent"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "intent",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "attitude_0865",
+    "ground_truth": {
+      "mechanism": "dominant affiliation",
+      "label": "appreciative",
+      "subject": "condescending male compliment",
+      "target": "female customer"
+    },
+    "prediction": {
+      "mechanism": "submissive alignment",
+      "label": "appreciative",
+      "subject": "condescending male compliment",
+      "target": "coworker"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": true,
+      "subject": true,
+      "target": false
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Public & Service",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "affection_0609",
+    "ground_truth": {
+      "mechanism": "multimodal incongruity",
+      "label": "angry",
+      "subject": "speaker",
+      "target": "roommate interlocutor"
+    },
+    "prediction": {
+      "mechanism": "socio_cultural context dependency",
+      "label": "angry",
+      "subject": "speaker",
+      "target": "delivery guy"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": true,
+      "subject": true,
+      "target": false
+    },
+    "strict_match": false,
+    "meta_scenario": "affection",
+    "meta_domain": "Friend Group",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "affection_0439",
+    "ground_truth": {
+      "mechanism": "figurative semantics",
+      "label": "happy",
+      "subject": "speaker",
+      "target": "people police jokes"
+    },
+    "prediction": {
+      "mechanism": "multimodal incongruity",
+      "label": "bad",
+      "subject": "speaker",
+      "target": "people police jokes"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "affection",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "intent_0999",
+    "ground_truth": {
+      "mechanism": "expressive aggression",
+      "label": "condemn",
+      "subject": "speaker",
+      "target": "muslims"
+    },
+    "prediction": {
+      "mechanism": "expressive aggression",
+      "label": "provoke",
+      "subject": "speaker",
+      "target": "muslims"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "intent",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "affection_0018",
+    "ground_truth": {
+      "mechanism": "multimodal incongruity",
+      "label": "happy",
+      "subject": "speaker",
+      "target": "person addressed"
+    },
+    "prediction": {
+      "mechanism": "figurative semantics",
+      "label": "disgusted",
+      "subject": "medical provider",
+      "target": "person addressed"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": false,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "affection",
+    "meta_domain": "Public & Service",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "intent_0142",
+    "ground_truth": {
+      "mechanism": "expressive aggression",
+      "label": "provoke",
+      "subject": "speaker",
+      "target": "unspecified peer"
+    },
+    "prediction": {
+      "mechanism": "benevolent provocation",
+      "label": "intimidate",
+      "subject": "speaker",
+      "target": "unspecified peer"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "intent",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "intent_0604",
+    "ground_truth": {
+      "mechanism": "expressive aggression",
+      "label": "denounce",
+      "subject": "speaker",
+      "target": "coworker"
+    },
+    "prediction": {
+      "mechanism": "malicious manipulation",
+      "label": "dominate",
+      "subject": "speaker",
+      "target": "coworker"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "intent",
+    "meta_domain": "Workplace",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "affection_0897",
+    "ground_truth": {
+      "mechanism": "affective deception",
+      "label": "sad",
+      "subject": "speaker",
+      "target": "information news received"
+    },
+    "prediction": {
+      "mechanism": "socio_cultural context dependency",
+      "label": "bad",
+      "subject": "speaker",
+      "target": "roommate advice"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": false
+    },
+    "strict_match": false,
+    "meta_scenario": "affection",
+    "meta_domain": "Workplace",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "affection_0706",
+    "ground_truth": {
+      "mechanism": "figurative semantics",
+      "label": "happy",
+      "subject": "men",
+      "target": "marriage"
+    },
+    "prediction": {
+      "mechanism": "figurative semantics",
+      "label": "happy",
+      "subject": "men",
+      "target": "marriage"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": true,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": true,
+    "meta_scenario": "affection",
+    "meta_domain": "Intimate Relationships",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "affection_0728",
+    "ground_truth": {
+      "mechanism": "figurative semantics",
+      "label": "happy",
+      "subject": "friend",
+      "target": "friend"
+    },
+    "prediction": {
+      "mechanism": "figurative semantics",
+      "label": "disgusted",
+      "subject": "friend",
+      "target": "friend"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "affection",
+    "meta_domain": "Friend Group",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "attitude_0657",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "contemptuous",
+      "subject": "speaker",
+      "target": "muslim woman"
+    },
+    "prediction": {
+      "mechanism": "dominant detachment",
+      "label": "concerned",
+      "subject": "concerned citizen",
+      "target": "muslim woman"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": false,
+      "subject": false,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "intent_0835",
+    "ground_truth": {
+      "mechanism": "benevolent provocation",
+      "label": "dominate",
+      "subject": "person receiving look",
+      "target": "woman giving look"
+    },
+    "prediction": {
+      "mechanism": "benevolent provocation",
+      "label": "dominate",
+      "subject": "person receiving look",
+      "target": "woman giving look"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": true,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": true,
+    "meta_scenario": "intent",
+    "meta_domain": "Intimate Relationships",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "intent_0008",
+    "ground_truth": {
+      "mechanism": "expressive aggression",
+      "label": "mock",
+      "subject": "speaker",
+      "target": "admired couple"
+    },
+    "prediction": {
+      "mechanism": "malicious manipulation",
+      "label": "mitigate",
+      "subject": "speaker",
+      "target": "listener"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": false
+    },
+    "strict_match": false,
+    "meta_scenario": "intent",
+    "meta_domain": "Friend Group",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "intent_0430",
+    "ground_truth": {
+      "mechanism": "expressive aggression",
+      "label": "provoke",
+      "subject": "meme creator",
+      "target": "partner"
+    },
+    "prediction": {
+      "mechanism": "expressive aggression",
+      "label": "alienate",
+      "subject": "meme creator",
+      "target": "partner"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "intent",
+    "meta_domain": "Intimate Relationships",
+    "meta_culture": "Arab Culture"
+  },
+  {
+    "id": "attitude_0524",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "contemptuous",
+      "subject": "speaker",
+      "target": "africans"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "dismissive",
+      "subject": "speaker",
+      "target": "africans"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "attitude_0495",
+    "ground_truth": {
+      "mechanism": "dominant affiliation",
+      "label": "contemptuous",
+      "subject": "message sender",
+      "target": "birthday recipient"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "dismissive",
+      "subject": "message sender",
+      "target": "birthday recipient"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Intimate Relationships",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "affection_0451",
+    "ground_truth": {
+      "mechanism": "multimodal incongruity",
+      "label": "angry",
+      "subject": "speaker",
+      "target": "funding priorities"
+    },
+    "prediction": {
+      "mechanism": "multimodal incongruity",
+      "label": "angry",
+      "subject": "speaker",
+      "target": "military conflict"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": true,
+      "subject": true,
+      "target": false
+    },
+    "strict_match": false,
+    "meta_scenario": "affection",
+    "meta_domain": "Public & Service",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "intent_0309",
+    "ground_truth": {
+      "mechanism": "expressive aggression",
+      "label": "mock",
+      "subject": "online commenter",
+      "target": "cotton underwear wearers"
+    },
+    "prediction": {
+      "mechanism": "malicious manipulation",
+      "label": "alienate",
+      "subject": "online commenter",
+      "target": "slavery"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": false
+    },
+    "strict_match": false,
+    "meta_scenario": "intent",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "African American Culture"
+  },
+  {
+    "id": "attitude_0912",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "dismissive",
+      "subject": "meme creator",
+      "target": "lesbians"
+    },
+    "prediction": {
+      "mechanism": "protective distancing",
+      "label": "concerned",
+      "subject": "meme creator",
+      "target": "lesbians"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Public & Service",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "affection_0278",
+    "ground_truth": {
+      "mechanism": "figurative semantics",
+      "label": "disgusted",
+      "subject": "speaker",
+      "target": "islam"
+    },
+    "prediction": {
+      "mechanism": "figurative semantics",
+      "label": "disgusted",
+      "subject": "speaker",
+      "target": "islam"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": true,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": true,
+    "meta_scenario": "affection",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "intent_0726",
+    "ground_truth": {
+      "mechanism": "expressive aggression",
+      "label": "intimidate",
+      "subject": "speaker",
+      "target": "human toast battlestar"
+    },
+    "prediction": {
+      "mechanism": "expressive aggression",
+      "label": "condemn",
+      "subject": "speaker",
+      "target": "human toast battlestar"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "intent",
+    "meta_domain": "Family Conversations",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "attitude_0605",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "hostile",
+      "subject": "speaker",
+      "target": "transgender female athlete"
+    },
+    "prediction": {
+      "mechanism": "dominant detachment",
+      "label": "hostile",
+      "subject": "speaker",
+      "target": "transgender female athlete"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": true,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": true,
+    "meta_scenario": "attitude",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "attitude_0335",
+    "ground_truth": {
+      "mechanism": "dominant affiliation",
+      "label": "appreciative",
+      "subject": "speaker",
+      "target": "listener"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "disapproving",
+      "subject": "speaker",
+      "target": "listener"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Workplace",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "attitude_0146",
+    "ground_truth": {
+      "mechanism": "dominant affiliation",
+      "label": "dismissive",
+      "subject": "adult caregiver",
+      "target": "child"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "concerned",
+      "subject": "adult caregiver",
+      "target": "child"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Family Conversations",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "intent_1110",
+    "ground_truth": {
+      "mechanism": "benevolent provocation",
+      "label": "mitigate",
+      "subject": "man blue shirt",
+      "target": "woman talks"
+    },
+    "prediction": {
+      "mechanism": "prosocial deception",
+      "label": "condemn",
+      "subject": "man blue shirt",
+      "target": "woman talks"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "intent",
+    "meta_domain": "Intimate Relationships",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "intent_0451",
+    "ground_truth": {
+      "mechanism": "expressive aggression",
+      "label": "alienate",
+      "subject": "speaker",
+      "target": "gay"
+    },
+    "prediction": {
+      "mechanism": "malicious manipulation",
+      "label": "intimidate",
+      "subject": "speaker",
+      "target": "gay"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "intent",
+    "meta_domain": "Friend Group",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "intent_0136",
+    "ground_truth": {
+      "mechanism": "expressive aggression",
+      "label": "alienate",
+      "subject": "speaker",
+      "target": "bessie"
+    },
+    "prediction": {
+      "mechanism": "prosocial deception",
+      "label": "mock",
+      "subject": "speaker",
+      "target": "bessie"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "intent",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "affection_0100",
+    "ground_truth": {
+      "mechanism": "multimodal incongruity",
+      "label": "happy",
+      "subject": "speaker",
+      "target": "friend"
+    },
+    "prediction": {
+      "mechanism": "multimodal incongruity",
+      "label": "sad",
+      "subject": "speaker",
+      "target": "friend"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "affection",
+    "meta_domain": "Friend Group",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "attitude_0007",
+    "ground_truth": {
+      "mechanism": "protective distancing",
+      "label": "skeptical",
+      "subject": "speaker",
+      "target": "monica"
+    },
+    "prediction": {
+      "mechanism": "protective distancing",
+      "label": "skeptical",
+      "subject": "speaker",
+      "target": "monica"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": true,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": true,
+    "meta_scenario": "attitude",
+    "meta_domain": "Public & Service",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "attitude_0829",
+    "ground_truth": {
+      "mechanism": "dominant affiliation",
+      "label": "dismissive",
+      "subject": "speaker",
+      "target": "trump supporters"
+    },
+    "prediction": {
+      "mechanism": "dominant detachment",
+      "label": "dismissive",
+      "subject": "speaker",
+      "target": "trump supporters"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": true,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Family Conversations",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "intent_1121",
+    "ground_truth": {
+      "mechanism": "benevolent provocation",
+      "label": "mock",
+      "subject": "speaker",
+      "target": "homeowner"
+    },
+    "prediction": {
+      "mechanism": "prosocial deception",
+      "label": "mock",
+      "subject": "speaker",
+      "target": "homeowner"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": true,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "intent",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "intent_0239",
+    "ground_truth": {
+      "mechanism": "malicious manipulation",
+      "label": "dominate",
+      "subject": "speaker",
+      "target": "car owner"
+    },
+    "prediction": {
+      "mechanism": "prosocial deception",
+      "label": "mitigate",
+      "subject": "speaker",
+      "target": "male acquaintance"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": false
+    },
+    "strict_match": false,
+    "meta_scenario": "intent",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "attitude_0599",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "indifferent",
+      "subject": "speaker",
+      "target": "person requesting removal"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "dismissive",
+      "subject": "speaker",
+      "target": "person requesting removal"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "affection_0407",
+    "ground_truth": {
+      "mechanism": "multimodal incongruity",
+      "label": "fearful",
+      "subject": "speaker",
+      "target": "attending mosque march 15th"
+    },
+    "prediction": {
+      "mechanism": "figurative semantics",
+      "label": "disgusted",
+      "subject": "speaker",
+      "target": "attending mosque march 15th"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "affection",
+    "meta_domain": "Public & Service",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "affection_0565",
+    "ground_truth": {
+      "mechanism": "affective deception",
+      "label": "bad",
+      "subject": "speaker",
+      "target": "partner"
+    },
+    "prediction": {
+      "mechanism": "affective deception",
+      "label": "fearful",
+      "subject": "speaker",
+      "target": "partner"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "affection",
+    "meta_domain": "Intimate Relationships",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "affection_0763",
+    "ground_truth": {
+      "mechanism": "affective deception",
+      "label": "angry",
+      "subject": "store clerk",
+      "target": "white shirt man"
+    },
+    "prediction": {
+      "mechanism": "affective deception",
+      "label": "bad",
+      "subject": "manager",
+      "target": "white shirt man"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": false,
+      "subject": false,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "affection",
+    "meta_domain": "Workplace",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "intent_0045",
+    "ground_truth": {
+      "mechanism": "expressive aggression",
+      "label": "alienate",
+      "subject": "speaker",
+      "target": "transgender women"
+    },
+    "prediction": {
+      "mechanism": "malicious manipulation",
+      "label": "intimidate",
+      "subject": "speaker",
+      "target": "transgender women"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "intent",
+    "meta_domain": "Public & Service",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "intent_1021",
+    "ground_truth": {
+      "mechanism": "expressive aggression",
+      "label": "alienate",
+      "subject": "speaker",
+      "target": "muslim"
+    },
+    "prediction": {
+      "mechanism": "malicious manipulation",
+      "label": "provoke",
+      "subject": "speaker",
+      "target": "muslim"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "intent",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "intent_0823",
+    "ground_truth": {
+      "mechanism": "malicious manipulation",
+      "label": "dominate",
+      "subject": "aggressor",
+      "target": "warned leader"
+    },
+    "prediction": {
+      "mechanism": "malicious manipulation",
+      "label": "alienate",
+      "subject": "aggressor",
+      "target": "appeasement advocate"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": false,
+      "subject": true,
+      "target": false
+    },
+    "strict_match": false,
+    "meta_scenario": "intent",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "affection_0714",
+    "ground_truth": {
+      "mechanism": "affective deception",
+      "label": "bad",
+      "subject": "speaker",
+      "target": "partner's texting"
+    },
+    "prediction": {
+      "mechanism": "affective deception",
+      "label": "bad",
+      "subject": "speaker",
+      "target": "partner's texting"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": true,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": true,
+    "meta_scenario": "affection",
+    "meta_domain": "Intimate Relationships",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "attitude_0515",
+    "ground_truth": {
+      "mechanism": "dominant affiliation",
+      "label": "contemptuous",
+      "subject": "meme creator",
+      "target": "melbourne immigrants"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "dismissive",
+      "subject": "meme creator",
+      "target": "melbourne immigrants"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "attitude_0837",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "disapproving",
+      "subject": "speaker",
+      "target": "people 2017"
+    },
+    "prediction": {
+      "mechanism": "dominant detachment",
+      "label": "contemptuous",
+      "subject": "speaker",
+      "target": "americans 2017"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": false,
+      "subject": true,
+      "target": false
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "intent_1127",
+    "ground_truth": {
+      "mechanism": "expressive aggression",
+      "label": "alienate",
+      "subject": "speaker",
+      "target": "student"
+    },
+    "prediction": {
+      "mechanism": "malicious manipulation",
+      "label": "mock",
+      "subject": "speaker",
+      "target": "student"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "intent",
+    "meta_domain": "Education & Campus",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "attitude_0667",
+    "ground_truth": {
+      "mechanism": "submissive alignment",
+      "label": "sympathetic",
+      "subject": "speaker",
+      "target": "himself"
+    },
+    "prediction": {
+      "mechanism": "protective distancing",
+      "label": "skeptical",
+      "subject": "speaker",
+      "target": "himself"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Friend Group",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "intent_0559",
+    "ground_truth": {
+      "mechanism": "benevolent provocation",
+      "label": "condemn",
+      "subject": "public policy advocate",
+      "target": "adoption funding proposal"
+    },
+    "prediction": {
+      "mechanism": "malicious manipulation",
+      "label": "denounce",
+      "subject": "public policy advocate",
+      "target": "adoption funding proposal"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "intent",
+    "meta_domain": "Public & Service",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "intent_0784",
+    "ground_truth": {
+      "mechanism": "benevolent provocation",
+      "label": "dominate",
+      "subject": "man",
+      "target": "woman"
+    },
+    "prediction": {
+      "mechanism": "prosocial deception",
+      "label": "mitigate",
+      "subject": "man",
+      "target": "woman"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "intent",
+    "meta_domain": "Intimate Relationships",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "affection_0791",
+    "ground_truth": {
+      "mechanism": "figurative semantics",
+      "label": "bad",
+      "subject": "speaker",
+      "target": "parents"
+    },
+    "prediction": {
+      "mechanism": "multimodal incongruity",
+      "label": "disgusted",
+      "subject": "speaker",
+      "target": "parents"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "affection",
+    "meta_domain": "Family Conversations",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "attitude_0806",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "hostile",
+      "subject": "speaker",
+      "target": "public figure transgender"
+    },
+    "prediction": {
+      "mechanism": "dominant detachment",
+      "label": "contemptuous",
+      "subject": "speaker",
+      "target": "public figure transgender"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "affection_0702",
+    "ground_truth": {
+      "mechanism": "multimodal incongruity",
+      "label": "angry",
+      "subject": "speaker",
+      "target": "accused blamer"
+    },
+    "prediction": {
+      "mechanism": "figurative semantics",
+      "label": "angry",
+      "subject": "speaker",
+      "target": "online sexual health advisor"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": true,
+      "subject": true,
+      "target": false
+    },
+    "strict_match": false,
+    "meta_scenario": "affection",
+    "meta_domain": "Intimate Relationships",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "affection_0643",
+    "ground_truth": {
+      "mechanism": "multimodal incongruity",
+      "label": "angry",
+      "subject": "young woman",
+      "target": "mr obama"
+    },
+    "prediction": {
+      "mechanism": "multimodal incongruity",
+      "label": "angry",
+      "subject": "young woman",
+      "target": "mr obama"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": true,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": true,
+    "meta_scenario": "affection",
+    "meta_domain": "Public & Service",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "intent_0840",
+    "ground_truth": {
+      "mechanism": "malicious manipulation",
+      "label": "alienate",
+      "subject": "speaker",
+      "target": "western countries"
+    },
+    "prediction": {
+      "mechanism": "malicious manipulation",
+      "label": "denounce",
+      "subject": "speaker",
+      "target": "western countries"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "intent",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "Muslim Culture"
+  },
+  {
+    "id": "intent_0129",
+    "ground_truth": {
+      "mechanism": "expressive aggression",
+      "label": "condemn",
+      "subject": "speaker",
+      "target": "sandy hook victims"
+    },
+    "prediction": {
+      "mechanism": "malicious manipulation",
+      "label": "alienate",
+      "subject": "speaker",
+      "target": "sandy hook victims"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "intent",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "intent_0303",
+    "ground_truth": {
+      "mechanism": "expressive aggression",
+      "label": "provoke",
+      "subject": "household member",
+      "target": "male partner"
+    },
+    "prediction": {
+      "mechanism": "malicious manipulation",
+      "label": "dominate",
+      "subject": "household member",
+      "target": "male visitor"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": false
+    },
+    "strict_match": false,
+    "meta_scenario": "intent",
+    "meta_domain": "Intimate Relationships",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "affection_0780",
+    "ground_truth": {
+      "mechanism": "figurative semantics",
+      "label": "happy",
+      "subject": "female wine lover",
+      "target": "retail store wine section"
+    },
+    "prediction": {
+      "mechanism": "figurative semantics",
+      "label": "happy",
+      "subject": "female wine lover",
+      "target": "retail store wine section"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": true,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": true,
+    "meta_scenario": "affection",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "intent_0232",
+    "ground_truth": {
+      "mechanism": "expressive aggression",
+      "label": "mitigate",
+      "subject": "speaker",
+      "target": "dads"
+    },
+    "prediction": {
+      "mechanism": "prosocial deception",
+      "label": "mock",
+      "subject": "speaker",
+      "target": "dads"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "intent",
+    "meta_domain": "Family Conversations",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "attitude_0798",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "dismissive",
+      "subject": "speaker",
+      "target": "partner"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "dismissive",
+      "subject": "speaker",
+      "target": "partner"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": true,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Intimate Relationships",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "affection_0338",
+    "ground_truth": {
+      "mechanism": "multimodal incongruity",
+      "label": "sad",
+      "subject": "speaker",
+      "target": "zakk wylde"
+    },
+    "prediction": {
+      "mechanism": "figurative semantics",
+      "label": "bad",
+      "subject": "fan",
+      "target": "zakk wylde"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": false,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "affection",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "intent_1069",
+    "ground_truth": {
+      "mechanism": "expressive aggression",
+      "label": "dominate",
+      "subject": "authoritative lecturer",
+      "target": "new trainee"
+    },
+    "prediction": {
+      "mechanism": "benevolent provocation",
+      "label": "condemn",
+      "subject": "coworker",
+      "target": "work team"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": false,
+      "target": false
+    },
+    "strict_match": false,
+    "meta_scenario": "intent",
+    "meta_domain": "Workplace",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "intent_0778",
+    "ground_truth": {
+      "mechanism": "benevolent provocation",
+      "label": "dominate",
+      "subject": "partner",
+      "target": "partner"
+    },
+    "prediction": {
+      "mechanism": "benevolent provocation",
+      "label": "mitigate",
+      "subject": "partner",
+      "target": "partner"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "intent",
+    "meta_domain": "Intimate Relationships",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "intent_0284",
+    "ground_truth": {
+      "mechanism": "expressive aggression",
+      "label": "alienate",
+      "subject": "speaker",
+      "target": "muslims"
+    },
+    "prediction": {
+      "mechanism": "prosocial deception",
+      "label": "mock",
+      "subject": "speaker",
+      "target": "muslims"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "intent",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "affection_0387",
+    "ground_truth": {
+      "mechanism": "multimodal incongruity",
+      "label": "angry",
+      "subject": "couple",
+      "target": "each other"
+    },
+    "prediction": {
+      "mechanism": "multimodal incongruity",
+      "label": "disgusted",
+      "subject": "couple",
+      "target": "each other"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "affection",
+    "meta_domain": "Intimate Relationships",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "affection_0211",
+    "ground_truth": {
+      "mechanism": "affective deception",
+      "label": "sad",
+      "subject": "speaker",
+      "target": "depressed peaple"
+    },
+    "prediction": {
+      "mechanism": "affective deception",
+      "label": "sad",
+      "subject": "speaker",
+      "target": "depressed peaple"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": true,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": true,
+    "meta_scenario": "affection",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "intent_0590",
+    "ground_truth": {
+      "mechanism": "expressive aggression",
+      "label": "mitigate",
+      "subject": "speaker",
+      "target": "joking employees"
+    },
+    "prediction": {
+      "mechanism": "prosocial deception",
+      "label": "condemn",
+      "subject": "speaker",
+      "target": "joking employees"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "intent",
+    "meta_domain": "Workplace",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "affection_0153",
+    "ground_truth": {
+      "mechanism": "multimodal incongruity",
+      "label": "fearful",
+      "subject": "denise",
+      "target": "customer"
+    },
+    "prediction": {
+      "mechanism": "affective deception",
+      "label": "bad",
+      "subject": "denise",
+      "target": "male coworker"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": false
+    },
+    "strict_match": false,
+    "meta_scenario": "affection",
+    "meta_domain": "Workplace",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "affection_0566",
+    "ground_truth": {
+      "mechanism": "figurative semantics",
+      "label": "angry",
+      "subject": "speaker",
+      "target": "immigration policy"
+    },
+    "prediction": {
+      "mechanism": "multimodal incongruity",
+      "label": "angry",
+      "subject": "speaker",
+      "target": "immigration policy"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": true,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "affection",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "attitude_0421",
+    "ground_truth": {
+      "mechanism": "dominant affiliation",
+      "label": "contemptuous",
+      "subject": "meme creator",
+      "target": "women"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "dismissive",
+      "subject": "meme creator",
+      "target": "women"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "intent_0986",
+    "ground_truth": {
+      "mechanism": "expressive aggression",
+      "label": "alienate",
+      "subject": "speaker",
+      "target": "muslims"
+    },
+    "prediction": {
+      "mechanism": "malicious manipulation",
+      "label": "mock",
+      "subject": "speaker",
+      "target": "muslims"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "intent",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "attitude_0360",
+    "ground_truth": {
+      "mechanism": "submissive alignment",
+      "label": "contemptuous",
+      "subject": "meme creator",
+      "target": "elders"
+    },
+    "prediction": {
+      "mechanism": "submissive alignment",
+      "label": "disapproving",
+      "subject": "meme creator",
+      "target": "elders"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Family Conversations",
+    "meta_culture": "Indian Culture"
+  },
+  {
+    "id": "attitude_0622",
+    "ground_truth": {
+      "mechanism": "submissive alignment",
+      "label": "sympathetic",
+      "subject": "speaker",
+      "target": "person shown phone"
+    },
+    "prediction": {
+      "mechanism": "submissive alignment",
+      "label": "sympathetic",
+      "subject": "speaker",
+      "target": "person shown phone"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": true,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": true,
+    "meta_scenario": "attitude",
+    "meta_domain": "Intimate Relationships",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "attitude_0200",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "contemptuous",
+      "subject": "speaker",
+      "target": "people pictured"
+    },
+    "prediction": {
+      "mechanism": "dominant detachment",
+      "label": "contemptuous",
+      "subject": "speaker",
+      "target": "people pictured"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": true,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": true,
+    "meta_scenario": "attitude",
+    "meta_domain": "Public & Service",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "intent_0264",
+    "ground_truth": {
+      "mechanism": "prosocial deception",
+      "label": "mitigate",
+      "subject": "coworker",
+      "target": "man car"
+    },
+    "prediction": {
+      "mechanism": "expressive aggression",
+      "label": "mitigate",
+      "subject": "coworker",
+      "target": "man car"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": true,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "intent",
+    "meta_domain": "Public & Service",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "attitude_0748",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "hostile",
+      "subject": "meme creator",
+      "target": "muslims"
+    },
+    "prediction": {
+      "mechanism": "dominant detachment",
+      "label": "contemptuous",
+      "subject": "meme creator",
+      "target": "muslims"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "intent_0618",
+    "ground_truth": {
+      "mechanism": "malicious manipulation",
+      "label": "alienate",
+      "subject": "speaker",
+      "target": "muslims"
+    },
+    "prediction": {
+      "mechanism": "malicious manipulation",
+      "label": "alienate",
+      "subject": "speaker",
+      "target": "muslims"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": true,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": true,
+    "meta_scenario": "intent",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "attitude_0707",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "contemptuous",
+      "subject": "speaker",
+      "target": "trump supporters"
+    },
+    "prediction": {
+      "mechanism": "dominant detachment",
+      "label": "dismissive",
+      "subject": "speaker",
+      "target": "trump supporters"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "American Culture"
+  },
+  {
+    "id": "attitude_0050",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "disapproving",
+      "subject": "mariko",
+      "target": "coworker"
+    },
+    "prediction": {
+      "mechanism": "protective distancing",
+      "label": "disapproving",
+      "subject": "mariko",
+      "target": "coworker"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": true,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Workplace",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "intent_0164",
+    "ground_truth": {
+      "mechanism": "expressive aggression",
+      "label": "alienate",
+      "subject": "speaker",
+      "target": "white men"
+    },
+    "prediction": {
+      "mechanism": "prosocial deception",
+      "label": "mock",
+      "subject": "speaker",
+      "target": "white men"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "intent",
+    "meta_domain": "Public & Service",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "intent_0505",
+    "ground_truth": {
+      "mechanism": "malicious manipulation",
+      "label": "mock",
+      "subject": "speaker",
+      "target": "listener"
+    },
+    "prediction": {
+      "mechanism": "prosocial deception",
+      "label": "mitigate",
+      "subject": "speaker",
+      "target": "listener"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "intent",
+    "meta_domain": "Intimate Relationships",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "intent_0375",
+    "ground_truth": {
+      "mechanism": "expressive aggression",
+      "label": "alienate",
+      "subject": "speaker",
+      "target": "person image"
+    },
+    "prediction": {
+      "mechanism": "expressive aggression",
+      "label": "denounce",
+      "subject": "speaker",
+      "target": "person image"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "intent",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "attitude_0652",
+    "ground_truth": {
+      "mechanism": "dominant affiliation",
+      "label": "contemptuous",
+      "subject": "speaker",
+      "target": "person wheelchair"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "contemptuous",
+      "subject": "speaker",
+      "target": "person wheelchair"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": true,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": true,
+    "meta_scenario": "attitude",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "attitude_0038",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "hostile",
+      "subject": "speaker",
+      "target": "black guys"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "contemptuous",
+      "subject": "speaker",
+      "target": "black guys"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Intimate Relationships",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "attitude_0077",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "hostile",
+      "subject": "speaker",
+      "target": "unspecified others"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "disapproving",
+      "subject": "speaker",
+      "target": "immigrant group"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": false
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "attitude_0529",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "contemptuous",
+      "subject": "speaker",
+      "target": "viewer"
+    },
+    "prediction": {
+      "mechanism": "dominant detachment",
+      "label": "contemptuous",
+      "subject": "political commentator",
+      "target": "elected officials"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": true,
+      "subject": false,
+      "target": false
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Public & Service",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "affection_0705",
+    "ground_truth": {
+      "mechanism": "multimodal incongruity",
+      "label": "angry",
+      "subject": "speaker",
+      "target": "white police"
+    },
+    "prediction": {
+      "mechanism": "multimodal incongruity",
+      "label": "bad",
+      "subject": "speaker",
+      "target": "white police"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "affection",
+    "meta_domain": "Public & Service",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "affection_0623",
+    "ground_truth": {
+      "mechanism": "figurative semantics",
+      "label": "happy",
+      "subject": "speaker",
+      "target": "remaining choco puffs"
+    },
+    "prediction": {
+      "mechanism": "affective deception",
+      "label": "bad",
+      "subject": "speaker",
+      "target": "remaining choco puffs"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "affection",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "affection_0683",
+    "ground_truth": {
+      "mechanism": "affective deception",
+      "label": "angry",
+      "subject": "female speaking",
+      "target": "male customer"
+    },
+    "prediction": {
+      "mechanism": "figurative semantics",
+      "label": "angry",
+      "subject": "female speaking",
+      "target": "male customer"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": true,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "affection",
+    "meta_domain": "Public & Service",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "attitude_0756",
+    "ground_truth": {
+      "mechanism": "protective distancing",
+      "label": "dismissive",
+      "subject": "speaker",
+      "target": "sensitive topic"
+    },
+    "prediction": {
+      "mechanism": "protective distancing",
+      "label": "skeptical",
+      "subject": "speaker",
+      "target": "sensitive topic"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Friend Group",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "affection_0891",
+    "ground_truth": {
+      "mechanism": "multimodal incongruity",
+      "label": "happy",
+      "subject": "speaker",
+      "target": "seated woman"
+    },
+    "prediction": {
+      "mechanism": "figurative semantics",
+      "label": "disgusted",
+      "subject": "speaker",
+      "target": "seated woman"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "affection",
+    "meta_domain": "Friendship",
+    "meta_culture": "General Culture"
+  },
+  {
+    "id": "intent_1009",
+    "ground_truth": {
+      "mechanism": "expressive aggression",
+      "label": "dominate",
+      "subject": "speaker",
+      "target": "listener"
+    },
+    "prediction": {
+      "mechanism": "malicious manipulation",
+      "label": "mock",
+      "subject": "speaker",
+      "target": "listener"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "intent",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture"
+  }
+]

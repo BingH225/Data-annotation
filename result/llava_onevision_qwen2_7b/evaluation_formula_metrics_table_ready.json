@@ -1,0 +1,172 @@
+{
+  "input_file": "result\\llava_onevision_qwen2_7b\\evaluation_predictions_detailed.json",
+  "total_records": 2963,
+  "formula_note": {
+    "independent_accuracy": "Acc_y for y in {Label, Subject, Target, Mechanism}",
+    "table_indep": "Indep = mean(Acc_Label, Acc_Subject, Acc_Target, Acc_Mechanism)",
+    "conditional_accuracy": "Acc_M|L = P(Mechanism correct | Label correct)",
+    "relational_alignment": "Acc_S^T = P(Subject and Target both correct)",
+    "joint_accuracy": "Acc_Joint = P(Label, Subject, Target, Mechanism all correct)"
+  },
+  "overall": {
+    "N": 2963,
+    "independent_accuracy": {
+      "label": 0.10698616267296658,
+      "subject": 0.47789402632467093,
+      "target": 0.5271684103948701,
+      "mechanism": 0.30779615254809317
+    },
+    "conditional_accuracy": {
+      "mechanism_given_label": 0.3501577287066246,
+      "denominator_label_correct": 317
+    },
+    "relational_alignment": 0.27404657441781977,
+    "joint_accuracy": 0.009787377657779277
+  },
+  "by_scenario": {
+    "affection": {
+      "N": 863,
+      "independent_accuracy": {
+        "label": 0.23290845886442643,
+        "subject": 0.4159907300115875,
+        "target": 0.5480880648899189,
+        "mechanism": 0.2827346465816918
+      },
+      "conditional_accuracy": {
+        "mechanism_given_label": 0.21890547263681592,
+        "denominator_label_correct": 201
+      },
+      "relational_alignment": 0.2514484356894554,
+      "joint_accuracy": 0.012746234067207415
+    },
+    "attitude": {
+      "N": 945,
+      "independent_accuracy": {
+        "label": 0.1037037037037037,
+        "subject": 0.43703703703703706,
+        "target": 0.5396825396825397,
+        "mechanism": 0.5671957671957671
+      },
+      "conditional_accuracy": {
+        "mechanism_given_label": 0.6224489795918368,
+        "denominator_label_correct": 98
+      },
+      "relational_alignment": 0.24761904761904763,
+      "joint_accuracy": 0.01798941798941799
+    },
+    "intent": {
+      "N": 1155,
+      "independent_accuracy": {
+        "label": 0.015584415584415584,
+        "subject": 0.5575757575757576,
+        "target": 0.5012987012987012,
+        "mechanism": 0.11428571428571428
+      },
+      "conditional_accuracy": {
+        "mechanism_given_label": 0.3333333333333333,
+        "denominator_label_correct": 18
+      },
+      "relational_alignment": 0.31255411255411253,
+      "joint_accuracy": 0.0008658008658008658
+    }
+  },
+  "table_ready": {
+    "method": "LLaVA-OneVision-7B",
+    "order": [
+      "affection",
+      "attitude",
+      "intent",
+      "overall"
+    ],
+    "columns": [
+      "indep",
+      "cond",
+      "rel",
+      "joint"
+    ],
+    "values_raw": {
+      "affection": {
+        "indep": 0.36993047508690613,
+        "cond": 0.21890547263681592,
+        "rel": 0.2514484356894554,
+        "joint": 0.012746234067207415,
+        "n": 863,
+        "n_label_correct": 201,
+        "indep_components": {
+          "label": 0.23290845886442643,
+          "subject": 0.4159907300115875,
+          "target": 0.5480880648899189,
+          "mechanism": 0.2827346465816918
+        }
+      },
+      "attitude": {
+        "indep": 0.4119047619047619,
+        "cond": 0.6224489795918368,
+        "rel": 0.24761904761904763,
+        "joint": 0.01798941798941799,
+        "n": 945,
+        "n_label_correct": 98,
+        "indep_components": {
+          "label": 0.1037037037037037,
+          "subject": 0.43703703703703706,
+          "target": 0.5396825396825397,
+          "mechanism": 0.5671957671957671
+        }
+      },
+      "intent": {
+        "indep": 0.29718614718614716,
+        "cond": 0.3333333333333333,
+        "rel": 0.31255411255411253,
+        "joint": 0.0008658008658008658,
+        "n": 1155,
+        "n_label_correct": 18,
+        "indep_components": {
+          "label": 0.015584415584415584,
+          "subject": 0.5575757575757576,
+          "target": 0.5012987012987012,
+          "mechanism": 0.11428571428571428
+        }
+      },
+      "overall": {
+        "indep": 0.3549611879851502,
+        "cond": 0.3501577287066246,
+        "rel": 0.27404657441781977,
+        "joint": 0.009787377657779277,
+        "n": 2963,
+        "n_label_correct": 317,
+        "indep_components": {
+          "label": 0.10698616267296658,
+          "subject": 0.47789402632467093,
+          "target": 0.5271684103948701,
+          "mechanism": 0.30779615254809317
+        }
+      }
+    },
+    "values_percent": {
+      "affection": {
+        "indep": 36.99,
+        "cond": 21.89,
+        "rel": 25.14,
+        "joint": 1.27
+      },
+      "attitude": {
+        "indep": 41.19,
+        "cond": 62.24,
+        "rel": 24.76,
+        "joint": 1.8
+      },
+      "intent": {
+        "indep": 29.72,
+        "cond": 33.33,
+        "rel": 31.26,
+        "joint": 0.09
+      },
+      "overall": {
+        "indep": 35.5,
+        "cond": 35.02,
+        "rel": 27.4,
+        "joint": 0.98
+      }
+    }
+  }
+}

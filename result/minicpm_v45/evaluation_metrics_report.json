@@ -1,146 +1,146 @@
 {
-  "1. Overall (2907 Successful Samples)": {
-    "Count": 2907,
-    "Strict_All4_Acc": 0.053319573443412455,
-    "mechanism_Accuracy": 0.47368421052631576,
-    "mechanism_F1": 0.24289086224211218,
-    "label_Accuracy": 0.22084623323013416,
-    "label_F1": 0.11969659119106099,
-    "subject_Accuracy": 0.6487788097695218,
-    "subject_F1": 0.32781901582425377,
-    "target_Accuracy": 0.7433780529755762,
-    "target_F1": 0.5011149021911222
+  "1. Overall (2963 Successful Samples)": {
+    "Count": 2963,
+    "Strict_All4_Acc": 0.022612217347283158,
+    "mechanism_Accuracy": 0.4674316571042862,
+    "mechanism_F1": 0.2395484715474888,
+    "label_Accuracy": 0.12419844751940601,
+    "label_F1": 0.05942385497734221,
+    "subject_Accuracy": 0.6378670266621668,
+    "subject_F1": 0.3226224073874929,
+    "target_Accuracy": 0.7327033412082349,
+    "target_F1": 0.4939081178937263
   },
   "2. By Scenario": {
     "affection": {
-      "Count": 847,
-      "Strict_All4_Acc": 0.043683589138134596,
-      "mechanism_Accuracy": 0.36481700118063753,
-      "mechanism_F1": 0.2060322408123322,
-      "label_Accuracy": 0.2939787485242031,
-      "label_F1": 0.16389894072621355,
-      "subject_Accuracy": 0.5088547815820543,
-      "subject_F1": 0.34275783607956695,
-      "target_Accuracy": 0.693034238488784,
-      "target_F1": 0.5691610479693917
+      "Count": 863,
+      "Strict_All4_Acc": 0.039397450753186555,
+      "mechanism_Accuracy": 0.36616454229432216,
+      "mechanism_F1": 0.18118201513620982,
+      "label_Accuracy": 0.287369640787949,
+      "label_F1": 0.10882427974696542,
+      "subject_Accuracy": 0.5017381228273464,
+      "subject_F1": 0.337541097843169,
+      "target_Accuracy": 0.6836616454229433,
+      "target_F1": 0.5608220832790319
     },
     "attitude": {
-      "Count": 933,
-      "Strict_All4_Acc": 0.030010718113612004,
-      "mechanism_Accuracy": 0.602357984994641,
-      "mechanism_F1": 0.19166206180632958,
-      "label_Accuracy": 0.10289389067524116,
-      "label_F1": 0.0654194237784737,
-      "subject_Accuracy": 0.6484458735262594,
-      "subject_F1": 0.32567653309298683,
-      "target_Accuracy": 0.7984994640943194,
-      "target_F1": 0.5335670499788926
+      "Count": 945,
+      "Strict_All4_Acc": 0.02433862433862434,
+      "mechanism_Accuracy": 0.5873015873015873,
+      "mechanism_F1": 0.12307303075205085,
+      "label_Accuracy": 0.09523809523809523,
+      "label_F1": 0.040685099376892575,
+      "subject_Accuracy": 0.6433862433862434,
+      "subject_F1": 0.3234969628380301,
+      "target_Accuracy": 0.780952380952381,
+      "target_F1": 0.5219653185326035
     },
     "intent": {
-      "Count": 1127,
-      "Strict_All4_Acc": 0.07985803016858918,
-      "mechanism_Accuracy": 0.4489795918367347,
-      "mechanism_F1": 0.22706731401957156,
-      "label_Accuracy": 0.26353149955634425,
-      "label_F1": 0.15690999277478934,
-      "subject_Accuracy": 0.7542147293700089,
-      "subject_F1": 0.5078455862233141,
-      "target_Accuracy": 0.735581188997338,
-      "target_F1": 0.593080428820448
+      "Count": 1155,
+      "Strict_All4_Acc": 0.008658008658008658,
+      "mechanism_Accuracy": 0.44502164502164504,
+      "mechanism_F1": 0.1676482630712084,
+      "label_Accuracy": 0.025974025974025976,
+      "label_F1": 0.007445485026287581,
+      "subject_Accuracy": 0.7350649350649351,
+      "subject_F1": 0.4959182060065426,
+      "target_Accuracy": 0.7298701298701299,
+      "target_F1": 0.5887588372706862
     }
   },
   "3. By Domain": {
     "Online & Social Media": {
-      "Count": 1244,
-      "Strict_All4_Acc": 0.04421221864951769,
-      "mechanism_Accuracy": 0.5184887459807074,
-      "mechanism_F1": 0.2718536098828134,
-      "label_Accuracy": 0.1832797427652733,
-      "label_F1": 0.09729111103731221,
-      "subject_Accuracy": 0.610128617363344,
-      "subject_F1": 0.30984595813044147,
-      "target_Accuracy": 0.7636655948553055,
-      "target_F1": 0.6208267173556326
+      "Count": 1287,
+      "Strict_All4_Acc": 0.013986013986013986,
+      "mechanism_Accuracy": 0.5104895104895105,
+      "mechanism_F1": 0.25534474345198566,
+      "label_Accuracy": 0.0979020979020979,
+      "label_F1": 0.0523001419138425,
+      "subject_Accuracy": 0.6021756021756022,
+      "subject_F1": 0.3059906615508359,
+      "target_Accuracy": 0.7552447552447552,
+      "target_F1": 0.6142625684632457
     },
     "Public & Service": {
-      "Count": 415,
-      "Strict_All4_Acc": 0.0963855421686747,
-      "mechanism_Accuracy": 0.4939759036144578,
-      "mechanism_F1": 0.2648883699151259,
-      "label_Accuracy": 0.2891566265060241,
-      "label_F1": 0.16281863814159694,
-      "subject_Accuracy": 0.653012048192771,
-      "subject_F1": 0.5289796698993852,
-      "target_Accuracy": 0.7566265060240964,
-      "target_F1": 0.6103578488883148
+      "Count": 422,
+      "Strict_All4_Acc": 0.045023696682464455,
+      "mechanism_Accuracy": 0.490521327014218,
+      "mechanism_F1": 0.26388041204794094,
+      "label_Accuracy": 0.16824644549763032,
+      "label_F1": 0.08891544210179951,
+      "subject_Accuracy": 0.6374407582938388,
+      "subject_F1": 0.5179836698278144,
+      "target_Accuracy": 0.7488151658767772,
+      "target_F1": 0.6053269993360255
     },
     "Workplace": {
-      "Count": 433,
-      "Strict_All4_Acc": 0.07159353348729793,
-      "mechanism_Accuracy": 0.4064665127020785,
-      "mechanism_F1": 0.25510618257602263,
-      "label_Accuracy": 0.2632794457274827,
-      "label_F1": 0.13923253207921643,
-      "subject_Accuracy": 0.7759815242494227,
-      "subject_F1": 0.6214575355602696,
-      "target_Accuracy": 0.7297921478060047,
-      "target_F1": 0.5841369641757179
+      "Count": 429,
+      "Strict_All4_Acc": 0.039627039627039624,
+      "mechanism_Accuracy": 0.3939393939393939,
+      "mechanism_F1": 0.24788593659766753,
+      "label_Accuracy": 0.1561771561771562,
+      "label_F1": 0.06872496276630377,
+      "subject_Accuracy": 0.7622377622377622,
+      "subject_F1": 0.5094768106672869,
+      "target_Accuracy": 0.7062937062937062,
+      "target_F1": 0.47136831717919375
     },
     "Intimate Relationships": {
-      "Count": 396,
-      "Strict_All4_Acc": 0.045454545454545456,
-      "mechanism_Accuracy": 0.45202020202020204,
-      "mechanism_F1": 0.32007235442814813,
-      "label_Accuracy": 0.1893939393939394,
-      "label_F1": 0.1009239080901698,
-      "subject_Accuracy": 0.6313131313131313,
-      "subject_F1": 0.419972425315208,
-      "target_Accuracy": 0.7525252525252525,
-      "target_F1": 0.6030314015515318
+      "Count": 405,
+      "Strict_All4_Acc": 0.022222222222222223,
+      "mechanism_Accuracy": 0.4469135802469136,
+      "mechanism_F1": 0.31540726857964374,
+      "label_Accuracy": 0.1111111111111111,
+      "label_F1": 0.0430413828208207,
+      "subject_Accuracy": 0.6271604938271605,
+      "subject_F1": 0.4178146235854146,
+      "target_Accuracy": 0.7407407407407407,
+      "target_F1": 0.5935779750150098
     },
     "Family Conversations": {
       "Count": 224,
-      "Strict_All4_Acc": 0.03125,
-      "mechanism_Accuracy": 0.4419642857142857,
-      "mechanism_F1": 0.23277569584621913,
-      "label_Accuracy": 0.25892857142857145,
-      "label_F1": 0.15288437808745395,
-      "subject_Accuracy": 0.6205357142857143,
-      "subject_F1": 0.40240127813539156,
-      "target_Accuracy": 0.7276785714285714,
-      "target_F1": 0.49131257221433994
+      "Strict_All4_Acc": 0.008928571428571428,
+      "mechanism_Accuracy": 0.42857142857142855,
+      "mechanism_F1": 0.22013614404918752,
+      "label_Accuracy": 0.15625,
+      "label_F1": 0.07085998970023548,
+      "subject_Accuracy": 0.5892857142857143,
+      "subject_F1": 0.38163155544916716,
+      "target_Accuracy": 0.7142857142857143,
+      "target_F1": 0.4816202605898816
     },
     "Friend Group": {
-      "Count": 124,
-      "Strict_All4_Acc": 0.03225806451612903,
-      "mechanism_Accuracy": 0.2903225806451613,
-      "mechanism_F1": 0.20410161219756423,
-      "label_Accuracy": 0.2903225806451613,
-      "label_F1": 0.12156720562250517,
-      "subject_Accuracy": 0.7741935483870968,
-      "subject_F1": 0.7675588432146595,
-      "target_Accuracy": 0.6370967741935484,
-      "target_F1": 0.5034230050259385
+      "Count": 121,
+      "Strict_All4_Acc": 0.01652892561983471,
+      "mechanism_Accuracy": 0.30578512396694213,
+      "mechanism_F1": 0.2188671212880161,
+      "label_Accuracy": 0.1322314049586777,
+      "label_F1": 0.06654903738237071,
+      "subject_Accuracy": 0.768595041322314,
+      "subject_F1": 0.7644294779217112,
+      "target_Accuracy": 0.6198347107438017,
+      "target_F1": 0.4863070727182226
     },
     "Education & Campus": {
-      "Count": 55,
+      "Count": 59,
       "Strict_All4_Acc": 0.0,
-      "mechanism_Accuracy": 0.5454545454545454,
-      "mechanism_F1": 0.35626803751803754,
-      "label_Accuracy": 0.16363636363636364,
-      "label_F1": 0.13546043903186758,
-      "subject_Accuracy": 0.45454545454545453,
-      "subject_F1": 0.3749951124144672,
-      "target_Accuracy": 0.5454545454545454,
-      "target_F1": 0.4747053073428785
+      "mechanism_Accuracy": 0.5423728813559322,
+      "mechanism_F1": 0.32261072261072266,
+      "label_Accuracy": 0.1016949152542373,
+      "label_F1": 0.06417233560090703,
+      "subject_Accuracy": 0.5084745762711864,
+      "subject_F1": 0.40998013750954926,
+      "target_Accuracy": 0.576271186440678,
+      "target_F1": 0.48880397639018325
     },
     "Friendship Interactions": {
       "Count": 16,
       "Strict_All4_Acc": 0.0,
-      "mechanism_Accuracy": 0.4375,
-      "mechanism_F1": 0.4,
+      "mechanism_Accuracy": 0.375,
+      "mechanism_F1": 0.37333333333333335,
       "label_Accuracy": 0.125,
-      "label_F1": 0.05952380952380952,
+      "label_F1": 0.047619047619047616,
       "subject_Accuracy": 0.625,
       "subject_F1": 0.6458874458874458,
       "target_Accuracy": 0.6875,
@@ -149,140 +149,115 @@
   },
   "4. By Culture": {
     "General Culture": {
-      "Count": 2675,
-      "Strict_All4_Acc": 0.05420560747663551,
-      "mechanism_Accuracy": 0.46579439252336446,
-      "mechanism_F1": 0.24322751053854072,
-      "label_Accuracy": 0.22242990654205608,
-      "label_F1": 0.12051945734788087,
-      "subject_Accuracy": 0.6512149532710281,
-      "subject_F1": 0.3291923662028945,
-      "target_Accuracy": 0.7454205607476635,
-      "target_F1": 0.5028205073203843
+      "Count": 2720,
+      "Strict_All4_Acc": 0.02389705882352941,
+      "mechanism_Accuracy": 0.4588235294117647,
+      "mechanism_F1": 0.2396380417756501,
+      "label_Accuracy": 0.12573529411764706,
+      "label_F1": 0.059182006875323295,
+      "subject_Accuracy": 0.6400735294117647,
+      "subject_F1": 0.3239413637712369,
+      "target_Accuracy": 0.7345588235294118,
+      "target_F1": 0.4954061174709521
     },
     "Arab Culture": {
-      "Count": 100,
-      "Strict_All4_Acc": 0.05,
-      "mechanism_Accuracy": 0.57,
-      "mechanism_F1": 0.3338467672678199,
-      "label_Accuracy": 0.13,
-      "label_F1": 0.09479488043694313,
-      "subject_Accuracy": 0.67,
-      "subject_F1": 0.6625000000000001,
-      "target_Accuracy": 0.79,
-      "target_F1": 0.7834592009206314
+      "Count": 103,
+      "Strict_All4_Acc": 0.009708737864077669,
+      "mechanism_Accuracy": 0.5533980582524272,
+      "mechanism_F1": 0.3220325814536341,
+      "label_Accuracy": 0.06796116504854369,
+      "label_F1": 0.06563682869725754,
+      "subject_Accuracy": 0.6699029126213593,
+      "subject_F1": 0.6572581965676435,
+      "target_Accuracy": 0.7766990291262136,
+      "target_F1": 0.7717322065794379
     },
     "American Culture": {
-      "Count": 46,
-      "Strict_All4_Acc": 0.043478260869565216,
-      "mechanism_Accuracy": 0.5217391304347826,
-      "mechanism_F1": 0.2989116309291748,
-      "label_Accuracy": 0.1956521739130435,
-      "label_F1": 0.07095238095238095,
-      "subject_Accuracy": 0.5652173913043478,
-      "subject_F1": 0.4479918864097363,
-      "target_Accuracy": 0.6086956521739131,
-      "target_F1": 0.48693548387096774
+      "Count": 49,
+      "Strict_All4_Acc": 0.02040816326530612,
+      "mechanism_Accuracy": 0.6122448979591837,
+      "mechanism_F1": 0.3550724637681159,
+      "label_Accuracy": 0.14285714285714285,
+      "label_F1": 0.037037037037037035,
+      "subject_Accuracy": 0.5714285714285714,
+      "subject_F1": 0.4469738240123635,
+      "target_Accuracy": 0.5918367346938775,
+      "target_F1": 0.46971326164874555
     },
     "Muslim Culture": {
-      "Count": 20,
-      "Strict_All4_Acc": 0.15,
-      "mechanism_Accuracy": 0.6,
-      "mechanism_F1": 0.4134199134199134,
-      "label_Accuracy": 0.3,
-      "label_F1": 0.12976190476190474,
-      "subject_Accuracy": 0.7,
-      "subject_F1": 0.5424175824175824,
-      "target_Accuracy": 0.75,
-      "target_F1": 0.5747058823529411
+      "Count": 21,
+      "Strict_All4_Acc": 0.0,
+      "mechanism_Accuracy": 0.5714285714285714,
+      "mechanism_F1": 0.39981447124304265,
+      "label_Accuracy": 0.14285714285714285,
+      "label_F1": 0.05357142857142857,
+      "subject_Accuracy": 0.7142857142857143,
+      "subject_F1": 0.545989010989011,
+      "target_Accuracy": 0.7619047619047619,
+      "target_F1": 0.5813725490196078
     },
     "African American Culture": {
-      "Count": 18,
+      "Count": 20,
       "Strict_All4_Acc": 0.0,
-      "mechanism_Accuracy": 0.4444444444444444,
-      "mechanism_F1": 0.1688034188034188,
-      "label_Accuracy": 0.2777777777777778,
-      "label_F1": 0.15476190476190474,
-      "subject_Accuracy": 0.5555555555555556,
-      "subject_F1": 0.5555555555555556,
-      "target_Accuracy": 0.6111111111111112,
-      "target_F1": 0.6191239316239316
+      "mechanism_Accuracy": 0.45,
+      "mechanism_F1": 0.17222222222222222,
+      "label_Accuracy": 0.15,
+      "label_F1": 0.09375,
+      "subject_Accuracy": 0.55,
+      "subject_F1": 0.553030303030303,
+      "target_Accuracy": 0.65,
+      "target_F1": 0.6524572649572651
     },
     "Jewish Culture": {
       "Count": 19,
       "Strict_All4_Acc": 0.0,
       "mechanism_Accuracy": 0.631578947368421,
       "mechanism_F1": 0.42788461538461536,
-      "label_Accuracy": 0.3157894736842105,
-      "label_F1": 0.19999999999999998,
+      "label_Accuracy": 0.15789473684210525,
+      "label_F1": 0.15238095238095237,
       "subject_Accuracy": 0.5789473684210527,
       "subject_F1": 0.4036195286195286,
       "target_Accuracy": 0.8421052631578947,
       "target_F1": 0.6814285714285714
     },
     "Indian Culture": {
-      "Count": 15,
+      "Count": 17,
       "Strict_All4_Acc": 0.0,
-      "mechanism_Accuracy": 0.6,
-      "mechanism_F1": 0.24333333333333335,
-      "label_Accuracy": 0.26666666666666666,
-      "label_F1": 0.20833333333333334,
-      "subject_Accuracy": 0.6,
-      "subject_F1": 0.5014430014430014,
-      "target_Accuracy": 0.6666666666666666,
-      "target_F1": 0.6809523809523809
+      "mechanism_Accuracy": 0.47058823529411764,
+      "mechanism_F1": 0.2,
+      "label_Accuracy": 0.058823529411764705,
+      "label_F1": 0.015625,
+      "subject_Accuracy": 0.5294117647058824,
+      "subject_F1": 0.35974025974025975,
+      "target_Accuracy": 0.7058823529411765,
+      "target_F1": 0.5835497835497835
     },
     "East Asian Culture": {
       "Count": 14,
       "Strict_All4_Acc": 0.0,
       "mechanism_Accuracy": 0.6428571428571429,
       "mechanism_F1": 0.3951762523191094,
-      "label_Accuracy": 0.2857142857142857,
-      "label_F1": 0.19191919191919188,
-      "subject_Accuracy": 0.5,
-      "subject_F1": 0.3547619047619047,
-      "target_Accuracy": 0.5714285714285714,
-      "target_F1": 0.393073593073593
+      "label_Accuracy": 0.14285714285714285,
+      "label_F1": 0.1282051282051282,
+      "subject_Accuracy": 0.42857142857142855,
+      "subject_F1": 0.30333333333333334,
+      "target_Accuracy": 0.5,
+      "target_F1": 0.36761904761904757
     }
   },
   "5. Error Analysis": {
     "mechanism_mismatches": {
-      "count": 26,
+      "count": 28,
       "samples": [
         {
-          "id": "attitude_5525",
+          "id": "attitude_3610",
           "given_sit": "attitude",
           "pred_mech": "sympathetic"
         },
         {
-          "id": "attitude_2088",
+          "id": "attitude_0767",
           "given_sit": "attitude",
-          "pred_mech": "sympathetic"
-        },
-        {
-          "id": "attitude_3759",
-          "given_sit": "attitude",
-          "pred_mech": "sympathetic"
-        },
-        {
-          "id": "attitude_1135",
-          "given_sit": "attitude",
-          "pred_mech": "malicious_manipulation"
-        },
-        {
-          "id": "attitude_2164",
-          "given_sit": "attitude",
-          "pred_mech": "sympathetic"
-        },
-        {
-          "id": "attitude_1694",
-          "given_sit": "attitude",
-          "pred_mech": "malicious_manipulation"
-        },
-        {
-          "id": "attitude_0412",
-          "given_sit": "attitude",
-          "pred_mech": "sympathetic"
+          "pred_mech": "contemptuous"
         },
         {
           "id": "attitude_1181",
@@ -295,14 +270,24 @@
           "pred_mech": "sympathetic"
         },
         {
-          "id": "intent_6086",
-          "given_sit": "intent",
-          "pred_mech": "benevolent_deception"
+          "id": "attitude_0412",
+          "given_sit": "attitude",
+          "pred_mech": "sympathetic"
         },
         {
-          "id": "affection_3377",
-          "given_sit": "affection",
+          "id": "attitude_2056",
+          "given_sit": "attitude",
+          "pred_mech": "sympathetic"
+        },
+        {
+          "id": "attitude_5370",
+          "given_sit": "attitude",
           "pred_mech": "malicious_manipulation"
+        },
+        {
+          "id": "attitude_3589",
+          "given_sit": "attitude",
+          "pred_mech": "sympathetic"
         },
         {
           "id": "intent_6851",
@@ -310,47 +295,7 @@
           "pred_mech": "benevolent_deception"
         },
         {
-          "id": "attitude_3456",
-          "given_sit": "attitude",
-          "pred_mech": "sympathetic"
-        },
-        {
-          "id": "attitude_4343",
-          "given_sit": "attitude",
-          "pred_mech": "sympathetic"
-        },
-        {
-          "id": "attitude_3610",
-          "given_sit": "attitude",
-          "pred_mech": "sympathetic"
-        },
-        {
-          "id": "attitude_3515",
-          "given_sit": "attitude",
-          "pred_mech": "sympathetic"
-        },
-        {
-          "id": "intent_0043",
-          "given_sit": "intent",
-          "pred_mech": "benevolent_deception"
-        },
-        {
-          "id": "attitude_1720",
-          "given_sit": "attitude",
-          "pred_mech": "concerned"
-        },
-        {
-          "id": "attitude_2271",
-          "given_sit": "attitude",
-          "pred_mech": "sympathetic"
-        },
-        {
-          "id": "attitude_0754",
-          "given_sit": "attitude",
-          "pred_mech": "sympathetic"
-        },
-        {
-          "id": "attitude_3167",
+          "id": "attitude_3759",
           "given_sit": "attitude",
           "pred_mech": "sympathetic"
         },
@@ -360,17 +305,62 @@
           "pred_mech": "malicious_manipulation"
         },
         {
-          "id": "attitude_3589",
+          "id": "attitude_1694",
+          "given_sit": "attitude",
+          "pred_mech": "malicious_manipulation"
+        },
+        {
+          "id": "attitude_1135",
+          "given_sit": "attitude",
+          "pred_mech": "malicious_manipulation"
+        },
+        {
+          "id": "attitude_3515",
           "given_sit": "attitude",
           "pred_mech": "sympathetic"
         },
         {
-          "id": "attitude_0767",
+          "id": "attitude_2164",
           "given_sit": "attitude",
-          "pred_mech": "contemptuous"
+          "pred_mech": "sympathetic"
         },
         {
-          "id": "attitude_3996",
+          "id": "attitude_0650",
+          "given_sit": "attitude",
+          "pred_mech": "sympathetic"
+        },
+        {
+          "id": "attitude_5882",
+          "given_sit": "attitude",
+          "pred_mech": "malicious_manipulation"
+        },
+        {
+          "id": "attitude_2088",
+          "given_sit": "attitude",
+          "pred_mech": "sympathetic"
+        },
+        {
+          "id": "attitude_1720",
+          "given_sit": "attitude",
+          "pred_mech": "concerned"
+        },
+        {
+          "id": "intent_0043",
+          "given_sit": "intent",
+          "pred_mech": "benevolent_deception"
+        },
+        {
+          "id": "affection_3377",
+          "given_sit": "affection",
+          "pred_mech": "malicious_manipulation"
+        },
+        {
+          "id": "attitude_4343",
+          "given_sit": "attitude",
+          "pred_mech": "sympathetic"
+        },
+        {
+          "id": "attitude_3456",
           "given_sit": "attitude",
           "pred_mech": "sympathetic"
         },
@@ -378,71 +368,41 @@
           "id": "attitude_4681",
           "given_sit": "attitude",
           "pred_mech": "sympathetic"
+        },
+        {
+          "id": "intent_6086",
+          "given_sit": "intent",
+          "pred_mech": "benevolent_deception"
+        },
+        {
+          "id": "attitude_3167",
+          "given_sit": "attitude",
+          "pred_mech": "sympathetic"
+        },
+        {
+          "id": "attitude_0754",
+          "given_sit": "attitude",
+          "pred_mech": "sympathetic"
+        },
+        {
+          "id": "attitude_2271",
+          "given_sit": "attitude",
+          "pred_mech": "sympathetic"
         }
       ]
     },
     "label_mismatches": {
-      "count": 21,
+      "count": 4,
       "samples": [
         {
-          "id": "intent_2345",
-          "given_sit": "intent",
-          "pred_label": "Provoke"
-        },
-        {
-          "id": "intent_1596",
-          "given_sit": "intent",
-          "pred_label": "Provoke"
-        },
-        {
-          "id": "intent_1911",
-          "given_sit": "intent",
-          "pred_label": "Provoke"
-        },
-        {
-          "id": "intent_7537",
-          "given_sit": "intent",
-          "pred_label": "Provoke"
-        },
-        {
-          "id": "affection_0009",
+          "id": "affection_3219",
           "given_sit": "affection",
           "pred_label": "Proud"
         },
         {
-          "id": "intent_2838",
-          "given_sit": "intent",
-          "pred_label": "Provoke"
-        },
-        {
-          "id": "intent_6724",
-          "given_sit": "intent",
-          "pred_label": "Provoke"
-        },
-        {
-          "id": "intent_6042",
-          "given_sit": "intent",
-          "pred_label": "Provoke"
-        },
-        {
-          "id": "intent_2446",
-          "given_sit": "intent",
-          "pred_label": "Provoke"
-        },
-        {
-          "id": "intent_3373",
-          "given_sit": "intent",
-          "pred_label": "Provoke"
-        },
-        {
-          "id": "intent_6205",
-          "given_sit": "intent",
-          "pred_label": "Provoke"
-        },
-        {
-          "id": "intent_1766",
-          "given_sit": "intent",
-          "pred_label": "Provoke"
+          "id": "affection_0278",
+          "given_sit": "affection",
+          "pred_label": "Hurt"
         },
         {
           "id": "affection_1229",
@@ -450,54 +410,44 @@
           "pred_label": "Proud"
         },
         {
-          "id": "intent_1280",
-          "given_sit": "intent",
-          "pred_label": "Provoke"
-        },
-        {
-          "id": "intent_8213",
-          "given_sit": "intent",
-          "pred_label": "Provoke"
-        },
-        {
-          "id": "intent_1690",
-          "given_sit": "intent",
-          "pred_label": "Provoke"
-        },
-        {
-          "id": "intent_0419",
-          "given_sit": "intent",
-          "pred_label": "Provoke"
-        },
-        {
-          "id": "intent_1543",
-          "given_sit": "intent",
-          "pred_label": "Provoke"
-        },
-        {
-          "id": "intent_5981",
-          "given_sit": "intent",
-          "pred_label": "Provoke"
-        },
-        {
-          "id": "affection_3219",
+          "id": "affection_0009",
           "given_sit": "affection",
           "pred_label": "Proud"
-        },
-        {
-          "id": "intent_0799",
-          "given_sit": "intent",
-          "pred_label": "Provoke"
         }
       ]
     },
     "format_errors": {
-      "count": 83,
+      "count": 88,
       "samples": [
         {
-          "id": "intent_5367",
+          "id": "intent_5441",
           "pred_sub": "poster",
-          "pred_tgt": "Muslim"
+          "pred_tgt": "the praying crowd"
+        },
+        {
+          "id": "affection_0276",
+          "pred_sub": "bystander",
+          "pred_tgt": "processing delays"
+        },
+        {
+          "id": "affection_1794",
+          "pred_sub": "meme",
+          "pred_tgt": "phone lost on beach"
+        },
+        {
+          "id": "affection_3190",
+          "pred_sub": "poster",
+          "pred_tgt": "audience"
+        },
+        {
+          "id": "affection_1495",
+          "pred_sub": "meme",
+          "pred_tgt": "people considering casual sex"
+        },
+        {
+          "id": "affection_0123",
+          "pred_sub": "survivor",
+          "pred_tgt": "people voting them"
         },
         {
           "id": "affection_0465",
@@ -505,9 +455,284 @@
           "pred_tgt": "politicians shown"
         },
         {
+          "id": "affection_3138",
+          "pred_sub": "general public",
+          "pred_tgt": "internet troll"
+        },
+        {
+          "id": "attitude_2175",
+          "pred_sub": "target3",
+          "pred_tgt": "target2"
+        },
+        {
+          "id": "affection_0721",
+          "pred_sub": "gamer",
+          "pred_tgt": "textile workers"
+        },
+        {
+          "id": "intent_4622",
+          "pred_sub": "poster",
+          "pred_tgt": "jewish community"
+        },
+        {
+          "id": "intent_5248",
+          "pred_sub": "poster",
+          "pred_tgt": "Muslims"
+        },
+        {
+          "id": "affection_3000",
+          "pred_sub": "poster",
+          "pred_tgt": "target0"
+        },
+        {
+          "id": "affection_4913",
+          "pred_sub": "poster",
+          "pred_tgt": "woman in image"
+        },
+        {
+          "id": "intent_6402",
+          "pred_sub": "boy in scout uniform",
+          "pred_tgt": "non-scout peers"
+        },
+        {
+          "id": "affection_5323",
+          "pred_sub": "father",
+          "pred_tgt": "sarcastic rhetorical threat"
+        },
+        {
+          "id": "affection_2145",
+          "pred_sub": "poster",
+          "pred_tgt": "chick-fil-a closed"
+        },
+        {
+          "id": "intent_3029",
+          "pred_sub": "internet troll",
+          "pred_tgt": "owner of the relic"
+        },
+        {
+          "id": "attitude_1719",
+          "pred_sub": "subject1",
+          "pred_tgt": "subject0"
+        },
+        {
+          "id": "affection_3395",
+          "pred_sub": "poster",
+          "pred_tgt": "the pictured blues musician"
+        },
+        {
+          "id": "affection_1824",
+          "pred_sub": "general audience",
+          "pred_tgt": "the corporations"
+        },
+        {
+          "id": "affection_2135",
+          "pred_sub": "poster",
+          "pred_tgt": "player choices"
+        },
+        {
+          "id": "affection_1251",
+          "pred_sub": "poster",
+          "pred_tgt": "romantic intimacy"
+        },
+        {
+          "id": "attitude_1181",
+          "pred_sub": "target2",
+          "pred_tgt": "target0"
+        },
+        {
+          "id": "affection_4021",
+          "pred_sub": "poster",
+          "pred_tgt": "white police"
+        },
+        {
           "id": "intent_3289",
           "pred_sub": "poster",
           "pred_tgt": "a passerby"
+        },
+        {
+          "id": "affection_3869",
+          "pred_sub": "meme",
+          "pred_tgt": "two kids"
+        },
+        {
+          "id": "affection_0348",
+          "pred_sub": "poster",
+          "pred_tgt": "spending on drugs"
+        },
+        {
+          "id": "intent_3639",
+          "pred_sub": "rally participant",
+          "pred_tgt": "political opponents"
+        },
+        {
+          "id": "attitude_0605",
+          "pred_sub": "target3",
+          "pred_tgt": "subject0"
+        },
+        {
+          "id": "affection_1108",
+          "pred_sub": "poster",
+          "pred_tgt": "pictured military leaders"
+        },
+        {
+          "id": "affection_1336",
+          "pred_sub": "penitent",
+          "pred_tgt": "father"
+        },
+        {
+          "id": "intent_6396",
+          "pred_sub": "poster",
+          "pred_tgt": "japanese girlfriend"
+        },
+        {
+          "id": "intent_2757",
+          "pred_sub": "meme poster",
+          "pred_tgt": "democrats"
+        },
+        {
+          "id": "affection_0285",
+          "pred_sub": "poster",
+          "pred_tgt": "muslims perceived as terrorists"
+        },
+        {
+          "id": "affection_5253",
+          "pred_sub": "poster",
+          "pred_tgt": "stevie wonder vision impairment"
+        },
+        {
+          "id": "intent_5968",
+          "pred_sub": "poster",
+          "pred_tgt": "teasing about someone's hobbies or interests"
+        },
+        {
+          "id": "affection_0949",
+          "pred_sub": "poster",
+          "pred_tgt": "foreigner"
+        },
+        {
+          "id": "intent_6450",
+          "pred_sub": "satirist",
+          "pred_tgt": "an online target"
+        },
+        {
+          "id": "intent_2838",
+          "pred_sub": "meme poster",
+          "pred_tgt": "college protesters"
+        },
+        {
+          "id": "affection_4418",
+          "pred_sub": "doctor",
+          "pred_tgt": "patient"
+        },
+        {
+          "id": "attitude_1694",
+          "pred_sub": "poster",
+          "pred_tgt": "Jewish people"
+        },
+        {
+          "id": "intent_1994",
+          "pred_sub": "satirist",
+          "pred_tgt": "public figure mentioned"
+        },
+        {
+          "id": "intent_0320",
+          "pred_sub": "poster",
+          "pred_tgt": "critics oppose casteist"
+        },
+        {
+          "id": "attitude_2846",
+          "pred_sub": "sticker",
+          "pred_tgt": "Muslims"
+        },
+        {
+          "id": "affection_4816",
+          "pred_sub": "poster",
+          "pred_tgt": "friends tired of your politics"
+        },
+        {
+          "id": "intent_5360",
+          "pred_sub": "meme poster",
+          "pred_tgt": "American muslim political figure"
+        },
+        {
+          "id": "intent_4664",
+          "pred_sub": "poster",
+          "pred_tgt": "teasing about someone's hobbies or interests"
+        },
+        {
+          "id": "affection_1410",
+          "pred_sub": "meme",
+          "pred_tgt": "transgender community"
+        },
+        {
+          "id": "intent_4137",
+          "pred_sub": "meme poster",
+          "pred_tgt": "Hillary Clinton"
+        },
+        {
+          "id": "attitude_3282",
+          "pred_sub": "poster",
+          "pred_tgt": "Asians"
+        },
+        {
+          "id": "affection_4179",
+          "pred_sub": "poster",
+          "pred_tgt": "muslim"
+        },
+        {
+          "id": "intent_2211",
+          "pred_sub": "target0",
+          "pred_tgt": "target0"
+        },
+        {
+          "id": "affection_0965",
+          "pred_sub": "sneakerheads",
+          "pred_tgt": "their Jordans"
+        },
+        {
+          "id": "affection_4349",
+          "pred_sub": "poster",
+          "pred_tgt": "enslaved people"
+        },
+        {
+          "id": "affection_1968",
+          "pred_sub": "poster",
+          "pred_tgt": "people scared of boars"
+        },
+        {
+          "id": "attitude_6532",
+          "pred_sub": "meme",
+          "pred_tgt": "target2"
+        },
+        {
+          "id": "affection_4186",
+          "pred_sub": "poster",
+          "pred_tgt": "mainstream media"
+        },
+        {
+          "id": "intent_0189",
+          "pred_sub": "meme",
+          "pred_tgt": "Japan"
+        },
+        {
+          "id": "intent_5367",
+          "pred_sub": "poster",
+          "pred_tgt": "Muslim"
+        },
+        {
+          "id": "affection_2380",
+          "pred_sub": "hipster",
+          "pred_tgt": "man with a man bun"
+        },
+        {
+          "id": "attitude_5529",
+          "pred_sub": "poster",
+          "pred_tgt": "stalkers"
+        },
+        {
+          "id": "affection_4628",
+          "pred_sub": "poster",
+          "pred_tgt": "immigration policy"
         },
         {
           "id": "affection_2826",
@@ -520,189 +745,14 @@
           "pred_tgt": "online group admins"
         },
         {
-          "id": "affection_1656",
-          "pred_sub": "father",
-          "pred_tgt": "dark sarcastic humor"
-        },
-        {
-          "id": "affection_4828",
-          "pred_sub": "parent",
-          "pred_tgt": "children affected by war"
-        },
-        {
-          "id": "intent_5441",
-          "pred_sub": "poster",
-          "pred_tgt": "the praying crowd"
-        },
-        {
-          "id": "affection_4021",
-          "pred_sub": "poster",
-          "pred_tgt": "police"
-        },
-        {
-          "id": "intent_6450",
-          "pred_sub": "satirist",
-          "pred_tgt": "an online target"
-        },
-        {
-          "id": "affection_1336",
-          "pred_sub": "penitent",
-          "pred_tgt": "father"
-        },
-        {
-          "id": "intent_0276",
-          "pred_sub": "poster",
-          "pred_tgt": "the Pope"
-        },
-        {
-          "id": "intent_6437",
-          "pred_sub": "intruder",
-          "pred_tgt": "school"
-        },
-        {
-          "id": "attitude_3267",
-          "pred_sub": "meme poster",
-          "pred_tgt": "anxious student"
-        },
-        {
-          "id": "attitude_1694",
-          "pred_sub": "poster",
-          "pred_tgt": "Jewish people"
-        },
-        {
-          "id": "affection_1824",
-          "pred_sub": "general audience",
-          "pred_tgt": "the corporations"
-        },
-        {
-          "id": "affection_2545",
-          "pred_sub": "poster",
-          "pred_tgt": "endangered species white"
-        },
-        {
-          "id": "attitude_1181",
-          "pred_sub": "target2",
+          "id": "attitude_6066",
+          "pred_sub": "target0",
           "pred_tgt": "target0"
         },
         {
-          "id": "affection_0244",
+          "id": "intent_1747",
           "pred_sub": "poster",
-          "pred_tgt": "recruiter"
-        },
-        {
-          "id": "intent_4664",
-          "pred_sub": "poster",
-          "pred_tgt": "teasing about someone's hobbies or interests"
-        },
-        {
-          "id": "attitude_6314",
-          "pred_sub": "penitent",
-          "pred_tgt": "father"
-        },
-        {
-          "id": "intent_3763",
-          "pred_sub": "poster",
-          "pred_tgt": "muslims"
-        },
-        {
-          "id": "affection_0348",
-          "pred_sub": "poster",
-          "pred_tgt": "spending on drugs"
-        },
-        {
-          "id": "attitude_5329",
-          "pred_sub": "poster",
-          "pred_tgt": "Discrimination against Black People"
-        },
-        {
-          "id": "intent_6402",
-          "pred_sub": "boy in scout uniform",
-          "pred_tgt": "non-scout peers"
-        },
-        {
-          "id": "affection_2241",
-          "pred_sub": "poster satirical narrator",
-          "pred_tgt": "racism associated extremist"
-        },
-        {
-          "id": "attitude_3456",
-          "pred_sub": "target0",
-          "pred_tgt": "subject0"
-        },
-        {
-          "id": "affection_0721",
-          "pred_sub": "gamer",
-          "pred_tgt": "textile workers"
-        },
-        {
-          "id": "attitude_2846",
-          "pred_sub": "sticker",
-          "pred_tgt": "Muslims"
-        },
-        {
-          "id": "attitude_2175",
-          "pred_sub": "target3",
-          "pred_tgt": "target2"
-        },
-        {
-          "id": "intent_2757",
-          "pred_sub": "meme poster",
-          "pred_tgt": "democrats"
-        },
-        {
-          "id": "attitude_5529",
-          "pred_sub": "poster",
-          "pred_tgt": "sexual predators"
-        },
-        {
-          "id": "intent_1780",
-          "pred_sub": "meme",
-          "pred_tgt": "Muslim democrats"
-        },
-        {
-          "id": "intent_1994",
-          "pred_sub": "satirist",
-          "pred_tgt": "public figure mentioned"
-        },
-        {
-          "id": "affection_1108",
-          "pred_sub": "poster",
-          "pred_tgt": "pictured military leaders"
-        },
-        {
-          "id": "intent_5248",
-          "pred_sub": "poster",
-          "pred_tgt": "Muslims"
-        },
-        {
-          "id": "affection_3138",
-          "pred_sub": "general public",
-          "pred_tgt": "internet troll"
-        },
-        {
-          "id": "attitude_6532",
-          "pred_sub": "meme",
-          "pred_tgt": "target2"
-        },
-        {
-          "id": "affection_0949",
-          "pred_sub": "poster",
-          "pred_tgt": "foreigner"
-        },
-        {
-          "id": "attitude_3282",
-          "pred_sub": "poster",
-          "pred_tgt": "Asians"
-        },
-        {
-          "id": "affection_4004",
-          "pred_sub": "poster",
-          "pred_tgt": "christians"
-        },
-        {
-          "id": "affection_0965",
-          "pred_sub": "sneakerheads",
-          "pred_tgt": "their Jordans"
+          "pred_tgt": "the somali refugee"
         },
         {
           "id": "attitude_1086",
@@ -710,154 +760,9 @@
           "pred_tgt": "high-ranking official"
         },
         {
-          "id": "intent_4799",
+          "id": "affection_4034",
           "pred_sub": "poster",
-          "pred_tgt": "online trolls"
-        },
-        {
-          "id": "affection_4913",
-          "pred_sub": "poster",
-          "pred_tgt": "woman in image"
-        },
-        {
-          "id": "affection_1410",
-          "pred_sub": "meme",
-          "pred_tgt": "transgender community"
-        },
-        {
-          "id": "affection_4816",
-          "pred_sub": "poster",
-          "pred_tgt": "friends tired of your politics"
-        },
-        {
-          "id": "affection_1968",
-          "pred_sub": "poster",
-          "pred_tgt": "people scared of boars"
-        },
-        {
-          "id": "affection_2848",
-          "pred_sub": "school nativity play",
-          "pred_tgt": "cardboard camel puppet"
-        },
-        {
-          "id": "affection_2380",
-          "pred_sub": "hipster",
-          "pred_tgt": "man with a man bun"
-        },
-        {
-          "id": "attitude_1719",
-          "pred_sub": "subject1",
-          "pred_tgt": "subject0"
-        },
-        {
-          "id": "affection_0123",
-          "pred_sub": "survivor",
-          "pred_tgt": "people voting them"
-        },
-        {
-          "id": "affection_1765",
-          "pred_sub": "target2",
-          "pred_tgt": "target0"
-        },
-        {
-          "id": "affection_2145",
-          "pred_sub": "poster",
-          "pred_tgt": "chick-fil-a closed"
-        },
-        {
-          "id": "affection_5253",
-          "pred_sub": "poster",
-          "pred_tgt": "stevie wonder vision impairment"
-        },
-        {
-          "id": "affection_4186",
-          "pred_sub": "poster",
-          "pred_tgt": "mainstream media"
-        },
-        {
-          "id": "affection_1794",
-          "pred_sub": "meme",
-          "pred_tgt": "lost friend on beach"
-        },
-        {
-          "id": "affection_4349",
-          "pred_sub": "poster",
-          "pred_tgt": "enslaved people"
-        },
-        {
-          "id": "affection_1251",
-          "pred_sub": "poster",
-          "pred_tgt": "romantic intimacy"
-        },
-        {
-          "id": "intent_3639",
-          "pred_sub": "rally participant",
-          "pred_tgt": "political opponents"
-        },
-        {
-          "id": "affection_1495",
-          "pred_sub": "meme",
-          "pred_tgt": "people considering casual sex"
-        },
-        {
-          "id": "affection_3888",
-          "pred_sub": "meme",
-          "pred_tgt": "sexual doble meaning"
-        },
-        {
-          "id": "affection_4418",
-          "pred_sub": "doctor",
-          "pred_tgt": "patient"
-        },
-        {
-          "id": "intent_0189",
-          "pred_sub": "meme",
-          "pred_tgt": "Japan"
-        },
-        {
-          "id": "affection_3000",
-          "pred_sub": "poster",
-          "pred_tgt": "target0"
-        },
-        {
-          "id": "intent_2211",
-          "pred_sub": "target0",
-          "pred_tgt": "target0"
-        },
-        {
-          "id": "intent_4622",
-          "pred_sub": "poster",
-          "pred_tgt": "jewish community"
-        },
-        {
-          "id": "intent_5360",
-          "pred_sub": "meme poster",
-          "pred_tgt": "American muslim political figure"
-        },
-        {
-          "id": "affection_3869",
-          "pred_sub": "meme",
-          "pred_tgt": "two kids"
-        },
-        {
-          "id": "affection_4628",
-          "pred_sub": "poster",
-          "pred_tgt": "immigration policy"
-        },
-        {
-          "id": "affection_3395",
-          "pred_sub": "poster",
-          "pred_tgt": "the pictured blues musician"
-        },
-        {
-          "id": "affection_5323",
-          "pred_sub": "father",
-          "pred_tgt": "sarcastic rhetorical threat"
-        },
-        {
-          "id": "intent_3029",
-          "pred_sub": "internet troll",
-          "pred_tgt": "owner of the relic"
+          "pred_tgt": "political persuasion"
         },
         {
           "id": "intent_7543",
@@ -865,14 +770,34 @@
           "pred_tgt": "muslim congressperson"
         },
         {
-          "id": "intent_4137",
-          "pred_sub": "meme poster",
-          "pred_tgt": "Hillary Clinton"
+          "id": "intent_4799",
+          "pred_sub": "poster",
+          "pred_tgt": "online trolls"
         },
         {
-          "id": "affection_2135",
+          "id": "affection_4004",
           "pred_sub": "poster",
-          "pred_tgt": "player choices"
+          "pred_tgt": "christians"
+        },
+        {
+          "id": "affection_2241",
+          "pred_sub": "poster satirical narrator",
+          "pred_tgt": "racism associated extremist"
+        },
+        {
+          "id": "intent_3763",
+          "pred_sub": "poster",
+          "pred_tgt": "muslims"
+        },
+        {
+          "id": "affection_1656",
+          "pred_sub": "father",
+          "pred_tgt": "dark sarcastic humor"
+        },
+        {
+          "id": "affection_1765",
+          "pred_sub": "target2",
+          "pred_tgt": "target0"
         },
         {
           "id": "affection_4927",
@@ -880,24 +805,14 @@
           "pred_tgt": "catholic church abuse scandals"
         },
         {
-          "id": "affection_4034",
-          "pred_sub": "poster",
-          "pred_tgt": "political persuasion"
+          "id": "affection_3888",
+          "pred_sub": "meme",
+          "pred_tgt": "sexual doble meaning"
         },
         {
-          "id": "affection_4179",
+          "id": "attitude_5329",
           "pred_sub": "poster",
-          "pred_tgt": "muslim"
-        },
-        {
-          "id": "intent_6396",
-          "pred_sub": "poster",
-          "pred_tgt": "japanese girlfriend"
-        },
-        {
-          "id": "attitude_6066",
-          "pred_sub": "target0",
-          "pred_tgt": "target0"
+          "pred_tgt": "man being killed"
         },
         {
           "id": "intent_1601",
@@ -905,9 +820,44 @@
           "pred_tgt": "Rivers"
         },
         {
-          "id": "affection_3190",
+          "id": "intent_0276",
           "pred_sub": "poster",
-          "pred_tgt": "audience"
+          "pred_tgt": "the Pope"
+        },
+        {
+          "id": "attitude_3456",
+          "pred_sub": "target0",
+          "pred_tgt": "subject0"
+        },
+        {
+          "id": "affection_4828",
+          "pred_sub": "parent",
+          "pred_tgt": "children affected by war"
+        },
+        {
+          "id": "affection_2545",
+          "pred_sub": "poster",
+          "pred_tgt": "endangered species white"
+        },
+        {
+          "id": "attitude_6314",
+          "pred_sub": "penitent",
+          "pred_tgt": "father"
+        },
+        {
+          "id": "intent_6437",
+          "pred_sub": "intruder",
+          "pred_tgt": "school"
+        },
+        {
+          "id": "intent_1780",
+          "pred_sub": "meme",
+          "pred_tgt": "Muslim democrats"
+        },
+        {
+          "id": "affection_0244",
+          "pred_sub": "poster",
+          "pred_tgt": "recruiter"
         }
       ]
     }

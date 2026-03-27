@@ -1,0 +1,15 @@
+{
+  "source_total": 200,
+  "selected_total": 145,
+  "kept_by_scenario": {
+    "affection": 40,
+    "intent": 46,
+    "attitude": 59
+  },
+  "excluded_by_scenario": {
+    "intent": 34,
+    "attitude": 21
+  },
+  "unknown_intent_label_count": 0,
+  "unknown_intent_labels": []
+}

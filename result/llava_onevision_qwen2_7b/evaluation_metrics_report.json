@@ -1,0 +1,1235 @@
+{
+  "1. Overall (2963 Successful Samples)": {
+    "Count": 2963,
+    "Strict_All4_Acc": 0.009787377657779277,
+    "mechanism_Accuracy": 0.30779615254809317,
+    "mechanism_F1": 0.07555113533497979,
+    "label_Accuracy": 0.10698616267296658,
+    "label_F1": 0.030259303117810023,
+    "subject_Accuracy": 0.47789402632467093,
+    "subject_F1": 0.21147333399083,
+    "target_Accuracy": 0.5271684103948701,
+    "target_F1": 0.2659565350702753
+  },
+  "2. By Scenario": {
+    "affection": {
+      "Count": 863,
+      "Strict_All4_Acc": 0.012746234067207415,
+      "mechanism_Accuracy": 0.2827346465816918,
+      "mechanism_F1": 0.09105734021993772,
+      "label_Accuracy": 0.23290845886442643,
+      "label_F1": 0.037155564448514165,
+      "subject_Accuracy": 0.4159907300115875,
+      "subject_F1": 0.183169126967086,
+      "target_Accuracy": 0.5480880648899189,
+      "target_F1": 0.27922051274567317
+    },
+    "attitude": {
+      "Count": 945,
+      "Strict_All4_Acc": 0.01798941798941799,
+      "mechanism_Accuracy": 0.5671957671957671,
+      "mechanism_F1": 0.1040990520733286,
+      "label_Accuracy": 0.1037037037037037,
+      "label_F1": 0.030254303165666914,
+      "subject_Accuracy": 0.43703703703703706,
+      "subject_F1": 0.24475577289569456,
+      "target_Accuracy": 0.5396825396825397,
+      "target_F1": 0.3587764979516077
+    },
+    "intent": {
+      "Count": 1155,
+      "Strict_All4_Acc": 0.0008658008658008658,
+      "mechanism_Accuracy": 0.11428571428571428,
+      "mechanism_F1": 0.01711015651745746,
+      "label_Accuracy": 0.015584415584415584,
+      "label_F1": 0.0014614541468761417,
+      "subject_Accuracy": 0.5575757575757576,
+      "subject_F1": 0.44533124436619637,
+      "target_Accuracy": 0.5012987012987012,
+      "target_F1": 0.3375685227908032
+    }
+  },
+  "3. By Domain": {
+    "Online & Social Media": {
+      "Count": 1287,
+      "Strict_All4_Acc": 0.00777000777000777,
+      "mechanism_Accuracy": 0.3014763014763015,
+      "mechanism_F1": 0.0913660506123879,
+      "label_Accuracy": 0.1048951048951049,
+      "label_F1": 0.039276814122960434,
+      "subject_Accuracy": 0.4693084693084693,
+      "subject_F1": 0.23335366331596824,
+      "target_Accuracy": 0.5501165501165501,
+      "target_F1": 0.31716151328983383
+    },
+    "Public & Service": {
+      "Count": 422,
+      "Strict_All4_Acc": 0.016587677725118485,
+      "mechanism_Accuracy": 0.35071090047393366,
+      "mechanism_F1": 0.14933855525847273,
+      "label_Accuracy": 0.10900473933649289,
+      "label_F1": 0.050297506880917296,
+      "subject_Accuracy": 0.5165876777251185,
+      "subject_F1": 0.41094054615722353,
+      "target_Accuracy": 0.556872037914692,
+      "target_F1": 0.4493602360761514
+    },
+    "Workplace": {
+      "Count": 429,
+      "Strict_All4_Acc": 0.009324009324009324,
+      "mechanism_Accuracy": 0.3006993006993007,
+      "mechanism_F1": 0.10774204350720032,
+      "label_Accuracy": 0.08857808857808858,
+      "label_F1": 0.037777669968977926,
+      "subject_Accuracy": 0.4195804195804196,
+      "subject_F1": 0.2633981765497657,
+      "target_Accuracy": 0.4592074592074592,
+      "target_F1": 0.2604343817932192
+    },
+    "Intimate Relationships": {
+      "Count": 405,
+      "Strict_All4_Acc": 0.014814814814814815,
+      "mechanism_Accuracy": 0.28641975308641976,
+      "mechanism_F1": 0.11422227681263768,
+      "label_Accuracy": 0.11851851851851852,
+      "label_F1": 0.04928087346049168,
+      "subject_Accuracy": 0.508641975308642,
+      "subject_F1": 0.2892209756052323,
+      "target_Accuracy": 0.5654320987654321,
+      "target_F1": 0.3262830433701821
+    },
+    "Family Conversations": {
+      "Count": 224,
+      "Strict_All4_Acc": 0.008928571428571428,
+      "mechanism_Accuracy": 0.33482142857142855,
+      "mechanism_F1": 0.14206429249130487,
+      "label_Accuracy": 0.11160714285714286,
+      "label_F1": 0.041197145849418304,
+      "subject_Accuracy": 0.5,
+      "subject_F1": 0.38361381322756627,
+      "target_Accuracy": 0.48660714285714285,
+      "target_F1": 0.3925208924456561
+    },
+    "Friend Group": {
+      "Count": 121,
+      "Strict_All4_Acc": 0.0,
+      "mechanism_Accuracy": 0.256198347107438,
+      "mechanism_F1": 0.11377456538170824,
+      "label_Accuracy": 0.10743801652892562,
+      "label_F1": 0.04491497152787475,
+      "subject_Accuracy": 0.5537190082644629,
+      "subject_F1": 0.4328169764448835,
+      "target_Accuracy": 0.4132231404958678,
+      "target_F1": 0.2641433887606576
+    },
+    "Education & Campus": {
+      "Count": 59,
+      "Strict_All4_Acc": 0.0,
+      "mechanism_Accuracy": 0.3559322033898305,
+      "mechanism_F1": 0.17388493859082094,
+      "label_Accuracy": 0.15254237288135594,
+      "label_F1": 0.09948384948384947,
+      "subject_Accuracy": 0.3898305084745763,
+      "subject_F1": 0.3663194444444444,
+      "target_Accuracy": 0.5084745762711864,
+      "target_F1": 0.4898346236261837
+    },
+    "Friendship Interactions": {
+      "Count": 16,
+      "Strict_All4_Acc": 0.0,
+      "mechanism_Accuracy": 0.25,
+      "mechanism_F1": 0.22433862433862434,
+      "label_Accuracy": 0.1875,
+      "label_F1": 0.08181818181818182,
+      "subject_Accuracy": 0.375,
+      "subject_F1": 0.39166666666666666,
+      "target_Accuracy": 0.25,
+      "target_F1": 0.17777777777777776
+    }
+  },
+  "4. By Culture": {
+    "General Culture": {
+      "Count": 2720,
+      "Strict_All4_Acc": 0.009926470588235294,
+      "mechanism_Accuracy": 0.30514705882352944,
+      "mechanism_F1": 0.08423581377763895,
+      "label_Accuracy": 0.10845588235294118,
+      "label_F1": 0.03176344148799991,
+      "subject_Accuracy": 0.4772058823529412,
+      "subject_F1": 0.21091137129028065,
+      "target_Accuracy": 0.5316176470588235,
+      "target_F1": 0.26818348184227914
+    },
+    "Arab Culture": {
+      "Count": 103,
+      "Strict_All4_Acc": 0.0,
+      "mechanism_Accuracy": 0.3106796116504854,
+      "mechanism_F1": 0.10325727348098265,
+      "label_Accuracy": 0.08737864077669903,
+      "label_F1": 0.03603409213507391,
+      "subject_Accuracy": 0.49514563106796117,
+      "subject_F1": 0.3923772253184018,
+      "target_Accuracy": 0.49514563106796117,
+      "target_F1": 0.397044288910149
+    },
+    "American Culture": {
+      "Count": 49,
+      "Strict_All4_Acc": 0.04081632653061224,
+      "mechanism_Accuracy": 0.30612244897959184,
+      "mechanism_F1": 0.11275510204081633,
+      "label_Accuracy": 0.10204081632653061,
+      "label_F1": 0.04615384615384615,
+      "subject_Accuracy": 0.5510204081632653,
+      "subject_F1": 0.43656084656084654,
+      "target_Accuracy": 0.5306122448979592,
+      "target_F1": 0.4047004608294931
+    },
+    "Muslim Culture": {
+      "Count": 21,
+      "Strict_All4_Acc": 0.0,
+      "mechanism_Accuracy": 0.23809523809523808,
+      "mechanism_F1": 0.1393939393939394,
+      "label_Accuracy": 0.14285714285714285,
+      "label_F1": 0.04411764705882353,
+      "subject_Accuracy": 0.6190476190476191,
+      "subject_F1": 0.4992857142857143,
+      "target_Accuracy": 0.47619047619047616,
+      "target_F1": 0.35928571428571426
+    },
+    "African American Culture": {
+      "Count": 20,
+      "Strict_All4_Acc": 0.0,
+      "mechanism_Accuracy": 0.5,
+      "mechanism_F1": 0.2607142857142857,
+      "label_Accuracy": 0.05,
+      "label_F1": 0.029411764705882353,
+      "subject_Accuracy": 0.25,
+      "subject_F1": 0.20272727272727273,
+      "target_Accuracy": 0.3,
+      "target_F1": 0.22575757575757574
+    },
+    "Jewish Culture": {
+      "Count": 19,
+      "Strict_All4_Acc": 0.0,
+      "mechanism_Accuracy": 0.3684210526315789,
+      "mechanism_F1": 0.1693121693121693,
+      "label_Accuracy": 0.10526315789473684,
+      "label_F1": 0.1111111111111111,
+      "subject_Accuracy": 0.47368421052631576,
+      "subject_F1": 0.4817460317460317,
+      "target_Accuracy": 0.47368421052631576,
+      "target_F1": 0.49999999999999994
+    },
+    "Indian Culture": {
+      "Count": 17,
+      "Strict_All4_Acc": 0.0,
+      "mechanism_Accuracy": 0.47058823529411764,
+      "mechanism_F1": 0.19444444444444445,
+      "label_Accuracy": 0.11764705882352941,
+      "label_F1": 0.05,
+      "subject_Accuracy": 0.4117647058823529,
+      "subject_F1": 0.2910714285714286,
+      "target_Accuracy": 0.5294117647058824,
+      "target_F1": 0.4970238095238094
+    },
+    "East Asian Culture": {
+      "Count": 14,
+      "Strict_All4_Acc": 0.0,
+      "mechanism_Accuracy": 0.35714285714285715,
+      "mechanism_F1": 0.16666666666666666,
+      "label_Accuracy": 0.0,
+      "label_F1": 0.0,
+      "subject_Accuracy": 0.42857142857142855,
+      "subject_F1": 0.3375,
+      "target_Accuracy": 0.35714285714285715,
+      "target_F1": 0.33376623376623377
+    }
+  },
+  "5. Error Analysis": {
+    "mechanism_mismatches": {
+      "count": 46,
+      "samples": [
+        {
+          "id": "intent_6255",
+          "given_sit": "intent",
+          "pred_mech": "grab her by the.. nevermind"
+        },
+        {
+          "id": "intent_3610",
+          "given_sit": "intent",
+          "pred_mech": "benevolent_deception"
+        },
+        {
+          "id": "attitude_1462",
+          "given_sit": "attitude",
+          "pred_mech": "contemptuous"
+        },
+        {
+          "id": "intent_2725",
+          "given_sit": "intent",
+          "pred_mech": "benevolent_deception"
+        },
+        {
+          "id": "intent_0597",
+          "given_sit": "intent",
+          "pred_mech": "mitigate"
+        },
+        {
+          "id": "affection_1451",
+          "given_sit": "affection",
+          "pred_mech": "socio_cultural-dependency"
+        },
+        {
+          "id": "intent_4796",
+          "given_sit": "intent",
+          "pred_mech": "safe sex"
+        },
+        {
+          "id": "attitude_4901",
+          "given_sit": "attitude",
+          "pred_mech": "dominant_attachment"
+        },
+        {
+          "id": "intent_1109",
+          "given_sit": "intent",
+          "pred_mech": "accuse"
+        },
+        {
+          "id": "affection_1427",
+          "given_sit": "affection",
+          "pred_mech": "socio_cultural-dependency"
+        },
+        {
+          "id": "intent_3726",
+          "given_sit": "intent",
+          "pred_mech": "benevolent_deception"
+        },
+        {
+          "id": "affection_4322",
+          "given_sit": "affection",
+          "pred_mech": "socio_cultural-dependency"
+        },
+        {
+          "id": "intent_0999",
+          "given_sit": "intent",
+          "pred_mech": "safe sex"
+        },
+        {
+          "id": "attitude_1528",
+          "given_sit": "attitude",
+          "pred_mech": "contemptuous"
+        },
+        {
+          "id": "attitude_1475",
+          "given_sit": "attitude",
+          "pred_mech": "contemptuous"
+        },
+        {
+          "id": "intent_0363",
+          "given_sit": "intent",
+          "pred_mech": "benevolent_deception"
+        },
+        {
+          "id": "affection_1383",
+          "given_sit": "affection",
+          "pred_mech": "socio_cultural-dependency"
+        },
+        {
+          "id": "intent_4784",
+          "given_sit": "intent",
+          "pred_mech": "benevolent_deception"
+        },
+        {
+          "id": "affection_1337",
+          "given_sit": "affection",
+          "pred_mech": "socio_cultural-dependency"
+        },
+        {
+          "id": "intent_8184",
+          "given_sit": "intent",
+          "pred_mech": "benevolent_deception"
+        },
+        {
+          "id": "intent_1035",
+          "given_sit": "intent",
+          "pred_mech": "Mitigate"
+        },
+        {
+          "id": "intent_1052",
+          "given_sit": "intent",
+          "pred_mech": "benevolent_deception"
+        },
+        {
+          "id": "intent_5631",
+          "given_sit": "intent",
+          "pred_mech": "white parent"
+        },
+        {
+          "id": "intent_1903",
+          "given_sit": "intent",
+          "pred_mech": "benevolent_deception"
+        },
+        {
+          "id": "affection_2925",
+          "given_sit": "affection",
+          "pred_mech": "warning"
+        },
+        {
+          "id": "intent_1944",
+          "given_sit": "intent",
+          "pred_mech": "public Lynching"
+        },
+        {
+          "id": "affection_3349",
+          "given_sit": "affection",
+          "pred_mech": "socio_cultural-dependency"
+        },
+        {
+          "id": "attitude_1882",
+          "given_sit": "attitude",
+          "pred_mech": "contemptuous"
+        },
+        {
+          "id": "affection_0411",
+          "given_sit": "affection",
+          "pred_mech": "socio_cultural-dependency"
+        },
+        {
+          "id": "intent_0812",
+          "given_sit": "intent",
+          "pred_mech": "dominate"
+        },
+        {
+          "id": "intent_0427",
+          "given_sit": "intent",
+          "pred_mech": "joke_time"
+        },
+        {
+          "id": "affection_0629",
+          "given_sit": "affection",
+          "pred_mech": "socio_cultural-dependency"
+        },
+        {
+          "id": "affection_3012",
+          "given_sit": "affection",
+          "pred_mech": "socio_cultural-dependency"
+        },
+        {
+          "id": "attitude_1849",
+          "given_sit": "affection",
+          "pred_mech": "socio_cultural-dependency"
+        },
+        {
+          "id": "intent_3168",
+          "given_sit": "intent",
+          "pred_mech": "benevolent_deception"
+        },
+        {
+          "id": "attitude_1813",
+          "given_sit": "attitude",
+          "pred_mech": "dominant_attachment"
+        },
+        {
+          "id": "affection_0723",
+          "given_sit": "affection",
+          "pred_mech": "socio_cultural-dependency"
+        },
+        {
+          "id": "intent_2816",
+          "given_sit": "intent",
+          "pred_mech": "benevolent_deception"
+        },
+        {
+          "id": "attitude_0749",
+          "given_sit": "attitude",
+          "pred_mech": "automatic tranny"
+        },
+        {
+          "id": "attitude_0606",
+          "given_sit": "attitude",
+          "pred_mech": "dominant_attachment"
+        },
+        {
+          "id": "intent_1666",
+          "given_sit": "intent",
+          "pred_mech": "benevolent_deception"
+        },
+        {
+          "id": "intent_1708",
+          "given_sit": "intent",
+          "pred_mech": "teasing neighbor"
+        },
+        {
+          "id": "intent_4864",
+          "given_sit": "intent",
+          "pred_mech": "benevolent_deception"
+        },
+        {
+          "id": "intent_6437",
+          "given_sit": "intent",
+          "pred_mech": "benevolent_deception"
+        },
+        {
+          "id": "intent_1450",
+          "given_sit": "intent",
+          "pred_mech": "benevolent_deception"
+        },
+        {
+          "id": "intent_2658",
+          "given_sit": "intent",
+          "pred_mech": "warning"
+        }
+      ]
+    },
+    "label_mismatches": {
+      "count": 80,
+      "samples": [
+        {
+          "id": "affection_0276",
+          "given_sit": "affection",
+          "pred_label": "Neutral"
+        },
+        {
+          "id": "affection_2049",
+          "given_sit": "affection",
+          "pred_label": "Anger"
+        },
+        {
+          "id": "affection_2533",
+          "given_sit": "affection",
+          "pred_label": "Neutral"
+        },
+        {
+          "id": "affection_2364",
+          "given_sit": "affection",
+          "pred_label": "we don't know"
+        },
+        {
+          "id": "affection_0394",
+          "given_sit": "affection",
+          "pred_label": "Neutral"
+        },
+        {
+          "id": "affection_3138",
+          "given_sit": "affection",
+          "pred_label": "Anger"
+        },
+        {
+          "id": "affection_0127",
+          "given_sit": "affection",
+          "pred_label": "Neutral"
+        },
+        {
+          "id": "affection_2120",
+          "given_sit": "affection",
+          "pred_label": "Neutral"
+        },
+        {
+          "id": "affection_2544",
+          "given_sit": "affection",
+          "pred_label": "last one there is a rotten fish"
+        },
+        {
+          "id": "affection_0571",
+          "given_sit": "affection",
+          "pred_label": "Neutral"
+        },
+        {
+          "id": "affection_4283",
+          "given_sit": "affection",
+          "pred_label": "Neutral"
+        },
+        {
+          "id": "intent_1109",
+          "given_sit": "intent",
+          "pred_label": "accuse"
+        },
+        {
+          "id": "affection_4942",
+          "given_sit": "affection",
+          "pred_label": "Neutral"
+        },
+        {
+          "id": "affection_4304",
+          "given_sit": "affection",
+          "pred_label": "Anger"
+        },
+        {
+          "id": "affection_4011",
+          "given_sit": "affection",
+          "pred_label": "Confused"
+        },
+        {
+          "id": "affection_0425",
+          "given_sit": "affection",
+          "pred_label": "Neutral"
+        },
+        {
+          "id": "affection_0245",
+          "given_sit": "affection",
+          "pred_label": "Neutral"
+        },
+        {
+          "id": "affection_1073",
+          "given_sit": "affection",
+          "pred_label": "important"
+        },
+        {
+          "id": "affection_0634",
+          "given_sit": "affection",
+          "pred_label": "surprise"
+        },
+        {
+          "id": "affection_1678",
+          "given_sit": "affection",
+          "pred_label": "Neutral"
+        },
+        {
+          "id": "affection_2327",
+          "given_sit": "affection",
+          "pred_label": "Neutral"
+        },
+        {
+          "id": "affection_1248",
+          "given_sit": "affection",
+          "pred_label": "Anger"
+        },
+        {
+          "id": "affection_1962",
+          "given_sit": "affection",
+          "pred_label": "Anger"
+        },
+        {
+          "id": "affection_0434",
+          "given_sit": "affection",
+          "pred_label": "frustrated"
+        },
+        {
+          "id": "affection_2758",
+          "given_sit": "affection",
+          "pred_label": "Anger"
+        },
+        {
+          "id": "affection_0148",
+          "given_sit": "affection",
+          "pred_label": "Neutral"
+        },
+        {
+          "id": "affection_0738",
+          "given_sit": "affection",
+          "pred_label": "Neutral"
+        },
+        {
+          "id": "affection_0582",
+          "given_sit": "affection",
+          "pred_label": "Neutral"
+        },
+        {
+          "id": "affection_1358",
+          "given_sit": "affection",
+          "pred_label": "blamed"
+        },
+        {
+          "id": "attitude_1625",
+          "given_sit": "affection",
+          "pred_label": "Neutral"
+        },
+        {
+          "id": "affection_0771",
+          "given_sit": "affection",
+          "pred_label": "Neutral"
+        },
+        {
+          "id": "intent_3290",
+          "given_sit": "intent",
+          "pred_label": "fuhrererious"
+        },
+        {
+          "id": "affection_0730",
+          "given_sit": "affection",
+          "pred_label": "frustrated"
+        },
+        {
+          "id": "affection_1310",
+          "given_sit": "affection",
+          "pred_label": "Anger"
+        },
+        {
+          "id": "affection_3900",
+          "given_sit": "affection",
+          "pred_label": "men are like dogs"
+        },
+        {
+          "id": "affection_1022",
+          "given_sit": "affection",
+          "pred_label": "bored"
+        },
+        {
+          "id": "attitude_1876",
+          "given_sit": "attitude",
+          "pred_label": "Sarcastic"
+        },
+        {
+          "id": "affection_4925",
+          "given_sit": "affection",
+          "pred_label": "Anger"
+        },
+        {
+          "id": "affection_2962",
+          "given_sit": "affection",
+          "pred_label": "illegal aliens"
+        },
+        {
+          "id": "affection_0819",
+          "given_sit": "affection",
+          "pred_label": "Neutral"
+        },
+        {
+          "id": "affection_3422",
+          "given_sit": "affection",
+          "pred_label": "Anger"
+        },
+        {
+          "id": "affection_2925",
+          "given_sit": "affection",
+          "pred_label": "caution"
+        },
+        {
+          "id": "affection_0727",
+          "given_sit": "affection",
+          "pred_label": "Neutral"
+        },
+        {
+          "id": "affection_3381",
+          "given_sit": "affection",
+          "pred_label": "Neutral"
+        },
+        {
+          "id": "affection_0017",
+          "given_sit": "affection",
+          "pred_label": "frustrated"
+        },
+        {
+          "id": "affection_2347",
+          "given_sit": "affection",
+          "pred_label": "Neutral"
+        },
+        {
+          "id": "affection_0054",
+          "given_sit": "affection",
+          "pred_label": "determined"
+        },
+        {
+          "id": "affection_0131",
+          "given_sit": "affection",
+          "pred_label": "apologetic"
+        },
+        {
+          "id": "affection_0932",
+          "given_sit": "affection",
+          "pred_label": "Neutral"
+        },
+        {
+          "id": "affection_2616",
+          "given_sit": "affection",
+          "pred_label": "pro"
+        },
+        {
+          "id": "affection_0851",
+          "given_sit": "affection",
+          "pred_label": "Neutral"
+        },
+        {
+          "id": "affection_0629",
+          "given_sit": "affection",
+          "pred_label": "Neutral"
+        },
+        {
+          "id": "affection_1462",
+          "given_sit": "affection",
+          "pred_label": "Neutral"
+        },
+        {
+          "id": "affection_0564",
+          "given_sit": "affection",
+          "pred_label": "Anger"
+        },
+        {
+          "id": "attitude_1849",
+          "given_sit": "affection",
+          "pred_label": "Neutral"
+        },
+        {
+          "id": "affection_1304",
+          "given_sit": "affection",
+          "pred_label": "Confused"
+        },
+        {
+          "id": "affection_1289",
+          "given_sit": "affection",
+          "pred_label": "Neutral"
+        },
+        {
+          "id": "affection_2142",
+          "given_sit": "affection",
+          "pred_label": "Hungry"
+        },
+        {
+          "id": "affection_0189",
+          "given_sit": "affection",
+          "pred_label": "Neutral"
+        },
+        {
+          "id": "affection_3033",
+          "given_sit": "affection",
+          "pred_label": "Lonely"
+        },
+        {
+          "id": "affection_1976",
+          "given_sit": "affection",
+          "pred_label": "Neutral"
+        },
+        {
+          "id": "affection_4536",
+          "given_sit": "affection",
+          "pred_label": "joke"
+        },
+        {
+          "id": "affection_5148",
+          "given_sit": "affection",
+          "pred_label": "Neutral"
+        },
+        {
+          "id": "affection_4369",
+          "given_sit": "affection",
+          "pred_label": "Neutral"
+        },
+        {
+          "id": "affection_2446",
+          "given_sit": "affection",
+          "pred_label": "Anger"
+        },
+        {
+          "id": "affection_3160",
+          "given_sit": "affection",
+          "pred_label": "Neutral"
+        },
+        {
+          "id": "affection_0347",
+          "given_sit": "affection",
+          "pred_label": "surprise"
+        },
+        {
+          "id": "affection_4652",
+          "given_sit": "affection",
+          "pred_label": "Anger"
+        },
+        {
+          "id": "affection_1648",
+          "given_sit": "affection",
+          "pred_label": "Neutral"
+        },
+        {
+          "id": "affection_1879",
+          "given_sit": "affection",
+          "pred_label": "Neutral"
+        },
+        {
+          "id": "affection_2232",
+          "given_sit": "affection",
+          "pred_label": "Neutral"
+        },
+        {
+          "id": "affection_3565",
+          "given_sit": "affection",
+          "pred_label": "Neutral"
+        },
+        {
+          "id": "affection_1593",
+          "given_sit": "affection",
+          "pred_label": "Neutral"
+        },
+        {
+          "id": "affection_2773",
+          "given_sit": "affection",
+          "pred_label": "Freedom"
+        },
+        {
+          "id": "affection_1288",
+          "given_sit": "affection",
+          "pred_label": "Neutral"
+        },
+        {
+          "id": "affection_2300",
+          "given_sit": "affection",
+          "pred_label": "laughing"
+        },
+        {
+          "id": "affection_2752",
+          "given_sit": "affection",
+          "pred_label": "Neutral"
+        },
+        {
+          "id": "affection_0045",
+          "given_sit": "affection",
+          "pred_label": "Neutral"
+        },
+        {
+          "id": "affection_1072",
+          "given_sit": "affection",
+          "pred_label": "Neutral"
+        },
+        {
+          "id": "affection_0244",
+          "given_sit": "affection",
+          "pred_label": "Neutral"
+        }
+      ]
+    },
+    "format_errors": {
+      "count": 68,
+      "samples": [
+        {
+          "id": "affection_4468",
+          "pred_sub": "speaker",
+          "pred_tgt": "poster"
+        },
+        {
+          "id": "intent_0702",
+          "pred_sub": "subject1",
+          "pred_tgt": "subject0"
+        },
+        {
+          "id": "affection_0848",
+          "pred_sub": "Lucia",
+          "pred_tgt": "the decorative jar"
+        },
+        {
+          "id": "affection_5326",
+          "pred_sub": "target0",
+          "pred_tgt": "target1"
+        },
+        {
+          "id": "affection_2039",
+          "pred_sub": "teacher",
+          "pred_tgt": "child"
+        },
+        {
+          "id": "affection_4307",
+          "pred_sub": "avatar",
+          "pred_tgt": "meme"
+        },
+        {
+          "id": "affection_3219",
+          "pred_sub": "poster",
+          "pred_tgt": "eagle"
+        },
+        {
+          "id": "attitude_1462",
+          "pred_sub": "speaker",
+          "pred_tgt": "visitor"
+        },
+        {
+          "id": "affection_4007",
+          "pred_sub": "poster",
+          "pred_tgt": "no nut november"
+        },
+        {
+          "id": "affection_4965",
+          "pred_sub": "speaker",
+          "pred_tgt": "target3"
+        },
+        {
+          "id": "affection_3065",
+          "pred_sub": "brochure",
+          "pred_tgt": "people embracing diversity"
+        },
+        {
+          "id": "affection_5106",
+          "pred_sub": "target2",
+          "pred_tgt": "target0"
+        },
+        {
+          "id": "intent_0210",
+          "pred_sub": "subject1",
+          "pred_tgt": "subject0"
+        },
+        {
+          "id": "attitude_3484",
+          "pred_sub": "target0",
+          "pred_tgt": "target2"
+        },
+        {
+          "id": "intent_5248",
+          "pred_sub": "poster",
+          "pred_tgt": "Muslims"
+        },
+        {
+          "id": "affection_4372",
+          "pred_sub": "emoji",
+          "pred_tgt": "rainbow_emoji"
+        },
+        {
+          "id": "intent_0193",
+          "pred_sub": "subject2",
+          "pred_tgt": "subject0"
+        },
+        {
+          "id": "affection_3395",
+          "pred_sub": "target3",
+          "pred_tgt": "target0"
+        },
+        {
+          "id": "intent_5848",
+          "pred_sub": "parent",
+          "pred_tgt": "passenger"
+        },
+        {
+          "id": "affection_1012",
+          "pred_sub": "subject1",
+          "pred_tgt": "subject0"
+        },
+        {
+          "id": "affection_0632",
+          "pred_sub": "speaker",
+          "pred_tgt": "kids"
+        },
+        {
+          "id": "intent_1609",
+          "pred_sub": "subject2",
+          "pred_tgt": "subject0"
+        },
+        {
+          "id": "affection_3118",
+          "pred_sub": "poster",
+          "pred_tgt": "viewer"
+        },
+        {
+          "id": "affection_0594",
+          "pred_sub": "parent",
+          "pred_tgt": "black people"
+        },
+        {
+          "id": "affection_2327",
+          "pred_sub": "child",
+          "pred_tgt": "parent"
+        },
+        {
+          "id": "affection_2758",
+          "pred_sub": "poster",
+          "pred_tgt": "religious hypocrisy"
+        },
+        {
+          "id": "affection_2007",
+          "pred_sub": "child",
+          "pred_tgt": "vegetable soup"
+        },
+        {
+          "id": "intent_1785",
+          "pred_sub": "subject2",
+          "pred_tgt": "subject0"
+        },
+        {
+          "id": "attitude_5562",
+          "pred_sub": "poster",
+          "pred_tgt": "content creators"
+        },
+        {
+          "id": "affection_3414",
+          "pred_sub": "meme",
+          "pred_tgt": "political satire accounts"
+        },
+        {
+          "id": "intent_6450",
+          "pred_sub": "bot",
+          "pred_tgt": "satirist"
+        },
+        {
+          "id": "affection_1148",
+          "pred_sub": "subject2",
+          "pred_tgt": "subject3"
+        },
+        {
+          "id": "intent_2281",
+          "pred_sub": "poster",
+          "pred_tgt": "female models"
+        },
+        {
+          "id": "affection_0825",
+          "pred_sub": "subject1",
+          "pred_tgt": "subject0"
+        },
+        {
+          "id": "attitude_0398",
+          "pred_sub": "subject1",
+          "pred_tgt": "subject0"
+        },
+        {
+          "id": "attitude_3114",
+          "pred_sub": "target0",
+          "pred_tgt": "target3"
+        },
+        {
+          "id": "intent_0211",
+          "pred_sub": "subject1",
+          "pred_tgt": "subject0"
+        },
+        {
+          "id": "intent_5538",
+          "pred_sub": "poster",
+          "pred_tgt": "us soldiers"
+        },
+        {
+          "id": "affection_0009",
+          "pred_sub": "poster",
+          "pred_tgt": "other viewers"
+        },
+        {
+          "id": "affection_3349",
+          "pred_sub": "target3",
+          "pred_tgt": "subject0"
+        },
+        {
+          "id": "intent_2915",
+          "pred_sub": "child",
+          "pred_tgt": "a gay person"
+        },
+        {
+          "id": "affection_1284",
+          "pred_sub": "subject1",
+          "pred_tgt": "subject3"
+        },
+        {
+          "id": "attitude_6288",
+          "pred_sub": "target2",
+          "pred_tgt": "target3"
+        },
+        {
+          "id": "attitude_4535",
+          "pred_sub": "speaker",
+          "pred_tgt": "politician"
+        },
+        {
+          "id": "affection_0629",
+          "pred_sub": "poster",
+          "pred_tgt": "American_settlers"
+        },
+        {
+          "id": "affection_0252",
+          "pred_sub": "jonah",
+          "pred_tgt": "interlocutor"
+        },
+        {
+          "id": "attitude_3873",
+          "pred_sub": "target2",
+          "pred_tgt": "target0"
+        },
+        {
+          "id": "affection_3923",
+          "pred_sub": "poster",
+          "pred_tgt": "poor African children"
+        },
+        {
+          "id": "affection_3782",
+          "pred_sub": "target1",
+          "pred_tgt": "subject0"
+        },
+        {
+          "id": "affection_1408",
+          "pred_sub": "speaker",
+          "pred_tgt": "black people"
+        },
+        {
+          "id": "intent_1431",
+          "pred_sub": "child",
+          "pred_tgt": "older sibling"
+        },
+        {
+          "id": "affection_1512",
+          "pred_sub": "speaker",
+          "pred_tgt": "the conversation topic"
+        },
+        {
+          "id": "attitude_4874",
+          "pred_sub": "parent",
+          "pred_tgt": "school organizers"
+        },
+        {
+          "id": "intent_2104",
+          "pred_sub": "speaker",
+          "pred_tgt": "woman"
+        },
+        {
+          "id": "affection_3460",
+          "pred_sub": "parent",
+          "pred_tgt": "parody meme mocking"
+        },
+        {
+          "id": "intent_4353",
+          "pred_sub": "parent",
+          "pred_tgt": "grocery shoppers"
+        },
+        {
+          "id": "affection_3775",
+          "pred_sub": "partner",
+          "pred_tgt": "online followers"
+        },
+        {
+          "id": "attitude_6192",
+          "pred_sub": "speaker",
+          "pred_tgt": "Jewish people"
+        },
+        {
+          "id": "affection_4466",
+          "pred_sub": "subject0",
+          "pred_tgt": "subject1"
+        },
+        {
+          "id": "intent_1856",
+          "pred_sub": "speaker",
+          "pred_tgt": "commenters"
+        },
+        {
+          "id": "intent_0477",
+          "pred_sub": "jonah",
+          "pred_tgt": "a nearby customer"
+        },
+        {
+          "id": "intent_2345",
+          "pred_sub": "parent",
+          "pred_tgt": "daughter"
+        },
+        {
+          "id": "affection_4828",
+          "pred_sub": "parent",
+          "pred_tgt": "local community members"
+        },
+        {
+          "id": "intent_4178",
+          "pred_sub": "dispatch operator",
+          "pred_tgt": "white women"
+        },
+        {
+          "id": "affection_1729",
+          "pred_sub": "cartoon",
+          "pred_tgt": "children"
+        },
+        {
+          "id": "affection_1240",
+          "pred_sub": "speaker",
+          "pred_tgt": "audience member"
+        },
+        {
+          "id": "attitude_6784",
+          "pred_sub": "parent",
+          "pred_tgt": "son"
+        },
+        {
+          "id": "affection_1898",
+          "pred_sub": "subject0",
+          "pred_tgt": "subject1"
+        }
+      ]
+    }
+  }
+}

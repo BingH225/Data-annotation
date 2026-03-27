@@ -1,0 +1,495 @@
+{
+  "1. Overall (2963 Successful Samples)": {
+    "Count": 2963,
+    "Strict_All4_Acc": 0.05264934188322646,
+    "mechanism_Accuracy": 0.5339183260209247,
+    "mechanism_F1": 0.3193579313937685,
+    "label_Accuracy": 0.1889976375295309,
+    "label_F1": 0.10497261910864744,
+    "subject_Accuracy": 0.7036787040161998,
+    "subject_F1": 0.7015686121156213,
+    "target_Accuracy": 0.7910901113736079,
+    "target_F1": 0.5278525203570635
+  },
+  "2. By Scenario": {
+    "affection": {
+      "Count": 863,
+      "Strict_All4_Acc": 0.05330243337195829,
+      "mechanism_Accuracy": 0.473928157589803,
+      "mechanism_F1": 0.2331054080344008,
+      "label_Accuracy": 0.3047508690614137,
+      "label_F1": 0.12797370373978784,
+      "subject_Accuracy": 0.5724217844727694,
+      "subject_F1": 0.561605494936503,
+      "target_Accuracy": 0.7809965237543454,
+      "target_F1": 0.7815973704097249
+    },
+    "attitude": {
+      "Count": 945,
+      "Strict_All4_Acc": 0.10687830687830688,
+      "mechanism_Accuracy": 0.546031746031746,
+      "mechanism_F1": 0.16699481534974825,
+      "label_Accuracy": 0.2783068783068783,
+      "label_F1": 0.11201345168096853,
+      "subject_Accuracy": 0.7142857142857143,
+      "subject_F1": 0.71437122913281,
+      "target_Accuracy": 0.816931216931217,
+      "target_F1": 0.6538647993386599
+    },
+    "intent": {
+      "Count": 1155,
+      "Strict_All4_Acc": 0.007792207792207792,
+      "mechanism_Accuracy": 0.5688311688311688,
+      "mechanism_F1": 0.24764571316295456,
+      "label_Accuracy": 0.02943722943722944,
+      "label_F1": 0.012379724834795785,
+      "subject_Accuracy": 0.793073593073593,
+      "subject_F1": 0.7918578376952872,
+      "target_Accuracy": 0.7774891774891775,
+      "target_F1": 0.6221042103901744
+    }
+  },
+  "3. By Domain": {
+    "Online & Social Media": {
+      "Count": 1287,
+      "Strict_All4_Acc": 0.05516705516705517,
+      "mechanism_Accuracy": 0.5524475524475524,
+      "mechanism_F1": 0.2925803576928384,
+      "label_Accuracy": 0.1989121989121989,
+      "label_F1": 0.12369689345051933,
+      "subject_Accuracy": 0.6651126651126651,
+      "subject_F1": 0.6612588772686381,
+      "target_Accuracy": 0.7933177933177933,
+      "target_F1": 0.7933538999409215
+    },
+    "Public & Service": {
+      "Count": 422,
+      "Strict_All4_Acc": 0.04739336492890995,
+      "mechanism_Accuracy": 0.5379146919431279,
+      "mechanism_F1": 0.34805591109114814,
+      "label_Accuracy": 0.18246445497630331,
+      "label_F1": 0.1259014942588758,
+      "subject_Accuracy": 0.6824644549763034,
+      "subject_F1": 0.6847556698770372,
+      "target_Accuracy": 0.8341232227488151,
+      "target_F1": 0.8329478546982393
+    },
+    "Workplace": {
+      "Count": 429,
+      "Strict_All4_Acc": 0.055944055944055944,
+      "mechanism_Accuracy": 0.5174825174825175,
+      "mechanism_F1": 0.35035336543086104,
+      "label_Accuracy": 0.1794871794871795,
+      "label_F1": 0.09506346573831619,
+      "subject_Accuracy": 0.8205128205128205,
+      "subject_F1": 0.8216297849037787,
+      "target_Accuracy": 0.7902097902097902,
+      "target_F1": 0.5299032979022009
+    },
+    "Intimate Relationships": {
+      "Count": 405,
+      "Strict_All4_Acc": 0.05432098765432099,
+      "mechanism_Accuracy": 0.5160493827160494,
+      "mechanism_F1": 0.37732112957376596,
+      "label_Accuracy": 0.18765432098765433,
+      "label_F1": 0.10349728200408624,
+      "subject_Accuracy": 0.7209876543209877,
+      "subject_F1": 0.7141669318891809,
+      "target_Accuracy": 0.7555555555555555,
+      "target_F1": 0.7542358872034682
+    },
+    "Family Conversations": {
+      "Count": 224,
+      "Strict_All4_Acc": 0.044642857142857144,
+      "mechanism_Accuracy": 0.47767857142857145,
+      "mechanism_F1": 0.2806703480597546,
+      "label_Accuracy": 0.17857142857142858,
+      "label_F1": 0.07233877604966617,
+      "subject_Accuracy": 0.6651785714285714,
+      "subject_F1": 0.6426505043017274,
+      "target_Accuracy": 0.7589285714285714,
+      "target_F1": 0.7596103831162337
+    },
+    "Friend Group": {
+      "Count": 121,
+      "Strict_All4_Acc": 0.05785123966942149,
+      "mechanism_Accuracy": 0.512396694214876,
+      "mechanism_F1": 0.30872993297899426,
+      "label_Accuracy": 0.1487603305785124,
+      "label_F1": 0.08937990114460703,
+      "subject_Accuracy": 0.8181818181818182,
+      "subject_F1": 0.8164974983997597,
+      "target_Accuracy": 0.7933884297520661,
+      "target_F1": 0.7792511177347243
+    },
+    "Education & Campus": {
+      "Count": 59,
+      "Strict_All4_Acc": 0.03389830508474576,
+      "mechanism_Accuracy": 0.6101694915254238,
+      "mechanism_F1": 0.4960395111710901,
+      "label_Accuracy": 0.22033898305084745,
+      "label_F1": 0.13140589569160996,
+      "subject_Accuracy": 0.576271186440678,
+      "subject_F1": 0.5696022727272727,
+      "target_Accuracy": 0.7966101694915254,
+      "target_F1": 0.7946886446886448
+    },
+    "Friendship Interactions": {
+      "Count": 16,
+      "Strict_All4_Acc": 0.0,
+      "mechanism_Accuracy": 0.5,
+      "mechanism_F1": 0.39166666666666666,
+      "label_Accuracy": 0.1875,
+      "label_F1": 0.13846153846153847,
+      "subject_Accuracy": 0.9375,
+      "subject_F1": 0.9415584415584416,
+      "target_Accuracy": 0.8125,
+      "target_F1": 0.7619949494949495
+    }
+  },
+  "4. By Culture": {
+    "General Culture": {
+      "Count": 2720,
+      "Strict_All4_Acc": 0.05514705882352941,
+      "mechanism_Accuracy": 0.53125,
+      "mechanism_F1": 0.3432649156700514,
+      "label_Accuracy": 0.19080882352941175,
+      "label_F1": 0.1059693672189388,
+      "subject_Accuracy": 0.7069852941176471,
+      "subject_F1": 0.705177429333199,
+      "target_Accuracy": 0.7941176470588235,
+      "target_F1": 0.5298511098205925
+    },
+    "Arab Culture": {
+      "Count": 103,
+      "Strict_All4_Acc": 0.02912621359223301,
+      "mechanism_Accuracy": 0.5728155339805825,
+      "mechanism_F1": 0.22296861693357475,
+      "label_Accuracy": 0.14563106796116504,
+      "label_F1": 0.06134549336303721,
+      "subject_Accuracy": 0.6796116504854369,
+      "subject_F1": 0.6561003541739843,
+      "target_Accuracy": 0.7766990291262136,
+      "target_F1": 0.7736219547529739
+    },
+    "American Culture": {
+      "Count": 49,
+      "Strict_All4_Acc": 0.0,
+      "mechanism_Accuracy": 0.5918367346938775,
+      "mechanism_F1": 0.3614344503233392,
+      "label_Accuracy": 0.10204081632653061,
+      "label_F1": 0.044024427952999386,
+      "subject_Accuracy": 0.673469387755102,
+      "subject_F1": 0.663375350140056,
+      "target_Accuracy": 0.6530612244897959,
+      "target_F1": 0.6504105090311987
+    },
+    "Muslim Culture": {
+      "Count": 21,
+      "Strict_All4_Acc": 0.0,
+      "mechanism_Accuracy": 0.5238095238095238,
+      "mechanism_F1": 0.3412698412698412,
+      "label_Accuracy": 0.19047619047619047,
+      "label_F1": 0.13837535014005603,
+      "subject_Accuracy": 0.6666666666666666,
+      "subject_F1": 0.6556776556776557,
+      "target_Accuracy": 0.8571428571428571,
+      "target_F1": 0.8291497975708502
+    },
+    "African American Culture": {
+      "Count": 20,
+      "Strict_All4_Acc": 0.1,
+      "mechanism_Accuracy": 0.75,
+      "mechanism_F1": 0.4555555555555556,
+      "label_Accuracy": 0.2,
+      "label_F1": 0.06149732620320855,
+      "subject_Accuracy": 0.75,
+      "subject_F1": 0.75,
+      "target_Accuracy": 0.8,
+      "target_F1": 0.7897435897435898
+    },
+    "Jewish Culture": {
+      "Count": 19,
+      "Strict_All4_Acc": 0.0,
+      "mechanism_Accuracy": 0.47368421052631576,
+      "mechanism_F1": 0.4107142857142857,
+      "label_Accuracy": 0.3157894736842105,
+      "label_F1": 0.20987654320987653,
+      "subject_Accuracy": 0.5789473684210527,
+      "subject_F1": 0.5636904761904762,
+      "target_Accuracy": 0.7894736842105263,
+      "target_F1": 0.8068181818181818
+    },
+    "Indian Culture": {
+      "Count": 17,
+      "Strict_All4_Acc": 0.058823529411764705,
+      "mechanism_Accuracy": 0.5294117647058824,
+      "mechanism_F1": 0.2444444444444444,
+      "label_Accuracy": 0.17647058823529413,
+      "label_F1": 0.07017543859649122,
+      "subject_Accuracy": 0.6470588235294118,
+      "subject_F1": 0.47023809523809523,
+      "target_Accuracy": 0.7647058823529411,
+      "target_F1": 0.7202380952380952
+    },
+    "East Asian Culture": {
+      "Count": 14,
+      "Strict_All4_Acc": 0.0,
+      "mechanism_Accuracy": 0.35714285714285715,
+      "mechanism_F1": 0.225,
+      "label_Accuracy": 0.2857142857142857,
+      "label_F1": 0.16666666666666666,
+      "subject_Accuracy": 0.5714285714285714,
+      "subject_F1": 0.49350649350649345,
+      "target_Accuracy": 0.7142857142857143,
+      "target_F1": 0.6984126984126984
+    }
+  },
+  "5. Error Analysis": {
+    "mechanism_mismatches": {
+      "count": 12,
+      "samples": [
+        {
+          "id": "attitude_0550",
+          "given_sit": "attitude",
+          "pred_mech": "hostile"
+        },
+        {
+          "id": "attitude_0767",
+          "given_sit": "attitude",
+          "pred_mech": "hostile"
+        },
+        {
+          "id": "attitude_2100",
+          "given_sit": "attitude",
+          "pred_mech": "hostile"
+        },
+        {
+          "id": "attitude_3546",
+          "given_sit": "attitude",
+          "pred_mech": "hostile"
+        },
+        {
+          "id": "attitude_2846",
+          "given_sit": "attitude",
+          "pred_mech": "hostile"
+        },
+        {
+          "id": "attitude_0768",
+          "given_sit": "attitude",
+          "pred_mech": "hostile_aggression"
+        },
+        {
+          "id": "attitude_2346",
+          "given_sit": "attitude",
+          "pred_mech": "hostile"
+        },
+        {
+          "id": "attitude_5609",
+          "given_sit": "attitude",
+          "pred_mech": "hostile"
+        },
+        {
+          "id": "attitude_1345",
+          "given_sit": "attitude",
+          "pred_mech": "hostile"
+        },
+        {
+          "id": "attitude_0122",
+          "given_sit": "attitude",
+          "pred_mech": "hostile"
+        },
+        {
+          "id": "attitude_3218",
+          "given_sit": "attitude",
+          "pred_mech": "hostile"
+        },
+        {
+          "id": "attitude_3489",
+          "given_sit": "attitude",
+          "pred_mech": "hostile"
+        }
+      ]
+    },
+    "label_mismatches": {
+      "count": 32,
+      "samples": [
+        {
+          "id": "affection_0317",
+          "given_sit": "affection",
+          "pred_label": "Neutral"
+        },
+        {
+          "id": "affection_0070",
+          "given_sit": "affection",
+          "pred_label": "Neutral"
+        },
+        {
+          "id": "affection_0754",
+          "given_sit": "affection",
+          "pred_label": "Neutral"
+        },
+        {
+          "id": "affection_0571",
+          "given_sit": "affection",
+          "pred_label": "Neutral"
+        },
+        {
+          "id": "affection_0496",
+          "given_sit": "affection",
+          "pred_label": "Neutral"
+        },
+        {
+          "id": "affection_1442",
+          "given_sit": "affection",
+          "pred_label": "Neutral"
+        },
+        {
+          "id": "affection_1070",
+          "given_sit": "affection",
+          "pred_label": "Neutral"
+        },
+        {
+          "id": "affection_1484",
+          "given_sit": "affection",
+          "pred_label": "Neutral"
+        },
+        {
+          "id": "affection_0425",
+          "given_sit": "affection",
+          "pred_label": "Neutral"
+        },
+        {
+          "id": "affection_0376",
+          "given_sit": "affection",
+          "pred_label": "Neutral"
+        },
+        {
+          "id": "affection_0245",
+          "given_sit": "affection",
+          "pred_label": "Neutral"
+        },
+        {
+          "id": "affection_0440",
+          "given_sit": "affection",
+          "pred_label": "Neutral"
+        },
+        {
+          "id": "affection_0765",
+          "given_sit": "affection",
+          "pred_label": "Neutral"
+        },
+        {
+          "id": "affection_0825",
+          "given_sit": "affection",
+          "pred_label": "Neutral"
+        },
+        {
+          "id": "affection_0048",
+          "given_sit": "affection",
+          "pred_label": "Neutral"
+        },
+        {
+          "id": "affection_0503",
+          "given_sit": "affection",
+          "pred_label": "Stressed"
+        },
+        {
+          "id": "affection_1091",
+          "given_sit": "affection",
+          "pred_label": "Neutral"
+        },
+        {
+          "id": "affection_0411",
+          "given_sit": "affection",
+          "pred_label": "Neutral"
+        },
+        {
+          "id": "affection_0932",
+          "given_sit": "affection",
+          "pred_label": "Neutral"
+        },
+        {
+          "id": "affection_0629",
+          "given_sit": "affection",
+          "pred_label": "Neutral"
+        },
+        {
+          "id": "affection_0252",
+          "given_sit": "affection",
+          "pred_label": "Neutral"
+        },
+        {
+          "id": "affection_0189",
+          "given_sit": "affection",
+          "pred_label": "Neutral"
+        },
+        {
+          "id": "affection_0286",
+          "given_sit": "affection",
+          "pred_label": "Neutral"
+        },
+        {
+          "id": "affection_0994",
+          "given_sit": "affection",
+          "pred_label": "Neutral"
+        },
+        {
+          "id": "affection_1415",
+          "given_sit": "affection",
+          "pred_label": "Neutral"
+        },
+        {
+          "id": "affection_0988",
+          "given_sit": "affection",
+          "pred_label": "Concern"
+        },
+        {
+          "id": "affection_0178",
+          "given_sit": "affection",
+          "pred_label": "Neutral"
+        },
+        {
+          "id": "affection_0780",
+          "given_sit": "affection",
+          "pred_label": "Neutral"
+        },
+        {
+          "id": "affection_0879",
+          "given_sit": "affection",
+          "pred_label": "Interested"
+        },
+        {
+          "id": "affection_1288",
+          "given_sit": "affection",
+          "pred_label": "Neutral"
+        },
+        {
+          "id": "affection_1072",
+          "given_sit": "affection",
+          "pred_label": "Neutral"
+        },
+        {
+          "id": "affection_0244",
+          "given_sit": "affection",
+          "pred_label": "Neutral"
+        }
+      ]
+    },
+    "format_errors": {
+      "count": 2,
+      "samples": [
+        {
+          "id": "intent_1033",
+          "pred_sub": "subject1",
+          "pred_tgt": "subject3"
+        },
+        {
+          "id": "attitude_5559",
+          "pred_sub": "subject1",
+          "pred_tgt": "subject0"
+        }
+      ]
+    }
+  }
+}

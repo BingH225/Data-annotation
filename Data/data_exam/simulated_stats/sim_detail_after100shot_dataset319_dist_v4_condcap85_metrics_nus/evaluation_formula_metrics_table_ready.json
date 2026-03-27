@@ -1,0 +1,99 @@
+{
+  "method": "nus_evalfin_319_detail",
+  "order": [
+    "affection",
+    "attitude",
+    "intent",
+    "overall"
+  ],
+  "columns": [
+    "indep",
+    "cond",
+    "rel",
+    "joint"
+  ],
+  "values_raw": {
+    "affection": {
+      "indep": 0.7914823008849557,
+      "cond": 0.8486842105263158,
+      "rel": 0.8694690265486725,
+      "joint": 0.5707964601769911,
+      "n": 452,
+      "n_label_correct": 304,
+      "indep_components": {
+        "label": 0.672566371681416,
+        "subject": 0.9314159292035398,
+        "target": 0.911504424778761,
+        "mechanism": 0.6504424778761062
+      }
+    },
+    "attitude": {
+      "indep": 0.8298538622129437,
+      "cond": 0.8491620111731844,
+      "rel": 0.872651356993737,
+      "joint": 0.6346555323590815,
+      "n": 479,
+      "n_label_correct": 358,
+      "indep_components": {
+        "label": 0.7473903966597077,
+        "subject": 0.9290187891440501,
+        "target": 0.9311064718162839,
+        "mechanism": 0.7118997912317327
+      }
+    },
+    "intent": {
+      "indep": 0.8005272407732864,
+      "cond": 0.8498659517426274,
+      "rel": 0.8453427065026362,
+      "joint": 0.5571177504393673,
+      "n": 569,
+      "n_label_correct": 373,
+      "indep_components": {
+        "label": 0.655536028119508,
+        "subject": 0.9138840070298769,
+        "target": 0.9138840070298769,
+        "mechanism": 0.718804920913884
+      }
+    },
+    "overall": {
+      "indep": 0.8071666666666666,
+      "cond": 0.8492753623188406,
+      "rel": 0.8613333333333333,
+      "joint": 0.586,
+      "n": 1500,
+      "n_label_correct": 1035,
+      "indep_components": {
+        "label": 0.69,
+        "subject": 0.924,
+        "target": 0.9186666666666666,
+        "mechanism": 0.696
+      }
+    }
+  },
+  "values_percent": {
+    "affection": {
+      "indep": 79.15,
+      "cond": 84.87,
+      "rel": 86.95,
+      "joint": 57.08
+    },
+    "attitude": {
+      "indep": 82.99,
+      "cond": 84.92,
+      "rel": 87.27,
+      "joint": 63.47
+    },
+    "intent": {
+      "indep": 80.05,
+      "cond": 84.99,
+      "rel": 84.53,
+      "joint": 55.71
+    },
+    "overall": {
+      "indep": 80.72,
+      "cond": 84.93,
+      "rel": 86.13,
+      "joint": 58.6
+    }
+  }
+}

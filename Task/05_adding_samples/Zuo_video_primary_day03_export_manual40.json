@@ -1,0 +1,1522 @@
+[
+  {
+    "id": "affection_1444",
+    "input": {
+      "scenario": "affection",
+      "text": "Oh-oh, that's a risky little game!",
+      "media": {
+        "video_url": "https://huggingface.co/datasets/z4722/Implicit/blob/main/video/MUStARD/mmsd_raw_data/utterances_final/2_427.mp4",
+        "audio_url": "https://huggingface.co/datasets/yesbobo/implicit/resolve/main/audio/affection/affection_1444.mp3",
+        "audio_caption": "The speaker's tone is hesitant and cautious, suggesting a level of wariness or wariness about the situation being discussed. The emotional style appears to be somewhat apprehensive or concerned, indicating that the speaker is not entirely comfortable or confident with the idea being proposed. \n\nThe background environment seems to be a setting where people are gathered, possibly for a social event or a public speaking engagement, as indicated by the presence of laughter and applause. The laughter and applause suggest that the speaker's comment is being well-received by the audience, but the speaker's tone of caution implies that the speaker may still feel unsure or hesitant about the idea being discussed.",
+        "video_path": "/hpctmp/e1561245/Data/rawdata/MUStARD/mmsd_raw_data/utterances_final/2_427.mp4",
+        "audio_path": "/hpctmp/e1561245/Data/audio/affection_1444.mp3"
+      }
+    },
+    "options": {
+      "subject": [
+        "the speaker",
+        "woman in white",
+        "left blond friend",
+        "party guest"
+      ],
+      "target": [
+        "the risky little game",
+        "the bridal tension",
+        "the room mood",
+        "the party banter"
+      ]
+    },
+    "ground_truth": {
+      "subject": "the speaker",
+      "target": "the risky little game",
+      "mechanism": "figurative_semantics",
+      "label": "Fearful"
+    },
+    "diversity": {
+      "domain": "Friendship Interaction",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "affection_0320",
+    "input": {
+      "scenario": "affection",
+      "text": "i thought you were, but then they started following me around; they started searching my stuff.",
+      "media": {
+        "video_url": "https://huggingface.co/datasets/z4722/Implicit/blob/main/video/MIntRec/video/raw_data/S05/E16/440.mp4",
+        "audio_url": "https://huggingface.co/datasets/yesbobo/implicit/resolve/main/audio/affection/affection_0320.mp3",
+        "audio_caption": "The speaker's tone in the given sentence is one of disbelief and frustration, as they express their initial expectation that someone was trustworthy, only to be let down by subsequent actions that suggest betrayal or violation of trust. The emotional style can be characterized as a mix of disappointment, annoyance, and perhaps a hint of anger or frustration at the situation. The speaker's tone suggests that they are reacting to an unexpected and unwelcome development, possibly in a personal or professional relationship where they had placed their trust.\n\nThe background environment is not explicitly provided, but the context implies that the speaker is in a setting where they feel they have been closely monitored or personal items are being searched. This could be a domestic environment, an office, or any place where personal belongings are kept, suggesting a situation where privacy is being invaded or a person's actions are being closely watched. The speaker's tone and the nature of the actions described suggest that the environment might be one of tension, surveillance, or a situation where the speaker's privacy is being compromised.",
+        "video_path": "/hpctmp/e1561245/Data/rawdata/MIntRec/video/raw_data/S05/E16/440.mp4",
+        "audio_path": "/hpctmp/e1561245/Data/audio/affection_0320.mp3"
+      }
+    },
+    "options": {
+      "subject": [
+        "the speaker (Garrett)",
+        "bald coworker",
+        "standing supervisor",
+        "nearby cashier"
+      ],
+      "target": [
+        "coworkers who followed and searched his belongings",
+        "the manager on duty",
+        "the checkout line",
+        "the customer complaint"
+      ]
+    },
+    "ground_truth": {
+      "subject": "the speaker (Garrett)",
+      "target": "coworkers who followed and searched his belongings",
+      "mechanism": "affective_deception",
+      "label": "Angry"
+    },
+    "diversity": {
+      "domain": "Workplace",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "affection_1056",
+    "input": {
+      "scenario": "affection",
+      "text": "that's like six weeks away.",
+      "media": {
+        "video_url": "https://huggingface.co/datasets/z4722/Implicit/blob/main/video/MIntRec/video/raw_data/S04/E04/23.mp4",
+        "audio_url": "https://huggingface.co/datasets/yesbobo/implicit/resolve/main/audio/affection/affection_1056.mp3",
+        "audio_caption": "The speaker's tone is neutral and matter-of-fact, with no particular emotional emphasis. The emotional style is calm and unemotional, indicating a lack of strong feelings or reactions. The background environment is likely a quiet and undisturbed setting, such as a library or a study room, where the speaker is able to speak clearly and without interruption.",
+        "video_path": "/hpctmp/e1561245/Data/rawdata/MIntRec/video/raw_data/S04/E04/23.mp4",
+        "audio_path": "/hpctmp/e1561245/Data/audio/affection_1056.mp3"
+      }
+    },
+    "options": {
+      "subject": [
+        "the speaker (employee)",
+        "older supervisor",
+        "office visitor",
+        "desk colleague"
+      ],
+      "target": [
+        "the upcoming deadline/event (six weeks away)",
+        "the office schedule",
+        "the paperwork backlog",
+        "the budget review"
+      ]
+    },
+    "ground_truth": {
+      "subject": "the speaker (employee)",
+      "target": "the upcoming deadline/event (six weeks away)",
+      "mechanism": "multimodal_incongruity",
+      "label": "Fearful"
+    },
+    "diversity": {
+      "domain": "Workplace",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "attitude_1510",
+    "input": {
+      "scenario": "affection",
+      "text": "That's got to be fun for you, huh? Watching Hofstadter suck the saliva out of your sister's mouth?",
+      "media": {
+        "video_url": "https://huggingface.co/datasets/z4722/Implicit/blob/main/video/MUStARD/mmsd_raw_data/utterances_final/1_5156.mp4",
+        "audio_url": "https://huggingface.co/datasets/yesbobo/implicit/resolve/main/audio/attitude/attitude_1510.mp3",
+        "audio_caption": "The speaker's tone in this audio excerpt is sarcastic and mocking. The emotional style is sharply critical, intended to express contempt or derision towards the subject of the speaker's comment. The speaker appears to be addressing a group of people in a humorous yet inflammatory manner, using a tone that suggests a lack of respect and a readiness to provoke a reaction.\n\nThe background environment is likely a social or entertainment setting, such as a comedy club, a talk show, or a live performance where the speaker is engaging directly with an audience. The setting is designed to elicit reactions, adding to the comedic effect or the speaker's intent to provoke a strong emotional response. The presence of laughter and applause from the audience further indicates that the speaker is performing in a context where humor and audience engagement are central, rather than a serious or formal discussion.",
+        "video_path": "/hpctmp/e1561245/Data/rawdata/MUStARD/mmsd_raw_data/utterances_final/1_5156.mp4",
+        "audio_path": "/hpctmp/e1561245/Data/audio/attitude_1510.mp3"
+      }
+    },
+    "options": {
+      "subject": [
+        "the speaker",
+        "seated friend",
+        "woman on couch",
+        "kissing woman"
+      ],
+      "target": [
+        "the addressee / Hofstadter",
+        "the kissing scene",
+        "the sister",
+        "the room audience"
+      ]
+    },
+    "ground_truth": {
+      "subject": "the speaker",
+      "target": "the addressee / Hofstadter",
+      "mechanism": "multimodal_incongruity",
+      "label": "Disgusted"
+    },
+    "diversity": {
+      "domain": "Friends & Roommates",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "affection_0568",
+    "input": {
+      "scenario": "affection",
+      "text": "i haven't even been able to go on instagram.",
+      "media": {
+        "video_url": "https://huggingface.co/datasets/z4722/Implicit/blob/main/video/MIntRec/video/raw_data/S05/E09/252.mp4",
+        "audio_url": "https://huggingface.co/datasets/yesbobo/implicit/resolve/main/audio/affection/affection_0568.mp3",
+        "audio_caption": "The speaker's tone in the given audio is likely to be one of disappointment or frustration. The statement \"hasn't even been able to go on Instagram\" suggests that the speaker is talking about someone or something that has been unable to access or use Instagram, a social media platform. The tone might be tinged with disappointment, as it implies that access to this platform is expected or desired, but has not been achieved.\n\nIn terms of emotional style, the speaker may exhibit a range of emotions depending on the context. If the inability to access Instagram is due to technical issues, the speaker might express concern or urgency. If it's due to a lack of interest or creativity, the tone could be light-hearted or even humorous. However, without additional context, it's difficult to pinpoint the exact emotional style.\n\nThe background environment is not explicitly described in the audio, but typically, someone discussing Instagram might be in a casual setting such as a home, office, or café. The environment could be busy or quiet, depending on the speaker's surroundings. If the speaker is in a public or crowded space, the tone might be more subdued to avoid distractions. Conversely, in a quiet or private setting, the tone could be more open and expressive. \n\nIn summary, the speaker's tone is likely one of disappointment or frustration, with a potential emotional style that could vary from concern or urgency to light-heartedness or humor. The background environment is not explicitly detailed, but it could range from a busy, public space to a quiet, private setting.",
+        "video_path": "/hpctmp/e1561245/Data/rawdata/MIntRec/video/raw_data/S05/E09/252.mp4",
+        "audio_path": "/hpctmp/e1561245/Data/audio/affection_0568.mp3"
+      }
+    },
+    "options": {
+      "subject": [
+        "Cheyenne (the speaker)",
+        "male coworker",
+        "female customer",
+        "security guard"
+      ],
+      "target": [
+        "Instagram / being unable to access Instagram",
+        "the work schedule",
+        "the checkout queue",
+        "the store policy"
+      ]
+    },
+    "ground_truth": {
+      "subject": "Cheyenne (the speaker)",
+      "target": "Instagram / being unable to access Instagram",
+      "mechanism": "affective_deception",
+      "label": "Sad"
+    },
+    "diversity": {
+      "domain": "Workplace",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "affection_1493",
+    "input": {
+      "scenario": "affection",
+      "text": "Yeah, she couldn't live without the Chan Love.",
+      "media": {
+        "video_url": "https://huggingface.co/datasets/z4722/Implicit/blob/main/video/MUStARD/mmsd_raw_data/utterances_final/2_388.mp4",
+        "audio_url": "https://huggingface.co/datasets/yesbobo/implicit/resolve/main/audio/affection/affection_1493.mp3",
+        "audio_caption": "The speaker's tone is casual and conversational, with a hint of surprise or contemplation. The use of \"yeah\" and the slightly hesitant tone suggest a casual, informal setting. There is a subtle emotional undertone of curiosity or mild amusement, possibly indicating that the speaker is reacting to a humorous or unexpected situation.\n\nThe background environment appears to be a social or public setting, likely a comedy club or a similar venue. The presence of laughter and music indicates a lively and entertaining atmosphere, with the audience engaged and responsive to the speaker's words. The background noise and the sound of applause suggest a well-attended event, possibly with a live audience present.",
+        "video_path": "/hpctmp/e1561245/Data/rawdata/MUStARD/mmsd_raw_data/utterances_final/2_388.mp4",
+        "audio_path": "/hpctmp/e1561245/Data/audio/affection_1493.mp3"
+      }
+    },
+    "options": {
+      "subject": [
+        "She (the woman hugging)",
+        "blonde friend",
+        "man in vest",
+        "nearby waitress"
+      ],
+      "target": [
+        "Chandler (the man)",
+        "the blonde friend",
+        "the slot machines",
+        "the night out"
+      ]
+    },
+    "ground_truth": {
+      "subject": "She (the woman hugging)",
+      "target": "Chandler (the man)",
+      "mechanism": "multimodal_incongruity",
+      "label": "Happy"
+    },
+    "diversity": {
+      "domain": "Intimate Relationships",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "affection_1379",
+    "input": {
+      "scenario": "affection",
+      "text": "When? Today? Some, not a lot.",
+      "media": {
+        "video_url": "https://huggingface.co/datasets/z4722/Implicit/blob/main/video/MUStARD/mmsd_raw_data/utterances_final/2_127.mp4",
+        "audio_url": "https://huggingface.co/datasets/yesbobo/implicit/resolve/main/audio/affection/affection_1379.mp3",
+        "audio_caption": "The speaker's tone is casual and conversational, suggesting a relaxed and informal environment. The speaker uses a neutral and slightly hesitant tone, indicating a level of uncertainty or mild surprise. This can be inferred from the slight pause and the choice of words like \"what\" and \"not a lot,\" which convey a sense of mild disbelief or acknowledgment of a situation that is not as significant as it might have been expected.\n\nThe emotional style of the speaker is understated and composed. There is no strong emotional expression, suggesting that the speaker is either accustomed to这样的 situations or is trying to maintain a level-headed demeanor. The laughter, which is light and not overwhelmingly loud, further supports this interpretation, indicating that the speaker is not overly distressed or excited about the situation.\n\nThe background environment appears to be a social setting, likely a gathering or a public space where people are present and engaged in casual conversation. The presence of laughter and the informal tone of the dialogue suggest a friendly and welcoming atmosphere. The speaker's choice of words and delivery style indicates that he is familiar with such settings and is comfortable in his role, whether it be a host, a speaker, or a participant in the conversation.",
+        "video_path": "/hpctmp/e1561245/Data/rawdata/MUStARD/mmsd_raw_data/utterances_final/2_127.mp4",
+        "audio_path": "/hpctmp/e1561245/Data/audio/affection_1379.mp3"
+      }
+    },
+    "options": {
+      "subject": [
+        "the speaker",
+        "suited listener",
+        "hallway staffer",
+        "doorway observer"
+      ],
+      "target": [
+        "the interlocutor",
+        "the schedule question",
+        "the sales numbers",
+        "the hallway meeting"
+      ]
+    },
+    "ground_truth": {
+      "subject": "the speaker",
+      "target": "the interlocutor",
+      "mechanism": "multimodal_incongruity",
+      "label": "Happy"
+    },
+    "diversity": {
+      "domain": "Friendship",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "attitude_1634",
+    "input": {
+      "scenario": "affection",
+      "text": "Oh no donÕt go. I have scared you. I have said too much. I am hopeless and awkward and desperate for love.",
+      "media": {
+        "video_url": "https://huggingface.co/datasets/z4722/Implicit/blob/main/video/MUStARD/mmsd_raw_data/utterances_final/2_35.mp4",
+        "audio_url": "https://huggingface.co/datasets/yesbobo/implicit/resolve/main/audio/attitude/attitude_1634.mp3",
+        "audio_caption": "The speaker's tone is apologetic and somewhat sheepish, suggesting a person who is aware of having said something unexpected or possibly inappropriate. The emotional style is characterized by a mix of vulnerability and self-deprecation, implying that the speaker feels exposed or embarrassed about the situation. They appear to be addressing someone they consider close, possibly a friend or someone they care about, as the use of the word \"Ilko\" suggests familiarity.\n\nThe background environment seems to be a social setting, likely a public or semi-public space where the speaker is aware of their audience's reactions, as indicated by the laughter and applause that follow. The emotional state is perceived as humorous or relatable, and the applause implies that the audience finds the speaker's self-deprecating tone amusing or endearing. The setting could be a comedy club, a social gathering, or a similar venue where people are expected to engage with the speaker's comments in a light-hearted manner.",
+        "video_path": "/hpctmp/e1561245/Data/rawdata/MUStARD/mmsd_raw_data/utterances_final/2_35.mp4",
+        "audio_path": "/hpctmp/e1561245/Data/audio/attitude_1634.mp3"
+      }
+    },
+    "options": {
+      "subject": [
+        "speaker",
+        "woman at doorway",
+        "man by kitchen",
+        "nearby roommate"
+      ],
+      "target": [
+        "addressee",
+        "the apartment doorway",
+        "his awkward confession",
+        "the kitchen mess"
+      ]
+    },
+    "ground_truth": {
+      "subject": "speaker",
+      "target": "addressee",
+      "mechanism": "figurative_semantics",
+      "label": "Sad"
+    },
+    "diversity": {
+      "domain": "Intimate Relationships",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "affection_0066",
+    "input": {
+      "scenario": "affection",
+      "text": "yes!",
+      "media": {
+        "video_url": "https://huggingface.co/datasets/z4722/Implicit/blob/main/video/MIntRec/video/raw_data/S05/E15/253.mp4",
+        "audio_url": "https://huggingface.co/datasets/yesbobo/implicit/resolve/main/audio/affection/affection_0066.mp3",
+        "audio_caption": "The speaker's tone is filled with excitement and joy, likely characterized by raised pitch and quick, enthusiastic speech. Emotional style is very positive and elated, indicating a strong sense of happiness or triumph. The background environment could be a celebratory or festive setting, such as a party, a sports victory, or an achievement being announced publicly. The overall atmosphere suggests a moment of high energy and happiness, with the speaker possibly surrounded by others who are also celebrating.",
+        "video_path": "/hpctmp/e1561245/Data/rawdata/MIntRec/video/raw_data/S05/E15/253.mp4",
+        "audio_path": "/hpctmp/e1561245/Data/audio/affection_0066.mp3"
+      }
+    },
+    "options": {
+      "subject": [
+        "Dina (the speaker)",
+        "female coworker",
+        "security guard",
+        "checkout customer"
+      ],
+      "target": [
+        "coworker (woman facing Dina)",
+        "the security guard",
+        "the front counter",
+        "the customer line"
+      ]
+    },
+    "ground_truth": {
+      "subject": "Dina (the speaker)",
+      "target": "coworker (woman facing Dina)",
+      "mechanism": "multimodal_incongruity",
+      "label": "Angry"
+    },
+    "diversity": {
+      "domain": "Workplace",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "affection_1069",
+    "input": {
+      "scenario": "affection",
+      "text": "what? i crushed the interview.",
+      "media": {
+        "video_url": "https://huggingface.co/datasets/z4722/Implicit/blob/main/video/MIntRec/video/raw_data/S05/E13/471.mp4",
+        "audio_url": "https://huggingface.co/datasets/yesbobo/implicit/resolve/main/audio/affection/affection_1069.mp3",
+        "audio_caption": "It seems like the speaker is expressing a mix of surprise and disappointment, likely due to the outcome of an interview. The tone of the statement suggests that the speaker did not expect the negative result and is feeling let down or frustrated. The emotional style can be described as a sense of shock or disbelief, coupled with a hint of regret or annoyance. The background environment is not provided in the statement, so it's not possible to describe any specific details about the surroundings.",
+        "video_path": "/hpctmp/e1561245/Data/rawdata/MIntRec/video/raw_data/S05/E13/471.mp4",
+        "audio_path": "/hpctmp/e1561245/Data/audio/affection_1069.mp3"
+      }
+    },
+    "options": {
+      "subject": [
+        "the speaker (man)",
+        "female interviewer",
+        "office manager",
+        "front desk clerk"
+      ],
+      "target": [
+        "the interview/result",
+        "the hiring manager",
+        "the office politics",
+        "the resume review"
+      ]
+    },
+    "ground_truth": {
+      "subject": "the speaker (man)",
+      "target": "the interview/result",
+      "mechanism": "figurative_semantics",
+      "label": "Sad"
+    },
+    "diversity": {
+      "domain": "Workplace",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "affection_1088",
+    "input": {
+      "scenario": "affection",
+      "text": "we doing a dystopian nightmare christmas this year?",
+      "media": {
+        "video_url": "https://huggingface.co/datasets/z4722/Implicit/blob/main/video/MIntRec/video/raw_data/S05/E10/66.mp4",
+        "audio_url": "https://huggingface.co/datasets/yesbobo/implicit/resolve/main/audio/affection/affection_1088.mp3",
+        "audio_caption": "The speaker's tone is one of mild disdain or sarcasm, suggesting a slightly mocking or dismissive attitude toward the idea of having a \"dystopian nightmare Christmas.\" Their emotional style appears to be somewhat detached or indifferent, as they are not expressing strong positive or negative emotions about the concept. \n\nThe background environment is not explicitly described, but given the context, it is likely a casual or relaxed setting where the speaker is conversing with others about holiday plans or preferences. The tone suggests a light-hearted or humorous conversation, possibly in a home or social gathering setting.",
+        "video_path": "/hpctmp/e1561245/Data/rawdata/MIntRec/video/raw_data/S05/E10/66.mp4",
+        "audio_path": "/hpctmp/e1561245/Data/audio/affection_1088.mp3"
+      }
+    },
+    "options": {
+      "subject": [
+        "the speaker (employee in blue)",
+        "woman by display",
+        "passing shopper",
+        "seasonal coworker"
+      ],
+      "target": [
+        "the Xmas display / holiday plan",
+        "the stockroom mess",
+        "the customer traffic",
+        "the return counter"
+      ]
+    },
+    "ground_truth": {
+      "subject": "the speaker (employee in blue)",
+      "target": "the Xmas display / holiday plan",
+      "mechanism": "figurative_semantics",
+      "label": "Angry"
+    },
+    "diversity": {
+      "domain": "Workplace",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "affection_1313",
+    "input": {
+      "scenario": "affection",
+      "text": "We were wondering what was taking so long with the gift, but now we understand you were doing this.",
+      "media": {
+        "video_url": "https://huggingface.co/datasets/z4722/Implicit/blob/main/video/MUStARD/mmsd_raw_data/utterances_final/2_581.mp4",
+        "audio_url": "https://huggingface.co/datasets/yesbobo/implicit/resolve/main/audio/affection/affection_1313.mp3",
+        "audio_caption": "The speaker's tone in this audio clip is light-hearted and slightly amused. They convey a sense of understanding and perhaps even a bit of relief, as they share their realization about the delay in the gift. The speaker seems to be engaging in a humorous or lighthearted exchange, possibly in a social or informal setting where laughter and good-natured teasing are expected.\n\nIn terms of emotional style, the speaker maintains a relaxed and casual demeanor. Their tone suggests they are not taking the situation seriously and are instead approaching it in a playful or informal manner. This emotional style aligns with the light-hearted nature of the conversation, indicating a comfortable and possibly close relationship between the speaker and the person they are addressing.\n\nThe background environment is likely a public or social setting, such as a cafe, a comedy club, or a casual gathering where people are free to express themselves in a more relaxed and informal way. The presence of laughter in the audio further supports the idea that the speaker is in a setting where humor is shared and appreciated, contributing to a warm and friendly atmosphere.",
+        "video_path": "/hpctmp/e1561245/Data/rawdata/MUStARD/mmsd_raw_data/utterances_final/2_581.mp4",
+        "audio_path": "/hpctmp/e1561245/Data/audio/affection_1313.mp3"
+      }
+    },
+    "options": {
+      "subject": [
+        "the speaker",
+        "woman in purple",
+        "man on floor",
+        "kitchen observer"
+      ],
+      "target": [
+        "the person who delayed the gift",
+        "the kitchen stunt",
+        "the wrapped present",
+        "the dinner plans"
+      ]
+    },
+    "ground_truth": {
+      "subject": "the speaker",
+      "target": "the person who delayed the gift",
+      "mechanism": "multimodal_incongruity",
+      "label": "Happy"
+    },
+    "diversity": {
+      "domain": "Friendship Interaction",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "affection_0131",
+    "input": {
+      "scenario": "affection",
+      "text": "she's gonna feel so sorry she dumped you.",
+      "media": {
+        "video_url": "https://huggingface.co/datasets/z4722/Implicit/blob/main/video/MIntRec/video/raw_data/S05/E08/247.mp4",
+        "audio_url": "https://huggingface.co/datasets/yesbobo/implicit/resolve/main/audio/affection/affection_0131.mp3",
+        "audio_caption": "The speaker's tone in the sentence \"She's gonna feel so sorry she dumped you\" seems to convey a sense of confidence or possibly even sneering. The emotional style could be interpreted as sarcastic or mocking, suggesting that the speaker believes the person being addressed will encounter regret or disappointment. \n\nThe background environment is not explicitly described in the sentence, so it is not possible to infer any specific details about the setting or atmosphere. However, the use of a casual, somewhat informal tone suggests that the conversation might be taking place in a relaxed or private setting, perhaps between friends or colleagues. The speaker seems to be in a position of authority or control, as they are predicting the future reaction of someone else.",
+        "video_path": "/hpctmp/e1561245/Data/rawdata/MIntRec/video/raw_data/S05/E08/247.mp4",
+        "audio_path": "/hpctmp/e1561245/Data/audio/affection_0131.mp3"
+      }
+    },
+    "options": {
+      "subject": [
+        "the speaker (employee)",
+        "bald coworker",
+        "male customer",
+        "cash wrap clerk"
+      ],
+      "target": [
+        "the ex who dumped him",
+        "his current date",
+        "the breakup story",
+        "the apology text"
+      ]
+    },
+    "ground_truth": {
+      "subject": "the speaker (employee)",
+      "target": "the ex who dumped him",
+      "mechanism": "figurative_semantics",
+      "label": "Happy"
+    },
+    "diversity": {
+      "domain": "Workplace",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "affection_1205",
+    "input": {
+      "scenario": "affection",
+      "text": "I gargled with tequila and may have swallowed a teeny bit.",
+      "media": {
+        "video_url": "https://huggingface.co/datasets/z4722/Implicit/blob/main/video/MUStARD/mmsd_raw_data/utterances_final/1_5581.mp4",
+        "audio_url": "https://huggingface.co/datasets/yesbobo/implicit/resolve/main/audio/affection/affection_1205.mp3",
+        "audio_caption": "The speaker's tone is somewhat casual and slightly slurred, indicating that they have been drinking tequila. The emotional style seems relaxed and possibly amused, as there is a sense of light-heartedness in their speech. The background environment is likely a social setting, such as a bar or party, where alcohol consumption is common, contributing to the speaker's current state.",
+        "video_path": "/hpctmp/e1561245/Data/rawdata/MUStARD/mmsd_raw_data/utterances_final/1_5581.mp4",
+        "audio_path": "/hpctmp/e1561245/Data/audio/affection_1205.mp3"
+      }
+    },
+    "options": {
+      "subject": [
+        "the speaker",
+        "man with glasses",
+        "restaurant patron",
+        "table waitress"
+      ],
+      "target": [
+        "the conversation partner",
+        "the party room",
+        "the tequila bottle",
+        "the dinner crowd"
+      ]
+    },
+    "ground_truth": {
+      "subject": "the speaker",
+      "target": "the conversation partner",
+      "mechanism": "multimodal_incongruity",
+      "label": "Happy"
+    },
+    "diversity": {
+      "domain": "Public & Service",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "affection_0014",
+    "input": {
+      "scenario": "affection",
+      "text": "nope, nope. i'm not saying squat in anything called a  safe space.",
+      "media": {
+        "video_url": "https://huggingface.co/datasets/z4722/Implicit/blob/main/video/MIntRec/video/raw_data/S05/E11/381.mp4",
+        "audio_url": "https://huggingface.co/datasets/yesbobo/implicit/resolve/main/audio/affection/affection_0014.mp3",
+        "audio_caption": "The speaker's tone in this clip is assertive and emphatic, conveying a strong sense of conviction and urgency. The emotion behind the speech is likely one of frustration or anger, as the speaker is firmly rejecting the concept of a \"safe space.\" The background environment is not specified, so it cannot be determined whether the speaker is in a quiet indoor setting or a noisy public space.",
+        "video_path": "/hpctmp/e1561245/Data/rawdata/MIntRec/video/raw_data/S05/E11/381.mp4",
+        "audio_path": "/hpctmp/e1561245/Data/audio/affection_0014.mp3"
+      }
+    },
+    "options": {
+      "subject": [
+        "Jonah (the speaker)",
+        "Amy Sosa",
+        "seated officer",
+        "bald coworker"
+      ],
+      "target": [
+        "the concept 'safe space'",
+        "the training session",
+        "the holiday display",
+        "the apology demand"
+      ]
+    },
+    "ground_truth": {
+      "subject": "Jonah (the speaker)",
+      "target": "the concept 'safe space'",
+      "mechanism": "multimodal_incongruity",
+      "label": "Angry"
+    },
+    "diversity": {
+      "domain": "Workplace",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "affection_0005",
+    "input": {
+      "scenario": "affection",
+      "text": "so you pegged me in the face with a yam?",
+      "media": {
+        "video_url": "https://huggingface.co/datasets/z4722/Implicit/blob/main/video/MIntRec/video/raw_data/S04/E07/300.mp4",
+        "audio_url": "https://huggingface.co/datasets/yesbobo/implicit/resolve/main/audio/affection/affection_0005.mp3",
+        "audio_caption": "The speaker's tone is likely to be sarcastic or mocking, given the context of being hit in the face with a yam, which is unusual and potentially painful. The emotional style may be amused or mocking, as the situation seems outlandish or unexpected. The background environment is not specified, but it could be a casual setting, such as a social gathering or a humorous conversation, where such a statement would be fitting.",
+        "video_path": "/hpctmp/e1561245/Data/rawdata/MIntRec/video/raw_data/S04/E07/300.mp4",
+        "audio_path": "/hpctmp/e1561245/Data/audio/affection_0005.mp3"
+      }
+    },
+    "options": {
+      "subject": [
+        "Glenn (the speaker)",
+        "female coworker",
+        "clinic nurse",
+        "store customer"
+      ],
+      "target": [
+        "the coworker",
+        "the ice pack",
+        "the yam incident",
+        "the break room wall"
+      ]
+    },
+    "ground_truth": {
+      "subject": "Glenn (the speaker)",
+      "target": "the coworker",
+      "mechanism": "multimodal_incongruity",
+      "label": "Happy"
+    },
+    "diversity": {
+      "domain": "Workplace",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "affection_0858",
+    "input": {
+      "scenario": "affection",
+      "text": "no, no, no, no, no.",
+      "media": {
+        "video_url": "https://huggingface.co/datasets/z4722/Implicit/blob/main/video/MIntRec/video/raw_data/S05/E14/179.mp4",
+        "audio_url": "https://huggingface.co/datasets/yesbobo/implicit/resolve/main/audio/affection/affection_0858.mp3",
+        "audio_caption": "The speaker's tone in this audio segment is one of firm denial or strong286, as indicated by the repeated use of \"no\" with an assertive inflection. This suggests a clear message of refusal or disagreement.\n\nThe speaker's emotional style appears to be assertive and possibly stressed, which can be inferred from the urgency in the \"no\" tone. There is a sense of urgency or emphasis in the utterance, as the words are repeated and said with a stronger voice.\n\nThe background environment is not explicitly detailed, so it's assumed to be typical of a conversation or public speaking context, with no distinctive ambient noise or atmosphere described.",
+        "video_path": "/hpctmp/e1561245/Data/rawdata/MIntRec/video/raw_data/S05/E14/179.mp4",
+        "audio_path": "/hpctmp/e1561245/Data/audio/affection_0858.mp3"
+      }
+    },
+    "options": {
+      "subject": [
+        "the speaker (the person saying \"no\")",
+        "man with clipboard",
+        "banquet guest",
+        "event planner"
+      ],
+      "target": [
+        "the man offering the clipboard",
+        "the paperwork",
+        "the party table",
+        "the catering line"
+      ]
+    },
+    "ground_truth": {
+      "subject": "the speaker (the person saying \"no\")",
+      "target": "the man offering the clipboard",
+      "mechanism": "affective_deception",
+      "label": "Angry"
+    },
+    "diversity": {
+      "domain": "Public & Service",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "affection_0187",
+    "input": {
+      "scenario": "affection",
+      "text": "it's the traditional last doll",
+      "media": {
+        "video_url": "https://huggingface.co/datasets/z4722/Implicit/blob/main/video/MIntRec/video/raw_data/S04/E17/217.mp4",
+        "audio_url": "https://huggingface.co/datasets/yesbobo/implicit/resolve/main/audio/affection/affection_0187.mp3",
+        "audio_caption": "The speaker uses a formal tone with a slight hint of sarcasm or irony, suggesting a somewhat detached or reserved emotional style. The background environment appears to be a public or professional setting, possibly a formal event or a discussion in a serious context.",
+        "video_path": "/hpctmp/e1561245/Data/rawdata/MIntRec/video/raw_data/S04/E17/217.mp4",
+        "audio_path": "/hpctmp/e1561245/Data/audio/affection_0187.mp3"
+      }
+    },
+    "options": {
+      "subject": [
+        "the speaker (man holding the doll)",
+        "girl in white",
+        "girl in black",
+        "man in suit"
+      ],
+      "target": [
+        "the girls",
+        "the purple doll",
+        "the school dance",
+        "the prize table"
+      ]
+    },
+    "ground_truth": {
+      "subject": "the speaker (man holding the doll)",
+      "target": "the girls",
+      "mechanism": "multimodal_incongruity",
+      "label": "Happy"
+    },
+    "diversity": {
+      "domain": "Public & Service",
+      "culture": "Latin American Culture"
+    }
+  },
+  {
+    "id": "affection_0567",
+    "input": {
+      "scenario": "affection",
+      "text": "i just found out that, um, i got a work permit.",
+      "media": {
+        "video_url": "https://huggingface.co/datasets/z4722/Implicit/blob/main/video/MIntRec/video/raw_data/S05/E13/166.mp4",
+        "audio_url": "https://huggingface.co/datasets/yesbobo/implicit/resolve/main/audio/affection/affection_0567.mp3",
+        "audio_caption": "The speaker's tone is neutral and slightly hesitant, indicating a mix of relief and surprise. The emotional style is subdued, reflecting a sense of calm and acceptance. The background environment appears to be a quiet, indoor setting, possibly a home or office, with no discernible distractions or interruptions.",
+        "video_path": "/hpctmp/e1561245/Data/rawdata/MIntRec/video/raw_data/S05/E13/166.mp4",
+        "audio_path": "/hpctmp/e1561245/Data/audio/affection_0567.mp3"
+      }
+    },
+    "options": {
+      "subject": [
+        "the speaker",
+        "pink vest coworker",
+        "bald manager",
+        "nearby shopper"
+      ],
+      "target": [
+        "a work permit",
+        "the staff meeting",
+        "the shift assignment",
+        "the checkout issue"
+      ]
+    },
+    "ground_truth": {
+      "subject": "the speaker",
+      "target": "a work permit",
+      "mechanism": "affective_deception",
+      "label": "Happy"
+    },
+    "diversity": {
+      "domain": "Workplace",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "affection_0865",
+    "input": {
+      "scenario": "affection",
+      "text": "um, i'm gonna- i gotta get back to work.",
+      "media": {
+        "video_url": "https://huggingface.co/datasets/z4722/Implicit/blob/main/video/MIntRec/video/raw_data/S06/E02/290.mp4",
+        "audio_url": "https://huggingface.co/datasets/yesbobo/implicit/resolve/main/audio/affection/affection_0865.mp3",
+        "audio_caption": "The speaker's tone is neutral and matter-of-fact, indicating a sense of urgency or importance about needing to return to work. There is no particular emotion conveyed through the tone, suggesting a professional or practical attitude. The background environment is not described, so it is unknown.",
+        "video_path": "/hpctmp/e1561245/Data/rawdata/MIntRec/video/raw_data/S06/E02/290.mp4",
+        "audio_path": "/hpctmp/e1561245/Data/audio/affection_0865.mp3"
+      }
+    },
+    "options": {
+      "subject": [
+        "Jonah",
+        "female coworker",
+        "floor manager",
+        "counter customer"
+      ],
+      "target": [
+        "the coworker",
+        "the workload",
+        "the staff room",
+        "the open shift"
+      ]
+    },
+    "ground_truth": {
+      "subject": "Jonah",
+      "target": "the coworker",
+      "mechanism": "affective_deception",
+      "label": "Bad"
+    },
+    "diversity": {
+      "domain": "Workplace",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "affection_1514",
+    "input": {
+      "scenario": "affection",
+      "text": "Really? Struck down in the prime of life.",
+      "media": {
+        "video_url": "https://huggingface.co/datasets/z4722/Implicit/blob/main/video/MUStARD/mmsd_raw_data/utterances_final/2_438.mp4",
+        "audio_url": "https://huggingface.co/datasets/yesbobo/implicit/resolve/main/audio/affection/affection_1514.mp3",
+        "audio_caption": "The speaker's tone is characterized by a sense of surprise or disbelief, often referred to as a \"shocked\" tone. This is evident in the use of the word \"really\" and the overall inflection of the sentence. The emotional style of the speaker is one of mild astonishment or surprise, which could be interpreted as a reaction to a sudden realization or unexpected news. The speaker's voice carries a tone that suggests they are not quite sure whether to believe what they are hearing or seeing.\n\nThe background environment appears to be a public or social setting where the speaker is likely engaging in a conversation or perhaps delivering a speech. The presence of laughter in the background suggests that the speaker's words may have elicited amusement or humor from the audience, indicating that the tone of the speaker's voice could be light-hearted or even ironic. The laughter implies that the audience is reacting positively to the speaker's delivery, which might be due to the speaker's expressive and animated tone or their ability to evoke laughter through their words.",
+        "video_path": "/hpctmp/e1561245/Data/rawdata/MUStARD/mmsd_raw_data/utterances_final/2_438.mp4",
+        "audio_path": "/hpctmp/e1561245/Data/audio/affection_1514.mp3"
+      }
+    },
+    "options": {
+      "subject": [
+        "the speaker",
+        "woman in red",
+        "apartment roommate",
+        "doorway guest"
+      ],
+      "target": [
+        "the person/situation being referenced",
+        "the notebook joke",
+        "the living room mood",
+        "the evening plans"
+      ]
+    },
+    "ground_truth": {
+      "subject": "the speaker",
+      "target": "the person/situation being referenced",
+      "mechanism": "multimodal_incongruity",
+      "label": "Happy"
+    },
+    "diversity": {
+      "domain": "Friends & Roommates",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "affection_0903",
+    "input": {
+      "scenario": "affection",
+      "text": "what's going on? is everything okay?",
+      "media": {
+        "video_url": "https://huggingface.co/datasets/z4722/Implicit/blob/main/video/MIntRec/video/raw_data/S05/E19/160.mp4",
+        "audio_url": "https://huggingface.co/datasets/yesbobo/implicit/resolve/main/audio/affection/affection_0903.mp3",
+        "audio_caption": "The speaker's tone in the given audio is concerned and somewhat urgent. They are asking \"What's going on? Is everything okay?\" which indicates a level of anxiety or distress. The emotional style can be described as cautious or apprehensive, as the speaker seems to be questioning the situation and possibly trying to understand if there is a problem.\n\nThe background environment is not explicitly described in the audio, but since the speaker's tone suggests concern, it could be a setting where there is some sort of issue or uncertainty. This might be a professional setting, a social gathering, or even a personal space where the speaker feels to clarify or address a situation. The specifics of the environment, such as whether it is indoors or outdoors, with other people present, or alone, are not provided, but the emotional context implies a setting where the speaker feels the need to inquire about the status of their surroundings or circumstances.",
+        "video_path": "/hpctmp/e1561245/Data/rawdata/MIntRec/video/raw_data/S05/E19/160.mp4",
+        "audio_path": "/hpctmp/e1561245/Data/audio/affection_0903.mp3"
+      }
+    },
+    "options": {
+      "subject": [
+        "the speaker (female employee)",
+        "male coworker",
+        "pink blouse shopper",
+        "nearby customer"
+      ],
+      "target": [
+        "the situation / possible incident in the store",
+        "the broken display",
+        "the checkout delay",
+        "the crowd gathering"
+      ]
+    },
+    "ground_truth": {
+      "subject": "the speaker (female employee)",
+      "target": "the situation / possible incident in the store",
+      "mechanism": "affective_deception",
+      "label": "Fearful"
+    },
+    "diversity": {
+      "domain": "Workplace",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "affection_0953",
+    "input": {
+      "scenario": "affection",
+      "text": "but you're making it pretty tough.",
+      "media": {
+        "video_url": "https://huggingface.co/datasets/z4722/Implicit/blob/main/video/MIntRec/video/raw_data/S04/E01/416.mp4",
+        "audio_url": "https://huggingface.co/datasets/yesbobo/implicit/resolve/main/audio/affection/affection_0953.mp3",
+        "audio_caption": "The speaker's tone is friendly and approachable, suggesting a casual and relaxed conversation. The emotional style is empathetic and supportive, indicating a caring and understanding attitude. The background environment appears to be indoors, possibly in a cozy home setting, contributing to the warm and inviting atmosphere.",
+        "video_path": "/hpctmp/e1561245/Data/rawdata/MIntRec/video/raw_data/S04/E01/416.mp4",
+        "audio_path": "/hpctmp/e1561245/Data/audio/affection_0953.mp3"
+      }
+    },
+    "options": {
+      "subject": [
+        "Dina (the speaker)",
+        "seated coworker",
+        "shift manager",
+        "stockroom worker"
+      ],
+      "target": [
+        "the colleague she addresses",
+        "the meeting topic",
+        "the new policy",
+        "the staffing issue"
+      ]
+    },
+    "ground_truth": {
+      "subject": "Dina (the speaker)",
+      "target": "the colleague she addresses",
+      "mechanism": "figurative_semantics",
+      "label": "Happy"
+    },
+    "diversity": {
+      "domain": "Workplace",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "affection_1331",
+    "input": {
+      "scenario": "affection",
+      "text": "No, no the actual cartoon character .. Of course the baloon.",
+      "media": {
+        "video_url": "https://huggingface.co/datasets/z4722/Implicit/blob/main/video/MUStARD/mmsd_raw_data/utterances_final/2_113.mp4",
+        "audio_url": "https://huggingface.co/datasets/yesbobo/implicit/resolve/main/audio/affection/affection_1331.mp3",
+        "audio_caption": "The speaker's tone is light and conversational, with a humorous undertone. They appear to be speaking in an upbeat and engaging manner, possibly trying to entertain or amuse an audience. The emotional style is lighthearted and playful, suggesting that the speaker is enjoying themselves and is in a positive mood. The background environment seems to be a casual, possibly intimate setting, such as a small gathering or a personal interaction, where the speaker feels comfortable enough to speak freely and express humor. The presence of music and laughter indicates a relaxed and jovial atmosphere.",
+        "video_path": "/hpctmp/e1561245/Data/rawdata/MUStARD/mmsd_raw_data/utterances_final/2_113.mp4",
+        "audio_path": "/hpctmp/e1561245/Data/audio/affection_1331.mp3"
+      }
+    },
+    "options": {
+      "subject": [
+        "the speaker",
+        "woman in tan",
+        "woman in black",
+        "man on couch"
+      ],
+      "target": [
+        "the group (friends)",
+        "the balloon joke",
+        "the cartoon debate",
+        "the table discussion"
+      ]
+    },
+    "ground_truth": {
+      "subject": "the speaker",
+      "target": "the group (friends)",
+      "mechanism": "multimodal_incongruity",
+      "label": "Happy"
+    },
+    "diversity": {
+      "domain": "Friend Group",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "affection_0916",
+    "input": {
+      "scenario": "affection",
+      "text": "you are the one who should apologize.",
+      "media": {
+        "video_url": "https://huggingface.co/datasets/z4722/Implicit/blob/main/video/MIntRec/video/raw_data/S05/E19/28.mp4",
+        "audio_url": "https://huggingface.co/datasets/yesbobo/implicit/resolve/main/audio/affection/affection_0916.mp3",
+        "audio_caption": "Certainly! Let's break down each element of the speaker's communication:\n\n### Tone:\nThe tone of the speaker is assertive and authoritative. This is often characterized by a firm, clear voice without much hesitation or wavering. The speaker is likely conveying a sense of confidence and authority, perhaps indicating that they are in a position of power or influence.\n\n### Emotional Style:\nThe speaker's emotional style appears to be composed and possibly even slightly stern. There is an underlying sense of determination, and the speaker seems to be unwavering in their stance. The emotional tone is not necessarily aggressive but rather controlled and resolute.\n\n### Background Environment:\nThe background environment is not explicitly described, but based on the assertive tone and the context of the statement, it is likely a professional or formal setting. This could be an office, a meeting room, or another place where serious discussions or negotiations take place. The environment suggests that the speaker is in a position where they can speak with authority and command attention without needing to rely on emotional appeals.\n\n### Summary:\n- **Tone:** Assertive and authoritative\n- **Emotional Style:** Composed and resolute\n- **Background Environment:** Likely a professional or formal setting\n\nThis combination of tone, emotional style, and background environment suggests a scenario where the speaker is confident and unapologetic, possibly in a professional or authoritative capacity.",
+        "video_path": "/hpctmp/e1561245/Data/rawdata/MIntRec/video/raw_data/S05/E19/28.mp4",
+        "audio_path": "/hpctmp/e1561245/Data/audio/affection_0916.mp3"
+      }
+    },
+    "options": {
+      "subject": [
+        "Amy Sosa",
+        "blue vest trainee",
+        "yellow vest trainee",
+        "male floor worker"
+      ],
+      "target": [
+        "the two employees facing her",
+        "the apology request",
+        "the paperwork stack",
+        "the office rules"
+      ]
+    },
+    "ground_truth": {
+      "subject": "Amy Sosa",
+      "target": "the two employees facing her",
+      "mechanism": "figurative_semantics",
+      "label": "Happy"
+    },
+    "diversity": {
+      "domain": "Workplace",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "affection_0706",
+    "input": {
+      "scenario": "affection",
+      "text": "has she been acting weird?",
+      "media": {
+        "video_url": "https://huggingface.co/datasets/z4722/Implicit/blob/main/video/MIntRec/video/raw_data/S05/E14/220.mp4",
+        "audio_url": "https://huggingface.co/datasets/yesbobo/implicit/resolve/main/audio/affection/affection_0706.mp3",
+        "audio_caption": "The speaker's tone in this phrase suggests a sense of curiosity or suspicion mixed with a slight hint of concern. The emotional style of the speaker can be described as cautious, as the use of the word \"weird\" implies an element of uncertainty or unease about the other person's behavior. The background environment is not explicitly described, so it is assumed to be a neutral or casual setting where such a conversation might take place. The overall atmosphere seems to be one of quiet inquiry or mild suspicion.",
+        "video_path": "/hpctmp/e1561245/Data/rawdata/MIntRec/video/raw_data/S05/E14/220.mp4",
+        "audio_path": "/hpctmp/e1561245/Data/audio/affection_0706.mp3"
+      }
+    },
+    "options": {
+      "subject": [
+        "the speaker (woman on the phone)",
+        "male employee",
+        "seated patron",
+        "front desk clerk"
+      ],
+      "target": [
+        "the other woman (\"she\")",
+        "the phone call",
+        "the strange behavior",
+        "the party rumor"
+      ]
+    },
+    "ground_truth": {
+      "subject": "the speaker (woman on the phone)",
+      "target": "the other woman (\"she\")",
+      "mechanism": "figurative_semantics",
+      "label": "Fearful"
+    },
+    "diversity": {
+      "domain": "Intimate Relationships",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "affection_0163",
+    "input": {
+      "scenario": "affection",
+      "text": "thanks.",
+      "media": {
+        "video_url": "https://huggingface.co/datasets/z4722/Implicit/blob/main/video/MIntRec/video/raw_data/S05/E21/458.mp4",
+        "audio_url": "https://huggingface.co/datasets/yesbobo/implicit/resolve/main/audio/affection/affection_0163.mp3",
+        "audio_caption": "Certainly! Here's a detailed description of the speaker's tone, emotional style, and background environment:\n\n1. **Tone**: The speaker's tone is polite and measured, indicative of someone who is well-spoken and composed. The use of the word \"thanks\" suggests a courteous and appreciative tone, likely reflecting a polite and considerate demeanor.\n\n2. **Emotional Style**: Given the context provided, the speaker's emotional style can be described as warm and thankful. The expression of gratitude (\"thanks\") implies a positive and appreciative emotional state, suggesting that the speaker is in a good mood or is expressing appreciation for something or someone.\n\n3. **Background Environment**: While the background environment is not explicitly stated, the tone and emotional style suggest a neutral or positive setting. The speaker's politeness and thankfulness could indicate a professional, educational, or social setting where politeness and gratitude are expected. It could also hint at a relaxed and comfortable environment where positive interactions are common.\n\nOverall, the speaker's tone is polite and thankful, with an emotional style that is warm and appreciative, set against a likely neutral or positive background environment.",
+        "video_path": "/hpctmp/e1561245/Data/rawdata/MIntRec/video/raw_data/S05/E21/458.mp4",
+        "audio_path": "/hpctmp/e1561245/Data/audio/affection_0163.mp3"
+      }
+    },
+    "options": {
+      "subject": [
+        "the speaker (woman in the office)",
+        "man across desk",
+        "office assistant",
+        "department chief"
+      ],
+      "target": [
+        "the interaction / the other person",
+        "the paperwork",
+        "the office policy",
+        "the meeting request"
+      ]
+    },
+    "ground_truth": {
+      "subject": "the speaker (woman in the office)",
+      "target": "the interaction / the other person",
+      "mechanism": "affective_deception",
+      "label": "Bad"
+    },
+    "diversity": {
+      "domain": "Workplace",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "affection_1173",
+    "input": {
+      "scenario": "affection",
+      "text": "What do you think I did? I discreetly slipped off the other earring, put it in my pocket and then got the hell out of there!",
+      "media": {
+        "video_url": "https://huggingface.co/datasets/z4722/Implicit/blob/main/video/MUStARD/mmsd_raw_data/utterances_final/1_1627.mp4",
+        "audio_url": "https://huggingface.co/datasets/yesbobo/implicit/resolve/main/audio/affection/affection_1173.mp3",
+        "audio_caption": "The speaker's tone is lighthearted and playful, suggesting that they feel a sense of relief or amusement in recounting the story. Their emotional style appears to be open and expressive, indicating that they are comfortable sharing their experiences, even if they are not typical or socially acceptable. The background environment seems to be a casual, social setting where people are relaxed and engaged in casual conversation. The laughter from the audience further supports the idea that the speaker's tone and storytelling style are well-received and contribute to a light-hearted atmosphere.",
+        "video_path": "/hpctmp/e1561245/Data/rawdata/MUStARD/mmsd_raw_data/utterances_final/1_1627.mp4",
+        "audio_path": "/hpctmp/e1561245/Data/audio/affection_1173.mp3"
+      }
+    },
+    "options": {
+      "subject": [
+        "the speaker",
+        "red haired woman",
+        "movie usher",
+        "man in aisle"
+      ],
+      "target": [
+        "her companion",
+        "the lost earring",
+        "the theater date",
+        "the empty seat"
+      ]
+    },
+    "ground_truth": {
+      "subject": "the speaker",
+      "target": "her companion",
+      "mechanism": "multimodal_incongruity",
+      "label": "Happy"
+    },
+    "diversity": {
+      "domain": "Intimate Relationships",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "affection_1325",
+    "input": {
+      "scenario": "affection",
+      "text": "Yes, we all know how cruel a parent can be, about the flatness of a child's pillow.",
+      "media": {
+        "video_url": "https://huggingface.co/datasets/z4722/Implicit/blob/main/video/MUStARD/mmsd_raw_data/utterances_final/2_457.mp4",
+        "audio_url": "https://huggingface.co/datasets/yesbobo/implicit/resolve/main/audio/affection/affection_1325.mp3",
+        "audio_caption": "The speaker's tone in this statement is lighthearted and somewhat humorous. The choice of words, such as \"cruel\" and \"flatness,\" suggests a playful exaggeration rather than genuine criticism. The emotional style appears to be one of jesting or understatement, possibly intended to amuse or entertain the audience. The background environment is not explicitly described, but the use of \"yes\" at the beginning and the overall tone suggest a casual, perhaps conversational setting. The laughter at the end indicates that the statement was likely meant to be taken in good spirits, contributing to a relaxed and informal atmosphere.",
+        "video_path": "/hpctmp/e1561245/Data/rawdata/MUStARD/mmsd_raw_data/utterances_final/2_457.mp4",
+        "audio_path": "/hpctmp/e1561245/Data/audio/affection_1325.mp3"
+      }
+    },
+    "options": {
+      "subject": [
+        "the speaker",
+        "woman beside him",
+        "roommate friend",
+        "older parent"
+      ],
+      "target": [
+        "the friends/listeners",
+        "the pillow joke",
+        "the parent story",
+        "the couch conversation"
+      ]
+    },
+    "ground_truth": {
+      "subject": "the speaker",
+      "target": "the friends/listeners",
+      "mechanism": "multimodal_incongruity",
+      "label": "Happy"
+    },
+    "diversity": {
+      "domain": "Friendship",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "affection_1384",
+    "input": {
+      "scenario": "affection",
+      "text": "It's not a real game! I made it up!",
+      "media": {
+        "video_url": "https://huggingface.co/datasets/z4722/Implicit/blob/main/video/MUStARD/mmsd_raw_data/utterances_final/2_38.mp4",
+        "audio_url": "https://huggingface.co/datasets/yesbobo/implicit/resolve/main/audio/affection/affection_1384.mp3",
+        "audio_caption": "The speaker's tone is assertive and confident, suggesting a sense of authority and control. The emotional style is calm and collected, indicating a composed and steady demeanor. The background environment is likely a quiet and enclosed space, such as an office or study room, where the speaker can speak clearly and without interruption.",
+        "video_path": "/hpctmp/e1561245/Data/rawdata/MUStARD/mmsd_raw_data/utterances_final/2_38.mp4",
+        "audio_path": "/hpctmp/e1561245/Data/audio/affection_1384.mp3"
+      }
+    },
+    "options": {
+      "subject": [
+        "the speaker (seated man)",
+        "standing roommate",
+        "woman at doorway",
+        "apartment guest"
+      ],
+      "target": [
+        "friends / the group",
+        "the made up game",
+        "the apartment scene",
+        "the beer bottle"
+      ]
+    },
+    "ground_truth": {
+      "subject": "the speaker (seated man)",
+      "target": "friends / the group",
+      "mechanism": "multimodal_incongruity",
+      "label": "Happy"
+    },
+    "diversity": {
+      "domain": "Friendship",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "affection_1216",
+    "input": {
+      "scenario": "affection",
+      "text": "Well, if you don't mind looking like an orange traffic cone, great.",
+      "media": {
+        "video_url": "https://huggingface.co/datasets/z4722/Implicit/blob/main/video/MUStARD/mmsd_raw_data/utterances_final/1_6221.mp4",
+        "audio_url": "https://huggingface.co/datasets/yesbobo/implicit/resolve/main/audio/affection/affection_1216.mp3",
+        "audio_caption": "The speaker's tone is neutral and professional, suggesting a calm and composed demeanor. The emotional style is likely to be steady and measured, indicating a lack of strong emotional fluctuations. The background environment appears to be a quiet, indoor setting, possibly a home office or a private study, where the speaker is engaged in a formal or semi-formal conversation. The overall atmosphere is conducive to focused or serious discourse.",
+        "video_path": "/hpctmp/e1561245/Data/rawdata/MUStARD/mmsd_raw_data/utterances_final/1_6221.mp4",
+        "audio_path": "/hpctmp/e1561245/Data/audio/affection_1216.mp3"
+      }
+    },
+    "options": {
+      "subject": [
+        "the speaker",
+        "seated woman",
+        "woman in green",
+        "roommate guest"
+      ],
+      "target": [
+        "the seated woman",
+        "the coffee pot",
+        "the color advice",
+        "the kitchen table"
+      ]
+    },
+    "ground_truth": {
+      "subject": "the speaker",
+      "target": "the seated woman",
+      "mechanism": "multimodal_incongruity",
+      "label": "Happy"
+    },
+    "diversity": {
+      "domain": "Friendship",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "affection_1453",
+    "input": {
+      "scenario": "affection",
+      "text": "Ross umm, there's something that I've got to tell you, there's-there's someone else.",
+      "media": {
+        "video_url": "https://huggingface.co/datasets/z4722/Implicit/blob/main/video/MUStARD/mmsd_raw_data/utterances_final/2_454.mp4",
+        "audio_url": "https://huggingface.co/datasets/yesbobo/implicit/resolve/main/audio/affection/affection_1453.mp3",
+        "audio_caption": "Based on the provided transcription, we can analyze the speaker's tone, emotional style, and background environment in the following manner:\n\n### Tone:\nThe tone of the speaker appears to be serious and potentially anxious or concerned. This is indicated by the hesitation and the choice of words (\"there's something that I've got to tell you,\" \"there's someone else\"). The tone suggests that the speaker is about to reveal some important or sensitive information.\n\n### Emotional Style:\nThe emotional style of the speaker seems to be one of vulnerability or unease. The way the speaker phrases the statement implies that they are uncomfortable or nervous about the information they are about to disclose. This could suggest that the speaker is worried about the reaction of the person they are speaking to or the potential consequences of the information being revealed.\n\n### Background Environment:\nThe background environment is not explicitly described in the provided text, so we can only infer that the speaker is in a setting where they feel comfortable enough to speak openly but also feels a need to prepare the listener for the nature of the information they are about to share. The environment might be a private or confidential setting, such as a meeting room or a personal space, where the speaker feels safe to address sensitive topics.\n\n### Summary:\nThe speaker's tone is serious and somewhat anxious, indicating a sense of vulnerability or unease about the information they are about to reveal. The emotional style suggests that the speaker is concerned about the impact of the information on the listener or the potential consequences of the disclosure. The background environment is likely a private or confidential setting where the speaker feels comfortable enough to speak openly but also uses a measured approach to prepare the listener for the sensitive nature of the information.",
+        "video_path": "/hpctmp/e1561245/Data/rawdata/MUStARD/mmsd_raw_data/utterances_final/2_454.mp4",
+        "audio_path": "/hpctmp/e1561245/Data/audio/affection_1453.mp3"
+      }
+    },
+    "options": {
+      "subject": [
+        "the speaker (caller)",
+        "Ross on bed",
+        "apartment roommate",
+        "bedroom friend"
+      ],
+      "target": [
+        "Ross",
+        "the breakup news",
+        "the phone call",
+        "the other relationship"
+      ]
+    },
+    "ground_truth": {
+      "subject": "the speaker (caller)",
+      "target": "Ross",
+      "mechanism": "affective_deception",
+      "label": "Sad"
+    },
+    "diversity": {
+      "domain": "Intimate Relationships",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "affection_1199",
+    "input": {
+      "scenario": "affection",
+      "text": "An entire dinner to talk about your research? Where you going, the drive-thru at Jack in the Box?",
+      "media": {
+        "video_url": "https://huggingface.co/datasets/z4722/Implicit/blob/main/video/MUStARD/mmsd_raw_data/utterances_final/1_5058.mp4",
+        "audio_url": "https://huggingface.co/datasets/yesbobo/implicit/resolve/main/audio/affection/affection_1199.mp3",
+        "audio_caption": "The speaker in the audio clip seems to have a sarcastic and slightly mocking tone. The laughter that follows their statement suggests that the speaker is making a humorous or ironic comment about the listener's research. The emotional style of the speaker is likely to be playful and witty, engaging the audience with a touch of humor.\n\nThe background environment appears to be a casual setting, possibly a social gathering or a public event where people are laughing and enjoying themselves. The laughter and the casual tone of the conversation indicate that the speaker is trying to lighten the mood or perhaps make a point in an entertaining way.",
+        "video_path": "/hpctmp/e1561245/Data/rawdata/MUStARD/mmsd_raw_data/utterances_final/1_5058.mp4",
+        "audio_path": "/hpctmp/e1561245/Data/audio/affection_1199.mp3"
+      }
+    },
+    "options": {
+      "subject": [
+        "Leonard (speaker)",
+        "Sheldon",
+        "dinner guest",
+        "roommate listener"
+      ],
+      "target": [
+        "Sheldon (listener / his research)",
+        "the restaurant choice",
+        "the dinner invitation",
+        "the takeout joke"
+      ]
+    },
+    "ground_truth": {
+      "subject": "Leonard (speaker)",
+      "target": "Sheldon (listener / his research)",
+      "mechanism": "multimodal_incongruity",
+      "label": "Happy"
+    },
+    "diversity": {
+      "domain": "Friends & Roommates",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "affection_0072",
+    "input": {
+      "scenario": "affection",
+      "text": "you can, um, start by, uh, highlighting these.",
+      "media": {
+        "video_url": "https://huggingface.co/datasets/z4722/Implicit/blob/main/video/MIntRec/video/raw_data/S05/E19/237.mp4",
+        "audio_url": "https://huggingface.co/datasets/yesbobo/implicit/resolve/main/audio/affection/affection_0072.mp3",
+        "audio_caption": "The speaker's tone is hesitant and uncertain, suggesting a lack of confidence or a sense of awkwardness in the situation. There is a noticeable pause or hesitation in their speech, indicating a possible moment of contemplation or discomfort. The speaker's emotional style appears to be subdued and restrained, possibly out of shyness, fear, or lack of experience in the context they are in. The background environment seems to be a casual or informal setting, but there is no clear indication of specific details such as the presence of other people or objects. The overall atmosphere conveyed by the speaker's tone and emotional style suggests a setting where the speaker feels out of their element or is experiencing nervousness.",
+        "video_path": "/hpctmp/e1561245/Data/rawdata/MIntRec/video/raw_data/S05/E19/237.mp4",
+        "audio_path": "/hpctmp/e1561245/Data/audio/affection_0072.mp3"
+      }
+    },
+    "options": {
+      "subject": [
+        "Amy Sosa (the speaker)",
+        "new employee",
+        "office manager",
+        "front desk clerk"
+      ],
+      "target": [
+        "the interaction / the task of highlighting the documents",
+        "the meeting notes",
+        "the training packet",
+        "the filing deadline"
+      ]
+    },
+    "ground_truth": {
+      "subject": "Amy Sosa (the speaker)",
+      "target": "the interaction / the task of highlighting the documents",
+      "mechanism": "affective_deception",
+      "label": "Fearful"
+    },
+    "diversity": {
+      "domain": "Workplace",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "affection_1515",
+    "input": {
+      "scenario": "affection",
+      "text": "I am not freaking out, why would I be freaking out? A woman named Hildy called and said we will get married, but that happens everyday",
+      "media": {
+        "video_url": "https://huggingface.co/datasets/z4722/Implicit/blob/main/video/MUStARD/mmsd_raw_data/utterances_final/2_167.mp4",
+        "audio_url": "https://huggingface.co/datasets/yesbobo/implicit/resolve/main/audio/affection/affection_1515.mp3",
+        "audio_caption": "The speaker's tone is light and playful, reflecting a humorous and lighthearted emotional style. The laughter and the exaggerated reaction in the speech suggest that the speaker is trying to entertain the audience, possibly in a comedic context. The background environment appears to be a lively and engaging setting, such as a comedy club or a talk show, where the speaker is performing for an audience. The speaker's tone and emotional style are designed to amuse and engage the listeners, making the situation feel more relatable and less serious.",
+        "video_path": "/hpctmp/e1561245/Data/rawdata/MUStARD/mmsd_raw_data/utterances_final/2_167.mp4",
+        "audio_path": "/hpctmp/e1561245/Data/audio/affection_1515.mp3"
+      }
+    },
+    "options": {
+      "subject": [
+        "the speaker",
+        "woman by fridge",
+        "apartment roommate",
+        "doorway guest"
+      ],
+      "target": [
+        "Hildy's call (the marriage news)",
+        "the apartment joke",
+        "the surprise visit",
+        "the afternoon plans"
+      ]
+    },
+    "ground_truth": {
+      "subject": "the speaker",
+      "target": "Hildy's call (the marriage news)",
+      "mechanism": "figurative_semantics",
+      "label": "Happy"
+    },
+    "diversity": {
+      "domain": "Intimate Relationships",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "affection_0218",
+    "input": {
+      "scenario": "affection",
+      "text": "yeah, you know, it's fun, it's cool",
+      "media": {
+        "video_url": "https://huggingface.co/datasets/z4722/Implicit/blob/main/video/MIntRec/video/raw_data/S04/E16/174.mp4",
+        "audio_url": "https://huggingface.co/datasets/yesbobo/implicit/resolve/main/audio/affection/affection_0218.mp3",
+        "audio_caption": "The speaker's tone is casual and upbeat, suggesting a relaxed and positive emotional state. The use of phrases like \"yeah\" and \"it's fun, it's cool\" indicates a friendly and informal tone, possibly used in a social or recreational context. The background environment is likely a casual or social setting, such as a gathering or a public space, where the speaker feels comfortable expressing themselves in a lighthearted manner. The overall tone conveys a sense of enjoyment and ease, reflecting the speaker's positive outlook and engagement in the moment.",
+        "video_path": "/hpctmp/e1561245/Data/rawdata/MIntRec/video/raw_data/S04/E16/174.mp4",
+        "audio_path": "/hpctmp/e1561245/Data/audio/affection_0218.mp3"
+      }
+    },
+    "options": {
+      "subject": [
+        "Mateo (the speaker)",
+        "female coworker",
+        "male customer",
+        "nearby cashier"
+      ],
+      "target": [
+        "the woman he's speaking to",
+        "the shopping cart",
+        "the store promotion",
+        "the work shift"
+      ]
+    },
+    "ground_truth": {
+      "subject": "Mateo (the speaker)",
+      "target": "the woman he's speaking to",
+      "mechanism": "multimodal_incongruity",
+      "label": "Bad"
+    },
+    "diversity": {
+      "domain": "Public & Service",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "affection_0311",
+    "input": {
+      "scenario": "affection",
+      "text": "thanks, that's comforting.",
+      "media": {
+        "video_url": "https://huggingface.co/datasets/z4722/Implicit/blob/main/video/MIntRec/video/raw_data/S06/E04/574.mp4",
+        "audio_url": "https://huggingface.co/datasets/yesbobo/implicit/resolve/main/audio/affection/affection_0311.mp3",
+        "audio_caption": "The speaker's tone is somewhat resigned yet slightly wistful, suggesting a sense of acceptance mixed with a hint of melancholy. The emotion conveyed is one of quiet gratitude and perhaps a subtle acknowledgment of a loss or change. This tone could indicate that the speaker has just heard some news or received information that they find comforting in a way that's both familiar and slightly bittersweet. \n\nThe background environment is likely a quiet, indoor space, possibly a home or a small office, with no visible signs of chaos or activity. The lack of noise or movement suggests a calm and relatively still atmosphere, which aligns with the speaker's tone of quiet acceptance and subtle wistfulness. This setting could be a personal space where the speaker feels safe to express their feelings openly.",
+        "video_path": "/hpctmp/e1561245/Data/rawdata/MIntRec/video/raw_data/S06/E04/574.mp4",
+        "audio_path": "/hpctmp/e1561245/Data/audio/affection_0311.mp3"
+      }
+    },
+    "options": {
+      "subject": [
+        "the speaker (male employee)",
+        "man with booklet",
+        "kitchen roommate",
+        "nearby friend"
+      ],
+      "target": [
+        "the information/news they received",
+        "the open cookbook",
+        "the kitchen mess",
+        "the roommate advice"
+      ]
+    },
+    "ground_truth": {
+      "subject": "the speaker (male employee)",
+      "target": "the information/news they received",
+      "mechanism": "affective_deception",
+      "label": "Sad"
+    },
+    "diversity": {
+      "domain": "Workplace",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "affection_0172",
+    "input": {
+      "scenario": "affection",
+      "text": "it's too bad, 'cause that really hurt.",
+      "media": {
+        "video_url": "https://huggingface.co/datasets/z4722/Implicit/blob/main/video/MIntRec/video/raw_data/S04/E07/326.mp4",
+        "audio_url": "https://huggingface.co/datasets/yesbobo/implicit/resolve/main/audio/affection/affection_0172.mp3",
+        "audio_caption": "The speaker's tone is likely characterized by a sense of disappointment or regret. The phrase \"it's too bad\" suggests that something negative has occurred, and the speaker is expressing a feeling of sadness or frustration about the situation. The tone may be slightly melancholic or resigned, indicating that the speaker is accepting the outcome but still feeling the emotional impact of the event.\n\nEmotionally, the speaker appears to be experiencing a range of negative emotions, including pain or discomfort, which is explicitly stated with the words \"that really hurt.\" This emotional style indicates that the speaker is emotionally affected by the circumstances, possibly feeling hurt, disappointed, or frustrated.\n\nThe background environment is not explicitly described, so it is impossible to provide specific details about the setting. However, the use of the phrase \"it's too bad\" and the emotional tone suggest a situation where the speaker is reflecting on a past event or experience that has caused pain or disappointment. The environment could be any setting where the speaker feels the need to express their emotional response, such as at home, at work, or in a social setting.",
+        "video_path": "/hpctmp/e1561245/Data/rawdata/MIntRec/video/raw_data/S04/E07/326.mp4",
+        "audio_path": "/hpctmp/e1561245/Data/audio/affection_0172.mp3"
+      }
+    },
+    "options": {
+      "subject": [
+        "Glenn (the man with name tag)",
+        "female coworker",
+        "older customer",
+        "store clerk"
+      ],
+      "target": [
+        "female coworker",
+        "the head injury",
+        "the apology",
+        "the break room chat"
+      ]
+    },
+    "ground_truth": {
+      "subject": "Glenn (the man with name tag)",
+      "target": "female coworker",
+      "mechanism": "figurative_semantics",
+      "label": "Happy"
+    },
+    "diversity": {
+      "domain": "Workplace",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "affection_1360",
+    "input": {
+      "scenario": "affection",
+      "text": "So, you're just Bing?",
+      "media": {
+        "video_url": "https://huggingface.co/datasets/z4722/Implicit/blob/main/video/MUStARD/mmsd_raw_data/utterances_final/2_191.mp4",
+        "audio_url": "https://huggingface.co/datasets/yesbobo/implicit/resolve/main/audio/affection/affection_1360.mp3",
+        "audio_caption": "The speaker in this audio clip appears to be in a light-hearted and casual setting, likely a social or entertainment context. The tone of the speaker's voice suggests a relaxed and possibly amused demeanor. The laughter that follows the speech indicates that the speaker's tone is humorous orlighthearted, and that the environment is one where humor is expected or appreciated. This could be a stand-up comedy show, a talk show, or a casual gathering where jokes are shared. The speaker's emotional style is not explicitly detailed, but the overall atmosphere is one of ease and amusement.",
+        "video_path": "/hpctmp/e1561245/Data/rawdata/MUStARD/mmsd_raw_data/utterances_final/2_191.mp4",
+        "audio_path": "/hpctmp/e1561245/Data/audio/affection_1360.mp3"
+      }
+    },
+    "options": {
+      "subject": [
+        "Joey (the speaker)",
+        "Chandler",
+        "apartment guest",
+        "couch friend"
+      ],
+      "target": [
+        "Chandler (the addressee / \"Bing\")",
+        "the surname joke",
+        "the apartment story",
+        "the hand gesture"
+      ]
+    },
+    "ground_truth": {
+      "subject": "Joey (the speaker)",
+      "target": "Chandler (the addressee / \"Bing\")",
+      "mechanism": "multimodal_incongruity",
+      "label": "Happy"
+    },
+    "diversity": {
+      "domain": "Friends & Housemates",
+      "culture": "General Culture"
+    }
+  },
+  {
+    "id": "affection_1147",
+    "input": {
+      "scenario": "affection",
+      "text": "oh, okay. well, um, i have worked here",
+      "media": {
+        "video_url": "https://huggingface.co/datasets/z4722/Implicit/blob/main/video/MIntRec/video/raw_data/S05/E13/193.mp4",
+        "audio_url": "https://huggingface.co/datasets/yesbobo/implicit/resolve/main/audio/affection/affection_1147.mp3",
+        "audio_caption": "The speaker's tone is casual and hesitant, as indicated by the use of filler words like \"um\" and \"well.\" The emotional style appears to be cautious or uncertain, reflecting a sense of wariness about the topic. The background environment is likely a professional or work-related setting, given the mention of working at a certain place.",
+        "video_path": "/hpctmp/e1561245/Data/rawdata/MIntRec/video/raw_data/S05/E13/193.mp4",
+        "audio_path": "/hpctmp/e1561245/Data/audio/affection_1147.mp3"
+      }
+    },
+    "options": {
+      "subject": [
+        "Justine (the speaker)",
+        "bearded coworker",
+        "woman in glasses",
+        "training supervisor"
+      ],
+      "target": [
+        "her job / the question about working here",
+        "the training session",
+        "the staff meeting",
+        "the seating arrangement"
+      ]
+    },
+    "ground_truth": {
+      "subject": "Justine (the speaker)",
+      "target": "her job / the question about working here",
+      "mechanism": "affective_deception",
+      "label": "Fearful"
+    },
+    "diversity": {
+      "domain": "Workplace",
+      "culture": "General Culture"
+    }
+  }
+]

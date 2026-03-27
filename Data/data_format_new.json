@@ -31,6 +31,10 @@
       "target": "the anniversary gift being questioned",
       "mechanism": "submissive_alignment",
       "label": "Neutral"
+    },
+    "diversity":{
+      "domain":"",
+      "culture":""
     }
   },
   {
@@ -62,6 +66,10 @@
       "target": "the Pope",
       "mechanism": "expressive_aggression",
       "label": "denounce"
+    },
+    "diversity":{
+      "domain":"",
+      "culture":""
     }
   }
 ]

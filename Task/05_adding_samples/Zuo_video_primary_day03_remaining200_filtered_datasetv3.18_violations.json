@@ -1,0 +1,10 @@
+{
+  "subject_option_forbidden_char": [],
+  "subject_option_word_count_gt_max": [],
+  "target_option_forbidden_char": [],
+  "target_option_word_count_gt_max": [],
+  "gt_subject_forbidden_char": [],
+  "gt_subject_word_count_gt_max": [],
+  "gt_target_forbidden_char": [],
+  "gt_target_word_count_gt_max": []
+}

@@ -1,0 +1,99 @@
+{
+  "method": "exam",
+  "order": [
+    "affection",
+    "attitude",
+    "intent",
+    "overall"
+  ],
+  "columns": [
+    "indep",
+    "cond",
+    "rel",
+    "joint"
+  ],
+  "values_raw": {
+    "affection": {
+      "indep": 0.6774193548387097,
+      "cond": 0.25,
+      "rel": 0.967741935483871,
+      "joint": 0.0967741935483871,
+      "n": 31,
+      "n_label_correct": 12,
+      "indep_components": {
+        "label": 0.3870967741935484,
+        "subject": 0.967741935483871,
+        "target": 1.0,
+        "mechanism": 0.3548387096774194
+      }
+    },
+    "attitude": {
+      "indep": 0.6527777777777778,
+      "cond": 0.5555555555555556,
+      "rel": 1.0,
+      "joint": 0.1388888888888889,
+      "n": 36,
+      "n_label_correct": 9,
+      "indep_components": {
+        "label": 0.25,
+        "subject": 1.0,
+        "target": 1.0,
+        "mechanism": 0.3611111111111111
+      }
+    },
+    "intent": {
+      "indep": 0.6363636363636364,
+      "cond": 0.4444444444444444,
+      "rel": 0.9393939393939394,
+      "joint": 0.09090909090909091,
+      "n": 33,
+      "n_label_correct": 9,
+      "indep_components": {
+        "label": 0.2727272727272727,
+        "subject": 0.9696969696969697,
+        "target": 0.9696969696969697,
+        "mechanism": 0.3333333333333333
+      }
+    },
+    "overall": {
+      "indep": 0.655,
+      "cond": 0.4,
+      "rel": 0.97,
+      "joint": 0.11,
+      "n": 100,
+      "n_label_correct": 30,
+      "indep_components": {
+        "label": 0.3,
+        "subject": 0.98,
+        "target": 0.99,
+        "mechanism": 0.35
+      }
+    }
+  },
+  "values_percent": {
+    "affection": {
+      "indep": 67.74,
+      "cond": 25.0,
+      "rel": 96.77,
+      "joint": 9.68
+    },
+    "attitude": {
+      "indep": 65.28,
+      "cond": 55.56,
+      "rel": 100.0,
+      "joint": 13.89
+    },
+    "intent": {
+      "indep": 63.64,
+      "cond": 44.44,
+      "rel": 93.94,
+      "joint": 9.09
+    },
+    "overall": {
+      "indep": 65.5,
+      "cond": 40.0,
+      "rel": 97.0,
+      "joint": 11.0
+    }
+  }
+}

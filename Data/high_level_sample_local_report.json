@@ -1,0 +1,13 @@
+{
+  "total": 267,
+  "image_samples": 198,
+  "video_samples": 69,
+  "rewritten_images": 198,
+  "rewritten_videos": 69,
+  "missing_images": 0,
+  "missing_videos": 0,
+  "remaining_hpctmp_path": 0,
+  "remaining_hpctmp_media_path_local": 0,
+  "missing_examples": [],
+  "all_media_rewritten": true
+}

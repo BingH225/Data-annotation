@@ -1,0 +1,143 @@
+{
+  "source_export": "export/All_exported_labels_new_format.json",
+  "reference_new_label_sources": [
+    "Data/high_level_sample.json",
+    "Data/review_assign_all_dedup_unique.json"
+  ],
+  "intent_old_labels": [
+    "Conflict Mitigation",
+    "Intimidation",
+    "Hate Humor",
+    "Humiliation for Amusement",
+    "Public Humiliation",
+    "Meme-based Mockery",
+    "Dominance Assertion",
+    "Moral Condemnation"
+  ],
+  "intent_new_labels": [
+    "alienate",
+    "condemn",
+    "denounce",
+    "dominate",
+    "intimidate",
+    "mitigate",
+    "mock",
+    "provoke"
+  ],
+  "mapping": [
+    {
+      "old_label": "Conflict Mitigation",
+      "new_label": "mitigate",
+      "support": 130,
+      "total": 133,
+      "confidence": 0.9774,
+      "distribution": {
+        "mitigate": 130,
+        "dominate": 2,
+        "denounce": 1
+      }
+    },
+    {
+      "old_label": "Intimidation",
+      "new_label": "intimidate",
+      "support": 107,
+      "total": 111,
+      "confidence": 0.964,
+      "distribution": {
+        "intimidate": 107,
+        "mitigate": 3,
+        "mock": 1
+      }
+    },
+    {
+      "old_label": "Hate Humor",
+      "new_label": "alienate",
+      "support": 158,
+      "total": 163,
+      "confidence": 0.9693,
+      "distribution": {
+        "alienate": 158,
+        "dominate": 1,
+        "condemn": 1,
+        "mitigate": 2,
+        "mock": 1
+      }
+    },
+    {
+      "old_label": "Humiliation for Amusement",
+      "new_label": "mock",
+      "support": 197,
+      "total": 202,
+      "confidence": 0.9752,
+      "distribution": {
+        "mock": 197,
+        "mitigate": 1,
+        "dominate": 2,
+        "condemn": 1,
+        "intimidate": 1
+      }
+    },
+    {
+      "old_label": "Public Humiliation",
+      "new_label": "denounce",
+      "support": 82,
+      "total": 85,
+      "confidence": 0.9647,
+      "distribution": {
+        "denounce": 82,
+        "mock": 1,
+        "mitigate": 2
+      }
+    },
+    {
+      "old_label": "Meme-based Mockery",
+      "new_label": "provoke",
+      "support": 120,
+      "total": 123,
+      "confidence": 0.9756,
+      "distribution": {
+        "provoke": 120,
+        "dominate": 1,
+        "mitigate": 1,
+        "mock": 1
+      }
+    },
+    {
+      "old_label": "Dominance Assertion",
+      "new_label": "dominate",
+      "support": 132,
+      "total": 136,
+      "confidence": 0.9706,
+      "distribution": {
+        "dominate": 132,
+        "mock": 1,
+        "mitigate": 2,
+        "condemn": 1
+      }
+    },
+    {
+      "old_label": "Moral Condemnation",
+      "new_label": "condemn",
+      "support": 101,
+      "total": 105,
+      "confidence": 0.9619,
+      "distribution": {
+        "condemn": 101,
+        "mitigate": 4
+      }
+    }
+  ],
+  "unmapped_sample_count": 2,
+  "unmapped_samples_preview": [
+    {
+      "id": "intent_0061",
+      "old_label": "Moral Condemnation",
+      "ref_labels": []
+    },
+    {
+      "id": "intent_1646",
+      "old_label": "Humiliation for Amusement",
+      "ref_labels": []
+    }
+  ]
+}

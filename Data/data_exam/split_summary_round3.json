@@ -1,0 +1,47 @@
+{
+  "source": "D:\\NUS\\ACMm\\Data-annotation\\export\\datasetv3.18_hf_updated.json",
+  "source_count": 3000,
+  "round1": {
+    "seed": 42,
+    "total_selected": 400,
+    "folders": [
+      "A",
+      "Tan",
+      "Yu",
+      "Zuo"
+    ],
+    "per_group": 100,
+    "files": [
+      "D:\\NUS\\ACMm\\Data-annotation\\Data\\data_exam\\A\\A_sample_100.json",
+      "D:\\NUS\\ACMm\\Data-annotation\\Data\\data_exam\\Tan\\Tan_sample_100.json",
+      "D:\\NUS\\ACMm\\Data-annotation\\Data\\data_exam\\Yu\\Yu_sample_100.json",
+      "D:\\NUS\\ACMm\\Data-annotation\\Data\\data_exam\\Zuo\\Zuo_sample_100.json"
+    ]
+  },
+  "round2": {
+    "seed": 43,
+    "total_selected": 400,
+    "folders": [
+      "A",
+      "Tan",
+      "Yu",
+      "Zuo"
+    ],
+    "per_group": 100,
+    "files": [
+      "D:\\NUS\\ACMm\\Data-annotation\\Data\\data_exam\\A\\A_sample_100_round2.json",
+      "D:\\NUS\\ACMm\\Data-annotation\\Data\\data_exam\\Tan\\Tan_sample_100_round2.json",
+      "D:\\NUS\\ACMm\\Data-annotation\\Data\\data_exam\\Yu\\Yu_sample_100_round2.json",
+      "D:\\NUS\\ACMm\\Data-annotation\\Data\\data_exam\\Zuo\\Zuo_sample_100_round2.json"
+    ]
+  },
+  "round3_single_file": {
+    "seed": 44,
+    "total_selected": 200,
+    "file": "D:\\NUS\\ACMm\\Data-annotation\\Data\\data_exam\\sample_200_round3.json"
+  },
+  "remaining_after_round3": {
+    "count": 2000,
+    "file": "D:\\NUS\\ACMm\\Data-annotation\\Data\\data_exam\\remaining_2000_after_round3.json"
+  }
+}

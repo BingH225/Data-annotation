@@ -1,0 +1,365 @@
+{
+  "meta": {
+    "raters": [
+      "P1",
+      "P2",
+      "P3",
+      "P4",
+      "P5"
+    ],
+    "samples_per_rater": 300,
+    "samples_per_scenario_per_rater": 100,
+    "scenarios": [
+      "affection",
+      "attitude",
+      "intent"
+    ],
+    "generator": "binomial simulation with bounded rater/scenario random effects",
+    "design_note": "intent scenario constrained to mechanism > label",
+    "phase": "baseline_intent_mech_high_label_low",
+    "seed": 6
+  },
+  "per_person_per_scenario": {
+    "P1": {
+      "affection": {
+        "n": 100,
+        "mechanism": 65,
+        "label": 70,
+        "subject": 91,
+        "target": 91,
+        "strict": 53
+      },
+      "attitude": {
+        "n": 100,
+        "mechanism": 74,
+        "label": 73,
+        "subject": 85,
+        "target": 91,
+        "strict": 58
+      },
+      "intent": {
+        "n": 100,
+        "mechanism": 79,
+        "label": 58,
+        "subject": 96,
+        "target": 88,
+        "strict": 46
+      }
+    },
+    "P2": {
+      "affection": {
+        "n": 100,
+        "mechanism": 75,
+        "label": 73,
+        "subject": 91,
+        "target": 88,
+        "strict": 58
+      },
+      "attitude": {
+        "n": 100,
+        "mechanism": 64,
+        "label": 60,
+        "subject": 91,
+        "target": 92,
+        "strict": 43
+      },
+      "intent": {
+        "n": 100,
+        "mechanism": 74,
+        "label": 54,
+        "subject": 83,
+        "target": 91,
+        "strict": 51
+      }
+    },
+    "P3": {
+      "affection": {
+        "n": 100,
+        "mechanism": 69,
+        "label": 56,
+        "subject": 90,
+        "target": 89,
+        "strict": 55
+      },
+      "attitude": {
+        "n": 100,
+        "mechanism": 61,
+        "label": 69,
+        "subject": 95,
+        "target": 93,
+        "strict": 50
+      },
+      "intent": {
+        "n": 100,
+        "mechanism": 74,
+        "label": 61,
+        "subject": 86,
+        "target": 91,
+        "strict": 53
+      }
+    },
+    "P4": {
+      "affection": {
+        "n": 100,
+        "mechanism": 64,
+        "label": 63,
+        "subject": 88,
+        "target": 82,
+        "strict": 50
+      },
+      "attitude": {
+        "n": 100,
+        "mechanism": 69,
+        "label": 66,
+        "subject": 94,
+        "target": 94,
+        "strict": 49
+      },
+      "intent": {
+        "n": 100,
+        "mechanism": 68,
+        "label": 59,
+        "subject": 89,
+        "target": 95,
+        "strict": 46
+      }
+    },
+    "P5": {
+      "affection": {
+        "n": 100,
+        "mechanism": 66,
+        "label": 64,
+        "subject": 88,
+        "target": 90,
+        "strict": 48
+      },
+      "attitude": {
+        "n": 100,
+        "mechanism": 70,
+        "label": 70,
+        "subject": 89,
+        "target": 95,
+        "strict": 61
+      },
+      "intent": {
+        "n": 100,
+        "mechanism": 77,
+        "label": 65,
+        "subject": 90,
+        "target": 95,
+        "strict": 44
+      }
+    }
+  },
+  "per_person_overall": {
+    "P1": {
+      "n": 300,
+      "mechanism": {
+        "correct": 218,
+        "acc": 0.726667
+      },
+      "label": {
+        "correct": 201,
+        "acc": 0.67
+      },
+      "subject": {
+        "correct": 272,
+        "acc": 0.906667
+      },
+      "target": {
+        "correct": 270,
+        "acc": 0.9
+      },
+      "strict": {
+        "correct": 157,
+        "acc": 0.523333
+      }
+    },
+    "P2": {
+      "n": 300,
+      "mechanism": {
+        "correct": 213,
+        "acc": 0.71
+      },
+      "label": {
+        "correct": 187,
+        "acc": 0.623333
+      },
+      "subject": {
+        "correct": 265,
+        "acc": 0.883333
+      },
+      "target": {
+        "correct": 271,
+        "acc": 0.903333
+      },
+      "strict": {
+        "correct": 152,
+        "acc": 0.506667
+      }
+    },
+    "P3": {
+      "n": 300,
+      "mechanism": {
+        "correct": 204,
+        "acc": 0.68
+      },
+      "label": {
+        "correct": 186,
+        "acc": 0.62
+      },
+      "subject": {
+        "correct": 271,
+        "acc": 0.903333
+      },
+      "target": {
+        "correct": 273,
+        "acc": 0.91
+      },
+      "strict": {
+        "correct": 158,
+        "acc": 0.526667
+      }
+    },
+    "P4": {
+      "n": 300,
+      "mechanism": {
+        "correct": 201,
+        "acc": 0.67
+      },
+      "label": {
+        "correct": 188,
+        "acc": 0.626667
+      },
+      "subject": {
+        "correct": 271,
+        "acc": 0.903333
+      },
+      "target": {
+        "correct": 271,
+        "acc": 0.903333
+      },
+      "strict": {
+        "correct": 145,
+        "acc": 0.483333
+      }
+    },
+    "P5": {
+      "n": 300,
+      "mechanism": {
+        "correct": 213,
+        "acc": 0.71
+      },
+      "label": {
+        "correct": 199,
+        "acc": 0.663333
+      },
+      "subject": {
+        "correct": 267,
+        "acc": 0.89
+      },
+      "target": {
+        "correct": 280,
+        "acc": 0.933333
+      },
+      "strict": {
+        "correct": 153,
+        "acc": 0.51
+      }
+    }
+  },
+  "scenario_average": {
+    "affection": {
+      "n": 500,
+      "mechanism": {
+        "correct": 339,
+        "acc": 0.678
+      },
+      "label": {
+        "correct": 326,
+        "acc": 0.652
+      },
+      "subject": {
+        "correct": 448,
+        "acc": 0.896
+      },
+      "target": {
+        "correct": 440,
+        "acc": 0.88
+      },
+      "strict": {
+        "correct": 264,
+        "acc": 0.528
+      }
+    },
+    "attitude": {
+      "n": 500,
+      "mechanism": {
+        "correct": 338,
+        "acc": 0.676
+      },
+      "label": {
+        "correct": 338,
+        "acc": 0.676
+      },
+      "subject": {
+        "correct": 454,
+        "acc": 0.908
+      },
+      "target": {
+        "correct": 465,
+        "acc": 0.93
+      },
+      "strict": {
+        "correct": 261,
+        "acc": 0.522
+      }
+    },
+    "intent": {
+      "n": 500,
+      "mechanism": {
+        "correct": 372,
+        "acc": 0.744
+      },
+      "label": {
+        "correct": 297,
+        "acc": 0.594
+      },
+      "subject": {
+        "correct": 444,
+        "acc": 0.888
+      },
+      "target": {
+        "correct": 460,
+        "acc": 0.92
+      },
+      "strict": {
+        "correct": 240,
+        "acc": 0.48
+      }
+    }
+  },
+  "overall_average": {
+    "n": 1500,
+    "mechanism": {
+      "correct": 1049,
+      "acc": 0.699333
+    },
+    "label": {
+      "correct": 961,
+      "acc": 0.640667
+    },
+    "subject": {
+      "correct": 1346,
+      "acc": 0.897333
+    },
+    "target": {
+      "correct": 1365,
+      "acc": 0.91
+    },
+    "strict": {
+      "correct": 765,
+      "acc": 0.51
+    }
+  }
+}
