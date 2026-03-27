@@ -1,0 +1,107 @@
+#!/bin/bash
+#PBS -N codar_ivl38b_300
+#PBS -q auto
+#PBS -P CFP03-CF-035
+#PBS -l select=1:ncpus=24:ngpus=2:mem=450gb
+#PBS -l walltime=12:00:00
+#PBS -j oe
+#PBS -o /scratch/e1561245/cot_yz/codar_output/codar_v1/pbs_logs/
+
+set -euo pipefail
+
+PROJECT=/scratch/e1561245/cot_yz/codar_v1
+OUTPUT_ROOT=/scratch/e1561245/cot_yz/codar_output/codar_v1
+BASE=/scratch/e1561245/internvl
+VENV_DIR=${BASE}/venv/vllm_ivl35_38b_full_newformat
+MODEL_PATH=${BASE}/models/OpenGVLab/InternVL3_5-38B
+MODEL_NAME=internvl3_5_38b-local
+HOST=127.0.0.1
+PORT=8010
+RUN_DIR=${OUTPUT_ROOT}/internvl38b_300_${PBS_JOBID}
+INPUT_JSON=${PROJECT}/data/eval300_shared_aff_att_int_100_each.json
+CFG=${PROJECT}/config/runtime.internvl.local.yaml
+
+mkdir -p "${RUN_DIR}"
+mkdir -p "${OUTPUT_ROOT}/pbs_logs"
+source "${VENV_DIR}/bin/activate"
+python -m pip install -U pip >/dev/null 2>&1 || true
+python -m pip install -e "${PROJECT}" >/dev/null 2>&1
+
+export HF_HOME=${BASE}/models/hf_cache
+export HUGGINGFACE_HUB_CACHE=${BASE}/models/hf_cache
+export FFMPEG_BIN=${BASE}/tools/ffmpeg_static/bin/ffmpeg
+export FFPROBE_BIN=${BASE}/tools/ffmpeg_static/bin/ffprobe
+
+# Hopper can expose GPUs as UUIDs; remap to ordinal ids for this vLLM env.
+if [[ "${CUDA_VISIBLE_DEVICES:-}" == GPU-* ]]; then
+  IFS=',' read -ra _DEV_ARR <<< "${CUDA_VISIBLE_DEVICES}"
+  LAST_IDX=$(( ${#_DEV_ARR[@]} - 1 ))
+  export CUDA_VISIBLE_DEVICES="$(seq -s, 0 "${LAST_IDX}")"
+fi
+
+nvidia-smi > "${RUN_DIR}/nvidia_smi.txt"
+echo "[INFO] job_id=${PBS_JOBID}" | tee -a "${RUN_DIR}/meta.log"
+echo "[INFO] run_dir=${RUN_DIR}" | tee -a "${RUN_DIR}/meta.log"
+echo "[INFO] start_time=$(date -Iseconds)" | tee -a "${RUN_DIR}/meta.log"
+
+vllm serve "${MODEL_PATH}" \
+  --host "${HOST}" \
+  --port "${PORT}" \
+  --served-model-name "${MODEL_NAME}" \
+  --trust-remote-code \
+  --dtype float16 \
+  --tensor-parallel-size 2 \
+  --gpu-memory-utilization 0.95 \
+  --max-model-len 32768 \
+  --mm-processor-kwargs '{"max_dynamic_patch":6}' \
+  --limit-mm-per-prompt '{"image":4}' \
+  > "${RUN_DIR}/vllm_server.log" 2>&1 &
+SERVER_PID=$!
+cleanup(){ kill ${SERVER_PID} >/dev/null 2>&1 || true; }
+trap cleanup EXIT
+
+READY=0
+for i in $(seq 1 900); do
+  if ! kill -0 ${SERVER_PID} >/dev/null 2>&1; then
+    echo '[FATAL] vLLM server exited before ready' >&2
+    tail -n 200 "${RUN_DIR}/vllm_server.log" || true
+    exit 1
+  fi
+  if curl -sf "http://${HOST}:${PORT}/v1/models" > "${RUN_DIR}/vllm_models.json.tmp"; then
+    mv "${RUN_DIR}/vllm_models.json.tmp" "${RUN_DIR}/vllm_models.json"
+    READY_CODE=$(curl -s -o "${RUN_DIR}/vllm_ready_probe.json" -w '%{http_code}' \
+      -X POST "http://${HOST}:${PORT}/v1/chat/completions" \
+      -H 'Content-Type: application/json' \
+      --data "{\"model\":\"${MODEL_NAME}\",\"messages\":[{\"role\":\"user\",\"content\":\"ping\"}],\"max_tokens\":1,\"temperature\":0}" || true)
+    if [[ "${READY_CODE}" == "200" ]] && grep -q '"choices"' "${RUN_DIR}/vllm_ready_probe.json"; then
+      READY=1
+      break
+    fi
+  fi
+  sleep 2
+done
+
+if [[ ${READY} -ne 1 ]]; then
+  echo '[FATAL] vLLM server not ready in timeout' >&2
+  tail -n 200 "${RUN_DIR}/vllm_server.log" || true
+  exit 1
+fi
+
+cd "${PROJECT}"
+python -m codar.cli run-batch \
+  --input "${INPUT_JSON}" \
+  --output-dir "${RUN_DIR}" \
+  --backend vllm \
+  --config "${CFG}" \
+  > "${RUN_DIR}/run_batch.log" 2>&1
+
+python -m codar.cli evaluate \
+  --predictions "${RUN_DIR}/predictions.jsonl" \
+  --input "${INPUT_JSON}" \
+  --output-metrics "${RUN_DIR}/metrics.json" \
+  > "${RUN_DIR}/evaluate.log" 2>&1
+
+echo "run_dir=${RUN_DIR}"
+echo "[INFO] end_time=$(date -Iseconds)" | tee -a "${RUN_DIR}/meta.log"
+
+

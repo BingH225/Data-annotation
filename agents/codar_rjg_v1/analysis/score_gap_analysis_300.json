@@ -1,0 +1,1133 @@
+{
+  "metrics": {
+    "N": 300,
+    "acc_subject": 0.6033333333333334,
+    "acc_target": 0.6466666666666666,
+    "acc_mechanism": 0.38,
+    "acc_label": 0.17333333333333334,
+    "acc_joint": 0.03
+  },
+  "reason_evidence": {
+    "R1_comparison_mismatch": {
+      "overlap_count": 6,
+      "pred_300_count": 300,
+      "baseline_267_count": 267,
+      "overlap_ids": [
+        "affection_0004",
+        "affection_0010",
+        "affection_0041",
+        "attitude_0011",
+        "intent_0046",
+        "intent_0081"
+      ],
+      "baseline_subject_schema_example": "subject0",
+      "codar_subject_schema_example": "speaker"
+    },
+    "R2_label_collapse": {
+      "label_dist": {
+        "affection": {
+          "pred": {
+            "happy": 28,
+            "sad": 32,
+            "angry": 22,
+            "bad": 3
+          },
+          "gt": {
+            "disgusted": 19,
+            "bad": 16,
+            "happy": 15,
+            "angry": 18,
+            "fearful": 10,
+            "sad": 7
+          }
+        },
+        "attitude": {
+          "pred": {
+            "supportive": 31,
+            "indifferent": 27,
+            "hostile": 2,
+            "dismissive": 9,
+            "concerned": 8,
+            "neutral": 13,
+            "appreciative": 1,
+            "skeptical": 8,
+            "disapproving": 2
+          },
+          "gt": {
+            "dismissive": 18,
+            "contemptuous": 28,
+            "disapproving": 16,
+            "concerned": 3,
+            "skeptical": 4,
+            "hostile": 12,
+            "indifferent": 6,
+            "appreciative": 4,
+            "supportive": 5,
+            "neutral": 4,
+            "sympathetic": 1
+          }
+        },
+        "intent": {
+          "pred": {
+            "alienate": 1,
+            "mitigate": 19,
+            "mock": 11,
+            "provoke": 65,
+            "condemn": 1,
+            "intimidate": 12,
+            "dominate": 1,
+            "denounce": 4
+          },
+          "gt": {
+            "dominate": 14,
+            "alienate": 18,
+            "denounce": 7,
+            "mock": 30,
+            "mitigate": 13,
+            "provoke": 15,
+            "condemn": 9,
+            "intimidate": 8
+          }
+        }
+      },
+      "top_label_confusions": {
+        "affection": [
+          [
+            [
+              "disgusted",
+              "sad"
+            ],
+            9
+          ],
+          [
+            [
+              "bad",
+              "sad"
+            ],
+            7
+          ],
+          [
+            [
+              "angry",
+              "sad"
+            ],
+            6
+          ],
+          [
+            [
+              "disgusted",
+              "happy"
+            ],
+            5
+          ],
+          [
+            [
+              "disgusted",
+              "angry"
+            ],
+            5
+          ],
+          [
+            [
+              "bad",
+              "happy"
+            ],
+            5
+          ],
+          [
+            [
+              "angry",
+              "happy"
+            ],
+            4
+          ],
+          [
+            [
+              "bad",
+              "angry"
+            ],
+            4
+          ]
+        ],
+        "attitude": [
+          [
+            [
+              "dismissive",
+              "supportive"
+            ],
+            6
+          ],
+          [
+            [
+              "contemptuous",
+              "indifferent"
+            ],
+            6
+          ],
+          [
+            [
+              "disapproving",
+              "indifferent"
+            ],
+            6
+          ],
+          [
+            [
+              "contemptuous",
+              "dismissive"
+            ],
+            6
+          ],
+          [
+            [
+              "disapproving",
+              "supportive"
+            ],
+            6
+          ],
+          [
+            [
+              "dismissive",
+              "indifferent"
+            ],
+            6
+          ],
+          [
+            [
+              "contemptuous",
+              "neutral"
+            ],
+            5
+          ],
+          [
+            [
+              "indifferent",
+              "supportive"
+            ],
+            4
+          ]
+        ],
+        "intent": [
+          [
+            [
+              "mock",
+              "provoke"
+            ],
+            14
+          ],
+          [
+            [
+              "alienate",
+              "provoke"
+            ],
+            12
+          ],
+          [
+            [
+              "dominate",
+              "provoke"
+            ],
+            9
+          ],
+          [
+            [
+              "mitigate",
+              "provoke"
+            ],
+            7
+          ],
+          [
+            [
+              "mock",
+              "mitigate"
+            ],
+            6
+          ],
+          [
+            [
+              "denounce",
+              "provoke"
+            ],
+            5
+          ],
+          [
+            [
+              "condemn",
+              "provoke"
+            ],
+            5
+          ],
+          [
+            [
+              "mock",
+              "intimidate"
+            ],
+            5
+          ]
+        ]
+      },
+      "examples": [
+        {
+          "id": "attitude_0001",
+          "scenario": "attitude",
+          "text": "yeah, yeah, you're good. you got this.",
+          "gt": {
+            "subject": "female coworker",
+            "target": "male",
+            "mechanism": "dominant affiliation",
+            "label": "dismissive"
+          },
+          "pred": {
+            "subject": "man",
+            "target": "listener",
+            "mechanism": "dominant affiliation",
+            "label": "supportive"
+          },
+          "options": {
+            "subject": [
+              "female coworker",
+              "man",
+              "store",
+              "customer"
+            ],
+            "target": [
+              "male",
+              "women",
+              "customer",
+              "listener"
+            ]
+          },
+          "rule_scores": {
+            "dominant affiliation": 0.0,
+            "dominant detachment": 0.0,
+            "protective distancing": 0.0,
+            "submissive alignment": 0.0
+          },
+          "critic_issues_last": [],
+          "s1_text_components": {
+            "subject": "you",
+            "object": "this",
+            "predicate": "got",
+            "attribute": "",
+            "adverbial": ""
+          }
+        },
+        {
+          "id": "attitude_0002",
+          "scenario": "attitude",
+          "text": "me amy. me prep for 5k.",
+          "gt": {
+            "subject": "amy",
+            "target": "own readiness 5k",
+            "mechanism": "dominant detachment",
+            "label": "contemptuous"
+          },
+          "pred": {
+            "subject": "amy",
+            "target": "own readiness 5k",
+            "mechanism": "dominant detachment",
+            "label": "indifferent"
+          },
+          "options": {
+            "subject": [
+              "amy",
+              "coworker",
+              "manager",
+              "male coworker"
+            ],
+            "target": [
+              "own readiness 5k",
+              "amy",
+              "conversation topic",
+              "current situation"
+            ]
+          },
+          "rule_scores": {
+            "dominant affiliation": 0.0,
+            "dominant detachment": 0.0,
+            "protective distancing": 0.0,
+            "submissive alignment": 0.0
+          },
+          "critic_issues_last": [
+            "The selected hypothesis (H2) in the gate_output does not align well with the abductive_output's best hypothesis (A2). H2 suggests the behavior might be an accidental mismatch or noise, while A2 indicates a lack of preparation or interest.",
+            "The context_fit and evidence_fit scores for the selected hypothesis (H2) are lower compared to the abductive_output's best hypothesis (A2), indicating a potential inconsistency in the reasoning process."
+          ],
+          "s1_text_components": {
+            "subject": "me",
+            "object": "5k",
+            "predicate": "prep for",
+            "attribute": "",
+            "adverbial": ""
+          }
+        },
+        {
+          "id": "intent_0004",
+          "scenario": "intent",
+          "text": "when he asks you to see your hair",
+          "gt": {
+            "subject": "woman",
+            "target": "partner",
+            "mechanism": "prosocial deception",
+            "label": "alienate"
+          },
+          "pred": {
+            "subject": "woman",
+            "target": "hairstylist",
+            "mechanism": "prosocial deception",
+            "label": "provoke"
+          },
+          "options": {
+            "subject": [
+              "woman",
+              "customer",
+              "neighbor",
+              "daughter"
+            ],
+            "target": [
+              "partner",
+              "hairstylist",
+              "friend",
+              "mother"
+            ]
+          },
+          "rule_scores": {
+            "prosocial deception": 0.0,
+            "malicious manipulation": 0.0,
+            "expressive aggression": 0.0,
+            "benevolent provocation": 0.0
+          },
+          "critic_issues_last": [
+            "The perception_json indicates that the woman is looking at the camera, but the conflict_report mentions that she is not showing her hair. This inconsistency needs to be resolved.",
+            "The text_components suggest 'he asks you', which does not align with the expected professional interaction between a hairstylist and a customer as described in the context_graph."
+          ],
+          "s1_text_components": {
+            "subject": "he",
+            "object": "you",
+            "predicate": "asks",
+            "attribute": "",
+            "adverbial": ""
+          }
+        }
+      ]
+    },
+    "R3_rule_engine_sparse": {
+      "rule_zero_rate": 0.9433333333333334,
+      "rule_zero_rate_by_scenario": {
+        "affection": 0.8352941176470589,
+        "attitude": 0.9801980198019802,
+        "intent": 0.9912280701754386
+      },
+      "mech_acc_when_rule_zero": 0.37809187279151946,
+      "mech_acc_when_rule_nonzero": 0.4117647058823529,
+      "examples": [
+        {
+          "id": "affection_0001",
+          "scenario": "affection",
+          "text": "hey, baby i'm getting dinner started you gonna help out or just stand there? wtf, srsly?",
+          "gt": {
+            "subject": "speaker",
+            "target": "partner",
+            "mechanism": "figurative semantics",
+            "label": "disgusted"
+          },
+          "pred": {
+            "subject": "speaker",
+            "target": "partner",
+            "mechanism": "socio_cultural dependency",
+            "label": "happy"
+          },
+          "options": {
+            "subject": [
+              "speaker",
+              "roommate",
+              "friend",
+              "parent"
+            ],
+            "target": [
+              "partner",
+              "roommate",
+              "friend",
+              "child"
+            ]
+          },
+          "rule_scores": {
+            "multimodal incongruity": 0.0,
+            "figurative semantics": 0.0,
+            "affective deception": 0.0,
+            "socio_cultural dependency": 0.0
+          },
+          "critic_issues_last": [
+            "The selected hypothesis 'H5' suggests sarcasm, irony, indirect attack, or face-saving, but the abductive output 'A2' indicates a more nuanced motive of conveying a deeper meaning or adding complexity to the interaction. This discrepancy suggests a potential inconsistency in the interpretation of the evidence and context.",
+            "The conflict report highlights 'multimodal incongruity' and 'socio-cultural dependency' as significant issues, but the selected hypothesis and abductive output do not fully address these conflicts, particularly the socio-cultural dependency aspect."
+          ],
+          "s1_text_components": {
+            "subject": "I",
+            "object": "dinner",
+            "predicate": "getting started",
+            "attribute": "",
+            "adverbial": ""
+          }
+        },
+        {
+          "id": "affection_0002",
+          "scenario": "affection",
+          "text": "gays on social media: equality! body positivity! love love love! gays in real life: there is no place for her in our social circle",
+          "gt": {
+            "subject": "speaker",
+            "target": "gay social media users",
+            "mechanism": "multimodal incongruity",
+            "label": "disgusted"
+          },
+          "pred": {
+            "subject": "celebrity",
+            "target": "entertainment industry insiders",
+            "mechanism": "socio_cultural dependency",
+            "label": "sad"
+          },
+          "options": {
+            "subject": [
+              "speaker",
+              "celebrity",
+              "actress",
+              "model"
+            ],
+            "target": [
+              "gay social media users",
+              "entertainment industry insiders",
+              "red carpet attendees",
+              "fashion magazine editors"
+            ]
+          },
+          "rule_scores": {
+            "multimodal incongruity": 0.0,
+            "figurative semantics": 0.0,
+            "affective deception": 0.0,
+            "socio_cultural dependency": 0.0
+          },
+          "critic_issues_last": [
+            "The observed behavior deviates from the expected behavior by not fully reflecting the ideals promoted in the text.",
+            "The figurative language in the text may not align with the literal actions observed in the image.",
+            "The text may be perceived as deceptive if the observed behavior does not align with the positive message.",
+            "The observed behavior may reflect underlying socio-cultural dependencies that contradict the expected behavior."
+          ],
+          "s1_text_components": {
+            "subject": "gays on social media",
+            "object": "equality! body positivity! love love love!",
+            "predicate": "are",
+            "attribute": "",
+            "adverbial": ""
+          }
+        },
+        {
+          "id": "intent_0001",
+          "scenario": "intent",
+          "text": "when your boss calls on your day off oh fuck you're gonna make me come",
+          "gt": {
+            "subject": "coworker",
+            "target": "manager",
+            "mechanism": "expressive aggression",
+            "label": "dominate"
+          },
+          "pred": {
+            "subject": "coworker",
+            "target": "manager",
+            "mechanism": "prosocial deception",
+            "label": "alienate"
+          },
+          "options": {
+            "subject": [
+              "coworker",
+              "employer",
+              "contractor",
+              "visitor"
+            ],
+            "target": [
+              "manager",
+              "phone",
+              "schedule",
+              "customer"
+            ]
+          },
+          "rule_scores": {
+            "prosocial deception": 0.0,
+            "malicious manipulation": 0.0,
+            "expressive aggression": 0.0,
+            "benevolent provocation": 0.0
+          },
+          "critic_issues_last": [
+            "The conflict report indicates a lack of prompt and professional response from the employee, but the abductive output suggests the employee might be intentionally avoiding the call due to a conflict with the boss or dissatisfaction with the workplace environment. This implies a more deliberate action than just a lack of prompt response.",
+            "The context graph shows a high power dynamic between the boss and the employee, but the abductive output does not fully explore the implications of this power imbalance on the employee's behavior."
+          ],
+          "s1_text_components": {
+            "subject": "your boss",
+            "object": "you",
+            "predicate": "calls",
+            "attribute": "",
+            "adverbial": "on your day off"
+          }
+        }
+      ]
+    },
+    "R4_critic_not_effective": {
+      "s5_total": 762,
+      "s5_fail_count": 690,
+      "s5_fail_rate": 0.905511811023622,
+      "backtrack_distribution": {
+        "2": 228,
+        "0": 66,
+        "1": 6
+      },
+      "examples": [
+        {
+          "id": "affection_0001",
+          "scenario": "affection",
+          "text": "hey, baby i'm getting dinner started you gonna help out or just stand there? wtf, srsly?",
+          "gt": {
+            "subject": "speaker",
+            "target": "partner",
+            "mechanism": "figurative semantics",
+            "label": "disgusted"
+          },
+          "pred": {
+            "subject": "speaker",
+            "target": "partner",
+            "mechanism": "socio_cultural dependency",
+            "label": "happy"
+          },
+          "options": {
+            "subject": [
+              "speaker",
+              "roommate",
+              "friend",
+              "parent"
+            ],
+            "target": [
+              "partner",
+              "roommate",
+              "friend",
+              "child"
+            ]
+          },
+          "rule_scores": {
+            "multimodal incongruity": 0.0,
+            "figurative semantics": 0.0,
+            "affective deception": 0.0,
+            "socio_cultural dependency": 0.0
+          },
+          "critic_issues_last": [
+            "The selected hypothesis 'H5' suggests sarcasm, irony, indirect attack, or face-saving, but the abductive output 'A2' indicates a more nuanced motive of conveying a deeper meaning or adding complexity to the interaction. This discrepancy suggests a potential inconsistency in the interpretation of the evidence and context.",
+            "The conflict report highlights 'multimodal incongruity' and 'socio-cultural dependency' as significant issues, but the selected hypothesis and abductive output do not fully address these conflicts, particularly the socio-cultural dependency aspect."
+          ],
+          "s1_text_components": {
+            "subject": "I",
+            "object": "dinner",
+            "predicate": "getting started",
+            "attribute": "",
+            "adverbial": ""
+          }
+        },
+        {
+          "id": "attitude_0002",
+          "scenario": "attitude",
+          "text": "me amy. me prep for 5k.",
+          "gt": {
+            "subject": "amy",
+            "target": "own readiness 5k",
+            "mechanism": "dominant detachment",
+            "label": "contemptuous"
+          },
+          "pred": {
+            "subject": "amy",
+            "target": "own readiness 5k",
+            "mechanism": "dominant detachment",
+            "label": "indifferent"
+          },
+          "options": {
+            "subject": [
+              "amy",
+              "coworker",
+              "manager",
+              "male coworker"
+            ],
+            "target": [
+              "own readiness 5k",
+              "amy",
+              "conversation topic",
+              "current situation"
+            ]
+          },
+          "rule_scores": {
+            "dominant affiliation": 0.0,
+            "dominant detachment": 0.0,
+            "protective distancing": 0.0,
+            "submissive alignment": 0.0
+          },
+          "critic_issues_last": [
+            "The selected hypothesis (H2) in the gate_output does not align well with the abductive_output's best hypothesis (A2). H2 suggests the behavior might be an accidental mismatch or noise, while A2 indicates a lack of preparation or interest.",
+            "The context_fit and evidence_fit scores for the selected hypothesis (H2) are lower compared to the abductive_output's best hypothesis (A2), indicating a potential inconsistency in the reasoning process."
+          ],
+          "s1_text_components": {
+            "subject": "me",
+            "object": "5k",
+            "predicate": "prep for",
+            "attribute": "",
+            "adverbial": ""
+          }
+        },
+        {
+          "id": "affection_0002",
+          "scenario": "affection",
+          "text": "gays on social media: equality! body positivity! love love love! gays in real life: there is no place for her in our social circle",
+          "gt": {
+            "subject": "speaker",
+            "target": "gay social media users",
+            "mechanism": "multimodal incongruity",
+            "label": "disgusted"
+          },
+          "pred": {
+            "subject": "celebrity",
+            "target": "entertainment industry insiders",
+            "mechanism": "socio_cultural dependency",
+            "label": "sad"
+          },
+          "options": {
+            "subject": [
+              "speaker",
+              "celebrity",
+              "actress",
+              "model"
+            ],
+            "target": [
+              "gay social media users",
+              "entertainment industry insiders",
+              "red carpet attendees",
+              "fashion magazine editors"
+            ]
+          },
+          "rule_scores": {
+            "multimodal incongruity": 0.0,
+            "figurative semantics": 0.0,
+            "affective deception": 0.0,
+            "socio_cultural dependency": 0.0
+          },
+          "critic_issues_last": [
+            "The observed behavior deviates from the expected behavior by not fully reflecting the ideals promoted in the text.",
+            "The figurative language in the text may not align with the literal actions observed in the image.",
+            "The text may be perceived as deceptive if the observed behavior does not align with the positive message.",
+            "The observed behavior may reflect underlying socio-cultural dependencies that contradict the expected behavior."
+          ],
+          "s1_text_components": {
+            "subject": "gays on social media",
+            "object": "equality! body positivity! love love love!",
+            "predicate": "are",
+            "attribute": "",
+            "adverbial": ""
+          }
+        }
+      ]
+    },
+    "R5_subject_anchor_ambiguity": {
+      "top_subject_confusions": [
+        [
+          [
+            "speaker",
+            "photographer"
+          ],
+          9
+        ],
+        [
+          [
+            "speaker",
+            "political commentator"
+          ],
+          2
+        ],
+        [
+          [
+            "speaker",
+            "comedian"
+          ],
+          2
+        ],
+        [
+          [
+            "speaker",
+            "conspiracy theorist"
+          ],
+          2
+        ],
+        [
+          [
+            "speaker",
+            "online commenter"
+          ],
+          2
+        ],
+        [
+          [
+            "speaker",
+            "photograph"
+          ],
+          2
+        ],
+        [
+          [
+            "female coworker",
+            "man"
+          ],
+          1
+        ],
+        [
+          [
+            "speaker",
+            "celebrity"
+          ],
+          1
+        ],
+        [
+          [
+            "speaker",
+            "content moderator"
+          ],
+          1
+        ],
+        [
+          [
+            "speaker",
+            "sarcastic aunt"
+          ],
+          1
+        ],
+        [
+          [
+            "jonah",
+            "manager"
+          ],
+          1
+        ],
+        [
+          [
+            "mateo",
+            "manager"
+          ],
+          1
+        ]
+      ],
+      "examples": [
+        {
+          "id": "affection_0002",
+          "scenario": "affection",
+          "text": "gays on social media: equality! body positivity! love love love! gays in real life: there is no place for her in our social circle",
+          "gt": {
+            "subject": "speaker",
+            "target": "gay social media users",
+            "mechanism": "multimodal incongruity",
+            "label": "disgusted"
+          },
+          "pred": {
+            "subject": "celebrity",
+            "target": "entertainment industry insiders",
+            "mechanism": "socio_cultural dependency",
+            "label": "sad"
+          },
+          "options": {
+            "subject": [
+              "speaker",
+              "celebrity",
+              "actress",
+              "model"
+            ],
+            "target": [
+              "gay social media users",
+              "entertainment industry insiders",
+              "red carpet attendees",
+              "fashion magazine editors"
+            ]
+          },
+          "rule_scores": {
+            "multimodal incongruity": 0.0,
+            "figurative semantics": 0.0,
+            "affective deception": 0.0,
+            "socio_cultural dependency": 0.0
+          },
+          "critic_issues_last": [
+            "The observed behavior deviates from the expected behavior by not fully reflecting the ideals promoted in the text.",
+            "The figurative language in the text may not align with the literal actions observed in the image.",
+            "The text may be perceived as deceptive if the observed behavior does not align with the positive message.",
+            "The observed behavior may reflect underlying socio-cultural dependencies that contradict the expected behavior."
+          ],
+          "s1_text_components": {
+            "subject": "gays on social media",
+            "object": "equality! body positivity! love love love!",
+            "predicate": "are",
+            "attribute": "",
+            "adverbial": ""
+          }
+        },
+        {
+          "id": "intent_0002",
+          "scenario": "intent",
+          "text": "it isn't islamophobia when they really are trying to kill you",
+          "gt": {
+            "subject": "speaker",
+            "target": "muslims",
+            "mechanism": "expressive aggression",
+            "label": "alienate"
+          },
+          "pred": {
+            "subject": "content moderator",
+            "target": "muslims",
+            "mechanism": "prosocial deception",
+            "label": "mitigate"
+          },
+          "options": {
+            "subject": [
+              "speaker",
+              "content moderator",
+              "advertising executive",
+              "manager"
+            ],
+            "target": [
+              "muslims",
+              "immigrants",
+              "refugees",
+              "terrorists"
+            ]
+          },
+          "rule_scores": {
+            "prosocial deception": 0.0,
+            "malicious manipulation": 0.0,
+            "expressive aggression": 0.0,
+            "benevolent provocation": 0.0
+          },
+          "critic_issues_last": [
+            "The selected hypothesis 'H1' suggests a perception error or missing context, but the abductive output 'A2' focuses on the content moderator's actions, which may not directly address the hypothesis.",
+            "The conflict report indicates multiple norm assumptions, but the selected hypothesis 'H1' only addresses the lack of evidence or context, potentially overlooking other important conflicts."
+          ],
+          "s1_text_components": {
+            "subject": "",
+            "object": "",
+            "predicate": "",
+            "attribute": "",
+            "adverbial": ""
+          }
+        },
+        {
+          "id": "intent_0003",
+          "scenario": "intent",
+          "text": "lawdi what wrong with these cherr'n?",
+          "gt": {
+            "subject": "speaker",
+            "target": "young people",
+            "mechanism": "expressive aggression",
+            "label": "denounce"
+          },
+          "pred": {
+            "subject": "sarcastic aunt",
+            "target": "fashion clothes",
+            "mechanism": "benevolent provocation",
+            "label": "mock"
+          },
+          "options": {
+            "subject": [
+              "speaker",
+              "parent",
+              "sarcastic aunt",
+              "scolding neighbor"
+            ],
+            "target": [
+              "young people",
+              "baby",
+              "fashion clothes",
+              "youth slang"
+            ]
+          },
+          "rule_scores": {
+            "prosocial deception": 0.0,
+            "malicious manipulation": 0.0,
+            "expressive aggression": 0.0,
+            "benevolent provocation": 0.0
+          },
+          "critic_issues_last": [
+            "The conflict_report indicates potential conflicts in the intent of the speaker, but the gate_output suggests no strong evidence for a meaningful conflict.",
+            "The context_graph and domain_notes suggest a casual interaction, which aligns with the absence of strong evidence for other hypotheses, but the conflict_report shows a deviation in the predicate.",
+            "The abductive_output indicates that no abduction is needed, but the conflict_report suggests a potential conflict that needs further investigation."
+          ],
+          "s1_text_components": {
+            "subject": "",
+            "object": "these cherr'n",
+            "predicate": "what wrong with",
+            "attribute": "",
+            "adverbial": ""
+          }
+        }
+      ]
+    },
+    "R6_s1_information_loss": {
+      "missing_rate_text_components": {
+        "subject": 0.29333333333333333,
+        "object": 0.32666666666666666,
+        "predicate": 0.21333333333333335,
+        "attribute": 0.7866666666666666,
+        "adverbial": 0.5333333333333333
+      },
+      "label_acc_when_missing_ge4": 0.14492753623188406,
+      "label_acc_when_missing_lt4": 0.18181818181818182,
+      "examples": [
+        {
+          "id": "intent_0002",
+          "scenario": "intent",
+          "text": "it isn't islamophobia when they really are trying to kill you",
+          "gt": {
+            "subject": "speaker",
+            "target": "muslims",
+            "mechanism": "expressive aggression",
+            "label": "alienate"
+          },
+          "pred": {
+            "subject": "content moderator",
+            "target": "muslims",
+            "mechanism": "prosocial deception",
+            "label": "mitigate"
+          },
+          "options": {
+            "subject": [
+              "speaker",
+              "content moderator",
+              "advertising executive",
+              "manager"
+            ],
+            "target": [
+              "muslims",
+              "immigrants",
+              "refugees",
+              "terrorists"
+            ]
+          },
+          "rule_scores": {
+            "prosocial deception": 0.0,
+            "malicious manipulation": 0.0,
+            "expressive aggression": 0.0,
+            "benevolent provocation": 0.0
+          },
+          "critic_issues_last": [
+            "The selected hypothesis 'H1' suggests a perception error or missing context, but the abductive output 'A2' focuses on the content moderator's actions, which may not directly address the hypothesis.",
+            "The conflict report indicates multiple norm assumptions, but the selected hypothesis 'H1' only addresses the lack of evidence or context, potentially overlooking other important conflicts."
+          ],
+          "s1_text_components": {
+            "subject": "",
+            "object": "",
+            "predicate": "",
+            "attribute": "",
+            "adverbial": ""
+          }
+        },
+        {
+          "id": "attitude_0003",
+          "scenario": "attitude",
+          "text": "i don't even know who you're thinking of.",
+          "gt": {
+            "subject": "jonah",
+            "target": "listener",
+            "mechanism": "protective distancing",
+            "label": "disapproving"
+          },
+          "pred": {
+            "subject": "manager",
+            "target": "coworker",
+            "mechanism": "dominant detachment",
+            "label": "indifferent"
+          },
+          "options": {
+            "subject": [
+              "jonah",
+              "coworker",
+              "manager",
+              "customer"
+            ],
+            "target": [
+              "listener",
+              "manager",
+              "coworker",
+              "conversation topic"
+            ]
+          },
+          "rule_scores": {
+            "dominant affiliation": 0.0,
+            "dominant detachment": 0.0,
+            "protective distancing": 0.0,
+            "submissive alignment": 0.0
+          },
+          "critic_issues_last": [],
+          "s1_text_components": {
+            "subject": "",
+            "object": "",
+            "predicate": "",
+            "attribute": "",
+            "adverbial": ""
+          }
+        },
+        {
+          "id": "attitude_0005",
+          "scenario": "attitude",
+          "text": "when you do a fat rail but you still feel down",
+          "gt": {
+            "subject": "speaker",
+            "target": "drug user",
+            "mechanism": "protective distancing",
+            "label": "contemptuous"
+          },
+          "pred": {
+            "subject": "troll commenter",
+            "target": "drug user",
+            "mechanism": "dominant detachment",
+            "label": "indifferent"
+          },
+          "options": {
+            "subject": [
+              "speaker",
+              "troll commenter",
+              "amused bystander",
+              "bystander"
+            ],
+            "target": [
+              "drug user",
+              "party attendee",
+              "photographed model",
+              "nightclub dancer"
+            ]
+          },
+          "rule_scores": {
+            "dominant affiliation": 0.0,
+            "dominant detachment": 0.0,
+            "protective distancing": 0.0,
+            "submissive alignment": 0.0
+          },
+          "critic_issues_last": [
+            "The gate_output suggests that no meaningful conflict is present (H0), but the conflict_report indicates significant deviations from expected social interaction and emotional acknowledgment.",
+            "The conflict_report highlights dominant detachment and protective distancing, which are not adequately addressed in the gate_output hypotheses."
+          ],
+          "s1_text_components": {
+            "subject": "",
+            "object": "",
+            "predicate": "",
+            "attribute": "",
+            "adverbial": ""
+          }
+        }
+      ]
+    },
+    "rejected_candidate": {
+      "name": "S4 abduction over-activation is the main harm source",
+      "why_rejected": "Data does not support it as a primary explanation: label accuracy is not worse when S4 executes.",
+      "stats": {
+        "label_acc_s4_exec": 0.19457013574660634,
+        "label_acc_s4_not_exec": 0.11392405063291139,
+        "mech_acc_s4_exec": 0.3755656108597285,
+        "mech_acc_s4_not_exec": 0.3924050632911392,
+        "n_s4_exec": 221,
+        "n_s4_not_exec": 79
+      }
+    }
+  }
+}

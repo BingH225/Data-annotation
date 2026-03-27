@@ -1,0 +1,6073 @@
+{
+  "runs": {
+    "attitude": {
+      "n": 100,
+      "acc": {
+        "subject": 0.78,
+        "target": 0.73,
+        "mechanism": 0.34,
+        "label": 0.15,
+        "joint": 0.07
+      },
+      "rule_zero_rate": 0.94,
+      "s1_placeholder_row_rate_ge3": 0.22,
+      "s1_placeholder_field_rate": {
+        "subject": 0.31,
+        "object": 0.17,
+        "predicate": 0.03,
+        "attribute": 0.56,
+        "adverbial": 0.54
+      },
+      "critic_fail_rate": 0.79,
+      "backtrack_distribution": {
+        "0": 18,
+        "1": 3,
+        "3": 79
+      },
+      "top_label_confusions": [
+        {
+          "gt": "contemptuous",
+          "pred": "dismissive",
+          "count": 13
+        },
+        {
+          "gt": "disapproving",
+          "pred": "indifferent",
+          "count": 7
+        },
+        {
+          "gt": "contemptuous",
+          "pred": "indifferent",
+          "count": 6
+        },
+        {
+          "gt": "disapproving",
+          "pred": "dismissive",
+          "count": 6
+        },
+        {
+          "gt": "dismissive",
+          "pred": "indifferent",
+          "count": 6
+        },
+        {
+          "gt": "hostile",
+          "pred": "dismissive",
+          "count": 5
+        },
+        {
+          "gt": "hostile",
+          "pred": "indifferent",
+          "count": 5
+        },
+        {
+          "gt": "dismissive",
+          "pred": "supportive",
+          "count": 4
+        },
+        {
+          "gt": "skeptical",
+          "pred": "indifferent",
+          "count": 3
+        },
+        {
+          "gt": "contemptuous",
+          "pred": "supportive",
+          "count": 3
+        },
+        {
+          "gt": "appreciative",
+          "pred": "dismissive",
+          "count": 2
+        },
+        {
+          "gt": "disapproving",
+          "pred": "supportive",
+          "count": 2
+        }
+      ],
+      "top_mechanism_confusions": [
+        {
+          "gt": "dominant detachment",
+          "pred": "protective distancing",
+          "count": 20
+        },
+        {
+          "gt": "dominant detachment",
+          "pred": "dominant affiliation",
+          "count": 12
+        },
+        {
+          "gt": "dominant detachment",
+          "pred": "submissive alignment",
+          "count": 7
+        },
+        {
+          "gt": "dominant affiliation",
+          "pred": "protective distancing",
+          "count": 6
+        },
+        {
+          "gt": "protective distancing",
+          "pred": "dominant detachment",
+          "count": 4
+        },
+        {
+          "gt": "submissive alignment",
+          "pred": "protective distancing",
+          "count": 4
+        },
+        {
+          "gt": "dominant affiliation",
+          "pred": "dominant detachment",
+          "count": 4
+        },
+        {
+          "gt": "protective distancing",
+          "pred": "submissive alignment",
+          "count": 2
+        },
+        {
+          "gt": "submissive alignment",
+          "pred": "dominant detachment",
+          "count": 2
+        },
+        {
+          "gt": "dominant affiliation",
+          "pred": "submissive alignment",
+          "count": 2
+        },
+        {
+          "gt": "submissive alignment",
+          "pred": "dominant affiliation",
+          "count": 2
+        },
+        {
+          "gt": "protective distancing",
+          "pred": "dominant affiliation",
+          "count": 1
+        }
+      ],
+      "top_subject_confusions": [
+        {
+          "gt": "amy",
+          "pred": "coworker",
+          "count": 1
+        },
+        {
+          "gt": "mateo",
+          "pred": "manager",
+          "count": 1
+        },
+        {
+          "gt": "speaker",
+          "pred": "troll commenter",
+          "count": 1
+        },
+        {
+          "gt": "dog",
+          "pred": "owner",
+          "count": 1
+        },
+        {
+          "gt": "speaker",
+          "pred": "nostalgia blogger",
+          "count": 1
+        },
+        {
+          "gt": "speaker",
+          "pred": "male influencer",
+          "count": 1
+        },
+        {
+          "gt": "coworker",
+          "pred": "woman monitor",
+          "count": 1
+        },
+        {
+          "gt": "speaker",
+          "pred": "beauty influencer",
+          "count": 1
+        },
+        {
+          "gt": "speaker",
+          "pred": "news reporter",
+          "count": 1
+        },
+        {
+          "gt": "caller",
+          "pred": "speaker",
+          "count": 1
+        },
+        {
+          "gt": "speaker",
+          "pred": "internet troll",
+          "count": 1
+        },
+        {
+          "gt": "meme creator",
+          "pred": "speaker",
+          "count": 1
+        }
+      ],
+      "top_target_confusions": [
+        {
+          "gt": "coworker",
+          "pred": "customer",
+          "count": 2
+        },
+        {
+          "gt": "own readiness 5k",
+          "pred": "amy",
+          "count": 1
+        },
+        {
+          "gt": "sayid",
+          "pred": "mateo",
+          "count": 1
+        },
+        {
+          "gt": "monica",
+          "pred": "friend's joke",
+          "count": 1
+        },
+        {
+          "gt": "donald trump",
+          "pred": "republican party",
+          "count": 1
+        },
+        {
+          "gt": "trend followers",
+          "pred": "early adopters",
+          "count": 1
+        },
+        {
+          "gt": "women",
+          "pred": "female friend",
+          "count": 1
+        },
+        {
+          "gt": "other person",
+          "pred": "child",
+          "count": 1
+        },
+        {
+          "gt": "awarding talk show host",
+          "pred": "vietnam war hero",
+          "count": 1
+        },
+        {
+          "gt": "donald",
+          "pred": "biden",
+          "count": 1
+        },
+        {
+          "gt": "white men",
+          "pred": "male executives",
+          "count": 1
+        },
+        {
+          "gt": "defendant",
+          "pred": "public figure",
+          "count": 1
+        }
+      ],
+      "pred_label_dist": {
+        "supportive": 17,
+        "indifferent": 34,
+        "dismissive": 37,
+        "hostile": 4,
+        "neutral": 2,
+        "disapproving": 4,
+        "sympathetic": 1,
+        "appreciative": 1
+      },
+      "gt_label_dist": {
+        "dismissive": 18,
+        "contemptuous": 27,
+        "disapproving": 16,
+        "concerned": 3,
+        "skeptical": 4,
+        "hostile": 12,
+        "indifferent": 6,
+        "appreciative": 4,
+        "supportive": 5,
+        "neutral": 4,
+        "sympathetic": 1
+      },
+      "pred_mechanism_dist": {
+        "dominant affiliation": 28,
+        "dominant detachment": 30,
+        "submissive alignment": 11,
+        "protective distancing": 31
+      },
+      "gt_mechanism_dist": {
+        "dominant affiliation": 25,
+        "dominant detachment": 59,
+        "protective distancing": 8,
+        "submissive alignment": 8
+      },
+      "top_critic_issues": [
+        {
+          "issue": "The perception_json contains unspecified elements in the audio_caption, which may lead to incomplete or inaccurate analy",
+          "count": 7
+        },
+        {
+          "issue": "The perception_json contains unspecified elements (e.g., 'unspecified_adverbial', 'unspecified_attribute') which may lea",
+          "count": 3
+        },
+        {
+          "issue": "The perception_json contains unspecified elements in the audio_caption and text_components, which may lead to incomplete",
+          "count": 3
+        },
+        {
+          "issue": "The perception_json contains unspecified elements which may lead to ambiguity in interpreting the scenario.",
+          "count": 3
+        },
+        {
+          "issue": "The perception_json and context_graph do not fully align with the conflict_report and gate_output. The perception_json i",
+          "count": 3
+        },
+        {
+          "issue": "The context_graph includes entities and relations that are not directly supported by the evidence provided in the percep",
+          "count": 2
+        },
+        {
+          "issue": "The perception_json contains unspecified elements which do not align with the detailed context_graph and conflict_report",
+          "count": 2
+        },
+        {
+          "issue": "The perception_json contains unspecified elements which do not align with the context_graph and conflict_report.",
+          "count": 2
+        }
+      ],
+      "error_examples": [
+        {
+          "id": "attitude_0001",
+          "text": "yeah, yeah, you're good. you got this.",
+          "gt": {
+            "subject": "female coworker",
+            "target": "male",
+            "mechanism": "dominant affiliation",
+            "label": "dismissive"
+          },
+          "pred": {
+            "subject": "female coworker",
+            "target": "male",
+            "mechanism": "dominant affiliation",
+            "label": "supportive"
+          },
+          "top_mechanism_s31": "dominant affiliation",
+          "top_conf_s31": 0.05,
+          "rule_scores": {
+            "dominant affiliation": 0.125,
+            "dominant detachment": 0.0,
+            "protective distancing": 0.0,
+            "submissive alignment": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "unspecified_subject",
+            "object": "unspecified_object",
+            "predicate": "unspecified_predicate",
+            "attribute": "unspecified_attribute",
+            "adverbial": "unspecified_adverbial"
+          },
+          "subject_options": [
+            "female coworker",
+            "man",
+            "store",
+            "customer"
+          ],
+          "target_options": [
+            "male",
+            "women",
+            "customer",
+            "listener"
+          ]
+        },
+        {
+          "id": "attitude_0002",
+          "text": "me amy. me prep for 5k.",
+          "gt": {
+            "subject": "amy",
+            "target": "own readiness 5k",
+            "mechanism": "dominant detachment",
+            "label": "contemptuous"
+          },
+          "pred": {
+            "subject": "coworker",
+            "target": "amy",
+            "mechanism": "dominant detachment",
+            "label": "indifferent"
+          },
+          "top_mechanism_s31": "dominant detachment",
+          "top_conf_s31": 0.36,
+          "rule_scores": {
+            "dominant affiliation": 0.0,
+            "dominant detachment": 0.0,
+            "protective distancing": 0.0,
+            "submissive alignment": 0.0
+          },
+          "critic_pass": true,
+          "backtrack_rounds": 0,
+          "s1_text_components": {
+            "subject": "me",
+            "object": "amy",
+            "predicate": "prep",
+            "attribute": "unspecified_attribute",
+            "adverbial": "for 5k"
+          },
+          "subject_options": [
+            "amy",
+            "coworker",
+            "manager",
+            "male coworker"
+          ],
+          "target_options": [
+            "own readiness 5k",
+            "amy",
+            "conversation topic",
+            "current situation"
+          ]
+        },
+        {
+          "id": "attitude_0003",
+          "text": "i don't even know who you're thinking of.",
+          "gt": {
+            "subject": "jonah",
+            "target": "listener",
+            "mechanism": "protective distancing",
+            "label": "disapproving"
+          },
+          "pred": {
+            "subject": "jonah",
+            "target": "listener",
+            "mechanism": "submissive alignment",
+            "label": "indifferent"
+          },
+          "top_mechanism_s31": "submissive alignment",
+          "top_conf_s31": 0.24,
+          "rule_scores": {
+            "dominant affiliation": 0.0,
+            "dominant detachment": 0.0,
+            "protective distancing": 0.0,
+            "submissive alignment": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "unspecified_subject",
+            "object": "unspecified_object",
+            "predicate": "don't know",
+            "attribute": "unspecified_attribute",
+            "adverbial": "unspecified_adverbial"
+          },
+          "subject_options": [
+            "jonah",
+            "coworker",
+            "manager",
+            "customer"
+          ],
+          "target_options": [
+            "listener",
+            "manager",
+            "coworker",
+            "conversation topic"
+          ]
+        },
+        {
+          "id": "attitude_0004",
+          "text": "look, sayid, sayid, don't worry about it.",
+          "gt": {
+            "subject": "mateo",
+            "target": "sayid",
+            "mechanism": "protective distancing",
+            "label": "concerned"
+          },
+          "pred": {
+            "subject": "manager",
+            "target": "mateo",
+            "mechanism": "dominant affiliation",
+            "label": "supportive"
+          },
+          "top_mechanism_s31": "dominant affiliation",
+          "top_conf_s31": 0.48,
+          "rule_scores": {
+            "dominant affiliation": 0.0,
+            "dominant detachment": 0.0,
+            "protective distancing": 0.0,
+            "submissive alignment": 0.0
+          },
+          "critic_pass": true,
+          "backtrack_rounds": 0,
+          "s1_text_components": {
+            "subject": "unspecified_subject",
+            "object": "unspecified_object",
+            "predicate": "look, sayid, sayid, don't worry about it.",
+            "attribute": "unspecified_attribute",
+            "adverbial": "unspecified_adverbial"
+          },
+          "subject_options": [
+            "mateo",
+            "manager",
+            "coworker",
+            "customer"
+          ],
+          "target_options": [
+            "sayid",
+            "mateo",
+            "glenn",
+            "gina"
+          ]
+        },
+        {
+          "id": "attitude_0005",
+          "text": "when you do a fat rail but you still feel down",
+          "gt": {
+            "subject": "speaker",
+            "target": "drug user",
+            "mechanism": "protective distancing",
+            "label": "contemptuous"
+          },
+          "pred": {
+            "subject": "troll commenter",
+            "target": "drug user",
+            "mechanism": "dominant detachment",
+            "label": "dismissive"
+          },
+          "top_mechanism_s31": "dominant detachment",
+          "top_conf_s31": 0.48,
+          "rule_scores": {
+            "dominant affiliation": 0.0,
+            "dominant detachment": 0.0,
+            "protective distancing": 0.0,
+            "submissive alignment": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "you",
+            "object": "a fat rail",
+            "predicate": "do",
+            "attribute": "unspecified",
+            "adverbial": "unspecified"
+          },
+          "subject_options": [
+            "speaker",
+            "troll commenter",
+            "amused bystander",
+            "bystander"
+          ],
+          "target_options": [
+            "drug user",
+            "party attendee",
+            "photographed model",
+            "nightclub dancer"
+          ]
+        },
+        {
+          "id": "attitude_0006",
+          "text": "Ross umm, there's something that I've got to tell you, there's-there's someone else.",
+          "gt": {
+            "subject": "speaker",
+            "target": "ross",
+            "mechanism": "submissive alignment",
+            "label": "skeptical"
+          },
+          "pred": {
+            "subject": "speaker",
+            "target": "ross",
+            "mechanism": "dominant detachment",
+            "label": "indifferent"
+          },
+          "top_mechanism_s31": "dominant detachment",
+          "top_conf_s31": 0.42,
+          "rule_scores": {
+            "dominant affiliation": 0.0,
+            "dominant detachment": 0.0,
+            "protective distancing": 0.0,
+            "submissive alignment": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "unspecified_subject",
+            "object": "unspecified_object",
+            "predicate": "there's something that I've got to tell you",
+            "attribute": "unspecified_attribute",
+            "adverbial": "unspecified_adverbial"
+          },
+          "subject_options": [
+            "speaker",
+            "partner",
+            "friend",
+            "ex-partner"
+          ],
+          "target_options": [
+            "ross",
+            "rachel",
+            "joey",
+            "chandler"
+          ]
+        },
+        {
+          "id": "attitude_0007",
+          "text": "Stating the obvious, but thank you. And it's not weird is it.",
+          "gt": {
+            "subject": "speaker",
+            "target": "monica",
+            "mechanism": "protective distancing",
+            "label": "skeptical"
+          },
+          "pred": {
+            "subject": "speaker",
+            "target": "friend's joke",
+            "mechanism": "dominant detachment",
+            "label": "indifferent"
+          },
+          "top_mechanism_s31": "dominant detachment",
+          "top_conf_s31": 0.24,
+          "rule_scores": {
+            "dominant affiliation": 0.0,
+            "dominant detachment": 0.0,
+            "protective distancing": 0.0,
+            "submissive alignment": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "unspecified_subject",
+            "object": "unspecified_object",
+            "predicate": "stating",
+            "attribute": "obvious",
+            "adverbial": "thank you"
+          },
+          "subject_options": [
+            "speaker",
+            "masseuse",
+            "friend",
+            "event host"
+          ],
+          "target_options": [
+            "monica",
+            "man",
+            "onlooker",
+            "friend's joke"
+          ]
+        },
+        {
+          "id": "attitude_0008",
+          "text": "ever wonder if asians make fun of caucasians? \"look at me, i have peripherar vision. i speak engrish\"",
+          "gt": {
+            "subject": "speaker",
+            "target": "caucasians",
+            "mechanism": "dominant detachment",
+            "label": "hostile"
+          },
+          "pred": {
+            "subject": "speaker",
+            "target": "caucasians",
+            "mechanism": "protective distancing",
+            "label": "hostile"
+          },
+          "top_mechanism_s31": "protective distancing",
+          "top_conf_s31": 0.54,
+          "rule_scores": {
+            "dominant affiliation": 0.0,
+            "dominant detachment": 0.0,
+            "protective distancing": 0.0,
+            "submissive alignment": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "ever",
+            "object": "asians",
+            "predicate": "wonder if",
+            "attribute": "make fun of caucasians",
+            "adverbial": "unspecified_adverbial"
+          },
+          "subject_options": [
+            "speaker",
+            "internet troll",
+            "satire account",
+            "influencer account"
+          ],
+          "target_options": [
+            "caucasians",
+            "asians",
+            "immigrants",
+            "minority group"
+          ]
+        },
+        {
+          "id": "attitude_0009",
+          "text": "don't judge me bro! why didn't i let them judge me? now god did!",
+          "gt": {
+            "subject": "speaker",
+            "target": "group peers",
+            "mechanism": "protective distancing",
+            "label": "indifferent"
+          },
+          "pred": {
+            "subject": "speaker",
+            "target": "group peers",
+            "mechanism": "dominant detachment",
+            "label": "indifferent"
+          },
+          "top_mechanism_s31": "dominant detachment",
+          "top_conf_s31": 0.48,
+          "rule_scores": {
+            "dominant affiliation": 0.0,
+            "dominant detachment": 0.0,
+            "protective distancing": 0.0,
+            "submissive alignment": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "unspecified_subject",
+            "object": "unspecified_object",
+            "predicate": "unspecified_predicate",
+            "attribute": "unspecified_attribute",
+            "adverbial": "unspecified_adverbial"
+          },
+          "subject_options": [
+            "speaker",
+            "party attendee",
+            "online political commentator",
+            "distressed individual"
+          ],
+          "target_options": [
+            "group peers",
+            "news pundits",
+            "customer",
+            "religious leaders"
+          ]
+        },
+        {
+          "id": "attitude_0010",
+          "text": "after 3 million years of evolution we still love to relax",
+          "gt": {
+            "subject": "meme creator",
+            "target": "humans",
+            "mechanism": "dominant detachment",
+            "label": "appreciative"
+          },
+          "pred": {
+            "subject": "meme creator",
+            "target": "humans",
+            "mechanism": "submissive alignment",
+            "label": "dismissive"
+          },
+          "top_mechanism_s31": "submissive alignment",
+          "top_conf_s31": 0.24,
+          "rule_scores": {
+            "dominant affiliation": 0.0,
+            "dominant detachment": 0.0,
+            "protective distancing": 0.0,
+            "submissive alignment": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "we",
+            "object": "to relax",
+            "predicate": "love",
+            "attribute": "after 3 million years of evolution",
+            "adverbial": "unspecified_adverbial"
+          },
+          "subject_options": [
+            "meme creator",
+            "social media influencer",
+            "content curator",
+            "graphic designer"
+          ],
+          "target_options": [
+            "humans",
+            "ai bots",
+            "non-human animals",
+            "humanoid robots"
+          ]
+        },
+        {
+          "id": "attitude_0011",
+          "text": "yep. she's my cowgirl.",
+          "gt": {
+            "subject": "speaker",
+            "target": "woman",
+            "mechanism": "dominant affiliation",
+            "label": "supportive"
+          },
+          "pred": {
+            "subject": "speaker",
+            "target": "woman",
+            "mechanism": "submissive alignment",
+            "label": "indifferent"
+          },
+          "top_mechanism_s31": "submissive alignment",
+          "top_conf_s31": 0.24,
+          "rule_scores": {
+            "dominant affiliation": 0.0,
+            "dominant detachment": 0.0,
+            "protective distancing": 0.0,
+            "submissive alignment": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "she",
+            "object": "my cowgirl",
+            "predicate": "is",
+            "attribute": "unspecified",
+            "adverbial": "unspecified"
+          },
+          "subject_options": [
+            "speaker",
+            "man",
+            "woman",
+            "coworker"
+          ],
+          "target_options": [
+            "woman",
+            "man cowboy hat",
+            "person blue jacket",
+            "friendship"
+          ]
+        },
+        {
+          "id": "attitude_0012",
+          "text": "as much as abdul tried he could not get the fucker into first gear",
+          "gt": {
+            "subject": "speaker",
+            "target": "muslim",
+            "mechanism": "dominant detachment",
+            "label": "contemptuous"
+          },
+          "pred": {
+            "subject": "speaker",
+            "target": "muslim",
+            "mechanism": "protective distancing",
+            "label": "dismissive"
+          },
+          "top_mechanism_s31": "protective distancing",
+          "top_conf_s31": 0.24,
+          "rule_scores": {
+            "dominant affiliation": 0.0,
+            "dominant detachment": 0.0,
+            "protective distancing": 0.0,
+            "submissive alignment": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "abdul",
+            "object": "the fucker",
+            "predicate": "tried",
+            "attribute": "unspecified",
+            "adverbial": "as much as"
+          },
+          "subject_options": [
+            "speaker",
+            "image subject",
+            "meme target",
+            "forum moderator"
+          ],
+          "target_options": [
+            "muslim",
+            "rented car",
+            "manual gearbox",
+            "broken clutch"
+          ]
+        },
+        {
+          "id": "attitude_0013",
+          "text": "good guy police officer capturing them young",
+          "gt": {
+            "subject": "speaker",
+            "target": "constable",
+            "mechanism": "dominant affiliation",
+            "label": "appreciative"
+          },
+          "pred": {
+            "subject": "speaker",
+            "target": "constable",
+            "mechanism": "dominant affiliation",
+            "label": "supportive"
+          },
+          "top_mechanism_s31": "dominant affiliation",
+          "top_conf_s31": 0.48,
+          "rule_scores": {
+            "dominant affiliation": 0.0,
+            "dominant detachment": 0.0,
+            "protective distancing": 0.0,
+            "submissive alignment": 0.0
+          },
+          "critic_pass": true,
+          "backtrack_rounds": 0,
+          "s1_text_components": {
+            "subject": "good guy police officer",
+            "object": "them",
+            "predicate": "capturing",
+            "attribute": "young",
+            "adverbial": "unspecified_adverbial"
+          },
+          "subject_options": [
+            "speaker",
+            "online satirist",
+            "social commenter",
+            "fan account"
+          ],
+          "target_options": [
+            "constable",
+            "security guards",
+            "fire department",
+            "park rangers"
+          ]
+        },
+        {
+          "id": "attitude_0015",
+          "text": "overly attached muslim girlfriend i killed your other 4 wives so you have more time to beat me",
+          "gt": {
+            "subject": "partner",
+            "target": "male partner",
+            "mechanism": "dominant affiliation",
+            "label": "hostile"
+          },
+          "pred": {
+            "subject": "partner",
+            "target": "male partner",
+            "mechanism": "protective distancing",
+            "label": "dismissive"
+          },
+          "top_mechanism_s31": "protective distancing",
+          "top_conf_s31": 0.54,
+          "rule_scores": {
+            "dominant affiliation": 0.0,
+            "dominant detachment": 0.0,
+            "protective distancing": 0.0,
+            "submissive alignment": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "overly attached muslim girlfriend",
+            "object": "your other 4 wives",
+            "predicate": "killed",
+            "attribute": "unspecified",
+            "adverbial": "so you have more time to beat me"
+          },
+          "subject_options": [
+            "partner",
+            "niqab wearer",
+            "veiled woman",
+            "arab woman"
+          ],
+          "target_options": [
+            "male partner",
+            "male abuser",
+            "father",
+            "male relative"
+          ]
+        },
+        {
+          "id": "attitude_0016",
+          "text": "49 people were killed at christ church 49 people were killed at christ church mosques muslim muslim",
+          "gt": {
+            "subject": "speaker",
+            "target": "muslims",
+            "mechanism": "dominant detachment",
+            "label": "contemptuous"
+          },
+          "pred": {
+            "subject": "speaker",
+            "target": "muslims",
+            "mechanism": "dominant affiliation",
+            "label": "indifferent"
+          },
+          "top_mechanism_s31": "dominant affiliation",
+          "top_conf_s31": 0.0,
+          "rule_scores": {
+            "dominant affiliation": 0.0,
+            "dominant detachment": 0.0,
+            "protective distancing": 0.0,
+            "submissive alignment": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "49 people",
+            "object": "Christ Church",
+            "predicate": "were killed at",
+            "attribute": "unspecified",
+            "adverbial": "unspecified"
+          },
+          "subject_options": [
+            "speaker",
+            "forum moderator",
+            "journalist",
+            "advertising copywriter"
+          ],
+          "target_options": [
+            "muslims",
+            "arabs",
+            "immigrants",
+            "refugees"
+          ]
+        },
+        {
+          "id": "attitude_0018",
+          "text": "will you tell the cat bullying is not okay",
+          "gt": {
+            "subject": "dog",
+            "target": "cat",
+            "mechanism": "submissive alignment",
+            "label": "disapproving"
+          },
+          "pred": {
+            "subject": "owner",
+            "target": "cat",
+            "mechanism": "dominant affiliation",
+            "label": "dismissive"
+          },
+          "top_mechanism_s31": "dominant affiliation",
+          "top_conf_s31": 0.0,
+          "rule_scores": {
+            "dominant affiliation": 0.0,
+            "dominant detachment": 0.0,
+            "protective distancing": 0.0,
+            "submissive alignment": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "you",
+            "object": "the cat",
+            "predicate": "tell",
+            "attribute": "unspecified_attribute",
+            "adverbial": "unspecified_adverbial"
+          },
+          "subject_options": [
+            "dog",
+            "owner",
+            "vet",
+            "child"
+          ],
+          "target_options": [
+            "cat",
+            "owner",
+            "vet",
+            "neighbor"
+          ]
+        },
+        {
+          "id": "attitude_0019",
+          "text": "look, mateo never got a work permit.",
+          "gt": {
+            "subject": "amy sosa",
+            "target": "mateo",
+            "mechanism": "dominant detachment",
+            "label": "concerned"
+          },
+          "pred": {
+            "subject": "amy sosa",
+            "target": "mateo",
+            "mechanism": "dominant detachment",
+            "label": "dismissive"
+          },
+          "top_mechanism_s31": "dominant detachment",
+          "top_conf_s31": 0.48,
+          "rule_scores": {
+            "dominant affiliation": 0.0,
+            "dominant detachment": 0.0,
+            "protective distancing": 0.0,
+            "submissive alignment": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "unspecified_subject",
+            "object": "Mateo",
+            "predicate": "never got",
+            "attribute": "a work permit",
+            "adverbial": "unspecified_adverbial"
+          },
+          "subject_options": [
+            "amy sosa",
+            "helen mcgowan",
+            "sosa",
+            "rachel torres"
+          ],
+          "target_options": [
+            "mateo",
+            "work-permit status",
+            "isabel",
+            "sofia"
+          ]
+        },
+        {
+          "id": "attitude_0020",
+          "text": "this is how ignorant people will see rashida tlaib",
+          "gt": {
+            "subject": "speaker",
+            "target": "uninformed viewers",
+            "mechanism": "dominant detachment",
+            "label": "contemptuous"
+          },
+          "pred": {
+            "subject": "speaker",
+            "target": "uninformed viewers",
+            "mechanism": "protective distancing",
+            "label": "dismissive"
+          },
+          "top_mechanism_s31": "protective distancing",
+          "top_conf_s31": 0.24,
+          "rule_scores": {
+            "dominant affiliation": 0.0,
+            "dominant detachment": 0.0,
+            "protective distancing": 0.0,
+            "submissive alignment": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "ignorant people",
+            "object": "Rashida Tlaib",
+            "predicate": "see",
+            "attribute": "unspecified",
+            "adverbial": "unspecified"
+          },
+          "subject_options": [
+            "speaker",
+            "billboard designer",
+            "campaign staffer",
+            "journalist"
+          ],
+          "target_options": [
+            "uninformed viewers",
+            "palestinian militant",
+            "progressive commentator",
+            "ilhan omar"
+          ]
+        },
+        {
+          "id": "attitude_0021",
+          "text": "socialists want to disarm us and make us use trains no thanks, i've seen where that leads, i'll keep my car",
+          "gt": {
+            "subject": "speaker",
+            "target": "socialists",
+            "mechanism": "dominant detachment",
+            "label": "contemptuous"
+          },
+          "pred": {
+            "subject": "speaker",
+            "target": "socialists",
+            "mechanism": "protective distancing",
+            "label": "dismissive"
+          },
+          "top_mechanism_s31": "protective distancing",
+          "top_conf_s31": 0.24,
+          "rule_scores": {
+            "dominant affiliation": 0.0,
+            "dominant detachment": 0.0,
+            "protective distancing": 0.0,
+            "submissive alignment": 0.0
+          },
+          "critic_pass": true,
+          "backtrack_rounds": 0,
+          "s1_text_components": {
+            "subject": "socialists",
+            "object": "us",
+            "predicate": "want to disarm",
+            "attribute": "no thanks",
+            "adverbial": "i've seen where that leads, i'll keep my car"
+          },
+          "subject_options": [
+            "speaker",
+            "motorist",
+            "driver",
+            "commuter"
+          ],
+          "target_options": [
+            "socialists",
+            "liberals",
+            "politicians",
+            "activists"
+          ]
+        },
+        {
+          "id": "attitude_0022",
+          "text": "2 years of trump in office: 37 indictments. 8 years of obama in office: 0 indictments",
+          "gt": {
+            "subject": "speaker",
+            "target": "donald trump",
+            "mechanism": "dominant detachment",
+            "label": "dismissive"
+          },
+          "pred": {
+            "subject": "speaker",
+            "target": "republican party",
+            "mechanism": "dominant affiliation",
+            "label": "supportive"
+          },
+          "top_mechanism_s31": "dominant affiliation",
+          "top_conf_s31": 0.48,
+          "rule_scores": {
+            "dominant affiliation": 0.0,
+            "dominant detachment": 0.0,
+            "protective distancing": 0.0,
+            "submissive alignment": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "2 years of trump in office",
+            "object": "37 indictments",
+            "predicate": "is",
+            "attribute": "unspecified",
+            "adverbial": "unspecified"
+          },
+          "subject_options": [
+            "speaker",
+            "platform content moderator",
+            "late-night tv comedy show",
+            "casual news consumer"
+          ],
+          "target_options": [
+            "donald trump",
+            "barack obama",
+            "republican party",
+            "legal system"
+          ]
+        },
+        {
+          "id": "attitude_0023",
+          "text": "why don't we set some ground rules",
+          "gt": {
+            "subject": "jonah",
+            "target": "team",
+            "mechanism": "dominant affiliation",
+            "label": "disapproving"
+          },
+          "pred": {
+            "subject": "jonah",
+            "target": "team",
+            "mechanism": "dominant affiliation",
+            "label": "supportive"
+          },
+          "top_mechanism_s31": "dominant affiliation",
+          "top_conf_s31": 0.48,
+          "rule_scores": {
+            "dominant affiliation": 0.0,
+            "dominant detachment": 0.0,
+            "protective distancing": 0.0,
+            "submissive alignment": 0.0
+          },
+          "critic_pass": true,
+          "backtrack_rounds": 0,
+          "s1_text_components": {
+            "subject": "we",
+            "object": "ground rules",
+            "predicate": "set",
+            "attribute": "unspecified_attribute",
+            "adverbial": "why don't"
+          },
+          "subject_options": [
+            "jonah",
+            "amy",
+            "maya",
+            "sandra"
+          ],
+          "target_options": [
+            "team",
+            "external vendors",
+            "local community members",
+            "store customers"
+          ]
+        },
+        {
+          "id": "attitude_0024",
+          "text": "you can see black lives matter",
+          "gt": {
+            "subject": "speaker",
+            "target": "black lives matter movement",
+            "mechanism": "dominant detachment",
+            "label": "dismissive"
+          },
+          "pred": {
+            "subject": "speaker",
+            "target": "black lives matter movement",
+            "mechanism": "dominant detachment",
+            "label": "indifferent"
+          },
+          "top_mechanism_s31": "dominant detachment",
+          "top_conf_s31": 0.48,
+          "rule_scores": {
+            "dominant affiliation": 0.0,
+            "dominant detachment": 0.0,
+            "protective distancing": 0.0,
+            "submissive alignment": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "you",
+            "object": "black lives matter",
+            "predicate": "can see",
+            "attribute": "unspecified_attribute",
+            "adverbial": "unspecified_adverbial"
+          },
+          "subject_options": [
+            "speaker",
+            "photographer",
+            "farmer",
+            "protester"
+          ],
+          "target_options": [
+            "black lives matter movement",
+            "cotton farming industry",
+            "rural agricultural worker groups",
+            "plantation era racial legacy"
+          ]
+        },
+        {
+          "id": "attitude_0025",
+          "text": "Yes yes it is! In Prison!!",
+          "gt": {
+            "subject": "speaker",
+            "target": "joey",
+            "mechanism": "dominant detachment",
+            "label": "contemptuous"
+          },
+          "pred": {
+            "subject": "speaker",
+            "target": "joey",
+            "mechanism": "dominant affiliation",
+            "label": "neutral"
+          },
+          "top_mechanism_s31": "dominant affiliation",
+          "top_conf_s31": 0.42,
+          "rule_scores": {
+            "dominant affiliation": 0.0,
+            "dominant detachment": 0.0,
+            "protective distancing": 0.0,
+            "submissive alignment": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "unspecified_subject",
+            "object": "prison",
+            "predicate": "is",
+            "attribute": "unspecified_attribute",
+            "adverbial": "unspecified_adverbial"
+          },
+          "subject_options": [
+            "speaker",
+            "other man",
+            "comedian",
+            "viewer"
+          ],
+          "target_options": [
+            "joey",
+            "prank",
+            "money",
+            "friendship"
+          ]
+        },
+        {
+          "id": "attitude_0026",
+          "text": "when you found out your wife is cheating on you",
+          "gt": {
+            "subject": "partner",
+            "target": "arab men",
+            "mechanism": "dominant detachment",
+            "label": "contemptuous"
+          },
+          "pred": {
+            "subject": "partner",
+            "target": "arab men",
+            "mechanism": "dominant detachment",
+            "label": "dismissive"
+          },
+          "top_mechanism_s31": "dominant detachment",
+          "top_conf_s31": 0.42,
+          "rule_scores": {
+            "dominant affiliation": 0.0,
+            "dominant detachment": 0.0,
+            "protective distancing": 0.0,
+            "submissive alignment": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "you",
+            "object": "wife",
+            "predicate": "found out",
+            "attribute": "cheating",
+            "adverbial": "on you"
+          },
+          "subject_options": [
+            "partner",
+            "male friend",
+            "satirical commentator",
+            "bar patron"
+          ],
+          "target_options": [
+            "arab men",
+            "south asian men",
+            "white western men",
+            "latino men"
+          ]
+        },
+        {
+          "id": "attitude_0027",
+          "text": "doesn't own a computer can still play minesweeper",
+          "gt": {
+            "subject": "speaker",
+            "target": "african kids",
+            "mechanism": "dominant detachment",
+            "label": "indifferent"
+          },
+          "pred": {
+            "subject": "speaker",
+            "target": "african kids",
+            "mechanism": "submissive alignment",
+            "label": "indifferent"
+          },
+          "top_mechanism_s31": "submissive alignment",
+          "top_conf_s31": 0.24,
+          "rule_scores": {
+            "dominant affiliation": 0.0,
+            "dominant detachment": 0.0,
+            "protective distancing": 0.0,
+            "submissive alignment": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "unspecified_subject",
+            "object": "computer",
+            "predicate": "doesn't own",
+            "attribute": "unspecified_attribute",
+            "adverbial": "unspecified_adverbial"
+          },
+          "subject_options": [
+            "speaker",
+            "commenter",
+            "photographer",
+            "bystander"
+          ],
+          "target_options": [
+            "african kids",
+            "village elders",
+            "local farmers",
+            "street vendors"
+          ]
+        },
+        {
+          "id": "attitude_0028",
+          "text": "had secret door before it was cool",
+          "gt": {
+            "subject": "speaker",
+            "target": "trend followers",
+            "mechanism": "dominant affiliation",
+            "label": "dismissive"
+          },
+          "pred": {
+            "subject": "nostalgia blogger",
+            "target": "early adopters",
+            "mechanism": "protective distancing",
+            "label": "dismissive"
+          },
+          "top_mechanism_s31": "protective distancing",
+          "top_conf_s31": 0.24,
+          "rule_scores": {
+            "dominant affiliation": 0.0,
+            "dominant detachment": 0.0,
+            "protective distancing": 0.0,
+            "submissive alignment": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "unspecified_subject",
+            "object": "secret door",
+            "predicate": "had",
+            "attribute": "unspecified_attribute",
+            "adverbial": "before it was cool"
+          },
+          "subject_options": [
+            "speaker",
+            "nostalgia blogger",
+            "internet historian",
+            "hipster commenter"
+          ],
+          "target_options": [
+            "trend followers",
+            "early adopters",
+            "casual browsers",
+            "subculture members"
+          ]
+        },
+        {
+          "id": "attitude_0029",
+          "text": "men be like im finally ready to settle down",
+          "gt": {
+            "subject": "speaker",
+            "target": "men",
+            "mechanism": "dominant detachment",
+            "label": "dismissive"
+          },
+          "pred": {
+            "subject": "male influencer",
+            "target": "men",
+            "mechanism": "submissive alignment",
+            "label": "indifferent"
+          },
+          "top_mechanism_s31": "submissive alignment",
+          "top_conf_s31": 0.24,
+          "rule_scores": {
+            "dominant affiliation": 0.0,
+            "dominant detachment": 0.0,
+            "protective distancing": 0.0,
+            "submissive alignment": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "men",
+            "object": "unspecified_object",
+            "predicate": "be like",
+            "attribute": "unspecified_attribute",
+            "adverbial": "unspecified_adverbial"
+          },
+          "subject_options": [
+            "speaker",
+            "male influencer",
+            "troll account",
+            "satire writer"
+          ],
+          "target_options": [
+            "men",
+            "viewer",
+            "young adults",
+            "couples"
+          ]
+        },
+        {
+          "id": "attitude_0030",
+          "text": "well, i mean, you almost made me kill your cat.",
+          "gt": {
+            "subject": "carol",
+            "target": "coworker",
+            "mechanism": "dominant detachment",
+            "label": "contemptuous"
+          },
+          "pred": {
+            "subject": "carol",
+            "target": "coworker",
+            "mechanism": "dominant detachment",
+            "label": "hostile"
+          },
+          "top_mechanism_s31": "dominant detachment",
+          "top_conf_s31": 0.48,
+          "rule_scores": {
+            "dominant affiliation": 0.0,
+            "dominant detachment": 0.0,
+            "protective distancing": 0.0,
+            "submissive alignment": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "you",
+            "object": "your cat",
+            "predicate": "almost made me kill",
+            "attribute": "unspecified",
+            "adverbial": "well, i mean"
+          },
+          "subject_options": [
+            "carol",
+            "coworker",
+            "manager",
+            "hr"
+          ],
+          "target_options": [
+            "coworker",
+            "cat owner present",
+            "manager",
+            "customer"
+          ]
+        },
+        {
+          "id": "attitude_0031",
+          "text": "ah, too much clothing for this horndog.",
+          "gt": {
+            "subject": "coworker",
+            "target": "coworker",
+            "mechanism": "dominant detachment",
+            "label": "contemptuous"
+          },
+          "pred": {
+            "subject": "woman monitor",
+            "target": "customer",
+            "mechanism": "dominant detachment",
+            "label": "dismissive"
+          },
+          "top_mechanism_s31": "dominant detachment",
+          "top_conf_s31": 0.48,
+          "rule_scores": {
+            "dominant affiliation": 0.0,
+            "dominant detachment": 0.0,
+            "protective distancing": 0.0,
+            "submissive alignment": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "unspecified_subject",
+            "object": "horndog",
+            "predicate": "is",
+            "attribute": "too much clothing",
+            "adverbial": "unspecified_adverbial"
+          },
+          "subject_options": [
+            "coworker",
+            "woman monitor",
+            "customer",
+            "male customer"
+          ],
+          "target_options": [
+            "coworker",
+            "man plaid shirt",
+            "woman dark hair",
+            "customer"
+          ]
+        },
+        {
+          "id": "attitude_0032",
+          "text": "smell that? thats why we have to use condoms",
+          "gt": {
+            "subject": "male partner",
+            "target": "women",
+            "mechanism": "dominant detachment",
+            "label": "contemptuous"
+          },
+          "pred": {
+            "subject": "male partner",
+            "target": "female friend",
+            "mechanism": "protective distancing",
+            "label": "indifferent"
+          },
+          "top_mechanism_s31": "protective distancing",
+          "top_conf_s31": 0.24,
+          "rule_scores": {
+            "dominant affiliation": 0.0,
+            "dominant detachment": 0.0,
+            "protective distancing": 0.0,
+            "submissive alignment": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "unspecified_subject",
+            "object": "condoms",
+            "predicate": "use",
+            "attribute": "unspecified_attribute",
+            "adverbial": "unspecified_adverbial"
+          },
+          "subject_options": [
+            "male partner",
+            "male friend",
+            "male roommate",
+            "male coworker"
+          ],
+          "target_options": [
+            "women",
+            "female friend",
+            "sex worker",
+            "female coworker"
+          ]
+        },
+        {
+          "id": "attitude_0033",
+          "text": "rabbits jump and they live for 8 years dogs walk and they live for 15 years. turtles do nothing and they live for 150 years. lesson learned",
+          "gt": {
+            "subject": "speaker",
+            "target": "general viewers",
+            "mechanism": "dominant affiliation",
+            "label": "neutral"
+          },
+          "pred": {
+            "subject": "speaker",
+            "target": "general viewers",
+            "mechanism": "protective distancing",
+            "label": "indifferent"
+          },
+          "top_mechanism_s31": "protective distancing",
+          "top_conf_s31": 0.24,
+          "rule_scores": {
+            "dominant affiliation": 0.0,
+            "dominant detachment": 0.0,
+            "protective distancing": 0.0,
+            "submissive alignment": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "rabbits, dogs, turtles",
+            "object": "8 years, 15 years, 150 years",
+            "predicate": "jump, walk, do nothing",
+            "attribute": "live for",
+            "adverbial": "unspecified"
+          },
+          "subject_options": [
+            "speaker",
+            "influencer",
+            "satirist",
+            "humorist"
+          ],
+          "target_options": [
+            "general viewers",
+            "animal lovers",
+            "pet owners",
+            "nature enthusiasts"
+          ]
+        },
+        {
+          "id": "attitude_0034",
+          "text": "they ride us till we drop and then immediately sell our ass meat.",
+          "gt": {
+            "subject": "coworker",
+            "target": "person",
+            "mechanism": "dominant detachment",
+            "label": "disapproving"
+          },
+          "pred": {
+            "subject": "coworker",
+            "target": "person",
+            "mechanism": "dominant detachment",
+            "label": "indifferent"
+          },
+          "top_mechanism_s31": "dominant detachment",
+          "top_conf_s31": 0.48,
+          "rule_scores": {
+            "dominant affiliation": 0.0,
+            "dominant detachment": 0.0,
+            "protective distancing": 0.0,
+            "submissive alignment": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "they",
+            "object": "us",
+            "predicate": "ride",
+            "attribute": "till we drop",
+            "adverbial": "immediately sell our ass meat"
+          },
+          "subject_options": [
+            "coworker",
+            "passerby",
+            "outside vendor",
+            "customer"
+          ],
+          "target_options": [
+            "person",
+            "general public",
+            "customer",
+            "third-party contractors"
+          ]
+        },
+        {
+          "id": "attitude_0035",
+          "text": "i don't know how to deal with black people but i guess i'll take a shot at it",
+          "gt": {
+            "subject": "speaker",
+            "target": "black people",
+            "mechanism": "dominant detachment",
+            "label": "hostile"
+          },
+          "pred": {
+            "subject": "speaker",
+            "target": "black people",
+            "mechanism": "protective distancing",
+            "label": "dismissive"
+          },
+          "top_mechanism_s31": "dominant detachment",
+          "top_conf_s31": 0.48,
+          "rule_scores": {
+            "dominant affiliation": 0.0,
+            "dominant detachment": 0.0,
+            "protective distancing": 0.125,
+            "submissive alignment": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "i",
+            "object": "black people",
+            "predicate": "deal with",
+            "attribute": "don't know",
+            "adverbial": "take a shot at it"
+          },
+          "subject_options": [
+            "speaker",
+            "officer",
+            "bystander",
+            "reporter"
+          ],
+          "target_options": [
+            "black people",
+            "police officers",
+            "white people",
+            "suspected criminals"
+          ]
+        },
+        {
+          "id": "attitude_0036",
+          "text": "the proper way to pop a blackhead",
+          "gt": {
+            "subject": "speaker",
+            "target": "people pop blackheads",
+            "mechanism": "dominant affiliation",
+            "label": "neutral"
+          },
+          "pred": {
+            "subject": "beauty influencer",
+            "target": "people pop blackheads",
+            "mechanism": "protective distancing",
+            "label": "disapproving"
+          },
+          "top_mechanism_s31": "submissive alignment",
+          "top_conf_s31": 0.3,
+          "rule_scores": {
+            "dominant affiliation": 0.0,
+            "dominant detachment": 0.0,
+            "protective distancing": 0.0,
+            "submissive alignment": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "unspecified_subject",
+            "object": "blackhead",
+            "predicate": "to pop",
+            "attribute": "proper way",
+            "adverbial": "unspecified_adverbial"
+          },
+          "subject_options": [
+            "speaker",
+            "beauty influencer",
+            "aesthetician",
+            "dermatologist"
+          ],
+          "target_options": [
+            "people pop blackheads",
+            "skincare enthusiasts",
+            "people acne",
+            "beauty vloggers"
+          ]
+        },
+        {
+          "id": "attitude_0037",
+          "text": "volkswagen cars produce more gaz than expected ach!! thats my car",
+          "gt": {
+            "subject": "speaker",
+            "target": "volkswagen cars",
+            "mechanism": "dominant detachment",
+            "label": "supportive"
+          },
+          "pred": {
+            "subject": "speaker",
+            "target": "volkswagen cars",
+            "mechanism": "dominant detachment",
+            "label": "disapproving"
+          },
+          "top_mechanism_s31": "dominant detachment",
+          "top_conf_s31": 0.48,
+          "rule_scores": {
+            "dominant affiliation": 0.0,
+            "dominant detachment": 0.0,
+            "protective distancing": 0.0,
+            "submissive alignment": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "volkswagen cars",
+            "object": "gaz",
+            "predicate": "produce",
+            "attribute": "more than expected",
+            "adverbial": "unspecified"
+          },
+          "subject_options": [
+            "speaker",
+            "owner",
+            "driver",
+            "enthusiast"
+          ],
+          "target_options": [
+            "volkswagen cars",
+            "diesel cars",
+            "german cars",
+            "audi cars"
+          ]
+        },
+        {
+          "id": "attitude_0038",
+          "text": "sorry white guys but i only date black guys",
+          "gt": {
+            "subject": "speaker",
+            "target": "black guys",
+            "mechanism": "dominant detachment",
+            "label": "hostile"
+          },
+          "pred": {
+            "subject": "speaker",
+            "target": "black guys",
+            "mechanism": "submissive alignment",
+            "label": "sympathetic"
+          },
+          "top_mechanism_s31": "submissive alignment",
+          "top_conf_s31": 0.05,
+          "rule_scores": {
+            "dominant affiliation": 0.0,
+            "dominant detachment": 0.0,
+            "protective distancing": 0.0,
+            "submissive alignment": 0.125
+          },
+          "critic_pass": true,
+          "backtrack_rounds": 1,
+          "s1_text_components": {
+            "subject": "white guys",
+            "object": "black guys",
+            "predicate": "date",
+            "attribute": "sorry",
+            "adverbial": "but i only"
+          },
+          "subject_options": [
+            "speaker",
+            "online troll",
+            "site administrator",
+            "forum moderator"
+          ],
+          "target_options": [
+            "black guys",
+            "white guys",
+            "black women",
+            "latino men"
+          ]
+        },
+        {
+          "id": "attitude_0039",
+          "text": "What a baby.",
+          "gt": {
+            "subject": "speaker",
+            "target": "other person",
+            "mechanism": "dominant affiliation",
+            "label": "dismissive"
+          },
+          "pred": {
+            "subject": "speaker",
+            "target": "child",
+            "mechanism": "dominant affiliation",
+            "label": "supportive"
+          },
+          "top_mechanism_s31": "dominant affiliation",
+          "top_conf_s31": 0.4829109920015742,
+          "rule_scores": {
+            "dominant affiliation": 0.007277480003935617,
+            "dominant detachment": 0.0,
+            "protective distancing": 0.0,
+            "submissive alignment": 0.0
+          },
+          "critic_pass": true,
+          "backtrack_rounds": 0,
+          "s1_text_components": {
+            "subject": "unspecified_subject",
+            "object": "baby",
+            "predicate": "is",
+            "attribute": "unspecified_attribute",
+            "adverbial": "unspecified_adverbial"
+          },
+          "subject_options": [
+            "speaker",
+            "friend",
+            "bystander",
+            "host"
+          ],
+          "target_options": [
+            "other person",
+            "child",
+            "dog",
+            "roommate"
+          ]
+        },
+        {
+          "id": "attitude_0040",
+          "text": "ain't no allah back girl",
+          "gt": {
+            "subject": "speaker",
+            "target": "muslim women",
+            "mechanism": "dominant detachment",
+            "label": "contemptuous"
+          },
+          "pred": {
+            "subject": "speaker",
+            "target": "muslim women",
+            "mechanism": "dominant affiliation",
+            "label": "neutral"
+          },
+          "top_mechanism_s31": "dominant affiliation",
+          "top_conf_s31": 0.0,
+          "rule_scores": {
+            "dominant affiliation": 0.0,
+            "dominant detachment": 0.0,
+            "protective distancing": 0.0,
+            "submissive alignment": 0.0
+          },
+          "critic_pass": true,
+          "backtrack_rounds": 0,
+          "s1_text_components": {
+            "subject": "unspecified_subject",
+            "object": "girl",
+            "predicate": "back",
+            "attribute": "unspecified_attribute",
+            "adverbial": "unspecified_adverbial"
+          },
+          "subject_options": [
+            "speaker",
+            "comment moderator",
+            "platform algorithm",
+            "news editor"
+          ],
+          "target_options": [
+            "muslim women",
+            "women",
+            "religious organization",
+            "secular women"
+          ]
+        },
+        {
+          "id": "attitude_0041",
+          "text": "how to fix a noisy dishwasher",
+          "gt": {
+            "subject": "repair technician",
+            "target": "homeowner",
+            "mechanism": "dominant detachment",
+            "label": "hostile"
+          },
+          "pred": {
+            "subject": "repair technician",
+            "target": "homeowner",
+            "mechanism": "protective distancing",
+            "label": "indifferent"
+          },
+          "top_mechanism_s31": "protective distancing",
+          "top_conf_s31": 0.24,
+          "rule_scores": {
+            "dominant affiliation": 0.0,
+            "dominant detachment": 0.0,
+            "protective distancing": 0.0,
+            "submissive alignment": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "unspecified_subject",
+            "object": "noisy dishwasher",
+            "predicate": "fix",
+            "attribute": "unspecified_attribute",
+            "adverbial": "unspecified_adverbial"
+          },
+          "subject_options": [
+            "repair technician",
+            "manager",
+            "forum moderator",
+            "advertising agency"
+          ],
+          "target_options": [
+            "homeowner",
+            "man image",
+            "male aggressor figure",
+            "kitchen appliance unit"
+          ]
+        },
+        {
+          "id": "attitude_0042",
+          "text": "notice the difference talk show host vietnam war hero",
+          "gt": {
+            "subject": "meme creator",
+            "target": "awarding talk show host",
+            "mechanism": "dominant detachment",
+            "label": "disapproving"
+          },
+          "pred": {
+            "subject": "meme creator",
+            "target": "vietnam war hero",
+            "mechanism": "dominant affiliation",
+            "label": "dismissive"
+          },
+          "top_mechanism_s31": "dominant affiliation",
+          "top_conf_s31": 0.0,
+          "rule_scores": {
+            "dominant affiliation": 0.0,
+            "dominant detachment": 0.0,
+            "protective distancing": 0.0,
+            "submissive alignment": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "notice",
+            "object": "difference",
+            "predicate": "talk show host",
+            "attribute": "Vietnam war hero",
+            "adverbial": "unspecified_adverbial"
+          },
+          "subject_options": [
+            "meme creator",
+            "political satirist",
+            "internet troll",
+            "online commenter"
+          ],
+          "target_options": [
+            "awarding talk show host",
+            "recipients",
+            "vietnam war hero",
+            "obama"
+          ]
+        },
+        {
+          "id": "attitude_0043",
+          "text": "i did nazi that bird fly by did you?",
+          "gt": {
+            "subject": "speaker",
+            "target": "listener",
+            "mechanism": "dominant detachment",
+            "label": "contemptuous"
+          },
+          "pred": {
+            "subject": "speaker",
+            "target": "listener",
+            "mechanism": "dominant detachment",
+            "label": "indifferent"
+          },
+          "top_mechanism_s31": "dominant detachment",
+          "top_conf_s31": 0.42,
+          "rule_scores": {
+            "dominant affiliation": 0.0,
+            "dominant detachment": 0.0,
+            "protective distancing": 0.0,
+            "submissive alignment": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "i",
+            "object": "bird",
+            "predicate": "did nazi",
+            "attribute": "fly by",
+            "adverbial": "did you?"
+          },
+          "subject_options": [
+            "speaker",
+            "troll account",
+            "satire account",
+            "political activist"
+          ],
+          "target_options": [
+            "listener",
+            "historical photograph",
+            "political satire",
+            "wwii memorabilia"
+          ]
+        },
+        {
+          "id": "attitude_0044",
+          "text": "i can do it for $15,000, but that's final.",
+          "gt": {
+            "subject": "worker",
+            "target": "manager",
+            "mechanism": "submissive alignment",
+            "label": "disapproving"
+          },
+          "pred": {
+            "subject": "worker",
+            "target": "manager",
+            "mechanism": "protective distancing",
+            "label": "indifferent"
+          },
+          "top_mechanism_s31": "protective distancing",
+          "top_conf_s31": 0.24,
+          "rule_scores": {
+            "dominant affiliation": 0.0,
+            "dominant detachment": 0.0,
+            "protective distancing": 0.0,
+            "submissive alignment": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "I",
+            "object": "it",
+            "predicate": "do",
+            "attribute": "for $15,000",
+            "adverbial": "final"
+          },
+          "subject_options": [
+            "worker",
+            "passerby",
+            "customer",
+            "onlooker"
+          ],
+          "target_options": [
+            "manager",
+            "customer",
+            "delivery person",
+            "passerby"
+          ]
+        },
+        {
+          "id": "attitude_0045",
+          "text": "yes donald. that sounds good i once built a wall too",
+          "gt": {
+            "subject": "speaker",
+            "target": "donald",
+            "mechanism": "dominant detachment",
+            "label": "hostile"
+          },
+          "pred": {
+            "subject": "speaker",
+            "target": "biden",
+            "mechanism": "protective distancing",
+            "label": "indifferent"
+          },
+          "top_mechanism_s31": "protective distancing",
+          "top_conf_s31": 0.24,
+          "rule_scores": {
+            "dominant affiliation": 0.0,
+            "dominant detachment": 0.0,
+            "protective distancing": 0.0,
+            "submissive alignment": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "unspecified_subject",
+            "object": "unspecified_object",
+            "predicate": "sounds good",
+            "attribute": "unspecified_attribute",
+            "adverbial": "once"
+          },
+          "subject_options": [
+            "speaker",
+            "internet troll",
+            "bot account",
+            "political satirist"
+          ],
+          "target_options": [
+            "donald",
+            "hitler",
+            "putin",
+            "biden"
+          ]
+        },
+        {
+          "id": "attitude_0046",
+          "text": "a typical white man",
+          "gt": {
+            "subject": "speaker",
+            "target": "white men",
+            "mechanism": "dominant affiliation",
+            "label": "neutral"
+          },
+          "pred": {
+            "subject": "news reporter",
+            "target": "male executives",
+            "mechanism": "dominant affiliation",
+            "label": "supportive"
+          },
+          "top_mechanism_s31": "dominant affiliation",
+          "top_conf_s31": 0.48,
+          "rule_scores": {
+            "dominant affiliation": 0.0,
+            "dominant detachment": 0.0,
+            "protective distancing": 0.0,
+            "submissive alignment": 0.0
+          },
+          "critic_pass": true,
+          "backtrack_rounds": 0,
+          "s1_text_components": {
+            "subject": "unspecified_subject",
+            "object": "unspecified_object",
+            "predicate": "is",
+            "attribute": "typical white man",
+            "adverbial": "unspecified_adverbial"
+          },
+          "subject_options": [
+            "speaker",
+            "social influencer",
+            "news reporter",
+            "forum moderator"
+          ],
+          "target_options": [
+            "white men",
+            "middle-aged men",
+            "male executives",
+            "suburban fathers"
+          ]
+        },
+        {
+          "id": "attitude_0048",
+          "text": "Look I never should have kissed your girlfriend, but I'm",
+          "gt": {
+            "subject": "caller",
+            "target": "partner",
+            "mechanism": "protective distancing",
+            "label": "concerned"
+          },
+          "pred": {
+            "subject": "speaker",
+            "target": "partner",
+            "mechanism": "submissive alignment",
+            "label": "indifferent"
+          },
+          "top_mechanism_s31": "submissive alignment",
+          "top_conf_s31": 0.3,
+          "rule_scores": {
+            "dominant affiliation": 0.0,
+            "dominant detachment": 0.0,
+            "protective distancing": 0.0,
+            "submissive alignment": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "I",
+            "object": "your girlfriend",
+            "predicate": "kissed",
+            "attribute": "never should have",
+            "adverbial": "unspecified"
+          },
+          "subject_options": [
+            "caller",
+            "passerby",
+            "shop clerk",
+            "speaker"
+          ],
+          "target_options": [
+            "partner",
+            "automated voicemail system",
+            "voicemail system",
+            "neighbors"
+          ]
+        },
+        {
+          "id": "attitude_0049",
+          "text": "they're in a relationship, who makes the sandwiches?",
+          "gt": {
+            "subject": "speaker",
+            "target": "female couple",
+            "mechanism": "dominant affiliation",
+            "label": "contemptuous"
+          },
+          "pred": {
+            "subject": "speaker",
+            "target": "female couple",
+            "mechanism": "dominant affiliation",
+            "label": "disapproving"
+          },
+          "top_mechanism_s31": "dominant affiliation",
+          "top_conf_s31": 0.0,
+          "rule_scores": {
+            "dominant affiliation": 0.0,
+            "dominant detachment": 0.0,
+            "protective distancing": 0.0,
+            "submissive alignment": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "they",
+            "object": "the sandwiches",
+            "predicate": "makes",
+            "attribute": "in a relationship",
+            "adverbial": "unspecified"
+          },
+          "subject_options": [
+            "speaker",
+            "forum moderator",
+            "curious observer",
+            "event attendee"
+          ],
+          "target_options": [
+            "female couple",
+            "platonic female friends",
+            "two female roommates",
+            "opposite sex couple"
+          ]
+        },
+        {
+          "id": "attitude_0050",
+          "text": "this is your third strike this month.",
+          "gt": {
+            "subject": "mariko",
+            "target": "coworker",
+            "mechanism": "dominant detachment",
+            "label": "disapproving"
+          },
+          "pred": {
+            "subject": "mariko",
+            "target": "customer",
+            "mechanism": "dominant detachment",
+            "label": "indifferent"
+          },
+          "top_mechanism_s31": "dominant detachment",
+          "top_conf_s31": 0.42,
+          "rule_scores": {
+            "dominant affiliation": 0.0,
+            "dominant detachment": 0.0,
+            "protective distancing": 0.0,
+            "submissive alignment": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "unspecified_subject",
+            "object": "unspecified_object",
+            "predicate": "is",
+            "attribute": "third strike",
+            "adverbial": "this month"
+          },
+          "subject_options": [
+            "mariko",
+            "customer",
+            "male customer",
+            "female customer"
+          ],
+          "target_options": [
+            "coworker",
+            "customer",
+            "passerby",
+            "male customer"
+          ]
+        },
+        {
+          "id": "attitude_0051",
+          "text": "the jussie smollett case explained. \"how do you plead? \" \"innocent!!!\" \"black, gay, trump hater, friend of michelle obama",
+          "gt": {
+            "subject": "speaker",
+            "target": "defendant",
+            "mechanism": "dominant detachment",
+            "label": "dismissive"
+          },
+          "pred": {
+            "subject": "internet troll",
+            "target": "public figure",
+            "mechanism": "dominant affiliation",
+            "label": "dismissive"
+          },
+          "top_mechanism_s31": "dominant affiliation",
+          "top_conf_s31": 0.0,
+          "rule_scores": {
+            "dominant affiliation": 0.0,
+            "dominant detachment": 0.0,
+            "protective distancing": 0.0,
+            "submissive alignment": 0.0
+          },
+          "critic_pass": true,
+          "backtrack_rounds": 1,
+          "s1_text_components": {
+            "subject": "the jussie smollett case",
+            "object": "innocent",
+            "predicate": "explained",
+            "attribute": "black, gay, trump hater, friend of michelle obama",
+            "adverbial": "unspecified"
+          },
+          "subject_options": [
+            "speaker",
+            "internet troll",
+            "opinion blogger",
+            "viral content curator"
+          ],
+          "target_options": [
+            "defendant",
+            "celebrity actor",
+            "public figure",
+            "tv personality"
+          ]
+        },
+        {
+          "id": "attitude_0053",
+          "text": "the only white man that i trust..  for about 15 seconds",
+          "gt": {
+            "subject": "speaker",
+            "target": "white men",
+            "mechanism": "dominant affiliation",
+            "label": "contemptuous"
+          },
+          "pred": {
+            "subject": "speaker",
+            "target": "white men",
+            "mechanism": "dominant detachment",
+            "label": "indifferent"
+          },
+          "top_mechanism_s31": "dominant detachment",
+          "top_conf_s31": 0.42,
+          "rule_scores": {
+            "dominant affiliation": 0.0,
+            "dominant detachment": 0.0,
+            "protective distancing": 0.0,
+            "submissive alignment": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "i",
+            "object": "the only white man",
+            "predicate": "trust",
+            "attribute": "unspecified",
+            "adverbial": "for about 15 seconds"
+          },
+          "subject_options": [
+            "speaker",
+            "event organizer",
+            "platform moderator",
+            "editor-in-chief"
+          ],
+          "target_options": [
+            "white men",
+            "white women",
+            "young men",
+            "male celebrities"
+          ]
+        },
+        {
+          "id": "attitude_0054",
+          "text": "hope and change i built that",
+          "gt": {
+            "subject": "meme creator",
+            "target": "political figure",
+            "mechanism": "dominant detachment",
+            "label": "contemptuous"
+          },
+          "pred": {
+            "subject": "speaker",
+            "target": "political establishment",
+            "mechanism": "dominant affiliation",
+            "label": "supportive"
+          },
+          "top_mechanism_s31": "dominant affiliation",
+          "top_conf_s31": 0.48,
+          "rule_scores": {
+            "dominant affiliation": 0.0,
+            "dominant detachment": 0.0,
+            "protective distancing": 0.0,
+            "submissive alignment": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "unspecified_subject",
+            "object": "change",
+            "predicate": "hope",
+            "attribute": "unspecified_attribute",
+            "adverbial": "unspecified_adverbial"
+          },
+          "subject_options": [
+            "meme creator",
+            "speaker",
+            "female coworker",
+            "campaign staffer"
+          ],
+          "target_options": [
+            "political figure",
+            "law enforcement",
+            "administration",
+            "political establishment"
+          ]
+        },
+        {
+          "id": "attitude_0055",
+          "text": "take one whack, all right?",
+          "gt": {
+            "subject": "woman pink hat",
+            "target": "woman green coat",
+            "mechanism": "dominant affiliation",
+            "label": "indifferent"
+          },
+          "pred": {
+            "subject": "woman pink hat",
+            "target": "woman green coat",
+            "mechanism": "dominant affiliation",
+            "label": "supportive"
+          },
+          "top_mechanism_s31": "dominant affiliation",
+          "top_conf_s31": 0.48,
+          "rule_scores": {
+            "dominant affiliation": 0.0,
+            "dominant detachment": 0.0,
+            "protective distancing": 0.0,
+            "submissive alignment": 0.0
+          },
+          "critic_pass": true,
+          "backtrack_rounds": 0,
+          "s1_text_components": {
+            "subject": "unspecified_subject",
+            "object": "unspecified_object",
+            "predicate": "take",
+            "attribute": "one whack",
+            "adverbial": "all right"
+          },
+          "subject_options": [
+            "woman pink hat",
+            "man blue shirt",
+            "woman green coat",
+            "female coworker"
+          ],
+          "target_options": [
+            "woman green coat",
+            "woman pink hat",
+            "conversation topic",
+            "current situation"
+          ]
+        },
+        {
+          "id": "attitude_0056",
+          "text": "engagement party is not a maid of honor duty.",
+          "gt": {
+            "subject": "speaker",
+            "target": "bridesmaid",
+            "mechanism": "dominant detachment",
+            "label": "disapproving"
+          },
+          "pred": {
+            "subject": "speaker",
+            "target": "policy",
+            "mechanism": "protective distancing",
+            "label": "indifferent"
+          },
+          "top_mechanism_s31": "protective distancing",
+          "top_conf_s31": 0.24,
+          "rule_scores": {
+            "dominant affiliation": 0.0,
+            "dominant detachment": 0.0,
+            "protective distancing": 0.0,
+            "submissive alignment": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "engagement party",
+            "object": "maid of honor duty",
+            "predicate": "is not",
+            "attribute": "unspecified_attribute",
+            "adverbial": "unspecified_adverbial"
+          },
+          "subject_options": [
+            "speaker",
+            "coworker",
+            "silent woman",
+            "male coworker"
+          ],
+          "target_options": [
+            "bridesmaid",
+            "manager",
+            "policy",
+            "speaker"
+          ]
+        },
+        {
+          "id": "attitude_0057",
+          "text": "perfect girls don't exi-",
+          "gt": {
+            "subject": "speaker",
+            "target": "girl",
+            "mechanism": "submissive alignment",
+            "label": "appreciative"
+          },
+          "pred": {
+            "subject": "speaker",
+            "target": "girl",
+            "mechanism": "dominant detachment",
+            "label": "dismissive"
+          },
+          "top_mechanism_s31": "dominant detachment",
+          "top_conf_s31": 0.48,
+          "rule_scores": {
+            "dominant affiliation": 0.0,
+            "dominant detachment": 0.0,
+            "protective distancing": 0.0,
+            "submissive alignment": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "perfect girls",
+            "object": "unspecified_object",
+            "predicate": "don't exi-",
+            "attribute": "unspecified_attribute",
+            "adverbial": "unspecified_adverbial"
+          },
+          "subject_options": [
+            "speaker",
+            "online admirer",
+            "social media trend follower",
+            "social media moderator"
+          ],
+          "target_options": [
+            "girl",
+            "partner",
+            "model",
+            "ideal woman"
+          ]
+        },
+        {
+          "id": "attitude_0058",
+          "text": "happy birthday keep it classy...no wine from a box",
+          "gt": {
+            "subject": "message sender",
+            "target": "birthday person",
+            "mechanism": "dominant affiliation",
+            "label": "dismissive"
+          },
+          "pred": {
+            "subject": "message sender",
+            "target": "birthday person",
+            "mechanism": "submissive alignment",
+            "label": "indifferent"
+          },
+          "top_mechanism_s31": "submissive alignment",
+          "top_conf_s31": 0.24,
+          "rule_scores": {
+            "dominant affiliation": 0.0,
+            "dominant detachment": 0.0,
+            "protective distancing": 0.0,
+            "submissive alignment": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "unspecified_subject",
+            "object": "unspecified_object",
+            "predicate": "happy birthday",
+            "attribute": "classy",
+            "adverbial": "no wine from a box"
+          },
+          "subject_options": [
+            "message sender",
+            "party organizer",
+            "family member",
+            "message recipient"
+          ],
+          "target_options": [
+            "birthday person",
+            "birthday guest",
+            "party host",
+            "gift giver"
+          ]
+        },
+        {
+          "id": "attitude_0059",
+          "text": "how to pick up jewish chicks",
+          "gt": {
+            "subject": "speaker",
+            "target": "jewish women",
+            "mechanism": "dominant detachment",
+            "label": "contemptuous"
+          },
+          "pred": {
+            "subject": "pickup artist",
+            "target": "jewish women",
+            "mechanism": "protective distancing",
+            "label": "dismissive"
+          },
+          "top_mechanism_s31": "protective distancing",
+          "top_conf_s31": 0.48,
+          "rule_scores": {
+            "dominant affiliation": 0.0,
+            "dominant detachment": 0.0,
+            "protective distancing": 0.0,
+            "submissive alignment": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "unspecified_subject",
+            "object": "jewish chicks",
+            "predicate": "pick up",
+            "attribute": "unspecified_attribute",
+            "adverbial": "unspecified_adverbial"
+          },
+          "subject_options": [
+            "speaker",
+            "pickup artist",
+            "dating coach",
+            "event attendee"
+          ],
+          "target_options": [
+            "jewish women",
+            "israeli women",
+            "jewish men",
+            "hebrew speakers"
+          ]
+        },
+        {
+          "id": "attitude_0060",
+          "text": "a head diaper is required when you have shit for brains",
+          "gt": {
+            "subject": "speaker",
+            "target": "person wearing headscarf",
+            "mechanism": "dominant detachment",
+            "label": "contemptuous"
+          },
+          "pred": {
+            "subject": "online commenter",
+            "target": "woman holding microphone",
+            "mechanism": "protective distancing",
+            "label": "hostile"
+          },
+          "top_mechanism_s31": "protective distancing",
+          "top_conf_s31": 0.54,
+          "rule_scores": {
+            "dominant affiliation": 0.0,
+            "dominant detachment": 0.0,
+            "protective distancing": 0.0,
+            "submissive alignment": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "a head diaper",
+            "object": "shit for brains",
+            "predicate": "is required",
+            "attribute": "unspecified",
+            "adverbial": "when you have"
+          },
+          "subject_options": [
+            "speaker",
+            "social troll",
+            "online commenter",
+            "internet user"
+          ],
+          "target_options": [
+            "person wearing headscarf",
+            "woman short hair",
+            "person visible tattoos",
+            "woman holding microphone"
+          ]
+        },
+        {
+          "id": "attitude_0061",
+          "text": "so new rule: talking about our feelings is now encouraged.",
+          "gt": {
+            "subject": "coworker",
+            "target": "dina",
+            "mechanism": "dominant affiliation",
+            "label": "skeptical"
+          },
+          "pred": {
+            "subject": "coworker",
+            "target": "dina",
+            "mechanism": "dominant detachment",
+            "label": "indifferent"
+          },
+          "top_mechanism_s31": "dominant detachment",
+          "top_conf_s31": 0.48,
+          "rule_scores": {
+            "dominant affiliation": 0.0,
+            "dominant detachment": 0.0,
+            "protective distancing": 0.0,
+            "submissive alignment": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "new rule",
+            "object": "talking about our feelings",
+            "predicate": "is now encouraged",
+            "attribute": "unspecified_attribute",
+            "adverbial": "unspecified_adverbial"
+          },
+          "subject_options": [
+            "coworker",
+            "clients",
+            "vendor representatives",
+            "visiting auditors"
+          ],
+          "target_options": [
+            "dina",
+            "jordan",
+            "liam",
+            "emma"
+          ]
+        },
+        {
+          "id": "attitude_0062",
+          "text": "i had a little broblem at school today, but i solved it. -oh, and here's your gun back",
+          "gt": {
+            "subject": "student",
+            "target": "person owned gun",
+            "mechanism": "dominant detachment",
+            "label": "dismissive"
+          },
+          "pred": {
+            "subject": "student",
+            "target": "school janitor",
+            "mechanism": "dominant detachment",
+            "label": "indifferent"
+          },
+          "top_mechanism_s31": "dominant detachment",
+          "top_conf_s31": 0.48,
+          "rule_scores": {
+            "dominant affiliation": 0.0,
+            "dominant detachment": 0.0,
+            "protective distancing": 0.0,
+            "submissive alignment": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "I",
+            "object": "a little problem at school today",
+            "predicate": "had",
+            "attribute": "solved",
+            "adverbial": "today"
+          },
+          "subject_options": [
+            "student",
+            "school counselor",
+            "bystander",
+            "bully"
+          ],
+          "target_options": [
+            "person owned gun",
+            "parent",
+            "school janitor",
+            "local police officer"
+          ]
+        },
+        {
+          "id": "attitude_0063",
+          "text": "so i was sucking on her t*ts then the husband walks in and i just sk*t myself",
+          "gt": {
+            "subject": "speaker",
+            "target": "partner",
+            "mechanism": "submissive alignment",
+            "label": "dismissive"
+          },
+          "pred": {
+            "subject": "speaker",
+            "target": "partner",
+            "mechanism": "protective distancing",
+            "label": "dismissive"
+          },
+          "top_mechanism_s31": "protective distancing",
+          "top_conf_s31": 0.54,
+          "rule_scores": {
+            "dominant affiliation": 0.0,
+            "dominant detachment": 0.0,
+            "protective distancing": 0.0,
+            "submissive alignment": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "unspecified_person",
+            "object": "unspecified_person",
+            "predicate": "sucking",
+            "attribute": "unspecified",
+            "adverbial": "then the husband walks in"
+          },
+          "subject_options": [
+            "speaker",
+            "lover",
+            "cheater",
+            "participant"
+          ],
+          "target_options": [
+            "partner",
+            "father",
+            "coworker",
+            "roommate"
+          ]
+        },
+        {
+          "id": "attitude_0064",
+          "text": "where's the interview with the police who murdered unarmed black men on video?",
+          "gt": {
+            "subject": "speaker",
+            "target": "police murdered black men",
+            "mechanism": "dominant detachment",
+            "label": "dismissive"
+          },
+          "pred": {
+            "subject": "speaker",
+            "target": "police murdered black men",
+            "mechanism": "protective distancing",
+            "label": "disapproving"
+          },
+          "top_mechanism_s31": "protective distancing",
+          "top_conf_s31": 0.24,
+          "rule_scores": {
+            "dominant affiliation": 0.0,
+            "dominant detachment": 0.0,
+            "protective distancing": 0.0,
+            "submissive alignment": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "unspecified_subject",
+            "object": "interview with the police",
+            "predicate": "is",
+            "attribute": "unspecified_attribute",
+            "adverbial": "unspecified_adverbial"
+          },
+          "subject_options": [
+            "speaker",
+            "civil rights activist",
+            "local news reporter",
+            "legal defense attorney"
+          ],
+          "target_options": [
+            "police murdered black men",
+            "black men",
+            "activists",
+            "private security contractors"
+          ]
+        }
+      ]
+    },
+    "intent": {
+      "n": 100,
+      "acc": {
+        "subject": 0.72,
+        "target": 0.72,
+        "mechanism": 0.4,
+        "label": 0.2,
+        "joint": 0.03
+      },
+      "rule_zero_rate": 0.97,
+      "s1_placeholder_row_rate_ge3": 0.12,
+      "s1_placeholder_field_rate": {
+        "attribute": 0.45,
+        "adverbial": 0.45,
+        "subject": 0.28,
+        "object": 0.14,
+        "predicate": 0.02
+      },
+      "critic_fail_rate": 0.69,
+      "backtrack_distribution": {
+        "0": 27,
+        "1": 4,
+        "3": 69
+      },
+      "top_label_confusions": [
+        {
+          "gt": "mock",
+          "pred": "provoke",
+          "count": 17
+        },
+        {
+          "gt": "alienate",
+          "pred": "condemn",
+          "count": 8
+        },
+        {
+          "gt": "dominate",
+          "pred": "provoke",
+          "count": 7
+        },
+        {
+          "gt": "alienate",
+          "pred": "provoke",
+          "count": 6
+        },
+        {
+          "gt": "mitigate",
+          "pred": "provoke",
+          "count": 5
+        },
+        {
+          "gt": "denounce",
+          "pred": "condemn",
+          "count": 4
+        },
+        {
+          "gt": "mock",
+          "pred": "condemn",
+          "count": 4
+        },
+        {
+          "gt": "provoke",
+          "pred": "intimidate",
+          "count": 3
+        },
+        {
+          "gt": "condemn",
+          "pred": "provoke",
+          "count": 3
+        },
+        {
+          "gt": "intimidate",
+          "pred": "provoke",
+          "count": 3
+        },
+        {
+          "gt": "provoke",
+          "pred": "condemn",
+          "count": 2
+        },
+        {
+          "gt": "mock",
+          "pred": "intimidate",
+          "count": 2
+        }
+      ],
+      "top_mechanism_confusions": [
+        {
+          "gt": "expressive aggression",
+          "pred": "benevolent provocation",
+          "count": 19
+        },
+        {
+          "gt": "expressive aggression",
+          "pred": "prosocial deception",
+          "count": 15
+        },
+        {
+          "gt": "malicious manipulation",
+          "pred": "prosocial deception",
+          "count": 6
+        },
+        {
+          "gt": "expressive aggression",
+          "pred": "malicious manipulation",
+          "count": 6
+        },
+        {
+          "gt": "prosocial deception",
+          "pred": "benevolent provocation",
+          "count": 5
+        },
+        {
+          "gt": "malicious manipulation",
+          "pred": "expressive aggression",
+          "count": 4
+        },
+        {
+          "gt": "benevolent provocation",
+          "pred": "prosocial deception",
+          "count": 2
+        },
+        {
+          "gt": "prosocial deception",
+          "pred": "expressive aggression",
+          "count": 2
+        },
+        {
+          "gt": "malicious manipulation",
+          "pred": "benevolent provocation",
+          "count": 1
+        }
+      ],
+      "top_subject_confusions": [
+        {
+          "gt": "speaker",
+          "pred": "internet troll",
+          "count": 2
+        },
+        {
+          "gt": "coworker",
+          "pred": "employer",
+          "count": 1
+        },
+        {
+          "gt": "speaker",
+          "pred": "sarcastic aunt",
+          "count": 1
+        },
+        {
+          "gt": "speaker",
+          "pred": "celebrity influencer",
+          "count": 1
+        },
+        {
+          "gt": "woman speaking",
+          "pred": "male guest suit",
+          "count": 1
+        },
+        {
+          "gt": "meme creator",
+          "pred": "political troll",
+          "count": 1
+        },
+        {
+          "gt": "speaker",
+          "pred": "political satirist",
+          "count": 1
+        },
+        {
+          "gt": "glenn",
+          "pred": "manager",
+          "count": 1
+        },
+        {
+          "gt": "account owner",
+          "pred": "trendsetter",
+          "count": 1
+        },
+        {
+          "gt": "marcus",
+          "pred": "glenn",
+          "count": 1
+        },
+        {
+          "gt": "coworker",
+          "pred": "on-duty paramedic",
+          "count": 1
+        },
+        {
+          "gt": "meme creator",
+          "pred": "internet troll",
+          "count": 1
+        }
+      ],
+      "top_target_confusions": [
+        {
+          "gt": "young people",
+          "pred": "youth slang",
+          "count": 1
+        },
+        {
+          "gt": "presenter",
+          "pred": "listener",
+          "count": 1
+        },
+        {
+          "gt": "admired couple",
+          "pred": "man",
+          "count": 1
+        },
+        {
+          "gt": "male partners",
+          "pred": "roommates",
+          "count": 1
+        },
+        {
+          "gt": "heterosexual male gaze",
+          "pred": "beauty standards",
+          "count": 1
+        },
+        {
+          "gt": "spelling game crowd",
+          "pred": "friends",
+          "count": 1
+        },
+        {
+          "gt": "offended person",
+          "pred": "comment section",
+          "count": 1
+        },
+        {
+          "gt": "listener",
+          "pred": "friend",
+          "count": 1
+        },
+        {
+          "gt": "insulted person",
+          "pred": "punching bag",
+          "count": 1
+        },
+        {
+          "gt": "muslim policy towards women",
+          "pred": "police miranda rights policy",
+          "count": 1
+        },
+        {
+          "gt": "viewer",
+          "pred": "peer group",
+          "count": 1
+        },
+        {
+          "gt": "child",
+          "pred": "barn animals",
+          "count": 1
+        }
+      ],
+      "pred_label_dist": {
+        "provoke": 51,
+        "condemn": 23,
+        "intimidate": 11,
+        "dominate": 3,
+        "alienate": 1,
+        "mock": 5,
+        "mitigate": 6
+      },
+      "gt_label_dist": {
+        "dominate": 12,
+        "alienate": 16,
+        "denounce": 6,
+        "mock": 26,
+        "mitigate": 12,
+        "provoke": 15,
+        "condemn": 7,
+        "intimidate": 6
+      },
+      "pred_mechanism_dist": {
+        "prosocial deception": 28,
+        "expressive aggression": 37,
+        "benevolent provocation": 28,
+        "malicious manipulation": 7
+      },
+      "gt_mechanism_dist": {
+        "expressive aggression": 71,
+        "prosocial deception": 12,
+        "benevolent provocation": 5,
+        "malicious manipulation": 12
+      },
+      "top_critic_issues": [
+        {
+          "issue": "The perception_json contains unspecified elements in the audio_caption, which may lead to incomplete or inaccurate conte",
+          "count": 7
+        },
+        {
+          "issue": "The perception_json contains unspecified elements in the audio_caption, which may lead to incomplete or inaccurate analy",
+          "count": 4
+        },
+        {
+          "issue": "The conflict_report indicates high levels of expressive aggression and malicious manipulation, but the abductive_output ",
+          "count": 2
+        },
+        {
+          "issue": "The perception_json contains unspecified elements in the audio_caption, which may lead to ambiguity in interpreting the ",
+          "count": 2
+        },
+        {
+          "issue": "The selected hypothesis 'H3' in the gate_output does not align with the best hypothesis 'A1' in the abductive_output. Th",
+          "count": 2
+        },
+        {
+          "issue": "The perception_json contains unspecified elements (e.g., 'unspecified_adverbial', 'unspecified_attribute') which may lea",
+          "count": 2
+        },
+        {
+          "issue": "The perception_json contains unspecified elements in the audio_caption, which may lead to ambiguity in understanding the",
+          "count": 2
+        },
+        {
+          "issue": "The gate_output indicates that no meaningful conflict is detected (selected hypothesis H0), but the conflict_report sugg",
+          "count": 1
+        }
+      ],
+      "error_examples": [
+        {
+          "id": "intent_0001",
+          "text": "when your boss calls on your day off oh fuck you're gonna make me come",
+          "gt": {
+            "subject": "coworker",
+            "target": "manager",
+            "mechanism": "expressive aggression",
+            "label": "dominate"
+          },
+          "pred": {
+            "subject": "employer",
+            "target": "manager",
+            "mechanism": "prosocial deception",
+            "label": "provoke"
+          },
+          "top_mechanism_s31": "prosocial deception",
+          "top_conf_s31": 0.0,
+          "rule_scores": {
+            "prosocial deception": 0.0,
+            "malicious manipulation": 0.0,
+            "expressive aggression": 0.0,
+            "benevolent provocation": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "your boss",
+            "object": "your day off",
+            "predicate": "calls",
+            "attribute": "unspecified",
+            "adverbial": "when"
+          },
+          "subject_options": [
+            "coworker",
+            "employer",
+            "contractor",
+            "visitor"
+          ],
+          "target_options": [
+            "manager",
+            "phone",
+            "schedule",
+            "customer"
+          ]
+        },
+        {
+          "id": "intent_0002",
+          "text": "it isn't islamophobia when they really are trying to kill you",
+          "gt": {
+            "subject": "speaker",
+            "target": "muslims",
+            "mechanism": "expressive aggression",
+            "label": "alienate"
+          },
+          "pred": {
+            "subject": "speaker",
+            "target": "muslims",
+            "mechanism": "expressive aggression",
+            "label": "condemn"
+          },
+          "top_mechanism_s31": "expressive aggression",
+          "top_conf_s31": 0.5850000000000001,
+          "rule_scores": {
+            "prosocial deception": 0.0,
+            "malicious manipulation": 0.0,
+            "expressive aggression": 0.0,
+            "benevolent provocation": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "it",
+            "object": "islamophobia",
+            "predicate": "isn't",
+            "attribute": "unspecified_attribute",
+            "adverbial": "when they really are trying to kill you"
+          },
+          "subject_options": [
+            "speaker",
+            "content moderator",
+            "advertising executive",
+            "manager"
+          ],
+          "target_options": [
+            "muslims",
+            "immigrants",
+            "refugees",
+            "terrorists"
+          ]
+        },
+        {
+          "id": "intent_0003",
+          "text": "lawdi what wrong with these cherr'n?",
+          "gt": {
+            "subject": "speaker",
+            "target": "young people",
+            "mechanism": "expressive aggression",
+            "label": "denounce"
+          },
+          "pred": {
+            "subject": "sarcastic aunt",
+            "target": "youth slang",
+            "mechanism": "benevolent provocation",
+            "label": "condemn"
+          },
+          "top_mechanism_s31": "benevolent provocation",
+          "top_conf_s31": 0.195,
+          "rule_scores": {
+            "prosocial deception": 0.0,
+            "malicious manipulation": 0.0,
+            "expressive aggression": 0.0,
+            "benevolent provocation": 0.0
+          },
+          "critic_pass": true,
+          "backtrack_rounds": 0,
+          "s1_text_components": {
+            "subject": "lawdi",
+            "object": "these cherr'n",
+            "predicate": "what wrong with",
+            "attribute": "unspecified_attribute",
+            "adverbial": "unspecified_adverbial"
+          },
+          "subject_options": [
+            "speaker",
+            "parent",
+            "sarcastic aunt",
+            "scolding neighbor"
+          ],
+          "target_options": [
+            "young people",
+            "baby",
+            "fashion clothes",
+            "youth slang"
+          ]
+        },
+        {
+          "id": "intent_0004",
+          "text": "when he asks you to see your hair",
+          "gt": {
+            "subject": "woman",
+            "target": "partner",
+            "mechanism": "prosocial deception",
+            "label": "alienate"
+          },
+          "pred": {
+            "subject": "woman",
+            "target": "partner",
+            "mechanism": "prosocial deception",
+            "label": "provoke"
+          },
+          "top_mechanism_s31": "prosocial deception",
+          "top_conf_s31": 0.0,
+          "rule_scores": {
+            "prosocial deception": 0.0,
+            "malicious manipulation": 0.0,
+            "expressive aggression": 0.0,
+            "benevolent provocation": 0.0
+          },
+          "critic_pass": true,
+          "backtrack_rounds": 0,
+          "s1_text_components": {
+            "subject": "he",
+            "object": "your hair",
+            "predicate": "asks",
+            "attribute": "unspecified_attribute",
+            "adverbial": "when"
+          },
+          "subject_options": [
+            "woman",
+            "customer",
+            "neighbor",
+            "daughter"
+          ],
+          "target_options": [
+            "partner",
+            "hairstylist",
+            "friend",
+            "mother"
+          ]
+        },
+        {
+          "id": "intent_0005",
+          "text": "What did you want to show us? Because all I can see is this bitchin van",
+          "gt": {
+            "subject": "speaker",
+            "target": "presenter",
+            "mechanism": "expressive aggression",
+            "label": "mock"
+          },
+          "pred": {
+            "subject": "speaker",
+            "target": "listener",
+            "mechanism": "expressive aggression",
+            "label": "provoke"
+          },
+          "top_mechanism_s31": "expressive aggression",
+          "top_conf_s31": 0.29888888888888887,
+          "rule_scores": {
+            "prosocial deception": 0.0,
+            "malicious manipulation": 0.0,
+            "expressive aggression": 0.1111111111111111,
+            "benevolent provocation": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "you",
+            "object": "us",
+            "predicate": "want to show",
+            "attribute": "bitchin van",
+            "adverbial": "unspecified"
+          },
+          "subject_options": [
+            "speaker",
+            "young people",
+            "woman",
+            "passerby"
+          ],
+          "target_options": [
+            "presenter",
+            "manager",
+            "customer",
+            "listener"
+          ]
+        },
+        {
+          "id": "intent_0006",
+          "text": "indian fans in real life indian fans on facebook",
+          "gt": {
+            "subject": "speaker",
+            "target": "indian fans",
+            "mechanism": "expressive aggression",
+            "label": "denounce"
+          },
+          "pred": {
+            "subject": "celebrity influencer",
+            "target": "indian fans",
+            "mechanism": "benevolent provocation",
+            "label": "provoke"
+          },
+          "top_mechanism_s31": "benevolent provocation",
+          "top_conf_s31": 0.26,
+          "rule_scores": {
+            "prosocial deception": 0.0,
+            "malicious manipulation": 0.0,
+            "expressive aggression": 0.0,
+            "benevolent provocation": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "indian fans",
+            "object": "real life",
+            "predicate": "in",
+            "attribute": "unspecified",
+            "adverbial": "unspecified"
+          },
+          "subject_options": [
+            "speaker",
+            "social media marketer",
+            "fan club page",
+            "celebrity influencer"
+          ],
+          "target_options": [
+            "indian fans",
+            "facebook users",
+            "online trolls",
+            "movie critics"
+          ]
+        },
+        {
+          "id": "intent_0007",
+          "text": "back in my day there were only two genders male and not male",
+          "gt": {
+            "subject": "male coworker",
+            "target": "minority group",
+            "mechanism": "expressive aggression",
+            "label": "alienate"
+          },
+          "pred": {
+            "subject": "male coworker",
+            "target": "minority group",
+            "mechanism": "expressive aggression",
+            "label": "intimidate"
+          },
+          "top_mechanism_s31": "expressive aggression",
+          "top_conf_s31": 0.195,
+          "rule_scores": {
+            "prosocial deception": 0.0,
+            "malicious manipulation": 0.0,
+            "expressive aggression": 0.0,
+            "benevolent provocation": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "unspecified_subject",
+            "object": "two genders",
+            "predicate": "were",
+            "attribute": "male and not male",
+            "adverbial": "back in my day"
+          },
+          "subject_options": [
+            "male coworker",
+            "customer",
+            "experienced external consultant",
+            "junior female intern"
+          ],
+          "target_options": [
+            "minority group",
+            "older workers",
+            "new hires",
+            "group members"
+          ]
+        },
+        {
+          "id": "intent_0008",
+          "text": "It's true-- you're both gorgeous. Kind of says something about the man who could bed you both.",
+          "gt": {
+            "subject": "speaker",
+            "target": "admired couple",
+            "mechanism": "expressive aggression",
+            "label": "mock"
+          },
+          "pred": {
+            "subject": "speaker",
+            "target": "man",
+            "mechanism": "benevolent provocation",
+            "label": "provoke"
+          },
+          "top_mechanism_s31": "benevolent provocation",
+          "top_conf_s31": 0.52,
+          "rule_scores": {
+            "prosocial deception": 0.0,
+            "malicious manipulation": 0.0,
+            "expressive aggression": 0.0,
+            "benevolent provocation": 0.0
+          },
+          "critic_pass": true,
+          "backtrack_rounds": 0,
+          "s1_text_components": {
+            "subject": "unspecified_subject",
+            "object": "you both",
+            "predicate": "are gorgeous",
+            "attribute": "kind of says something",
+            "adverbial": "about the man who could bed you both"
+          },
+          "subject_options": [
+            "speaker",
+            "women",
+            "man",
+            "listener"
+          ],
+          "target_options": [
+            "admired couple",
+            "man",
+            "other man",
+            "listener"
+          ]
+        },
+        {
+          "id": "intent_0009",
+          "text": "a real man loads the dishwasher every night",
+          "gt": {
+            "subject": "speaker",
+            "target": "male partners",
+            "mechanism": "benevolent provocation",
+            "label": "mitigate"
+          },
+          "pred": {
+            "subject": "speaker",
+            "target": "roommates",
+            "mechanism": "prosocial deception",
+            "label": "dominate"
+          },
+          "top_mechanism_s31": "prosocial deception",
+          "top_conf_s31": 0.13,
+          "rule_scores": {
+            "prosocial deception": 0.0,
+            "malicious manipulation": 0.0,
+            "expressive aggression": 0.0,
+            "benevolent provocation": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "a real man",
+            "object": "the dishwasher",
+            "predicate": "loads",
+            "attribute": "unspecified_attribute",
+            "adverbial": "every night"
+          },
+          "subject_options": [
+            "speaker",
+            "digital marketer",
+            "blogger",
+            "stand-up comedian"
+          ],
+          "target_options": [
+            "male partners",
+            "roommates",
+            "young adults",
+            "women"
+          ]
+        },
+        {
+          "id": "intent_0010",
+          "text": "what guys envision lesbian look like what lesbians really look like",
+          "gt": {
+            "subject": "speaker",
+            "target": "heterosexual male gaze",
+            "mechanism": "expressive aggression",
+            "label": "provoke"
+          },
+          "pred": {
+            "subject": "internet troll",
+            "target": "beauty standards",
+            "mechanism": "expressive aggression",
+            "label": "condemn"
+          },
+          "top_mechanism_s31": "expressive aggression",
+          "top_conf_s31": 0.195,
+          "rule_scores": {
+            "prosocial deception": 0.0,
+            "malicious manipulation": 0.0,
+            "expressive aggression": 0.0,
+            "benevolent provocation": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "guys",
+            "object": "lesbian look",
+            "predicate": "envision",
+            "attribute": "unspecified",
+            "adverbial": "unspecified"
+          },
+          "subject_options": [
+            "speaker",
+            "internet troll",
+            "content aggregator",
+            "news outlet"
+          ],
+          "target_options": [
+            "heterosexual male gaze",
+            "mainstream media portrayal",
+            "male-targeted marketing tactics",
+            "beauty standards"
+          ]
+        },
+        {
+          "id": "intent_0011",
+          "text": "first of all, take a moment to realize who the fuck you are talking to",
+          "gt": {
+            "subject": "speaker",
+            "target": "addressed interlocutor",
+            "mechanism": "expressive aggression",
+            "label": "dominate"
+          },
+          "pred": {
+            "subject": "speaker",
+            "target": "addressed interlocutor",
+            "mechanism": "expressive aggression",
+            "label": "provoke"
+          },
+          "top_mechanism_s31": "expressive aggression",
+          "top_conf_s31": 0.13,
+          "rule_scores": {
+            "prosocial deception": 0.0,
+            "malicious manipulation": 0.0,
+            "expressive aggression": 0.0,
+            "benevolent provocation": 0.0
+          },
+          "critic_pass": true,
+          "backtrack_rounds": 0,
+          "s1_text_components": {
+            "subject": "unspecified_subject",
+            "object": "unspecified_object",
+            "predicate": "realize",
+            "attribute": "moment",
+            "adverbial": "first of all"
+          },
+          "subject_options": [
+            "speaker",
+            "viewer",
+            "forum moderator",
+            "speechwriter"
+          ],
+          "target_options": [
+            "addressed interlocutor",
+            "online troll",
+            "event organizer",
+            "rival performer"
+          ]
+        },
+        {
+          "id": "intent_0012",
+          "text": "These people find out that a spelling game is going over there, there will be nobody left at our party.",
+          "gt": {
+            "subject": "speaker",
+            "target": "spelling game crowd",
+            "mechanism": "expressive aggression",
+            "label": "mock"
+          },
+          "pred": {
+            "subject": "speaker",
+            "target": "friends",
+            "mechanism": "expressive aggression",
+            "label": "alienate"
+          },
+          "top_mechanism_s31": "expressive aggression",
+          "top_conf_s31": 0.52,
+          "rule_scores": {
+            "prosocial deception": 0.0,
+            "malicious manipulation": 0.0,
+            "expressive aggression": 0.0,
+            "benevolent provocation": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "These people",
+            "object": "a spelling game",
+            "predicate": "find out",
+            "attribute": "going over there",
+            "adverbial": "there will be nobody left at our party"
+          },
+          "subject_options": [
+            "speaker",
+            "friend",
+            "host standing door",
+            "bartender background"
+          ],
+          "target_options": [
+            "spelling game crowd",
+            "friends",
+            "people around karaoke machine",
+            "participants"
+          ]
+        },
+        {
+          "id": "intent_0013",
+          "text": "when a person tells you that your meme or joke was heavily offensive. i can go lower",
+          "gt": {
+            "subject": "speaker",
+            "target": "offended person",
+            "mechanism": "expressive aggression",
+            "label": "dominate"
+          },
+          "pred": {
+            "subject": "speaker",
+            "target": "comment section",
+            "mechanism": "expressive aggression",
+            "label": "mock"
+          },
+          "top_mechanism_s31": "expressive aggression",
+          "top_conf_s31": 0.5850000000000001,
+          "rule_scores": {
+            "prosocial deception": 0.0,
+            "malicious manipulation": 0.0,
+            "expressive aggression": 0.0,
+            "benevolent provocation": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "a person",
+            "object": "your meme or joke",
+            "predicate": "tells",
+            "attribute": "heavily offensive",
+            "adverbial": "when"
+          },
+          "subject_options": [
+            "speaker",
+            "graphic designer",
+            "forum moderator",
+            "internet troll"
+          ],
+          "target_options": [
+            "offended person",
+            "platform admin",
+            "comment section",
+            "speaker"
+          ]
+        },
+        {
+          "id": "intent_0015",
+          "text": "jonah, relax. it's a party.",
+          "gt": {
+            "subject": "woman speaking",
+            "target": "jonah",
+            "mechanism": "malicious manipulation",
+            "label": "mitigate"
+          },
+          "pred": {
+            "subject": "male guest suit",
+            "target": "jonah",
+            "mechanism": "prosocial deception",
+            "label": "mitigate"
+          },
+          "top_mechanism_s31": "prosocial deception",
+          "top_conf_s31": 0.13,
+          "rule_scores": {
+            "prosocial deception": 0.0,
+            "malicious manipulation": 0.0,
+            "expressive aggression": 0.0,
+            "benevolent provocation": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "jonah",
+            "object": "it's a party",
+            "predicate": "relax",
+            "attribute": "casual",
+            "adverbial": "unspecified"
+          },
+          "subject_options": [
+            "woman speaking",
+            "male guest suit",
+            "event organizer",
+            "catering server"
+          ],
+          "target_options": [
+            "jonah",
+            "woman",
+            "man",
+            "friend"
+          ]
+        },
+        {
+          "id": "intent_0016",
+          "text": "we've been at peace with japan since 1945 time to make peace with islam",
+          "gt": {
+            "subject": "speaker",
+            "target": "muslims",
+            "mechanism": "malicious manipulation",
+            "label": "alienate"
+          },
+          "pred": {
+            "subject": "speaker",
+            "target": "muslims",
+            "mechanism": "expressive aggression",
+            "label": "provoke"
+          },
+          "top_mechanism_s31": "expressive aggression",
+          "top_conf_s31": 0.45499999999999996,
+          "rule_scores": {
+            "prosocial deception": 0.023507585785118187,
+            "malicious manipulation": 0.0,
+            "expressive aggression": 0.0,
+            "benevolent provocation": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "we",
+            "object": "japan",
+            "predicate": "been at peace with",
+            "attribute": "since 1945",
+            "adverbial": "time to make peace with islam"
+          },
+          "subject_options": [
+            "speaker",
+            "social media marketer",
+            "political commentator",
+            "nationalist activist"
+          ],
+          "target_options": [
+            "muslims",
+            "nuclear weapons",
+            "japanese people",
+            "foreign governments"
+          ]
+        },
+        {
+          "id": "intent_0018",
+          "text": "\"one man's trash is another man's treasure\" is an awesome phrase... ...but it's apparently a horrible way to tell your kids they're adopted \"",
+          "gt": {
+            "subject": "speaker",
+            "target": "adopted children",
+            "mechanism": "expressive aggression",
+            "label": "mitigate"
+          },
+          "pred": {
+            "subject": "speaker",
+            "target": "adopted children",
+            "mechanism": "benevolent provocation",
+            "label": "provoke"
+          },
+          "top_mechanism_s31": "benevolent provocation",
+          "top_conf_s31": 0.52,
+          "rule_scores": {
+            "prosocial deception": 0.0,
+            "malicious manipulation": 0.0,
+            "expressive aggression": 0.0,
+            "benevolent provocation": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "one man's trash is another man's treasure",
+            "object": "phrase",
+            "predicate": "is",
+            "attribute": "awesome",
+            "adverbial": "unspecified"
+          },
+          "subject_options": [
+            "speaker",
+            "comedian",
+            "teacher",
+            "friend"
+          ],
+          "target_options": [
+            "adopted children",
+            "neighbor kids",
+            "internet followers",
+            "birthday guests"
+          ]
+        },
+        {
+          "id": "intent_0019",
+          "text": "the enemy within linda sarsour ocasio-cortez ilhan omar rashida tlaib the enemy has infiltrated congress",
+          "gt": {
+            "subject": "meme creator",
+            "target": "politicians",
+            "mechanism": "expressive aggression",
+            "label": "intimidate"
+          },
+          "pred": {
+            "subject": "political troll",
+            "target": "politicians",
+            "mechanism": "malicious manipulation",
+            "label": "intimidate"
+          },
+          "top_mechanism_s31": "malicious manipulation",
+          "top_conf_s31": 0.45499999999999996,
+          "rule_scores": {
+            "prosocial deception": 0.0,
+            "malicious manipulation": 0.0,
+            "expressive aggression": 0.0,
+            "benevolent provocation": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "the enemy",
+            "object": "congress",
+            "predicate": "has infiltrated",
+            "attribute": "within",
+            "adverbial": "unspecified_adverbial"
+          },
+          "subject_options": [
+            "meme creator",
+            "political troll",
+            "right-wing influencer",
+            "anonymous user"
+          ],
+          "target_options": [
+            "politicians",
+            "muslim politicians",
+            "named communist leaders",
+            "named foreign agents"
+          ]
+        },
+        {
+          "id": "intent_0021",
+          "text": "*violently hitting your favorite punching bag* the other $20 crack whore",
+          "gt": {
+            "subject": "speaker",
+            "target": "insulted person",
+            "mechanism": "expressive aggression",
+            "label": "mock"
+          },
+          "pred": {
+            "subject": "speaker",
+            "target": "punching bag",
+            "mechanism": "expressive aggression",
+            "label": "intimidate"
+          },
+          "top_mechanism_s31": "expressive aggression",
+          "top_conf_s31": 0.52,
+          "rule_scores": {
+            "prosocial deception": 0.0,
+            "malicious manipulation": 0.0,
+            "expressive aggression": 0.0,
+            "benevolent provocation": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "unspecified_subject",
+            "object": "punching bag",
+            "predicate": "hitting",
+            "attribute": "favorite",
+            "adverbial": "violently"
+          },
+          "subject_options": [
+            "speaker",
+            "marketing copywriter",
+            "partner",
+            "tabloid columnist"
+          ],
+          "target_options": [
+            "insulted person",
+            "punching bag",
+            "online troll",
+            "secret admirer"
+          ]
+        },
+        {
+          "id": "intent_0022",
+          "text": "I guess he wants to do a little dance, you know, make a little love. Well pretty much get down to that.",
+          "gt": {
+            "subject": "speaker",
+            "target": "rose",
+            "mechanism": "expressive aggression",
+            "label": "dominate"
+          },
+          "pred": {
+            "subject": "speaker",
+            "target": "rose",
+            "mechanism": "benevolent provocation",
+            "label": "provoke"
+          },
+          "top_mechanism_s31": "benevolent provocation",
+          "top_conf_s31": 0.26,
+          "rule_scores": {
+            "prosocial deception": 0.0,
+            "malicious manipulation": 0.0,
+            "expressive aggression": 0.0,
+            "benevolent provocation": 0.0
+          },
+          "critic_pass": true,
+          "backtrack_rounds": 1,
+          "s1_text_components": {
+            "subject": "he",
+            "object": "a little dance",
+            "predicate": "wants to do",
+            "attribute": "unspecified",
+            "adverbial": "unspecified"
+          },
+          "subject_options": [
+            "speaker",
+            "stand-up comedian",
+            "friend",
+            "woman"
+          ],
+          "target_options": [
+            "rose",
+            "girl",
+            "himself",
+            "man"
+          ]
+        },
+        {
+          "id": "intent_0023",
+          "text": "iran is going to attack us even if we have to do it ourselves",
+          "gt": {
+            "subject": "speaker",
+            "target": "iranian government",
+            "mechanism": "expressive aggression",
+            "label": "provoke"
+          },
+          "pred": {
+            "subject": "speaker",
+            "target": "iranian government",
+            "mechanism": "expressive aggression",
+            "label": "intimidate"
+          },
+          "top_mechanism_s31": "expressive aggression",
+          "top_conf_s31": 0.52,
+          "rule_scores": {
+            "prosocial deception": 0.0,
+            "malicious manipulation": 0.0,
+            "expressive aggression": 0.0,
+            "benevolent provocation": 0.0
+          },
+          "critic_pass": true,
+          "backtrack_rounds": 0,
+          "s1_text_components": {
+            "subject": "iran",
+            "object": "us",
+            "predicate": "is going to attack",
+            "attribute": "unspecified_attribute",
+            "adverbial": "even if we have to do it ourselves"
+          },
+          "subject_options": [
+            "speaker",
+            "national security advisor",
+            "defense department official",
+            "military intelligence officer"
+          ],
+          "target_options": [
+            "iranian government",
+            "russia",
+            "iraq",
+            "syria"
+          ]
+        },
+        {
+          "id": "intent_0024",
+          "text": "when you get arrested and the cop says \"you have the right to remain silent\" but you're happy because finally you have a right",
+          "gt": {
+            "subject": "speaker",
+            "target": "muslim policy towards women",
+            "mechanism": "expressive aggression",
+            "label": "condemn"
+          },
+          "pred": {
+            "subject": "political satirist",
+            "target": "police miranda rights policy",
+            "mechanism": "benevolent provocation",
+            "label": "provoke"
+          },
+          "top_mechanism_s31": "benevolent provocation",
+          "top_conf_s31": 0.26,
+          "rule_scores": {
+            "prosocial deception": 0.0,
+            "malicious manipulation": 0.0,
+            "expressive aggression": 0.0,
+            "benevolent provocation": 0.0
+          },
+          "critic_pass": true,
+          "backtrack_rounds": 0,
+          "s1_text_components": {
+            "subject": "you",
+            "object": "the right to remain silent",
+            "predicate": "get arrested",
+            "attribute": "happy",
+            "adverbial": "finally"
+          },
+          "subject_options": [
+            "speaker",
+            "online troll",
+            "political satirist",
+            "religion critic"
+          ],
+          "target_options": [
+            "muslim policy towards women",
+            "police miranda rights policy",
+            "civil liberties",
+            "activism"
+          ]
+        },
+        {
+          "id": "intent_0026",
+          "text": "amy might have abandoned us a little, but we're fine!",
+          "gt": {
+            "subject": "glenn",
+            "target": "team",
+            "mechanism": "prosocial deception",
+            "label": "mitigate"
+          },
+          "pred": {
+            "subject": "manager",
+            "target": "team",
+            "mechanism": "benevolent provocation",
+            "label": "provoke"
+          },
+          "top_mechanism_s31": "benevolent provocation",
+          "top_conf_s31": 0.26,
+          "rule_scores": {
+            "prosocial deception": 0.0,
+            "malicious manipulation": 0.0,
+            "expressive aggression": 0.0,
+            "benevolent provocation": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "amy",
+            "object": "us",
+            "predicate": "abandoned",
+            "attribute": "a little",
+            "adverbial": "unspecified"
+          },
+          "subject_options": [
+            "glenn",
+            "mateo",
+            "manager",
+            "corporate representative"
+          ],
+          "target_options": [
+            "team",
+            "manager",
+            "corporate office",
+            "store customers"
+          ]
+        },
+        {
+          "id": "intent_0027",
+          "text": "jonah was the ringleader.",
+          "gt": {
+            "subject": "speaker",
+            "target": "jonah",
+            "mechanism": "malicious manipulation",
+            "label": "condemn"
+          },
+          "pred": {
+            "subject": "speaker",
+            "target": "jonah",
+            "mechanism": "prosocial deception",
+            "label": "mitigate"
+          },
+          "top_mechanism_s31": "prosocial deception",
+          "top_conf_s31": 0.0,
+          "rule_scores": {
+            "prosocial deception": 0.0,
+            "malicious manipulation": 0.0,
+            "expressive aggression": 0.0,
+            "benevolent provocation": 0.0
+          },
+          "critic_pass": true,
+          "backtrack_rounds": 0,
+          "s1_text_components": {
+            "subject": "jonah",
+            "object": "unspecified_object",
+            "predicate": "was",
+            "attribute": "ringleader",
+            "adverbial": "unspecified_adverbial"
+          },
+          "subject_options": [
+            "speaker",
+            "coworker",
+            "security guard",
+            "manager"
+          ],
+          "target_options": [
+            "jonah",
+            "sandra",
+            "officer",
+            "customer"
+          ]
+        },
+        {
+          "id": "intent_0028",
+          "text": "cleaned up my friends list before it was cool",
+          "gt": {
+            "subject": "account owner",
+            "target": "removed friends",
+            "mechanism": "expressive aggression",
+            "label": "mock"
+          },
+          "pred": {
+            "subject": "trendsetter",
+            "target": "removed friends",
+            "mechanism": "benevolent provocation",
+            "label": "provoke"
+          },
+          "top_mechanism_s31": "benevolent provocation",
+          "top_conf_s31": 0.52,
+          "rule_scores": {
+            "prosocial deception": 0.0,
+            "malicious manipulation": 0.0,
+            "expressive aggression": 0.0,
+            "benevolent provocation": 0.0
+          },
+          "critic_pass": true,
+          "backtrack_rounds": 0,
+          "s1_text_components": {
+            "subject": "I",
+            "object": "friends list",
+            "predicate": "cleaned up",
+            "attribute": "unspecified",
+            "adverbial": "before it was cool"
+          },
+          "subject_options": [
+            "account owner",
+            "trendsetter",
+            "memer",
+            "braggart"
+          ],
+          "target_options": [
+            "removed friends",
+            "follower count",
+            "old photos",
+            "notification feed"
+          ]
+        },
+        {
+          "id": "intent_0029",
+          "text": "glenn and i, we're top dogs in this doghouse.",
+          "gt": {
+            "subject": "marcus",
+            "target": "manager",
+            "mechanism": "expressive aggression",
+            "label": "dominate"
+          },
+          "pred": {
+            "subject": "glenn",
+            "target": "manager",
+            "mechanism": "benevolent provocation",
+            "label": "provoke"
+          },
+          "top_mechanism_s31": "benevolent provocation",
+          "top_conf_s31": 0.26,
+          "rule_scores": {
+            "prosocial deception": 0.0,
+            "malicious manipulation": 0.0,
+            "expressive aggression": 0.0,
+            "benevolent provocation": 0.0
+          },
+          "critic_pass": true,
+          "backtrack_rounds": 0,
+          "s1_text_components": {
+            "subject": "glenn and i",
+            "object": "top dogs",
+            "predicate": "are",
+            "attribute": "unspecified_attribute",
+            "adverbial": "in this doghouse"
+          },
+          "subject_options": [
+            "marcus",
+            "glenn",
+            "store owner",
+            "corporate representative"
+          ],
+          "target_options": [
+            "manager",
+            "owner",
+            "corporate",
+            "ceo"
+          ]
+        },
+        {
+          "id": "intent_0030",
+          "text": "when i was a kid i found a vibrator in my parents room they told me it was a muscle massager, i rubbed it on my sore muscles all the time",
+          "gt": {
+            "subject": "child's guardians",
+            "target": "youngster",
+            "mechanism": "prosocial deception",
+            "label": "mitigate"
+          },
+          "pred": {
+            "subject": "child's guardians",
+            "target": "youngster",
+            "mechanism": "prosocial deception",
+            "label": "provoke"
+          },
+          "top_mechanism_s31": "prosocial deception",
+          "top_conf_s31": 0.0,
+          "rule_scores": {
+            "prosocial deception": 0.0,
+            "malicious manipulation": 0.0,
+            "expressive aggression": 0.0,
+            "benevolent provocation": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "i",
+            "object": "a vibrator",
+            "predicate": "found",
+            "attribute": "in my parents room",
+            "adverbial": "when i was a kid"
+          },
+          "subject_options": [
+            "child's guardians",
+            "babysitter",
+            "grandparent",
+            "friend"
+          ],
+          "target_options": [
+            "youngster",
+            "sibling",
+            "roommate",
+            "guest"
+          ]
+        },
+        {
+          "id": "intent_0031",
+          "text": "the best part about a prostitute dying on you is you get the second hour free",
+          "gt": {
+            "subject": "speaker",
+            "target": "sex workers",
+            "mechanism": "expressive aggression",
+            "label": "mock"
+          },
+          "pred": {
+            "subject": "speaker",
+            "target": "sex workers",
+            "mechanism": "expressive aggression",
+            "label": "provoke"
+          },
+          "top_mechanism_s31": "expressive aggression",
+          "top_conf_s31": 0.5850000000000001,
+          "rule_scores": {
+            "prosocial deception": 0.0,
+            "malicious manipulation": 0.0,
+            "expressive aggression": 0.0,
+            "benevolent provocation": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "the best part",
+            "object": "the second hour free",
+            "predicate": "is",
+            "attribute": "about a prostitute dying on you",
+            "adverbial": "unspecified"
+          },
+          "subject_options": [
+            "speaker",
+            "social media moderator",
+            "graphic designer",
+            "manager"
+          ],
+          "target_options": [
+            "sex workers",
+            "night workers",
+            "entertainment workers",
+            "coworker"
+          ]
+        },
+        {
+          "id": "intent_0032",
+          "text": "wait, you made all that money today?",
+          "gt": {
+            "subject": "speaker",
+            "target": "coworker",
+            "mechanism": "prosocial deception",
+            "label": "mitigate"
+          },
+          "pred": {
+            "subject": "speaker",
+            "target": "coworker",
+            "mechanism": "benevolent provocation",
+            "label": "provoke"
+          },
+          "top_mechanism_s31": "benevolent provocation",
+          "top_conf_s31": 0.26,
+          "rule_scores": {
+            "prosocial deception": 0.0,
+            "malicious manipulation": 0.0,
+            "expressive aggression": 0.0,
+            "benevolent provocation": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "you",
+            "object": "money",
+            "predicate": "made",
+            "attribute": "all that",
+            "adverbial": "today"
+          },
+          "subject_options": [
+            "speaker",
+            "manager",
+            "lunchroom patron",
+            "cafeteria attendant"
+          ],
+          "target_options": [
+            "coworker",
+            "man holding phone",
+            "woman applying makeup",
+            "woman writing notes"
+          ]
+        },
+        {
+          "id": "intent_0033",
+          "text": "when i grow up... lol nevermind",
+          "gt": {
+            "subject": "speaker",
+            "target": "viewer",
+            "mechanism": "prosocial deception",
+            "label": "mitigate"
+          },
+          "pred": {
+            "subject": "speaker",
+            "target": "peer group",
+            "mechanism": "benevolent provocation",
+            "label": "mock"
+          },
+          "top_mechanism_s31": "benevolent provocation",
+          "top_conf_s31": 0.26,
+          "rule_scores": {
+            "prosocial deception": 0.0,
+            "malicious manipulation": 0.0,
+            "expressive aggression": 0.0,
+            "benevolent provocation": 0.0
+          },
+          "critic_pass": true,
+          "backtrack_rounds": 0,
+          "s1_text_components": {
+            "subject": "i",
+            "object": "unspecified_object",
+            "predicate": "grow up",
+            "attribute": "lol",
+            "adverbial": "nevermind"
+          },
+          "subject_options": [
+            "speaker",
+            "child",
+            "lurker",
+            "student"
+          ],
+          "target_options": [
+            "viewer",
+            "family members",
+            "content creators",
+            "peer group"
+          ]
+        },
+        {
+          "id": "intent_0034",
+          "text": "feeling cute might eat hay later, idk",
+          "gt": {
+            "subject": "speaker",
+            "target": "child",
+            "mechanism": "prosocial deception",
+            "label": "mock"
+          },
+          "pred": {
+            "subject": "speaker",
+            "target": "barn animals",
+            "mechanism": "benevolent provocation",
+            "label": "provoke"
+          },
+          "top_mechanism_s31": "benevolent provocation",
+          "top_conf_s31": 0.195,
+          "rule_scores": {
+            "prosocial deception": 0.0,
+            "malicious manipulation": 0.0,
+            "expressive aggression": 0.0,
+            "benevolent provocation": 0.0
+          },
+          "critic_pass": true,
+          "backtrack_rounds": 0,
+          "s1_text_components": {
+            "subject": "unspecified_subject",
+            "object": "hay",
+            "predicate": "might eat",
+            "attribute": "cute",
+            "adverbial": "later, idk"
+          },
+          "subject_options": [
+            "speaker",
+            "goat",
+            "forum moderator",
+            "manager"
+          ],
+          "target_options": [
+            "child",
+            "barn animals",
+            "feed algorithm",
+            "farm owner"
+          ]
+        },
+        {
+          "id": "intent_0035",
+          "text": "alabama: bans abortions all of alabama in 5 years",
+          "gt": {
+            "subject": "speaker",
+            "target": "alabama policymakers",
+            "mechanism": "expressive aggression",
+            "label": "condemn"
+          },
+          "pred": {
+            "subject": "speaker",
+            "target": "alabama policymakers",
+            "mechanism": "prosocial deception",
+            "label": "condemn"
+          },
+          "top_mechanism_s31": "prosocial deception",
+          "top_conf_s31": 0.0,
+          "rule_scores": {
+            "prosocial deception": 0.0,
+            "malicious manipulation": 0.0,
+            "expressive aggression": 0.0,
+            "benevolent provocation": 0.0
+          },
+          "critic_pass": true,
+          "backtrack_rounds": 0,
+          "s1_text_components": {
+            "subject": "alabama",
+            "object": "abortions",
+            "predicate": "bans",
+            "attribute": "all of alabama",
+            "adverbial": "in 5 years"
+          },
+          "subject_options": [
+            "speaker",
+            "content moderator",
+            "podcast host",
+            "news editor"
+          ],
+          "target_options": [
+            "alabama policymakers",
+            "prolife activists",
+            "religious leaders",
+            "media outlets"
+          ]
+        },
+        {
+          "id": "intent_0036",
+          "text": "\"hi. i'm the electrician. i'm here to remove your shorts, and check your box.\"",
+          "gt": {
+            "subject": "electrician",
+            "target": "homeowner",
+            "mechanism": "malicious manipulation",
+            "label": "dominate"
+          },
+          "pred": {
+            "subject": "electrician",
+            "target": "homeowner",
+            "mechanism": "prosocial deception",
+            "label": "condemn"
+          },
+          "top_mechanism_s31": "prosocial deception",
+          "top_conf_s31": 0.0,
+          "rule_scores": {
+            "prosocial deception": 0.0,
+            "malicious manipulation": 0.0,
+            "expressive aggression": 0.0,
+            "benevolent provocation": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "electrician",
+            "object": "shorts",
+            "predicate": "remove",
+            "attribute": "electrician",
+            "adverbial": "here"
+          },
+          "subject_options": [
+            "electrician",
+            "meter reader",
+            "deliveryman",
+            "cable technician"
+          ],
+          "target_options": [
+            "homeowner",
+            "meter",
+            "package",
+            "router"
+          ]
+        },
+        {
+          "id": "intent_0037",
+          "text": "men wearing dresses and molesting our children? the word you're looking for is clergy, not transgender",
+          "gt": {
+            "subject": "speaker",
+            "target": "anti-trans proponents",
+            "mechanism": "expressive aggression",
+            "label": "mock"
+          },
+          "pred": {
+            "subject": "speaker",
+            "target": "anti-trans proponents",
+            "mechanism": "expressive aggression",
+            "label": "provoke"
+          },
+          "top_mechanism_s31": "expressive aggression",
+          "top_conf_s31": 0.5850000000000001,
+          "rule_scores": {
+            "prosocial deception": 0.0,
+            "malicious manipulation": 0.0,
+            "expressive aggression": 0.0,
+            "benevolent provocation": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "men",
+            "object": "dresses and children",
+            "predicate": "wearing and molesting",
+            "attribute": "unspecified",
+            "adverbial": "unspecified"
+          },
+          "subject_options": [
+            "speaker",
+            "social media influencer",
+            "conservative commentator",
+            "political activist"
+          ],
+          "target_options": [
+            "anti-trans proponents",
+            "religious leaders",
+            "child",
+            "conservative voters"
+          ]
+        },
+        {
+          "id": "intent_0038",
+          "text": "\"do you like your juice cold?\" \"no, i like my jews well done\"",
+          "gt": {
+            "subject": "speaker",
+            "target": "jews",
+            "mechanism": "expressive aggression",
+            "label": "mock"
+          },
+          "pred": {
+            "subject": "speaker",
+            "target": "jews",
+            "mechanism": "expressive aggression",
+            "label": "condemn"
+          },
+          "top_mechanism_s31": "expressive aggression",
+          "top_conf_s31": 0.13,
+          "rule_scores": {
+            "prosocial deception": 0.0,
+            "malicious manipulation": 0.0,
+            "expressive aggression": 0.0,
+            "benevolent provocation": 0.0
+          },
+          "critic_pass": true,
+          "backtrack_rounds": 1,
+          "s1_text_components": {
+            "subject": "you",
+            "object": "juice",
+            "predicate": "like",
+            "attribute": "cold",
+            "adverbial": "unspecified"
+          },
+          "subject_options": [
+            "speaker",
+            "historical figure",
+            "forum moderator",
+            "bystander"
+          ],
+          "target_options": [
+            "jews",
+            "nazis",
+            "germans",
+            "immigrants"
+          ]
+        },
+        {
+          "id": "intent_0039",
+          "text": "he was big and black my ass had no choice",
+          "gt": {
+            "subject": "speaker",
+            "target": "viewer",
+            "mechanism": "expressive aggression",
+            "label": "provoke"
+          },
+          "pred": {
+            "subject": "speaker",
+            "target": "ex",
+            "mechanism": "expressive aggression",
+            "label": "condemn"
+          },
+          "top_mechanism_s31": "expressive aggression",
+          "top_conf_s31": 0.26,
+          "rule_scores": {
+            "prosocial deception": 0.0,
+            "malicious manipulation": 0.0,
+            "expressive aggression": 0.0,
+            "benevolent provocation": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "he",
+            "object": "my ass",
+            "predicate": "was",
+            "attribute": "big and black",
+            "adverbial": "had no choice"
+          },
+          "subject_options": [
+            "speaker",
+            "ex lover",
+            "anonymous stranger",
+            "tabloid journalist"
+          ],
+          "target_options": [
+            "viewer",
+            "partner",
+            "ex",
+            "men"
+          ]
+        },
+        {
+          "id": "intent_0040",
+          "text": "but you are gonna be fine.",
+          "gt": {
+            "subject": "coworker",
+            "target": "man lying",
+            "mechanism": "prosocial deception",
+            "label": "mitigate"
+          },
+          "pred": {
+            "subject": "on-duty paramedic",
+            "target": "man lying",
+            "mechanism": "expressive aggression",
+            "label": "intimidate"
+          },
+          "top_mechanism_s31": "expressive aggression",
+          "top_conf_s31": 0.195,
+          "rule_scores": {
+            "prosocial deception": 0.0,
+            "malicious manipulation": 0.0,
+            "expressive aggression": 0.0,
+            "benevolent provocation": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "unspecified_subject",
+            "object": "unspecified_object",
+            "predicate": "gonna be fine",
+            "attribute": "unspecified_attribute",
+            "adverbial": "unspecified_adverbial"
+          },
+          "subject_options": [
+            "coworker",
+            "on-duty paramedic",
+            "uniformed security guard",
+            "customer"
+          ],
+          "target_options": [
+            "man lying",
+            "firefighters",
+            "customer",
+            "police officer"
+          ]
+        },
+        {
+          "id": "intent_0041",
+          "text": "when it's 1942 and you're jewish dj khaled suffering from ss",
+          "gt": {
+            "subject": "speaker",
+            "target": "jewish people",
+            "mechanism": "expressive aggression",
+            "label": "mock"
+          },
+          "pred": {
+            "subject": "speaker",
+            "target": "dj khaled",
+            "mechanism": "malicious manipulation",
+            "label": "condemn"
+          },
+          "top_mechanism_s31": "malicious manipulation",
+          "top_conf_s31": 0.52,
+          "rule_scores": {
+            "prosocial deception": 0.0,
+            "malicious manipulation": 0.0,
+            "expressive aggression": 0.0,
+            "benevolent provocation": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "you",
+            "object": "dj khaled",
+            "predicate": "is",
+            "attribute": "jewish",
+            "adverbial": "when it's 1942"
+          },
+          "subject_options": [
+            "speaker",
+            "online community moderator",
+            "political commentator",
+            "social media bot"
+          ],
+          "target_options": [
+            "jewish people",
+            "dj khaled",
+            "nazi soldiers",
+            "viewer"
+          ]
+        },
+        {
+          "id": "intent_0042",
+          "text": "hurry up barack will be home soon",
+          "gt": {
+            "subject": "speaker",
+            "target": "barack obama",
+            "mechanism": "expressive aggression",
+            "label": "mock"
+          },
+          "pred": {
+            "subject": "speaker",
+            "target": "barack obama",
+            "mechanism": "benevolent provocation",
+            "label": "provoke"
+          },
+          "top_mechanism_s31": "benevolent provocation",
+          "top_conf_s31": 0.26,
+          "rule_scores": {
+            "prosocial deception": 0.0,
+            "malicious manipulation": 0.0,
+            "expressive aggression": 0.0,
+            "benevolent provocation": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "unspecified_subject",
+            "object": "barack",
+            "predicate": "will be home",
+            "attribute": "soon",
+            "adverbial": "hurry up"
+          },
+          "subject_options": [
+            "speaker",
+            "political troll",
+            "satire account",
+            "news aggregator"
+          ],
+          "target_options": [
+            "barack obama",
+            "dominant silverback male",
+            "photo's original photographer",
+            "viewer"
+          ]
+        },
+        {
+          "id": "intent_0043",
+          "text": "\"i'm arresting you for the crimes you will commit in the future\"",
+          "gt": {
+            "subject": "police officer",
+            "target": "young boy",
+            "mechanism": "benevolent provocation",
+            "label": "dominate"
+          },
+          "pred": {
+            "subject": "police officer",
+            "target": "young boy",
+            "mechanism": "prosocial deception",
+            "label": "intimidate"
+          },
+          "top_mechanism_s31": "prosocial deception",
+          "top_conf_s31": 0.0,
+          "rule_scores": {
+            "prosocial deception": 0.0,
+            "malicious manipulation": 0.0,
+            "expressive aggression": 0.0,
+            "benevolent provocation": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "I",
+            "object": "you",
+            "predicate": "arresting",
+            "attribute": "crimes",
+            "adverbial": "in the future"
+          },
+          "subject_options": [
+            "police officer",
+            "park ranger",
+            "school principal",
+            "manager"
+          ],
+          "target_options": [
+            "young boy",
+            "hiker wearing backpack",
+            "teacher texting phone",
+            "customer"
+          ]
+        },
+        {
+          "id": "intent_0044",
+          "text": "is it a boy or a girl? it's a bomb",
+          "gt": {
+            "subject": "speaker",
+            "target": "gender reveal",
+            "mechanism": "expressive aggression",
+            "label": "mock"
+          },
+          "pred": {
+            "subject": "internet troll",
+            "target": "gender reveal",
+            "mechanism": "malicious manipulation",
+            "label": "provoke"
+          },
+          "top_mechanism_s31": "malicious manipulation",
+          "top_conf_s31": 0.52,
+          "rule_scores": {
+            "prosocial deception": 0.0,
+            "malicious manipulation": 0.0,
+            "expressive aggression": 0.0,
+            "benevolent provocation": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "unspecified_subject",
+            "object": "boy or a girl",
+            "predicate": "is it",
+            "attribute": "unspecified_attribute",
+            "adverbial": "unspecified_adverbial"
+          },
+          "subject_options": [
+            "speaker",
+            "internet troll",
+            "online manager",
+            "humor columnist"
+          ],
+          "target_options": [
+            "gender reveal",
+            "baby shower traditions",
+            "social media trends",
+            "influencer marketing culture"
+          ]
+        },
+        {
+          "id": "intent_0045",
+          "text": "if some dude walks into the ladies bathroom while one of my girls is in there i will quickly identify as a mma fighter",
+          "gt": {
+            "subject": "speaker",
+            "target": "transgender women",
+            "mechanism": "expressive aggression",
+            "label": "alienate"
+          },
+          "pred": {
+            "subject": "speaker",
+            "target": "transgender women",
+            "mechanism": "expressive aggression",
+            "label": "condemn"
+          },
+          "top_mechanism_s31": "expressive aggression",
+          "top_conf_s31": 0.45499999999999996,
+          "rule_scores": {
+            "prosocial deception": 0.0,
+            "malicious manipulation": 0.0,
+            "expressive aggression": 0.0,
+            "benevolent provocation": 0.0
+          },
+          "critic_pass": true,
+          "backtrack_rounds": 0,
+          "s1_text_components": {
+            "subject": "I",
+            "object": "some dude",
+            "predicate": "walks into",
+            "attribute": "ladies bathroom",
+            "adverbial": "while one of my girls is in there"
+          },
+          "subject_options": [
+            "speaker",
+            "bystander",
+            "bar bouncer",
+            "street activist"
+          ],
+          "target_options": [
+            "transgender women",
+            "cisgender men",
+            "male predators",
+            "feminists"
+          ]
+        },
+        {
+          "id": "intent_0046",
+          "text": "i can just take off.",
+          "gt": {
+            "subject": "standing man",
+            "target": "coworker",
+            "mechanism": "malicious manipulation",
+            "label": "intimidate"
+          },
+          "pred": {
+            "subject": "standing man",
+            "target": "coworker",
+            "mechanism": "prosocial deception",
+            "label": "provoke"
+          },
+          "top_mechanism_s31": "prosocial deception",
+          "top_conf_s31": 0.0,
+          "rule_scores": {
+            "prosocial deception": 0.0,
+            "malicious manipulation": 0.0,
+            "expressive aggression": 0.0,
+            "benevolent provocation": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "unspecified_subject",
+            "object": "unspecified_object",
+            "predicate": "take off",
+            "attribute": "unspecified_attribute",
+            "adverbial": "unspecified_adverbial"
+          },
+          "subject_options": [
+            "standing man",
+            "male manager",
+            "male customer",
+            "uniformed security guard"
+          ],
+          "target_options": [
+            "coworker",
+            "cashier register",
+            "manager",
+            "loss prevention officer"
+          ]
+        },
+        {
+          "id": "intent_0048",
+          "text": "this is my ex looking for someone better than me",
+          "gt": {
+            "subject": "speaker",
+            "target": "ex-partner",
+            "mechanism": "expressive aggression",
+            "label": "denounce"
+          },
+          "pred": {
+            "subject": "speaker",
+            "target": "ex-partner",
+            "mechanism": "expressive aggression",
+            "label": "condemn"
+          },
+          "top_mechanism_s31": "expressive aggression",
+          "top_conf_s31": 0.195,
+          "rule_scores": {
+            "prosocial deception": 0.0,
+            "malicious manipulation": 0.0,
+            "expressive aggression": 0.0,
+            "benevolent provocation": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "my ex",
+            "object": "someone",
+            "predicate": "looking for",
+            "attribute": "better than me",
+            "adverbial": "unspecified_adverbial"
+          },
+          "subject_options": [
+            "speaker",
+            "memer",
+            "photographer",
+            "bystander"
+          ],
+          "target_options": [
+            "ex-partner",
+            "mirror reflection",
+            "skeleton model",
+            "past self"
+          ]
+        },
+        {
+          "id": "intent_0049",
+          "text": "to award the golden vest...",
+          "gt": {
+            "subject": "glen",
+            "target": "employees",
+            "mechanism": "malicious manipulation",
+            "label": "dominate"
+          },
+          "pred": {
+            "subject": "manager",
+            "target": "employees",
+            "mechanism": "prosocial deception",
+            "label": "dominate"
+          },
+          "top_mechanism_s31": "prosocial deception",
+          "top_conf_s31": 0.13,
+          "rule_scores": {
+            "prosocial deception": 0.0,
+            "malicious manipulation": 0.0,
+            "expressive aggression": 0.0,
+            "benevolent provocation": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "unspecified_subject",
+            "object": "golden vest",
+            "predicate": "award",
+            "attribute": "unspecified_attribute",
+            "adverbial": "unspecified_adverbial"
+          },
+          "subject_options": [
+            "glen",
+            "manager",
+            "cashier",
+            "carlos"
+          ],
+          "target_options": [
+            "employees",
+            "customers",
+            "conversation topic",
+            "products"
+          ]
+        },
+        {
+          "id": "intent_0050",
+          "text": "oh sweetie it's a little late for that new york is it though?",
+          "gt": {
+            "subject": "speaker",
+            "target": "person mocked",
+            "mechanism": "expressive aggression",
+            "label": "mock"
+          },
+          "pred": {
+            "subject": "anonymous commenter",
+            "target": "meme caption text",
+            "mechanism": "benevolent provocation",
+            "label": "provoke"
+          },
+          "top_mechanism_s31": "benevolent provocation",
+          "top_conf_s31": 0.26,
+          "rule_scores": {
+            "prosocial deception": 0.0,
+            "malicious manipulation": 0.0,
+            "expressive aggression": 0.0,
+            "benevolent provocation": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "unspecified_subject",
+            "object": "unspecified_object",
+            "predicate": "is",
+            "attribute": "late",
+            "adverbial": "for that"
+          },
+          "subject_options": [
+            "speaker",
+            "internet troll",
+            "anonymous commenter",
+            "satirical journalist"
+          ],
+          "target_options": [
+            "person mocked",
+            "wooden clothes hanger",
+            "meme caption text",
+            "laughing woman portrait"
+          ]
+        },
+        {
+          "id": "intent_0051",
+          "text": "how in the hell did we go from this.. to being afraid of offending muslims?!",
+          "gt": {
+            "subject": "speaker",
+            "target": "muslims",
+            "mechanism": "expressive aggression",
+            "label": "alienate"
+          },
+          "pred": {
+            "subject": "speaker",
+            "target": "muslims",
+            "mechanism": "expressive aggression",
+            "label": "condemn"
+          },
+          "top_mechanism_s31": "expressive aggression",
+          "top_conf_s31": 0.52,
+          "rule_scores": {
+            "prosocial deception": 0.0,
+            "malicious manipulation": 0.0,
+            "expressive aggression": 0.0,
+            "benevolent provocation": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "we",
+            "object": "this",
+            "predicate": "go from",
+            "attribute": "afraid",
+            "adverbial": "how in the hell"
+          },
+          "subject_options": [
+            "speaker",
+            "print newspaper columnist",
+            "television commentator",
+            "community organizer"
+          ],
+          "target_options": [
+            "muslims",
+            "terrorists",
+            "arabs",
+            "immigrants"
+          ]
+        },
+        {
+          "id": "intent_0052",
+          "text": "when you are excited that a muslim has made it into american politics so the next phase of the caliphate can begin and destroy western civilization but you realize it is a woman",
+          "gt": {
+            "subject": "speaker",
+            "target": "muslims",
+            "mechanism": "expressive aggression",
+            "label": "mock"
+          },
+          "pred": {
+            "subject": "provocative stand-up comedian",
+            "target": "muslims",
+            "mechanism": "malicious manipulation",
+            "label": "provoke"
+          },
+          "top_mechanism_s31": "malicious manipulation",
+          "top_conf_s31": 0.45499999999999996,
+          "rule_scores": {
+            "prosocial deception": 0.0,
+            "malicious manipulation": 0.0,
+            "expressive aggression": 0.0,
+            "benevolent provocation": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "you",
+            "object": "a muslim",
+            "predicate": "excited",
+            "attribute": "made it into american politics",
+            "adverbial": "so the next phase of the caliphate can begin and destroy western civilization but you realize it is a woman"
+          },
+          "subject_options": [
+            "speaker",
+            "satirical news site editor",
+            "provocative stand-up comedian",
+            "news anchor"
+          ],
+          "target_options": [
+            "muslims",
+            "immigrants",
+            "progressive politicians",
+            "foreign diplomats"
+          ]
+        },
+        {
+          "id": "intent_0054",
+          "text": "tap and say amen! if jesus has blessed you today",
+          "gt": {
+            "subject": "speaker",
+            "target": "online reader",
+            "mechanism": "malicious manipulation",
+            "label": "condemn"
+          },
+          "pred": {
+            "subject": "religious leader",
+            "target": "prayer group members",
+            "mechanism": "benevolent provocation",
+            "label": "provoke"
+          },
+          "top_mechanism_s31": "benevolent provocation",
+          "top_conf_s31": 0.195,
+          "rule_scores": {
+            "prosocial deception": 0.0,
+            "malicious manipulation": 0.0,
+            "expressive aggression": 0.0,
+            "benevolent provocation": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "unspecified_subject",
+            "object": "amen",
+            "predicate": "tap and say",
+            "attribute": "unspecified_attribute",
+            "adverbial": "if jesus has blessed you today"
+          },
+          "subject_options": [
+            "speaker",
+            "celebrity guest",
+            "religious leader",
+            "event organizer"
+          ],
+          "target_options": [
+            "online reader",
+            "prayer group members",
+            "family friends",
+            "viewer"
+          ]
+        },
+        {
+          "id": "intent_0055",
+          "text": "they are not escaping to find a better life they are invading us to destroy ours",
+          "gt": {
+            "subject": "speaker",
+            "target": "migrants",
+            "mechanism": "malicious manipulation",
+            "label": "intimidate"
+          },
+          "pred": {
+            "subject": "speaker",
+            "target": "migrants",
+            "mechanism": "expressive aggression",
+            "label": "provoke"
+          },
+          "top_mechanism_s31": "expressive aggression",
+          "top_conf_s31": 0.26,
+          "rule_scores": {
+            "prosocial deception": 0.0,
+            "malicious manipulation": 0.0,
+            "expressive aggression": 0.0,
+            "benevolent provocation": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "they",
+            "object": "a better life",
+            "predicate": "are not escaping to find",
+            "attribute": "unspecified",
+            "adverbial": "unspecified"
+          },
+          "subject_options": [
+            "speaker",
+            "political commentator",
+            "communications director",
+            "extremist group"
+          ],
+          "target_options": [
+            "migrants",
+            "terrorists",
+            "criminals",
+            "tourists"
+          ]
+        },
+        {
+          "id": "intent_0056",
+          "text": "i don't know how to deal with black people but i guess i'll take a shot at it",
+          "gt": {
+            "subject": "police officer",
+            "target": "black people",
+            "mechanism": "expressive aggression",
+            "label": "mock"
+          },
+          "pred": {
+            "subject": "police officer",
+            "target": "black people",
+            "mechanism": "malicious manipulation",
+            "label": "intimidate"
+          },
+          "top_mechanism_s31": "malicious manipulation",
+          "top_conf_s31": 0.52,
+          "rule_scores": {
+            "prosocial deception": 0.0,
+            "malicious manipulation": 0.0,
+            "expressive aggression": 0.0,
+            "benevolent provocation": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "i",
+            "object": "black people",
+            "predicate": "deal with",
+            "attribute": "don't know",
+            "adverbial": "take a shot at it"
+          },
+          "subject_options": [
+            "police officer",
+            "security guard",
+            "border agent",
+            "corrections officer"
+          ],
+          "target_options": [
+            "black people",
+            "homeless people",
+            "young adults",
+            "immigrant families"
+          ]
+        },
+        {
+          "id": "intent_0057",
+          "text": "designed for maximum concentration",
+          "gt": {
+            "subject": "product designer",
+            "target": "user",
+            "mechanism": "expressive aggression",
+            "label": "provoke"
+          },
+          "pred": {
+            "subject": "hate propaganda site",
+            "target": "muslims immigrants",
+            "mechanism": "malicious manipulation",
+            "label": "intimidate"
+          },
+          "top_mechanism_s31": "malicious manipulation",
+          "top_conf_s31": 0.26,
+          "rule_scores": {
+            "prosocial deception": 0.0,
+            "malicious manipulation": 0.0,
+            "expressive aggression": 0.0,
+            "benevolent provocation": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "unspecified_subject",
+            "object": "maximum concentration",
+            "predicate": "designed for",
+            "attribute": "unspecified_attribute",
+            "adverbial": "unspecified_adverbial"
+          },
+          "subject_options": [
+            "product designer",
+            "racist comedy troupe",
+            "hate propaganda site",
+            "paramilitary training unit"
+          ],
+          "target_options": [
+            "user",
+            "muslims immigrants",
+            "immigrants refugees",
+            "asians latinos"
+          ]
+        },
+        {
+          "id": "intent_0058",
+          "text": "when you type fidget spinner but it autocorrects to midget spinner",
+          "gt": {
+            "subject": "speaker",
+            "target": "people dwarfism",
+            "mechanism": "expressive aggression",
+            "label": "alienate"
+          },
+          "pred": {
+            "subject": "speaker",
+            "target": "people dwarfism",
+            "mechanism": "prosocial deception",
+            "label": "condemn"
+          },
+          "top_mechanism_s31": "prosocial deception",
+          "top_conf_s31": 0.0,
+          "rule_scores": {
+            "prosocial deception": 0.0,
+            "malicious manipulation": 0.0,
+            "expressive aggression": 0.0,
+            "benevolent provocation": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "you",
+            "object": "fidget spinner",
+            "predicate": "type",
+            "attribute": "unspecified",
+            "adverbial": "unspecified"
+          },
+          "subject_options": [
+            "speaker",
+            "internet troll",
+            "social influencer",
+            "casual texter"
+          ],
+          "target_options": [
+            "people dwarfism",
+            "fidget spinner owners",
+            "mobile phone users",
+            "angry internet commenters"
+          ]
+        },
+        {
+          "id": "intent_0059",
+          "text": "the rosenbergs were executed 1953 for selling nuclear secrets to russia the clintons actually sold nuclear material for development of weaponsto russia",
+          "gt": {
+            "subject": "speaker",
+            "target": "clintons",
+            "mechanism": "malicious manipulation",
+            "label": "dominate"
+          },
+          "pred": {
+            "subject": "speaker",
+            "target": "clintons",
+            "mechanism": "expressive aggression",
+            "label": "provoke"
+          },
+          "top_mechanism_s31": "expressive aggression",
+          "top_conf_s31": 0.26,
+          "rule_scores": {
+            "prosocial deception": 0.0,
+            "malicious manipulation": 0.0,
+            "expressive aggression": 0.0,
+            "benevolent provocation": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "the rosenbergs",
+            "object": "nuclear secrets",
+            "predicate": "were executed for selling",
+            "attribute": "to russia",
+            "adverbial": "in 1953"
+          },
+          "subject_options": [
+            "speaker",
+            "conspiracy theorist",
+            "political activist",
+            "social media influencer"
+          ],
+          "target_options": [
+            "clintons",
+            "republican political organization",
+            "former presidential campaign organization",
+            "political advocacy foundation"
+          ]
+        },
+        {
+          "id": "intent_0060",
+          "text": "look, mom! it's a faggot!",
+          "gt": {
+            "subject": "child",
+            "target": "gay person",
+            "mechanism": "expressive aggression",
+            "label": "alienate"
+          },
+          "pred": {
+            "subject": "child",
+            "target": "gay person",
+            "mechanism": "expressive aggression",
+            "label": "condemn"
+          },
+          "top_mechanism_s31": "expressive aggression",
+          "top_conf_s31": 0.52,
+          "rule_scores": {
+            "prosocial deception": 0.0,
+            "malicious manipulation": 0.0,
+            "expressive aggression": 0.0,
+            "benevolent provocation": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "look",
+            "object": "mom",
+            "predicate": "it's",
+            "attribute": "a faggot",
+            "adverbial": "unspecified_adverbial"
+          },
+          "subject_options": [
+            "child",
+            "intern",
+            "neighbor",
+            "friend"
+          ],
+          "target_options": [
+            "gay person",
+            "theater actor",
+            "circus clown",
+            "school bully"
+          ]
+        },
+        {
+          "id": "intent_0061",
+          "text": "i love <user> for their customer 1st approach to safety & ease of movement ! boxes on both sides of exit-impeding pillar !",
+          "gt": {
+            "subject": "customer",
+            "target": "coworker",
+            "mechanism": "expressive aggression",
+            "label": "mitigate"
+          },
+          "pred": {
+            "subject": "coworker",
+            "target": "other shoppers",
+            "mechanism": "prosocial deception",
+            "label": "intimidate"
+          },
+          "top_mechanism_s31": "prosocial deception",
+          "top_conf_s31": 0.0,
+          "rule_scores": {
+            "prosocial deception": 0.0,
+            "malicious manipulation": 0.0,
+            "expressive aggression": 0.0,
+            "benevolent provocation": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "i",
+            "object": "boxes",
+            "predicate": "love",
+            "attribute": "customer 1st approach to safety & ease of movement",
+            "adverbial": "for their"
+          },
+          "subject_options": [
+            "customer",
+            "irate passerby",
+            "coworker",
+            "observant bystander"
+          ],
+          "target_options": [
+            "coworker",
+            "other shoppers",
+            "delivery driver",
+            "independent product reviewer"
+          ]
+        },
+        {
+          "id": "intent_0062",
+          "text": "a transgendered 4 year old is like a vegan cat we all know who is making their lifestyle choices",
+          "gt": {
+            "subject": "speaker",
+            "target": "transgender children",
+            "mechanism": "expressive aggression",
+            "label": "alienate"
+          },
+          "pred": {
+            "subject": "speaker",
+            "target": "transgender children",
+            "mechanism": "benevolent provocation",
+            "label": "provoke"
+          },
+          "top_mechanism_s31": "benevolent provocation",
+          "top_conf_s31": 0.52,
+          "rule_scores": {
+            "prosocial deception": 0.0,
+            "malicious manipulation": 0.0,
+            "expressive aggression": 0.0,
+            "benevolent provocation": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "a transgendered 4 year old",
+            "object": "a vegan cat",
+            "predicate": "is like",
+            "attribute": "unspecified_attribute",
+            "adverbial": "unspecified_adverbial"
+          },
+          "subject_options": [
+            "speaker",
+            "internet troll",
+            "right-wing influencer",
+            "satire account"
+          ],
+          "target_options": [
+            "transgender children",
+            "vegans animal rights activists",
+            "cat owners pet enthusiasts",
+            "conservative adults"
+          ]
+        },
+        {
+          "id": "intent_0063",
+          "text": "islamic windchimes",
+          "gt": {
+            "subject": "speaker",
+            "target": "muslims",
+            "mechanism": "expressive aggression",
+            "label": "alienate"
+          },
+          "pred": {
+            "subject": "speaker",
+            "target": "muslims",
+            "mechanism": "prosocial deception",
+            "label": "mitigate"
+          },
+          "top_mechanism_s31": "prosocial deception",
+          "top_conf_s31": 0.0,
+          "rule_scores": {
+            "prosocial deception": 0.0,
+            "malicious manipulation": 0.0,
+            "expressive aggression": 0.0,
+            "benevolent provocation": 0.0
+          },
+          "critic_pass": true,
+          "backtrack_rounds": 1,
+          "s1_text_components": {
+            "subject": "unspecified_subject",
+            "object": "windchimes",
+            "predicate": "are",
+            "attribute": "islamic",
+            "adverbial": "unspecified_adverbial"
+          },
+          "subject_options": [
+            "speaker",
+            "satirist",
+            "conspiracy theorist",
+            "political activist"
+          ],
+          "target_options": [
+            "muslims",
+            "immigrants",
+            "terrorists",
+            "refugees"
+          ]
+        },
+        {
+          "id": "intent_0064",
+          "text": "hello mengele i think one of your experiments has escaped",
+          "gt": {
+            "subject": "speaker",
+            "target": "online target",
+            "mechanism": "expressive aggression",
+            "label": "mock"
+          },
+          "pred": {
+            "subject": "speaker",
+            "target": "online target",
+            "mechanism": "benevolent provocation",
+            "label": "provoke"
+          },
+          "top_mechanism_s31": "benevolent provocation",
+          "top_conf_s31": 0.26,
+          "rule_scores": {
+            "prosocial deception": 0.0,
+            "malicious manipulation": 0.0,
+            "expressive aggression": 0.0,
+            "benevolent provocation": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "unspecified_subject",
+            "object": "experiments",
+            "predicate": "has escaped",
+            "attribute": "unspecified_attribute",
+            "adverbial": "unspecified_adverbial"
+          },
+          "subject_options": [
+            "speaker",
+            "troll",
+            "bot",
+            "satirist"
+          ],
+          "target_options": [
+            "online target",
+            "parody account",
+            "anonymous user",
+            "rival streamer"
+          ]
+        },
+        {
+          "id": "intent_0065",
+          "text": "hoes be like why can't i find a good man",
+          "gt": {
+            "subject": "speaker",
+            "target": "complaining women",
+            "mechanism": "expressive aggression",
+            "label": "provoke"
+          },
+          "pred": {
+            "subject": "speaker",
+            "target": "complaining women",
+            "mechanism": "prosocial deception",
+            "label": "mock"
+          },
+          "top_mechanism_s31": "prosocial deception",
+          "top_conf_s31": 0.0,
+          "rule_scores": {
+            "prosocial deception": 0.0,
+            "malicious manipulation": 0.0,
+            "expressive aggression": 0.0,
+            "benevolent provocation": 0.0
+          },
+          "critic_pass": true,
+          "backtrack_rounds": 0,
+          "s1_text_components": {
+            "subject": "hoes",
+            "object": "a good man",
+            "predicate": "be like",
+            "attribute": "unspecified_attribute",
+            "adverbial": "unspecified_adverbial"
+          },
+          "subject_options": [
+            "speaker",
+            "clickbait blogger",
+            "advertising agency",
+            "male comedian"
+          ],
+          "target_options": [
+            "complaining women",
+            "colorful condoms",
+            "internet meme",
+            "lonely teenager"
+          ]
+        },
+        {
+          "id": "intent_0066",
+          "text": "when the mueller report indicates there will be no further indictments",
+          "gt": {
+            "subject": "speaker",
+            "target": "mueller supporters",
+            "mechanism": "expressive aggression",
+            "label": "provoke"
+          },
+          "pred": {
+            "subject": "speaker",
+            "target": "mueller supporters",
+            "mechanism": "benevolent provocation",
+            "label": "provoke"
+          },
+          "top_mechanism_s31": "benevolent provocation",
+          "top_conf_s31": 0.26,
+          "rule_scores": {
+            "prosocial deception": 0.0,
+            "malicious manipulation": 0.0,
+            "expressive aggression": 0.0,
+            "benevolent provocation": 0.0
+          },
+          "critic_pass": false,
+          "backtrack_rounds": 3,
+          "s1_text_components": {
+            "subject": "the mueller report",
+            "object": "no further indictments",
+            "predicate": "indicates",
+            "attribute": "unspecified_attribute",
+            "adverbial": "when"
+          },
+          "subject_options": [
+            "speaker",
+            "conservative blogger",
+            "content moderator",
+            "late-night host"
+          ],
+          "target_options": [
+            "mueller supporters",
+            "investigative journalists",
+            "democratic campaign volunteers",
+            "news anchors"
+          ]
+        }
+      ]
+    }
+  }
+}

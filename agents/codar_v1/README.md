@@ -1,0 +1,12 @@
+﻿# CoDAR v1
+
+自研多阶段 CoDAR agent 推理框架（affection/attitude/intent）。
+
+## 快速开始
+1. 创建并激活虚拟环境。
+2. `pip install -U pip && pip install -e .`
+3. 复制 `config/runtime.template.yaml` 为 `config/runtime.yaml` 并填写模型信息。
+4. 运行：
+   - `python -m codar.cli smoke --input ../../Data/datasetv3.18_hf_319_updatev1.json --scenario affection --limit 3 --backend vllm --config config/runtime.yaml`
+   - `python -m codar.cli run-batch --input ../../Data/datasetv3.18_hf_319_updatev1.json --output-dir output/run_001 --backend vllm --config config/runtime.yaml`
+   - `python -m codar.cli evaluate --predictions output/run_001/predictions.jsonl --input ../../Data/datasetv3.18_hf_319_updatev1.json --output-metrics output/run_001/metrics.json`

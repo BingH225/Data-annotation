@@ -1,0 +1,10 @@
+{
+  "input_json": "D:\\NUS\\ACMm\\Data-annotation\\Data\\datasetv3.18_hf_319_updatev1.json",
+  "output_json": "D:\\NUS\\ACMm\\Data-annotation\\agents\\codar_v1\\data\\eval267_current_plus_baseline_overlap.json",
+  "target_size": 267,
+  "final_size": 267,
+  "baseline_detailed_json": "D:\\NUS\\ACMm\\Data-annotation\\agents\\codar_v1\\analysis\\baseline_267_detailed.json",
+  "preferred_baseline_id_count": 267,
+  "baseline_overlap_used": 33,
+  "backfilled_count": 234
+}

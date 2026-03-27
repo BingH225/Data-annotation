@@ -1,0 +1,5 @@
+﻿thresholds:
+  conflict_min_confidence: 0.35
+  abduction_trigger: 0.45
+  critic_pass_min: 0.5
+  final_confidence_floor: 0.05

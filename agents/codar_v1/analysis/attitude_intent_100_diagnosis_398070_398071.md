@@ -1,0 +1,49 @@
+# Attitude + Intent 100 Diagnosis (398070/398071)
+## attitude
+- N: 100
+- Acc: subject=0.78, target=0.73, mechanism=0.34, label=0.15, joint=0.07
+- rule_zero_rate: 0.94
+- s1_placeholder_row_rate(>=3): 0.22
+- critic_fail_rate: 0.79
+- Top label confusions:
+  - contemptuous -> dismissive: 13
+  - disapproving -> indifferent: 7
+  - contemptuous -> indifferent: 6
+  - disapproving -> dismissive: 6
+  - dismissive -> indifferent: 6
+  - hostile -> dismissive: 5
+  - hostile -> indifferent: 5
+  - dismissive -> supportive: 4
+- Top mechanism confusions:
+  - dominant detachment -> protective distancing: 20
+  - dominant detachment -> dominant affiliation: 12
+  - dominant detachment -> submissive alignment: 7
+  - dominant affiliation -> protective distancing: 6
+  - protective distancing -> dominant detachment: 4
+  - submissive alignment -> protective distancing: 4
+  - dominant affiliation -> dominant detachment: 4
+  - protective distancing -> submissive alignment: 2
+## intent
+- N: 100
+- Acc: subject=0.72, target=0.72, mechanism=0.4, label=0.2, joint=0.03
+- rule_zero_rate: 0.97
+- s1_placeholder_row_rate(>=3): 0.12
+- critic_fail_rate: 0.69
+- Top label confusions:
+  - mock -> provoke: 17
+  - alienate -> condemn: 8
+  - dominate -> provoke: 7
+  - alienate -> provoke: 6
+  - mitigate -> provoke: 5
+  - denounce -> condemn: 4
+  - mock -> condemn: 4
+  - provoke -> intimidate: 3
+- Top mechanism confusions:
+  - expressive aggression -> benevolent provocation: 19
+  - expressive aggression -> prosocial deception: 15
+  - malicious manipulation -> prosocial deception: 6
+  - expressive aggression -> malicious manipulation: 6
+  - prosocial deception -> benevolent provocation: 5
+  - malicious manipulation -> expressive aggression: 4
+  - benevolent provocation -> prosocial deception: 2
+  - prosocial deception -> expressive aggression: 2

@@ -1,0 +1,32 @@
+backend:
+  provider: vllm
+  model: internvl3_5_38b-local
+  api_key: EMPTY
+  base_url: http://127.0.0.1:8010/v1
+  timeout_sec: 240
+  temperature: 0.0
+
+pipeline:
+  max_backtrack_rounds: 4
+  max_stage_retries: 2
+  strict_closed_set: true
+  alpha_rule: 0.2
+  alpha_llm: 0.8
+  media_mode: local
+  max_video_frames: 4
+  enable_subject_anchor_rule: true
+  semantic_matcher:
+    enabled: true
+    model_name: sentence-transformers/all-MiniLM-L6-v2
+    similarity_threshold: 0.35
+    rule_semantic_threshold: 0.45
+
+media:
+  remote_root: /scratch/e1561245/Implicit_dataset
+  allow_url_fallback: false
+  local_cache_dir: ./cache/media
+
+logging:
+  save_prompt_text: false
+  save_prompt_vars: true
+  save_prompt_hash: true

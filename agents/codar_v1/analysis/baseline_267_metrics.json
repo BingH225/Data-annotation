@@ -1,0 +1,190 @@
+{
+  "2. By Scenario": {
+    "affection": {
+      "Count": 93,
+      "Strict_All4_Acc": 0.043010752688172046,
+      "mechanism_Accuracy": 0.3655913978494624,
+      "mechanism_F1": 0.28714970245969457,
+      "label_Accuracy": 0.25806451612903225,
+      "label_F1": 0.2197746936971075,
+      "subject_Accuracy": 0.6451612903225806,
+      "subject_F1": 0.6358540984420198,
+      "target_Accuracy": 0.7419354838709677,
+      "target_F1": 0.7476827094474154
+    },
+    "attitude": {
+      "Count": 86,
+      "Strict_All4_Acc": 0.11627906976744186,
+      "mechanism_Accuracy": 0.5813953488372093,
+      "mechanism_F1": 0.22448979591836732,
+      "label_Accuracy": 0.18604651162790697,
+      "label_F1": 0.16117055459160723,
+      "subject_Accuracy": 0.8837209302325582,
+      "subject_F1": 0.8846296728517525,
+      "target_Accuracy": 0.8255813953488372,
+      "target_F1": 0.8167763845350053
+    },
+    "intent": {
+      "Count": 88,
+      "Strict_All4_Acc": 0.11363636363636363,
+      "mechanism_Accuracy": 0.5227272727272727,
+      "mechanism_F1": 0.3283397683397683,
+      "label_Accuracy": 0.26136363636363635,
+      "label_F1": 0.14379778951207522,
+      "subject_Accuracy": 0.8409090909090909,
+      "subject_F1": 0.8034722222222221,
+      "target_Accuracy": 0.7159090909090909,
+      "target_F1": 0.6841461737900691
+    }
+  },
+  "3. By Domain": {
+    "Online & Social Media": {
+      "Count": 0
+    },
+    "Public & Service": {
+      "Count": 0
+    },
+    "Workplace": {
+      "Count": 0
+    },
+    "Intimate Relationships": {
+      "Count": 0
+    },
+    "Family Conversations": {
+      "Count": 0
+    },
+    "Friend Group": {
+      "Count": 0
+    },
+    "Education & Campus": {
+      "Count": 0
+    },
+    "Friendship Interactions": {
+      "Count": 0
+    }
+  },
+  "4. By Culture": {
+    "General Culture": {
+      "Count": 0
+    },
+    "Arab Culture": {
+      "Count": 0
+    },
+    "American Culture": {
+      "Count": 0
+    },
+    "Muslim Culture": {
+      "Count": 0
+    },
+    "African American Culture": {
+      "Count": 0
+    },
+    "Jewish Culture": {
+      "Count": 0
+    },
+    "Indian Culture": {
+      "Count": 0
+    },
+    "East Asian Culture": {
+      "Count": 0
+    }
+  },
+  "1. Overall (267 Successful Samples)": {
+    "Count": 267,
+    "Strict_All4_Acc": 0.0898876404494382,
+    "mechanism_Accuracy": 0.4868913857677903,
+    "mechanism_F1": 0.30946151344390016,
+    "label_Accuracy": 0.23595505617977527,
+    "label_F1": 0.18367573418908656,
+    "subject_Accuracy": 0.7865168539325843,
+    "subject_F1": 0.7784129972245557,
+    "target_Accuracy": 0.7602996254681648,
+    "target_F1": 0.7553638247717195
+  },
+  "5. Error Analysis": {
+    "mechanism_mismatches": {
+      "count": 11,
+      "samples": [
+        {
+          "id": "attitude_7014",
+          "given_sit": "attitude",
+          "pred_mech": "neutral"
+        },
+        {
+          "id": "attitude_7091",
+          "given_sit": "attitude",
+          "pred_mech": "neutral"
+        },
+        {
+          "id": "affection_5469",
+          "given_sit": "affection",
+          "pred_mech": "neutral"
+        },
+        {
+          "id": "attitude_7215",
+          "given_sit": "attitude",
+          "pred_mech": "neutral"
+        },
+        {
+          "id": "attitude_7005",
+          "given_sit": "attitude",
+          "pred_mech": "skeptical_distance"
+        },
+        {
+          "id": "attitude_7006",
+          "given_sit": "attitude",
+          "pred_mech": "neutral"
+        },
+        {
+          "id": "attitude_5235",
+          "given_sit": "attitude",
+          "pred_mech": "mindfuck"
+        },
+        {
+          "id": "attitude_7027",
+          "given_sit": "attitude",
+          "pred_mech": "neutral"
+        },
+        {
+          "id": "attitude_7017",
+          "given_sit": "attitude",
+          "pred_mech": "neutral"
+        },
+        {
+          "id": "attitude_3484",
+          "given_sit": "attitude",
+          "pred_mech": "neutral"
+        },
+        {
+          "id": "attitude_7008",
+          "given_sit": "attitude",
+          "pred_mech": "skeptical_distance"
+        }
+      ]
+    },
+    "label_mismatches": {
+      "count": 3,
+      "samples": [
+        {
+          "id": "affection_5469",
+          "given_sit": "affection",
+          "pred_label": "neutral"
+        },
+        {
+          "id": "affection_5424",
+          "given_sit": "affection",
+          "pred_label": "Neutral"
+        },
+        {
+          "id": "attitude_5235",
+          "given_sit": "attitude",
+          "pred_label": "mindfuck"
+        }
+      ]
+    },
+    "format_errors": {
+      "count": 0,
+      "samples": []
+    }
+  }
+}

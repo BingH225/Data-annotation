@@ -1,0 +1,163 @@
+#!/bin/bash
+#PBS -N rjg_int100_1g
+#PBS -q auto
+#PBS -P CFP03-CF-035
+#PBS -l select=1:ncpus=12:ngpus=1:mem=225gb
+#PBS -l walltime=12:00:00
+#PBS -j oe
+#PBS -o /scratch/e1561245/cot_yz/codar_output/codar_rjg_v1/pbs_logs/
+
+set -euo pipefail
+
+PROJECT=/scratch/e1561245/cot_yz/codar_rjg_v1
+OUTPUT_ROOT=/scratch/e1561245/cot_yz/codar_output/codar_rjg_v1
+BASE=/scratch/e1561245/internvl
+VENV_DIR=${BASE}/venv/vllm_ivl35_38b_full_newformat
+MODEL_PATH=${BASE}/models/OpenGVLab/InternVL3_5-38B
+MODEL_NAME=internvl3_5_38b-local
+HOST=127.0.0.1
+PORT=8010
+RUN_DIR=${OUTPUT_ROOT}/rjg_intent100_${PBS_JOBID}
+INPUT_JSON=${PROJECT}/data/eval300_intent100_from_baseline300.json
+MEMORY_JSON=${RUN_DIR}/rjg_memory_intent100.json
+CFG=${PROJECT}/config/runtime.internvl.local.yaml
+
+mkdir -p "${RUN_DIR}"
+mkdir -p "${OUTPUT_ROOT}/pbs_logs"
+source "${VENV_DIR}/bin/activate"
+python -m pip install -U pip >/dev/null 2>&1 || true
+python -m pip install -e "${PROJECT}" >/dev/null 2>&1
+
+export HF_HOME=${BASE}/models/hf_cache
+export HUGGINGFACE_HUB_CACHE=${BASE}/models/hf_cache
+export FFMPEG_BIN=${BASE}/tools/ffmpeg_static/bin/ffmpeg
+export FFPROBE_BIN=${BASE}/tools/ffmpeg_static/bin/ffprobe
+
+normalize_cuda_visible_devices() {
+  local raw="${CUDA_VISIBLE_DEVICES:-}"
+  if [[ -z "${raw}" ]]; then
+    return 0
+  fi
+  if [[ "${raw}" =~ [A-Za-z-] ]]; then
+    IFS=',' read -ra _DEV_ARR <<< "${raw}"
+    local dev_count="${#_DEV_ARR[@]}"
+    if [[ "${dev_count}" -gt 0 ]]; then
+      export CUDA_VISIBLE_DEVICES="$(seq -s, 0 $((dev_count - 1)))"
+    else
+      export CUDA_VISIBLE_DEVICES=0
+    fi
+  fi
+}
+
+normalize_cuda_visible_devices
+
+nvidia-smi > "${RUN_DIR}/nvidia_smi.txt"
+echo "[INFO] job_id=${PBS_JOBID}" | tee -a "${RUN_DIR}/meta.log"
+echo "[INFO] run_dir=${RUN_DIR}" | tee -a "${RUN_DIR}/meta.log"
+echo "[INFO] start_time=$(date -Iseconds)" | tee -a "${RUN_DIR}/meta.log"
+echo "[INFO] cuda_visible_devices=${CUDA_VISIBLE_DEVICES:-<unset>}" | tee -a "${RUN_DIR}/meta.log"
+
+start_vllm_server() {
+  : > "${RUN_DIR}/vllm_server.log"
+  vllm serve "${MODEL_PATH}" \
+    --host "${HOST}" \
+    --port "${PORT}" \
+    --served-model-name "${MODEL_NAME}" \
+    --trust-remote-code \
+    --dtype float16 \
+    --tensor-parallel-size 1 \
+    --gpu-memory-utilization 0.95 \
+    --max-model-len 32768 \
+    --mm-processor-kwargs '{"max_dynamic_patch":6}' \
+    --limit-mm-per-prompt '{"image":4}' \
+    > "${RUN_DIR}/vllm_server.log" 2>&1 &
+  SERVER_PID=$!
+}
+
+wait_vllm_ready() {
+  READY=0
+  for i in $(seq 1 900); do
+    if grep -q "CUDA driver initialization failed\|Engine core initialization failed" "${RUN_DIR}/vllm_server.log" 2>/dev/null; then
+      return 3
+    fi
+    if ! kill -0 "${SERVER_PID}" >/dev/null 2>&1; then
+      return 2
+    fi
+    if curl -sf "http://${HOST}:${PORT}/v1/models" > "${RUN_DIR}/vllm_models.json.tmp"; then
+      mv "${RUN_DIR}/vllm_models.json.tmp" "${RUN_DIR}/vllm_models.json"
+      READY_CODE=$(curl -s -o "${RUN_DIR}/vllm_ready_probe.json" -w '%{http_code}' \
+        -X POST "http://${HOST}:${PORT}/v1/chat/completions" \
+        -H 'Content-Type: application/json' \
+        --data "{\"model\":\"${MODEL_NAME}\",\"messages\":[{\"role\":\"user\",\"content\":\"ping\"}],\"max_tokens\":1,\"temperature\":0}" || true)
+      if [[ "${READY_CODE}" == "200" ]] && grep -q '"choices"' "${RUN_DIR}/vllm_ready_probe.json"; then
+        READY=1
+        return 0
+      fi
+    fi
+    sleep 2
+  done
+  return 1
+}
+
+SERVER_PID=""
+cleanup(){ kill "${SERVER_PID}" >/dev/null 2>&1 || true; }
+trap cleanup EXIT
+
+start_vllm_server
+if ! wait_vllm_ready; then
+  if grep -q "CUDA driver initialization failed" "${RUN_DIR}/vllm_server.log"; then
+    echo "[WARN] detected CUDA init failure; retrying vLLM once with CUDA_VISIBLE_DEVICES=0" | tee -a "${RUN_DIR}/meta.log"
+    kill "${SERVER_PID}" >/dev/null 2>&1 || true
+    sleep 3
+    export CUDA_VISIBLE_DEVICES=0
+    echo "[INFO] retry_cuda_visible_devices=${CUDA_VISIBLE_DEVICES}" | tee -a "${RUN_DIR}/meta.log"
+    start_vllm_server
+    if ! wait_vllm_ready; then
+      echo '[FATAL] vLLM retry failed to become ready' >&2
+      tail -n 200 "${RUN_DIR}/vllm_server.log" || true
+      exit 1
+    fi
+  else
+    echo '[FATAL] vLLM server not ready (no CUDA-init retry condition met)' >&2
+    tail -n 200 "${RUN_DIR}/vllm_server.log" || true
+    exit 1
+  fi
+fi
+
+cd "${PROJECT}"
+python -m codar.cli build-memory-index \
+  --input "${INPUT_JSON}" \
+  --out "${MEMORY_JSON}" \
+  > "${RUN_DIR}/build_memory.log" 2>&1
+
+python -m codar.cli run-rjg-batch \
+  --input "${INPUT_JSON}" \
+  --memory "${MEMORY_JSON}" \
+  --output-dir "${RUN_DIR}" \
+  --backend vllm \
+  --config "${CFG}" \
+  > "${RUN_DIR}/run_rjg.log" 2>&1
+
+python -m codar.cli evaluate \
+  --predictions "${RUN_DIR}/predictions.jsonl" \
+  --input "${INPUT_JSON}" \
+  --output-metrics "${RUN_DIR}/metrics.json" \
+  --output-detailed "${RUN_DIR}/metrics.detailed.json" \
+  > "${RUN_DIR}/evaluate.log" 2>&1
+
+python -m codar.cli tune-rjg \
+  --predictions "${RUN_DIR}/predictions.jsonl" \
+  --input "${INPUT_JSON}" \
+  --output-dir "${RUN_DIR}/tuned" \
+  --search-budget 120 \
+  > "${RUN_DIR}/tune_rjg.log" 2>&1
+
+python -m codar.cli evaluate \
+  --predictions "${RUN_DIR}/tuned/predictions.tuned.jsonl" \
+  --input "${INPUT_JSON}" \
+  --output-metrics "${RUN_DIR}/tuned/metrics.eval.json" \
+  --output-detailed "${RUN_DIR}/tuned/metrics.eval.detailed.json" \
+  > "${RUN_DIR}/evaluate_tuned.log" 2>&1
+
+echo "run_dir=${RUN_DIR}"
+echo "[INFO] end_time=$(date -Iseconds)" | tee -a "${RUN_DIR}/meta.log"

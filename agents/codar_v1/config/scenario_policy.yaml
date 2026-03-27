@@ -1,0 +1,219 @@
+﻿scenarios:
+  affection:
+    mechanisms:
+      - multimodal incongruity
+      - figurative semantics
+      - affective deception
+      - socio_cultural dependency
+    labels:
+      - happy
+      - sad
+      - disgusted
+      - angry
+      - fearful
+      - bad
+    rule_keywords:
+      "multimodal incongruity":
+        [
+          "but",
+          "yet",
+          "however",
+          "contrast",
+          "irony",
+          "mismatch",
+          "in real life",
+          "on social media",
+          "vs",
+          "while",
+          "though",
+          "still",
+        ]
+      "figurative semantics":
+        [
+          "like",
+          "as if",
+          "metaphor",
+          "symbol",
+          "poetic",
+          "hyperbole",
+          "understatement",
+          "as a",
+          "as an",
+          "looks like",
+          "feels like",
+        ]
+      "affective deception":
+        [
+          "fine",
+          "okay",
+          "sure",
+          "totally",
+          "whatever",
+          "smile",
+          "pretend",
+          "yeah yeah",
+          "don't worry",
+          "im fine",
+          "i'm fine",
+          "all good",
+        ]
+      "socio_cultural dependency":
+        [
+          "meme",
+          "trend",
+          "culture",
+          "reference",
+          "inside joke",
+          "viral",
+          "facebook",
+          "twitter",
+          "social media",
+          "red carpet",
+          "fanbase",
+        ]
+  attitude:
+    mechanisms:
+      - dominant affiliation
+      - dominant detachment
+      - protective distancing
+      - submissive alignment
+    labels:
+      - supportive
+      - appreciative
+      - sympathetic
+      - neutral
+      - indifferent
+      - concerned
+      - skeptical
+      - dismissive
+      - disapproving
+      - contemptuous
+      - hostile
+    rule_keywords:
+      "dominant affiliation":
+        [
+          "for your own good",
+          "good job",
+          "patronizing",
+          "kid",
+          "let me handle",
+          "you got this",
+          "i'll handle",
+          "listen to me",
+        ]
+      "dominant detachment":
+        [
+          "your fault",
+          "doesn't matter",
+          "not worth",
+          "invalid",
+          "asked for it",
+          "who cares",
+          "whatever",
+          "i don't care",
+          "no thanks",
+          "third strike",
+          "fucker",
+          "ignorant",
+          "not a",
+        ]
+      "protective distancing":
+        [
+          "maybe",
+          "we'll see",
+          "not sure",
+          "keep distance",
+          "withdraw",
+          "i guess",
+          "not now",
+          "rather not",
+          "idk",
+          "i don't know",
+        ]
+      "submissive alignment":
+        [
+          "sorry",
+          "my bad",
+          "you decide",
+          "i'm weak",
+          "please guide",
+          "as you say",
+          "need your help",
+          "whatever you want",
+        ]
+  intent:
+    mechanisms:
+      - prosocial deception
+      - malicious manipulation
+      - expressive aggression
+      - benevolent provocation
+    labels:
+      - mitigate
+      - intimidate
+      - alienate
+      - mock
+      - denounce
+      - provoke
+      - dominate
+      - condemn
+    rule_keywords:
+      "prosocial deception":
+        [
+          "just kidding",
+          "to avoid hurting",
+          "white lie",
+          "keep peace",
+          "no offense",
+          "don't worry",
+          "all good",
+        ]
+      "malicious manipulation":
+        [
+          "you owe me",
+          "after all i did",
+          "moral",
+          "guilt",
+          "compliance",
+          "if you cared",
+          "you must",
+          "good person would",
+        ]
+      "expressive aggression":
+        [
+          "idiot",
+          "asshole",
+          "threat",
+          "humiliate",
+          "insult",
+          "taunt",
+          "bitch",
+          "moron",
+          "shut up",
+          "fuck",
+          "faggot",
+          "kill you",
+          "go to hell",
+        ]
+      "benevolent provocation":
+        [
+          "reverse psychology",
+          "goad",
+          "challenge",
+          "pretend",
+          "bait",
+          "prove it",
+          "dare you",
+          "come at me",
+          "what did you",
+          "show us",
+          "hurry up",
+          "is it a boy or a girl",
+        ]
+
+hypotheses:
+  - H0: no meaningful conflict
+  - H1: perception error / missing context
+  - H2: accidental mismatch / noise
+  - H3: strategic social expression
+  - H4: culture-specific or in-group code
+  - H5: sarcasm / irony / indirect attack / face-saving

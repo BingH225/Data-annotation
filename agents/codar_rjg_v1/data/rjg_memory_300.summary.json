@@ -1,0 +1,9 @@
+{
+  "event": "memory_index_built",
+  "input": "D:\\NUS\\ACMm\\Data-annotation\\agents\\codar_rjg_v1\\data\\eval300_shared_aff_att_int_100_each.json",
+  "output": "D:\\NUS\\ACMm\\Data-annotation\\agents\\codar_rjg_v1\\data\\rjg_memory_300.json",
+  "count": 300,
+  "scenario_filter": null,
+  "limit": null,
+  "loo": true
+}
