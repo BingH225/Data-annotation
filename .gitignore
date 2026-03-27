@@ -6,3 +6,5 @@ tmp*/
 export/
 experiment/
 *tmp*/
+_*/
+figures/
