@@ -1,0 +1,4657 @@
+[
+  {
+    "id": "attitude_0400",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "concerned",
+      "subject": "speaker",
+      "target": "listener"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "speaker",
+      "target": "dead relatives"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": false
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "speaker",
+      "predicted_target": "dead relatives"
+    }
+  },
+  {
+    "id": "attitude_0582",
+    "ground_truth": {
+      "mechanism": "protective distancing",
+      "label": "skeptical",
+      "subject": "speaker",
+      "target": "american dream ideal"
+    },
+    "prediction": {
+      "mechanism": "protective distancing",
+      "label": "skeptical",
+      "subject": "speaker",
+      "target": "american dream ideal"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": true,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": true,
+    "meta_scenario": "attitude",
+    "meta_domain": "Family Conversations",
+    "meta_culture": "North American Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "protective distancing",
+      "predicted_label": "skeptical",
+      "predicted_subject": "speaker",
+      "predicted_target": "american dream ideal"
+    }
+  },
+  {
+    "id": "attitude_0320",
+    "ground_truth": {
+      "mechanism": "submissive alignment",
+      "label": "concerned",
+      "subject": "speaker",
+      "target": "seen maya"
+    },
+    "prediction": {
+      "mechanism": "submissive alignment",
+      "label": "supportive",
+      "subject": "speaker",
+      "target": "seen maya"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Workplace",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "submissive alignment",
+      "predicted_label": "supportive",
+      "predicted_subject": "speaker",
+      "predicted_target": "seen maya"
+    }
+  },
+  {
+    "id": "attitude_0465",
+    "ground_truth": {
+      "mechanism": "dominant affiliation",
+      "label": "contemptuous",
+      "subject": "meme creator",
+      "target": "female politician"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "meme creator",
+      "target": "female politician"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "meme creator",
+      "predicted_target": "female politician"
+    }
+  },
+  {
+    "id": "attitude_0537",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "hostile",
+      "subject": "speaker",
+      "target": "2020 democrats"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "speaker",
+      "target": "2020 democrats"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "speaker",
+      "predicted_target": "2020 democrats"
+    }
+  },
+  {
+    "id": "attitude_0599",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "indifferent",
+      "subject": "speaker",
+      "target": "person requesting removal"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "speaker",
+      "target": "person requesting removal"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "speaker",
+      "predicted_target": "person requesting removal"
+    }
+  },
+  {
+    "id": "attitude_0352",
+    "ground_truth": {
+      "mechanism": "submissive alignment",
+      "label": "neutral",
+      "subject": "speaker",
+      "target": "cocaine habit"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "dismissive",
+      "subject": "speaker",
+      "target": "cocaine habit"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "dismissive",
+      "predicted_subject": "speaker",
+      "predicted_target": "cocaine habit"
+    }
+  },
+  {
+    "id": "attitude_0870",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "hostile",
+      "subject": "writer",
+      "target": "transgender women"
+    },
+    "prediction": {
+      "mechanism": "protective distancing",
+      "label": "skeptical",
+      "subject": "writer",
+      "target": "transgender women"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Intimate Relationships",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "protective distancing",
+      "predicted_label": "skeptical",
+      "predicted_subject": "writer",
+      "predicted_target": "transgender women"
+    }
+  },
+  {
+    "id": "attitude_0480",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "disapproving",
+      "subject": "speaker",
+      "target": "situation"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "concerned",
+      "subject": "speaker",
+      "target": "hoax"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": false
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "concerned",
+      "predicted_subject": "speaker",
+      "predicted_target": "hoax"
+    }
+  },
+  {
+    "id": "attitude_0893",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "hostile",
+      "subject": "hotline operator",
+      "target": "suicidal caller"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "concerned",
+      "subject": "hotline operator",
+      "target": "suicidal caller"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Public & Service",
+    "meta_culture": "Middle Eastern Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "concerned",
+      "predicted_subject": "hotline operator",
+      "predicted_target": "suicidal caller"
+    }
+  },
+  {
+    "id": "attitude_0056",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "disapproving",
+      "subject": "speaker",
+      "target": "bridesmaid"
+    },
+    "prediction": {
+      "mechanism": "dominant detachment",
+      "label": "dismissive",
+      "subject": "speaker",
+      "target": "speaker"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": false,
+      "subject": true,
+      "target": false
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Workplace",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant detachment",
+      "predicted_label": "dismissive",
+      "predicted_subject": "speaker",
+      "predicted_target": "speaker"
+    }
+  },
+  {
+    "id": "attitude_0397",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "hostile",
+      "subject": "speaker",
+      "target": "liberals"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "speaker",
+      "target": "liberals"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "speaker",
+      "predicted_target": "liberals"
+    }
+  },
+  {
+    "id": "attitude_0409",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "contemptuous",
+      "subject": "online critic",
+      "target": "satire page sharers"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "online critic",
+      "target": "satire page sharers"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Family Conversations",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "online critic",
+      "predicted_target": "satire page sharers"
+    }
+  },
+  {
+    "id": "attitude_0707",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "contemptuous",
+      "subject": "speaker",
+      "target": "trump supporters"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "speaker",
+      "target": "trump supporters"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "North American Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "speaker",
+      "predicted_target": "trump supporters"
+    }
+  },
+  {
+    "id": "attitude_0502",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "contemptuous",
+      "subject": "speaker",
+      "target": "holocaust documentary"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "speaker",
+      "target": "holocaust documentary"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "speaker",
+      "predicted_target": "holocaust documentary"
+    }
+  },
+  {
+    "id": "attitude_0709",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "contemptuous",
+      "subject": "speaker",
+      "target": "transgender person image"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "speaker",
+      "target": "transgender person image"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "speaker",
+      "predicted_target": "transgender person image"
+    }
+  },
+  {
+    "id": "attitude_0993",
+    "ground_truth": {
+      "mechanism": "protective distancing",
+      "label": "skeptical",
+      "subject": "the speaker woman on left",
+      "target": "the woman with short blonde"
+    },
+    "prediction": {
+      "mechanism": "protective distancing",
+      "label": "skeptical",
+      "subject": "the speaker woman on left",
+      "target": "the woman with short blonde"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": true,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": true,
+    "meta_scenario": "attitude",
+    "meta_domain": "Friend Group",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "protective distancing",
+      "predicted_label": "skeptical",
+      "predicted_subject": "the speaker woman on left",
+      "predicted_target": "the woman with short blonde"
+    }
+  },
+  {
+    "id": "attitude_0172",
+    "ground_truth": {
+      "mechanism": "protective distancing",
+      "label": "concerned",
+      "subject": "speaker",
+      "target": "mateo"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "concerned",
+      "subject": "speaker",
+      "target": "mateo"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": true,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Workplace",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "concerned",
+      "predicted_subject": "speaker",
+      "predicted_target": "mateo"
+    }
+  },
+  {
+    "id": "attitude_0053",
+    "ground_truth": {
+      "mechanism": "dominant affiliation",
+      "label": "contemptuous",
+      "subject": "speaker",
+      "target": "white men"
+    },
+    "prediction": {
+      "mechanism": "protective distancing",
+      "label": "skeptical",
+      "subject": "speaker",
+      "target": "white men"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "protective distancing",
+      "predicted_label": "skeptical",
+      "predicted_subject": "speaker",
+      "predicted_target": "white men"
+    }
+  },
+  {
+    "id": "attitude_0680",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "dismissive",
+      "subject": "special counsel",
+      "target": "president"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "special counsel",
+      "target": "president"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "special counsel",
+      "predicted_target": "president"
+    }
+  },
+  {
+    "id": "attitude_0792",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "contemptuous",
+      "subject": "speaker",
+      "target": "black asian white men"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "speaker",
+      "target": "black asian white men"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "speaker",
+      "predicted_target": "black asian white men"
+    }
+  },
+  {
+    "id": "attitude_0475",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "contemptuous",
+      "subject": "speaker",
+      "target": "allah muslims"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "speaker",
+      "target": "allah muslims"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "Middle Eastern Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "speaker",
+      "predicted_target": "allah muslims"
+    }
+  },
+  {
+    "id": "attitude_0469",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "concerned",
+      "subject": "speaker",
+      "target": "partner"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "concerned",
+      "subject": "speaker",
+      "target": "partner"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": true,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Intimate Relationships",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "concerned",
+      "predicted_subject": "speaker",
+      "predicted_target": "partner"
+    }
+  },
+  {
+    "id": "attitude_0433",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "dismissive",
+      "subject": "speaker",
+      "target": "voters support politicians"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "speaker",
+      "target": "voters support politicians"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Public & Service",
+    "meta_culture": "North American Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "speaker",
+      "predicted_target": "voters support politicians"
+    }
+  },
+  {
+    "id": "attitude_0655",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "indifferent",
+      "subject": "speaker",
+      "target": "history"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "speaker",
+      "target": "history"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Family Conversations",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "speaker",
+      "predicted_target": "history"
+    }
+  },
+  {
+    "id": "attitude_0212",
+    "ground_truth": {
+      "mechanism": "submissive alignment",
+      "label": "skeptical",
+      "subject": "speaker",
+      "target": "other video"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "skeptical",
+      "subject": "speaker",
+      "target": "other video"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": true,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Workplace",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "skeptical",
+      "predicted_subject": "speaker",
+      "predicted_target": "other video"
+    }
+  },
+  {
+    "id": "attitude_0412",
+    "ground_truth": {
+      "mechanism": "dominant affiliation",
+      "label": "concerned",
+      "subject": "speaker",
+      "target": "glenn"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "speaker",
+      "target": "glenn"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Workplace",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "speaker",
+      "predicted_target": "glenn"
+    }
+  },
+  {
+    "id": "attitude_0534",
+    "ground_truth": {
+      "mechanism": "dominant affiliation",
+      "label": "concerned",
+      "subject": "manager",
+      "target": "safety compliance officer"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "manager",
+      "target": "safety compliance officer"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Workplace",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "manager",
+      "predicted_target": "safety compliance officer"
+    }
+  },
+  {
+    "id": "attitude_0354",
+    "ground_truth": {
+      "mechanism": "dominant affiliation",
+      "label": "dismissive",
+      "subject": "speaker",
+      "target": "person standing"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "speaker",
+      "target": "person standing"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Workplace",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "speaker",
+      "predicted_target": "person standing"
+    }
+  },
+  {
+    "id": "attitude_0769",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "contemptuous",
+      "subject": "speaker",
+      "target": "partner"
+    },
+    "prediction": {
+      "mechanism": "dominant detachment",
+      "label": "contemptuous",
+      "subject": "speaker",
+      "target": "partner"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": true,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": true,
+    "meta_scenario": "attitude",
+    "meta_domain": "Intimate Relationships",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant detachment",
+      "predicted_label": "contemptuous",
+      "predicted_subject": "speaker",
+      "predicted_target": "partner"
+    }
+  },
+  {
+    "id": "attitude_0157",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "disapproving",
+      "subject": "partner",
+      "target": "partner"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "disapproving",
+      "subject": "partner",
+      "target": "partner"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": true,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Intimate Relationships",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "disapproving",
+      "predicted_subject": "partner",
+      "predicted_target": "partner"
+    }
+  },
+  {
+    "id": "attitude_0509",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "hostile",
+      "subject": "speaker",
+      "target": "muhammed"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "speaker",
+      "target": "muhammed"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "Middle Eastern Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "speaker",
+      "predicted_target": "muhammed"
+    }
+  },
+  {
+    "id": "attitude_0047",
+    "ground_truth": {
+      "mechanism": "dominant affiliation",
+      "label": "indifferent",
+      "subject": "manager",
+      "target": "jonah justine"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "manager",
+      "target": "jonah justine"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Workplace",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "manager",
+      "predicted_target": "jonah justine"
+    }
+  },
+  {
+    "id": "attitude_0126",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "disapproving",
+      "subject": "policy advocate",
+      "target": "public abortion subsidies"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "policy advocate",
+      "target": "adoption"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": false
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "policy advocate",
+      "predicted_target": "adoption"
+    }
+  },
+  {
+    "id": "attitude_0716",
+    "ground_truth": {
+      "mechanism": "protective distancing",
+      "label": "dismissive",
+      "subject": "speaker",
+      "target": "friend"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "speaker",
+      "target": "friend"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Friend Group",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "speaker",
+      "predicted_target": "friend"
+    }
+  },
+  {
+    "id": "attitude_0824",
+    "ground_truth": {
+      "mechanism": "submissive alignment",
+      "label": "supportive",
+      "subject": "speaker",
+      "target": "barack obama"
+    },
+    "prediction": {
+      "mechanism": "submissive alignment",
+      "label": "neutral",
+      "subject": "speaker",
+      "target": "barack obama"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "submissive alignment",
+      "predicted_label": "neutral",
+      "predicted_subject": "speaker",
+      "predicted_target": "barack obama"
+    }
+  },
+  {
+    "id": "attitude_0246",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "hostile",
+      "subject": "speaker",
+      "target": "jewish people"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "speaker",
+      "target": "jewish people"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "speaker",
+      "predicted_target": "jewish people"
+    }
+  },
+  {
+    "id": "attitude_0395",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "dismissive",
+      "subject": "speaker",
+      "target": "partner"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "speaker",
+      "target": "partner"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Intimate Relationships",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "speaker",
+      "predicted_target": "partner"
+    }
+  },
+  {
+    "id": "attitude_0447",
+    "ground_truth": {
+      "mechanism": "protective distancing",
+      "label": "skeptical",
+      "subject": "conservatives",
+      "target": "government power offers security"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "conservatives",
+      "target": "government power offers security"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "conservatives",
+      "predicted_target": "government power offers security"
+    }
+  },
+  {
+    "id": "attitude_0367",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "hostile",
+      "subject": "speaker",
+      "target": "jewish people"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "friend",
+      "target": "friends"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": false,
+      "target": false
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Family Conversations",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "friend",
+      "predicted_target": "friends"
+    }
+  },
+  {
+    "id": "attitude_0543",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "contemptuous",
+      "subject": "speaker",
+      "target": "children adhd"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "speaker",
+      "target": "children adhd"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Family Conversations",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "speaker",
+      "predicted_target": "children adhd"
+    }
+  },
+  {
+    "id": "attitude_0471",
+    "ground_truth": {
+      "mechanism": "protective distancing",
+      "label": "appreciative",
+      "subject": "speaker",
+      "target": "listener"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "speaker",
+      "target": "friend"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": false
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Intimate Relationships",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "speaker",
+      "predicted_target": "friend"
+    }
+  },
+  {
+    "id": "attitude_0171",
+    "ground_truth": {
+      "mechanism": "submissive alignment",
+      "label": "concerned",
+      "subject": "speaker",
+      "target": "man she's referring"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "speaker",
+      "target": "man she's referring"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Intimate Relationships",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "speaker",
+      "predicted_target": "man she's referring"
+    }
+  },
+  {
+    "id": "attitude_0420",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "hostile",
+      "subject": "dina",
+      "target": "parker bag's owner"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "dina",
+      "target": "parker bag's owner"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Workplace",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "dina",
+      "predicted_target": "parker bag's owner"
+    }
+  },
+  {
+    "id": "attitude_0520",
+    "ground_truth": {
+      "mechanism": "protective distancing",
+      "label": "disapproving",
+      "subject": "jonah",
+      "target": "co-workers"
+    },
+    "prediction": {
+      "mechanism": "dominant detachment",
+      "label": "contemptuous",
+      "subject": "jonah",
+      "target": "co-workers"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Workplace",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant detachment",
+      "predicted_label": "contemptuous",
+      "predicted_subject": "jonah",
+      "predicted_target": "co-workers"
+    }
+  },
+  {
+    "id": "attitude_0889",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "disapproving",
+      "subject": "speaker",
+      "target": "people wary strangers"
+    },
+    "prediction": {
+      "mechanism": "protective distancing",
+      "label": "skeptical",
+      "subject": "speaker",
+      "target": "people wary strangers"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Public & Service",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "protective distancing",
+      "predicted_label": "skeptical",
+      "predicted_subject": "speaker",
+      "predicted_target": "people wary strangers"
+    }
+  },
+  {
+    "id": "attitude_0417",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "disapproving",
+      "subject": "speaker",
+      "target": "glenn"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "speaker",
+      "target": "glenn"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Workplace",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "speaker",
+      "predicted_target": "glenn"
+    }
+  },
+  {
+    "id": "attitude_0833",
+    "ground_truth": {
+      "mechanism": "protective distancing",
+      "label": "skeptical",
+      "subject": "male friend",
+      "target": "current course action"
+    },
+    "prediction": {
+      "mechanism": "protective distancing",
+      "label": "skeptical",
+      "subject": "male friend",
+      "target": "current course action"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": true,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": true,
+    "meta_scenario": "attitude",
+    "meta_domain": "Friend Group",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "protective distancing",
+      "predicted_label": "skeptical",
+      "predicted_subject": "male friend",
+      "predicted_target": "current course action"
+    }
+  },
+  {
+    "id": "attitude_0803",
+    "ground_truth": {
+      "mechanism": "dominant affiliation",
+      "label": "contemptuous",
+      "subject": "advisor",
+      "target": "parent"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "advisor",
+      "target": "parent"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Family Conversations",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "advisor",
+      "predicted_target": "parent"
+    }
+  },
+  {
+    "id": "attitude_0512",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "hostile",
+      "subject": "speaker",
+      "target": "black men"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "speaker",
+      "target": "black men"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Intimate Relationships",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "speaker",
+      "predicted_target": "black men"
+    }
+  },
+  {
+    "id": "attitude_0145",
+    "ground_truth": {
+      "mechanism": "dominant affiliation",
+      "label": "dismissive",
+      "subject": "meme creator",
+      "target": "black"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "meme creator",
+      "target": "black"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "meme creator",
+      "predicted_target": "black"
+    }
+  },
+  {
+    "id": "attitude_0554",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "dismissive",
+      "subject": "social media user",
+      "target": "democrats"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "disapproving",
+      "subject": "social media user",
+      "target": "democrats"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "disapproving",
+      "predicted_subject": "social media user",
+      "predicted_target": "democrats"
+    }
+  },
+  {
+    "id": "attitude_0083",
+    "ground_truth": {
+      "mechanism": "dominant affiliation",
+      "label": "disapproving",
+      "subject": "speaker",
+      "target": "mother"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "concerned",
+      "subject": "speaker",
+      "target": "mother"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Family Conversations",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "concerned",
+      "predicted_subject": "speaker",
+      "predicted_target": "mother"
+    }
+  },
+  {
+    "id": "attitude_0190",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "disapproving",
+      "subject": "annie",
+      "target": "employees"
+    },
+    "prediction": {
+      "mechanism": "protective distancing",
+      "label": "neutral",
+      "subject": "annie",
+      "target": "employees"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Workplace",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "protective distancing",
+      "predicted_label": "neutral",
+      "predicted_subject": "annie",
+      "predicted_target": "employees"
+    }
+  },
+  {
+    "id": "attitude_0128",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "contemptuous",
+      "subject": "speaker",
+      "target": "obama voters"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "speaker",
+      "target": "obama voters"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "speaker",
+      "predicted_target": "obama voters"
+    }
+  },
+  {
+    "id": "attitude_0148",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "indifferent",
+      "subject": "speaker",
+      "target": "polish people"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "speaker",
+      "target": "polish people"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "speaker",
+      "predicted_target": "polish people"
+    }
+  },
+  {
+    "id": "attitude_0862",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "dismissive",
+      "subject": "speaker",
+      "target": "grabbing toys store"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "speaker",
+      "target": "grabbing toys store"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Workplace",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "speaker",
+      "predicted_target": "grabbing toys store"
+    }
+  },
+  {
+    "id": "attitude_0638",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "contemptuous",
+      "subject": "speaker",
+      "target": "asians"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "speaker",
+      "target": "asians"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "speaker",
+      "predicted_target": "asians"
+    }
+  },
+  {
+    "id": "attitude_0717",
+    "ground_truth": {
+      "mechanism": "protective distancing",
+      "label": "indifferent",
+      "subject": "speaker",
+      "target": "co-worker blue shirt"
+    },
+    "prediction": {
+      "mechanism": "dominant detachment",
+      "label": "dismissive",
+      "subject": "speaker",
+      "target": "co-worker blue shirt"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Workplace",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant detachment",
+      "predicted_label": "dismissive",
+      "predicted_subject": "speaker",
+      "predicted_target": "co-worker blue shirt"
+    }
+  },
+  {
+    "id": "attitude_0274",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "dismissive",
+      "subject": "man sink",
+      "target": "woman background"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "man sink",
+      "target": "woman background"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Intimate Relationships",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "man sink",
+      "predicted_target": "woman background"
+    }
+  },
+  {
+    "id": "attitude_0293",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "disapproving",
+      "subject": "speaker",
+      "target": "dina"
+    },
+    "prediction": {
+      "mechanism": "protective distancing",
+      "label": "disapproving",
+      "subject": "speaker",
+      "target": "dina"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": true,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Workplace",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "protective distancing",
+      "predicted_label": "disapproving",
+      "predicted_subject": "speaker",
+      "predicted_target": "dina"
+    }
+  },
+  {
+    "id": "attitude_0368",
+    "ground_truth": {
+      "mechanism": "protective distancing",
+      "label": "disapproving",
+      "subject": "speaker",
+      "target": "man"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "speaker",
+      "target": "women's soccer team"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": false
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Public & Service",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "speaker",
+      "predicted_target": "women's soccer team"
+    }
+  },
+  {
+    "id": "attitude_0830",
+    "ground_truth": {
+      "mechanism": "protective distancing",
+      "label": "indifferent",
+      "subject": "speaker",
+      "target": "friend"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "speaker",
+      "target": "friend"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Intimate Relationships",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "speaker",
+      "predicted_target": "friend"
+    }
+  },
+  {
+    "id": "attitude_0831",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "contemptuous",
+      "subject": "speaker",
+      "target": "caller"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "speaker",
+      "target": "caller"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "speaker",
+      "predicted_target": "caller"
+    }
+  },
+  {
+    "id": "attitude_0780",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "disapproving",
+      "subject": "meme creator",
+      "target": "white privilege"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "meme creator",
+      "target": "white privilege"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "meme creator",
+      "predicted_target": "white privilege"
+    }
+  },
+  {
+    "id": "attitude_0454",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "disapproving",
+      "subject": "speaker",
+      "target": "gave him assistant"
+    },
+    "prediction": {
+      "mechanism": "protective distancing",
+      "label": "skeptical",
+      "subject": "speaker",
+      "target": "gave him assistant"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Workplace",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "protective distancing",
+      "predicted_label": "skeptical",
+      "predicted_subject": "speaker",
+      "predicted_target": "gave him assistant"
+    }
+  },
+  {
+    "id": "attitude_0678",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "contemptuous",
+      "subject": "speaker",
+      "target": "ku klux klan"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "speaker",
+      "target": "ku klux klan"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "North American Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "speaker",
+      "predicted_target": "ku klux klan"
+    }
+  },
+  {
+    "id": "attitude_0994",
+    "ground_truth": {
+      "mechanism": "protective distancing",
+      "label": "contemptuous",
+      "subject": "the speaker the manager",
+      "target": "other employees' emotional venting"
+    },
+    "prediction": {
+      "mechanism": "dominant detachment",
+      "label": "contemptuous",
+      "subject": "the speaker the manager",
+      "target": "other employees' emotional venting"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": true,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Workplace",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant detachment",
+      "predicted_label": "contemptuous",
+      "predicted_subject": "the speaker the manager",
+      "predicted_target": "other employees' emotional venting"
+    }
+  },
+  {
+    "id": "attitude_0630",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "contemptuous",
+      "subject": "manager",
+      "target": "audition candidate"
+    },
+    "prediction": {
+      "mechanism": "submissive alignment",
+      "label": "sympathetic",
+      "subject": "manager",
+      "target": "audition candidate"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Workplace",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "submissive alignment",
+      "predicted_label": "sympathetic",
+      "predicted_subject": "manager",
+      "predicted_target": "audition candidate"
+    }
+  },
+  {
+    "id": "attitude_0322",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "contemptuous",
+      "subject": "speaker",
+      "target": "father"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "neighbor",
+      "target": "father"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": false,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Family Conversations",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "neighbor",
+      "predicted_target": "father"
+    }
+  },
+  {
+    "id": "attitude_0226",
+    "ground_truth": {
+      "mechanism": "protective distancing",
+      "label": "concerned",
+      "subject": "speaker",
+      "target": "unnamed woman"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "speaker",
+      "target": "unnamed woman"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Education & Campus",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "speaker",
+      "predicted_target": "unnamed woman"
+    }
+  },
+  {
+    "id": "attitude_0184",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "contemptuous",
+      "subject": "speaker",
+      "target": "nativist"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "speaker",
+      "target": "nativist"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "speaker",
+      "predicted_target": "nativist"
+    }
+  },
+  {
+    "id": "attitude_0119",
+    "ground_truth": {
+      "mechanism": "dominant affiliation",
+      "label": "contemptuous",
+      "subject": "speaker",
+      "target": "muslim woman"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "speaker",
+      "target": "muslim woman"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "speaker",
+      "predicted_target": "muslim woman"
+    }
+  },
+  {
+    "id": "attitude_0030",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "contemptuous",
+      "subject": "carol",
+      "target": "coworker"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "hr",
+      "target": "coworker"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": false,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Workplace",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "hr",
+      "predicted_target": "coworker"
+    }
+  },
+  {
+    "id": "attitude_0682",
+    "ground_truth": {
+      "mechanism": "dominant affiliation",
+      "label": "contemptuous",
+      "subject": "male coworker",
+      "target": "female coworker"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "male coworker",
+      "target": "female coworker"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Workplace",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "male coworker",
+      "predicted_target": "female coworker"
+    }
+  },
+  {
+    "id": "attitude_0265",
+    "ground_truth": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "speaker",
+      "target": "nazi leader"
+    },
+    "prediction": {
+      "mechanism": "dominant detachment",
+      "label": "contemptuous",
+      "subject": "speaker",
+      "target": "nazi leader"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant detachment",
+      "predicted_label": "contemptuous",
+      "predicted_subject": "speaker",
+      "predicted_target": "nazi leader"
+    }
+  },
+  {
+    "id": "attitude_0976",
+    "ground_truth": {
+      "mechanism": "submissive alignment",
+      "label": "dismissive",
+      "subject": "the standing speaker Jonah",
+      "target": "the coworker being addressed the"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "the standing speaker Jonah",
+      "target": "the coworker being addressed the"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Workplace",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "the standing speaker Jonah",
+      "predicted_target": "the coworker being addressed the"
+    }
+  },
+  {
+    "id": "attitude_0617",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "hostile",
+      "subject": "speaker",
+      "target": "people accused"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "speaker",
+      "target": "people accused"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "speaker",
+      "predicted_target": "people accused"
+    }
+  },
+  {
+    "id": "attitude_0718",
+    "ground_truth": {
+      "mechanism": "dominant affiliation",
+      "label": "dismissive",
+      "subject": "speaker",
+      "target": "man described"
+    },
+    "prediction": {
+      "mechanism": "protective distancing",
+      "label": "skeptical",
+      "subject": "speaker",
+      "target": "man described"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Friend Group",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "protective distancing",
+      "predicted_label": "skeptical",
+      "predicted_subject": "speaker",
+      "predicted_target": "man described"
+    }
+  },
+  {
+    "id": "attitude_0577",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "disapproving",
+      "subject": "speaker",
+      "target": "political group"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "speaker",
+      "target": "political group"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Public & Service",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "speaker",
+      "predicted_target": "political group"
+    }
+  },
+  {
+    "id": "attitude_0332",
+    "ground_truth": {
+      "mechanism": "submissive alignment",
+      "label": "supportive",
+      "subject": "male coworker",
+      "target": "woman black blazer"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "concerned",
+      "subject": "male coworker",
+      "target": "woman black blazer"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Workplace",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "concerned",
+      "predicted_subject": "male coworker",
+      "predicted_target": "woman black blazer"
+    }
+  },
+  {
+    "id": "attitude_0932",
+    "ground_truth": {
+      "mechanism": "protective distancing",
+      "label": "neutral",
+      "subject": "anonymous storyteller",
+      "target": "plotters"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "anonymous storyteller",
+      "target": "plotters"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "anonymous storyteller",
+      "predicted_target": "plotters"
+    }
+  },
+  {
+    "id": "attitude_0476",
+    "ground_truth": {
+      "mechanism": "submissive alignment",
+      "label": "disapproving",
+      "subject": "speaker",
+      "target": "black friends"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "friend",
+      "target": "black friends"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": false,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "friend",
+      "predicted_target": "black friends"
+    }
+  },
+  {
+    "id": "attitude_0719",
+    "ground_truth": {
+      "mechanism": "dominant affiliation",
+      "label": "dismissive",
+      "subject": "speaker",
+      "target": "people talk trash"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "speaker",
+      "target": "people talk trash"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "speaker",
+      "predicted_target": "people talk trash"
+    }
+  },
+  {
+    "id": "attitude_0196",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "contemptuous",
+      "subject": "speaker",
+      "target": "black people"
+    },
+    "prediction": {
+      "mechanism": "dominant detachment",
+      "label": "contemptuous",
+      "subject": "speaker",
+      "target": "black people"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": true,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": true,
+    "meta_scenario": "attitude",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant detachment",
+      "predicted_label": "contemptuous",
+      "predicted_subject": "speaker",
+      "predicted_target": "black people"
+    }
+  },
+  {
+    "id": "attitude_0147",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "contemptuous",
+      "subject": "speaker",
+      "target": "liberals"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "speaker",
+      "target": "liberals"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "speaker",
+      "predicted_target": "liberals"
+    }
+  },
+  {
+    "id": "attitude_0977",
+    "ground_truth": {
+      "mechanism": "submissive alignment",
+      "label": "concerned",
+      "subject": "store employee the speaker",
+      "target": "customer driver"
+    },
+    "prediction": {
+      "mechanism": "dominant detachment",
+      "label": "contemptuous",
+      "subject": "store employee the speaker",
+      "target": "customer driver"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Public & Service",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant detachment",
+      "predicted_label": "contemptuous",
+      "predicted_subject": "store employee the speaker",
+      "predicted_target": "customer driver"
+    }
+  },
+  {
+    "id": "attitude_0895",
+    "ground_truth": {
+      "mechanism": "dominant affiliation",
+      "label": "contemptuous",
+      "subject": "speaker",
+      "target": "person image"
+    },
+    "prediction": {
+      "mechanism": "dominant detachment",
+      "label": "contemptuous",
+      "subject": "speaker",
+      "target": "person image"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": true,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant detachment",
+      "predicted_label": "contemptuous",
+      "predicted_subject": "speaker",
+      "predicted_target": "person image"
+    }
+  },
+  {
+    "id": "attitude_0795",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "contemptuous",
+      "subject": "speaker",
+      "target": "special education student"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "speaker",
+      "target": "special education student"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Education & Campus",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "speaker",
+      "predicted_target": "special education student"
+    }
+  },
+  {
+    "id": "attitude_0141",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "contemptuous",
+      "subject": "speaker",
+      "target": "religious leaders"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "speaker",
+      "target": "religious leaders"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Public & Service",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "speaker",
+      "predicted_target": "religious leaders"
+    }
+  },
+  {
+    "id": "attitude_0177",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "dismissive",
+      "subject": "speaker",
+      "target": "historical atrocity slavery"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "speaker",
+      "target": "historical atrocity slavery"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "North American Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "speaker",
+      "predicted_target": "historical atrocity slavery"
+    }
+  },
+  {
+    "id": "attitude_0541",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "hostile",
+      "subject": "speaker",
+      "target": "black"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "speaker",
+      "target": "black"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "speaker",
+      "predicted_target": "black"
+    }
+  },
+  {
+    "id": "attitude_0202",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "hostile",
+      "subject": "speaker",
+      "target": "child"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "speaker",
+      "target": "child"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "speaker",
+      "predicted_target": "child"
+    }
+  },
+  {
+    "id": "attitude_0097",
+    "ground_truth": {
+      "mechanism": "submissive alignment",
+      "label": "disapproving",
+      "subject": "speaker",
+      "target": "trump"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "speaker",
+      "target": "trump"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Public & Service",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "speaker",
+      "predicted_target": "trump"
+    }
+  },
+  {
+    "id": "attitude_0197",
+    "ground_truth": {
+      "mechanism": "submissive alignment",
+      "label": "supportive",
+      "subject": "speaker",
+      "target": "friend"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "concerned",
+      "subject": "speaker",
+      "target": "friend"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Friend Group",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "concerned",
+      "predicted_subject": "speaker",
+      "predicted_target": "friend"
+    }
+  },
+  {
+    "id": "attitude_0967",
+    "ground_truth": {
+      "mechanism": "submissive alignment",
+      "label": "supportive",
+      "subject": "Kelly the speaker",
+      "target": "Dina coworker"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "concerned",
+      "subject": "Kelly the speaker",
+      "target": "Dina coworker"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Workplace",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "concerned",
+      "predicted_subject": "Kelly the speaker",
+      "predicted_target": "Dina coworker"
+    }
+  },
+  {
+    "id": "attitude_0517",
+    "ground_truth": {
+      "mechanism": "submissive alignment",
+      "label": "supportive",
+      "subject": "speaker",
+      "target": "beloved"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "speaker",
+      "target": "beloved"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": true,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Intimate Relationships",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "speaker",
+      "predicted_target": "beloved"
+    }
+  },
+  {
+    "id": "attitude_0531",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "contemptuous",
+      "subject": "speaker",
+      "target": "service animal"
+    },
+    "prediction": {
+      "mechanism": "protective distancing",
+      "label": "skeptical",
+      "subject": "speaker",
+      "target": "service animal"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "protective distancing",
+      "predicted_label": "skeptical",
+      "predicted_subject": "speaker",
+      "predicted_target": "service animal"
+    }
+  },
+  {
+    "id": "attitude_0642",
+    "ground_truth": {
+      "mechanism": "protective distancing",
+      "label": "neutral",
+      "subject": "storyteller",
+      "target": "couple"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "storyteller",
+      "target": "couple"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Intimate Relationships",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "storyteller",
+      "predicted_target": "couple"
+    }
+  },
+  {
+    "id": "attitude_0382",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "hostile",
+      "subject": "speaker",
+      "target": "muslims"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "speaker",
+      "target": "muslims"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "speaker",
+      "predicted_target": "muslims"
+    }
+  },
+  {
+    "id": "attitude_0066",
+    "ground_truth": {
+      "mechanism": "dominant affiliation",
+      "label": "dismissive",
+      "subject": "speaker",
+      "target": "listener"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "speaker",
+      "target": "listener"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Friend Group",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "speaker",
+      "predicted_target": "listener"
+    }
+  },
+  {
+    "id": "attitude_0077",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "hostile",
+      "subject": "speaker",
+      "target": "unspecified others"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "speaker",
+      "target": "unspecified others"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "speaker",
+      "predicted_target": "unspecified others"
+    }
+  },
+  {
+    "id": "attitude_0302",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "contemptuous",
+      "subject": "speaker",
+      "target": "black people"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "skeptical",
+      "subject": "speaker",
+      "target": "black people"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "skeptical",
+      "predicted_subject": "speaker",
+      "predicted_target": "black people"
+    }
+  },
+  {
+    "id": "attitude_0161",
+    "ground_truth": {
+      "mechanism": "dominant affiliation",
+      "label": "indifferent",
+      "subject": "speaker",
+      "target": "child"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "dismissive",
+      "subject": "speaker",
+      "target": "child"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "dismissive",
+      "predicted_subject": "speaker",
+      "predicted_target": "child"
+    }
+  },
+  {
+    "id": "attitude_0828",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "dismissive",
+      "subject": "speaker",
+      "target": "presidential candidates"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "speaker",
+      "target": "presidential candidates"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "North American Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "speaker",
+      "predicted_target": "presidential candidates"
+    }
+  },
+  {
+    "id": "attitude_0684",
+    "ground_truth": {
+      "mechanism": "protective distancing",
+      "label": "dismissive",
+      "subject": "speaker",
+      "target": "coworker"
+    },
+    "prediction": {
+      "mechanism": "submissive alignment",
+      "label": "supportive",
+      "subject": "speaker",
+      "target": "coworker"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Public & Service",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "submissive alignment",
+      "predicted_label": "supportive",
+      "predicted_subject": "speaker",
+      "predicted_target": "coworker"
+    }
+  },
+  {
+    "id": "attitude_0146",
+    "ground_truth": {
+      "mechanism": "dominant affiliation",
+      "label": "dismissive",
+      "subject": "adult caregiver",
+      "target": "child"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "adult caregiver",
+      "target": "child"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Family Conversations",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "adult caregiver",
+      "predicted_target": "child"
+    }
+  },
+  {
+    "id": "attitude_0941",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "contemptuous",
+      "subject": "viewer",
+      "target": "forehead mark"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "viewer",
+      "target": "forehead mark"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Intimate Relationships",
+    "meta_culture": "South Asian Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "viewer",
+      "predicted_target": "forehead mark"
+    }
+  },
+  {
+    "id": "attitude_1001",
+    "ground_truth": {
+      "mechanism": "submissive alignment",
+      "label": "supportive",
+      "subject": "the employee wearing the name",
+      "target": "the coworker standing with her"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "the speaker",
+      "target": "the coworker standing with her"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": true,
+      "subject": false,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Workplace",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "the speaker",
+      "predicted_target": "the coworker standing with her"
+    }
+  },
+  {
+    "id": "attitude_0424",
+    "ground_truth": {
+      "mechanism": "dominant affiliation",
+      "label": "contemptuous",
+      "subject": "family matriarch",
+      "target": "listener"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "family matriarch",
+      "target": "listener"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Family Conversations",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "family matriarch",
+      "predicted_target": "listener"
+    }
+  },
+  {
+    "id": "attitude_0832",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "dismissive",
+      "subject": "speaker",
+      "target": "unlike notifier"
+    },
+    "prediction": {
+      "mechanism": "dominant detachment",
+      "label": "dismissive",
+      "subject": "speaker",
+      "target": "unlike notifier"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": true,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": true,
+    "meta_scenario": "attitude",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant detachment",
+      "predicted_label": "dismissive",
+      "predicted_subject": "speaker",
+      "predicted_target": "unlike notifier"
+    }
+  },
+  {
+    "id": "attitude_0044",
+    "ground_truth": {
+      "mechanism": "submissive alignment",
+      "label": "disapproving",
+      "subject": "worker",
+      "target": "manager"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "concerned",
+      "subject": "worker",
+      "target": "manager"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Workplace",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "concerned",
+      "predicted_subject": "worker",
+      "predicted_target": "manager"
+    }
+  },
+  {
+    "id": "attitude_0363",
+    "ground_truth": {
+      "mechanism": "protective distancing",
+      "label": "hostile",
+      "subject": "speaker",
+      "target": "terrorist"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "speaker",
+      "target": "terrorist"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "speaker",
+      "predicted_target": "terrorist"
+    }
+  },
+  {
+    "id": "attitude_0802",
+    "ground_truth": {
+      "mechanism": "submissive alignment",
+      "label": "sympathetic",
+      "subject": "speaker",
+      "target": "people deep depression"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "speaker",
+      "target": "people deep depression"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "speaker",
+      "predicted_target": "people deep depression"
+    }
+  },
+  {
+    "id": "attitude_0346",
+    "ground_truth": {
+      "mechanism": "dominant affiliation",
+      "label": "contemptuous",
+      "subject": "storyteller",
+      "target": "listener"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "storyteller",
+      "target": "listener"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Friend Group",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "storyteller",
+      "predicted_target": "listener"
+    }
+  },
+  {
+    "id": "attitude_0079",
+    "ground_truth": {
+      "mechanism": "dominant affiliation",
+      "label": "skeptical",
+      "subject": "dina",
+      "target": "corporate"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "dina",
+      "target": "corporate"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Workplace",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "dina",
+      "predicted_target": "corporate"
+    }
+  },
+  {
+    "id": "attitude_0325",
+    "ground_truth": {
+      "mechanism": "protective distancing",
+      "label": "skeptical",
+      "subject": "mother",
+      "target": "son"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "mother",
+      "target": "son"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Family Conversations",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "mother",
+      "predicted_target": "son"
+    }
+  },
+  {
+    "id": "attitude_0484",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "contemptuous",
+      "subject": "speaker",
+      "target": "militant group members"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "speaker",
+      "target": "militant group members"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "Middle Eastern Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "speaker",
+      "predicted_target": "militant group members"
+    }
+  },
+  {
+    "id": "attitude_0850",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "contemptuous",
+      "subject": "speaker",
+      "target": "black men"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "speaker",
+      "target": "black men"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Family Conversations",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "speaker",
+      "predicted_target": "black men"
+    }
+  },
+  {
+    "id": "attitude_0062",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "dismissive",
+      "subject": "student",
+      "target": "person owned gun"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "student",
+      "target": "person owned gun"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Education & Campus",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "student",
+      "predicted_target": "person owned gun"
+    }
+  },
+  {
+    "id": "attitude_0330",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "dismissive",
+      "subject": "runner speaking",
+      "target": "leashed dog"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "runner speaking",
+      "target": "leashed dog"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "runner speaking",
+      "predicted_target": "leashed dog"
+    }
+  },
+  {
+    "id": "attitude_0929",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "dismissive",
+      "subject": "young woman reacting",
+      "target": "carol s harsh comment"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "young woman reacting",
+      "target": "speaker"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": false
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Public & Service",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "young woman reacting",
+      "predicted_target": "speaker"
+    }
+  },
+  {
+    "id": "attitude_0535",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "hostile",
+      "subject": "angry onlooker",
+      "target": "dating companion"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "angry onlooker",
+      "target": "dating companion"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Intimate Relationships",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "angry onlooker",
+      "predicted_target": "dating companion"
+    }
+  },
+  {
+    "id": "attitude_0966",
+    "ground_truth": {
+      "mechanism": "protective distancing",
+      "label": "skeptical",
+      "subject": "female employee speaker",
+      "target": "male coworker his implication"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "concerned",
+      "subject": "female employee speaker",
+      "target": "male coworker his implication"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Workplace",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "concerned",
+      "predicted_subject": "female employee speaker",
+      "predicted_target": "male coworker his implication"
+    }
+  },
+  {
+    "id": "attitude_0024",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "dismissive",
+      "subject": "speaker",
+      "target": "black lives matter movement"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "speaker",
+      "target": "black lives matter movement"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "North American Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "speaker",
+      "predicted_target": "black lives matter movement"
+    }
+  },
+  {
+    "id": "attitude_0133",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "dismissive",
+      "subject": "speaker",
+      "target": "obama"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "speaker",
+      "target": "obama"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "speaker",
+      "predicted_target": "obama"
+    }
+  },
+  {
+    "id": "attitude_0103",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "dismissive",
+      "subject": "speaker",
+      "target": "leonard"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "concerned",
+      "subject": "speaker",
+      "target": "leonard"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Workplace",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "concerned",
+      "predicted_subject": "speaker",
+      "predicted_target": "leonard"
+    }
+  },
+  {
+    "id": "attitude_0393",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "hostile",
+      "subject": "holiday gift giver",
+      "target": "someone asked"
+    },
+    "prediction": {
+      "mechanism": "dominant detachment",
+      "label": "contemptuous",
+      "subject": "holiday gift giver",
+      "target": "someone asked"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant detachment",
+      "predicted_label": "contemptuous",
+      "predicted_subject": "holiday gift giver",
+      "predicted_target": "someone asked"
+    }
+  },
+  {
+    "id": "attitude_0898",
+    "ground_truth": {
+      "mechanism": "protective distancing",
+      "label": "indifferent",
+      "subject": "speaker",
+      "target": "others"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "speaker",
+      "target": "others"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "speaker",
+      "predicted_target": "others"
+    }
+  },
+  {
+    "id": "attitude_0377",
+    "ground_truth": {
+      "mechanism": "dominant detachment",
+      "label": "disapproving",
+      "subject": "local resident",
+      "target": "nearby neighbor"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "local resident",
+      "target": "nearby neighbor"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Public & Service",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "local resident",
+      "predicted_target": "nearby neighbor"
+    }
+  },
+  {
+    "id": "attitude_0549",
+    "ground_truth": {
+      "mechanism": "dominant affiliation",
+      "label": "contemptuous",
+      "subject": "speaker",
+      "target": "viewer"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "speaker",
+      "target": "viewer"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "speaker",
+      "predicted_target": "viewer"
+    }
+  },
+  {
+    "id": "attitude_0005",
+    "ground_truth": {
+      "mechanism": "protective distancing",
+      "label": "contemptuous",
+      "subject": "speaker",
+      "target": "drug user"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "supportive",
+      "subject": "speaker",
+      "target": "drug user"
+    },
+    "matches": {
+      "mechanism": false,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Online & Social Media",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "supportive",
+      "predicted_subject": "speaker",
+      "predicted_target": "drug user"
+    }
+  },
+  {
+    "id": "attitude_0662",
+    "ground_truth": {
+      "mechanism": "dominant affiliation",
+      "label": "disapproving",
+      "subject": "speaker",
+      "target": "person across table"
+    },
+    "prediction": {
+      "mechanism": "dominant affiliation",
+      "label": "concerned",
+      "subject": "speaker",
+      "target": "person across table"
+    },
+    "matches": {
+      "mechanism": true,
+      "label": false,
+      "subject": true,
+      "target": true
+    },
+    "strict_match": false,
+    "meta_scenario": "attitude",
+    "meta_domain": "Workplace",
+    "meta_culture": "General Culture",
+    "error_analysis": {
+      "mech_mismatch": false,
+      "label_mismatch": false,
+      "subject_format_error": false,
+      "target_format_error": false,
+      "predicted_mechanism": "dominant affiliation",
+      "predicted_label": "concerned",
+      "predicted_subject": "speaker",
+      "predicted_target": "person across table"
+    }
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "total": 100,
+  "accuracy": {
+    "subject": 0.96,
+    "target": 0.93,
+    "mechanism": 0.4,
+    "label": 0.35,
+    "joint": 0.12
+  },
+  "per_scenario": {
+    "affection": {
+      "total": 100,
+      "subject_acc": 0.96,
+      "target_acc": 0.93,
+      "mechanism_acc": 0.4,
+      "label_acc": 0.35,
+      "joint_acc": 0.12
+    }
+  }
+}

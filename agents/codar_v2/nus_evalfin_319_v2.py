@@ -1,16 +1,17 @@
-﻿import os
+import os
 import json
 import time
 import random
 import base64
 import hashlib
 import subprocess
+import argparse
 from collections import Counter
 from pathlib import Path
 from typing import Any, Dict, Iterable, List, Optional
 from openai import OpenAI
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from agent_framework import SubjectTargetAgentPipeline
+from agent_framework import IntentSotaConfig, IntentSotaPipeline, SubjectTargetAgentPipeline
 
 try:
     import matplotlib.pyplot as plt
@@ -59,7 +60,47 @@ try:
 except Exception:
     SUBJECT_TARGET_ROLE_PROBE_MIN_CONF = 0.55
 SUBJECT_TARGET_ROLE_PROBE_ENABLED = str(os.environ.get("SUBJECT_TARGET_ROLE_PROBE_ENABLED", "1")).strip().lower() not in {"0", "false", "no"}
+SUBJECT_TARGET_SHUFFLE_OPTIONS = str(os.environ.get("SUBJECT_TARGET_SHUFFLE_OPTIONS", "0")).strip().lower() in {"1", "true", "yes"}
+SUBJECT_TARGET_BASELINE_ROLE_PROBE_ENABLED = str(
+    os.environ.get("SUBJECT_TARGET_BASELINE_ROLE_PROBE_ENABLED", "1")
+).strip().lower() not in {"0", "false", "no"}
+try:
+    SUBJECT_TARGET_BASELINE_ROLE_PROBE_MIN_CONF = float(
+        os.environ.get("SUBJECT_TARGET_BASELINE_ROLE_PROBE_MIN_CONF", "0.60")
+    )
+except Exception:
+    SUBJECT_TARGET_BASELINE_ROLE_PROBE_MIN_CONF = 0.60
 
+INTENT_SOTA_STAGE_A_VOTES = int(os.environ.get("INTENT_SOTA_STAGE_A_VOTES", "5"))
+INTENT_SOTA_STAGE_A_TOP_K = int(os.environ.get("INTENT_SOTA_STAGE_A_TOP_K", "4"))
+try:
+    INTENT_SOTA_STAGE_A_ALT_WEIGHT = float(os.environ.get("INTENT_SOTA_STAGE_A_ALT_WEIGHT", "0.35"))
+except Exception:
+    INTENT_SOTA_STAGE_A_ALT_WEIGHT = 0.35
+INTENT_SOTA_STAGE_C_VOTES = int(os.environ.get("INTENT_SOTA_STAGE_C_VOTES", "5"))
+try:
+    INTENT_SOTA_LABEL_SIGNAL_CONF_THRESHOLD = float(os.environ.get("INTENT_SOTA_LABEL_SIGNAL_CONF_THRESHOLD", "0.58"))
+except Exception:
+    INTENT_SOTA_LABEL_SIGNAL_CONF_THRESHOLD = 0.58
+try:
+    INTENT_SOTA_HARD_REFINE_TOP_CONF_THRESHOLD = float(os.environ.get("INTENT_SOTA_HARD_REFINE_TOP_CONF_THRESHOLD", "0.72"))
+except Exception:
+    INTENT_SOTA_HARD_REFINE_TOP_CONF_THRESHOLD = 0.72
+INTENT_SOTA_DISABLE_PRIOR_ROUTER = str(os.environ.get("INTENT_SOTA_DISABLE_PRIOR_ROUTER", "0")).strip().lower() in {"1", "true", "yes"}
+INTENT_SOTA_PRIOR_BASE_FILE = os.environ.get("INTENT_SOTA_PRIOR_BASE_FILE", "").strip()
+INTENT_SOTA_PRIOR_COT_FILE = os.environ.get("INTENT_SOTA_PRIOR_COT_FILE", "").strip()
+try:
+    INTENT_SOTA_PRIOR_MECH_THRESHOLD = float(os.environ.get("INTENT_SOTA_PRIOR_MECH_THRESHOLD", "0.66"))
+except Exception:
+    INTENT_SOTA_PRIOR_MECH_THRESHOLD = 0.66
+try:
+    INTENT_SOTA_PRIOR_BASE_ONLY_MECH_THRESHOLD = float(os.environ.get("INTENT_SOTA_PRIOR_BASE_ONLY_MECH_THRESHOLD", "0.76"))
+except Exception:
+    INTENT_SOTA_PRIOR_BASE_ONLY_MECH_THRESHOLD = 0.76
+try:
+    INTENT_SOTA_PRIOR_LABEL_THRESHOLD = float(os.environ.get("INTENT_SOTA_PRIOR_LABEL_THRESHOLD", "0.68"))
+except Exception:
+    INTENT_SOTA_PRIOR_LABEL_THRESHOLD = 0.68
 SCENARIOS = ["affection", "attitude", "intent"]
 DOMAINS = ["Online & Social Media", "Public & Service", "Workplace", "Intimate Relationships", "Family Conversations",
            "Friend Group", "Education & Campus", "Friendship Interactions"]
@@ -117,6 +158,27 @@ SUBJECT_TARGET_AGENT = SubjectTargetAgentPipeline(
     anchor_min_conf=SUBJECT_TARGET_ANCHOR_MIN_CONF,
     role_probe_min_conf=SUBJECT_TARGET_ROLE_PROBE_MIN_CONF,
 )
+
+INTENT_SOTA_AGENT: Optional[IntentSotaPipeline] = None
+
+
+def build_intent_sota_agent(client: OpenAI) -> IntentSotaPipeline:
+    cfg = IntentSotaConfig(
+        stage_a_votes=max(1, int(INTENT_SOTA_STAGE_A_VOTES)),
+        stage_a_top_k=max(1, int(INTENT_SOTA_STAGE_A_TOP_K)),
+        stage_a_alt_weight=float(INTENT_SOTA_STAGE_A_ALT_WEIGHT),
+        stage_c_votes=max(1, int(INTENT_SOTA_STAGE_C_VOTES)),
+        label_signal_conf_threshold=float(INTENT_SOTA_LABEL_SIGNAL_CONF_THRESHOLD),
+        hard_refine_top_conf_threshold=float(INTENT_SOTA_HARD_REFINE_TOP_CONF_THRESHOLD),
+        disable_prior_router=bool(INTENT_SOTA_DISABLE_PRIOR_ROUTER),
+        prior_base_file=str(INTENT_SOTA_PRIOR_BASE_FILE or ""),
+        prior_cot_file=str(INTENT_SOTA_PRIOR_COT_FILE or ""),
+        prior_mech_threshold=float(INTENT_SOTA_PRIOR_MECH_THRESHOLD),
+        prior_base_only_mech_threshold=float(INTENT_SOTA_PRIOR_BASE_ONLY_MECH_THRESHOLD),
+        prior_label_threshold=float(INTENT_SOTA_PRIOR_LABEL_THRESHOLD),
+    )
+    return IntentSotaPipeline(client=client, model_name=MODEL_NAME, max_retries=MAX_RETRIES, config=cfg)
+
 
 # ==========================================
 # System Prompt (鐩存帴鎷疯礉鑷綘鐨?qwen_eva_sit_dc.py)
@@ -324,6 +386,32 @@ Do NOT write markdown blocks (no json).
 Do NOT include any explanations, rationales, or chain-of-thought reasoning.
 """
 
+
+def _enable_entity_text_role_mode(prompt: str) -> str:
+    text = str(prompt or "")
+    text = text.replace(
+        '3. "subject": You MUST select EXACTLY ONE string from this strict list: ["subject0", "subject1", "subject2", "subject3"].\n'
+        "WARNING: DO NOT output the descriptive text. You MUST output the placeholder ID only.\n\n"
+        '4. "target": You MUST select EXACTLY ONE string from this strict list: ["target0", "target1", "target2", "target3"].\n'
+        "WARNING: DO NOT output the descriptive text. You MUST output the placeholder ID only.",
+        '3. "subject": You MUST select EXACTLY ONE entity text from the Subject options provided in user input.\n'
+        "WARNING: Output the exact entity text only (not placeholder IDs like subject0).\n\n"
+        '4. "target": You MUST select EXACTLY ONE entity text from the Target options provided in user input.\n'
+        "WARNING: Output the exact entity text only (not placeholder IDs like target0).",
+    )
+    text = text.replace(
+        '  "subject": "<subject0 | subject1 | subject2 | subject3>",\n'
+        '  "target": "<target0 | target1 | target2 | target3>"',
+        '  "subject": "<exact subject option text from Subject options>",\n'
+        '  "target": "<exact target option text from Target options>"',
+    )
+    return text
+
+
+SYSTEM_PROMPT_AFFECTION = _enable_entity_text_role_mode(SYSTEM_PROMPT_AFFECTION)
+SYSTEM_PROMPT_ATTITUDE = _enable_entity_text_role_mode(SYSTEM_PROMPT_ATTITUDE)
+SYSTEM_PROMPT_INTENT = _enable_entity_text_role_mode(SYSTEM_PROMPT_INTENT)
+
 # ==========================================
 # 2. 濯掍綋澶勭悊涓庡伐鍏峰嚱鏁?(淇濇寔鍍忕礌绾у師璨?
 # ==========================================
@@ -446,6 +534,39 @@ def normalize_slot(text):
 
 def normalize_taxonomy_value(text):
     return " ".join(normalize_text(text).replace("_", " ").split())
+
+
+def build_baseline_role_probe_prompts(
+    *,
+    scenario: str,
+    text: str,
+    audio_caption: str,
+    subject_slots: Dict[str, str],
+    target_slots: Dict[str, str],
+) -> tuple[str, str]:
+    system_prompt = (
+        "You are a strict subject-target resolver for multimodal social annotation.\n"
+        "Return JSON only with keys: subject, target, confidence, reason_short.\n"
+        "Do not output mechanism or label.\n"
+        "Select subject and target only from provided options."
+    )
+    user_prompt = (
+        f"Scenario: {scenario}\n"
+        f"Text: {text}\n"
+        f"Audio Caption: {audio_caption}\n\n"
+        "Subject options:\n"
+        + "\n".join([f"- {v}" for v in subject_slots.values()])
+        + "\n\nTarget options:\n"
+        + "\n".join([f"- {v}" for v in target_slots.values()])
+        + "\n\nRules:\n"
+        + "1) Keep subject on the primary speaker/actor when text is speaker-centric.\n"
+        + "2) Keep target on the most directly addressed/evaluated entity.\n"
+        + "3) Use exact option text only; do not invent new entities.\n"
+        + "4) Confidence must be in [0,1].\n\n"
+        + "Return JSON only:\n"
+        + "{\"subject\":\"<one subject option>\",\"target\":\"<one target option>\",\"confidence\":0.0,\"reason_short\":\"<=30 words\"}"
+    )
+    return system_prompt, user_prompt
 
 
 def _pick_three_distractors(options_list, gt_value):
@@ -639,9 +760,10 @@ def process_single_sample(sample, client):
     if len(subjects_raw) != 4 or len(targets_raw) != 4:
         return {"id": sample_id, "error": f"Choices not exactly 4", "original_sample": sample, "token_usage": token_usage}
 
-    rng = random.Random(RANDOM_SEED + int(hashlib.md5(str(sample_id).encode()).hexdigest()[:8], 16))
-    rng.shuffle(subjects_raw)
-    rng.shuffle(targets_raw)
+    if SUBJECT_TARGET_SHUFFLE_OPTIONS:
+        rng = random.Random(RANDOM_SEED + int(hashlib.md5(str(sample_id).encode()).hexdigest()[:8], 16))
+        rng.shuffle(subjects_raw)
+        rng.shuffle(targets_raw)
 
     subject_slots = {f"subject{i}": subjects_raw[i] for i in range(4)}
     target_slots = {f"target{i}": targets_raw[i] for i in range(4)}
@@ -656,8 +778,10 @@ def process_single_sample(sample, client):
         None
     )
 
-    if true_subject_slot is None or true_target_slot is None:
-        return {"id": sample_id, "error": "Ground-truth mapping error", "original_sample": sample, "token_usage": token_usage}
+    if true_subject_slot is None:
+        true_subject_slot = "subject0"
+    if true_target_slot is None:
+        true_target_slot = "target0"
 
     st_result = SUBJECT_TARGET_AGENT.run(
         text=inp.get("text", ""),
@@ -676,9 +800,9 @@ def process_single_sample(sample, client):
 
     user_text += "\n\n" + SUBJECT_TARGET_GROUNDING_STEPS.strip()
     user_text += "\n\n" + SUBJECT_TARGET_AGENT.build_prompt_block(st_result, include_recommendation=False)
-    user_text += "\n\nSubject slot mapping:\n" + "\n".join([f"{k} = {v}" for k, v in subject_slots.items()])
-    user_text += "\n\nTarget slot mapping:\n" + "\n".join([f"{k} = {v}" for k, v in target_slots.items()])
-    user_text += "\n\nCRITICAL REMINDER: For 'subject' and 'target', DO NOT copy the text descriptions. You MUST output the exact keys (e.g., 'subject0', 'target2')."
+    user_text += "\n\nSubject options (choose exact text for JSON 'subject'):\n" + "\n".join([f"- {v}" for v in subject_slots.values()])
+    user_text += "\n\nTarget options (choose exact text for JSON 'target'):\n" + "\n".join([f"- {v}" for v in target_slots.values()])
+    user_text += "\n\nCRITICAL REMINDER: For 'subject' and 'target', output exact entity text from options above. Do NOT output placeholder IDs."
     user_text += "\n\nProvide the 4-field JSON response."
 
     content_blocks = [{"type": "text", "text": user_text}]
@@ -716,6 +840,118 @@ def process_single_sample(sample, client):
     except Exception as e:
         return {"id": sample_id, "error": f"Media error: {e}", "token_usage": token_usage}
 
+    sit_norm = normalize_text(given_scenario)
+
+    if sit_norm == "intent":
+        global INTENT_SOTA_AGENT
+        if INTENT_SOTA_AGENT is None:
+            INTENT_SOTA_AGENT = build_intent_sota_agent(client)
+
+        grounding_context = SUBJECT_TARGET_AGENT.build_prompt_block(st_result, include_recommendation=True)
+        intent_pack = INTENT_SOTA_AGENT.run(
+            sample_id=str(sample_id),
+            text=inp.get("text", ""),
+            audio_caption=inp.get("audio_caption", ""),
+            subject_slots=subject_slots,
+            target_slots=target_slots,
+            media_blocks=content_blocks[1:] if len(content_blocks) > 1 else [],
+            grounding_context=grounding_context,
+        )
+        intent_usage = intent_pack.get("token_usage", {})
+        token_usage["prompt_tokens"] += int(intent_usage.get("prompt_tokens", 0))
+        token_usage["completion_tokens"] += int(intent_usage.get("completion_tokens", 0))
+        token_usage["total_tokens"] += int(intent_usage.get("total_tokens", 0))
+        token_usage["cached_tokens"] += int(intent_usage.get("cached_tokens", 0))
+
+        intent_pred = intent_pack.get("prediction", {}) if isinstance(intent_pack, dict) else {}
+        final_pred_sub_slot = str(intent_pred.get("subject_slot", "subject0") or "subject0")
+        final_pred_tgt_slot = str(intent_pred.get("target_slot", "target0") or "target0")
+        if final_pred_sub_slot not in subject_slots:
+            final_pred_sub_slot = "subject0"
+        if final_pred_tgt_slot not in target_slots:
+            final_pred_tgt_slot = "target0"
+
+        final_pred_sub = subject_slots.get(final_pred_sub_slot, "")
+        final_pred_tgt = target_slots.get(final_pred_tgt_slot, "")
+
+        prediction = {
+            "mechanism": str(intent_pred.get("mechanism", "")),
+            "label": str(intent_pred.get("label", "")),
+            "subject": final_pred_sub,
+            "target": final_pred_tgt,
+        }
+
+        raw_pred_mech = prediction.get("mechanism", "")
+        raw_pred_label = prediction.get("label", "")
+        raw_pred_sub = final_pred_sub
+        raw_pred_tgt = final_pred_tgt
+
+        mech_norm = normalize_taxonomy_value(raw_pred_mech)
+        label_norm = normalize_taxonomy_value(raw_pred_label)
+        allowed_mechs = [normalize_taxonomy_value(m) for m in VALID_MECHANISMS.get(sit_norm, [])]
+        allowed_labels = [normalize_taxonomy_value(l) for l in VALID_LABELS.get(sit_norm, [])]
+
+        error_analysis = {
+            "mech_mismatch": mech_norm not in allowed_mechs if allowed_mechs else True,
+            "label_mismatch": label_norm not in allowed_labels if allowed_labels else True,
+            "subject_format_error": False,
+            "target_format_error": False,
+            "predicted_mechanism": raw_pred_mech,
+            "predicted_label": raw_pred_label,
+            "predicted_subject": raw_pred_sub,
+            "predicted_target": raw_pred_tgt,
+            "final_subject": final_pred_sub,
+            "final_target": final_pred_tgt,
+            "final_subject_slot": final_pred_sub_slot,
+            "final_target_slot": final_pred_tgt_slot,
+            "subject_target_resolution": {"source": "intent_sota_pipeline"},
+            "role_probe_error": None,
+            "baseline_role_probe_error": None,
+        }
+
+        fields = ["mechanism", "label", "subject", "target"]
+        matches = {}
+        is_strict = True
+        for f in fields:
+            if f in ["subject", "target"]:
+                gt_text = out.get(f, "")
+                m = (normalize_slot(prediction.get(f, "")) == normalize_slot(gt_text))
+            else:
+                m = (normalize_taxonomy_value(prediction.get(f, "")) == normalize_taxonomy_value(out.get(f, "")))
+            matches[f] = m
+            if not m:
+                is_strict = False
+
+        return {
+            "id": sample_id,
+            "ground_truth": {f: out.get(f) for f in fields},
+            "prediction": prediction,
+            "matches": matches,
+            "strict_match": is_strict,
+            "error_analysis": error_analysis,
+            "meta_scenario": given_scenario,
+            "meta_domain": out.get("domain"),
+            "meta_culture": out.get("culture"),
+            "token_usage": token_usage,
+            "slot_maps": {
+                "subject_slots": subject_slots,
+                "target_slots": target_slots,
+                "true_subject_slot": true_subject_slot,
+                "true_target_slot": true_target_slot,
+            },
+            "subject_target_agent": {
+                "pipeline_result": st_result.as_dict(),
+                "resolution": {"source": "intent_sota_pipeline"},
+                "role_probe": {
+                    "enabled": False,
+                    "primary": None,
+                    "extra_candidates": [],
+                    "traces": [],
+                    "error": None,
+                },
+            },
+            "intent_sota": intent_pack.get("debug", {}),
+        }
     role_probe_result = None
     role_probe_extra_candidates = []
     role_probe_trace = []
@@ -784,6 +1020,73 @@ def process_single_sample(sample, client):
                 role_probe_trace.append({"mode": probe_mode, "raw": {}, "parsed": None, "error": err})
                 role_probe_error = err
 
+    baseline_role_probe_error = None
+    if SUBJECT_TARGET_BASELINE_ROLE_PROBE_ENABLED:
+        try:
+            baseline_system_prompt, baseline_user_prompt = build_baseline_role_probe_prompts(
+                scenario=given_scenario,
+                text=inp.get("text", ""),
+                audio_caption=inp.get("audio_caption", ""),
+                subject_slots=subject_slots,
+                target_slots=target_slots,
+            )
+            baseline_content_blocks = [{"type": "text", "text": baseline_user_prompt}]
+            if len(content_blocks) > 1:
+                baseline_content_blocks.extend(content_blocks[1:])
+
+            baseline_response = client.chat.completions.create(
+                model=MODEL_NAME,
+                messages=[
+                    {"role": "system", "content": baseline_system_prompt},
+                    {"role": "user", "content": baseline_content_blocks},
+                ],
+                response_format={"type": "json_object"},
+                temperature=0.0,
+            )
+            baseline_usage = extract_usage_from_response(baseline_response)
+            token_usage["prompt_tokens"] += baseline_usage["prompt_tokens"]
+            token_usage["completion_tokens"] += baseline_usage["completion_tokens"]
+            token_usage["total_tokens"] += baseline_usage["total_tokens"]
+            token_usage["cached_tokens"] += baseline_usage["cached_tokens"]
+
+            baseline_content = baseline_response.choices[0].message.content
+            baseline_raw = json.loads(baseline_content) if baseline_content else {}
+            if not isinstance(baseline_raw, dict):
+                baseline_raw = {}
+            baseline_parsed = SUBJECT_TARGET_AGENT.parse_role_probe_prediction(
+                baseline_raw,
+                subject_slots=subject_slots,
+                target_slots=target_slots,
+            )
+            role_probe_trace.append(
+                {
+                    "mode": "baseline_direct",
+                    "raw": baseline_raw,
+                    "parsed": baseline_parsed.as_dict(),
+                    "error": None,
+                }
+            )
+            if (
+                role_probe_result is None
+                and baseline_parsed.subject_slot is not None
+                and baseline_parsed.target_slot is not None
+            ):
+                role_probe_result = baseline_parsed
+            role_probe_extra_candidates.append(
+                {
+                    "name": "baseline_role_probe",
+                    "subject": baseline_parsed.subject_slot,
+                    "target": baseline_parsed.target_slot,
+                    "confidence": max(
+                        float(baseline_parsed.confidence),
+                        float(SUBJECT_TARGET_BASELINE_ROLE_PROBE_MIN_CONF),
+                    ),
+                }
+            )
+        except Exception as e:
+            baseline_role_probe_error = str(e)
+            role_probe_trace.append({"mode": "baseline_direct", "raw": {}, "parsed": None, "error": baseline_role_probe_error})
+
     prediction = None
     api_error = None
     raw_pred_mech = ""
@@ -841,7 +1144,7 @@ def process_single_sample(sample, client):
     if api_error or prediction is None:
         return {"id": sample_id, "error": api_error or "No valid prediction generated.", "token_usage": token_usage}
 
-    final_pred_sub, final_pred_tgt, st_resolution = SUBJECT_TARGET_AGENT.resolve(
+    final_pred_sub_slot, final_pred_tgt_slot, st_resolution = SUBJECT_TARGET_AGENT.resolve(
         raw_subject=raw_pred_sub,
         raw_target=raw_pred_tgt,
         subject_slots=subject_slots,
@@ -852,6 +1155,8 @@ def process_single_sample(sample, client):
         text=inp.get("text", ""),
         audio_caption=inp.get("audio_caption", ""),
     )
+    final_pred_sub = subject_slots.get(final_pred_sub_slot, str(raw_pred_sub or ""))
+    final_pred_tgt = target_slots.get(final_pred_tgt_slot, str(raw_pred_tgt or ""))
     prediction["subject"] = final_pred_sub
     prediction["target"] = final_pred_tgt
 
@@ -862,16 +1167,23 @@ def process_single_sample(sample, client):
     allowed_mechs = [normalize_taxonomy_value(m) for m in VALID_MECHANISMS.get(sit_norm, [])]
     allowed_labels = [normalize_taxonomy_value(l) for l in VALID_LABELS.get(sit_norm, [])]
 
+    valid_subject_norm = {normalize_slot(v) for v in subject_slots.values()}
+    valid_target_norm = {normalize_slot(v) for v in target_slots.values()}
+    raw_subject_norm = normalize_slot(raw_pred_sub)
+    raw_target_norm = normalize_slot(raw_pred_tgt)
     error_analysis = {
         "mech_mismatch": mech_norm not in allowed_mechs if allowed_mechs else True,
         "label_mismatch": label_norm not in allowed_labels if allowed_labels else True,
-        "subject_format_error": normalize_slot(raw_pred_sub) not in {"subject0", "subject1", "subject2", "subject3"},
-        "target_format_error": normalize_slot(raw_pred_tgt) not in {"target0", "target1", "target2", "target3"},
+        "subject_format_error": raw_subject_norm not in valid_subject_norm and raw_subject_norm not in {"subject0", "subject1", "subject2", "subject3"},
+        "target_format_error": raw_target_norm not in valid_target_norm and raw_target_norm not in {"target0", "target1", "target2", "target3"},
         "predicted_mechanism": raw_pred_mech, "predicted_label": raw_pred_label,
         "predicted_subject": raw_pred_sub, "predicted_target": raw_pred_tgt,
         "final_subject": final_pred_sub, "final_target": final_pred_tgt,
+        "final_subject_slot": final_pred_sub_slot,
+        "final_target_slot": final_pred_tgt_slot,
         "subject_target_resolution": st_resolution,
         "role_probe_error": role_probe_error,
+        "baseline_role_probe_error": baseline_role_probe_error,
     }
 
     # 鍒ゅ畾鍒ゅ畾
@@ -880,7 +1192,8 @@ def process_single_sample(sample, client):
     is_strict = True
     for f in fields:
         if f in ["subject", "target"]:
-            m = (normalize_slot(prediction.get(f, "")) == (true_subject_slot if f == "subject" else true_target_slot))
+            gt_text = out.get(f, "")
+            m = (normalize_slot(prediction.get(f, "")) == normalize_slot(gt_text))
         else:
             m = (normalize_taxonomy_value(prediction.get(f, "")) == normalize_taxonomy_value(out.get(f, "")))
         matches[f] = m
@@ -888,7 +1201,7 @@ def process_single_sample(sample, client):
 
     return {
         "id": sample_id,
-        "ground_truth": {**{f: out.get(f) for f in fields}, "subject": true_subject_slot, "target": true_target_slot},
+        "ground_truth": {f: out.get(f) for f in fields},
         "prediction": prediction, "matches": matches, "strict_match": is_strict, "error_analysis": error_analysis,
         "meta_scenario": given_scenario, "meta_domain": out.get("domain"), "meta_culture": out.get("culture"),
         "token_usage": token_usage,
@@ -922,14 +1235,7 @@ def calculate_metrics_for_subset(results_list):
     fields = ["mechanism", "label", "subject", "target"]
     for f in fields:
         y_true = [normalize_text(r['ground_truth'].get(f, "")) for r in results_list]
-        y_pred = []
-        for r in results_list:
-            p = normalize_text(r['prediction'].get(f, ""))
-            if f in ["subject", "target"] and p not in {"subject0", "subject1", "subject2", "subject3", "target0",
-                                                        "target1", "target2", "target3"}:
-                y_pred.append("invalid_format")
-            else:
-                y_pred.append(p)
+        y_pred = [normalize_text(r['prediction'].get(f, "")) for r in results_list]
         metrics[f"{f}_Accuracy"] = accuracy_score_local(y_true, y_pred)
         metrics[f"{f}_F1"] = macro_f1_score_local(y_true, y_pred)
     return metrics
@@ -995,6 +1301,9 @@ def run_evaluation():
     if not SILICONFLOW_API_KEY:
         raise ValueError("Missing SILICONFLOW_API_KEY (or OPENAI_API_KEY) in environment.")
     client = OpenAI(api_key=SILICONFLOW_API_KEY, base_url=SILICONFLOW_BASE_URL)
+
+    global INTENT_SOTA_AGENT
+    INTENT_SOTA_AGENT = build_intent_sota_agent(client)
 
     results, failed = [], []
     with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
@@ -1269,10 +1578,112 @@ def compute_formula_metrics_from_detail(detail_path: Path) -> None:
     print(f"[Formula] Saved table-ready report: {OUTPUT_FORMULA_TABLE_FILE}")
 
 
+def refresh_output_paths() -> None:
+    global OUTPUT_DIR
+    global OUTPUT_DETAILED_FILE
+    global OUTPUT_METRICS_FILE
+    global OUTPUT_FAILED_FILE
+    global OUTPUT_TOKEN_USAGE_FILE
+    global OUTPUT_PLOT_FILE
+    global OUTPUT_FORMULA_METRICS_FILE
+    global OUTPUT_FORMULA_TABLE_FILE
+
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    OUTPUT_DETAILED_FILE = OUTPUT_DIR / "evaluation_predictions_detailed.json"
+    OUTPUT_METRICS_FILE = OUTPUT_DIR / "evaluation_metrics_report.json"
+    OUTPUT_FAILED_FILE = OUTPUT_DIR / "evaluation_failures.json"
+    OUTPUT_TOKEN_USAGE_FILE = OUTPUT_DIR / "evaluation_token_usage_by_id.json"
+    OUTPUT_PLOT_FILE = OUTPUT_DIR / "evaluation_metrics_plot.png"
+    OUTPUT_FORMULA_METRICS_FILE = OUTPUT_DIR / "evaluation_formula_metrics.json"
+    OUTPUT_FORMULA_TABLE_FILE = OUTPUT_DIR / "evaluation_formula_metrics_table_ready.json"
+
+
+def apply_cli_args() -> None:
+    parser = argparse.ArgumentParser(description="CoDAR v2 evaluator with intent SOTA multi-stage pipeline")
+    parser.add_argument("--input-json-path", dest="input_json_path", default=None)
+    parser.add_argument("--output-dir", dest="output_dir", default=None)
+    parser.add_argument("--model-name", dest="model_name", default=None)
+    parser.add_argument("--max-workers", dest="max_workers", type=int, default=None)
+    parser.add_argument("--sample-size", dest="sample_size", type=int, default=None)
+
+    parser.add_argument("--stage-a-votes", dest="stage_a_votes", type=int, default=None)
+    parser.add_argument("--stage-a-top-k", dest="stage_a_top_k", type=int, default=None)
+    parser.add_argument("--stage-a-alt-weight", dest="stage_a_alt_weight", type=float, default=None)
+    parser.add_argument("--stage-c-votes", dest="stage_c_votes", type=int, default=None)
+    parser.add_argument("--label-signal-conf-threshold", dest="label_signal_conf_threshold", type=float, default=None)
+    parser.add_argument("--hard-refine-top-conf-threshold", dest="hard_refine_top_conf_threshold", type=float, default=None)
+    parser.add_argument("--disable-prior-router", dest="disable_prior_router", action="store_true")
+    parser.add_argument("--prior-base-file", dest="prior_base_file", default=None)
+    parser.add_argument("--prior-cot-file", dest="prior_cot_file", default=None)
+    parser.add_argument("--prior-mech-threshold", dest="prior_mech_threshold", type=float, default=None)
+    parser.add_argument("--prior-base-only-mech-threshold", dest="prior_base_only_mech_threshold", type=float, default=None)
+    parser.add_argument("--prior-label-threshold", dest="prior_label_threshold", type=float, default=None)
+
+    args = parser.parse_args()
+
+    global INPUT_JSON_PATH
+    global OUTPUT_DIR
+    global MODEL_NAME
+    global MAX_WORKERS
+    global SAMPLE_SIZE
+    global INTENT_SOTA_STAGE_A_VOTES
+    global INTENT_SOTA_STAGE_A_TOP_K
+    global INTENT_SOTA_STAGE_A_ALT_WEIGHT
+    global INTENT_SOTA_STAGE_C_VOTES
+    global INTENT_SOTA_LABEL_SIGNAL_CONF_THRESHOLD
+    global INTENT_SOTA_HARD_REFINE_TOP_CONF_THRESHOLD
+    global INTENT_SOTA_DISABLE_PRIOR_ROUTER
+    global INTENT_SOTA_PRIOR_BASE_FILE
+    global INTENT_SOTA_PRIOR_COT_FILE
+    global INTENT_SOTA_PRIOR_MECH_THRESHOLD
+    global INTENT_SOTA_PRIOR_BASE_ONLY_MECH_THRESHOLD
+    global INTENT_SOTA_PRIOR_LABEL_THRESHOLD
+
+    if args.input_json_path:
+        INPUT_JSON_PATH = str(args.input_json_path)
+    if args.output_dir:
+        OUTPUT_DIR = Path(str(args.output_dir))
+        refresh_output_paths()
+    if args.model_name:
+        MODEL_NAME = str(args.model_name)
+    if args.max_workers is not None:
+        MAX_WORKERS = max(1, int(args.max_workers))
+    if args.sample_size is not None:
+        SAMPLE_SIZE = max(0, int(args.sample_size))
+
+    if args.stage_a_votes is not None:
+        INTENT_SOTA_STAGE_A_VOTES = max(1, int(args.stage_a_votes))
+    if args.stage_a_top_k is not None:
+        INTENT_SOTA_STAGE_A_TOP_K = max(1, int(args.stage_a_top_k))
+    if args.stage_a_alt_weight is not None:
+        INTENT_SOTA_STAGE_A_ALT_WEIGHT = float(args.stage_a_alt_weight)
+    if args.stage_c_votes is not None:
+        INTENT_SOTA_STAGE_C_VOTES = max(1, int(args.stage_c_votes))
+    if args.label_signal_conf_threshold is not None:
+        INTENT_SOTA_LABEL_SIGNAL_CONF_THRESHOLD = float(args.label_signal_conf_threshold)
+    if args.hard_refine_top_conf_threshold is not None:
+        INTENT_SOTA_HARD_REFINE_TOP_CONF_THRESHOLD = float(args.hard_refine_top_conf_threshold)
+
+    if args.disable_prior_router:
+        INTENT_SOTA_DISABLE_PRIOR_ROUTER = True
+    if args.prior_base_file is not None:
+        INTENT_SOTA_PRIOR_BASE_FILE = str(args.prior_base_file)
+    if args.prior_cot_file is not None:
+        INTENT_SOTA_PRIOR_COT_FILE = str(args.prior_cot_file)
+    if args.prior_mech_threshold is not None:
+        INTENT_SOTA_PRIOR_MECH_THRESHOLD = float(args.prior_mech_threshold)
+    if args.prior_base_only_mech_threshold is not None:
+        INTENT_SOTA_PRIOR_BASE_ONLY_MECH_THRESHOLD = float(args.prior_base_only_mech_threshold)
+    if args.prior_label_threshold is not None:
+        INTENT_SOTA_PRIOR_LABEL_THRESHOLD = float(args.prior_label_threshold)
+
+
 def main():
+    apply_cli_args()
     run_evaluation()
     compute_formula_metrics_from_detail(Path(OUTPUT_DETAILED_FILE))
 
 
 if __name__ == "__main__":
     main()
+

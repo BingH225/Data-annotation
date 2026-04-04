@@ -37,6 +37,98 @@ _AFFECTION_LABEL_CUES: Dict[str, List[str]] = {
 
 _AFFECTION_ALT_LABELS: List[str] = ["angry", "bad", "happy", "sad", "fearful"]
 
+_AFFECTION_DISGUST_STRONG_CUES: List[str] = [
+    "bomb",
+    "kill",
+    "killing",
+    "terror",
+    "hitler",
+    "isis",
+    "raping",
+    "rape",
+    "virgin",
+    "virgins",
+    "whiteprivilege",
+    "no place",
+    "obama voters",
+    "fled from",
+    "goat",
+    "tranny",
+    "innocent people",
+    "national anthem",
+]
+
+_AFFECTION_DISGUST_PROFANITY_CUES: List[str] = ["wtf", "fuck", "fucked", "fucking"]
+
+_ATTITUDE_LABEL_CUES: Dict[str, List[str]] = {
+    "supportive": ["you got this", "i support", "on your side", "good job", "i'm with you"],
+    "appreciative": ["thank you", "nice work", "well done", "impressive"],
+    "sympathetic": ["sorry", "that sucks", "feel for you", "must be hard"],
+    "neutral": ["according to", "reported", "stated", "it is"],
+    "indifferent": ["meh", "whatever", "not my problem", "i don't care"],
+    "concerned": ["careful", "risk", "worry", "dangerous"],
+    "skeptical": ["really", "are you sure", "not convinced", "doubt"],
+    "dismissive": ["yeah yeah", "who cares", "doesn't matter", "move on", "not worth", "get over it", "big deal", "so what"],
+    "disapproving": [
+        "shouldn't",
+        "not okay",
+        "wrong",
+        "bad idea",
+        "don't do that",
+        "third strike",
+        "not cool",
+        "can't believe",
+        "not acceptable",
+        "out of line",
+        "unprofessional",
+        "inappropriate",
+    ],
+    "contemptuous": ["pathetic", "loser", "beneath", "idiot", "fucker", "ignorant", "what a baby", "trash"],
+    "hostile": [
+        "hate you",
+        "shut up",
+        "go to hell",
+        "attack",
+        "threat",
+        "fuck",
+        "fucking",
+        "wtf",
+        "bitch",
+        "stfu",
+        "die",
+        "screw you",
+        "drop dead",
+    ],
+}
+
+_ATTITUDE_GENERIC_LABELS = {"indifferent", "neutral", "supportive"}
+_ATTITUDE_SPECIFIC_NEGATIVE_LABELS = ["contemptuous", "hostile", "disapproving", "dismissive"]
+
+_INTENT_LABEL_CUES: Dict[str, List[str]] = {
+    "mitigate": ["calm down", "let's settle", "no offense", "keep peace", "de-escalate"],
+    "intimidate": ["or else", "watch yourself", "you'll regret", "threat", "scare"],
+    "alienate": ["they don't belong", "their kind", "outsider", "muslims", "faggot", "master race"],
+    "mock": ["lol", "haha", "joke", "funny", "clown", "ridiculous", "midget", "mengele"],
+    "denounce": ["everyone should know", "expose", "call out", "cancel"],
+    "provoke": ["trigger", "bait", "come at me", "goad", "taunt", "show us", "what did you"],
+    "dominate": ["i decide", "obey", "know your place", "my rules", "real man"],
+    "condemn": ["immoral", "shame on", "disgrace", "unacceptable", "wrong", "not okay"],
+}
+
+_INTENT_GENERIC_LABELS = {"provoke", "mitigate"}
+_INTENT_SPECIFIC_LABELS = ["mock", "alienate", "condemn", "intimidate", "dominate", "denounce"]
+_INTENT_TOXIC_CUES: List[str] = [
+    "faggot",
+    "retarded",
+    "whore",
+    "bitch",
+    "kill",
+    "destroy",
+    "master race",
+    "school shooting",
+    "mengele",
+]
+
 
 def should_rejudge_branch(
     scored: List[Dict[str, Any]],
@@ -264,6 +356,59 @@ class RJGPipeline:
             "alt_max": int(alt_max),
         }
 
+    def _affection_disgust_clarify_hits(self, text: str) -> Dict[str, Any]:
+        lowered = str(text or "").lower()
+        strong_matches = [cue for cue in _AFFECTION_DISGUST_STRONG_CUES if cue in lowered]
+        profanity_matches = [cue for cue in _AFFECTION_DISGUST_PROFANITY_CUES if cue in lowered]
+        return {
+            "strong_count": len(strong_matches),
+            "profanity_count": len(profanity_matches),
+            "strong_matches": strong_matches,
+            "profanity_matches": profanity_matches,
+            "has_srsly": ("srsly" in lowered),
+        }
+
+    def _clarify_affection_label_internal(
+        self,
+        text: str,
+        current_label: str,
+        baseline_label: str,
+        rjg_label: str,
+    ) -> Tuple[str, Dict[str, Any]]:
+        current = str(current_label or "").strip()
+        baseline = str(baseline_label or "").strip()
+        rjg = str(rjg_label or "").strip()
+        hits = self._affection_disgust_clarify_hits(text)
+        strong_count = int(hits.get("strong_count", 0))
+        profanity_count = int(hits.get("profanity_count", 0))
+        has_srsly = bool(hits.get("has_srsly", False))
+
+        final = current
+        reason = "no_change"
+        if current.lower() in {"happy", "angry", "bad"}:
+            if strong_count >= 1 or (profanity_count >= 1 and has_srsly):
+                final = "disgusted"
+                reason = "clarify_disgust_toxicity_cues"
+        elif current.lower() == "disgusted":
+            if strong_count == 0 and profanity_count == 0:
+                if baseline.lower() in {"happy", "sad"} and baseline.lower() == rjg.lower():
+                    final = baseline
+                    reason = "clarify_revert_weak_disgust"
+
+        info = {
+            "before": current,
+            "after": final,
+            "reason": reason,
+            "baseline_label": baseline,
+            "rjg_label": rjg,
+            "strong_count": strong_count,
+            "profanity_count": profanity_count,
+            "strong_matches": hits.get("strong_matches", []),
+            "profanity_matches": hits.get("profanity_matches", []),
+            "has_srsly": has_srsly,
+        }
+        return final, info
+
     def _run_baseline_probe(
         self,
         sample: SampleInput,
@@ -341,13 +486,292 @@ class RJGPipeline:
             "alt_max": profile["alt_max"],
         }
 
+    def _affection_label_vote(self, scored: List[Dict[str, Any]]) -> Dict[str, Any]:
+        votes: Dict[str, float] = {}
+        for row in scored:
+            label = str(row.get("label", "")).strip()
+            if not label:
+                continue
+            comp = row.get("components", {}) or {}
+            source = str(row.get("source", "")).strip().lower()
+            raw_vote = (
+                0.55 * float(comp.get("judge_label", 0.0))
+                + 0.20 * float(comp.get("heuristic_agreement", 0.0))
+                + 0.12 * float(comp.get("retrieve_support", 0.0))
+                + 0.13 * float(row.get("total_score", 0.0))
+                - 0.30 * float(comp.get("penalty", 0.0))
+            )
+            if source == "baseline_probe":
+                raw_vote *= 0.60
+            vote = max(0.0, raw_vote)
+            votes[label] = votes.get(label, 0.0) + vote
+        if not votes:
+            return {"label": "", "margin": 0.0, "ranked": []}
+        ranked = sorted(votes.items(), key=lambda x: (x[1], x[0]), reverse=True)
+        second = ranked[1][1] if len(ranked) > 1 else ranked[0][1]
+        return {
+            "label": ranked[0][0],
+            "margin": float(ranked[0][1] - second),
+            "ranked": ranked[:8],
+        }
+
     def _arbitrate_affection_label(
         self,
         text: str,
         rjg_label: str,
         baseline_label: str,
+        vote_label: str = "",
+        vote_margin: float = 0.0,
+        rjg_label_score: float = 0.0,
     ) -> Tuple[str, Dict[str, Any]]:
         profile = self._affection_signal_profile(text)
+        rjg = str(rjg_label or "").strip()
+        baseline = str(baseline_label or "").strip()
+        vote = str(vote_label or "").strip()
+        final_label = rjg or baseline
+        reason = "fallback_rjg"
+
+        if baseline:
+            final_label = baseline
+            reason = "baseline_default"
+            # Restrict disgust override to baseline labels that are commonly over-generic.
+            if rjg.lower() == "disgusted" and baseline.lower() in {"happy", "sad", "bad"}:
+                if profile["disgust_hits"] >= 1 and profile["alt_max"] <= 1:
+                    final_label = "disgusted"
+                    reason = "rjg_disgust_override"
+            elif baseline.lower() == "disgusted" and rjg and rjg.lower() != "disgusted":
+                if profile["disgust_hits"] == 0 and profile["alt_max"] >= 1:
+                    final_label = rjg
+                    reason = "avoid_false_disgust"
+
+        info = {
+            "reason": reason,
+            "rjg_label": rjg,
+            "baseline_label": baseline,
+            "vote_label": vote,
+            "vote_margin": float(vote_margin),
+            "rjg_label_score": float(rjg_label_score),
+            "selected_label": final_label,
+            "disgust_hits": profile["disgust_hits"],
+            "alt_max": profile["alt_max"],
+            "signal_hits": profile["hits"],
+        }
+        return final_label, info
+
+    def _attitude_signal_profile(self, text: str) -> Dict[str, Any]:
+        hits = {lb: self._keyword_hits(text, kws) for lb, kws in _ATTITUDE_LABEL_CUES.items()}
+        generic_hits = sum(int(hits.get(lb, 0)) for lb in _ATTITUDE_GENERIC_LABELS)
+        specific_negative_hits = sum(int(hits.get(lb, 0)) for lb in _ATTITUDE_SPECIFIC_NEGATIVE_LABELS)
+        positive_hits = sum(int(hits.get(lb, 0)) for lb in ["supportive", "appreciative", "sympathetic", "concerned"])
+        dominant_label = ""
+        dominant_hits = 0
+        for lb, val in hits.items():
+            if int(val) > dominant_hits:
+                dominant_label = lb
+                dominant_hits = int(val)
+        return {
+            "hits": hits,
+            "generic_hits": generic_hits,
+            "specific_negative_hits": specific_negative_hits,
+            "positive_hits": positive_hits,
+            "dominant_label": dominant_label,
+            "dominant_hits": dominant_hits,
+        }
+
+    def _intent_signal_profile(self, text: str) -> Dict[str, Any]:
+        hits = {lb: self._keyword_hits(text, kws) for lb, kws in _INTENT_LABEL_CUES.items()}
+        generic_hits = sum(int(hits.get(lb, 0)) for lb in _INTENT_GENERIC_LABELS)
+        specific_hits = sum(int(hits.get(lb, 0)) for lb in _INTENT_SPECIFIC_LABELS)
+        toxic_hits = self._keyword_hits(text, _INTENT_TOXIC_CUES)
+        dominant_label = ""
+        dominant_hits = 0
+        for lb, val in hits.items():
+            if int(val) > dominant_hits:
+                dominant_label = lb
+                dominant_hits = int(val)
+        return {
+            "hits": hits,
+            "generic_hits": generic_hits,
+            "specific_hits": specific_hits,
+            "toxic_hits": toxic_hits,
+            "dominant_label": dominant_label,
+            "dominant_hits": dominant_hits,
+        }
+
+    def _attitude_candidate_adjustment(
+        self,
+        text: str,
+        candidate_label: str,
+        baseline_label: str,
+    ) -> Dict[str, Any]:
+        profile = self._attitude_signal_profile(text)
+        cand = str(candidate_label or "").strip().lower()
+        base = str(baseline_label or "").strip().lower()
+        label_bonus = 0.0
+        penalty_add = 0.0
+        reason = "none"
+
+        if base and cand == base and base not in _ATTITUDE_GENERIC_LABELS:
+            label_bonus += 0.16
+            reason = "baseline_specific_anchor"
+
+        if cand in _ATTITUDE_GENERIC_LABELS and int(profile.get("specific_negative_hits", 0)) >= 1:
+            penalty_add += 0.14 + 0.03 * max(0, int(profile.get("specific_negative_hits", 0)) - 1)
+            reason = "attitude_generic_overuse_penalty"
+
+        if cand in {"contemptuous", "hostile", "disapproving"} and int(profile.get("specific_negative_hits", 0)) >= 1:
+            label_bonus += 0.06 + 0.02 * max(0, int(profile.get("specific_negative_hits", 0)) - 1)
+            reason = "attitude_specific_negative_bonus"
+
+        hits = profile.get("hits", {}) or {}
+        contempt_hits = int(hits.get("contemptuous", 0))
+        dismissive_hits = int(hits.get("dismissive", 0))
+        disapproving_hits = int(hits.get("disapproving", 0))
+        hostile_hits = int(hits.get("hostile", 0))
+        max_alt_neg = max(dismissive_hits, disapproving_hits, hostile_hits)
+        if cand == "contemptuous" and max_alt_neg >= max(1, contempt_hits):
+            penalty_add += 0.14 + 0.03 * max(0, max_alt_neg - contempt_hits)
+            reason = "attitude_contempt_boundary_penalty"
+        if cand == "hostile" and hostile_hits >= 1:
+            label_bonus += 0.08 + 0.02 * max(0, hostile_hits - 1)
+            reason = "attitude_hostile_anchor_bonus"
+        if cand == "dismissive" and dismissive_hits >= 1:
+            label_bonus += 0.07 + 0.02 * max(0, dismissive_hits - 1)
+            reason = "attitude_dismissive_anchor_bonus"
+        if cand == "disapproving" and disapproving_hits >= 1:
+            label_bonus += 0.07 + 0.02 * max(0, disapproving_hits - 1)
+            reason = "attitude_disapproving_anchor_bonus"
+
+        if cand == "supportive" and int(profile.get("specific_negative_hits", 0)) >= 1:
+            penalty_add += 0.18
+            reason = "attitude_supportive_conflict_penalty"
+        if cand == "supportive" and int(profile.get("positive_hits", 0)) <= int(profile.get("specific_negative_hits", 0)):
+            penalty_add += 0.10
+            reason = "attitude_supportive_overpredict_penalty"
+
+        return {
+            "label_bonus": float(label_bonus),
+            "penalty_add": float(penalty_add),
+            "reason": reason,
+            "generic_hits": int(profile.get("generic_hits", 0)),
+            "specific_negative_hits": int(profile.get("specific_negative_hits", 0)),
+            "dominant_label": str(profile.get("dominant_label", "")),
+        }
+
+    def _intent_candidate_adjustment(
+        self,
+        text: str,
+        candidate_label: str,
+        baseline_label: str,
+    ) -> Dict[str, Any]:
+        profile = self._intent_signal_profile(text)
+        cand = str(candidate_label or "").strip().lower()
+        base = str(baseline_label or "").strip().lower()
+        label_bonus = 0.0
+        penalty_add = 0.0
+        reason = "none"
+
+        if base and cand == base and base not in _INTENT_GENERIC_LABELS:
+            label_bonus += 0.16
+            reason = "baseline_specific_anchor"
+
+        if cand in _INTENT_GENERIC_LABELS and int(profile.get("specific_hits", 0)) >= 1:
+            penalty_add += 0.14 + 0.03 * max(0, int(profile.get("specific_hits", 0)) - 1)
+            reason = "intent_generic_overuse_penalty"
+        if cand == "mitigate" and int(profile.get("toxic_hits", 0)) >= 1:
+            penalty_add += 0.20 + 0.03 * max(0, int(profile.get("toxic_hits", 0)) - 1)
+            reason = "intent_mitigate_toxic_penalty"
+
+        if cand in set(_INTENT_SPECIFIC_LABELS) and int(profile.get("specific_hits", 0)) >= 1:
+            label_bonus += 0.06 + 0.02 * max(0, int(profile.get("specific_hits", 0)) - 1)
+            reason = "intent_specific_label_bonus"
+
+        return {
+            "label_bonus": float(label_bonus),
+            "penalty_add": float(penalty_add),
+            "reason": reason,
+            "generic_hits": int(profile.get("generic_hits", 0)),
+            "specific_hits": int(profile.get("specific_hits", 0)),
+            "toxic_hits": int(profile.get("toxic_hits", 0)),
+            "dominant_label": str(profile.get("dominant_label", "")),
+        }
+
+    def _arbitrate_attitude_label(
+        self,
+        text: str,
+        rjg_label: str,
+        baseline_label: str,
+    ) -> Tuple[str, Dict[str, Any]]:
+        profile = self._attitude_signal_profile(text)
+        rjg = str(rjg_label or "").strip()
+        baseline = str(baseline_label or "").strip()
+        final_label = rjg or baseline
+        reason = "fallback_rjg"
+
+        if baseline:
+            final_label = rjg or baseline
+            reason = "rjg_default_with_baseline"
+            base_generic = baseline.lower() in _ATTITUDE_GENERIC_LABELS
+            rjg_generic = rjg.lower() in _ATTITUDE_GENERIC_LABELS
+            specific_negative_hits = int(profile.get("specific_negative_hits", 0))
+            dominant_label = str(profile.get("dominant_label", "")).strip().lower()
+            hits = profile.get("hits", {}) or {}
+            contempt_hits = int(hits.get("contemptuous", 0))
+            disapproving_hits = int(hits.get("disapproving", 0))
+            dismissive_hits = int(hits.get("dismissive", 0))
+            hostile_hits = int(hits.get("hostile", 0))
+            specific_negatives = {"contemptuous", "hostile", "disapproving", "dismissive"}
+            rjg_l = rjg.lower()
+            base_l = baseline.lower()
+
+            if base_generic and rjg and (not rjg_generic) and specific_negative_hits >= 1:
+                final_label = rjg
+                reason = "rjg_specific_override_generic_baseline"
+            elif base_l == "supportive" and rjg_l in specific_negatives and specific_negative_hits >= 1:
+                final_label = rjg
+                reason = "rjg_negative_override_supportive_baseline"
+            elif base_l == "contemptuous" and rjg_l in {"hostile", "dismissive", "disapproving"}:
+                if int(hits.get(rjg_l, 0)) >= max(1, contempt_hits):
+                    final_label = rjg
+                    reason = "rjg_boundary_override_contemptuous_baseline"
+            elif (not base_generic) and rjg_generic and specific_negative_hits >= 1:
+                final_label = baseline
+                reason = "keep_baseline_specific"
+            elif (not base_generic) and not rjg:
+                final_label = baseline
+                reason = "baseline_fallback_no_rjg"
+            elif rjg and (not rjg_generic) and rjg.lower() == dominant_label:
+                final_label = rjg
+                reason = "rjg_dominant_signal_override"
+            elif base_l == "contemptuous" and max(disapproving_hits, dismissive_hits, hostile_hits) >= max(1, contempt_hits):
+                if disapproving_hits >= dismissive_hits and disapproving_hits >= hostile_hits and disapproving_hits >= 1:
+                    final_label = "disapproving"
+                    reason = "boundary_shift_to_disapproving"
+                elif dismissive_hits >= hostile_hits and dismissive_hits >= 1:
+                    final_label = "dismissive"
+                    reason = "boundary_shift_to_dismissive"
+                elif hostile_hits >= 1:
+                    final_label = "hostile"
+                    reason = "boundary_shift_to_hostile"
+
+        return final_label, {
+            "reason": reason,
+            "selected_label": final_label,
+            "rjg_label": rjg,
+            "baseline_label": baseline,
+            "generic_hits": int(profile.get("generic_hits", 0)),
+            "specific_negative_hits": int(profile.get("specific_negative_hits", 0)),
+            "dominant_label": str(profile.get("dominant_label", "")),
+            "signal_hits": profile.get("hits", {}),
+        }
+
+    def _arbitrate_intent_label(
+        self,
+        text: str,
+        rjg_label: str,
+        baseline_label: str,
+    ) -> Tuple[str, Dict[str, Any]]:
+        profile = self._intent_signal_profile(text)
         rjg = str(rjg_label or "").strip()
         baseline = str(baseline_label or "").strip()
         final_label = rjg or baseline
@@ -356,24 +780,244 @@ class RJGPipeline:
         if baseline:
             final_label = baseline
             reason = "baseline_default"
-            if rjg.lower() == "disgusted" and baseline.lower() != "disgusted":
-                if profile["disgust_hits"] >= 1 and profile["alt_max"] <= 1:
-                    final_label = "disgusted"
-                    reason = "rjg_disgust_override"
-            elif baseline.lower() == "disgusted" and rjg and rjg.lower() != "disgusted":
-                if profile["disgust_hits"] == 0 and profile["alt_max"] >= 1:
-                    final_label = rjg
-                    reason = "avoid_false_disgust"
-        info = {
+            base_generic = baseline.lower() in _INTENT_GENERIC_LABELS
+            rjg_generic = rjg.lower() in _INTENT_GENERIC_LABELS
+            specific_hits = int(profile.get("specific_hits", 0))
+            toxic_hits = int(profile.get("toxic_hits", 0))
+            dominant_label = str(profile.get("dominant_label", "")).strip().lower()
+
+            if base_generic and rjg and (not rjg_generic) and (specific_hits >= 1 or toxic_hits >= 1):
+                final_label = rjg
+                reason = "rjg_specific_override_generic_baseline"
+            elif (not base_generic) and rjg_generic and specific_hits >= 1:
+                final_label = baseline
+                reason = "keep_baseline_specific"
+            elif rjg and (not rjg_generic) and rjg.lower() == dominant_label and specific_hits >= 1:
+                final_label = rjg
+                reason = "rjg_dominant_signal_override"
+
+        return final_label, {
             "reason": reason,
+            "selected_label": final_label,
             "rjg_label": rjg,
             "baseline_label": baseline,
-            "selected_label": final_label,
-            "disgust_hits": profile["disgust_hits"],
-            "alt_max": profile["alt_max"],
-            "signal_hits": profile["hits"],
+            "generic_hits": int(profile.get("generic_hits", 0)),
+            "specific_hits": int(profile.get("specific_hits", 0)),
+            "toxic_hits": int(profile.get("toxic_hits", 0)),
+            "dominant_label": str(profile.get("dominant_label", "")),
+            "signal_hits": profile.get("hits", {}),
         }
-        return final_label, info
+
+    def _clarify_attitude_label_internal(
+        self,
+        text: str,
+        current_label: str,
+        baseline_label: str,
+        rjg_label: str,
+    ) -> Tuple[str, Dict[str, Any]]:
+        profile = self._attitude_signal_profile(text)
+        current = str(current_label or "").strip()
+        baseline = str(baseline_label or "").strip()
+        rjg = str(rjg_label or "").strip()
+        final = current
+        reason = "no_change"
+        hits = profile.get("hits", {}) or {}
+        contempt_hits = int(hits.get("contemptuous", 0))
+        disapproving_hits = int(hits.get("disapproving", 0))
+        dismissive_hits = int(hits.get("dismissive", 0))
+        hostile_hits = int(hits.get("hostile", 0))
+
+        if current.lower() in _ATTITUDE_GENERIC_LABELS:
+            ranked_non_contempt = sorted(
+                [(lb, int(hits.get(lb, 0))) for lb in ["disapproving", "dismissive", "hostile"]],
+                key=lambda x: (x[1], x[0]),
+                reverse=True,
+            )
+            if ranked_non_contempt and ranked_non_contempt[0][1] >= 1:
+                final = ranked_non_contempt[0][0]
+                reason = "clarify_generic_to_non_contempt_negative"
+            elif contempt_hits >= 2:
+                final = "contemptuous"
+                reason = "clarify_generic_to_contemptuous_strong_signal"
+        elif current.lower() == "supportive" and int(profile.get("specific_negative_hits", 0)) >= 1:
+            if disapproving_hits >= dismissive_hits and disapproving_hits >= hostile_hits and disapproving_hits >= 1:
+                final = "disapproving"
+                reason = "clarify_supportive_to_disapproving"
+            elif dismissive_hits >= hostile_hits and dismissive_hits >= 1:
+                final = "dismissive"
+                reason = "clarify_supportive_to_dismissive"
+            elif hostile_hits >= 1:
+                final = "hostile"
+                reason = "clarify_supportive_to_hostile"
+            else:
+                final = "disapproving"
+                reason = "clarify_supportive_conflict_default"
+        elif current.lower() == "contemptuous" and max(disapproving_hits, dismissive_hits, hostile_hits) >= max(1, contempt_hits):
+            if disapproving_hits >= dismissive_hits and disapproving_hits >= hostile_hits and disapproving_hits >= 1:
+                final = "disapproving"
+                reason = "clarify_contempt_to_disapproving_boundary"
+            elif dismissive_hits >= hostile_hits and dismissive_hits >= 1:
+                final = "dismissive"
+                reason = "clarify_contempt_to_dismissive_boundary"
+            elif hostile_hits >= 1:
+                final = "hostile"
+                reason = "clarify_contempt_to_hostile_boundary"
+
+        return final, {
+            "before": current,
+            "after": final,
+            "reason": reason,
+            "baseline_label": baseline,
+            "rjg_label": rjg,
+            "generic_hits": int(profile.get("generic_hits", 0)),
+            "specific_negative_hits": int(profile.get("specific_negative_hits", 0)),
+            "dominant_label": str(profile.get("dominant_label", "")),
+            "signal_hits": hits,
+        }
+
+    def _clarify_attitude_mechanism_internal(
+        self,
+        text: str,
+        current_mechanism: str,
+        current_label: str,
+        baseline_mechanism: str = "",
+    ) -> Tuple[str, Dict[str, Any]]:
+        profile = self._attitude_signal_profile(text)
+        current = str(current_mechanism or "").strip()
+        label = str(current_label or "").strip().lower()
+        baseline = str(baseline_mechanism or "").strip()
+        final = current
+        reason = "no_change"
+        hits = profile.get("hits", {}) or {}
+        neg_hits = int(profile.get("specific_negative_hits", 0))
+        pos_hits = int(profile.get("positive_hits", 0))
+        skeptical_hits = int(hits.get("skeptical", 0))
+        concerned_hits = int(hits.get("concerned", 0))
+        dismissive_hits = int(hits.get("dismissive", 0))
+        disapproving_hits = int(hits.get("disapproving", 0))
+        hostile_hits = int(hits.get("hostile", 0))
+        dominant_label = str(profile.get("dominant_label", "")).strip().lower()
+        total_signal_hits = sum(int(v) for v in hits.values())
+
+        mech_l = current.lower()
+        if mech_l == "dominant affiliation":
+            if label == "hostile":
+                final = "dominant detachment"
+                reason = "affiliation_to_detachment_strong_negative_label"
+            elif label == "contemptuous" and (neg_hits >= 2 or hostile_hits >= 1):
+                final = "dominant detachment"
+                reason = "affiliation_to_detachment_contempt_with_strong_signal"
+            elif label in {"disapproving", "dismissive"} and (neg_hits >= 1 or (disapproving_hits + dismissive_hits) >= 1):
+                final = "dominant detachment"
+                reason = "affiliation_to_detachment_negative_label"
+            elif (
+                label in {"skeptical", "concerned", "neutral", "indifferent", "dismissive", "disapproving"}
+                and (skeptical_hits + concerned_hits + disapproving_hits) >= 1
+            ):
+                final = "protective distancing"
+                reason = "affiliation_to_protective_context"
+        elif mech_l == "dominant detachment":
+            if (
+                label in {"skeptical", "concerned", "neutral", "indifferent", "dismissive", "disapproving"}
+                and (skeptical_hits + concerned_hits + disapproving_hits + dismissive_hits) >= 1
+            ):
+                final = "protective distancing"
+                reason = "detachment_to_protective_context"
+
+        if label in {"supportive", "sympathetic", "appreciative"} and mech_l in {"dominant affiliation", "dominant detachment"}:
+            if pos_hits >= 1 and neg_hits == 0:
+                final = "submissive alignment"
+                reason = "positive_label_to_submissive_alignment"
+
+        if final in {"dominant affiliation", "dominant detachment"}:
+            if dominant_label in {"skeptical", "concerned", "neutral", "indifferent"} and (skeptical_hits + concerned_hits) >= 1:
+                final = "protective distancing"
+                reason = "dominant_signal_to_protective"
+            elif dominant_label in {"supportive", "sympathetic", "appreciative"} and pos_hits >= 1 and neg_hits == 0:
+                final = "submissive alignment"
+                reason = "dominant_signal_to_submissive"
+
+        if (
+            total_signal_hits == 0
+            and baseline
+            and mech_l == "dominant affiliation"
+            and baseline in {"dominant affiliation", "dominant detachment", "protective distancing", "submissive alignment"}
+        ):
+            final = baseline
+            reason = "zero_signal_affiliation_fallback_to_baseline_mechanism"
+
+        return final, {
+            "before": current,
+            "after": final,
+            "reason": reason,
+            "baseline_mechanism": baseline,
+            "label": label,
+            "specific_negative_hits": neg_hits,
+            "positive_hits": pos_hits,
+            "skeptical_hits": skeptical_hits,
+            "concerned_hits": concerned_hits,
+            "dismissive_hits": dismissive_hits,
+            "disapproving_hits": disapproving_hits,
+            "hostile_hits": hostile_hits,
+            "dominant_label": dominant_label,
+            "total_signal_hits": total_signal_hits,
+            "signal_hits": hits,
+        }
+
+    def _clarify_intent_label_internal(
+        self,
+        text: str,
+        current_label: str,
+        baseline_label: str,
+        rjg_label: str,
+    ) -> Tuple[str, Dict[str, Any]]:
+        profile = self._intent_signal_profile(text)
+        current = str(current_label or "").strip()
+        baseline = str(baseline_label or "").strip()
+        rjg = str(rjg_label or "").strip()
+        final = current
+        reason = "no_change"
+        hits = profile.get("hits", {}) or {}
+
+        if current.lower() in _INTENT_GENERIC_LABELS:
+            ranked = sorted(
+                [(lb, int(hits.get(lb, 0))) for lb in _INTENT_SPECIFIC_LABELS],
+                key=lambda x: (x[1], x[0]),
+                reverse=True,
+            )
+            if ranked and ranked[0][1] >= 1:
+                final = ranked[0][0]
+                reason = "clarify_generic_to_specific"
+        if current.lower() == "mitigate" and int(profile.get("toxic_hits", 0)) >= 1:
+            ranked = sorted(
+                [(lb, int(hits.get(lb, 0))) for lb in ["intimidate", "alienate", "mock", "condemn", "dominate", "denounce", "provoke"]],
+                key=lambda x: (x[1], x[0]),
+                reverse=True,
+            )
+            final = ranked[0][0] if ranked and ranked[0][1] >= 1 else "intimidate"
+            reason = "clarify_mitigate_toxic_conflict"
+        elif current.lower() == "provoke":
+            ranked = sorted(
+                [(lb, int(hits.get(lb, 0))) for lb in _INTENT_SPECIFIC_LABELS],
+                key=lambda x: (x[1], x[0]),
+                reverse=True,
+            )
+            if ranked and ranked[0][1] >= 1:
+                final = ranked[0][0]
+                reason = "clarify_provoke_to_specific"
+
+        return final, {
+            "before": current,
+            "after": final,
+            "reason": reason,
+            "baseline_label": baseline,
+            "rjg_label": rjg,
+            "generic_hits": int(profile.get("generic_hits", 0)),
+            "specific_hits": int(profile.get("specific_hits", 0)),
+            "toxic_hits": int(profile.get("toxic_hits", 0)),
+            "dominant_label": str(profile.get("dominant_label", "")),
+            "signal_hits": hits,
+        }
 
     def _extract_candidates(self, parsed: Dict[str, Any], sample: SampleInput) -> List[Dict[str, Any]]:
         rows: List[Dict[str, Any]] = []
@@ -526,6 +1170,10 @@ class RJGPipeline:
         plans: List[Tuple[str, float]] = [("literal_pragmatic", 0.0)]
         if scenario == "affection":
             plans.append(("affection_label_diversity", 0.2))
+        elif scenario == "attitude":
+            plans.append(("attitude_polarity_disambiguation", 0.2))
+        elif scenario == "intent":
+            plans.append(("intent_anti_generic_diversity", 0.2))
 
         out: List[Dict[str, Any]] = []
         artifacts: List[StageArtifact] = []
@@ -615,6 +1263,46 @@ class RJGPipeline:
             compat = compatibility_prior_score(scenario, mechanism, label)
             match = 1.0 if str(pred_mech).strip().lower() == mechanism.strip().lower() else 0.0
             score = clamp(0.58 * match + 0.17 * cue_score + 0.15 * heuristic_score + 0.10 * compat, 0.0, 1.0)
+            if scenario == "attitude":
+                profile = self._attitude_signal_profile(full_text)
+                mech_l = mechanism.strip().lower()
+                neg_hits = int(profile.get("specific_negative_hits", 0))
+                pos_hits = int(profile.get("positive_hits", 0))
+                generic_hits = int(profile.get("generic_hits", 0))
+                hits = profile.get("hits", {}) or {}
+                skeptical_hits = int(hits.get("skeptical", 0))
+                concerned_hits = int(hits.get("concerned", 0))
+                sympathetic_hits = int(hits.get("sympathetic", 0))
+                appreciative_hits = int(hits.get("appreciative", 0))
+                supportive_hits = int(hits.get("supportive", 0))
+                contempt_hits = int(hits.get("contemptuous", 0))
+                dismissive_hits = int(hits.get("dismissive", 0))
+                disapproving_hits = int(hits.get("disapproving", 0))
+                hostile_hits = int(hits.get("hostile", 0))
+                if mech_l == "dominant affiliation" and neg_hits >= 1 and pos_hits == 0:
+                    score = max(0.0, score - (0.16 + 0.03 * min(2, neg_hits - 1)))
+                if mech_l == "dominant detachment" and neg_hits >= 1:
+                    score = min(1.0, score + 0.03 + 0.01 * min(2, neg_hits - 1))
+                if mech_l == "dominant detachment" and label.strip().lower() in {"supportive", "appreciative", "sympathetic"}:
+                    score = max(0.0, score - 0.10)
+                if mech_l == "dominant detachment" and (skeptical_hits + concerned_hits) >= 1 and neg_hits <= 1:
+                    score = max(0.0, score - 0.09)
+                if mech_l == "dominant detachment" and label.strip().lower() in {"skeptical", "concerned", "neutral"} and (skeptical_hits + concerned_hits) >= 1:
+                    score = max(0.0, score - 0.08)
+                if mech_l == "protective distancing":
+                    if (skeptical_hits + concerned_hits) >= 1:
+                        score = min(1.0, score + 0.10 + 0.02 * min(2, skeptical_hits + concerned_hits - 1))
+                    if label.strip().lower() in {"skeptical", "concerned", "neutral", "indifferent", "disapproving", "dismissive"}:
+                        score = min(1.0, score + 0.10)
+                if mech_l == "submissive alignment":
+                    if (sympathetic_hits + appreciative_hits + supportive_hits) >= 1:
+                        score = min(1.0, score + 0.10 + 0.02 * min(2, sympathetic_hits + appreciative_hits + supportive_hits - 1))
+                    if label.strip().lower() in {"sympathetic", "appreciative", "supportive", "concerned", "neutral", "dismissive", "disapproving"}:
+                        score = min(1.0, score + 0.09)
+                if mech_l == "dominant affiliation" and generic_hits >= 2 and neg_hits >= 1:
+                    score = max(0.0, score - 0.08)
+                if mech_l == "dominant affiliation" and label.strip().lower() in {"contemptuous", "hostile", "disapproving", "dismissive"} and neg_hits >= 1:
+                    score = max(0.0, score - 0.10)
             parsed = {
                 "score": score,
                 "predicted_mechanism": pred_mech,
@@ -646,6 +1334,44 @@ class RJGPipeline:
                     score = max(0.0, score - 0.08)
                 elif label.strip().lower() in {"angry", "bad", "happy", "fearful", "sad"}:
                     score = min(1.0, score + 0.04)
+            elif scenario == "attitude":
+                score = clamp(0.26 * label_match + 0.24 * label_signal + 0.30 * heuristic_score + 0.20 * compat, 0.0, 1.0)
+                l = label.strip().lower()
+                mech_l = mechanism.strip().lower()
+                profile = self._attitude_signal_profile(full_text)
+                neg_hits = int(profile.get("specific_negative_hits", 0))
+                pos_hits = int(profile.get("positive_hits", 0))
+                if l in {"supportive", "appreciative", "sympathetic", "concerned"} and mech_l == "dominant detachment":
+                    score = max(0.0, score - 0.14)
+                if l in {"contemptuous", "hostile", "disapproving", "dismissive"} and mech_l == "dominant detachment":
+                    score = min(1.0, score + 0.10)
+                if l in {"skeptical", "concerned", "neutral"} and mech_l == "protective distancing":
+                    score = min(1.0, score + 0.07)
+                if l in {"supportive", "appreciative", "sympathetic"} and mech_l == "submissive alignment":
+                    score = min(1.0, score + 0.06)
+                hits = profile.get("hits", {}) or {}
+                contempt_hits = int(hits.get("contemptuous", 0))
+                hostile_hits = int(hits.get("hostile", 0))
+                dismissive_hits = int(hits.get("dismissive", 0))
+                disapproving_hits = int(hits.get("disapproving", 0))
+                if l == "contemptuous" and max(hostile_hits, dismissive_hits, disapproving_hits) >= contempt_hits and max(hostile_hits, dismissive_hits, disapproving_hits) >= 1:
+                    score = max(0.0, score - 0.16)
+                if l == "contemptuous" and (hostile_hits + dismissive_hits + disapproving_hits) >= max(1, contempt_hits):
+                    score = max(0.0, score - 0.10)
+                if l == "hostile" and hostile_hits >= 1:
+                    score = min(1.0, score + 0.14)
+                if l == "dismissive" and dismissive_hits >= 1:
+                    score = min(1.0, score + 0.12)
+                if l == "disapproving" and disapproving_hits >= 1:
+                    score = min(1.0, score + 0.12)
+                if l in {"dismissive", "hostile", "disapproving"} and contempt_hits >= 1 and max(hostile_hits, dismissive_hits, disapproving_hits) >= contempt_hits:
+                    score = min(1.0, score + 0.06)
+                if l == "supportive" and neg_hits >= 1 and pos_hits == 0:
+                    score = max(0.0, score - 0.16)
+                if l == "supportive":
+                    score = max(0.0, score - 0.08)
+                if l in _ATTITUDE_GENERIC_LABELS and neg_hits >= 2:
+                    score = max(0.0, score - 0.10)
             elif scenario == "intent":
                 score = clamp(0.28 * label_match + 0.24 * label_signal + 0.30 * heuristic_score + 0.18 * compat, 0.0, 1.0)
                 l = label.strip().lower()
@@ -829,6 +1555,55 @@ class RJGPipeline:
                             "affection fearful recall branch",
                         )
                     )
+        elif scenario == "attitude":
+            # Attitude tends to collapse to dominant affiliation + generic labels; force harder alternatives.
+            for mech_name in [m for m, _ in mech_ranked[:3]]:
+                alt_best_label, alt_score_map = predict_heuristic_label(scenario, mech_name, text)
+                alt_label_ranked = sorted(alt_score_map.items(), key=lambda x: (x[1], x[0]), reverse=True)
+                candidates.append(
+                    _normalize_candidate(
+                        mech_name,
+                        alt_best_label,
+                        "heuristic_attitude_cross_mech",
+                        "attitude cross mechanism branch",
+                    )
+                )
+                for alt_label, _ in alt_label_ranked[:5]:
+                    candidates.append(
+                        _normalize_candidate(
+                            mech_name,
+                            alt_label,
+                            "heuristic_attitude_label_sweep",
+                            "attitude label sweep branch",
+                        )
+                    )
+            forced_pairs = [
+                ("dominant affiliation", "supportive"),
+                ("dominant affiliation", "concerned"),
+                ("dominant detachment", "contemptuous"),
+                ("dominant detachment", "dismissive"),
+                ("dominant detachment", "disapproving"),
+                ("dominant detachment", "hostile"),
+                ("protective distancing", "skeptical"),
+                ("protective distancing", "concerned"),
+                ("protective distancing", "neutral"),
+                ("protective distancing", "indifferent"),
+                ("protective distancing", "disapproving"),
+                ("submissive alignment", "sympathetic"),
+                ("submissive alignment", "appreciative"),
+                ("submissive alignment", "supportive"),
+                ("submissive alignment", "concerned"),
+                ("submissive alignment", "neutral"),
+            ]
+            for mech_name, forced_label in forced_pairs:
+                candidates.append(
+                    _normalize_candidate(
+                        mech_name,
+                        forced_label,
+                        "heuristic_attitude_forced_pair",
+                        "attitude forced mechanism-label anti-collapse",
+                    )
+                )
         elif scenario == "intent":
             # Intent gets a broad label sweep to avoid generic collapse to provoke/mitigate.
             for mech_name in [m for m, _ in mech_ranked[:3]]:
@@ -917,6 +1692,102 @@ class RJGPipeline:
             "applied": True,
             "disgust_share": disgust_share,
             "label_counts": label_counts,
+            "adjustments": adjustments,
+        }
+
+    def _apply_attitude_structural_rerank(self, scored: List[Dict[str, Any]]) -> Dict[str, Any]:
+        if not scored:
+            return {"applied": False, "reason": "empty"}
+        label_counts: Dict[str, int] = {}
+        for row in scored:
+            lb = str(row.get("label", "")).strip().lower()
+            if lb:
+                label_counts[lb] = label_counts.get(lb, 0) + 1
+        mech_counts: Dict[str, int] = {}
+        for row in scored:
+            mk = str(row.get("mechanism", "")).strip().lower()
+            if mk:
+                mech_counts[mk] = mech_counts.get(mk, 0) + 1
+        total = max(len(scored), 1)
+        generic_share = float(
+            label_counts.get("indifferent", 0) + label_counts.get("dismissive", 0) + label_counts.get("neutral", 0)
+        ) / float(total)
+        supportive_share = float(label_counts.get("supportive", 0)) / float(total)
+        contemptuous_share = float(label_counts.get("contemptuous", 0)) / float(total)
+        affiliation_share = float(mech_counts.get("dominant affiliation", 0)) / float(total)
+        detachment_share = float(mech_counts.get("dominant detachment", 0)) / float(total)
+        protective_share = float(mech_counts.get("protective distancing", 0)) / float(total)
+        submissive_share = float(mech_counts.get("submissive alignment", 0)) / float(total)
+        adjustments = 0
+        for row in scored:
+            comp = row.setdefault("components", {})
+            label = str(row.get("label", "")).strip().lower()
+            mechanism = str(row.get("mechanism", "")).strip().lower()
+            jm = float(comp.get("judge_mech", 0.0))
+            jl = float(comp.get("judge_label", 0.0))
+            heur = float(comp.get("heuristic_agreement", 0.0))
+            penalty = 0.0
+            bonus = 0.0
+            if label in _ATTITUDE_GENERIC_LABELS and generic_share >= 0.40:
+                penalty += 0.12 + 0.24 * (generic_share - 0.40)
+            if label == "supportive" and supportive_share >= 0.15:
+                penalty += 0.16 + 0.30 * (supportive_share - 0.15)
+            if label == "contemptuous" and contemptuous_share >= 0.30:
+                penalty += 0.14 + 0.28 * (contemptuous_share - 0.30)
+            if mechanism == "dominant affiliation" and affiliation_share >= 0.30:
+                penalty += 0.18 + 0.30 * (affiliation_share - 0.30)
+            if mechanism == "dominant detachment":
+                bonus += 0.08 + 0.04 * max(0.0, jm - 0.45)
+                if label in {"contemptuous", "hostile", "disapproving", "dismissive"}:
+                    bonus += 0.08
+            if mechanism == "protective distancing" and label in {"skeptical", "concerned", "neutral", "indifferent", "disapproving"}:
+                bonus += 0.09 + 0.04 * max(0.0, min(jm, jl) - 0.42)
+            if mechanism == "protective distancing" and label in {"dismissive", "disapproving", "skeptical", "concerned", "indifferent", "neutral"}:
+                bonus += 0.08 + 0.05 * max(0.0, jm - 0.40)
+            if mechanism == "submissive alignment" and label in {"sympathetic", "supportive", "appreciative", "concerned", "neutral"}:
+                bonus += 0.09 + 0.03 * max(0.0, min(jm, jl) - 0.42)
+            if mechanism == "submissive alignment" and label in {"supportive", "sympathetic", "appreciative", "concerned", "neutral", "dismissive", "disapproving"}:
+                bonus += 0.08 + 0.04 * max(0.0, jm - 0.40)
+            if mechanism in {"protective distancing", "submissive alignment"} and detachment_share >= 0.58 and jm >= 0.44:
+                bonus += 0.10
+            if mechanism in {"protective distancing", "submissive alignment"} and (protective_share + submissive_share) <= 0.18:
+                bonus += 0.06
+            if label in {"hostile", "disapproving", "dismissive"}:
+                bonus += 0.04 + 0.05 * max(0.0, heur - 0.40)
+                if jm >= 0.64:
+                    bonus += 0.04
+            if label == "contemptuous" and jl >= 0.62 and heur >= 0.58:
+                bonus += 0.03
+            if label in {"hostile", "dismissive", "disapproving"} and contemptuous_share >= 0.30 and jl >= 0.42:
+                bonus += 0.06
+            if mechanism == "dominant affiliation" and label in {"contemptuous", "hostile", "disapproving", "dismissive"}:
+                penalty += 0.08
+            if mechanism == "dominant affiliation" and label in {"supportive", "concerned", "skeptical"} and jl < 0.52:
+                penalty += 0.06
+            if mechanism == "dominant affiliation" and label == "supportive" and supportive_share >= 0.15:
+                penalty += 0.14
+            if label == "contemptuous" and max(jl, heur) < 0.46:
+                penalty += 0.08
+            if label == "contemptuous" and contemptuous_share >= 0.30 and max(jl, heur) < 0.60:
+                penalty += 0.10
+            if label == "supportive" and (jm < 0.38 and jl < 0.36):
+                penalty += 0.08
+            if bonus or penalty:
+                row["total_score"] = float(row.get("total_score", 0.0)) + bonus - penalty
+                comp["attitude_structural_bonus"] = bonus
+                comp["attitude_structural_penalty"] = penalty
+                adjustments += 1
+        return {
+            "applied": True,
+            "generic_share": generic_share,
+            "supportive_share": supportive_share,
+            "contemptuous_share": contemptuous_share,
+            "affiliation_share": affiliation_share,
+            "detachment_share": detachment_share,
+            "protective_share": protective_share,
+            "submissive_share": submissive_share,
+            "label_counts": label_counts,
+            "mechanism_counts": mech_counts,
             "adjustments": adjustments,
         }
 
@@ -1086,7 +1957,7 @@ class RJGPipeline:
             artifacts.append(self._artifact("M2_candidate_generate_summary", llm_summary, notes="llm candidate branch"))
 
             baseline_probe: Dict[str, Any] | None = None
-            if scenario == "affection":
+            if scenario in VALID_MECHANISMS:
                 baseline_probe, baseline_artifact = self._run_baseline_probe(
                     sample=sample,
                     scenario=scenario,
@@ -1102,7 +1973,7 @@ class RJGPipeline:
                             "mechanism": baseline_probe.get("mechanism", ""),
                             "confidence": baseline_probe.get("confidence", 0.0),
                         },
-                        notes="affection baseline probe",
+                        notes=f"{scenario} baseline probe",
                     )
                 )
 
@@ -1129,7 +2000,7 @@ class RJGPipeline:
                     )
                 ]
             )
-            if baseline_probe is not None:
+            if baseline_probe is not None and scenario != "attitude":
                 candidates_raw.append(
                     {
                         "subject": baseline_probe.get("subject", heuristic_trace.get("subject", "")),
@@ -1244,12 +2115,25 @@ class RJGPipeline:
                     "penalty_add": 0.0,
                     "reason": "none",
                 }
-                if scenario == "affection" and baseline_probe is not None:
-                    label_policy_adjustment = self._affection_candidate_adjustment(
-                        text=full_text,
-                        candidate_label=str(cand_eval.get("label", "")),
-                        baseline_label=str(baseline_probe.get("label", "")),
-                    )
+                if baseline_probe is not None:
+                    if scenario == "affection":
+                        label_policy_adjustment = self._affection_candidate_adjustment(
+                            text=full_text,
+                            candidate_label=str(cand_eval.get("label", "")),
+                            baseline_label=str(baseline_probe.get("label", "")),
+                        )
+                    elif scenario == "attitude":
+                        label_policy_adjustment = self._attitude_candidate_adjustment(
+                            text=full_text,
+                            candidate_label=str(cand_eval.get("label", "")),
+                            baseline_label=str(baseline_probe.get("label", "")),
+                        )
+                    elif scenario == "intent":
+                        label_policy_adjustment = self._intent_candidate_adjustment(
+                            text=full_text,
+                            candidate_label=str(cand_eval.get("label", "")),
+                            baseline_label=str(baseline_probe.get("label", "")),
+                        )
                     label_score = clamp(
                         label_score + float(label_policy_adjustment.get("label_bonus", 0.0)),
                         0.0,
@@ -1258,7 +2142,7 @@ class RJGPipeline:
                     policy_penalty = float(label_policy_adjustment.get("penalty_add", 0.0))
                     if policy_penalty > 0.0:
                         penalty += policy_penalty
-                        penalty_detail["affection_policy_penalty"] = policy_penalty
+                        penalty_detail[f"{scenario}_policy_penalty"] = policy_penalty
                 total = compute_total_score(
                     weights=self.weights,
                     retrieve_support=retrieve_support,
@@ -1291,6 +2175,8 @@ class RJGPipeline:
 
             if scenario == "affection" and scored:
                 trace["affection_structural_rerank"] = self._apply_affection_structural_rerank(scored)
+            elif scenario == "attitude" and scored:
+                trace["attitude_structural_rerank"] = self._apply_attitude_structural_rerank(scored)
             elif scenario == "intent" and scored:
                 trace["intent_structural_rerank"] = self._apply_intent_structural_rerank(scored)
 
@@ -1361,6 +2247,13 @@ class RJGPipeline:
                     )
                 )
             affection_arbitration: Dict[str, Any] | None = None
+            affection_vote: Dict[str, Any] | None = None
+            affection_clarify: Dict[str, Any] | None = None
+            attitude_arbitration: Dict[str, Any] | None = None
+            attitude_clarify: Dict[str, Any] | None = None
+            attitude_mechanism_clarify: Dict[str, Any] | None = None
+            intent_arbitration: Dict[str, Any] | None = None
+            intent_clarify: Dict[str, Any] | None = None
             if scenario == "affection" and baseline_probe is not None:
                 if float((affection_dual_head or {}).get("label_margin", 0.0)) < 0.06:
                     final_label, affection_arbitration = self._arbitrate_affection_label(
@@ -1380,6 +2273,88 @@ class RJGPipeline:
                         "M6_affection_label_arbitration",
                         affection_arbitration,
                         notes="baseline+rjg label fusion",
+                    )
+                )
+                clarified_label, affection_clarify = self._clarify_affection_label_internal(
+                    text=full_text,
+                    current_label=final_label,
+                    baseline_label=str((affection_arbitration or {}).get("baseline_label", "")),
+                    rjg_label=str((affection_arbitration or {}).get("rjg_label", "")),
+                )
+                final_label = clarified_label
+                artifacts.append(
+                    self._artifact(
+                        "M6.5_affection_label_clarify",
+                        affection_clarify,
+                        notes="internal affection label definition clarify (no prompt change)",
+                    )
+                )
+            elif scenario == "attitude" and baseline_probe is not None:
+                final_label, attitude_arbitration = self._arbitrate_attitude_label(
+                    text=full_text,
+                    rjg_label=final_label,
+                    baseline_label=str(baseline_probe.get("label", "")),
+                )
+                artifacts.append(
+                    self._artifact(
+                        "M6_attitude_label_arbitration",
+                        attitude_arbitration,
+                        notes="baseline+rjg attitude label fusion",
+                    )
+                )
+                clarified_label, attitude_clarify = self._clarify_attitude_label_internal(
+                    text=full_text,
+                    current_label=final_label,
+                    baseline_label=str((attitude_arbitration or {}).get("baseline_label", "")),
+                    rjg_label=str((attitude_arbitration or {}).get("rjg_label", "")),
+                )
+                final_label = clarified_label
+                artifacts.append(
+                    self._artifact(
+                        "M6.5_attitude_label_clarify",
+                        attitude_clarify,
+                        notes="internal attitude label clarify (no prompt change)",
+                    )
+                )
+                clarified_mechanism, attitude_mechanism_clarify = self._clarify_attitude_mechanism_internal(
+                    text=full_text,
+                    current_mechanism=final_mechanism,
+                    current_label=final_label,
+                    baseline_mechanism=str((baseline_probe or {}).get("mechanism", "")),
+                )
+                final_mechanism = clarified_mechanism
+                artifacts.append(
+                    self._artifact(
+                        "M6.6_attitude_mechanism_clarify",
+                        attitude_mechanism_clarify,
+                        notes="internal attitude mechanism clarify",
+                    )
+                )
+            elif scenario == "intent" and baseline_probe is not None:
+                final_label, intent_arbitration = self._arbitrate_intent_label(
+                    text=full_text,
+                    rjg_label=final_label,
+                    baseline_label=str(baseline_probe.get("label", "")),
+                )
+                artifacts.append(
+                    self._artifact(
+                        "M6_intent_label_arbitration",
+                        intent_arbitration,
+                        notes="baseline+rjg intent label fusion",
+                    )
+                )
+                clarified_label, intent_clarify = self._clarify_intent_label_internal(
+                    text=full_text,
+                    current_label=final_label,
+                    baseline_label=str((intent_arbitration or {}).get("baseline_label", "")),
+                    rjg_label=str((intent_arbitration or {}).get("rjg_label", "")),
+                )
+                final_label = clarified_label
+                artifacts.append(
+                    self._artifact(
+                        "M6.5_intent_label_clarify",
+                        intent_clarify,
+                        notes="internal intent label clarify (no prompt change)",
                     )
                 )
             final_prediction = {
@@ -1403,8 +2378,15 @@ class RJGPipeline:
                 "media_manifest": media_manifest,
                 "baseline_probe": baseline_probe,
                 "affection_dual_head_decode": affection_dual_head,
+                "affection_label_vote": affection_vote,
                 "affection_label_arbitration": affection_arbitration,
-                "full_text_for_policy": full_text if scenario == "affection" else "",
+                "affection_label_clarify": affection_clarify,
+                "attitude_label_arbitration": attitude_arbitration,
+                "attitude_label_clarify": attitude_clarify,
+                "attitude_mechanism_clarify": attitude_mechanism_clarify,
+                "intent_label_arbitration": intent_arbitration,
+                "intent_label_clarify": intent_clarify,
+                "full_text_for_policy": full_text if scenario in {"affection", "attitude", "intent"} else "",
             }
             return {
                 "sample_id": sample.sample_id,

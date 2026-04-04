@@ -211,6 +211,30 @@ class TestRJGPipelineTieBreak(unittest.TestCase):
         self.assertGreater(adjust_disgust["penalty_add"], 0.0)
         self.assertGreater(adjust_baseline["label_bonus"], 0.0)
 
+    def test_affection_internal_clarify_promotes_disgust_on_toxic_cues(self):
+        backend = FakeBackend({"winner": "A"})
+        pipeline = self._pipeline(backend)
+        label, info = pipeline._clarify_affection_label_internal(
+            text="me and the boys after killing innocent people in a bomb blast",
+            current_label="bad",
+            baseline_label="bad",
+            rjg_label="bad",
+        )
+        self.assertEqual(label, "disgusted")
+        self.assertEqual(info["reason"], "clarify_disgust_toxicity_cues")
+
+    def test_affection_internal_clarify_keeps_label_without_toxic_cues(self):
+        backend = FakeBackend({"winner": "A"})
+        pipeline = self._pipeline(backend)
+        label, info = pipeline._clarify_affection_label_internal(
+            text="we should just send justine home, right?",
+            current_label="angry",
+            baseline_label="angry",
+            rjg_label="angry",
+        )
+        self.assertEqual(label, "angry")
+        self.assertEqual(info["reason"], "no_change")
+
 
 if __name__ == "__main__":
     unittest.main()

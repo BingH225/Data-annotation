@@ -1,3 +1,10 @@
-﻿from .subject_target_agent import RoleProbeResult, SubjectTargetAgentPipeline, SubjectTargetPipelineResult
+from .intent_sota_pipeline import IntentSotaConfig, IntentSotaPipeline
+from .subject_target_agent import RoleProbeResult, SubjectTargetAgentPipeline, SubjectTargetPipelineResult
 
-__all__ = ["SubjectTargetAgentPipeline", "SubjectTargetPipelineResult", "RoleProbeResult"]
+__all__ = [
+    "SubjectTargetAgentPipeline",
+    "SubjectTargetPipelineResult",
+    "RoleProbeResult",
+    "IntentSotaPipeline",
+    "IntentSotaConfig",
+]

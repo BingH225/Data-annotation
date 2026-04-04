@@ -308,9 +308,9 @@ class SubjectTargetAgentPipeline:
             mode_norm = "balanced"
         system_prompt = (
             "You are a strict subject-target role resolver.\n"
-            "You only output role slots and confidence.\n"
+            "You only output subject/target options and confidence.\n"
             "Do not output mechanism or label.\n"
-            "Return JSON only with keys: subject, target, confidence, reason_short.\n"
+            "Return JSON only with keys: subject_option, target_option, confidence, reason_short.\n"
             f"Role decision mode: {mode_norm}."
         )
         if mode_norm == "literal":
@@ -348,9 +348,10 @@ class SubjectTargetAgentPipeline:
             + "2) Move subject away from speaker only when evidence clearly supports another acting source.\n"
             + "3) Keep target on the most directly addressed/evaluated entity.\n"
             + "4) Prefer exact option grounding over abstract role names.\n"
-            + "5) Never output names outside provided slots.\n\n"
+            + "5) Output exact option text from mapping tables (not placeholder IDs) when possible.\n"
+            + "6) Never output names outside provided options.\n\n"
             + "Return JSON only:\n"
-            + "{\"subject\":\"subjectX\",\"target\":\"targetY\",\"confidence\":0.0,\"reason_short\":\"<=30 words\"}"
+            + "{\"subject_option\":\"<one from subject mapping>\",\"target_option\":\"<one from target mapping>\",\"confidence\":0.0,\"reason_short\":\"<=30 words\"}"
         )
         return system_prompt, user_prompt
 
@@ -362,8 +363,10 @@ class SubjectTargetAgentPipeline:
         target_slots: Dict[str, str],
     ) -> RoleProbeResult:
         raw_json = dict(raw_json or {})
-        sub_slot = _coerce_to_slot(raw_json.get("subject"), "subject", subject_slots)
-        tgt_slot = _coerce_to_slot(raw_json.get("target"), "target", target_slots)
+        raw_sub = raw_json.get("subject_option", raw_json.get("subject", raw_json.get("subject_slot")))
+        raw_tgt = raw_json.get("target_option", raw_json.get("target", raw_json.get("target_slot")))
+        sub_slot = _coerce_to_slot(raw_sub, "subject", subject_slots)
+        tgt_slot = _coerce_to_slot(raw_tgt, "target", target_slots)
         try:
             conf = float(raw_json.get("confidence", 0.0) or 0.0)
         except Exception:

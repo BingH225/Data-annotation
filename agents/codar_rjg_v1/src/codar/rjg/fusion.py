@@ -52,10 +52,46 @@ _COMPAT_PRIOR: Dict[str, Dict[str, Dict[str, float]]] = {
         "socio_cultural dependency": {"bad": 0.25, "disgusted": 0.24, "angry": 0.19, "sad": 0.14, "happy": 0.12, "fearful": 0.06},
     },
     "attitude": {
-        "dominant affiliation": {"supportive": 0.19, "concerned": 0.18, "dismissive": 0.14, "disapproving": 0.12, "skeptical": 0.10},
-        "dominant detachment": {"contemptuous": 0.24, "dismissive": 0.22, "hostile": 0.17, "disapproving": 0.13, "indifferent": 0.11},
-        "protective distancing": {"skeptical": 0.22, "concerned": 0.18, "neutral": 0.14, "indifferent": 0.12, "disapproving": 0.11},
-        "submissive alignment": {"supportive": 0.20, "sympathetic": 0.18, "appreciative": 0.15, "concerned": 0.13, "neutral": 0.11},
+        "dominant affiliation": {
+            "supportive": 0.18,
+            "concerned": 0.16,
+            "dismissive": 0.15,
+            "disapproving": 0.13,
+            "skeptical": 0.10,
+            "contemptuous": 0.08,
+            "appreciative": 0.08,
+            "indifferent": 0.07,
+            "neutral": 0.05,
+        },
+        "dominant detachment": {
+            "contemptuous": 0.24,
+            "dismissive": 0.20,
+            "hostile": 0.18,
+            "disapproving": 0.14,
+            "indifferent": 0.10,
+            "skeptical": 0.06,
+            "concerned": 0.05,
+            "neutral": 0.04,
+        },
+        "protective distancing": {
+            "skeptical": 0.22,
+            "concerned": 0.14,
+            "indifferent": 0.15,
+            "dismissive": 0.10,
+            "disapproving": 0.12,
+            "neutral": 0.11,
+            "contemptuous": 0.05,
+        },
+        "submissive alignment": {
+            "supportive": 0.20,
+            "sympathetic": 0.18,
+            "appreciative": 0.15,
+            "concerned": 0.13,
+            "neutral": 0.10,
+            "dismissive": 0.08,
+            "disapproving": 0.08,
+            "skeptical": 0.06,
+        },
     },
     "intent": {
         "prosocial deception": {"mitigate": 0.41, "dominate": 0.16, "mock": 0.13, "provoke": 0.12},
@@ -96,7 +132,7 @@ _LABEL_CUES: Dict[str, Dict[str, List[str]]] = {
     },
     "attitude": {
         "supportive": ["you got this", "i'm with you", "i support", "back you", "on your side"],
-        "appreciative": ["great", "nice work", "well done", "impressive", "good effort"],
+        "appreciative": ["thank you", "nice work", "well done", "impressive", "good effort"],
         "sympathetic": ["sorry", "that sucks", "feel for you", "must be hard", "tough"],
         "neutral": ["according to", "reported", "stated", "it is"],
         "indifferent": ["whatever", "fine", "meh", "not my problem", "i don't care", "who cares"],
@@ -187,8 +223,8 @@ _SCENARIO_CONSTRAINT_OVERRIDES: Dict[str, Dict[str, float]] = {
         "role_option_penalty": 0.16,
     },
     "attitude": {
-        "compat_floor": 0.13,
-        "compat_hard_floor": 0.06,
+        "compat_floor": 0.11,
+        "compat_hard_floor": 0.04,
         "anchor_missing_penalty": 0.16,
         "anchor_mismatch_penalty": 0.20,
         "role_option_penalty": 0.20,
@@ -281,14 +317,73 @@ def predict_heuristic_mechanism(scenario: str, text: str, scenario_policy: Dict[
         if any(x in lowered for x in _AFFECTION_SOCIOCULTURAL_MARKERS):
             scores["socio_cultural dependency"] = scores.get("socio_cultural dependency", 0.0) + 1.6
     elif sc == "attitude":
-        if any(x in lowered for x in ["you got this", "good job", "for your own good", "let me handle", "i'll handle", "i support"]):
+        if any(
+            x in lowered
+            for x in [
+                "you got this",
+                "good job",
+                "for your own good",
+                "let me handle",
+                "i'll handle",
+                "i support",
+                "on your side",
+            ]
+        ):
             scores["dominant affiliation"] = scores.get("dominant affiliation", 0.0) + 1.8
-        if any(x in lowered for x in ["whatever", "not worth", "your fault", "asked for it", "doesn't matter", "don't care", "no thanks", "third strike", "fucker", "ignorant"]):
+        if any(
+            x in lowered
+            for x in [
+                "whatever",
+                "not worth",
+                "your fault",
+                "asked for it",
+                "doesn't matter",
+                "don't care",
+                "no thanks",
+                "third strike",
+                "fucker",
+                "ignorant",
+                "pathetic",
+                "loser",
+            ]
+        ):
             scores["dominant detachment"] = scores.get("dominant detachment", 0.0) + 2.0
-        if any(x in lowered for x in ["maybe", "we'll see", "not sure", "i guess", "don't know", "rather not", "idk"]):
-            scores["protective distancing"] = scores.get("protective distancing", 0.0) + 1.5
-        if any(x in lowered for x in ["sorry", "my bad", "you decide", "please", "need your help", "whatever you want"]):
-            scores["submissive alignment"] = scores.get("submissive alignment", 0.0) + 1.4
+        if any(
+            x in lowered
+            for x in [
+                "maybe",
+                "we'll see",
+                "not sure",
+                "i guess",
+                "don't know",
+                "rather not",
+                "idk",
+                "careful",
+                "risk",
+                "worry",
+                "dangerous",
+                "not okay",
+                "shouldn't",
+                "bad idea",
+            ]
+        ):
+            scores["protective distancing"] = scores.get("protective distancing", 0.0) + 1.8
+        if any(
+            x in lowered
+            for x in [
+                "sorry",
+                "my bad",
+                "you decide",
+                "please",
+                "need your help",
+                "whatever you want",
+                "as you wish",
+                "you're right",
+                "i'll do it",
+                "i understand",
+            ]
+        ):
+            scores["submissive alignment"] = scores.get("submissive alignment", 0.0) + 1.7
     elif sc == "intent":
         if any(x in lowered for x in ["just kidding", "white lie", "no offense", "don't worry", "keep peace", "all good"]):
             scores["prosocial deception"] = scores.get("prosocial deception", 0.0) + 1.6
@@ -332,10 +427,43 @@ def predict_heuristic_label(scenario: str, mechanism: str, text: str) -> Tuple[s
             scores["indifferent"] = scores.get("indifferent", 0.0) + 1.2
         if any(x in lowered for x in ["pathetic", "what a baby", "loser", "beneath", "idiot", "fucker", "ignorant"]):
             scores["contemptuous"] = scores.get("contemptuous", 0.0) + 1.9
-        if any(x in lowered for x in ["shouldn't", "not okay", "wrong", "bad idea", "don't do that", "third strike"]):
-            scores["disapproving"] = scores.get("disapproving", 0.0) + 1.7
-        if any(x in lowered for x in ["shut up", "go to hell", "attack", "threat", "hate you"]):
-            scores["hostile"] = scores.get("hostile", 0.0) + 2.1
+        if any(
+            x in lowered
+            for x in [
+                "shouldn't",
+                "not okay",
+                "wrong",
+                "bad idea",
+                "don't do that",
+                "third strike",
+                "not acceptable",
+                "out of line",
+                "unprofessional",
+                "inappropriate",
+            ]
+        ):
+            scores["disapproving"] = scores.get("disapproving", 0.0) + 2.0
+        if any(
+            x in lowered
+            for x in [
+                "shut up",
+                "go to hell",
+                "attack",
+                "threat",
+                "hate you",
+                "screw you",
+                "drop dead",
+                "stfu",
+            ]
+        ):
+            scores["hostile"] = scores.get("hostile", 0.0) + 2.2
+        # Boundary correction: when explicit hostile/disapproving cues exist, avoid defaulting to contemptuous.
+        boundary_hits = 0
+        for kw in ["shouldn't", "not okay", "wrong", "bad idea", "shut up", "go to hell", "screw you", "stfu"]:
+            if kw in lowered:
+                boundary_hits += 1
+        if boundary_hits >= 1:
+            scores["contemptuous"] = max(0.0, scores.get("contemptuous", 0.0) - 0.8)
     elif sc == "intent":
         if any(x in lowered for x in ["or else", "watch yourself", "you'll regret", "threat", "scare"]):
             scores["intimidate"] = scores.get("intimidate", 0.0) + 1.8
@@ -625,12 +753,27 @@ def score_penalty_components(
         negative_hits = 0
         for bucket in ["dismissive", "contemptuous", "disapproving", "hostile", "skeptical", "indifferent"]:
             negative_hits += _hit_count(text, _LABEL_CUES.get(sc, {}).get(bucket, []))
+        positive_hits = 0
+        for bucket in ["supportive", "appreciative", "sympathetic", "concerned"]:
+            positive_hits += _hit_count(text, _LABEL_CUES.get(sc, {}).get(bucket, []))
+        contempt_hits = _hit_count(text, _LABEL_CUES.get(sc, {}).get("contemptuous", []))
+        dismissive_hits = _hit_count(text, _LABEL_CUES.get(sc, {}).get("dismissive", []))
+        disapproving_hits = _hit_count(text, _LABEL_CUES.get(sc, {}).get("disapproving", []))
+        hostile_hits = _hit_count(text, _LABEL_CUES.get(sc, {}).get("hostile", []))
+        boundary_negative_hits = max(dismissive_hits, disapproving_hits, hostile_hits)
         if str(label).strip().lower() == "supportive" and negative_hits > 0:
             components["attitude_supportive_conflict"] = 0.22 + 0.03 * min(3, negative_hits - 1)
+        if str(label).strip().lower() == "supportive" and positive_hits <= 0:
+            components["attitude_supportive_without_positive_signal"] = 0.16
         if str(mechanism).strip().lower() == "dominant affiliation" and negative_hits >= 2:
             components["attitude_affiliation_conflict"] = 0.16
         if str(label).strip().lower() == "indifferent" and negative_hits > 0:
             components["attitude_indifferent_conflict"] = 0.20 + 0.02 * min(3, negative_hits - 1)
+        if str(label).strip().lower() == "contemptuous" and boundary_negative_hits >= max(1, contempt_hits):
+            components["attitude_contempt_boundary_conflict"] = 0.14 + 0.02 * min(
+                3,
+                boundary_negative_hits - max(1, contempt_hits),
+            )
     elif sc == "affection":
         disgust_hits = _hit_count(text, _LABEL_CUES.get(sc, {}).get("disgusted", []))
         specific_hits = 0

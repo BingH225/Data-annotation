@@ -1,0 +1,782 @@
+[
+  {
+    "run": "406008",
+    "n_truth": 100,
+    "n_pred": 100,
+    "missing": [],
+    "acc": {
+      "mechanism": 0.36,
+      "label": 0.33,
+      "joint": 0.11
+    },
+    "pred_label_dist": {
+      "angry": 25,
+      "disgusted": 15,
+      "sad": 16,
+      "happy": 33,
+      "fearful": 3,
+      "bad": 8
+    },
+    "top_label_confusions": [
+      {
+        "gt": "happy",
+        "pred": "happy",
+        "count": 11
+      },
+      {
+        "gt": "disgusted",
+        "pred": "happy",
+        "count": 9
+      },
+      {
+        "gt": "angry",
+        "pred": "angry",
+        "count": 8
+      },
+      {
+        "gt": "disgusted",
+        "pred": "angry",
+        "count": 7
+      },
+      {
+        "gt": "disgusted",
+        "pred": "disgusted",
+        "count": 6
+      },
+      {
+        "gt": "bad",
+        "pred": "sad",
+        "count": 6
+      },
+      {
+        "gt": "fearful",
+        "pred": "happy",
+        "count": 5
+      },
+      {
+        "gt": "angry",
+        "pred": "sad",
+        "count": 5
+      },
+      {
+        "gt": "bad",
+        "pred": "happy",
+        "count": 4
+      },
+      {
+        "gt": "angry",
+        "pred": "disgusted",
+        "count": 4
+      },
+      {
+        "gt": "happy",
+        "pred": "angry",
+        "count": 4
+      },
+      {
+        "gt": "bad",
+        "pred": "angry",
+        "count": 3
+      },
+      {
+        "gt": "angry",
+        "pred": "happy",
+        "count": 3
+      },
+      {
+        "gt": "bad",
+        "pred": "bad",
+        "count": 3
+      },
+      {
+        "gt": "disgusted",
+        "pred": "bad",
+        "count": 3
+      },
+      {
+        "gt": "sad",
+        "pred": "sad",
+        "count": 3
+      },
+      {
+        "gt": "fearful",
+        "pred": "fearful",
+        "count": 2
+      },
+      {
+        "gt": "bad",
+        "pred": "disgusted",
+        "count": 2
+      },
+      {
+        "gt": "fearful",
+        "pred": "angry",
+        "count": 2
+      },
+      {
+        "gt": "disgusted",
+        "pred": "sad",
+        "count": 1
+      }
+    ],
+    "top_mech_confusions": [
+      {
+        "gt": "multimodal incongruity",
+        "pred": "multimodal incongruity",
+        "count": 27
+      },
+      {
+        "gt": "figurative semantics",
+        "pred": "multimodal incongruity",
+        "count": 20
+      },
+      {
+        "gt": "socio_cultural dependency",
+        "pred": "multimodal incongruity",
+        "count": 15
+      },
+      {
+        "gt": "multimodal incongruity",
+        "pred": "figurative semantics",
+        "count": 7
+      },
+      {
+        "gt": "affective deception",
+        "pred": "multimodal incongruity",
+        "count": 6
+      },
+      {
+        "gt": "figurative semantics",
+        "pred": "figurative semantics",
+        "count": 5
+      },
+      {
+        "gt": "socio_cultural dependency",
+        "pred": "affective deception",
+        "count": 5
+      },
+      {
+        "gt": "multimodal incongruity",
+        "pred": "affective deception",
+        "count": 4
+      },
+      {
+        "gt": "affective deception",
+        "pred": "affective deception",
+        "count": 4
+      },
+      {
+        "gt": "socio_cultural dependency",
+        "pred": "figurative semantics",
+        "count": 3
+      },
+      {
+        "gt": "figurative semantics",
+        "pred": "affective deception",
+        "count": 2
+      },
+      {
+        "gt": "affective deception",
+        "pred": "figurative semantics",
+        "count": 2
+      }
+    ],
+    "top_combo_errors": [
+      {
+        "gt_mech": "figurative semantics",
+        "gt_label": "happy",
+        "pred_mech": "multimodal incongruity",
+        "pred_label": "happy",
+        "count": 4
+      },
+      {
+        "gt_mech": "multimodal incongruity",
+        "gt_label": "disgusted",
+        "pred_mech": "multimodal incongruity",
+        "pred_label": "happy",
+        "count": 3
+      },
+      {
+        "gt_mech": "multimodal incongruity",
+        "gt_label": "disgusted",
+        "pred_mech": "multimodal incongruity",
+        "pred_label": "angry",
+        "count": 3
+      },
+      {
+        "gt_mech": "affective deception",
+        "gt_label": "angry",
+        "pred_mech": "multimodal incongruity",
+        "pred_label": "angry",
+        "count": 2
+      },
+      {
+        "gt_mech": "multimodal incongruity",
+        "gt_label": "angry",
+        "pred_mech": "multimodal incongruity",
+        "pred_label": "disgusted",
+        "count": 2
+      },
+      {
+        "gt_mech": "figurative semantics",
+        "gt_label": "bad",
+        "pred_mech": "multimodal incongruity",
+        "pred_label": "sad",
+        "count": 2
+      },
+      {
+        "gt_mech": "multimodal incongruity",
+        "gt_label": "bad",
+        "pred_mech": "affective deception",
+        "pred_label": "bad",
+        "count": 2
+      },
+      {
+        "gt_mech": "multimodal incongruity",
+        "gt_label": "disgusted",
+        "pred_mech": "multimodal incongruity",
+        "pred_label": "bad",
+        "count": 2
+      },
+      {
+        "gt_mech": "figurative semantics",
+        "gt_label": "disgusted",
+        "pred_mech": "multimodal incongruity",
+        "pred_label": "disgusted",
+        "count": 2
+      },
+      {
+        "gt_mech": "socio_cultural dependency",
+        "gt_label": "angry",
+        "pred_mech": "multimodal incongruity",
+        "pred_label": "angry",
+        "count": 2
+      },
+      {
+        "gt_mech": "multimodal incongruity",
+        "gt_label": "happy",
+        "pred_mech": "multimodal incongruity",
+        "pred_label": "angry",
+        "count": 2
+      },
+      {
+        "gt_mech": "socio_cultural dependency",
+        "gt_label": "angry",
+        "pred_mech": "multimodal incongruity",
+        "pred_label": "sad",
+        "count": 2
+      },
+      {
+        "gt_mech": "figurative semantics",
+        "gt_label": "angry",
+        "pred_mech": "multimodal incongruity",
+        "pred_label": "sad",
+        "count": 2
+      },
+      {
+        "gt_mech": "multimodal incongruity",
+        "gt_label": "bad",
+        "pred_mech": "multimodal incongruity",
+        "pred_label": "sad",
+        "count": 2
+      },
+      {
+        "gt_mech": "socio_cultural dependency",
+        "gt_label": "disgusted",
+        "pred_mech": "affective deception",
+        "pred_label": "happy",
+        "count": 2
+      },
+      {
+        "gt_mech": "figurative semantics",
+        "gt_label": "disgusted",
+        "pred_mech": "multimodal incongruity",
+        "pred_label": "happy",
+        "count": 2
+      },
+      {
+        "gt_mech": "affective deception",
+        "gt_label": "fearful",
+        "pred_mech": "affective deception",
+        "pred_label": "happy",
+        "count": 2
+      },
+      {
+        "gt_mech": "figurative semantics",
+        "gt_label": "sad",
+        "pred_mech": "multimodal incongruity",
+        "pred_label": "sad",
+        "count": 2
+      },
+      {
+        "gt_mech": "figurative semantics",
+        "gt_label": "disgusted",
+        "pred_mech": "multimodal incongruity",
+        "pred_label": "angry",
+        "count": 1
+      },
+      {
+        "gt_mech": "socio_cultural dependency",
+        "gt_label": "disgusted",
+        "pred_mech": "multimodal incongruity",
+        "pred_label": "disgusted",
+        "count": 1
+      },
+      {
+        "gt_mech": "multimodal incongruity",
+        "gt_label": "bad",
+        "pred_mech": "figurative semantics",
+        "pred_label": "sad",
+        "count": 1
+      },
+      {
+        "gt_mech": "socio_cultural dependency",
+        "gt_label": "fearful",
+        "pred_mech": "multimodal incongruity",
+        "pred_label": "fearful",
+        "count": 1
+      },
+      {
+        "gt_mech": "multimodal incongruity",
+        "gt_label": "disgusted",
+        "pred_mech": "figurative semantics",
+        "pred_label": "disgusted",
+        "count": 1
+      },
+      {
+        "gt_mech": "socio_cultural dependency",
+        "gt_label": "happy",
+        "pred_mech": "figurative semantics",
+        "pred_label": "happy",
+        "count": 1
+      },
+      {
+        "gt_mech": "affective deception",
+        "gt_label": "bad",
+        "pred_mech": "multimodal incongruity",
+        "pred_label": "happy",
+        "count": 1
+      },
+      {
+        "gt_mech": "multimodal incongruity",
+        "gt_label": "disgusted",
+        "pred_mech": "multimodal incongruity",
+        "pred_label": "sad",
+        "count": 1
+      },
+      {
+        "gt_mech": "socio_cultural dependency",
+        "gt_label": "bad",
+        "pred_mech": "multimodal incongruity",
+        "pred_label": "angry",
+        "count": 1
+      },
+      {
+        "gt_mech": "figurative semantics",
+        "gt_label": "fearful",
+        "pred_mech": "multimodal incongruity",
+        "pred_label": "disgusted",
+        "count": 1
+      },
+      {
+        "gt_mech": "multimodal incongruity",
+        "gt_label": "happy",
+        "pred_mech": "figurative semantics",
+        "pred_label": "angry",
+        "count": 1
+      },
+      {
+        "gt_mech": "figurative semantics",
+        "gt_label": "angry",
+        "pred_mech": "figurative semantics",
+        "pred_label": "happy",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "run": "406120",
+    "n_truth": 100,
+    "n_pred": 100,
+    "missing": [],
+    "acc": {
+      "mechanism": 0.4,
+      "label": 0.18,
+      "joint": 0.09
+    },
+    "pred_label_dist": {
+      "angry": 9,
+      "disgusted": 10,
+      "happy": 7,
+      "bad": 69,
+      "sad": 4,
+      "fearful": 1
+    },
+    "top_label_confusions": [
+      {
+        "gt": "disgusted",
+        "pred": "bad",
+        "count": 15
+      },
+      {
+        "gt": "happy",
+        "pred": "bad",
+        "count": 14
+      },
+      {
+        "gt": "bad",
+        "pred": "bad",
+        "count": 13
+      },
+      {
+        "gt": "angry",
+        "pred": "bad",
+        "count": 11
+      },
+      {
+        "gt": "fearful",
+        "pred": "bad",
+        "count": 10
+      },
+      {
+        "gt": "sad",
+        "pred": "bad",
+        "count": 6
+      },
+      {
+        "gt": "disgusted",
+        "pred": "disgusted",
+        "count": 4
+      },
+      {
+        "gt": "angry",
+        "pred": "disgusted",
+        "count": 4
+      },
+      {
+        "gt": "disgusted",
+        "pred": "angry",
+        "count": 3
+      },
+      {
+        "gt": "angry",
+        "pred": "happy",
+        "count": 3
+      },
+      {
+        "gt": "disgusted",
+        "pred": "happy",
+        "count": 2
+      },
+      {
+        "gt": "happy",
+        "pred": "angry",
+        "count": 2
+      },
+      {
+        "gt": "bad",
+        "pred": "happy",
+        "count": 2
+      },
+      {
+        "gt": "bad",
+        "pred": "angry",
+        "count": 2
+      },
+      {
+        "gt": "bad",
+        "pred": "sad",
+        "count": 1
+      },
+      {
+        "gt": "angry",
+        "pred": "angry",
+        "count": 1
+      },
+      {
+        "gt": "angry",
+        "pred": "sad",
+        "count": 1
+      },
+      {
+        "gt": "happy",
+        "pred": "disgusted",
+        "count": 1
+      },
+      {
+        "gt": "fearful",
+        "pred": "angry",
+        "count": 1
+      },
+      {
+        "gt": "sad",
+        "pred": "disgusted",
+        "count": 1
+      }
+    ],
+    "top_mech_confusions": [
+      {
+        "gt": "multimodal incongruity",
+        "pred": "multimodal incongruity",
+        "count": 31
+      },
+      {
+        "gt": "figurative semantics",
+        "pred": "multimodal incongruity",
+        "count": 22
+      },
+      {
+        "gt": "socio_cultural dependency",
+        "pred": "multimodal incongruity",
+        "count": 18
+      },
+      {
+        "gt": "multimodal incongruity",
+        "pred": "figurative semantics",
+        "count": 7
+      },
+      {
+        "gt": "affective deception",
+        "pred": "multimodal incongruity",
+        "count": 6
+      },
+      {
+        "gt": "figurative semantics",
+        "pred": "figurative semantics",
+        "count": 5
+      },
+      {
+        "gt": "affective deception",
+        "pred": "affective deception",
+        "count": 4
+      },
+      {
+        "gt": "socio_cultural dependency",
+        "pred": "figurative semantics",
+        "count": 3
+      },
+      {
+        "gt": "socio_cultural dependency",
+        "pred": "affective deception",
+        "count": 2
+      },
+      {
+        "gt": "affective deception",
+        "pred": "figurative semantics",
+        "count": 2
+      }
+    ],
+    "top_combo_errors": [
+      {
+        "gt_mech": "multimodal incongruity",
+        "gt_label": "disgusted",
+        "pred_mech": "multimodal incongruity",
+        "pred_label": "bad",
+        "count": 8
+      },
+      {
+        "gt_mech": "multimodal incongruity",
+        "gt_label": "happy",
+        "pred_mech": "multimodal incongruity",
+        "pred_label": "bad",
+        "count": 6
+      },
+      {
+        "gt_mech": "figurative semantics",
+        "gt_label": "happy",
+        "pred_mech": "multimodal incongruity",
+        "pred_label": "bad",
+        "count": 4
+      },
+      {
+        "gt_mech": "socio_cultural dependency",
+        "gt_label": "angry",
+        "pred_mech": "multimodal incongruity",
+        "pred_label": "bad",
+        "count": 4
+      },
+      {
+        "gt_mech": "multimodal incongruity",
+        "gt_label": "angry",
+        "pred_mech": "multimodal incongruity",
+        "pred_label": "bad",
+        "count": 3
+      },
+      {
+        "gt_mech": "socio_cultural dependency",
+        "gt_label": "bad",
+        "pred_mech": "multimodal incongruity",
+        "pred_label": "bad",
+        "count": 3
+      },
+      {
+        "gt_mech": "figurative semantics",
+        "gt_label": "bad",
+        "pred_mech": "multimodal incongruity",
+        "pred_label": "bad",
+        "count": 3
+      },
+      {
+        "gt_mech": "figurative semantics",
+        "gt_label": "disgusted",
+        "pred_mech": "multimodal incongruity",
+        "pred_label": "bad",
+        "count": 3
+      },
+      {
+        "gt_mech": "figurative semantics",
+        "gt_label": "sad",
+        "pred_mech": "multimodal incongruity",
+        "pred_label": "bad",
+        "count": 3
+      },
+      {
+        "gt_mech": "socio_cultural dependency",
+        "gt_label": "disgusted",
+        "pred_mech": "multimodal incongruity",
+        "pred_label": "bad",
+        "count": 3
+      },
+      {
+        "gt_mech": "affective deception",
+        "gt_label": "fearful",
+        "pred_mech": "affective deception",
+        "pred_label": "bad",
+        "count": 3
+      },
+      {
+        "gt_mech": "socio_cultural dependency",
+        "gt_label": "fearful",
+        "pred_mech": "multimodal incongruity",
+        "pred_label": "bad",
+        "count": 2
+      },
+      {
+        "gt_mech": "affective deception",
+        "gt_label": "angry",
+        "pred_mech": "multimodal incongruity",
+        "pred_label": "bad",
+        "count": 2
+      },
+      {
+        "gt_mech": "figurative semantics",
+        "gt_label": "fearful",
+        "pred_mech": "multimodal incongruity",
+        "pred_label": "bad",
+        "count": 2
+      },
+      {
+        "gt_mech": "multimodal incongruity",
+        "gt_label": "angry",
+        "pred_mech": "multimodal incongruity",
+        "pred_label": "disgusted",
+        "count": 2
+      },
+      {
+        "gt_mech": "figurative semantics",
+        "gt_label": "bad",
+        "pred_mech": "multimodal incongruity",
+        "pred_label": "happy",
+        "count": 2
+      },
+      {
+        "gt_mech": "figurative semantics",
+        "gt_label": "disgusted",
+        "pred_mech": "multimodal incongruity",
+        "pred_label": "angry",
+        "count": 1
+      },
+      {
+        "gt_mech": "socio_cultural dependency",
+        "gt_label": "disgusted",
+        "pred_mech": "multimodal incongruity",
+        "pred_label": "happy",
+        "count": 1
+      },
+      {
+        "gt_mech": "multimodal incongruity",
+        "gt_label": "bad",
+        "pred_mech": "figurative semantics",
+        "pred_label": "bad",
+        "count": 1
+      },
+      {
+        "gt_mech": "figurative semantics",
+        "gt_label": "happy",
+        "pred_mech": "figurative semantics",
+        "pred_label": "bad",
+        "count": 1
+      },
+      {
+        "gt_mech": "multimodal incongruity",
+        "gt_label": "disgusted",
+        "pred_mech": "figurative semantics",
+        "pred_label": "disgusted",
+        "count": 1
+      },
+      {
+        "gt_mech": "socio_cultural dependency",
+        "gt_label": "happy",
+        "pred_mech": "figurative semantics",
+        "pred_label": "bad",
+        "count": 1
+      },
+      {
+        "gt_mech": "affective deception",
+        "gt_label": "bad",
+        "pred_mech": "multimodal incongruity",
+        "pred_label": "sad",
+        "count": 1
+      },
+      {
+        "gt_mech": "multimodal incongruity",
+        "gt_label": "disgusted",
+        "pred_mech": "multimodal incongruity",
+        "pred_label": "happy",
+        "count": 1
+      },
+      {
+        "gt_mech": "multimodal incongruity",
+        "gt_label": "happy",
+        "pred_mech": "figurative semantics",
+        "pred_label": "angry",
+        "count": 1
+      },
+      {
+        "gt_mech": "multimodal incongruity",
+        "gt_label": "angry",
+        "pred_mech": "multimodal incongruity",
+        "pred_label": "happy",
+        "count": 1
+      },
+      {
+        "gt_mech": "socio_cultural dependency",
+        "gt_label": "fearful",
+        "pred_mech": "figurative semantics",
+        "pred_label": "bad",
+        "count": 1
+      },
+      {
+        "gt_mech": "multimodal incongruity",
+        "gt_label": "sad",
+        "pred_mech": "multimodal incongruity",
+        "pred_label": "bad",
+        "count": 1
+      },
+      {
+        "gt_mech": "socio_cultural dependency",
+        "gt_label": "happy",
+        "pred_mech": "multimodal incongruity",
+        "pred_label": "bad",
+        "count": 1
+      },
+      {
+        "gt_mech": "multimodal incongruity",
+        "gt_label": "angry",
+        "pred_mech": "figurative semantics",
+        "pred_label": "happy",
+        "count": 1
+      }
+    ]
+  }
+]
